@@ -1,0 +1,29 @@
+name: 테스트
+
+on:
+  push:
+    branches-ignore: []
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: pip install -r requirements.txt
+      - name: 단위 테스트
+        run: python -m unittest discover -s tests -v
+      - name: 검토 페이지 문법 검사
+        run: |
+          node --check api/_lib.js
+          node --check api/session.js
+          node --check api/draft.js
+          node --check api/exclusions.js

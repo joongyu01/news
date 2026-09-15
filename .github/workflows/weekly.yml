@@ -1,0 +1,43 @@
+# 금요일 08:30 (KST) 그 주에 나간 동향을 한 장으로 요약해 보냅니다.
+name: 주간 롤업
+
+on:
+  schedule:
+    - cron: "30 23 * * 4"      # 목 23:30 UTC = 금 08:30 KST
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "실제 발송 없이 결과만 로그로 확인"
+        type: boolean
+        default: false
+
+concurrency:
+  group: news-weekly
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 주간 요약 발송
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python -m scripts.weekly --dry-run
+          else
+            python -m scripts.weekly
+          fi

@@ -1,0 +1,8 @@
+{
+  "name": "kpetro-news-review",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "한국석유관리원 일일언론동향 검토 페이지",
+  "engines": { "node": ">=20" }
+}
