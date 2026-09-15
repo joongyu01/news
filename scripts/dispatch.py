@@ -57,13 +57,24 @@ def main(argv: list[str] | None = None) -> int:
     sent = send_telegram(chunks)
     log.info("텔레그램 %d개 메시지 발송", sent)
 
+    count = 0
     try:
         count = send_email(subject, html_body, plain)
         log.info("이메일 %d명 발송", count)
     except Exception as exc:                          # noqa: BLE001
         # 텔레그램이 이미 나갔으면 담당자는 동향을 받은 상태입니다.
         # 이메일 실패로 전체를 실패시키면 아카이브가 안 남으므로 경고만 남깁니다.
-        log.error("이메일 발송 실패 (텔레그램은 정상 발송됨): %s", exc)
+        log.error("이메일 발송 실패: %s", exc)
+
+    if not sent and not count:
+        # 설정이 비어 있으면 send_* 는 예외 대신 0을 돌려줍니다. 그대로 두면
+        # 아무에게도 안 간 동향이 아카이브에 남고 Actions 는 초록불이 뜹니다.
+        # 조용히 잘못되는 쪽이 더 나쁘므로 여기서 실패로 끊습니다.
+        log.error(
+            "텔레그램·이메일 어느 쪽으로도 발송되지 않았습니다 — "
+            "아카이브를 남기지 않고 중단합니다. Secret 설정을 확인하세요."
+        )
+        return 1
 
     path = archive.write(date, markdown)
     archive.rebuild_index()
