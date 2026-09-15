@@ -1,0 +1,66 @@
+# 매일 06:40 (KST) 뉴스를 모아 검토용 초안을 만듭니다.
+# 08:00 발송보다 80분 앞서 도는 이유는, GitHub 예약 작업이 혼잡한 시간대에
+# 10~20분씩 밀리는 일이 흔하기 때문입니다. 그 여유를 감안한 간격입니다.
+name: 동향 수집
+
+on:
+  schedule:
+    - cron: "40 21 * * *"      # 21:40 UTC = 06:40 KST
+  workflow_dispatch:            # 수동 실행 (Actions 탭의 Run workflow)
+    inputs:
+      dry_run:
+        description: "저장·알림 없이 결과만 로그로 확인"
+        type: boolean
+        default: false
+
+concurrency:
+  group: news-collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 초안 생성
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REVIEW_URL: ${{ vars.REVIEW_URL }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python -m scripts.collect --dry-run
+          else
+            python -m scripts.collect
+          fi
+
+      - name: 초안 커밋
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name "news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/drafts
+          git diff --staged --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "수집: $(TZ=Asia/Seoul date +%Y-%m-%d) 동향 초안"
+          # 검토 페이지가 같은 시각에 제외 목록을 커밋할 수 있어 재시도합니다.
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "push 실패 — 재시도 $attempt"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((attempt * 5))
+          done
+          exit 1

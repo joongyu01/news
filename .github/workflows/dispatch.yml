@@ -1,0 +1,65 @@
+# 매일 08:00 (KST) 담당자 검토 결과를 반영해 최종본을 발송합니다.
+name: 동향 발송
+
+on:
+  schedule:
+    - cron: "0 23 * * *"       # 23:00 UTC = 08:00 KST
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "발송할 날짜 (YYYY-MM-DD, 비우면 오늘)"
+        type: string
+      dry_run:
+        description: "실제 발송 없이 최종본만 로그로 확인"
+        type: boolean
+        default: false
+
+concurrency:
+  group: news-dispatch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 발송
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          ARGS=""
+          [ -n "${{ inputs.date }}" ] && ARGS="--date ${{ inputs.date }}"
+          [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          python -m scripts.dispatch $ARGS
+
+      - name: 아카이브 커밋
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name "news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive
+          git diff --staged --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "발송: $(TZ=Asia/Seoul date +%Y-%m-%d) 일일언론동향"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "push 실패 — 재시도 $attempt"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((attempt * 5))
+          done
+          exit 1
