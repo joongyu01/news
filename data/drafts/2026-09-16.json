@@ -1,0 +1,3706 @@
+{
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16 08:40",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1359.15,
+      "change_pct": 0.9589671975279357,
+      "unit": "원"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "articles": [
+    {
+      "title": "산자중기위, '검찰청 폐지 후속' 석유사업법 與 주도 의결…국힘 퇴장",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4wbV9fOHpIRFpxeGpEUmdoSE5BcGFLZktSSG5DVHZYQ0EtSHpBVENzWHZpaVNmY0lITDNBUVI0T3lrLXQ5dDBSbElyRnByN28?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 14:59",
+      "summary": "산자중기위, '검찰청 폐지 후속' 석유사업법 與 주도 의결…국힘 퇴장  v.daum.net",
+      "sector": "government",
+      "risk": [
+        "검찰"
+      ],
+      "duplicates": [
+        {
+          "title": "산자중기위, '검찰청 폐지 후속' 석유사업법 與 주도 의결…국힘 퇴장",
+          "source": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IazlYdzM4T0V4M0FKbFJLa2FLUE1nRWxSbTZPS2Z4QnlhUmpaNnNJRW1JTVpmX0ZhN1dxRWxoVHpyeVRJMWwtQWdZWW92R1hDV3RRTktZSDZxd9IBX0FVX3lxTE41cGw2bThMNnpKM2NqZDFWQmVlNnJ5SmxMZE9QZW9ucFRaWXpzZ3czbF9lYkN0cF9lTUhiakdIaEpHUlRGbEpPWWxvX3o3NWM4Uy1oOGYtVEZoOTZxcDlV?oc=5"
+        }
+      ],
+      "query": "석유사업법",
+      "id": "e93447c6b9eb"
+    },
+    {
+      "title": "기후부, 폐자원 회수기술 실증에 특례 적용",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334279",
+      "source": "이투뉴스",
+      "published": "2026-09-16 15:56",
+      "summary": "[이투뉴스] 정부가 폐자원에서 핵심광물과 지속가능항공유(SAF) 원료를 회수하는 기술을 실증할 사업자를 모집한다. 선정 대상자에게는 폐기물 규제를 한시적으로 완화한다.기후에너지환경부는 16일부터 다음달 30일까지 순환경제 분야 '기획형 규제특례(샌드박스)' 3개 과제에 참여할 사업자를 모집한다고 15일 밝혔다.이번 사업은 정부가 실증과제를 먼저 제안한 뒤 적합한 기술을 보유한 기업을 모집하는 방식이다. 세부 과제로는 ▶반도체 공정 발생 부산물의 순환자원 관리기준 마련 ▶폐배터리·태양광폐패널 내 핵심광물 회수 ▶SAF 원료 공급원 다",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "8b53e4dc7d9d"
+    },
+    {
+      "title": "‘송전망 갈등 해법 바뀐다’...철탑 2천기 줄이고 마을태양광 지원",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228219",
+      "source": "에너지신문",
+      "published": "2026-09-16 11:10",
+      "summary": "[에너지신문] 정부가 국가기간 전력망을 건설할 때 기존 송전선로를 우선 활용하고 주민 밀집지역의 지중화를 확대하기로 했다. 송전선로 경과 지역에는 태양광 발전사업을 통한 장기 소득원을 제공하고, 주민들이 복수의 후보 노선을 놓고 의견을 낼 수 있도록 입지선정 절차도 손질한다.기후에너지환경부는 15일 국무회의에 이 같은 내용의 ‘송전망 건설 수용성 제고방안’을 보고했다. 정부는 올해 하반기 국가기간전력망 확충 특별법 시행령과 송전선로 입지선정 관련 고시를 개정해 세부 대책을 제도화할 계획이다.◆기존 선로와 통합, 철탑 4723기→25",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "77482118f0c7"
+    },
+    {
+      "title": "전력시장·계통 변화, 모의실험으로 먼저 본다",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228218",
+      "source": "에너지신문",
+      "published": "2026-09-16 10:05",
+      "summary": "[에너지신문] 재생에너지 확대와 전력시장 개편이 전력계통에 미칠 영향을 사전에 분석하기 위해 전력거래소와 한국에너지공과대학교(KENTECH, 켄텍)가 공동 연구에 나선다. 전력거래소가 보유한 시장·계통 운영 경험과 켄텍의 모의분석 기술을 결합해 정책과 제도를 실제 현장에 적용하기 전 효과와 위험을 검토할 수 있는 기반을 마련하는게 목표다.전력거래소와 켄텍은 15일 나주 빛가람혁신도시 켄텍 캠퍼스에서 ‘전력시장·계통 모의 검토 모델 고도화를 위한 업무협약’을 체결했다.이번 협력의 핵심은 재생에너지 비중 확대와 전력시장 제도 변화에 대",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "17306c24d230"
+    },
+    {
+      "title": "[인터뷰] 임상묵 SK에너지 대표",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303131",
+      "source": "투데이에너지",
+      "published": "2026-09-16 08:51",
+      "summary": "임상묵 SK에너지 대표(오른쪽)가 양기욱 산업통상부 산업자원안보실장에게 국무총리 표창을 받고 있다./신영균 기자\n\n\n\n[투데이에너지 신영균 기자] 올해로 39년차 가스안전 전문가인 임상묵 SK에너지 대표 겸 당진시LPG판매협회장은 천부적으로 안전·봉사 세포를 보유한 인물로 보인다. 그간 임 대표는 거액의 사비를 자발적으로 지출하며 지역사회에서 가스 안전점검 봉사활동과 취약계층이 거주하는 노후주택을 무상으로 집수리해주는 등 다양한 사회공헌활동을 실천했다. 이는 현재 진행형이다. 취약계층에 할인 가격으로 LPG를 공급한 사례도 다수며 ",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "e4500cae6729"
+    },
+    {
+      "title": "[뉴욕증시] 국채금리·국제유가 급등…이틀 연속 하락세",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rUHJiYUdoWG5xcVJzdzdObjRPbm5oc043R3pnZHJ5aXhjcFg5ZmZEUXBVWXpudFpJZ0U2T09Fc2JielpFUXBjWjVCQjlEMG5RNHJ1VGdiRGM4UQ?oc=5",
+      "source": "세계비즈",
+      "published": "2026-09-16 08:33",
+      "summary": "[뉴욕증시] 국채금리·국제유가 급등…이틀 연속 하락세  세계비즈",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "ab261bc9d5c1"
+    },
+    {
+      "title": "신한證 “에쓰오일, 정유업계 수익성 장기화…목표가 22만원 상향\" - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZUMtX3liYmRfLXFjWXZZdUtlTUtBZlN6My1NN3ljR1BFTFFYMnVQMWpmM0VMamh0d2RXN3JwbzBoNGpOMUk4ZDdqVmlrMjBLMUdUSlNkTEJackJzLVpWci02c0x5WlhhSWlpVXFsS2FNQ29ZdGxVcC16UmxRYkxCLWNXb0ZJOXVB0gGcAUFVX3lxTFBHTkZFanNHR0JUY2RyU0l5WFBMbVNheTlCRHhJSGMtVG00OUJXN0dVMUQwb3J3RFkxMlg5WDgwSjUtV196bXRrZmlIajB2WUQwM2ItMlhyc2d4TS1kd0NsNzRsZTFpMzVKMTR0LVBpc1BHa1UxR3gwRFRjd3VjOWdEcFhCcnlGNWxHTXd6Sk5YbHR1clowcHJONXlHMQ?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-09-16 08:32",
+      "summary": "신한證 “에쓰오일, 정유업계 수익성 장기화…목표가 22만원 상향\" - 조선비즈  Chosunbiz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "d0dd615be19f"
+    },
+    {
+      "title": "[해외시황] 뉴욕증시, 국채금리 최고치·유가 급등에 이틀째 '하락'…나스닥 0.78%↓",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5dWxqbjVvUjN6amtCT2J4ODJXVGZldzNkNnFPNWpZc3gzdXhhRm1PbmRsSWg4VzBWYTNlbklaMTIxT1RMeG9yR2xGMFhENF8tT0o1bzNzajlSOVlkVzVlNw?oc=5",
+      "source": "프라임경제",
+      "published": "2026-09-16 08:29",
+      "summary": "[해외시황] 뉴욕증시, 국채금리 최고치·유가 급등에 이틀째 '하락'…나스닥 0.78%↓  프라임경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "316b8a5cc1d2"
+    },
+    {
+      "title": "중동·북아프리카 연쇄 공급망 타격에 국제유가 급등…5월 19일 이후 최고치 경신",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HejZLMDQ0LTY5V3gxWjdCQzdPV3l1TldSV01veDBTOVMzNjRNYXhhT3RldHFaSmVVblBTcDNmZmFOZTU1TlllN3pkRktWaHliT2hXZERONHpNN1pxaE1UQUlzOHRMaVYzR0E?oc=5",
+      "source": "파이낸스스코프",
+      "published": "2026-09-16 08:28",
+      "summary": "중동·북아프리카 연쇄 공급망 타격에 국제유가 급등…5월 19일 이후 최고치 경신  파이낸스스코프",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "c71621c4398b"
+    },
+    {
+      "title": "사우디 원유 수출 차질 현실화 … 국제유가 4개월 만 최고",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE43NVp4UlZaLVFLNUo2MC1MakNMaVBqamhtSmR1czlGR09XLXRoV0VMUTlrN282dWxOeXljZW4wdVV2MWVFME5FNzFxc0FtdExXYlZhTFBuVnh0QXUtQlJvZVhFaUZlZ2tNSVlwdnJyN2M0NEFTd01LZzdUMNIBgAFBVV95cUxOdGZPeW9XRUVqeURFWWVvUXNhUHZCUzlxTkl1ZllRbmtGMG43emw3ZHpTaWlzUDBPb3lvZG5IWUl0Vi1GeWlXdU92WDB0R2VoWkFRT1ZISG9Gb2w5VEVNSEFFZXNWTWJTbWhmakJxbXJ5eWFTODNZYUN6Z0tHb3hCRg?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-09-16 08:20",
+      "summary": "사우디 원유 수출 차질 현실화 … 국제유가 4개월 만 최고  뉴데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "2fc4fd1c35f1"
+    },
+    {
+      "title": "FOMC 앞두고 국제유가 상승 압박⋯\"1360원 중후반 등락\" [환율전망]",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kZ1d3U00ySmlfRm1VSE0wdHJmZHc4SEMyZU95VHgwMko0VGo3UnVnQXhsbTNJR3pJRE4yUWh2SkFueHNaWVg2UFh3RGFfcDExQ2JxSA?oc=5",
+      "source": "이투데이",
+      "published": "2026-09-16 08:20",
+      "summary": "FOMC 앞두고 국제유가 상승 압박⋯\"1360원 중후반 등락\" [환율전망]  이투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "FOMC 앞두고 국제유가 상승 압박⋯\"1360원 중후반 등락\" [환율전망]",
+          "source": "supple.kr",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zVUxRU0dlM2NiaFNnZGV5R29sU05jNXRuc1BjMUxVREFTRE15M1pBNEV2S2JrbV9nQ3ktSkw2OERycW9MV0toUUV2Z056emJHS1htcmVsNjFCSWZn?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "164f1166b1a8"
+    },
+    {
+      "title": "[뉴욕증시] 유가·국채금리 급등 지속·…나스닥 0.78%↓",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA1Tkl6c3ZBeENIN01ZTkNPZ1A4OExKT1Vmc0o1OXA2UkJKREdJWnVfV0ZiU2YzbjQweERuMHFSWXlWWFFFOUFXSnA5YjNmUUxDMkV5NWxRUUZQZjVxTEVuenBvQlZXbHlQRmhfX1gxRW0?oc=5",
+      "source": "신아일보",
+      "published": "2026-09-16 08:18",
+      "summary": "[뉴욕증시] 유가·국채금리 급등 지속·…나스닥 0.78%↓  신아일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "e2e25161df9c"
+    },
+    {
+      "title": "부산서 기후산업국제박람회 개막…에너지·탄소중립 기술 한자리",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EZjFlc0QyeVNmTnFtSmJtdUM0QWZZQWpoQW1UeFo5RDg3dWJ2NGk4QWd6M0NpZEpibVFkWWtjSHRfdUszTVJESjBNaEtLejQ?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-16 08:17",
+      "summary": "부산서 기후산업국제박람회 개막…에너지·탄소중립 기술 한자리  v.daum.net",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "5025578a8d46"
+    },
+    {
+      "title": "“리비아까지 가동 중단” 국제유가 4개월 만에 최고",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5pX3JERFQ3UUp6bDVPRTk5RzVJQTE4QnBwSjhBLW1qZGNNN0JYcFR5VzNyV1hvUW93MHNFZGE4bXVFWHY5MU1nd2M1QTBUejI3ZFJYU183dUlGWnJIODl1Vm5CYW8tQWxfU2V1dg?oc=5",
+      "source": "한경매거진&북",
+      "published": "2026-09-16 08:03",
+      "summary": "“리비아까지 가동 중단” 국제유가 4개월 만에 최고  한경매거진&북",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "1b2f6079dad8"
+    },
+    {
+      "title": "[굿모닝 증시]美증시 금리·유가 급등에 일제 하락…韓증시도 불안↑",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBkcTJ2cXkteHU0d3ZFLXAyUk0zc1NlYkFZUWtZRDV4cEhackJQTU1vRS1VLXkwdVRNQWY0aHRiMjNJak1SRXFQb1phZ09yS2NodTBESnRHLVlsWTNTNG5XSHp3?oc=5",
+      "source": "아시아경제",
+      "published": "2026-09-16 08:03",
+      "summary": "[굿모닝 증시]美증시 금리·유가 급등에 일제 하락…韓증시도 불안↑  아시아경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "29830c9959f3"
+    },
+    {
+      "title": "유가 100달러·美 10년물 5%…뉴욕증시 덮친 ‘고금리 공포’ 이틀째 약세",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1WN2VkZVVTOENGTnlwbnV0c0M1OWhwLTM4YWs4ZUpFNXExcDR2TGRHWUJ5YjVEUmRfdmlmMTkwN2ozVnhEUTlfSDJKeWhDazV6dHVHRGZYeUVvalVGWEJ3?oc=5",
+      "source": "조세일보",
+      "published": "2026-09-16 07:59",
+      "summary": "유가 100달러·美 10년물 5%…뉴욕증시 덮친 ‘고금리 공포’ 이틀째 약세  조세일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "573c17018ae4"
+    },
+    {
+      "title": "반도체 선방에도 유가·금리에 뉴욕증시 하락",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BMmxlOFBaMWd5dzA1UUxVX1VEQmU4QUFEMWk0dVpzbGRWVWVsVHFIMjM5eVBLazlRbGRxWkFhQ0c1Nmc1TWFvdWptYkdLN1RVTzE0N0tlekctVzJoM2pmZTlLYlM3UFRYN1dIdG5DejA?oc=5",
+      "source": "코리아리포트",
+      "published": "2026-09-16 07:58",
+      "summary": "반도체 선방에도 유가·금리에 뉴욕증시 하락  코리아리포트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "ae0bdf9e9f1f"
+    },
+    {
+      "title": "한국지역난방공사, '대한민국 에너지대전' 참가…'열로 미래를 열다'",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yZnFaOGhNbmZqc3RoWUFoQmVoQVZQZ2lHaWFoVTJJVGVUbGN5TW1oYUN2dXdybkRUMTdvZDlZanBsU2hsS2Izdjk5Q2M3N2cyd1hZdC1TVUZDRm9KODA1VUFpQ3N1cXFMeFE?oc=5",
+      "source": "컨슈머타임스",
+      "published": "2026-09-16 07:57",
+      "summary": "한국지역난방공사, '대한민국 에너지대전' 참가…'열로 미래를 열다'  컨슈머타임스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국지역난방공사, 2026 에너지대전 참가... ‘열로 미래를 열다’",
+          "source": "가스신문",
+          "url": "https://www.gasnews.com/news/articleView.html?idxno=126803"
+        },
+        {
+          "title": "한국지역난방공사, 에너지대전 참가 ... \"열로 미래를 열다\"",
+          "source": "파이낸셜신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBtRXkxdWc0R2xDZE1uZmxOVzg5N0cwSWpOTXhuSTJ3ak9WVUFlQnc5YndkbkRKWEhfQk53ZVEzSks1YTZ5Mm9xakZTWGVfRjk5TEl1MHg2RWVOOC1uTEVHNzNmN05BdjdFTENv?oc=5"
+        }
+      ],
+      "query": "한국에너지공단",
+      "id": "5b89e23c3427"
+    },
+    {
+      "title": "뉴욕증시, 국채금리·유가 상승에 이틀째 하락 마감",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtek84Zm1ldV9iYjJQaWVWcEVJd1ZNYlpXZ21uWjVLV0drVGZFMW0zalJrS0kyaElpVEhoVzhBMnVydTl5Mk1zZEtLaFJrX1cyOTBJ0gFYQVVfeXFMTW1VN0t2czlKRFZSWjM5ZDI0NUFlUnljRDg0SThibU1CUFlJUmpyczVWb1JCNENaeTFfZFhNVW9lOEJkTUNmUkdPdTFrYV9SU0QzZm1ROUpySg?oc=5",
+      "source": "SBS Biz",
+      "published": "2026-09-16 07:54",
+      "summary": "뉴욕증시, 국채금리·유가 상승에 이틀째 하락 마감  SBS Biz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[뉴욕증시 마감] 국채금리·유가 상승에 이틀째 하락…나스닥 0.78%↓",
+          "source": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DaU5xamQxWHZhM3VwU2hFV0FZU2ZoWEZWbk1WZUI0OU9seVVXVDZNd1JZbkctanJOSmN2bDVVQjl5aGo3d3BwUlVsZDFkS2xDWEdwb2FGTTdBQdIBWEFVX3lxTFBUSkNKNUhGRDVYalhvTGEzQmtnSFVrZkJlZWw4VFVzR3h3SkZjcHpSUll2SVRfdlBpWkE5X2hhWi1kSjY5NDdmSlp1RWN6ZGp5Wmw5MHlKOTI?oc=5"
+        },
+        {
+          "title": "뉴욕증시, 국채금리·유가 상승에 하락 마감…나스닥 0.78%↓",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NNFBIMndVUDZRS0xWd3Q3VFFMNUNFemc2bzU3R0FHcF9QRElhVngtWW5tSkxkeXFRdUlaaG9fUXdQVkZhdFhqbFlVWTJuNXJZRWp5UUJ0M19ocElEVXhpeA?oc=5"
+        },
+        {
+          "title": "美국채 금리·유가 상승 지속…뉴욕증시 이틀째 하락(종합)",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzbTNJM0dqUGxMc0p4YlkwbXQtaGZqUnNqcHdGLTVMX1lfZ3ltSDV1d2lhbHgxRkczYU9reHIxM3NFZGJiVzhpWlNtZU5nQWc?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "40d5b9283d8d"
+    },
+    {
+      "title": "석유 최고가격제 6개월…유가·수송 불안에 향방 불투명",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSkVsWmhhNXFOUTcyemVQSDNocTk0eWE1c3lNdE1POGNRN2NXaHJWTmcyUlpSclR4WUozdzFTUEZ5OWpaVm9XSVRqNW90ZkN1SXdhVlcxcDJpOFBkZlhsYmhRRS16T1pEYmp3Sm5uREhGR2dpMnFieUNIMHk0a0NXcWpCVldQdw?oc=5",
+      "source": "g-enews.com",
+      "published": "2026-09-16 07:44",
+      "summary": "석유 최고가격제 6개월…유가·수송 불안에 향방 불투명  g-enews.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "1ef8704d2b94"
+    },
+    {
+      "title": "트럼프, 또 이란전 청구서…국제유가 4개월 만 최고치",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJZzZZalpPUFoxYmpxZ1dvNVRPWjVJRkdnaUY4ZlBpQWUtS3gwbF94bS1NbHlRQjl1a1JWZWJKTVhOQk1OdzVubHRqQ1Qwc1NQTEdfdDVkbkVGdFlyRExqcFVxbHdHaDU1VTJvUDZyTVBYRnBO?oc=5",
+      "source": "연합뉴스 한민족센터",
+      "published": "2026-09-16 07:39",
+      "summary": "트럼프, 또 이란전 청구서…국제유가 4개월 만 최고치  연합뉴스 한민족센터",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "2b0a7b2d9ca8"
+    },
+    {
+      "title": "[모닝 리포트] \"유가 급등에 위험선호 위축…원화 약세 압력\"",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5pRmJYQzNlUk1fX2FTbi1XRnBPM3VfUllVNG90YkY4RHEwcFN5V2hmYWhHWGtNTEpuSEtpRFhma3R6Qk9aY3kwT0JmR1JxMjZhSXVaWVRKQm9rU3Nn?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-09-16 07:38",
+      "summary": "[모닝 리포트] \"유가 급등에 위험선호 위축…원화 약세 압력\"  뉴스핌",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "b5282e28833d"
+    },
+    {
+      "title": "뉴욕증시,이틀째 하락 다우 0.63%↓·나스닥 0.78%↓...국제유가WTI 4.38% 급등",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50ckQ3dnJ5RzJ6WXBQQXB2cHVRWWV5bHJQemFiSENzdFpXNnNna3VISkF3alpjTXJ0ZmgxYW4ydGNZSVRyS0dBOThwYk1MZ3hTNUxSbXJvd09RN3RXN2tqLVJJdFJKMWliRGfSAW5BVV95cUxPUlNmTkVWVTNwT285WkdzeE5kUEJJcVZoSGpzSlNjeHRZNmx5YnBkbXNhbVJJUmoyeFFlYTBpUFdMb2g2d28zRzFMYlRTaUlHUUU4YUVBY2RBWFAtbW5SVEJNSlpfNEFDMGpMRy1LZw?oc=5",
+      "source": "퍼블릭타임스",
+      "published": "2026-09-16 07:38",
+      "summary": "뉴욕증시,이틀째 하락 다우 0.63%↓·나스닥 0.78%↓...국제유가WTI 4.38% 급등  퍼블릭타임스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "6c5bd50f4760"
+    },
+    {
+      "title": "“기름값 또 오르나” 국제유가 급등…WTI 105달러 돌파, 4개월 만에 최고",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9fUWhkNVZpSmRqZmkxSjNPVDMwSUZsdlhjNHRQb3VZNVJTdGVBdFg2WnlOMFRfdFI0d2N4S3RrVWVTTnNvTkZBX3dOVTRkNy1sYlEzbmtCTkV3a3dEekRsNW56bnlqbFhE?oc=5",
+      "source": "키즈맘",
+      "published": "2026-09-16 07:38",
+      "summary": "“기름값 또 오르나” 국제유가 급등…WTI 105달러 돌파, 4개월 만에 최고  키즈맘",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "2458da609831"
+    },
+    {
+      "title": "유가 105달러 돌파에 달러 강세…美 연준 금리 인상 임박",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TWWREbWRPWV9HNm9icmN2a2xjdG9ycGJFVF93OTlaajFpOVpZNkZwdWxvQ1ZpMVhYZVhHaHlLTGhtSmtZMTFxRmpWc0lLbWxvN0IyeVBaWjhtQjVhdDZoeXNjYzJGaU5jMGFXdkZ3?oc=5",
+      "source": "알파경제",
+      "published": "2026-09-16 07:37",
+      "summary": "유가 105달러 돌파에 달러 강세…美 연준 금리 인상 임박  알파경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "95b140125439"
+    },
+    {
+      "title": "치솟는 유가에 타오르는 원유 ETF…개인은 하락 '베팅'",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBabnRBcnJtNzlkNkFxa3ZVNTBsNVpfVUthSm9ZNUtid3ZUa3FqMzREeHoxU2ptRWQ4Z2dJZ2JqMnhuVjI4OXlzV2gxcnVHUTdfYkNUSTNTXzZIRExHMnBQZzNB?oc=5",
+      "source": "아시아경제",
+      "published": "2026-09-16 07:23",
+      "summary": "치솟는 유가에 타오르는 원유 ETF…개인은 하락 '베팅'  아시아경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "5d40d45863a4"
+    },
+    {
+      "title": "미 국채금리 5% 재돌파·유가 급등, 뉴욕증시 이틀 연속 하락",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1WYklxSTBoWUMtcW9uVnQwZWFNRnRDWm1fRGNpeEFxTTVHWEg2ME9IX04tWVZPTDhlX3M2S1hCUVI2b3ItVHpMcy1PemJhRVlGakJaR1k0VWFxNHc1RVl5STNmUVNyblozTlV30gFvQVVfeXFMTzBmdDA4VzFGNFJfS1JQbDVuU0xENlc5c2xRRVFWQ3NuR0pRSkVyVVBIbnZneWx2b1BFVG82clFZdXNsT0RCY2V3dGhlaGVrY3JzcERjeEVBVXExSmxjRHNmZE5UTE5WaVVjNnBlNDVj?oc=5",
+      "source": "글로벌E",
+      "published": "2026-09-16 07:23",
+      "summary": "미 국채금리 5% 재돌파·유가 급등, 뉴욕증시 이틀 연속 하락  글로벌E",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "42a530358a79"
+    },
+    {
+      "title": "국제 유가 급등, 중동 불안과 원유 공급 차질의 파장",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE15X25BZmRORVhnMWpiNkdIWEhNbkFfOElzVWVjQXBOaV9PTFB6el9INTUyRW9tdmQtV21lNXpUc3lNMUUyQ1docXFudTNOTkExZHVpcXhIVm9yZU5IR2pOdmc5bkJaMm9F?oc=5",
+      "source": "공감신문",
+      "published": "2026-09-16 07:12",
+      "summary": "국제 유가 급등, 중동 불안과 원유 공급 차질의 파장  공감신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "035536a2f867"
+    },
+    {
+      "title": "(뉴욕증시) 3대 지수 이틀째 하락, 유가 급등·국채금리 상승 여파 - 경제",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1ONUoyUFFOZUw4VjdlZHFHVzZIRVc0VGNIcGRxVjhScURDVGdIT0NDNGtnU0RYYU5EUnJ3cERGb2dZTWVMaWdvbQ?oc=5",
+      "source": "koreadailytimes.com",
+      "published": "2026-09-16 07:12",
+      "summary": "(뉴욕증시) 3대 지수 이틀째 하락, 유가 급등·국채금리 상승 여파 - 경제  koreadailytimes.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "f3da6eead30a"
+    },
+    {
+      "title": "美 국채 금리·국제 유가 급등에 일제 하락…나스닥 0.78%↓ [뉴욕증시 브리핑]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oYmswR25uMTlOQ2ltb1o0eWFJZVpkVVRoSjFrYmFuVW1RUWRwRTNtazFGTlNkcGZDTHlZRWlMbkFxdnEtWWxaZkJfT2EydndHYzNVaktwNXZydw?oc=5",
+      "source": "한국경제",
+      "published": "2026-09-16 07:10",
+      "summary": "美 국채 금리·국제 유가 급등에 일제 하락…나스닥 0.78%↓ [뉴욕증시 브리핑]  한국경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "1ee658e3454b"
+    },
+    {
+      "title": "나스닥 다우지수 하락 마감...국채금리·국제유가 동반 급등",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBJWWNFRmNBeUVNLVVRR09tUk4yOENPSGV5SDViTlhwX01FcXM0M0hJZDNDLWljNE5HaVc1V1N5bEF1aS1YejNFd3FPVlhUTV9nUF9KeU8xWHJsSk92UHUweXZRdTZrLVQ5cFZhdXJR?oc=5",
+      "source": "gukjenews.com",
+      "published": "2026-09-16 07:10",
+      "summary": "나스닥 다우지수 하락 마감...국채금리·국제유가 동반 급등  gukjenews.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "e545782f3425"
+    },
+    {
+      "title": "뉴욕증시, 국채금리·유가 상승에 일제히 하락…나스닥 0.78%↓",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1tYnZod1JtbHI4UW1qTl9nbHRIbi1LMW9mRnN6UDZKZ1ZtZlBPYXduZHMwS3Z5OHVRX3lUUVlqRk91QlhuMkRlSFZHc2xUQ2VWZndlYTFta9IBUkFVX3lxTE1qTkVXaHV0RFpSMldtVVlfOU0yTFV1RllJZjh6YmpCWktuUDhyaGVRUXdxc1IyVGRMOXVBd1RFSnl6ZURneEYteVZKdzBvQlg5cVE?oc=5",
+      "source": "더팩트",
+      "published": "2026-09-16 07:08",
+      "summary": "뉴욕증시, 국채금리·유가 상승에 일제히 하락…나스닥 0.78%↓  더팩트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "60a446bdbc2a"
+    },
+    {
+      "title": "국제유가, 홍해 사우디 석유수출항 선적 중단 등 영향으로 4개월만 최고수준",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBaOGhTbnRjUlBKckVWNXBTVUVNNDRJNWJLYTJfRUEyb1Joelo2Z2lieDV2NGRtR25nZUFtWm1zYTRaUmtFYmY2bWFPbWdvRVc0Y2ZPQmxEc2xUbndKdWc?oc=5",
+      "source": "포커스온경제",
+      "published": "2026-09-16 07:00",
+      "summary": "국제유가, 홍해 사우디 석유수출항 선적 중단 등 영향으로 4개월만 최고수준  포커스온경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "139e0134417b"
+    },
+    {
+      "title": "국제유가, 공급 불확실성에 상승⋯WTI 4.38%↑[상보]",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZNEpnX2oxc0xwRVVUM0M5RVhDbU41YjlqYjdZOG1wT2FQOWl4ZzYzOTIzOFBVNkViVFAtX0QtRUFUMHJvV1lFMDJZMHB6ajgxOGZGLWpwQXotUEd4djlPbjdVd1J3MEJTbWNPVkl3?oc=5",
+      "source": "이투데이",
+      "published": "2026-09-16 07:00",
+      "summary": "국제유가, 공급 불확실성에 상승⋯WTI 4.38%↑[상보]  이투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "dbccc0b947c8"
+    },
+    {
+      "title": "[뉴욕증시] 국채 5%·유가 108달러 '더블 펀치', 휘청휘청···반도체 '반등'",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RMVJIVVpqcnVyNXF6SEZsSXdiUjgzZkxGWHQtak9RbmxtdnlUeUlqd1ZRcmJOYnRncHVXUnk5RXVnTGNaNTdMb1pEZWhmelRoaVN6MFg4NWpUaWJkeXhYRGNTUXBHUnAxa1E?oc=5",
+      "source": "서울파이낸스",
+      "published": "2026-09-16 06:59",
+      "summary": "[뉴욕증시] 국채 5%·유가 108달러 '더블 펀치', 휘청휘청···반도체 '반등'  서울파이낸스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "5361176a156b"
+    },
+    {
+      "title": "\"수소 운송사고 선제 예방\" 석유관리원, 수소 운송장비 운영사업자 유지관리 교육",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4zVXRIRUJVdm5tU19SQmNQREJ2Y3JPQjQ1cUFtTlJTbnNJdlRncFMtWk1QTGg5ZmZad1NsTEJxNGtJelExZjg5Ylk5eV9yX21ZZEw4dGI3ajJ4TTNXOTRFSGxoMnhjb0lPbWc?oc=5",
+      "source": "컨슈머타임스",
+      "published": "2026-09-16 06:57",
+      "summary": "\"수소 운송사고 선제 예방\" 석유관리원, 수소 운송장비 운영사업자 유지관리 교육  컨슈머타임스",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유관리원, 수소 운송장비 운영사업자 유지관리 교육",
+          "source": "에너지신문",
+          "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228210"
+        },
+        {
+          "title": "석유관리원, 수소 운송장비 운영사업자 유지관리 교육 개최",
+          "source": "부산일보",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE05bVV4SUpaSEdON0dMamlZVFNBdkVYSnpoY3FKSGg4NXROblJjR2psdzNON05SeWk2Ry1fVi1PdXBFMmhLQWV3LTNvRlozSnIyZklUSDl0RVNReWkwdlJMam11VU4ydGw5dXM2ZEd5NldtYVhJTnpQaFYtTQ?oc=5"
+        },
+        {
+          "title": "석유관리원, 수소 운송장비 운영사업자 유지관리 교육 개최",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQbXItNDZncElSai1MR0c4NmJyVDd6QUI2UEJQN3dHMHpyU0E0N0FxSlg4UWgwMGFlRC1RTzRYZFl5RGNGYkI0cjdUTGktVzhieGRXbndfYmhUS1YwS19MNXl1WUh6a3JfZXdIOXhFdGpXMTRZZ2txc2ZORU1UN1B1N2x0RUtfTEo0U2licUZLTjBCSjJFRExKaHN0dFpRXzhxZm9CcnlyX2s2ODRFMDM3N21TRmx6ZHFIVGxMdVZmRkVpdVlmQ2JwM2xZbDhFRjBDSlo1a1VHdV9QdkhJaFJCcHF5TnBuT21fYl9IMks5TzVxY1Y1TlJ2T1ZHUXNsTGdRRE5aaFV5dGIzcDBaeW5hOE5fREd0cllzMDBYdUJDQnlZUQ?oc=5"
+        },
+        {
+          "title": "석유관리원, 수소 운송장비 운영사업자 유지관리 교육",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8yeVRTVjJUNmlCWWpZMk5oaFpHU0QzZ2VfX1pXU2kzYWZoOFZvUUs1bGxacGxOMU81RVkzZEhDLXVvakw2QktQMHJweTRpckF3cmRxcWM5MGI1bWo3VjJwbExiQ3N6aUV1S0lLVkxoRi13QQ?oc=5"
+        },
+        {
+          "title": "한국석유관리원, 수소 운송장비 운영사업자 유지관리 교육",
+          "source": "글로벌에픽",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE94cTA1QmxDTUhoUkdxaTZjU19RZEs3Y0FFNHQ5LUZpMWg5MTVlZW12SnhIY1IwaVNZTnNpQXB6NE9jLTIyT3R1aHdtQTBDR0dJOHF1anMzVy10STV1dWtnbmFZaTVJcHBqQUpOWnNWVGlGVWJUbWo4VHZXWV8?oc=5"
+        },
+        {
+          "title": "석유관리원, 수소 운송장비 운영사업자 유지관리 교육 실시",
+          "source": "한국건설신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9BTzRlQmp4N2hwUU53RWhUbXk2WVljTEZ4WS1VeFdQYUlPQ2hsQnIydFF3ZDY0QWdpbEdDWldITVpSOUlWUEI2NDNxa0Y4RXJIbF9ULWM1RjhjSXh2N2RnSE03eGpFZzljSFpN?oc=5"
+        }
+      ],
+      "query": "한국석유관리원",
+      "id": "6b7d1290f10b"
+    },
+    {
+      "title": "뉴욕증시, 미국 국채금리·유가 동반 급등에 일제히 하락",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mM01LbmZBWWRFelZob1J4Qm9wcldmYjBVVnNULUpDVXJBT0NGa29RcW1kcExZUkt2RTJrTnMyT3AzWWFtcmtZb1lKSkV1VHc?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-16 06:54",
+      "summary": "뉴욕증시, 미국 국채금리·유가 동반 급등에 일제히 하락  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "0303c7ecf777"
+    },
+    {
+      "title": "뉴욕증시, 국제유가 고공행진, 국채금리 급등 등 영향 하락⋯알파벳 1%대, 스페이스X 3%대 하락-엔비디아 0.57%, AMD 2%대 상승",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91Y0lLdTBSMThqVGlXVF9iQUtpSWk1Z0FuOGhTcENFcnBjLVZaUXIzdlo5ZjhZdDdUWjk5dlFEekFJNnRDbVZ3bGUxVlhUdjRqQm9YMTJWZEQ4VDRrQ0hWUzY1Q2QyZUtaS1Bvd2xn?oc=5",
+      "source": "이코노뉴스",
+      "published": "2026-09-16 06:50",
+      "summary": "뉴욕증시, 국제유가 고공행진, 국채금리 급등 등 영향 하락⋯알파벳 1%대, 스페이스X 3%대 하락-엔비디아 0.57%, AMD 2%대 상승  이코노뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "dab00387e0a7"
+    },
+    {
+      "title": "유럽증시, 국제유가 고공행진 등 영향 일제히 떨어져⋯독일 0.15%-영국 0.37% 하락마감",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBuRUNYYWRjd3ItWmU5UVh6bFd4MkdPa3NqU0VfdVA2OHpGV0pUWFlTeDFRX2lfYUp2RF9NMUl5NDZ1b0tRRjEwQlFIU0x2UTNqd2R0cEZUMmZwbk92dHVBMjE5NC1iVmowLUpYUlROSQ?oc=5",
+      "source": "이코노뉴스",
+      "published": "2026-09-16 06:46",
+      "summary": "유럽증시, 국제유가 고공행진 등 영향 일제히 떨어져⋯독일 0.15%-영국 0.37% 하락마감  이코노뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "84ec1454caa2"
+    },
+    {
+      "title": "美 국채금리 5%·유가 100달러 돌파…코스피, 연이틀 하락 압력",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTbm8wUFJIVktWbmJLTkgwNTk5RTNhNUpyV1pxV0h0Ym50elF2bFdCQm43TzJFSzFaUjRVUHBpaTBhal9JY3diNGRMSE1QcWV4MjQ2WXRfU1lraDRGQU54VEJqOGpfcXdN?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-16 06:45",
+      "summary": "美 국채금리 5%·유가 100달러 돌파…코스피, 연이틀 하락 압력  ebn.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "5338ad9d8fe2"
+    },
+    {
+      "title": "사우디·리비아 공급 차질⋯국제유가 4개월 만에 최고",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kQVdHcFN5aEJGQnBvVFZMX2p2SVIzVmplMDVSTkh5aU9JMnpLR2NuR21ReVlBXzdkSUlJT0VBd21QUUxGOXJuRmFjRQ?oc=5",
+      "source": "아이뉴스24",
+      "published": "2026-09-16 06:36",
+      "summary": "사우디·리비아 공급 차질⋯국제유가 4개월 만에 최고  아이뉴스24",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "사우디·리비아 이중 타격에 국제유가 4개월만에 최고치",
+          "source": "헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QblNZVmJkQXozTU54bDNmblQ2VndoMEJfdUhZNDhxU3NWYzN5bmZtMUtBSFcwSG1hbXpMV1otMXJpZE94YnV6aWRaVUU4SVFFdjU2MDlR?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "dde7008c7d11"
+    },
+    {
+      "title": "치솟는 美 국채 금리·유가에 뉴욕증시 이틀 연속 일제히 하락 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWkFiVGhvSFM4YVFaa05YSk9HaG9UU0sta3ZNc1R4OTRBRWJ6M0ZWZFhjdEM5aXU2UFl2RzJhX0dkeUNQWWswV0F0X2Z6VnBRTENENE1iaWhTbmxFVndWMEdhQjIxU0gxcVpBa3hvRFczUHhVeDZSYzBIRy1HaGtFTGVzVzV2ZGhfOWRtYi1hQWxid1kwMGFHZXNwMDg3d9IBsgFBVV95cUxNUUwxQnpoUWRPSFY1dVl2QjBJUVhlQjRuYWJMS24wVW0xR0tZSVF0bkpnQTVBNUZ0UUQ2S3dJel9FamVHNXgtdkVSZXU1YmVVT1o2SC1WelZ2c2xWU0VIVE9aMkZOTm92Q2s1QXB5c3ZmN0JzOXdBV1BudEQzOGpwOVFlbHpaNEhUVEtPN29yZ0NiRGlvcktFTUJsQ3pPUGI2N0FzMDZtcnhEeDF4X2tJSDRn?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-09-16 06:26",
+      "summary": "치솟는 美 국채 금리·유가에 뉴욕증시 이틀 연속 일제히 하락 - 조선비즈  Chosunbiz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "b6c65271e4dd"
+    },
+    {
+      "title": "물가 안정 vs 정유사 손실⋯ 정부, 10차 석유 최고가 ‘딜레마’",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxbmsxaXlGNDVHQXdIV0pTR2doS1ZMM1c0My02R3V6TXA1VldSQlNvVnU1MXdlSzJCYl9kc3hHU0w3dkstOFRsU1NiUFg2b3Zpb3h2LXRickM0QQ?oc=5",
+      "source": "브릿지경제",
+      "published": "2026-09-16 06:26",
+      "summary": "물가 안정 vs 정유사 손실⋯ 정부, 10차 석유 최고가 ‘딜레마’  브릿지경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "d02a37968f8a"
+    },
+    {
+      "title": "에너지공단, 친환경차 정밀 검증 인프라 구축",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xRGZIRUVLaXNlN2szeHJncUxTMDdRVFhaNS03ZE9VUk4zWThqeE1weTU3VW83ZUhRNEJXbVVMZW92WWxGZW81Q1gxekppTUZJblZhRnR6ZnZCLWs3WXZSbzNiQ1o?oc=5",
+      "source": "일렉트릭파워",
+      "published": "2026-09-16 06:13",
+      "summary": "에너지공단, 친환경차 정밀 검증 인프라 구축  일렉트릭파워",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "에너지공단, 친환경 차량 시험·검증 인프라 준공",
+          "source": "투데이에너지",
+          "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303124"
+        }
+      ],
+      "query": "한국에너지공단",
+      "id": "7cde94038cfd"
+    },
+    {
+      "title": "[속보] 국제유가 상승…WTI 4.38%↑",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ROElmdm5Bc052QlB4RFpkbnc3ZnBPZjRXMTB6em50Ykp1ckNmdWJnR1lMblJ6dE9ob2FoMDhGTjRCc1ZMZHRDdXJMWTk0SGRXTWpwTGptbl9OaVZWT3JLTUY1TFRGamhLOVdma3loaHR4enVp?oc=5",
+      "source": "이투데이",
+      "published": "2026-09-16 06:11",
+      "summary": "[속보] 국제유가 상승…WTI 4.38%↑  이투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "073e96f144b6"
+    },
+    {
+      "title": "[뉴욕마켓워치] 폭주하는 금리와 유가에 속수무책…주식·채권↓달러↑",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1pQmMwR0hibGkzLXRJVVczeWxWNDQwOVgxMDA4QnhEN2pxdjRUY01nTXY0bWN3QlVQcm13YUlJU0h3YXFzajNJTlBEaTE2WmlDYV9yWHVsT1hZTGtHM1E4NGVDQkp0NkpXQnd3OTRZRmNOQQ?oc=5",
+      "source": "KB Think",
+      "published": "2026-09-16 06:10",
+      "summary": "[뉴욕마켓워치] 폭주하는 금리와 유가에 속수무책…주식·채권↓달러↑  KB Think",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "05a4bd4889fc"
+    },
+    {
+      "title": "국제유가 급등 ‘반짝 특수’에도… 웃지 못하는 정유업계",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9kMlc4VnN1eWhyVXlfaGx6N2NpZ1RJemk4V1d4cHVTazJVb0R5TUlxTTd4ajNXS3R5U0M2c2pXQ2EyaENSUHlxZmdjaVduZ1k?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-16 06:03",
+      "summary": "국제유가 급등 ‘반짝 특수’에도… 웃지 못하는 정유업계  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가 급등 ‘반짝 특수’에도… 웃지 못하는 정유업계",
+          "source": "세계일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1zLWtTUDNSWFlEek4wOGRrbXZrTjh4cEY4VlB1b3dQT21Nd3VPNWRWM1NvUWktMmI1YjB4RFJJV0lVVVFLY25seG53MVJFdDBJ?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "79ff328d2173"
+    },
+    {
+      "title": "[국제유가] \"사우디, 유럽행 원유 수출 일부 취소\"…브렌트유, 109달러 육박",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZdlJiY0JvMnU5ZXlLOTVjZzh3ZXBRRHpZS3NOdEhiNkdUQlpxZmtyMmM2Y09jbkY3bERPZ2R4TGQ0eTJfck9YbTFDQllBbmlEOWl5bjF5eGh4QQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-09-16 05:57",
+      "summary": "[국제유가] \"사우디, 유럽행 원유 수출 일부 취소\"…브렌트유, 109달러 육박  파이낸셜뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "ab73998c7bc5"
+    },
+    {
+      "title": "사우디 공급 차질 우려 심화…국제유가 약 4개월만 최고치",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPRFNXdFVYXzdqMk1RTXdjVk8xN1JoSU4zNnctYWJhd2FHalNXSHlGQzluYmxUQkV3eUFxdno0aGxCaEpFRVoxVUJBODFQemUwbVliXzN2c2E2dmJXcXN2RF9ycG0wTDQ?oc=5",
+      "source": "연합뉴스TV",
+      "published": "2026-09-16 05:54",
+      "summary": "사우디 공급 차질 우려 심화…국제유가 약 4개월만 최고치  연합뉴스TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "ba4128bc83d5"
+    },
+    {
+      "title": "미 국채금리·국제 유가 상승… 뉴욕증시 일제히 하락 마감",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrSXFLckprNnFTR0V0ZUh3bk1iekc3UmNKa3RCTFVxUjZQenhkZlYyakZQWl9iR1pVNFdxWDB0Z0lsR1V5THJDOTlTdm5ab0w3R3JyX2plM1QxQk9LUnNJZHVlWm51TEXSAWxBVV95cUxPa05venFXQkJ1V1U2YW8tTlp0WWZyVUNiV3FndWg0WDlTM1FvSGtpbnJGV25JT2VfdXNad0R5RzZaeTF0T3BlY0Q3cmhSZEZJMU9HbkwtWEVoNVRDYVM0YUJVUDZ6WXdjbGxTSGs?oc=5",
+      "source": "kmib.co.kr",
+      "published": "2026-09-16 05:49",
+      "summary": "미 국채금리·국제 유가 상승… 뉴욕증시 일제히 하락 마감  kmib.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "美국채 금리·유가 상승 지속…뉴욕증시 일제히 하락",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE00LU1qSm1DMkFEX290R29SUjhiWHFDQlB0RXlCbTZpQVFYU0Z1Y2ZMUEEzaXFfYmx6Zm5wRUZHSElqaFN4VFVRRm9vbWxUOENzdnhpQUFrSUVLZ2_SAWBBVV95cUxQWlJncEdqSldyZTZsMmRjWUc5QlE5TmhZWUZYa2JMaDlnNWNNekVpYTBqRVpiQ3Babk9OcWhaQzNyTWdrbGlCNW9TOWNYcExfd2RDbnVlQjRGNmpxSHpueUM?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "2432e09b3f78"
+    },
+    {
+      "title": "금리·유가 발작…긴축 공포에 눌린 시장[뉴욕마감] - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9kdHZ5ZnFBaXNUbVNDVG55ZkctM1VzUjB1TXl6Y3VpUXBEZzRKT0JvN2I5X1NjTm9wTlV3VF82Y1pVOEQ0SVd4WkFQOXpmSGNBOGdqdUc1TUdpdUJrY2djdWJvbHYzT2lI0gFuQVVfeXFMTzVwQVBXY19WN2k4VnJ0M0FVYl9FVnNtQm5qX0gwQ3B4UFdJR0JIcXI4RzZqWElPanFWdzg0ODVpV0FVcEY3V0VBU3RENnNSaEZJUUtvdk9DdlI3NzVadWh0d0ZSUUtNb3NHZUppM3c?oc=5",
+      "source": "머니투데이",
+      "published": "2026-09-16 05:49",
+      "summary": "금리·유가 발작…긴축 공포에 눌린 시장[뉴욕마감] - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "943c2d11a9a3"
+    },
+    {
+      "title": "뉴욕 증시, 유가 급등에 하락...美국채 10년물 금리 19년만에 최고 [데일리국제금융]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FM3ZJNjJSeG1ZWlFxSVB3QTYtVEpZV0tnUXhVZUFvZU5FbHpvdm15Tzh4X0plbTFKbmFGb0hsR016S0RKNXVkWGkzTTFLREY3SGfSAVNBVV95cUxQdFBVSmhUMHFBWFVWQ3NKUzJJR1VWTDhLOFFnZ09fc2hIY01jd3VLeHh6U01tb2JaMUpBWkY3MXhFeDA1VWkxS2FiV2x5M2VWWVJpVQ?oc=5",
+      "source": "서울경제",
+      "published": "2026-09-16 05:42",
+      "summary": "뉴욕 증시, 유가 급등에 하락...美국채 10년물 금리 19년만에 최고 [데일리국제금융]  서울경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "677dbc56ab23"
+    },
+    {
+      "title": "사우디 공급 차질 우려 심화‥국제유가 5월 19일 이후 최고",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5HYjB6eUhleE5TOHRoUXQxTl9WNndQYVV6bzRZUnB4UFpoN19XdXBKUlhhM1BCZ0gzbzA3NnNhTnZJZFgwendoa0ZxSnlpTms2RnpnOWxoM3lUQVpkMC14UDViQnRjUkZESkxJc3JvQmFmOEl10gF0QVVfeXFMTkdiMHp5SGV4TlM4dGhRdDFOX1Y2d1BhVXpvNFlScHhQWmg3X1d1cEpSWGEzUEJnSDNvMDc2c2FOdklkWDB6d2hrRnFKeWlOazZGemc5bGgzeVRBWmQwLXhQNWJCdGNSRkRKTElzcm9CYWY4SXU?oc=5",
+      "source": "MBC 뉴스",
+      "published": "2026-09-16 05:34",
+      "summary": "사우디 공급 차질 우려 심화‥국제유가 5월 19일 이후 최고  MBC 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "사우디 공급 차질 우려 심화…국제유가 5월 19일 이후 최고",
+          "source": "news.sbs.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZUzE4UWJLVEJQTV9ZRGN4eVBrOERZUXh5bmtNa1NTck5IU2w4RHdtMUF5dW9xWlJDNVdVbThEUW9tUFhpd2ZNUE1aTXRkZzhIVW9GcGl6QmlHcDJUZXkxTjJOZC1BYVg3d3c?oc=5"
+        },
+        {
+          "title": "사우디 공급 차질 우려 심화…국제유가 5월 19일 이후 최고",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAtejJNWEZ2a0hZWnFNeHN3X0dWOTVRWTY4Mno1UDltZk9OclR1eVNHeHBCTmVVUFV2azJyenBJLTRmaEhzcjM0ZmFhLWlzM1RjbWRwbkg4YS1ua1nSAWBBVV95cUxQZ0FTMktoQ1RmbVU2TVUtRm05czJOOVk2c0p4OFcyVjJrM3dzV0kyNGZQRkRpSmVTMEE4akZ6OXhUaVJPNUxZSU16NWhMX3FidGlmRmhTNFhsVFVpUFJROGQ?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "9960657a43dc"
+    },
+    {
+      "title": "국제유가 110달러 눈앞…4개월 만에 최고 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkQ2xpbUl5YVZoWVNtck45QWF4eUcxNG1CdGxTV2wzVEFSTldrd1ZhRkdVNF9FZmVHODBaYTNWNEoyYWRqaGJoc21DeGd6RFNWQlNqRDRlcy1pTHlIVkVET0g4ejJWdEha0gFuQVVfeXFMTXB4RHkwa3pLVWtZOExNLXV6WlhXU09lY21ndS1VUy1CZ25NMlFrNUMtbjBhXzRFalNZLU5nMDFoZEMyY1hjVGZJakdQS2VCUkZxV1J1QnZyZ2x0cXZyUkpJVFd2bVp3MWoyVERwaFE?oc=5",
+      "source": "머니투데이",
+      "published": "2026-09-16 05:28",
+      "summary": "국제유가 110달러 눈앞…4개월 만에 최고 - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가 110달러 눈앞…4개월 만에 최고 - 머니투데이",
+          "source": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9CZlZoVDZSR05YR0FVN09HVHRKUTRFXzV5czJvQkx0YS1uT1NsNmpRcFF4TnhCcWl2ZloyQXAwcDlwcWVLZ0J2OFlyVFN2MEIwNUJmVVdHZmRRQjBGU2xXaVRETGpvejhVbDJwdkZfNXBZMHhfeWfSAXtBVV95cUxNMHlWUm9jQUNScFQxY0xGOExweGhyNWo0cTRBR0pqQkdPM1dsdWhfZ2xCZ2hkVnV4eHI2N0ZpODU1WV8wV2lsTDM0aGdXaUhqVV9RaDhXZ0w5MW1OcHJHNkRyS0huWXRRcFdMZlhON0tqN1NVb1BPdFlRYk0?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "02563aed764f"
+    },
+    {
+      "title": "고유가 위기에 휘발유 흥청망청, 최고가격제 손봐야",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kM0FCNm8xQW1nMDRUbmdfaUtWSUFZcmVUTE50LUk4dU02dVl1eHVOY05STVh0Zk93NmlGUGc2VktBNDlwWGRQeWo5MU5IV2haeXRveEFhYlZiQmVSN0hoc3NCV3ZnR25sSVpBRkllZ3NVWVE?oc=5",
+      "source": "마켓인",
+      "published": "2026-09-16 05:00",
+      "summary": "고유가 위기에 휘발유 흥청망청, 최고가격제 손봐야  마켓인",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "6d7c5005ba07"
+    },
+    {
+      "title": "호르무즈 쇼크에 일본 에너지전략 재편…‘원전 최대 활용’ POWERR GX 가속",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9SQ0FVaGhQZl92dkN4alk1MVIwa29iYW5HQmI0ZlVzUjg3RG9TQjF2X2pVYS1IWVhhUk1oTzBjWElJSzZJVXptYTMtZHNLaWd5WVdVeW13RWswd2NPbE54SXEtM2Q?oc=5",
+      "source": "에너지안전신문",
+      "published": "2026-09-16 04:46",
+      "summary": "호르무즈 쇼크에 일본 에너지전략 재편…‘원전 최대 활용’ POWERR GX 가속  에너지안전신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "e713b1413aaa"
+    },
+    {
+      "title": "[단독] 법정단체 출범 후 첫 행보…청와대 이유진 기후에너지환경비서관, 에너지업계 공식석상 등장 눈길",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81TGxfQk9YZGxWYWVSLTRTcUlTWHR0VFU3My1uMVZDUlRBTkI3MVp2VTVZUXVhZGpLM2NEbEpLbFMwcVA5REJ1dTNabkpLOGNZZVVsUmkyZVBsT2k3ZEMwMEdlemNZdms?oc=5",
+      "source": "산경e뉴스",
+      "published": "2026-09-16 04:22",
+      "summary": "[단독] 법정단체 출범 후 첫 행보…청와대 이유진 기후에너지환경비서관, 에너지업계 공식석상 등장 눈길  산경e뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "73f3a4165211"
+    },
+    {
+      "title": "[사설]언제까지 세금으로 기름값 메워주나 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5hN3FSZk03NHZWWTBkTGdDeVJ2WHR2NVAwNUY1b1ZvMFY3WmRucmljdVBVYzJLOFpSdkg0eUhCTXM2ekxLTHU2MFN2RmRqeVFZbGFXN190Z1NvYm1PVDhJOTdieWNGWTVlSzVJd0lfSVlMRXR1QU1Oc9IBfkFVX3lxTE85czdxb3FZd2k1a3JiZ0xpUWZGekNfVWRpRUM3ZFJtc2xBYWNQVUxiNjc4WW9yQ2R2R2w4MmxUamtkS25vZlBOaXdJOFVPWklpbmtOb01wMFZEUnJYMl9qTkVlczBFYWR3SDBtVXI4STB1b3FYZjVpMHA1aGMydw?oc=5",
+      "source": "머니투데이",
+      "published": "2026-09-16 04:00",
+      "summary": "[사설]언제까지 세금으로 기름값 메워주나 - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "68628fad3186"
+    },
+    {
+      "title": "“에너지공단, 친환경차 시험·연구 인프라 확대했다”",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203252",
+      "source": "에너지데일리",
+      "published": "2026-09-16 03:13",
+      "summary": "[에너지데일리 변국영 기자 ] 한국에너지공단은 친환경차에 대한 다양한 시험·연구를 확대해 나갈 수 있게 됐다. 공단은 15일 충청북도 진천군에 위치한 공단 자동차연비센터에서 산업부, 충북도 및 진천군, 자동차 업계 관계자들이 참석한 가운데 ‘친환경차 검증 시험동 준공식’을 개최했다.공단은 친환경차의 특성을 반영한 기술기준과 시험방법을 지속적으로 연구·개발해 왔으며 이번 시험동 준공을 통해 이를 뒷받침할 전문 시험 인프라를 확충했다.부지 조성과 건축, 시험장비 구축 등에 총 185억원이 투입된 친환경차 검증 시험동은 연면적 1950㎡",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "“에너지공단, 친환경차 시험·연구 인프라 확대했다”",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5pd0hYSFNGZE5EbEFLaDVZUVVLQ1M0and6YThNT0tsVkpZdVZQQ3pQQXVaSXZ0RGlvVl9qc0Z4QjhVN2Q3SFZKTjgyS3NxeE5vR0ZIRUFpN2VEc0NhR1FpV01tckRlNjJHWWhzR2c2elZVZw?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "id": "43e65678d155"
+    },
+    {
+      "title": "한수원, ‘2026 국가공헌대상’ 3년 연속 대상 수상",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203250",
+      "source": "에너지데일리",
+      "published": "2026-09-16 03:03",
+      "summary": "[에너지데일리 송병훈 기자] 한국수력원자력(사장 김회천)이 ‘2026 국가공헌대상’에서 3년 연속 환경·사회·투명경영(ESG) 대상을 수상하며 지속가능경영 능력을 다시 한번 입증했다.15일 서울 가든호텔에서 개최된 ‘2026 국가공헌대상’은 재정경제부, 산업통상부 등 17개 정부 부처가 국가의 지속가능한 성장에 기여한 기관을 선정해 시상하는 행사다. 한수원은 무탄소 전원 확대와 친환경 에너지 생태계 조성에 앞장서 온 공로를 높이 평가받았다.한수원은 안전한 원전 운영과 함께 청정수소, 재생에너지 등 무탄소 에너지 사업 포트폴리오를 지",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "2fcbbb15ca75"
+    },
+    {
+      "title": "“햇빛소득마을 사업, 레스코 역할 중요하다”",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203249",
+      "source": "에너지데일리",
+      "published": "2026-09-16 02:55",
+      "summary": "[에너지데일리 변국영 기자 ] 한국에너지공단이 햇빛소득마을 사업 지원 기업의 책임 있는 역할을 강조했다.한국에너지공단은 15일 청주오스코 그랜드볼룸에서 ‘재생에너지 종합서비스기업(레스코(ReSCO)’) 종합 설명회’를 개최했다.재생에너지 종합 서비스 기업(ReSCO)은 지역주민 소득 증대 및 지역 경제 활성화에 기여하는 햇빛소득마을 사업과 같은 태양광 발전사업을 안정적으로 시작하고 운영할 수 있도록 사업 기획부터 설계·시공, 운영관리까지 사업 전반을 지원하는 기업이다.설명회는 지난 7월 31일 햇빛소득마을 1차 공모 선정 및 9월",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "“햇빛소득마을 사업, 레스코 역할 중요하다”",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tR1FqazRHZjhxdGh1QkhSLWpfRFRZdnRoT280bGRnNHdzdWlBNkRDdE5JX05zeklfRHkzcm55U1ZhNzB5UnJsZFMxcjYwdXZOYmRhS1MzVEMweFNMSnRXQ1Z0TWV1c2o5TmdXMXM4VlBZZw?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "id": "a86f07033481"
+    },
+    {
+      "title": "구례군의회, 재생에너지 발전설비 이격거리 기준 마련 나서",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9QaXlZeHphdVJSUDJhNDVpWDZZU2VKQUlCcGdjYVpBT1Z2M2ppRENNVENkZ1JjTkFOUGNSMmtRR1gzZE5KTEVyYXFBUkp0WUVEMzczNA?oc=5",
+      "source": "시사의창",
+      "published": "2026-09-16 02:54",
+      "summary": "구례군의회, 재생에너지 발전설비 이격거리 기준 마련 나서  시사의창",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "870b12086093"
+    },
+    {
+      "title": "기후변화재단, 국회토론회서 MRV 구축 논의",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303129",
+      "source": "투데이에너지",
+      "published": "2026-09-16 02:42",
+      "summary": "메탄 감축 목표 이행 및 NDC 달성을 위한 LNG 공급망 MRV 정책 방안 마련 토론회 / 기후변화재단 제공\n\n\n\n[투데이에너지 김병민 기자] 국제사회의 메탄 감축 노력이 강화되는 가운데, 국내에서도 메탄 배출량을 직접 측정·검증하는 방식으로 관리 체계를 전환해야 한다는 제안이 나왔다. 국내 LNG발전소와 산업단지에서 높은 메탄 농도가 지속적으로 관측되는 상황에서, 실측 데이터를 확보해 실효성 있는 감축과 공급망 관리로 연결해야 한다는 지적이다.\n\n15일 국회의원회관에서는 이용우·김소희·차지호 국회의원실이 공동 주최하고 (재)기후",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "984e0c91c370"
+    },
+    {
+      "title": "기후부 ‘송전망 건설 수용성 제고방안’ 마련",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303125",
+      "source": "투데이에너지",
+      "published": "2026-09-16 02:41",
+      "summary": "김성환 기후에너지환경부 장관이 지난 2월 10일 출입기자단과 신년 간담회를 하고 있다. /기후부 제공\n\n\n\n[투데이에너지 이종수 기자] 김성환 기후에너지환경부 장관이15일 ‘송전망 건설 수용성 제고방안’을 국무회의에 보고했다.  \n\n반도체, 데이터센터 등 첨단산업을 중심으로 전력수요가 빠르게 증가하고 재생에너지 보급도 확대되면서 적기에 전력망을 확충하는 것이 국가적 주요 과제이다. 이를 위해 송전망 주변지역 주민의 수용성을 높이는 것이 무엇보다 시급한 상황이다.\n\n기후에너지환경부가 마련한 ‘송전망 건설 수용성 제고방안’을 보면 먼저",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "9a788fdf1d05"
+    },
+    {
+      "title": "송전망 건설, ‘주민 수용성’ 중심 전환… 철탑 40% 줄이고 마을 태양광 지원",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203247",
+      "source": "에너지데일리",
+      "published": "2026-09-16 02:41",
+      "summary": "[에너지데일리 송병훈 기자] 반도체와 데이터센터 등 첨단산업의 전력 수요가 급증하고 재생에너지 보급이 확대되면서 송전망 확충이 국가적 과제로 떠오른 가운데, 정부가 송전망 건설 과정에서 반복돼 온 지역 주민들의 반발을 줄이기 위한 대책을 내놨다. 신규 철탑을 최대한 줄이고 주민 밀집지역의 지중화를 확대하는 한편, 송전망 주변 마을에 태양광 발전을 지원해 주민들에게 직접적인 소득이 돌아가도록 하는 것이 핵심이다. 송전망 건설의 ‘속도’에만 초점을 맞추기보다 주민 참여와 지역 혜택을 통해 사회적 수용성을 높이는 방향으로 정책의 무게중심",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "afe0b7d739ad"
+    },
+    {
+      "title": "“폐자원 내 핵심광물 확보, 규제특례로 지원한다”",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203246",
+      "source": "에너지데일리",
+      "published": "2026-09-16 02:37",
+      "summary": "[에너지데일리 변국영 기자 ] 정부가 규제특례를 통해 폐자원 내 핵심광물 확보를 지원한다. 기후에너지환경부는 반도체 공정 발생 폐자원 내 핵심광물 회수 등 순환경제 분야 ‘기획형 규제특례(샌드박스)’ 3건의 과제를 추진할 사업자를 9월 16일부터 10월 30일까지 모집한다.‘순환경제 규제특례’는 한정된 기간, 장소, 규모에서 기업의 새로운 기술과 서비스를 실증할 수 있도록 허용하고 그 결과 안전성과 유효성이 입증되면 관련 규제를 개선하거나 보완하는 제도로 2024년 1월에 도입됐다.이번에는 정부가 과제를 제안하고 사업자를 모집하는",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "35296ee6da05"
+    },
+    {
+      "title": "한전KDN, 공식 소통 캐릭터 ‘케어캣’ 선봬",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303122",
+      "source": "투데이에너지",
+      "published": "2026-09-16 02:18",
+      "summary": "소통 캐릭터 '케어캣' 제막식에 참석한 박상형 한전KDN 사장(왼쪽)과 김미경 담당자가 기념사진을 촬영하고 있다. /한전KDN 제공\n\n\n\n[투데이에너지 이종수 기자] 에너지ICT 전문 공기업 한전KDN(사장 박상형)은 지난 14일 전남광주통합특별시 빛가람혁신도시 본사 1층 일대에서 공식 소통 캐릭터 ‘케어캣’을 선보이며 ‘케어캣과 함께하는 국민소통 DAY’를 개최했다고 밝혔다.\n\n이날 행사는 국민의 눈높이에 맞춘 친근한 소통 수단을 마련하고 감성적 유대를 형성하기 위해 기획됐다.\n\n특히 행사의 주역이 된 공식 소통 캐릭터 ‘케어캣’",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "5c7762b82428"
+    },
+    {
+      "title": "“15년 운영된 RPS, 계약시장제도로 전환된다”",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203245",
+      "source": "에너지데일리",
+      "published": "2026-09-16 02:17",
+      "summary": "[에너지데일리 변국영 기자 ] 15년간 운영됐던 재생에너지 공급의무화 제도(RPS)가 계약시장제도로 전환된다.현행 RPS 제도를 경쟁입찰 기반의 ‘계약시장 제도’로 일원화하는 방향으로 개편하는 ‘재생에너지 개발·이용·보급 촉진법’ 개정법률이 15일 공포됐다. 개정법률은 내년 1월 1일부터 시행될 예정이다.내년부터 신규 재생에너지 설비는 발전원별 계약시장에서 정부가 제시한 상한가격 이내에서 경쟁해 낙찰 받고 낙찰된 설비는 한국전력공사와 장기 고정가격으로 전력 구매계약을 체결한다. 이러한 구조는 사업자의 안정적인 수익을 보장함으로써 금",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "5b02cf81a945"
+    },
+    {
+      "title": "“에너지안보·탄소중립 ‘두 토끼’ 잡을 컨트롤타워 세워야”",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE83TTB4VWg4OWZOLXpHRElfU2lHNV8zLUpvTDZaUkg1RVlXWDZMNEJCbi05TU5MVXc1RzJnWk8wbDhhMWZyOFlHQktGWVFla28?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-16 02:14",
+      "summary": "“에너지안보·탄소중립 ‘두 토끼’ 잡을 컨트롤타워 세워야”  v.daum.net",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "aa074c70172a"
+    },
+    {
+      "title": "조선·해운산업 탄소중립 전환…중소선사 경쟁력 강화 해법 모색",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228214",
+      "source": "에너지신문",
+      "published": "2026-09-16 02:13",
+      "summary": "[에너지신문] 국제해사기구(IMO)와 유럽연합(EU)의 탄소중립 규제가 강화되고 디지털 전환이 본격화되면서 국내 조선·해운산업의 경쟁력 제고와 중소선사의 친환경 전환을 지원하기 위한 정책 논의가 이뤄진다.더불어민주당 이재관 의원(충남 천안을)은 17일 10시 30분 국회 의원회관 제3간담회의실에서 ‘조선·해운산업 탄소중립 전환과 중소선사의 미래를 위한 정책토론회’를 개최한다.이번 토론회는 글로벌 해운산업을 둘러싼 탄소중립 규제가 강화되는 가운데 국내 조선·해운산업의 대응 역량을 높이고 상대적으로 전환 여력이 부족한 중소선사의 친환경",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "1875a038c671"
+    },
+    {
+      "title": "텔로스, 경찰청 CAIO AI교육사업 추진…공공기관 AI 교육 확대",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334283",
+      "source": "이투뉴스",
+      "published": "2026-09-16 02:00",
+      "summary": "기업교육 전문기업 텔로스(대표 황큰별)가 동국대학교 경찰사법대학원과 함께 경찰청 '치안AI최고책임자(CAIO) 1기 AI교육사업'을 추진한다고 밝혔다.이번 사업은 8월부터 12월까지 총 16주간 진행된다. 경찰청 총경급 등 고위 간부를 대상으로 미래 치안 트렌드와 AI 기반 경찰 업무 혁신을 교육해 AI 리더를 육성하는 것이 목표다. 본 과정에는 빅데이터 및 트렌드 분석 전문가 송길영 작가, 김덕진 IT커뮤니케이션연구소장이 강의를 진행했으며, 이어 김미경, 이지영 강사를 비롯한 각 분야 전문가들이 교육에 참여할 예정이다.주관기관인",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "97548dc3298e"
+    },
+    {
+      "title": "석유관리원, 수소 운송장비 안전하고 효율적인 운영 지원",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203243",
+      "source": "에너지데일리",
+      "published": "2026-09-16 01:37",
+      "summary": "[에너지데일리 변국영 기자 ] 한국석유관리원이 수소 운송장비의 안전하고 효율적인 운영을 지원했다.석유관리원은 15일 전북 완주에서 수소 운송장비 구매·임대지원 사업자를 대상으로 ‘수소 운송장비 운영사업자 유지관리 교육’을 개최했다.이번 교육은 수소 운송장비의 안정적인 운영과 효율적인 활용을 위해 사업자별로 상이한 수소 튜브트레일러 관리 방식을 보완하고 체계적인 유지관리 및 안전점검 역량을 강화하기 위해 마련됐다.이번 교육에는 2023년부터 2026년까지 수소 운송장비 구매·임대지원 사업에 참여한 사업자 및 관계자 약 50여명이 참석",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유관리원, 수소 운송장비 안전하고 효율적인 운영 지원",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE93VUJnNnVrRmduUno0ZUVpMEFYS2FGY0x2YktjWENrUldycWNrY2c4cWszRE80N0t4ZE9ENFFoUE5oYUNLNUo1ejVXZzNnOGxDTTkwSmxFbkdMSHNKR0dOOVFVaW1xYUhteW1zMHBSdlFjZw?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "id": "bf1377db0696"
+    },
+    {
+      "title": "남부발전 ‘기술이전 밸류-업 사업’ 추진",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303113",
+      "source": "투데이에너지",
+      "published": "2026-09-16 01:33",
+      "summary": "‘기술이전 밸류-업 지원사업’ 소개 이미지 /한국남부발전 제공\n\n\n\n[투데이에너지 이종수 기자] 한국남부발전(사장 김준동, 이하 ‘남부발전’)은 에너지 공기업 최초로 이전된 특허 기술의 고도화와 실질적인 사업화 성과 창출을 돕는 ‘기술이전 밸류-업’ 지원사업을 시행한다고 15일 밝혔다.\n\n남부발전은 후속 개량특허 출원과 제품 매출 발생 시 성과 인센티브를 지급하는 방식을 도입해 이전 기술이 단순 이전에서 그치지 않고 실질적인 사업 성과로 연결되는 ‘기술 선순환 생태계’를 구축한다는 구상이다.\n\n지원 대상은 남부발전과 기술이전 계약을",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "5818070dca80"
+    },
+    {
+      "title": "한국에너지공단, 햇빛소득마을 사업 앞두고 레스코(ReSCO) 설명회 개최",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tV01ZTWctQ0lRQkxSU3ZERUtLNzlrRTJSY19iS2ZGUi0wdTdBbFdmQ2NQcl9XSmFrTGZudWZjS0x4VXd2dGwtZkYwRk1fTWxZMmo2LWJUTEhkQkZBeHBCNnQ3Snd4OEFjRUhKZnpB?oc=5",
+      "source": "투어코리아",
+      "published": "2026-09-16 01:26",
+      "summary": "한국에너지공단, 햇빛소득마을 사업 앞두고 레스코(ReSCO) 설명회 개최  투어코리아",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "에너지공단, 햇빛소득마을 ReSCO 종합설명회",
+          "source": "이투뉴스",
+          "url": "http://www.e2news.com/news/articleView.html?idxno=334268"
+        }
+      ],
+      "query": "한국에너지공단",
+      "id": "894be0b82706"
+    },
+    {
+      "title": "전기산업연합회, 제1차 에너지산업 수출 혁신포럼 개최",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303107",
+      "source": "투데이에너지",
+      "published": "2026-09-16 01:13",
+      "summary": "‘제1차 에너지산업 수출 혁신포럼’이 진행되고 있다. /대한전기산업연합회 제공\n\n\n\n[투데이에너지 이종수 기자] 대한전기산업연합회(회장 김동철, 이하 연합회)가 15일 서울 중구 소공동 롯데호텔에서 ‘제1차 에너지산업 수출 혁신포럼’을 개최했다. \n\n이번 포럼은 정부의 에너지 및 전력기자재 수출 기조에 발맞춰 연합회가 정부와 산업현장을 잇는 가교 역할을 확대하고, 수출과정에서 기업들이 겪는 애로사항을 상시 청취하기 위해 마련됐다.\n\n포럼에는 이유진 대통령실 기후에너지환경비서관, 문양택 기후에너지환경부 전력산업정책관, 노용호 연합회 ",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "1dcec4323223"
+    },
+    {
+      "title": "정부-공공기관-기업, 취약계층 어린이 실내환경 개선 힘 모았다",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203225",
+      "source": "에너지데일리",
+      "published": "2026-09-16 01:00",
+      "summary": "[에너지데일리 양미애 기자] 기후에너지환경부(장관 김성환)와 한국환경산업기술원(원장 남광우)은 16일 데레사의 집(서울 은평구 소재)을 찾아 취약계층 어린이들이 보다 건강하고 쾌적한 환경에서 생활할 수 있도록 실내환경 개선 봉사활동을 펼쳤다고 밝혔다.이번 봉사활동은 지난 6월11일, 정부와 17개 기업이 체결한 ‘2026년 환경보건취약계층 실내환경 개선을 위한 업무협약’에서 기업들이 제안한 사회공헌활동의 일환으로 마련됐으며, 봉사활동 당일에는 세스코, 슈가에코, 엘엑스하우시스, 엘지생활건강 등의 기업이 함께 했다.이날 현장에서는 참",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "a48a93e5aa0a"
+    },
+    {
+      "title": "美 국채금리, 국제유가와 동조화…인플레 우려 속 시장 압박",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBLdW9QeUV2bzFsUWdrZGUwVEd2NXdBUEZBNndPbUZFcGZlZFZCN2hPSUg0eDRVdW13cmZBd0k0MjVMQVFjcURBbDQ1Y0VMLTRhZWFRRmdlX2tTWjlWTHJ3cU5NMnMwekdU0gFsQVVfeXFMTUlsV25CeGhheW5Wc294amtPVXdXNDJYZ1ZzbEdOTjI2SlpGMWE5MTByaEp6dDV1YXI5WlFMQ1NYSVpRMC1VTklvV01IY3QydWdpRll4cWhDbTg4bWJVekNSSWZMandZejZ1SGxJ?oc=5",
+      "source": "블로터",
+      "published": "2026-09-16 00:57",
+      "summary": "美 국채금리, 국제유가와 동조화…인플레 우려 속 시장 압박  블로터",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "b44737bda78e"
+    },
+    {
+      "title": "한전KDN, 소통 캐릭터 '케어캣' 공개…  '국민소통 DAY' 소통 행보",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203238",
+      "source": "에너지데일리",
+      "published": "2026-09-16 00:47",
+      "summary": "[에너지데일리 송병훈 기자] 에너지ICT 전문 공기업 한전KDN이 딱딱한 공기업 이미지를 벗고 국민과의 접점을 넓히기 위한 새로운 소통 행보에 나섰다. 공식 소통 캐릭터 ‘케어캣’을 앞세워 국민에게 한층 친근하게 다가가는 동시에, 캐릭터를 활용한 온·오프라인 소통을 강화해 국민 체감형 브랜드 구축에 나선 것이다.한전KDN(사장 박상형)은 지난 14일 전남광주통합특별시 빛가람혁신도시 본사 1층 일대에서 공식 소통 캐릭터 ‘케어캣’을 공개하고 ‘케어캣과 함께하는 국민소통 DAY’를 개최했다고 15일 밝혔다.이번 행사는 에너지ICT라는",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "58fd4328f8b1"
+    },
+    {
+      "title": "남부발전, ‘기술이전 밸류-업’ 가동… 공공기술 사업화 성과 만든다",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203236",
+      "source": "에너지데일리",
+      "published": "2026-09-16 00:39",
+      "summary": "[에너지데일리 송병훈 기자] 공공기관이 보유한 기술을 중소기업에 이전하는 데 그치지 않고 후속 기술개발과 제품 매출까지 지원하는 ‘기술사업화 전주기 지원’이 본격화된다. 한국남부발전이 에너지 공기업 최초로 이전 특허의 고도화와 사업화 성과를 직접 지원하는 프로그램을 도입하면서, 공공기술의 활용도를 높이고 중소기업의 실질적인 성장으로 연결하는 새로운 동반성장 모델이 주목된다.한국남부발전(사장 김준동)은 이전된 특허 기술의 고도화와 실질적인 사업화 성과 창출을 지원하는 ‘기술이전 밸류-업’ 지원사업을 시행한다고 15일 밝혔다.이번 사업",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "327baf7e6219"
+    },
+    {
+      "title": "천연가스 소비 늘었지만 도시가스 공급 감소…용도별 수요 ‘엇갈림’",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203234",
+      "source": "에너지데일리",
+      "published": "2026-09-16 00:31",
+      "summary": "[에너지데일리 조남준 기자] 2026년 1분기 천연가스 소비가 전년 동기보다 증가한 반면 도시가스 공급은 감소하면서 용도별 수요 흐름이 엇갈렸다. 발전·열생산에 투입된 천연가스와 산업 부문의 직접 소비는 늘었지만, 도시가스 공급망을 통한 산업용과 가정 난방용 공급은 줄었다. 전체 소비 증가만으로 가스 수요가 전반적으로 회복됐다고 판단하기보다 공급경로와 사용 목적을 나눠 살펴볼 필요가 있다.한국가스연맹이 15일 제공한 에너지경제연구원 잠정 통계에 따르면 1분기 천연가스 소비는 1543만1000톤으로, 전년 동기보다 48만7000톤,",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "6576f03b1666"
+    },
+    {
+      "title": "9, 10월 원유수급 괜찮다지만… 겨울 길목 ‘11월 위기설’ 나와",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE01TGM2VzdVdjZZVDE2b2ZjMk4zQl9nUGg5WmlyUnBKQVRwMU5wVGVURE5na0xsUTNsdGQ3THhUekZEX21fQUJmWmNPcDlrUGd6MVptbHEzZ1BKekozby1SVElveUV4QdIBZkFVX3lxTE01TGM2VzdVdjZZVDE2b2ZjMk4zQl9nUGg5WmlyUnBKQVRwMU5wVGVURE5na0xsUTNsdGQ3THhUekZEX21fQUJmWmNPcDlrUGd6MVptbHEzZ1BKekozby1SVElveUV4QQ?oc=5",
+      "source": "동아일보",
+      "published": "2026-09-16 00:30",
+      "summary": "9, 10월 원유수급 괜찮다지만… 겨울 길목 ‘11월 위기설’ 나와  동아일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "2f27b8d37b89"
+    },
+    {
+      "title": "8월 LNG 수입 31.6% 감소…물량 줄어도 단가 부담은 여전",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203232",
+      "source": "에너지데일리",
+      "published": "2026-09-16 00:30",
+      "summary": "[에너지데일리 조남준 기자 ] 올해 8월 국내 액화천연가스(LNG) 수입량이 전년 동월보다 31.6% 감소했지만 수입금액 감소율은 12.3%에 그쳤다. 물량 축소로 전체 수입 지출은 줄었으나 톤당 평균 수입금액은 지난해 같은 달보다 높은 수준을 유지한 것이다. 다만 수입량 감소를 곧바로 국내 가스 수요 위축이나 도입가격 안정으로 해석하기보다 재고와 입항 일정, 계약별 가격조건을 구분해 살펴볼 필요가 있다는 의견이다.한국가스연맹이 15일 제공한 관세청 기반 LNG 수입통계에 따르면 2026년 8월 수입량은 315만2092.4톤으로,",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "47ce49e4ca22"
+    },
+    {
+      "title": "15년 만에 RPS 폐지...내년부터 경쟁입찰 계약 전환",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334265",
+      "source": "이투뉴스",
+      "published": "2026-09-16 00:28",
+      "summary": "[이투뉴스] 2012년 도입돼 국내 재생에너지 보급을 이끌어온 재생에너지 공급의무화제도(RPS)가 15년 만에 폐지되고 내년부터는 정부 경쟁입찰 기반의 장기고정가격 계약시장 제도로 전환된다.기후에너지환경부는 RPS 제도를 경쟁입찰 기반의 ‘계약시장 제도’로 일원화하는 ‘재생에너지 개발·이용·보급 촉진법’ 개정법률을 15일 공포했다. 개정안은 후속 절차를 거쳐 내년 1월 1일부터 시행된다.그동안 RPS 제도는 공급인증서(REC) 가격 변동에 따른 사업 수익의 불확실성과 복잡한 거래 구조 등으로 발전단가를 낮추고 국내 산업을 육성하는",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "5586293fac72"
+    },
+    {
+      "title": "\"한일 광물협력, 지분보다 장기계약과 우선공급권 중요\"",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334248",
+      "source": "이투뉴스",
+      "published": "2026-09-16 00:16",
+      "summary": "[이투뉴스] 핵심광물 공급망을 안정시키려면 해외광산 지분보다 장기 구매계약과 우선공급권 등 조달권리를 중시해야 한다는 제언이 나왔다.14일 국회의원회관에서는 권영세 국민의힘 의원과 자유기업원, 시장경제학회가 공동 주최한 '한일 경제협력 공동체 구축 전략' 정책세미나가 열렸다.미·중 전략경쟁과 글로벌 공급망 재편에 대응해 한일 경제협력을 제도화하는 방안을 모색하기 위해 마련됐다.발제를 맡은 심승규 아오야마가쿠인대 국제정치경제학부 교수는 일본의 호주 희토류기업 라이너스(Lynas) 투자 사례를 소개했다.일본은 라이너스 지분을 약 3.1",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "36731d848174"
+    },
+    {
+      "title": "트럼프 '에너지 휴전' 호언장담 무색…러·우크라, 정유시설·주유소 '난타전'",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5HaW1UOWJEMGN4SVgyM2JoOVZHdDlFZGlBUGswam4yVTJUbER0U3JPbEwzRjVhc3hteUlWY3hBelprWmRvTTlseVFOb05UTjg?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-16 00:10",
+      "summary": "트럼프 '에너지 휴전' 호언장담 무색…러·우크라, 정유시설·주유소 '난타전'  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "트럼프 '에너지 휴전' 호언장담 무색…러·우크라, 정유시설·주유소 '난타전'",
+          "source": "파이낸셜뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TT2pURUVKdUQ1NmlCZ1hlb2VkeUhkeXJWcjZGVF8zOUZES2ZNWDVxbmZYaTNkTFR2LXVGRk5idW1FbFJsTjhfUThfRkdsdGwzZXBWWVRkNmt0UQ?oc=5"
+        }
+      ],
+      "query": "주유소",
+      "id": "46c3f04c6853"
+    },
+    {
+      "title": "사우디 얀부항 원유 선적 중단에 국제유가 급등…3달러 이상 상승",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZV0Uza09YMEUzelp0NzRwU1dweDl6WU5OaVdKTllvWnVra0Jra2VTZE91NExsTXFGRjQtVG4xaVplQUo4REkwNFc0WncyNS04?oc=5",
+      "source": "블루밍비트",
+      "published": "2026-09-16 00:05",
+      "summary": "사우디 얀부항 원유 선적 중단에 국제유가 급등…3달러 이상 상승  블루밍비트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "57ea4d8b21c8"
+    },
+    {
+      "title": "국민성장펀드, 메가 프로젝트에 LNG 발전소 투자 포함 우려 목소리",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303098",
+      "source": "투데이에너지",
+      "published": "2026-09-16 00:04",
+      "summary": "[투데이에너지 장재진 기자]  정부의 대형 정책금융인 국민성장펀드가 재생에너지 중심의 출범 취지와 달리 신규 LNG(액화천연가스) 발전소 건설을 포함한 메가프로젝트에 투자 후보로 검토되면서 기후 및 재정적 우려가 커지고 있다는 시민사회의 지적이 나오고 있다.  \n\n기후솔루션, 경남환경운동연합, 충남환경운동연합, 한국사회책임투자포럼 등 전국 탈화석연료 네트워크인 KBF(화석연료를 넘어서)는 15일 서울 광화문광장에서 공동 기자회견을 개최하고, 국민의 혈세와 소중한 노후자산으로 조성된 국민성장펀드에 기후위기를 심화시키는 LNG 발전소 ",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "bf932860f9b9"
+    },
+    {
+      "title": "전력거래소-KENTECH, ‘전력시장·계통 모의 검토 모델’ 고도화 협력",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203229",
+      "source": "에너지데일리",
+      "published": "2026-09-16 00:04",
+      "summary": "[에너지데일리 송병훈 기자] 전력거래소(이사장 김성진)와 한국에너지공과대학교(KENTECH, 연구원장 문승일)는 15일 나주 빛가람혁신도시에 위치한 한국에너지공대 캠퍼스에서 ‘전력시장·계통 모의 검토 모델 고도화를 위한 업무협약(MOU)’을 체결했다고 밝혔다.‘전력시장·계통 모의 검토 모델’은 재생에너지 확대에 따른 미래 전력 계통의 변화를 사전에 검토하고, 다양한 시장 제도의 도입 효과를 모의할 수 있는 도구로, 에너지 대전환기 정책 판단의 근거가 되는 기반 기술이다. 이번 협약은 해당 모델의 정확도와 활용성을 높이기 위해 추진됐",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "1b0d20559ab4"
+    },
+    {
+      "title": "사우디 송유관 끊겼다, 국제유가 어디까지 오를까?",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTkxDZVRNQndLOFhVbS1jY09fZUhISEUwTGdKMWlGWnY0a2U1SkpnaFZqNm9ZYk11QlUzeFJGRm11cndDV2pYQ2NWbFdUY2xBbkZNTk94WmRFN3R6bXNzUGxLWFJDV2Fvbl9neGttbW5sdHQ2YXhKLXNSZGRsdTAzRnoxeFVHSkZtY0QxdFdLMDl3Mmk3VEtLUlNkcE1hU2xzUDJEWm1aYlE2VjdLX3VCbFVaLUI?oc=5",
+      "source": "데일리바이트(DAILY BYTE)",
+      "published": "2026-09-16 00:01",
+      "summary": "사우디 송유관 끊겼다, 국제유가 어디까지 오를까?  데일리바이트(DAILY BYTE)",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "55b011e30b0c"
+    },
+    {
+      "title": "뉴욕 증시, 국제 유가 급등·美 금리 인상 가능성에 하락 출발 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUkkySU5SLXAzT0JEN2otUmJrR0g3UkprYzM0MS1iYTIwTndPMWZqbm1kQUJhMXplMnJsbnJqTTVhbU9JZU02emJ2dHpfM2RrTU1qOWh5cm9tNDFzYi1iMXgySGI1TThvOW5kYl9KWDRtOUN6YXlPZW9BUmQzNDFvZF9SalZ0VmpHRTl5NURLdzBPMjJuYVZ0RnNhRVR1UdIBsgFBVV95cUxNRGJ2SGN4T1V5T0psaHlTenBiMUJuZGdIRVF6MFE4VjR4MUsybGdkS3d0V0Uzd3RJOVhfVnFuaWszS3dFaGdfdGxtdnRXamZqNnlLbGpZQVVuUFdDaTRrYnJkLTZPNWhMTW5MeU80QmNnLURYTUs5NGVpMUR3SnhGa2Q1TmZ4WENVdXVRcXRtSjREbUpublpXWENiMFJhSDVTUzBmbjFEbzRIakdmcjNoOU93?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-09-15 23:42",
+      "summary": "뉴욕 증시, 국제 유가 급등·美 금리 인상 가능성에 하락 출발 - 조선비즈  Chosunbiz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "92d1049f42e7"
+    },
+    {
+      "title": "지역난방公, ‘열’이 이끄는 미래… 에너지대전 참가",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303094",
+      "source": "투데이에너지",
+      "published": "2026-09-15 23:33",
+      "summary": "2026 대한민국 에너지대전 한국지역난방공사 주제 ‘열로 미래를 열다’ / 한국지역난방공사 제공\n\n\n\n[투데이에너지 김병민 기자] 한국지역난방공사(사장 하동근)는 16일부터 3일간 부산 벡스코(BEXCO) 제1전시장에서 진행되는 ‘2026 대한민국 에너지대전’에 참여한다고 밝혔다.\n\n기후위기 대응과 탄소중립 목표 달성을 위한 ‘기후산업국제박람회(WCE)’와 연계해 열리는 ‘2026 대한민국 에너지대전’은 “청정전력, 미래에너지, 고효율에너지의 모든 것!”을 슬로건으로 기후에너지환경부가 주최하고 한국에너지공단이 주관한다.\n\n한국지역난",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "87b2ffc46c38"
+    },
+    {
+      "title": "어나더리얼·한국도로협회, AI 기반 도로·건설현장 안전관리 체계 구축 MOU",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334270",
+      "source": "이투뉴스",
+      "published": "2026-09-15 23:30",
+      "summary": "산업안전 특화 Vision AI 기업 어나더리얼(대표 김현주)은 지난 14일 (사)한국도로협회(상근부회장 최희철, 이하 '협회')와 'AI 기반 도로 인프라 및 도로 건설 현장 안전관리 체계 구축'을 위한 업무협약(MOU)을 체결했다고 15일 밝혔다.이번 협약은 어나더리얼이 건설·정유 등 산업현장에서 적용해 온 Vision AI 기반 안전관리 기술을 도로·교통 및 도로 건설현장으로 확대하고, 협회 회원사의 AI 기술 활용과 현장 안전관리 방안을 함께 모색하기 위해 마련됐다.한국도로협회는 도로 분야의 정책 및 기술 연구, 기술 교류",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "9d10f38d0b3a"
+    },
+    {
+      "title": "남부발전, 신평장림 산단 에너지 자급자족 사업 참여기관과 청렴 캠페인",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203226",
+      "source": "에너지데일리",
+      "published": "2026-09-15 23:26",
+      "summary": "[에너지데일리 송병훈 기자] 한국남부발전(사장 김준동)이 주관하는 KOSPO 컨소시엄이 '신평장림산업단지 에너지 자급자족 인프라 구축사업'의 성공적인 추진과 청렴문화 확산을 위해 참여기관을 대상으로 '반부패·청렴문화 확산 캠페인'을 실시했다.15일 남부발전에 따르면, 이번 캠페인은 부패를 예방하고 공공기관에 대한 국민적 신뢰도를 제고하기 위해 추진됐으며, 사업 참여기관 간 청렴 의식을 공유하고, 투명하고 공정한 업무 수행 환경을 선제적으로 정착시킨다는 방침이다.신평장림산업단지 에너지 자급자족 인프라 구축사업은 2026년부터 2029",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "72330ec06fac"
+    },
+    {
+      "title": "에너지공단, 재생에너지 서비스 기업 종합 설명회 개최",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303091",
+      "source": "투데이에너지",
+      "published": "2026-09-15 23:25",
+      "summary": "청주오스코 그랜드볼룸에서 ‘재생에너지 종합서비스기업 종합 설명회’가 진행되고 있다. / 한국에너지공단 제공\n\n\n\n[투데이에너지 김병민 기자] 한국에너지공단(이사장 최재관)은 15일 청주오스코 그랜드볼룸에서 ‘재생에너지 종합서비스기업(Renewable Energy Service COmpany, 이하 ‘레스코(ReSCO)’) 종합 설명회‘를 개최했다.\n\n재생에너지 종합 서비스 기업(ReSCO)은 지역주민 소득 증대 및 지역 경제 활성화에 기여하는 햇빛소득마을 사업과 같은 태양광 발전사업을 안정적으로 시작하고 운영할 수 있도록 사업 기획",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "에너지공단, 재생e 종합서비스기업 설명회",
+          "source": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPNFZFeURBU1hlWTA5OUQ4VUZUanRYalkxRllMRFloUzZBMXdYaUVjTXVDeTkwM0h1cWpoRzB5WlBRMWdaSkJZTDJINFNldVN0MlRzcjdWQ05qd9IBVEFVX3lxTE1JX1NldzlKd0N5UUFiWXh2ejBJS0U5V1V4ak9XeTVhZ2FpU3RaRnZVUFo5RjRCZXlYMVZPNzFhMDdWSlExUjlraTd2Y3pOOFV4YW1STg?oc=5"
+        }
+      ],
+      "query": "rss:투데이에너지",
+      "id": "4aa3afe8786f"
+    },
+    {
+      "title": "베트남은 올해 첫 8개월 동안 석유 제품 수입에 145억 4천만 달러를 지출했는데, 이는 2025년 총 수입액과 거의 맞먹는 금액입니다.",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQc2VNSlJTRTJUenhKRU1JeFZTMGtkdUpEM2ZtWUktN0R4anZJZjRmSmtWeVJoUDlQN3JWb3VXRno1TVR5RGJ2amkxOWdpaTVOR3ZvSGlucFdGYm42SXlVUG9wT3pXQW5hTjhlQWJvODZPdlJFc2VuZE83b1pwYWpWbGpFbHN2S0xoNlV5bkZsd1BIY1l5?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-15 23:05",
+      "summary": "베트남은 올해 첫 8개월 동안 석유 제품 수입에 145억 4천만 달러를 지출했는데, 이는 2025년 총 수입액과 거의 맞먹는 금액입니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "391cbcbb415a"
+    },
+    {
+      "title": "KR–HD현대삼호, 부분 진수 시 선체 강도 평가 프로그램 공동 개발",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303085",
+      "source": "투데이에너지",
+      "published": "2026-09-15 22:55",
+      "summary": "HD현대삼호 조선소에서 30만 톤급 초대형 원유운반선(VLCC) 부분 진수가 진행되고 있다./HD현대삼호 제공\n\n\n\n[투데이에너지 신일영 기자] KR(한국선급, 회장 이영석)은 HD현대삼호와 선박 건조 과정에서 부분 진수 시 선체의 구조 안전성을 신속하게 평가할 수 있는 프로그램을 공동개발했다고 15일 밝혔다.\n\n양사는 2026년 2월부터 약 8개월간 ‘직접강도평가(Direct Strength Analysis, DSA) 기반 부분 진수 조건의 구조해석 자동화 프로그램’ 공동개발 프로젝트를 진행했으며, KR은 방콕에서 열리고 있는 ‘",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "a47165737e0c"
+    },
+    {
+      "title": "‘33회 가스안전대상’ 성료…은탑산업훈장에 안영훈 동북아LNG허브터미널 대표",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1BLW84VndVVlJUMy1wLWNnRWF5RGxwUjVwaTJYaDhleVl3OFBlR0o5b3JBbU54UVdTY251bngwSmgta1VQLUhhcWJQTVp1eVBFUEcxMUVseTdNNEMxMkM5SmNtV285QnVJYTlwSjB0TnBja0FKTWc5aENQUQ?oc=5",
+      "source": "부산일보",
+      "published": "2026-09-15 22:54",
+      "summary": "‘33회 가스안전대상’ 성료…은탑산업훈장에 안영훈 동북아LNG허브터미널 대표  부산일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[가스안전대상-은탑산업훈장] 안영훈 동북아LNG터미널 대표이사",
+          "source": "에너지신문",
+          "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228171"
+        }
+      ],
+      "query": "한국가스공사",
+      "id": "7b0cbf50e9dc"
+    },
+    {
+      "title": "가스공사, 우수 중소기업과 글로벌 가스 시장 공략",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303083",
+      "source": "투데이에너지",
+      "published": "2026-09-15 22:21",
+      "summary": "가스공사 홍의락 사장(앞줄 가운데)이 태국 '가스텍2026'에서 관계자들과 파이팅을 외치고 있다./가스공사 제공\n\n\n\n[투데이에너지 신일영 기자] 한국가스공사(사장 홍의락)는 9월 14일부터 17일까지 태국 방콕에서 열리는 세계 최대 규모의 가스업계 전시회인 ‘가스텍(Gastech) 2026’에 참가해 국내 중소기업의 세계 시장 진출을 지원한다고 밝혔다.\n\n가스텍은 천연가스를 중심으로 수소, 저탄소 에너지 등 미래 에너지 산업 전반을 다루는 대규모 국제 행사로, 이번 행사에는 전 세계 150개국에서 1000여 개 기업과 5만여 명의",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스공사, 국내 우수 중소기업과 세계 가스 시장 공략",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOemgyZzNxM2I0SzVWUjhMWmpMREF5d2xVeUpDLTZ3QV9FMVV5eGdacHRXMVpnRTdEMnQzNVo2VkJ5b19oNzVld3dMakdraWtIQWd6MDZjVFE4WmNsejdVMXZHWUlKdXY3NTBLU3QzcS1GaXVhSkltUi1GdGtvZVpZTlA4N1lPMFo1d2RkT1VwdGR5YXRXa1VVOUpaOHBFV05NRGxoekx1aWZueWltVXNGZFRWRUNvcDltUHdQSU04Wjd2bm1HdmctZm8xT2xtYnd1RnVlVk5PZlhqXzM2aUxMQjdVb2lHRlNfMVlQYkpVWFlRUjIzS25CMTR3YnA2YjVxT2NRTGZTTktTM2VaR3lRMmVWcnkxS3M?oc=5"
+        }
+      ],
+      "query": "rss:투데이에너지",
+      "id": "1400f7bdb2df"
+    },
+    {
+      "title": "원유 수출길 다 막힌 사우디…국제 유가 '빨간불'",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjSVVpRmo5dFZPZ0pPY2ViV2h4Qm95ZHdDN2JsR3p4UFpYQVBqRklucERNX0ZDSlVvYmhSZmFHOEFZZ2NHcXlHLWVMbldtV3dmc0RlS3gyT25TNjhkeDRnUW0wcS05VHpjbmfSAWZBVV95cUxNMlE5ZnZhZF9JdWFYNDFfNXVCY3pBSEYwZ1ZvZXlocnJ1dUlmOUc0X1IzeTNmc0FPaTQ2Xzd6NkhGY3N5aEVlVGhvSi1GWnR1eHptS3FhZFBiV3J0bHpjR2xseUdDeUE?oc=5",
+      "source": "news.sbs.co.kr",
+      "published": "2026-09-15 22:09",
+      "summary": "원유 수출길 다 막힌 사우디…국제 유가 '빨간불'  news.sbs.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "81d912359d3d"
+    },
+    {
+      "title": "독일 재무장관, 휘발유 가격 부담 완화 촉구",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9GMVdRcG1pTll4ZElhcnhVakN3dnlLWXpoN3k4VG9tX0VFd0VzREZGMUZqNlprWm5ILTl4di1SeTdWR1JCNTR1SWlkakJIUVNiQ2pPYUhPTXFweEg4Z2JieVBkY2owVE1ma1RDd0dfX293NVhBcEE?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-09-15 22:00",
+      "summary": "독일 재무장관, 휘발유 가격 부담 완화 촉구  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "ee6fce01bb01"
+    },
+    {
+      "title": "‘기본부터 다시’…가스공사, 안정적 경기력 되찾는다",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81bElWTzlyLU14V1lINlpJb1hxTnJWS0xuUnhaRllodm9KdTQwTGJQQ01YUFJsQkhNQ1l0YlFvRlAwcnNnaTkydjZ1Nm03c1NpZllkcWpCNTVkd1pwZGNLVWhhRVlyXzliT0FB?oc=5",
+      "source": "대구신문",
+      "published": "2026-09-15 21:56",
+      "summary": "‘기본부터 다시’…가스공사, 안정적 경기력 되찾는다  대구신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "b3555132d565"
+    },
+    {
+      "title": "[가스안전대상-산업포장] 이상근 코오롱인더스트리 상무",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228170",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:49",
+      "summary": "[에너지신문] 이상근 코오롱인더스트리(주) 상무가 현장 안전관리 체계를 구축하고 고압가스 안전사고 예방에 기여해 온 성과를 인정받아 ST센터에서 열린 ‘2026 대한민국 가스안전대상’에서 산업포장 수상의 기쁨을 누렸다.이상근 코오롱인더스트리 상무는 가스·안전·보건 분야에서 근무하며 33년간 울산·여수·대산 등 국내 주요 석유화학 생산거점의 고압가스 안전관리와 공정안전 위험요인 발굴 및 개선에 주력해 왔다.그 결과 고압가스 안전사고 발생이 없었으며 안전관리체계(SMS) 최고등급인 A등급을 유지하는 등 현장 중심의 안전관리 체계를 구축",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "7b7048b1f177"
+    },
+    {
+      "title": "[가스안전대상-대통령표창] 손민익 E1 기술운영본부장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228168",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:49",
+      "summary": "[에너지신문] 손민익 E1 기술운영본부장은 국가 가스 수급 안정과 인프라 확충, 공정안전관리시스템 고도화, 디지털 기반 스마트 안전관리체계 구축 등에 힘써왔다.E1 여수 LPG기지 안전관리 책임자로서 190억원 규모의 KOGAS LPG 열조용 배관망 사업과 480억원 규모의 대산 프로판 4만톤 저온탱크 건설 프로젝트를 총괄했다.여수산단에는 납사를 대체할 수 있는 프로판 전용 공급망을 구축해 누적 798만톤 이상의 원료를 공급했다.안전관리 분야에서는 종합적안전관리규정(SMS) 평가를 진두지휘해 기지 안전관리 수준을 B등급에서 A등급으",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "1b9b6f485ec0"
+    },
+    {
+      "title": "[가스안전대상-국무총리표창] 남승호 문화가스충전소 대표",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228162",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:48",
+      "summary": "[에너지신문] 남승호 문화가스충전소 대표는 1987년부터 39년간 LPG산업 현장에서 가스안전관리와 안정적인 연료 공급, 농촌지역 에너지 복지 향상에 힘써왔다.특히 2022년부터 4년간 경북 구미·성주지역 LPG사용시설 9152개소를 점검해 가스누설 시설을 개선하고 노후 퓨즈콕·조정기·타이머콕·호스 등을 교체했다.유휴 LPG용기 669개를 회수하거나 검사 후 재사용하는 등 현장 위험요인 제거에도 나섰다.충전소에는 긴급차단장치와 가스누설 경보기, 비상벨·경광등 연동설비를 구축해 비상상황에 신속히 대응할 수 있는 안전체계를 마련했다.농",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "8b5d3b93a9c5"
+    },
+    {
+      "title": "[가스안전대상-국무총리표창] 임상묵 SK에너지 대표",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228161",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:48",
+      "summary": "[에너지신문] 임상묵 SK에너지 대표는 ‘안전과 신뢰’를 경영철학으로 삼고 LPG판매 현장에서 사고예방과 취약계층 가스시설 개선, 지역사회 봉사활동을 이어오고 있다.1988년 LPG 배달원으로 가스업계에 입문한 뒤 안양과 안산, 충남 예산을 거쳐 현재 당진에서 LPG와 고압가스 판매소를 운영하고 있다.한국가스안전공사 가스안전 보안관으로도 활동하며 현장에서 위험요소를 발견하면 업무 범위를 따지기보다 우선 안전조치를 취하는 것을 원칙으로 삼고 있다.2024년에는 아파트 점검 과정에서 지하 매몰 LPG탱크에 비정상적인 성에가 발생한 것을",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[사람 in] 제33회 가스안전대상 국무총리표창 - 임상묵 SK에너지 대표",
+          "source": "이투뉴스",
+          "url": "http://www.e2news.com/news/articleView.html?idxno=334261"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "id": "3cf3109f187a"
+    },
+    {
+      "title": "[가스안전대상-국무총리표창] 서원석 청륜건설 대표이사",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228160",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:48",
+      "summary": "[에너지신문] 서원석 청륜건설 대표이사는 20여 년간 가스시설 시공 현장에서 안전과 품질을 우선하며 도시가스와 LPG에서 고압가스, 암모니아, 수소까지 사업 영역을 넓혀 국내 가스산업 발전에 기여해 왔다.특히 수소 분야에서 한국표준과학연구원과 한국기계연구원, 전력연구원 등의 수소가스 라인 배관공사와 수소저장소 구축, 수소트레일러 설치공사 등을 수행했다.2023년부터는 액화수소 기반 수소충전소 구축공사에 협업으로 참여했으며, 액화수소 단열배관 제작·설치와 고압펌프 모듈 제작, 저장용기 제작·시운전 등 수소 인프라 구축에도 힘을 보탰다",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "cf9d63a28ddf"
+    },
+    {
+      "title": "[가스안전대상-대통령표창] 배승균 한국가스안전공사 대구광역본부장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228164",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:48",
+      "summary": "[에너지신문] 배승균 한국가스안전공사 대구광역본부장은 30여년간 가스안전 현장에서 안전진단과 사고예방, 가스용품 기술개발, 중소기업 지원 등에 힘써왔다.특히 고압 수소 충전호스 연결부의 누출을 예방하고 호스 휘둘림을 방지할 수 있는 안전기술을 개발해 특허를 출원하고 안전기준 제정에도 참여했다.LPG충전소 로딩암과 벌크로리 호스가 차량 오발진 등 비상상황에서 파단될 경우 가스 누출을 차단하는 안전장치 개발도 주도했다.보일러 일산화탄소 중독사고 예방을 위해 배기통 이탈방지 안전벨트 설치 가이드를 제작·보급했으며, 지역별 취약 가스시설",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "048c2583dc2d"
+    },
+    {
+      "title": "[가스안전대상-국무총리표창] 박상진 한국가스안전공사 실장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228158",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:47",
+      "summary": "[에너지신문] 박상진 한국가스안전공사 실장은 가스안전관리 업무를 수행하며 가스산업계의 중대재해 예방과 안전관리 역량 향상에 힘써왔다.특히 중대재해처벌법 제정과 산업안전보건법 전면개정에 따른 현장의 혼선을 줄이기 위해 관련 질의사항을 발굴하고 법률 검토를 거쳐 실무부서와 유관기관에 공유하는 등 현장 대응 기반을 마련했다.또 가스안전공사를 비롯해 전기안전공사, 교통안전공단, 안전보건공단, 한국전력 등 공공기관 간 업무협의체 구성과 운영을 통해 위험요소 발굴 및 중대재해 예방을 위한 협업체계를 구축했다.코로나19 확산 당시에는 감염병 비",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "9878910d9485"
+    },
+    {
+      "title": "[가스안전대상-산업부장관표창] 김동근 ㈜한국가스산업 대표",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228155",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:47",
+      "summary": "[에너지신문] 김동근 ㈜한국가스산업 대표가 ‘2026년 대한민국 가스안전대상’ 시상식에서 산업통상부 장관 표창 수상의 기쁨을 누렸다.28년간 충전사업을 영위하며 집단공급시설에 대한 안정적 LPG공급체계를 구축한 그는 철저한 안전관리를 통해 무사고 사업장을 유지해오고 있다.특히 군부대 LPG공급업무를 수행하는 한편 한국LP가스판매협회중앙회가 실시하는 벌크로리 순회점검에도 적극 협조하며 유통 현장의 안전관리 강화에 기여했다.또한 LPG집단공급업계의 발전과 권익 향상을 위해 이사장직무를 수행하며 업계 현안 해결과 제도 개선에도 힘써왔다.",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "fd77ad2c63d4"
+    },
+    {
+      "title": "[가스안전대상-산업부장관표창] 김선미 금오 E.N.G 대표이사",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228154",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:47",
+      "summary": "[에너지신문] 김선미 금오E.N.G 대표이사는 22년 넘게 가스시설 시공 분야에 종사하며 안전시공과 체계적인 현장관리로 가스사고 예방에 기여해 왔다.금오E.N.G는 아파트와 학교, 공공시설 등의 도시가스 공사를 비롯해 한국가스공사 배관공사와 마을단위 LPG배관망 구축사업 등에 참여해 왔다. 축적된 현장 경험과 기술력을 바탕으로 공급관과 가스시설의 안전시공에 힘써왔다.특히 품질경영시스템 ISO9001과 환경경영시스템 ISO14001, 안전보건경영시스템 ISO45001 인증을 획득해 품질·환경·안전관리 체계를 강화했다. 건설현장에서는",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "e4c5e6dfc1cc"
+    },
+    {
+      "title": "[가스안전대상-산업부장관표창] 김윤영 유니하이스 대표",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228153",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:47",
+      "summary": "[에너지신문] 김윤영 유니하이스 대표는 LNG 충전소와 차량용 안전제품을 개발·공급하고, 반도체 독성가스와 수소 인프라 분야로 기술 적용 범위를 넓혀왔다.김 대표는 LNG 충전소용 밸브와 차량용 밸브를 개발해 가스 공급 과정의 안전성을 높였다. 특히 충전 중 차량 이동이나 배관 파손 등에 대비해 브레이크어웨이 밸브와 과류방지밸브를 현장에 적용, 비정상 상황에서 가스 흐름을 차단할 수 있도록 했다.반도체 제조공정에 사용하는 독성가스 밸브 분야에서도 설계단계검사와 기밀·차단 성능 향상을 통해 안전제품 설계 역량을 확보했다. LNG 분야",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "a73d0550655e"
+    },
+    {
+      "title": "[가스안전대상-산업부장관표창] 최석원 ㈜제주미래에너지 대표",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228151",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:46",
+      "summary": "[에너지신문] 최석원 ㈜제주미래에너지 대표는 제주지역 LPG산업 현장에서 안전관리 강화와 유통 인프라 개선을 꾸준히 추진해 왔다.1996년부터 SK가스 영업·마케팅 부문과 제주지사 등에서 LPG 영업과 유통 현장을 경험했으며, 이후 충전소 운영을 거쳐 2024년 12월부터 제주미래에너지를 이끌고 있다.최 대표는 매년 위험성 평가를 기반으로 안전관리 계획을 수립하고, 테마별 안전교육과 시설점검, 노후시설 교체 등을 통해 사업장 안전도를 높여왔다.지역 소방서와 합동훈련을 실시하고 가스 누설·화재 등 비상상황에 대비한 시나리오별 대응체계",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "0ebd9200c995"
+    },
+    {
+      "title": "서울대학교병원, 교육부 공공기관 2026년 9월 브랜드평판 1위",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228200",
+      "source": "에너지신문",
+      "published": "2026-09-15 21:44",
+      "summary": "[에너지신문] 교육부 공공기관 브랜드평판 2026년 9월 빅데이터 분석결과, 1위 서울대학교병원 2위 한국장학재단 3위 부산대학교병원 순으로 분석됐다.한국기업평판연구소는 교육부 공공기관 24개 브랜드에 대해 2026년 8월 15일부터 2026년 9월 15일까지의 교육부 공공기관 브랜드 빅데이터 79,223,763개를 분석한 결과 지난 8월 교육부 공공기관 브랜드 빅데이터 61,418,152개와 비교하면 28.99% 증가했다고 밝혔다.2026년 9월 교육부 공공기관 브랜드평판 순위는 서울대학교병원, 한국장학재단, 부산대학교병원, 충남",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "4560ad9c229e"
+    },
+    {
+      "title": "공공기관의 과제에 혁신 기술을 더해주세요 - 카드/한컷 | 멀티미디어",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1tc1o0OGJ1X1NFdmFpVWh5ZmRJeWR5MGx2NFQ1RW5WN2lvWW90OTdaaWRLQm1OSTRLV0lMdDR1ejVzMkR1dTNCRVBOY0FEVlM5Z25qLWEyaUJfVzJaNmcyMHVvNV82SEVJYjhDTjdn?oc=5",
+      "source": "대한민국 정책브리핑",
+      "published": "2026-09-15 21:33",
+      "summary": "공공기관의 과제에 혁신 기술을 더해주세요 - 카드/한컷 | 멀티미디어  대한민국 정책브리핑",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "deaf8e110f56"
+    },
+    {
+      "title": "에너지공단, 진천에 ‘친환경차 검증 시험동’ 구축",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9sS2JDMFZWWHV4TWhyRk5CeER5cXlTaHltQi12MkVQM05NTlBhc0dxZ1U1dkVPdkZJS3Fnd3M1OEVjSHpYX0lUNlBQRXlNQVNhRlZIRnh4Z1NQeEtUQmU2bEpmSWVaTGRKdElKYXVjaC11YVR4YTV3cTZFR1I?oc=5",
+      "source": "부산일보",
+      "published": "2026-09-15 21:33",
+      "summary": "에너지공단, 진천에 ‘친환경차 검증 시험동’ 구축  부산일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "에너지공단, 친환경차 검증 시험동 준공",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQbkw1WHdLTzdLRExqdFA5R2lnMU1aZDVLUmpyem1jNnJCck9mTUI1OUZHYjREUTlBTDRzb1lVd0JnSW5CQnFJVFcxZjhnVkFyY2dOX0hHNzMyR2V4amRJN1QxN04wbkNXX05UdHBza2M3TEhzMnZsZlhiUkhURW5CZWMzeThvT2xBTWlqTGtkU3VyZU5MSVFwZWQwMGRhS0VTcG5KYW5rZ1pCanIwS3h2aDdPenBRWF9xV0tJOUF4UHRCYTdYeC1EdXZGSVp6aU0yaHpXYzdlajVFR3ptamxMajFzU0ZGZlJqOEJVcWJXUXY1S1hoc1NFNnFveEoyVVN4ZWlrU1hUR09LS0laaVRzWkdwODRhT3hEVmRSVzNXcFR6dDA?oc=5"
+        }
+      ],
+      "query": "한국에너지공단",
+      "id": "8b631cd82c74"
+    },
+    {
+      "title": "남해군, '에너지 자립의 섬' 구축 속도 낸다",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9QcFNkZWVFVjMyWWRUNHBmRW5MamxNOTZESTg2WDVreURqejliRnVHYkRUb2VxeG1qZGd3a3pvYktWenRoWW9YLWxpMzJGUEdfY0IzdThEV1Z0ZjRPelZsMlVNekRucktaMVE?oc=5",
+      "source": "경남매일",
+      "published": "2026-09-15 21:30",
+      "summary": "남해군, '에너지 자립의 섬' 구축 속도 낸다  경남매일",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "8c7ce01a6314"
+    },
+    {
+      "title": "울산 중구의회, 제2차 이전 공공기관 혁신도시 유치 결의안 채택",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DX2lNTUVwbjNFaEtfNlpzdWVvWjRacGZxU0xSZTE2M1VaTmdGcThqV2poT01PbEhoa3hZbVpvbC1HSVRTOC0yVE9sanlNdy15UFpVM2lycURfaUZiRjB4TmJ5VVhoVnpkemJsdg?oc=5",
+      "source": "경상일보",
+      "published": "2026-09-15 21:26",
+      "summary": "울산 중구의회, 제2차 이전 공공기관 혁신도시 유치 결의안 채택  경상일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "울산 중구의회, 에너지 공공기관 혁신도시 유치 결의안 채택",
+          "source": "iusm.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tZ0JlclFpSmVkRWV0SjY1cnpiWk1wT0NFY0JFYW9adWtDdWZyMzlfbDRZaE13TUROT09JQTBFS1otOFIxZk43TFl2RFJScFVVSUJ6dkw5VTVFeFp4b3NpOU0yZ3ZlNTNjN2fSAW5BVV95cUxNSnRwel9sYUdvckRZYXdsOHBybVpTOEpaUU9HQUlva3BVa0xNSUdkVXh0aXZWX21INnpzYlYzQkpBYTljSlcyMEFfbzdVQ1JRRGR1RUZEb2RjVFlPSHVPSWFNdjVFOUN2dnlPT0NzUQ?oc=5"
+        },
+        {
+          "title": "울산 중구의회, 2차 이전 공공기관 혁신도시 유치 결의안 채택",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00cFp0OUpTV2dTNDk2Z3NXN1pfdzdoMXF4cE5Ncm1xVmQ5QmNmTTdQNVVNUE1LNkxSbHBxMzBkcWRIWC16TzYzYTZGNTl2d0E?oc=5"
+        }
+      ],
+      "query": "공공기관 혁신",
+      "id": "19f7482865a6"
+    },
+    {
+      "title": "남해군 ‘에너지 자립’ 내실화 다진다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83UHJtbUVzVnN0eFBVWkttZTlId0F6WmpTdll4bjNOSk5JRzVVSnhPSERQNUZVR05LTFdJbUtFT0ZLd1A2MzlHU0RvUjNMUnZqYXcwQ1E5YUE4dw?oc=5",
+      "source": "경남신문",
+      "published": "2026-09-15 21:22",
+      "summary": "남해군 ‘에너지 자립’ 내실화 다진다  경남신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "a251df237a91"
+    },
+    {
+      "title": "가스공사, 방콕 ‘가스텍’ 참가 中企 세계시장 진출 지원",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9wZkpvaGhGckZwZjlXeXloLUMtSXlLM0ZYWjE1ZTh1STk2blJ5MkE1Tm9FVzdVNGJaYkVHSmh5emVtbXVmdEROYmpMdTlxeUhyQnppR2RCbUJId3JzT1lnYTJfU0ZpbWU3T3Zv?oc=5",
+      "source": "대구신문",
+      "published": "2026-09-15 21:18",
+      "summary": "가스공사, 방콕 ‘가스텍’ 참가 中企 세계시장 진출 지원  대구신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "dc61188ea724"
+    },
+    {
+      "title": "[이슈&피플] 양기욱 산업통상부 산업자원안보실장“가스안전의 기본은 현장과 사람”",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203223",
+      "source": "에너지데일리",
+      "published": "2026-09-15 21:00",
+      "summary": "[에너지데일리 조남준 기자 ] “사람들이 편안하게 쉴 때에도 현장의 빈틈을 살피며 안전을 지키는 분들이 있기에 국민의 평범한 일상과 산업 발전이 이어질 수 있습니다. 아무리 정교한 제도와 첨단기술을 갖추더라도 안전의 기본은 결국 현장과 사람입니다.”양기욱 산업통상부 산업자원안보실장은 제33회 대한민국 가스안전대상을 맞아 가스산업과 안전관리 현장을 지켜온 종사자들에게 이같이 감사의 뜻을 전했다.양 실장은 가스가 탄소중립과 인공지능(AI) 시대에도 당분간 가정과 산업을 지탱하는 핵심 에너지원으로 기능할 것으로 내다봤다. 수소를 비롯한",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "96b207846d15"
+    },
+    {
+      "title": "[기획] ‘안전 대한민국’ 가스인 한마당…제33회 가스안전대상 성황",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334258",
+      "source": "이투뉴스",
+      "published": "2026-09-15 21:00",
+      "summary": "[이투뉴스] ‘안전 대한민국’을 만드는데 든든한 파수꾼 역할을 다해온 전국의 가스인들이 한자리에 모였다. 업종을 불문하고 여러 현장에서 무사고와 무재해에 앞장서온 가스산업 종사자들을 격려하며 가스안전 실천을 다짐하는 ‘제33회 대한민국 가스안전대상’ 행사가 성황리에 진행됐다.산업통상자원부가 주최하고 한국가스안전공사가 주관하는 ‘제33회 대한민국 가스안전대상’이 15일 한국과학기술회관 ST컨벤션센터 국제회의실에서 개최됐다. 국민안전과 국가경제 발전에 기여한 유공자를 포상하고, 가스안전 실천에 앞장서겠다는 의지를 다짐하는 ‘대한민국 가",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "19ffcf5ae950"
+    },
+    {
+      "title": "한전KDN, 지역경제 활성화·온기 나눔… 상생협력 지속",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203224",
+      "source": "에너지데일리",
+      "published": "2026-09-15 20:59",
+      "summary": "[에너지데일리 송병훈 기자] 에너지ICT 전문 공기업 한전KDN(사장 박상형)이 한가위를 앞두고, 전남광주통합특별시 나주시 목사고을시장을 찾아 전통시장 장보기 행사를 진행한 후 구입한 물품을 지역 아동복지시설에 기부하며 따뜻한 나눔을 실천했다.한전KDN은 지난 14일 박상형 사장과 한경남 상임감사를 비롯한 주요 경영진과 임직원이 나주 목사고을 전통시장을 직접 방문해 과일, 고기, 생필품 등 풍성한 식재료와 생필품을 구입했다고 15일 밝혔다.이번 행사는 한전KDN 임직원들이 온누리상품권 등으로 직접 발품을 팔아 구입한 물품을 정성껏",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "58ee1c5417f7"
+    },
+    {
+      "title": "제 33회 대한민국 가스안전대상…가스안전 유공자 100명·3개 단체 포상",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203160",
+      "source": "에너지데일리",
+      "published": "2026-09-15 20:59",
+      "summary": "[에너지데일리 조남준 기자 ] ‘제33회 대한민국 가스안전대상’에서 가스산업의 기술 자립과 사고 예방에 기여한 개인 100명과 3개 단체가 포상을 받았다. LNG 인프라와 초저온 기자재 국산화, 석유화학시설의 장기 무사고 운영 등 에너지 공급망 안정과 현장 안전에 기여한 성과가 주요 공적으로 평가됐다. 최고 영예인 은탑산업훈장은 LNG 인프라 국산화와 대용량 저장탱크 설계기술 표준화를 추진한 안영훈 동북아엘엔지허브터미널 대표이사에게 돌아갔다. 천성흔 한비크라이오 대표이사와 이상근 코오롱인더스트리 상무는 각각 초저온 용기·부품 국산화",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "6fefb8fe9001"
+    },
+    {
+      "title": "EBTS협동조합 청주문화센터, 조합원들의 손길로 깨끗해진 영세주유소",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40Q1dBMkstNC10YW5aSmRFUS1rZDZ2MHhhR2EtQXlER29mZm9OeE94ekZwZFFsRWRLMEV5QmYyWkdKdWZPQVcyYTA3a3VaU2ZVWkYxZTd3SVpKc2o5QUdIaEJB?oc=5",
+      "source": "충북데일리",
+      "published": "2026-09-15 20:47",
+      "summary": "EBTS협동조합 청주문화센터, 조합원들의 손길로 깨끗해진 영세주유소  충북데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "d5bb3b685cdf"
+    },
+    {
+      "title": "한국에너지공단, 친환경차 검증 시험동 준공식 개최",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3ZE1uRkQ3SHA5aTFtSV96ZHRvODA5Um4yRTlRelBqWDNpQUJISDJXOUNZOHBLM1pOTDcyZEY3c0pTZ0FQNzE5QXhZckotMEVCaHBVTXQ2LUREOV9ZR29QWWFrYWpyTEc2dnc?oc=5",
+      "source": "천지일보",
+      "published": "2026-09-15 20:36",
+      "summary": "한국에너지공단, 친환경차 검증 시험동 준공식 개최  천지일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "63fef8a8b3c9"
+    },
+    {
+      "title": "한국에너지공단, 공정하고 투명한 햇빛소득마을 사업환경 조성 나선다",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OR092WlhQZ3BWRWJRelR6SnFVM3dob3BiTUFXZTBPdUpKcXNCMzhvLUh4N2FueDN0Y1ZTbWR2cVJ6M19reUVpOWZqX20xUkpneDVUR1NOVExQMWd2aUhKbDlZTjRoZzN1MGc?oc=5",
+      "source": "천지일보",
+      "published": "2026-09-15 20:32",
+      "summary": "한국에너지공단, 공정하고 투명한 햇빛소득마을 사업환경 조성 나선다  천지일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "에너지공단,공정하고 투명한 햇빛소득마을 사업환경 조성",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPd1AxNjdlQk9fYlc0OWNyQUg5R3VpWE9UWXZjZXcxUXhhLUlXdXhMVVZJcndxV1NNSVg0Z0NPMF8tQ010TW1zR2ZueXRwbEZ5d3Q5VzItS0VYRkpMUVYxbDZfSUdVNXR2OE9FcU51SVB3MUhFV0s1eEIycGJkMVVsYjE4V3VTcWJwTXotNGNLbUV4SHFrQ1NwRGpLSGhrX0lyTTA1dll4SHM4ZFlsT3podW1kYnd4aFRod3cwXzVtaHBDaHBKTlB0TWNfOE5CZ3B1OVdOZTd5RW5JTlhSZ0FDazRuXzFPa003OEJTVi1ucVBhN0FDT0hrRVhZcVk1aWFDUGU1NDBjNnZCR0tEa1U3LUV6OThXeHVieHdNdVBwZUpoTGdMN0kxZVVCUGY?oc=5"
+        },
+        {
+          "title": "한국에너지공단, 공정하고 투명한 햇빛소득마을 사업환경 조성 나선다",
+          "source": "ekoreanews.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE15d0FkdkNoQWdMYmlTNC1QVmpkT1VNMFM5V0l1cTQtTlBfR2pGcE94em9DbE9jRzZTRmJRdERXbnJaQ1diby1aSWhNRUFQczZOeml2eTV3Y0NlRGVBdTAxQXllVXBxUWJWOUZhcnRVTQ?oc=5"
+        },
+        {
+          "title": "에너지공단, 공정ㆍ투명한 '햇빛소득마을' 조성 나선다",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aa0kzU01UX1RVeF85Q2VzSUpqS3J3bEthdW82Rm82V282X3NUenhSU3hoZVM0bGtjYVZtVnE2YXVOeWZ0YXJkZlZheEs0MGx3V3Nodw?oc=5"
+        },
+        {
+          "title": "에너지공단, 공정ㆍ투명한 '햇빛소득마을' 조성 나선다",
+          "source": "이투데이",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84eS1NYUZRRjd0N2RvTkVEOFJvSFdOclJyVk1XNnN2cExBWkdHZGw0bERiSjFpaEdqMlgxc0JlRE56Q0ozYlkzbXFuYlNTdmpuNFU2Ng?oc=5"
+        }
+      ],
+      "query": "한국에너지공단",
+      "id": "24d0588ec8ae"
+    },
+    {
+      "title": "獨 \"국제 풍력개발사 한국 떠나…기후목표 위해 전문성 필요\"",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334243",
+      "source": "이투뉴스",
+      "published": "2026-09-15 20:24",
+      "summary": "[이투뉴스] 독일 정부가 국제 개발회사의 잇따른 한국 이탈을 우려하며 예측 가능한 제도 마련필요성을 강조했다. 한국 정부도 해상풍력 계획입지 도입과 대규모 입찰을 통해 시장 확대와 제도 안착에 속도를 내겠다는 방침을 밝혔다.주한독일상공회의소와 주한독일대사관은 14일 서울 포시즌스 호텔에서 풍력에너지를 주제로 '제5차 한-독 재생에너지 비즈니스 포럼'을 개최했다. 한·독 정부와 에너지업계 관계자들이 참석해 양국의 풍력 정책 방향과 시장 동향, 산업 협력 기회 등을 논의했다.이 자리에서 외른 바이써트 주한독일대사관 공관차석은 \"지난 1",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "042a45748b8b"
+    },
+    {
+      "title": "가스公, ‘가스텍 2026’서 우수 중소기업과 글로벌 시장공략 공동행보",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334249",
+      "source": "이투뉴스",
+      "published": "2026-09-15 20:21",
+      "summary": "[이투뉴스] 한국가스공사와 중소기업이 ‘가스텍 2026’에서 힘을 모으며 글로벌 시장공략에 나선다. 한국가스공사(사장 홍의락)는 14일부터 17일까지 태국 방콕에서 열리는 세계 최대 규모의 가스업계 전시회인 ‘가스텍(Gastech) 2026’에 참가해 국내 중소기업의 세계 시장 진출을 지원한다.가스텍은 천연가스를 중심으로 수소, 저탄소 에너지 등 미래 에너지 산업 전반을 다루는 대규모 국제 행사로, 이번 행사에는 전 세계 150개국에서 1000여 개 기업과 5만여 명의 관람객이 참가한다.가스공사는 전시관에 ‘천연가스 산업 동반성장관",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "bbd1834f9ef7"
+    },
+    {
+      "title": "호르무즈 우회 사우디 송유관 피격에 국제유가 상승",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334237",
+      "source": "이투뉴스",
+      "published": "2026-09-15 20:14",
+      "summary": "[이투뉴스] 호르무즈해협을 우회해 원유를 공급하던 사우디아라비아 동서 송유관 가동이 중단되면서 국제유가가 상승했다. 15일 한국석유공사에 따르면 전날 두바이유 현물가격은 전 거래일보다 배럴당 3.04달러(2.46%) 오른 126.70달러를 기록했다.브렌트유 선물가격은 1.07달러(1.02%) 상승한 105.68달러, 서부텍사스산원유(WTI)은 1.34달러(1.34%) 오른 101.39달러로 마감했다.국제유가는 사우디 동서 송유관 가동 중단의 영향을 받았다. 이 송유관은 페르시아만 인근 유전지대와 홍해를 연결해 호르무즈해협을 거치지",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "2e9b413bf31d"
+    },
+    {
+      "title": "가스공사, ‘가스텍 2026’ 참가…중소기업 18곳 해외진출 지원",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228188",
+      "source": "에너지신문",
+      "published": "2026-09-15 20:06",
+      "summary": "[에너지신문] 한국가스공사가 세계 최대 규모의 가스산업 전시회인 ‘가스텍 2026’에 참가해 국내 우수 중소기업 18개사의 해외시장 진출과 수출 확대를 지원한다.한국가스공사는 14일부터 17일까지 태국 방콕에서 열리는 ‘가스텍(Gastech) 2026’에 참가한다고 밝혔다.가스텍은 천연가스를 비롯해 수소, 저탄소 에너지 등 미래 에너지 산업 전반을 다루는 세계 최대 규모의 가스산업 전시회다. 올해 행사에는 전 세계 150개국에서 약 1000개 기업과 5만여명의 관람객이 참가할 예정이다.가스공사는 이번 전시회에서 ‘천연가스 산업 동반",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스공사, ‘가스텍 2026’서 中企 18곳 해외 진출 지원",
+          "source": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1wQ2FIeVRMTkh6Vi1wMWJHSy1wSXYtcUR4YWxiZ0o2d2F5X1JWMkh1ZW5SNVRJLW5yd21FRklzajFldVpjZldfYnNoeVNvYk5TdEI4c0RTN3lrVGVGUldXbU9FUXrSAWhBVV95cUxNVGZyYVVyZ2laWWhiSGgwVnNTbURJX2JSWHpieDY3RkRYQndWWFVFYS1Cb1d0WjJXc3hZSDg5ZUg5RG9EY05hS01zMm5IdW9sZW9wT2hka2g0T3RjOHR1RmQ1TU5WOG1yUQ?oc=5"
+        },
+        {
+          "title": "가스공사, ‘가스텍 2026’서 중소기업 18곳 해외 판로 지원",
+          "source": "한국면세뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwb3JYalN2ZEJIVDMxT2FDZm44M3h4akt4ZzJPbnU0VGJPZTFsczZJQTNQUnI1bDlaelJhR0s5YnhoUTl3cGVXcXhrZ09USjF3REJPU0pURXRianBDaVJqMFB6RllJSGN2RWc?oc=5"
+        },
+        {
+          "title": "한국가스공사, '가스텍 2026'서 중소기업 18곳 해외 판로 지원",
+          "source": "1코노미뉴스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oUDhmanZLMGFrZERKVnZoeTZhVzc1b0x4MEQwbEU2Zy1HMmRYWG1JM0YyNU4ydU9uVl9kb2syaWpwVENiVTR1dlM5OHVQc3p1T3RoRGU5Q2RqajJaUWdMOVJjZGxCX1FycmZLWERFMVg?oc=5"
+        },
+        {
+          "title": "가스공사, ‘가스텍 2026’ 참가…중소기업 18곳 해외진출 지원",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vSEo0elBGUGN3cFIwVWN5Z1daTy02V1ZLY1MtS3NPZUl6RVZhRnp0NGpYeXFhWmJMM2hhbVJ4d2Y4WVVRa3hrTFhwQmRNLVZEYmk5enZaUVgycTFRTEI4WFhoSmVOQ3V5bnhaSFRnUEg?oc=5"
+        },
+        {
+          "title": "한국가스공사, '가스텍2026' 참가…중소기업 해외 진출 지원",
+          "source": "BBS불교방송",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5TaHhBZTZCUERmREV2SDNkVDU4QkdVVzJqdTJxQ0NyNVpiTmtxYUtnYW02Q08xSHZ3UGYzOTRjWE40d0NYcm4yNGEzeUZQMl9ZVEJ6T0lJTjdaN1M5S0U0MlN5ZzhsTG1XRFNr?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "id": "9146891317d2"
+    },
+    {
+      "title": "에너지공단, 노사 함께 추석명절 희망꾸러미 나눔",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334287",
+      "source": "이투뉴스",
+      "published": "2026-09-15 20:05",
+      "summary": "[이투뉴스] 한국에너지공단(이사장 최재관)은 14일 울산 중구 성안동 대한적십자사 울산광역지사에서 ‘노·사가 함께하는 추석명절 희망꾸러미 나눔’ 행사를 가졌다. 사회공헌 사업의 일환으로 진행된 이번 행사는 공단 임원진과 노동조합이 공동으로 참여해 취약계층을 지원했다.지원은 에너지공단과 노동조합이 1100만원 상당의 온누리상품권을 구매해 대한적십자사 울산광역지사에 기탁하고, 적십자사는 이를 활용해 지원물품을 구매한 뒤 대상가구를 선정하고 배송하는 방식으로 이뤄졌다. 특히 모든 물품을 지역 전통시장에서 구매해 취약계층 지원과 동시에 지",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국에너지공단, 노·사 공동 추석명절 희망꾸러미 나눔 행사 펼쳐",
+          "source": "가스신문",
+          "url": "https://www.gasnews.com/news/articleView.html?idxno=126786"
+        }
+      ],
+      "query": "rss:이투뉴스",
+      "id": "6b20d5d22625"
+    },
+    {
+      "title": "독일의 휘발유 가격이 계속해서 최고치를 경신하고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE03MUk2cUViZVRMOFNjSUVfQUdhUFFMMFNfME9zWHloZDZBNFhjSjhfQXlSZU93X3pvc1RnRHM1ZGllbHZmNHI4Zm5CMkF4eXlUYUh1ejNOQkU2eEZqZ3dDRWZyNHRtWm5HZXdQMjJHNW9sZw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-15 19:27",
+      "summary": "독일의 휘발유 가격이 계속해서 최고치를 경신하고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "6f3c489bb6c5"
+    },
+    {
+      "title": "美 주유소 가격 '경고등'...국제유가 125달러 공포 확산",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5obFl1ZEJMMHk5dHo4MlJQci1CUGdFNk1kMkpuWC0wM3NJRWszVWk3Y0QtSFF4ZS1LdDg4LWdzRTl0NWpwMVNLeXR3?oc=5",
+      "source": "코인리더스",
+      "published": "2026-09-15 19:20",
+      "summary": "美 주유소 가격 '경고등'...국제유가 125달러 공포 확산  코인리더스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "9e08f43c329a"
+    },
+    {
+      "title": "유해중 의원, 서산 대산석유화학단지 제2비축기지 유치 촉구",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1MLW5iaWZxMHRzcnkxRnBtNFNnVGpEenZzZnhaSEN4MnF1TVBya01ydVVnRWZBQ0RNRFlhUW9kRDlMbVpNRnVEM084Qy14c3RuMzhXWmhNblNqZHdFRGx2ZmJBTUI?oc=5",
+      "source": "충청탑뉴스",
+      "published": "2026-09-15 19:16",
+      "summary": "유해중 의원, 서산 대산석유화학단지 제2비축기지 유치 촉구  충청탑뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사",
+      "id": "77b783e490cb"
+    },
+    {
+      "title": "한전-LS일렉트릭, 배전용 그리드포밍 기술 공동연구 나서",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303077",
+      "source": "투데이에너지",
+      "published": "2026-09-15 19:13",
+      "summary": "(왼쪽부터) 김대한 한전 전력연구원장과 서장철 LS일렉트릭 전력CTO가 업무협약을 체결한 뒤 기념사진을 촬영하고 있다. /한전 전력연구원 제공\n\n\n\n[투데이에너지 이종수 기자] 한국전력(사장 김동철, 이하 한전)이 LS일렉트릭과 손잡고 재생에너지 확대에 대응해 배전계통을 안정적으로 운영하기 위한 배전용 그리드포밍(Grid Forming) 기술 공동연구에 나선다.\n\n한전은 지난 14일 경기도 안양시 LS일렉트릭 Global R&D Campus에서 김대한 한전 전력연구원장과 서장철 LS일렉트릭 전력CTO 등 양 기관 관계자들이 참석한 ",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "418c9096bc1b"
+    },
+    {
+      "title": "에너지공단, 친환경차 검증 위한 시험동 준공…에너지효율 정확히 확인",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EMGF5Zlk4ODE1YTFvT3c3ZDAzS0FZclJ5OXFJemtLYWtFTkpNcUZIaC1pd0RuZkhYVGVMaXFZUDNrOFNySm5HajdqVHl4QXV1Zm9tUHhWQWtzai1XVG8zTDhpU0V0U21nMFhnbk530gFwQVVfeXFMTW1DcnFDbDFBdUliTlNQdG95Wm1MZGlSOEk2dnpfTzU3d04wVDFaVTY5WjduZ3NqVnE4V3NFTVBTRHgyRUdZVHBDSUpTY0JCZDlPQ29wV1QtUG5kRWwwbTNscUQ2dURiMFY5Ylp5ajdxcw?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-09-15 19:05",
+      "summary": "에너지공단, 친환경차 검증 위한 시험동 준공…에너지효율 정확히 확인  에너지플랫폼뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "a44b5d54ee59"
+    },
+    {
+      "title": "[에너지이슈] ‘기후테크·AI 전력망’ 총집결...2026 기후산업국제박람회, 부산서 16일 개막",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5UbWdXN2E2Z2tnZnV1YUZfQllYVEdWTmpyMlBqd2tibFBHNHNiV1d3UGpQX3NIbnQyY1A4ZUNjQ1VkR0tQbEdHUTB3amVVX0FnQnMwVkR3YzQyVmhRbVZLQTZ2eXVhRmM?oc=5",
+      "source": "산경e뉴스",
+      "published": "2026-09-15 18:53",
+      "summary": "[에너지이슈] ‘기후테크·AI 전력망’ 총집결...2026 기후산업국제박람회, 부산서 16일 개막  산경e뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "4da6b3ee19d7"
+    },
+    {
+      "title": "울산 수출 3.3% 증가했지만…자동차·선박은 ‘반토막’",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GQmNqakJ3SXNwMTVOMThIVk9yNGNLUTRuV24tbkQ5UEVNRlBmQ253cldzS1J3b0NuZG9NWXgzZHcwaGxWWlFBdm1OVVEzRDRCVlhNS0txOUZaSXQ5eWZQeWt6X29vMkRqRlHSAW5BVV95cUxQSzBBQzNfYks5bjNyRkdFdldZS2F6TXhlVTdHcTBaWWdfZmxLcWhQaHJVeG05bno0MUJFX1o0eDdPaXRaYXIwQkJNMlJtMFF5WlZIVzR4TC15QmtCZUV1cXY2NWFyVThhUC1Mc0VNUQ?oc=5",
+      "source": "iusm.co.kr",
+      "published": "2026-09-15 18:52",
+      "summary": "울산 수출 3.3% 증가했지만…자동차·선박은 ‘반토막’  iusm.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "b04ff0213ebe"
+    },
+    {
+      "title": "“청정수소 시장, 수요가 답”···국가별 전략서 공통 해법 도출",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126808",
+      "source": "가스신문",
+      "published": "2026-09-15 18:50",
+      "summary": "주요 연사들이 포럼을 마치고 기념촬영을 하고 있다.\n\n\n\n[가스신문 = 한상원 기자]수소경제의 병목은 공급이 아니라 ‘수요’라는 진단이 국제 무대에서 재확인됐다. 각국 정책과 산업 사례를 공유한 이번 포럼에서는 초기 시장 형성을 위한 수요 창출과 제도적 지원이 동시에 작동해야 수소경제가 성장 궤도에 진입할 수 있다는 데 의견이 모였다.\n\n제주국제컨벤션센터(ICC)에서 14일부터 16일까지 열리고 있는 ‘2026 그린수소 글로벌 포럼 with 분산에너지 포럼’에서 청정수소 수요시장 확대를 위한 국제적 해법이 집중 제시됐다.\n\n15일 ",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "fbbb8df6d736"
+    },
+    {
+      "title": "“최고가격제 반년간 석유 소비 감소… 연장여부 금주 결정” [뉴스 투데이]",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9Wd1VUX05kYTRIaE9SZk0wM0NXOUVwSWtIUDFZczh0SVhSY3lTcXladnY5SVctTlk5TFJ3d1FNQnNsbEdnYTlFeEZIeFI3dFU?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 18:48",
+      "summary": "“최고가격제 반년간 석유 소비 감소… 연장여부 금주 결정” [뉴스 투데이]  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "016730d4f67e"
+    },
+    {
+      "title": "[제33회 대한민국 가스안전대상]  은탑산업훈장 -동북아엘엔지허브터미널(주) 안영훈 대표이사LNG탱크 설계 국산화·기술 자립 선도",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126795",
+      "source": "가스신문",
+      "published": "2026-09-15 18:48",
+      "summary": "[가스신문 = 유재준 기자]  제33회 대한민국 가스안전대상에서 은탑산업훈장을 받은 안영훈 동북아엘엔지허브터미널 대표이사는 지난 1985년 7월 한국가스공사에 입사했다.\n\n우리나라 최초로 평택 LNG터미널 건설에 참여하여 LNG탱크 분야에 첫 발을 시작해 LNG사업 분야에서 약 40년 이상 근무하면서 국가발전에 기여했으며 한국가스기술공사에서 본부장 등을 역임했다.\n\n평택 LNG터미널에서 1~4호기 건설업무를 수행했을 당시 LNG에 대한 기술이 전무한 상태에서 해외기술에 의존했으나 기술자립을 위해 기초를 다졌다.\n\n우리나라 최초 –1",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "c46d13eb4e9f"
+    },
+    {
+      "title": "[제33회 대한민국 가스안전대상] 국무총리 표창 - 문화가스충전소 남승호 대표 “사고예방 위해 하나씩 점검하고 보수했죠”",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126797",
+      "source": "가스신문",
+      "published": "2026-09-15 18:45",
+      "summary": "[가스신문 = 김재형 기자]  경북 구미시에서 문화가스충전소를 운영하고 있는 남승호(64) 대표가 2026년 대한민국 가스안전대상에서 국무총리표창을 수상했다. 1987년 GS칼텍스에서 가스안전관리 업무를 시작한 이후 39년 넘게 LPG 현장을 지켜온 공로를 인정받은 것이다.\n\n남승호 대표는 충전소 안전관리뿐 아니라 LPG사용시설에 대한 현장점검과 시설개선, 농촌지역 LPG공급 인프라 확충 등 가스안전과 소비자 편익을 높이는 활동을 꾸준히 펼쳐왔다.\n\n“가스업계에 첫발을 디딘지 엊그제 같은데 어느덧 많은 시간이 지났습니다. 가스를 다",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "8acb94ab8268"
+    },
+    {
+      "title": "[제33회 대한민국 가스안전대상] 국무총리 표창 - 청륜건설㈜ 서원석 대표이사“고객사 고충 해결하니 ‘안전’ 뒤따르네요”",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126805",
+      "source": "가스신문",
+      "published": "2026-09-15 18:45",
+      "summary": "청륜건설 서원석 대표(오른쪽)가 산업자원부 양기욱 산업자원안보실장으로부터 국무총리 표창을 받고 있다.\n\n\n\n \n\n\n\n\n\n[가스신문 = 한상열 기자] “가스시설시공은 가스사용업체의 생산라인과 조화를 잘 이뤄야 안전하게 돌아갑니다. 시공이 아무리 잘 됐다고 해도 생산라인의 특성에 맞추지 못하면 잘 된 시공이라 할 수 없지요. 고객사의 고충부터 해결해주니 가스안전이 기본적으로 따라오더군요.”\n\n2005년 6월 대전에서 청륜건설을 설립한 청륜건설㈜ 서원석 대표는 전국을 종횡무진하면서 LPG와 도시가스는 물론 고압가스·암모니아·액화수소까지 ",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "fa9c9bb9e6a6"
+    },
+    {
+      "title": "[제33회 대한민국 가스안전대상] 국무총리 표창 - SK에너지 임상묵 대표“LPG누출부터 산불·침수 현장까지 달려가”",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126796",
+      "source": "가스신문",
+      "published": "2026-09-15 18:45",
+      "summary": "[가스신문 = 김재형 기자]  충남 당진시 송악읍에 자리한 SK에너지는 LPG·고압가스 판매업소다. 이 곳의 임상묵(61) 대표는 39년간 가스 현장에서 안전관리와 봉사활동에 다양한 이력을 쌓아 왔다.\n\n“솔직히 얼떨떨합니다. 저는 제 일을 했을 뿐인데 이렇게 큰상을 받아도 되나 싶습니다. 가스 배달을 시작하던 시절에는 이런 자리에 서리라고 상상도 못 했습니다. 상은 제 것이 아니라 현장을 함께 뛰어준 회원사들과 뒤에서 도와준 가족의 몫이라고 생각합니다.”\n\n임 대표는 다양한 공적을 인정받아 2026년 대한민국 가스안전대상에서 국무",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "9f0fd2c2e4d7"
+    },
+    {
+      "title": "가스공사, 국내 우수 중소기업과 함께 세계 가스시장 공략",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126789",
+      "source": "가스신문",
+      "published": "2026-09-15 18:40",
+      "summary": "가스공사는 방콕에서 열리는 가스텍 2026에서 중소기업 시장 진출을 지원한다.(좌측에서 아홉 번째 홍의락 가스공사 사장)\n\n\n\n[가스신문 = 유재준 기자]한국가스공사(사장 홍의락)는 17일까지 태국 방콕에서 열리는 세계 최대 규모의 가스업계 전시회인 ‘가스텍(Gastech) 2026’에 참가해 국내 중소기업의 세계 시장 진출을 지원한다.\n\n가스텍은 천연가스를 중심으로 수소, 저탄소 에너지 등 미래 에너지 산업 전반을 다루는 대규모 국제 행사로, 이번 행사에는 전 세계 150개국에서 1,000여 개 기업과 5만여 명의 관람객이 참가한",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스공사, 국내 중소기업과 세계 가스시장 동반 공략",
+          "source": "smedaily.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBlN3kwQlRrVk1qQU52RTFMWWdEVzIxR2RiVGg3RVh5YmUtc2ZxUWZ5OFZ5NXlTTHRVdnV4OUVyS2xadTZMQzNKc2s1MEVPT3dDMUFIMm1lZ1gtQjFfbEhySnR2cV90Q28xT3hNcQ?oc=5"
+        },
+        {
+          "title": "가스공사, 국내 우수 중소기업과 함께 세계 가스 시장 공략",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lWEpZbFR3aWVDSGYyTFJqU29CR1R5SXh1alFWU01vN0ZucF8wSGg3Q2FVVTR0OW5FZjk5b0x3LWZHbnRxX3MyNWxZc3JXb2xrVnZqWVZWeWViZW8?oc=5"
+        },
+        {
+          "title": "가스公, 국내 우수 중소기업과 함께 세계 가스 시장 공략",
+          "source": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrVm1QYW56ZTZFd3ZBOGk1TnY3bWdzNjZnRGFVUk5zVVlTSzZ5YTlCZzg3UjZJUHVOOTJ3SkZCaVRJbUtEeDBKc3AzUmhfaG56TmpycXJFQ09kdw?oc=5"
+        }
+      ],
+      "query": "rss:가스신문",
+      "id": "360da9484fd1"
+    },
+    {
+      "title": "국산화 기술 확보·지산지소형 그린수소 모델 ‘부상’",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126810",
+      "source": "가스신문",
+      "published": "2026-09-15 18:40",
+      "summary": "‘지산지소형 그린수소 모델 및 국산화 기술개발 전략’ 주제로 열린 포럼에서 관계자들이 기념촬영을 하고 있다.\n\n\n\n[가스신문 = 한상원 기자]제주국제컨벤션센터(ICC)에서 15일 열린 한국수소환경협회 특별세션에서 그린수소 산업의 현실적 확산을 위해 ‘지산지소형 생산·활용 모델’과 국산화 기술 경쟁력 확보가 핵심 과제로 제시됐다.\n\n이날 세션은 ‘지산지소형 그린수소 모델 및 국산화 기술개발 전략’을 주제로 진행됐으며, 수전해 기술 고도화와 사업모델 구축 방향, 지역 기반 수소 활용 사례 등이 집중적으로 논의됐다.\n\n윤종수 한국수소환경",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "8d5ed69bc45b"
+    },
+    {
+      "title": "공학한림원·국회수소경제포럼, 수소경제 발전방향 모색",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303046",
+      "source": "투데이에너지",
+      "published": "2026-09-15 18:35",
+      "summary": "수소경제 대토론회 안내 포스터.한국수소연합 제공\n\n\n\n[투데이에너지 신일영 기자] 한국공학한림원(회장 윤의준)과 국회수소경제포럼(공동대표의원 이종배·정태호 의원)이 에너지 대전환 시대 수소경제의 발전 방향과 실효성 있는 정책과제 발굴에 나선다.\n\n한국공학한림원과 국회수소경제포럼은 오는 21일 오후 2시 서울 여의도 켄싱턴호텔 15층 센트럴파크홀에서 ‘2026 한국공학한림원 수소경제 대토론회’를 개최한다.\n\n이번 대토론회는 한국공학한림원과 국회수소경제포럼이 공동 주최하고 한국수소연합과 한국수소연료전지산업협회가 공동 주관하며 쿠퍼실리테",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "112528662d57"
+    },
+    {
+      "title": "[제33회 대한민국 가스안전대상] 한국가스안전공사 사장 표창 - 범한퓨얼셀㈜ 윤기선 부장“수소충전소 안전은 현장 데이터가 중요”",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126804",
+      "source": "가스신문",
+      "published": "2026-09-15 18:25",
+      "summary": "[가스신문 = 한상원 기자]  “수소충전소는 일반적인 산업설비와 달리 고압 수소를 취급하기 때문에 아주 작은 시공상의 결함이나 관리상의 오류도 안전사고로 이어질 가능성이 있습니다. 특히 800bar 이상의 초고압 환경에서는 작은 결함도 장기적으로 배관이나 연결부의 문제로 발전할 수 있기 때문에, 단순히 설비를 설치하고 시험하는 수준을 넘어 시공 단계부터 운영 단계까지 안전을 연속적으로 관리하는 체계가 필요합니다. 기존의 시공 방식을 그대로 적용하기보다는 현장에서 발생할 수 있는 위험요인을 사전에 분석하고, 이를 배관 시공 품질, 기",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "62eb377906c4"
+    },
+    {
+      "title": "에어리퀴드코리아 강철구 수석 산업부장관 표창",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126809",
+      "source": "가스신문",
+      "published": "2026-09-15 18:24",
+      "summary": "에어리퀴드코리아 강철구(왼쪽) 수석이 가스산업대상에서 산업부장관 표창을 받고 기념촬영을 하고 있다.\n\n\n\n \n\n\n\n\n\n[가스신문 = 한상열 기자] 한국산업특수가스협회 용기소위원회 위원으로 활동한 에어리퀴드코리아 강철구 수석이 15일 열린 제33회 가스안전대상에서 산업통상부장관 표창을 받아 눈길을 끌었다.\n\n강철구 수석은 협회가 매년 11월 개최하고 있는 산업특수가스세미나에서 도로안전(2021년)과 수소 안전관리(2025년) 등에 대해 발표하고 가스안전공사 산업가스안전기술센터가 주최하는 독성가스안전기술향상연구회에에서는 수소튜브트레일러",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "5b2de3926a3e"
+    },
+    {
+      "title": "에너지硏, 팔라듐 막으로 물에서 수소 이온만 골라내는 원리 밝혀",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126790",
+      "source": "가스신문",
+      "published": "2026-09-15 18:20",
+      "summary": "연구진이 개발한 팔라듐 막과 암모니아 정량분석용 용액\n\n\n\n[가스신문 = 양인범 기자] 국내 연구진이 새로운 분리막 기술을 활용해 탄소 배출을 획기적으로 줄인 친환경 암모니아 합성에 성공했다.\n\n한국에너지기술연구원(이하 에너지연)이 팔라듐 막이 물에서 수소 이온만 골라 옮길 수 있음을 밝혀내고, 이를 친환경 암모니아 합성 공정에 적용해 성능을 입증했다.\n\n분리막은 전기화학 장치 안에서 반응물, 생성물, 용매 등이 섞이지 않도록 나누고, 반응에 필요한 이온은 통과시키는 역할을 한다. 기존에는 주로 이온 교환막 등 고분자로 만든 분리막",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "52f90a3da38f"
+    },
+    {
+      "title": "롯데GRS, 절약 실천 확산…한국에너지공단과 맞손 ‘에너지주의’ 캠페인 성료",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xTUlvMnZMWl9pN0Z5R1FOQWIwTGUxbEFtWWN3S2NBN1oxX0o1VFNQeUxpQTRNOGFMQ3dWSWRoWHVnQVZ3TFdHUnc2TFFaX3cwODh0ZGxtLXUwSW1WMHlxbXIweThMbld5?oc=5",
+      "source": "시사캐스트",
+      "published": "2026-09-15 18:19",
+      "summary": "롯데GRS, 절약 실천 확산…한국에너지공단과 맞손 ‘에너지주의’ 캠페인 성료  시사캐스트",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "롯데GRS, 한국에너지공단과 진행한 ‘에너지주의’ 캠페인 성료",
+          "source": "월드투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XeUFRQzFFcThMSW9XckpNTjlndUh5aHAwUlhYZ1g1dHJJNmtaTFQ3ZHFlc3NGNjNmYjBmcnAtYjJVS2cxbmlZMFR6WS1hN3ZTMGFsUzV4ZURlV200SEV6WXBMTmNFcUltWUZLVjBR?oc=5"
+        }
+      ],
+      "query": "한국에너지공단",
+      "id": "c6210c849559"
+    },
+    {
+      "title": "라이트브릿지, 동해 그린수소캠퍼스 개소···연 40MW 양산체제 구축",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126782",
+      "source": "가스신문",
+      "published": "2026-09-15 18:18",
+      "summary": "지난 10일 강원도 동해 북평국가산업단지 내 ‘동해 그린수소캠퍼스’ 개소식에서 테이프커팅식을 진행하고 있다.\n\n\n\n[가스신문 = 한상원 기자]수소 인프라 전문기업 라이트브릿지가 강원 동해에 그린수소 생산 및 실증 거점을 구축하고 본격적인 양산 체제 가동에 나섰다.\n\n라이트브릿지(대표 김종훈)는 지난 10일 강원도 동해 북평국가산업단지 내 ‘동해 그린수소캠퍼스’ 개소식을 개최하고 가동 준비에 돌입했다고 밝혔다.\n\n이날 행사에는 동해시와 강원경제자유구역청 관계자 등이 참석해 수소산업 거점으로서의 역할에 기대를 나타냈다. 또, 이철규 의",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "id": "239ac19d524c"
+    },
+    {
+      "title": "가스公, 국내 중소기업 18곳 해외시장 진출 돕는다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IR2lqN21jRmE2ZlJyTDFMWmVId0xRbjQyb01WMjIwMjZENThrbVUtampwb3E3azEwMGVPX0hXM2pxQl9MWjNwc3RaY3hJZy1JOGpRcFZya3lTQQ?oc=5",
+      "source": "경북매일",
+      "published": "2026-09-15 18:16",
+      "summary": "가스公, 국내 중소기업 18곳 해외시장 진출 돕는다  경북매일",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "5337ca0e49bf"
+    },
+    {
+      "title": "석유관리원, 수소 운송장비 유지관리 역량 강화",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126816",
+      "source": "가스신문",
+      "published": "2026-09-15 18:12",
+      "summary": "이번 교육에 참석한 관련 사업자들이 기념촬영을 하고 있다. \n\n\n\n[가스신문 = 이경인 기자] 한국석유관리원(이사장 최춘식)은 15일 전북 완주에서 수소 운송장비 구매·임대지원 사업자를 대상으로 수소 운송장비 운영사업자 유지관리 교육을 개최했다고 밝혔다.\n\n이번 교육은 한국석유관리원 수소유통관리센터가 주관하고 덕산에테르씨티㈜가 협력하며, 사업자별로 상이한 수소 튜브트레일러(T/T) 관리방식을 보완하고, 체계적인 유지관리와 안전점검 역량을 높이기 위해 마련됐다.\n\n교육에서는 △수소 튜브트레일러의 이해 △작업 시 주의사항 및 사고예방 ",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유관리원, 수소 운송장비 유지관리 역량 강화",
+          "source": "가스신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TM2FDa2ZQMXVvQ2JjZm9fVFRtaVg2RzktdmF0ckw4dWdFTUY0M0pwcEROUkEwRTgzcEFpbmxmbWFDR0wyWHpRUkFCWUJ5TWR6ZFphTFRmMEpLSTl2T3Y0ZVJxVEVJNmlOUjVidnJB0gFuQVVfeXFMTVMzYUNrZlAxdW9DYmNmb19UVG1pWDZHOS12YXRyTDh1Z0VNRjQzSnBwRE5SQTBFODNwQWlubGZtYUNHTDJYelFSQUJZQnlNZHpkWmFMVGYwSktJOXZPdjRlUnFURUk2aU5SNWJ2ckE?oc=5"
+        }
+      ],
+      "query": "rss:가스신문",
+      "id": "5aee0a0d1b8c"
+    },
+    {
+      "title": "한국에너지공단-세종대학교, 업무협약",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126785",
+      "source": "가스신문",
+      "published": "2026-09-15 18:10",
+      "summary": "공단 최재관 이사장(좌측)과 세종대 엄종화 총장이 기념촬영을 하고 있다.\n\n\n\n[가스신문 = 양인범 기자] 한국에너지공단(이사장 최재관, 이하 ‘공단’)은 지난 9월 11일 세종대학교(총장 엄종화, 이하 ‘세종대’)와 온실가스 감축잠재량 분석 역량 강화를 위한 업무협약(MOU)을 체결했다고 밝혔다.\n\n이번 협약은 공단이 보유한 온실가스 감축 기술 데이터 분석 경험과 세종대의 연구·교육 역량을 연계해 국가 온실가스 감축목표 달성을 위한 체계적인 감축잠재량 분석 기반을 강화하고, 관련 분야 전문인력을 양성하기 위해 마련됐다.\n\n양 기관",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국에너지공단-세종대학교, 업무협약",
+          "source": "가스신문",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sOVMwblFMWDZVOG9HRWJJZGRqcVNQcEZ5QkN3QnJDS0ZiM0hCTGZEQ0UxNk9sZ1NkaWxrT3VHa0l2TlE0UXJTYS1VcW9GMXFxMVBqemRsT2duYzlXYjlPYlB4YlRmUWhDWnfSAW5BVV95cUxOckpjMUNIN0JnbUtDdENnN0w2MjRseWx3WkdoNkxyblh2UmQ1cTBfLTN2cGwwdkh6TW1iR2xrYTdLeUEybnhvbjVJTWxib3dOWUc1Vk1kdUVJblRIcmltLVpkR3J3OHdxVTJacnVyQQ?oc=5"
+        }
+      ],
+      "query": "rss:가스신문",
+      "id": "12cbdb88ba0a"
+    },
+    {
+      "title": "가스공사, 중소기업 '수출 디딤돌' 놓는다…세계 가스시장 동반 공략",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203214",
+      "source": "에너지데일리",
+      "published": "2026-09-15 18:10",
+      "summary": "[에너지데일리 조남준 기자] 한국가스공사가 국내 가스 기자재 중소기업의 해외시장 진입을 뒷받침하는 '수출 플랫폼' 역할을 강화하고 있다. 자체 기술력을 갖추고도 해외 인지도와 발주처 네트워크 부족으로 시장 개척에 어려움을 겪는 중소기업에 가스공사의 브랜드 신뢰도와 글로벌 네트워크를 연결해 해외 판로를 넓히겠다는 전략이다.특히 세계 가스산업 관계자가 집결하는 '가스텍(Gastech) 2026'에 우수 중소기업 18개사와 동반 참가해 제품 전시뿐 아니라 해외 바이어 발굴과 비즈니스 상담까지 지원한다. 중소기업의 기술력에 공기업이 축적한",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스공사, 중소기업 '수출 디딤돌' 놓는다…세계 가스시장 동반 공략",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE81TWhnUW5DTkZTOE9QaXBtTUJLOFVKaFVJMTY5RGJhTEFfZjAtZnpwekFHcUNGSmVvdFJZbUxtTzhUd3c2Nll4RUpGeDFuNGlhU2VuVll5MUxCeDBKWmxvYWhZNlJoUV9zZ3QwNW80SnhmUQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "id": "b90d9da83184"
+    },
+    {
+      "title": "에너지공단 경기지역본부 포함 5개 기관, ‘사회공헌활동 보고회’ 개최",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126787",
+      "source": "가스신문",
+      "published": "2026-09-15 18:06",
+      "summary": "5개 공공기관 관계자들이 기념촬영을 하고 있다.\n\n\n\n[가스신문 = 양인범 기자] 한국에너지공단 경기지역본부(본부장 직무대리 이진철, 이하 공단 경기본부)는 9월 14일(월) 감천장 양로원(수원시 소재)에서 에너지·안전 공공기관이 함께하는 ‘2026년 경기 으쓱(ESG) 클러스터 에너지 안전 가치 나눔 사회공헌활동 보고회’를 개최했다.\n\n‘경기 으쓱(ESG) 클러스터’는 경기지역의 ESG 문화 확산을 위해 만들어진 협의체로 공단 경기본부, 한국가스안전공사 경기광역본부, 한국산업안전보건공단 경기광역본부, 한국전기안전공사 경기본부, 한",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "에너지공단 경기지역본부 포함 5개 기관, ‘사회공헌활동 보고회’ 개최",
+          "source": "가스신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95Z25pU3JqOXBUQThreXpPczBXNUNuU25iUU9DOHY0cEpFXzJMUllaUEtpTmNyeU1hNzRGOGRDNFcwNzJ6Nkh5ZWZaN1JnV21Ta3Y3b0VTR05GUHdsR3BZRmE1UnBWSXlTWmVfMVVR0gFuQVVfeXFMT3lnbmlTcmo5cFRBOGt5ek9zMFc1Q25TbmJRT0M4djRwSkVfMkxSWVpQS2lOY3J5TWE3NEY4ZEM0VzA3Mno2SHllZlo3UmdXbVNrdjdvRVNHTkZQd2xHcFlGYTVScFZJeVNaZV8xVVE?oc=5"
+        }
+      ],
+      "query": "rss:가스신문",
+      "id": "deea4d149196"
+    },
+    {
+      "title": "김천시, 공공기관 2차 이전·혁신도시 기능 강화 `한마음`",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05T1d2UzlTMTVZa2NvbVhKYmNQYlF2cGtmM2hMbXI2MldkZDdlU1RiVFkxLWw0TDlJVmxDWGlBSUQ2OGgxNjJLaENxTVlIUmxDaVFDR0hLa1ZqelRveWlEZE5HaVBNSDQ?oc=5",
+      "source": "경상투데이",
+      "published": "2026-09-15 18:05",
+      "summary": "김천시, 공공기관 2차 이전·혁신도시 기능 강화 `한마음`  경상투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "6c1c67fa4a0d"
+    },
+    {
+      "title": "현대엔지니어링, 카자흐스탄 가스공사와 가스처리시설 사업이행합의서 체결",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WTWoxRHlmYXhXM2FELXhJSTV6NzNWLVdCeWJBNm5GMU9IV2hvZmNqU1pPU1NBdERpQTE3RFAzOUlfWG52SGdwNEJqRGxQWlpkRlhwR2JKTi02d9IBX0FVX3lxTE1Ya2VIMHZGQTFTSVp4SllFWjNrcVhnQjh3eEY1SEZhNHZYZXVfZDBPZFk2ODV4S01sM0FVRDBfWUdsb3lpS09LZjJVS2duSHBHSGxjSmNpRGdWZ1VRaUg0?oc=5",
+      "source": "경향신문",
+      "published": "2026-09-15 18:05",
+      "summary": "현대엔지니어링, 카자흐스탄 가스공사와 가스처리시설 사업이행합의서 체결  경향신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "b023531e68d9"
+    },
+    {
+      "title": "삼성전자, 주거용 EHS 히트펌프 라인업 공개",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303019",
+      "source": "투데이에너지",
+      "published": "2026-09-15 18:00",
+      "summary": "삼성전자가 14일부터 16일까지 제주국제컨벤션센터에서 열리는 '2026 그린수소 글로벌 포럼'에 참가해 주거용 냉난방 전기화 솔루션을 전시한다 / 삼성전자 제공\n\n\n\n[투데이에너지 임자성 기자] 화석연료를 태우는 재래식 난방 설비를 공기열 기반의 고효율 전기화 솔루션으로 대체하려는 에너지 대전환 흐름이 한층 속도를 내고 있다. 삼성전자는 단독 실외기 구성의 냉난방·급탕 통합 기기와 혹한기에도 70℃ 온수를 안정적으로 토출하는 고성능 히트펌프 보일러를 내세워 탈탄소 주거 시장 공략을 본격화했다.\n\n삼성전자는 이달 14일부터 16일까지",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "dcacfe536267"
+    },
+    {
+      "title": "바람은 출산지원금, 햇빛은 난방비 절감…제주 에너지의 변신",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZRHFVUW5KUGRTYVE2V0trWjhvbE9NY2l5dmFGQ0JhN25VZTFmNXJncnhnNHJZUGJjNkh0SEg5cWxodHctUDZ6VzZ1elhNb1AtaDJ3SVdWUXdsR3YtVUM0a1FnS01oU0dYUlY1d2F3?oc=5",
+      "source": "gukjenews.com",
+      "published": "2026-09-15 17:59",
+      "summary": "바람은 출산지원금, 햇빛은 난방비 절감…제주 에너지의 변신  gukjenews.com",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "979665140147"
+    },
+    {
+      "title": "LS ELECTRIC-한전, 배전용 ‘그리드포밍’ 기술 공동 개발한다",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203211",
+      "source": "에너지데일리",
+      "published": "2026-09-15 17:50",
+      "summary": "[에너지데일리 송병훈 기자] 신재생에너지 확대에 따른 배전망 변동성에 대응하기 위해 LS일렉트릭과 한국전력공사가 배전용 그리드포밍(Grid-Forming) 기술 개발에 손잡았다. 기존 전력망의 전압과 주파수를 따라가는 인버터 중심의 전력변환 방식에서 벗어나 분산형 전원이 직접 전력망의 기준을 형성하도록 하는 기술로, 양사는 국내 실증을 거쳐 상용화와 글로벌 시장 진출까지 추진한다. 재생에너지와 ESS 등 인버터 기반 전원이 빠르게 늘어나는 가운데 배전망의 안정성을 확보할 핵심 기술을 선점하겠다는 전략이다.LS일렉트릭은 지난 14일",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "26f2a8b7791b"
+    },
+    {
+      "title": "롯데GRS, 에너지 절감 활동으로 전력 6만5000여kWh 줄여",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE05LTR2ZUM1dUxoNlFDSkd4T19PQVNCbkxtdmdMVWx1NGl2X25jZTNlbWhSQ2xkMnk4VUNLNTFCeUZpU2ZPWlVMWXFheDZtMV96bFpBYm1UN3pnZmJmXzRLdkd1RlpHMXhXZUdISEFBTjlGTlFOTTZyWENB?oc=5",
+      "source": "로이슈",
+      "published": "2026-09-15 17:42",
+      "summary": "롯데GRS, 에너지 절감 활동으로 전력 6만5000여kWh 줄여  로이슈",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "c6ac7c97b399"
+    },
+    {
+      "title": "석유관리원, 완주서 수소 튜브트레일러 안전교육…\"현장 점검 역량 키운다\" |",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBjSHp1OERSWC1oQXJvUVl6OHRKVTdWdkRWR2pDRFpKUXBqdkFHUy0zNGswNDAxRGFZMzJlSTZIV0xYUkpISHBJSHc3U3YzeFFYTHM5VmtzTXVyc0hHa0ZEeURNdjhVYm1BUlhwYW5RTQ?oc=5",
+      "source": "더퍼블릭",
+      "published": "2026-09-15 17:41",
+      "summary": "석유관리원, 완주서 수소 튜브트레일러 안전교육…\"현장 점검 역량 키운다\" |  더퍼블릭",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유관리원, 완주서 수소 튜브트레일러 안전교육…\"현장 점검 역량 키운다\"",
+          "source": "더퍼블릭",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00RDlXd0JrZXdsdm9YS1lVOHdBcUo0U0dOZzZvZEh6dm5JYm5hVlI1RWhkbTlBY21ZYXNVTGFCeFZUWk9yRWJNTzV5Ty1SVUxJY3BTMmM4WlhoM1RJV1ZmUnI5WHdQaWU5SGtj?oc=5"
+        }
+      ],
+      "query": "석유관리원",
+      "id": "4514b774e508"
+    },
+    {
+      "title": "유가 100달러 재돌파에 정부 가격안정 총력…최고가격제·유류세 연장 검토",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrdG8yQ3JlN3FjWE51YWl4X29Eb3IwZmt5TW1lWHJzamUyZDBxZ2Y4MWw1TGN4bGN6NkVkbkF1cmk3UGRvYkdLLWZ1QUNYazdBZUJiUW5ERTM3TC1jRU9IRnBqZF9fRkpwTGdB?oc=5",
+      "source": "한국부동산뉴스",
+      "published": "2026-09-15 17:40",
+      "summary": "유가 100달러 재돌파에 정부 가격안정 총력…최고가격제·유류세 연장 검토  한국부동산뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "10ce9e673f17"
+    },
+    {
+      "title": "“전쟁 소강사태 아니야?” 사우디 송유관 피격에 11월 원유 수급 ‘경고등’…유가·소비 폭등 속 정부 총력전",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4ZWdwVmt6aDhKcHlJX0R4dVJGd0Q5cHY3c3RxNnVtMXlnNnhwTHlQOFU2d0I5c0V5NUZuSW56ZUlpRFNhMHh0d3MwdGtab29aVUVHMnUzUmtZT3RzcE0wY1FSTXhkNlN5Wlo5dUUwb9IBb0FVX3lxTFA4ZWdwVmt6aDhKcHlJX0R4dVJGd0Q5cHY3c3RxNnVtMXlnNnhwTHlQOFU2d0I5c0V5NUZuSW56ZUlpRFNhMHh0d3MwdGtab29aVUVHMnUzUmtZT3RzcE0wY1FSTXhkNlN5Wlo5dUUwbw?oc=5",
+      "source": "더퍼블릭",
+      "published": "2026-09-15 17:39",
+      "summary": "“전쟁 소강사태 아니야?” 사우디 송유관 피격에 11월 원유 수급 ‘경고등’…유가·소비 폭등 속 정부 총력전  더퍼블릭",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "46c56e2192eb"
+    },
+    {
+      "title": "나주시, 2차 공공기관 이전 등 범시민 서명운동 전개",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rM1dLRWtjWXlGckZwUUR6a0d2NnB3cExGQ01aeUFnbmZyUWxsNHFNSm9NRlYyRGplTUlmeWRSYTJ4WTVBYW1yNzZfdERSS284Z3FrOUM3QWp0ZmRsTnhrZkRrcHg3TUVCWG1PNNIBcEFVX3lxTE1oWlgtaFYyX1gwWl9BZExEbXE1ZF9FYlJuYW9Uc3RpVnZHc2V1cFV6aEoyMXpSaXhWdGtzMnUxb2pJRXg0Skx1dEkwWl9ramtRQm0wemlSUjZfaFRzT25tMFBaMmRnMWpaV0FHWGNOb08?oc=5",
+      "source": "남도일보",
+      "published": "2026-09-15 17:34",
+      "summary": "나주시, 2차 공공기관 이전 등 범시민 서명운동 전개  남도일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "065dcf16b249"
+    },
+    {
+      "title": "“공공기관 돈도 지방으로”…박성훈 의원, ‘지역금융 환류’ 법안 발의",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9DSWZ5WklHb1VZOHpBQjRya3ZQTy1wNG54dzhMcEt2QlY1REpUVUFsZTZtdjhuNmhQUklaMG1PZnRqYTRWMHZ5YThOLVZBdVhGQTNhRlZUMW9aTVd3NmU1MlE3a0JUczFHU1Y4NjVmeWJPYk3SAXdBVV95cUxOSGwzRlhuMXpvZERZWnFaYThObWVrNUQtN3l6NEw3Q3BQNzBuNGRGZ0dSNURTUk4wNkZ3d042ZWE3ZzNHVXB2RU1lYV8wckR1WXFqcUJ4NHlXMnMySWZrcVFnQWlpaktyMXpXYVhGc3ZZbm1tbTFnaw?oc=5",
+      "source": "인사이트코리아",
+      "published": "2026-09-15 17:26",
+      "summary": "“공공기관 돈도 지방으로”…박성훈 의원, ‘지역금융 환류’ 법안 발의  인사이트코리아",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가",
+      "id": "b5b56d93a7df"
+    },
+    {
+      "title": "한국에너지공단, 충북 진천서 ‘친환경차 검증 시험동’ 준공…수소·전기차 정밀 검증 인프라 확충",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA1dTNJOFBINEVtMmVuSEdEaGFoNjZ2YUVvY3c2T1k3OFhIRlFVLTZGU0NmU3ZSek1CTlNWaTFnaFhYdG4yUVQwMFNvYk9qcXozc2o2RjBvS3RBcjVtYVE5cWowWTF4Y2tmZmgwX2tLb3c?oc=5",
+      "source": "에너지코리아뉴스",
+      "published": "2026-09-15 17:22",
+      "summary": "한국에너지공단, 충북 진천서 ‘친환경차 검증 시험동’ 준공…수소·전기차 정밀 검증 인프라 확충  에너지코리아뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "e7fbbe30ab9f"
+    },
+    {
+      "title": "[분석] 기업연구소를 '글로벌 기술전초기지'로…2,895억 투입 GATC 본격 가동",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203210",
+      "source": "에너지데일리",
+      "published": "2026-09-15 17:22",
+      "summary": "[에너지데일리 양미애 기자] 정부의 중소·중견기업 연구개발(R&D) 지원정책이 '기술을 개발하는 연구소'에서 '세계 시장에서 기술을 팔고 산업을 주도하는 연구소'를 육성하는 방향으로 한 단계 전환된다.반도체와 이차전지, 미래모빌리티, 첨단바이오 등 전략산업 분야 기업연구소를 대상으로 2031년까지 총 2,895억원을 투입하고 해외 공동연구부터 실증·투자·사업화까지 연결하는 '글로벌 우수기업연구소(GATC)' 사업이 본격 가동된다.특히 이번 사업은 개별 기술개발 과제에 연구비를 지원하는 기존 방식에서 벗어나 기업연구소 자체를 글로벌",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "c667d429b30c"
+    },
+    {
+      "title": "구리시 교문1동, 한국석유공사 구리지사로부터 추석맞이 온누리상품권 전달받아",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBUOEt5SFZGTzd6clRMaEJfVlVubk5femI5WkUyMy1pYnQtWmxNenJtaUhqdG9mdWVpaUNBQ2xSbUE3amFKWG5reEEtRFFsc0VoYWU0TlR3MVV6d2FnSVFPcldGMWNDTnlqcGtiNw?oc=5",
+      "source": "경기북부탑뉴스",
+      "published": "2026-09-15 17:21",
+      "summary": "구리시 교문1동, 한국석유공사 구리지사로부터 추석맞이 온누리상품권 전달받아  경기북부탑뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국석유공사 구리지사, 추석맞이 온누리상품권 100만 원 구리시 교문1동에 기탁",
+          "source": "타임뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE04WlNnYTJ2M3dqb2s4TFltYzl3WG5wd191YkR5elpPbjF3WXJ6d2h3NWdXb2p5UlR0SFV3Zno2ODZhSWRuZl91TTFEVjNiWjBmY1ZoMA?oc=5"
+        }
+      ],
+      "query": "한국석유공사",
+      "id": "f07aadd4c7b4"
+    },
+    {
+      "title": "롯데GRS, 한국에너지공단과 ‘에너지주의’ 캠페인 진행",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ScEFTVWxjNHZ2NUxKVWNSVlZFTktCblpBQjc0SmZOQUZlWlJ6WUt0ZFNtdDVXNEdNWFFVd3NPa1ptSGp5TXpIOThLdU1yYzQ0d240YWtnOHZaRy1zNGRuRnJ0cWw0ZmJSUGdF0gFuQVVfeXFMT2c5V1FIRjlJWk1jTjdIT0FtUkVaOFZqS0FEUzA0QU9CS25QVDlWd1k3YWlCYzdwWlhtWnlUUFBFWXoySGcwTWhBQmkySUpTaXZmNkFudVJaT05YWV9qSEExZUVoUDJ6UF9MNFhFbGc?oc=5",
+      "source": "파이낸셜투데이",
+      "published": "2026-09-15 17:11",
+      "summary": "롯데GRS, 한국에너지공단과 ‘에너지주의’ 캠페인 진행  파이낸셜투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "롯데GRS, 한국에너지공단과 ‘에너지주의’ 캠페인 마무리",
+          "source": "소년한국일보",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5UTjhPS0FzczhLcEZDMTNxOHNNX3BtcnV3QnVuam05S19oLVpnTDkyUWYyMU5TeXB1TkY4aU13VkplMXZRMUFsME5oTFVldnlwSTlTOUJ3ZlJqdDI0bEFyTldUM0I0TmdfT2FHONIBcEFVX3lxTE9PdFprazJ1akl0ZzE0ZzFuMGN2OHZmSENJckRGeTRpY2RSX2Vkdnp5U3dnTEJfT0pfWDl2ZlBsUm1XMzg5bjU2SjBrUVNhVWt3cmtWdm56dXo4angwZ0RGZWNGTjNVWnpqZEFIX0d4dDQ?oc=5"
+        },
+        {
+          "title": "롯데GRS, 한국에너지공단과 ‘에너지주의’ 캠페인 종료",
+          "source": "비욘드포스트",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5lMHlRNVhCNDF6RFZZUW94Y1FLS3hGMTN3ek4zdWk5RkFYWXB2N1FzakEwMUJjQlhqcnlyS0p2LUxfRnhVRi1VTDMxOUNOZ1NTMDlSZDlXZnZ4WHp5a0VPMHVadXZMUVExR0tSWUxiZFNwVWlpTWlYQWQzaVc?oc=5"
+        }
+      ],
+      "query": "한국에너지공단",
+      "id": "6a394afc8901"
+    },
+    {
+      "title": "美 국채금리·유가 상승에 AI 속도조절론‥반등 없이 약세",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBRa0l0MklGa2ZXUHZILWN2alo0VFdUYjRlZ1dHZTJZWW54NmxpdTN5STJOSTlFSFc2TmhEbTVHS0NCWm4zZkxuMjJxT3hCajU0aDVHYkZIVkZueW5qRkVzNFFBeWtIdGlCaUVJRFJxbmcycDY4SU16U9IBeEFVX3lxTE03cHpueUNmdm5zYk0zWk8yNktKbi1JVDJLbURwTmJQZzN0d2xmaHFGMGV2Mm92anZBUlFFRFo3OUhmaFhVTTZnVnNPZW5oaTY0NEtwdGFfc1VLTWt1M3dMRS1yeERjdHFiLVVUMWZfb2hRMmsyaXJvcQ?oc=5",
+      "source": "MBC 뉴스",
+      "published": "2026-09-15 17:05",
+      "summary": "美 국채금리·유가 상승에 AI 속도조절론‥반등 없이 약세  MBC 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "8103f27b34a8"
+    },
+    {
+      "title": "한국가스공사, ‘가스텍 2026’서 中企 해외 판로 개척 지원",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAyQUpMSFBXck55OThtaTdiS3ZzdUNGV1NBU3VBWkxvRkxaWGxJbWdOTnBpM1JabXNlXzdEXzlSZHlOMVRpdllwb0xiR2hWSHJ4b0c2Y2dVV012d2JIV2syOA?oc=5",
+      "source": "NSP통신",
+      "published": "2026-09-15 17:04",
+      "summary": "한국가스공사, ‘가스텍 2026’서 中企 해외 판로 개척 지원  NSP통신",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스공사, 가스텍 2026 참여…국내 기업 해외 판로 개척 지원",
+          "source": "SR타임스",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vVmliLTVIYUZqWUZCTjhHNktSempRQVc3RTZkamlfX1N2N05ORUdVMlVJWUxhaVlRV0N5OTdVa01pTGdKMjY4Sjg1YVlVUWVZTXZCbEN6Sm8wa05QdkxFWHlSTDFhTzRR0gFrQVVfeXFMTzFlRk55QThQWkFhdy1xVGFJTlhkUlNvMXZyVHhDbjF5UVVEWmRydEZqZ3dTRWNhcFRBSzhiSmlRSlZYWTNxVHRBQi1PelBsZ2NKOS1VbDBoLUhfeEhIWDVsNVlRd2ZhMExuT0U?oc=5"
+        }
+      ],
+      "query": "한국가스공사",
+      "id": "516366a8aaf1"
+    },
+    {
+      "title": "아시아증시, 국제유가ㆍ美채권금리 급등에 일제히 하락",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkSGhSWm9rTFg2RWMyYlZBUE45VXdfWTlXdWEySzNSUWJfeG80Vng0dHJXSU5OdGFzanlGMVhDNUZfekc1NWNtNmI4NDlkTDZROC1TbEpZTkRzeGw0VDdfTlZFQmJ6RXFhMTBhYU5R?oc=5",
+      "source": "이투데이",
+      "published": "2026-09-15 17:02",
+      "summary": "아시아증시, 국제유가ㆍ美채권금리 급등에 일제히 하락  이투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "cc3bc2836b49"
+    },
+    {
+      "title": "석유관리원, 수소 튜브트레일러 안전관리 강화",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5oUFBjcVlSQjdJTUZkRVJFamgtZFZLN0l6OFBKbDIyTmpNajRHSzEySmpqOC15OWtPOEx1OUdfYXZSUjBOUU82elpSYktNczhTVVh0V280Zk14aUFsZi1aWlRjNi0?oc=5",
+      "source": "국토일보",
+      "published": "2026-09-15 17:00",
+      "summary": "석유관리원, 수소 튜브트레일러 안전관리 강화  국토일보",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유관리원",
+      "id": "ffdee1f15290"
+    },
+    {
+      "title": "중동 원유 수송 차질에 운송·보험료↑…정유업계 비용 부담 커진다",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBXZjBZdmE1ZWF5Tms5QVFfOGJFenlHSDdFdDBGQll6QllQRl9IQWpROC1KTF94N3JudlNMRmZYQnJpMnY0RmZBMmtlSUVYWVRQN2lHZWU0TXE3V1NVOF8wdHRBbGs1U1RkYUtJ?oc=5",
+      "source": "snakorea.com",
+      "published": "2026-09-15 17:00",
+      "summary": "중동 원유 수송 차질에 운송·보험료↑…정유업계 비용 부담 커진다  snakorea.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "d1a4ec3bd55d"
+    },
+    {
+      "title": "[이슈플러스]정유 4사, 국제유가·중동 정세 '예의주시'",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9HZXA0OVVhTDVQTWZLWFJsaHU5LXh3Wk9kMDVhelBZVDkzZk5FdThBTEtEaTRxejQ1MUJJR3M4eDZ0WXd1QWJscV9ZeHl2UQ?oc=5",
+      "source": "etnews.com",
+      "published": "2026-09-15 17:00",
+      "summary": "[이슈플러스]정유 4사, 국제유가·중동 정세 '예의주시'  etnews.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "3089bdad2e3c"
+    },
+    {
+      "title": "LG화학-中 장화웨이, 초고순도 반도체 세정제 사업 협력 MOU 체결",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303075",
+      "source": "투데이에너지",
+      "published": "2026-09-15 17:00",
+      "summary": "LG화학 석유화학사업본부장 김상민 전무(오른쪽)가 상자오총 장화웨이 장인공장 동사장과 업무협약을 체결하고 있다./LG화학 제공\n\n\n\n[투데이에너지 신영균 기자] LG화학이 반도체 세정 소재인 초고순도 IPA를 중국 현지에서 공급하는 체계를 구축했다. 이를 통해 글로벌 반도체 시장 공략을 가속화하고 있다. LG화학은 최근 중국 정밀화학 소재 선도기업 장화웨이와 반도체용 초고순도 IPA 사업 협력을 위한 업무협약을 체결했다고 14일 밝혔다. 장화웨이는 반도체와 디스플레이 공정용 고순도 화학소재 등을 생산하고 정제해 현지 주요 반도체 기",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "7194497df6bf"
+    },
+    {
+      "title": "남해군, '에너지 자립의 섬' 정책 내실화한다",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96ZnhpbVdYcGduTGEyUll2dWJCZF9MbWcxNUlKenRhSXhob2FKUklsZXNUcDRNWDBfVmRjTGFLdzAwdm9YcVFJTWVQbkwxYjhaZkxRUmxjVDFmdkprcEc5eFFNaUs3Wkd4YUs1elBR?oc=5",
+      "source": "gukjenews.com",
+      "published": "2026-09-15 16:56",
+      "summary": "남해군, '에너지 자립의 섬' 정책 내실화한다  gukjenews.com",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "e1a015e26800"
+    },
+    {
+      "title": "\"햇빛으로 돈버는마을\"한국에너지공단이나서 투명성 높인다",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB5Rk9vQ3BlVU5Pd19UY1pYUVBJY2YwTDY1SS0wN09kaVRDZDFReEZYOWdQb2lxOUtJQWpTNkRBXzFaM2kyYm9NUExieldybnExOEVyLS1kYkNUX25TMkZMZnN2XzNSUTdNWV9TXw?oc=5",
+      "source": "한스경제",
+      "published": "2026-09-15 16:50",
+      "summary": "\"햇빛으로 돈버는마을\"한국에너지공단이나서 투명성 높인다  한스경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "82bf005150e6"
+    },
+    {
+      "title": "사우디 송유관 폐쇄에 유가 불안…국제 경유값 석달새 40% 급등",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zV3JfMC11bVhmXzN0Ym1Tbjdjc3dhYVlqS05OZ2FobVNUYkR6NDdmRkZRZndGRU9OeVNOVUNXQVNzejdPcTd1QjdRbHJMRzQ?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 16:49",
+      "summary": "사우디 송유관 폐쇄에 유가 불안…국제 경유값 석달새 40% 급등  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "b8d2bbacb2a6"
+    },
+    {
+      "title": "에너지공단, '햇빛소득마을' 레스코 관리체계 고도화",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9LS2FxZldCbW14RHhhdW5LUmZjbjZwVEg1ZG9wa3hnMFhaSmJEZjJJeWpEaHVYcm9LTzVObHBKemlRYWctZi00SGlLbkFMLVRaUnhXZ0o1MmdoT28wT2pMMlRTdw?oc=5",
+      "source": "국토일보",
+      "published": "2026-09-15 16:31",
+      "summary": "에너지공단, '햇빛소득마을' 레스코 관리체계 고도화  국토일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "d7e58d167ec8"
+    },
+    {
+      "title": "재생에너지는 에너지 쇼크 완화제… 5개월간 화석연료 전력구입비 4.4조 원 절감",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0zbmp5NXd5TUFQbS1WbmZCLXd3MEtzY3hTLUtBMHZQdjY1YTdNMlpEcVl0NXJyR0FDbjd0LTRVS3JuRU04WWZzS1NLXzBQUGdGdFJDeGVQSUFtWE9TNVN4ZDdpdTJ1MFp5X1h1c2Vn?oc=5",
+      "source": "스타인뉴스",
+      "published": "2026-09-15 16:28",
+      "summary": "재생에너지는 에너지 쇼크 완화제… 5개월간 화석연료 전력구입비 4.4조 원 절감  스타인뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "d3621439535c"
+    },
+    {
+      "title": "에기평, '개인정보보호 인식제고 캠페인' 전개",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303072",
+      "source": "투데이에너지",
+      "published": "2026-09-15 16:23",
+      "summary": "캠페인 단체사진(첫줄 오른쪽 일곱 번째 에기평 이승재 원장) / 에기평 제공\n\n\n\n[투데이에너지 임자성 기자] 공공과 민간 영역을 가리지 않고 개인정보 유출 사고가 잇따르는 가운데 공공기관의 보안 기강을 바로잡기 위한 내부 자정 작업이 전개됐다. 한국에너지기술평가원은 처리 목적이 끝난 개인정보 파일을 일제히 정리하는 전수 점검에 이어 임직원 참여형 보안 캠페인을 열고 빈틈없는 데이터 관리 체계 확립에 나섰다.\n\n한국에너지기술평가원은 지난 14일 임직원의 보안 의식을 고취하고 철저한 관리 문화를 현업에 안착시키기 위한 '개인정보보호 ",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "15ada9ff0896"
+    },
+    {
+      "title": "코스피, 美 금리·국제유가 상승에 '4거래일 연속 약세'…코스닥 0.70%↑",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5LUUJoQ3doTUNtdGphdDJPV3d2alY3cE0xUGVQR1hsMFhoRFBrSXBRVjgzbzk1UEN0S2g5YmFrUHZlUUNGUkdIdTFkX3E1ZWNKTTltcjR2WG13RHJ6VzM3VW5XZ2RrS3VBNjRBZA?oc=5",
+      "source": "프라임경제",
+      "published": "2026-09-15 16:15",
+      "summary": "코스피, 美 금리·국제유가 상승에 '4거래일 연속 약세'…코스닥 0.70%↑  프라임경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "eeed4a058728"
+    },
+    {
+      "title": "재생에너지 보급제도 15년 만에 개편…경쟁입찰·고정가격 계약",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjaVNZNEw4bUxaRlhmcjVKY1NoZGZwVzhQcloxQWt5a0NIS0hGdURoS3VXeTRTSHZiM0xyOTg5ay1wWTZ0Q0tmcFFjLUF3Z0pTUHZzVVBfNkJwWjhLVTBGSjNvUEVYeEFlYWRiYg?oc=5",
+      "source": "대한민국 정책브리핑",
+      "published": "2026-09-15 16:13",
+      "summary": "재생에너지 보급제도 15년 만에 개편…경쟁입찰·고정가격 계약  대한민국 정책브리핑",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "b88f01d4113b"
+    },
+    {
+      "title": "[국산 에너지기술 세계로]한국가스공사, 가스텍 2026서 국내 중소기업 해외진출 지원…글로벌 판로 확대",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NN0RfZzF0emdKWlpGWXpmbk01VXYyVEdJZnNNVVYxZ2NleFl4MGg2WV9qVUFINDNyeWxST2syVHlNaXVhbzVYZEpYUXQ3VE40U0NtTkhSenNweHVxQ0RVa0ZNSGgzcTMyTG1Qb3FWR0Y?oc=5",
+      "source": "전국뉴스",
+      "published": "2026-09-15 16:06",
+      "summary": "[국산 에너지기술 세계로]한국가스공사, 가스텍 2026서 국내 중소기업 해외진출 지원…글로벌 판로 확대  전국뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "807228302266"
+    },
+    {
+      "title": "국제유가 오르면 가스값도 오른다…한전에 가스회사까지 줄줄이 ‘비명’ - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSHBjZHM4VERsZ3pyb1hBQjNyNnowQ1BDcGhoem1Jd2RJdkhwc1ZfWmZHbmlUdTZibkdyVWpLbDFBZGNHbU1jdWEzNHdSMFB4QlNRWVpmbHlHclB2Zm1oMThKQlhmMEM0TkFQWGxxdm5INmZuaE9ub0F6OF9ORXJCTlJZLU3SAZgBQVVfeXFMTnVOdGMyMHlPUmw0LTZxWVltVDNDemltVk95YmpmeVZiZ0wxekJzQXM4bkhEUXdlV2I0QXd4N0pRc2RBUUd5NkJkTk5TU2toNjM5aVh5RUVmQjFyako5amtETE9SdXRHZkRncEtpaC1sU3ZWZ0hWT181ZEVNMUpjOGI3MHFqRWVPVFh3c3c5alZSeXMxWGlibUM?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-09-15 16:03",
+      "summary": "국제유가 오르면 가스값도 오른다…한전에 가스회사까지 줄줄이 ‘비명’ - 조선비즈  Chosunbiz",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "1b87613d42be"
+    },
+    {
+      "title": "이유진 靑기후비서관 “통합 에너지인프라 패키지 전략 필요”",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ERUEzWkdnM0NRalBiU2JQdHNpYVd1cy1naDM5N1lZa2VZM04xSVdseXlWcmtGSnY1T21FN1NyZldJVGwzYktvVkJ3bUYxbE5BWGFFZnZ5cklPUG8zcG8tWC1DX0hnUG81Ri1SVdIBcEFVX3lxTE5kMEVEYmhWZG5OTUo3ODJMYUQzR3IxZXJ0ZFVmOFlHSTJ3bDVXSEJ3c2JOakxza0pQdWhZNG1UT1BUeGUzRktHRERqTkY4aldfaHVLcTZCNlZKUHY2d2d0T25NN3RCeVg0UG84ZFdGbUw?oc=5",
+      "source": "전기신문",
+      "published": "2026-09-15 15:54",
+      "summary": "이유진 靑기후비서관 “통합 에너지인프라 패키지 전략 필요”  전기신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "b63e3997828c"
+    },
+    {
+      "title": "사우디 송유관 끊기며 국내 원유 수급 11월 '비상'",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uSFJrT01JYU5wb0d3UjFLdnNSSW5udTlZTWhjT29zaERhLTNHQkpYaWV5M1VVNzAyNFR1aW5iQnRhSjNiTWlFdVpRRHNCOHphQkR4QjExdGxaSmJPZjgtek9OSXd2S19IVUJiVw?oc=5",
+      "source": "생생비즈플러스",
+      "published": "2026-09-15 15:51",
+      "summary": "사우디 송유관 끊기며 국내 원유 수급 11월 '비상'  생생비즈플러스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "d369854da333"
+    },
+    {
+      "title": "사우디 동서 송유관 가동 중단…정유업계, 11월 물량 확보 '비상'",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKdDE4NzZaM2xqLXNraHFwT2h4MUlOMllaTVlGNTNVMUhIV0J0UHJKdGRpUXBmcVlZY1hjRUJNR3RrdXBYTUZheG01ZUNXcFU?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 15:45",
+      "summary": "사우디 동서 송유관 가동 중단…정유업계, 11월 물량 확보 '비상'  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "ca138bb8bacf"
+    },
+    {
+      "title": "한국에너지공단, 울산 에너지 취약계층에 희망꾸러미 200세트",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qb0ZVV0pXdjdJRnFOWnMxMjU1WnFaLTJwbU9IeXZNVDlIaHpfeFBEVm4wbm12SWRya216SnJwenpVOE1JdHJ1ZUJFS21oY0Rid2NuM2JPNkRHTnPSAWBBVV95cUxNZDFuUjE5TjhJcjB4M1p1U0pZWWI5QmlsMklZZ1F2eHcwTE1VeGFWSlFjOHdwdFJiTHQ3MS1LTGVKWWE4aTdSRDFZWV9TNVNieHNacG9iRy1RNTJvY1AtRzU?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-09-15 15:36",
+      "summary": "한국에너지공단, 울산 에너지 취약계층에 희망꾸러미 200세트  연합뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "ce7bebcc3fb3"
+    },
+    {
+      "title": "국제유가 '고유가 장기화' 가능성, 정부는 최고가격제 반년에 '손실보전 수조 정산' 시험대",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OVU51U3hnaDlFVHdDVi1zMkdNNGl4Smtpd2g0Y1M2SEhYU25NNWllckZjeHlmSzRxNG4tU3JfLWtKZTQwaHd0cDFfTjBvUjVlX29hRUQxTUpfT19UeWluRUs0S0IwZDk2SUs3N0laOUJXWWc?oc=5",
+      "source": "businesspost.co.kr",
+      "published": "2026-09-15 15:33",
+      "summary": "국제유가 '고유가 장기화' 가능성, 정부는 최고가격제 반년에 '손실보전 수조 정산' 시험대  businesspost.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "1c7108dce085"
+    },
+    {
+      "title": "'바람.햇빛을 소득.일자리로'...제주도의 기후경제수도 구상은?",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zTWdjckF6VWJkb05yVXYyTjdZZzhrZ1lTWGpEdTFwcnZBRWh0Vk5xczYzNUhFV0l3MGdiQnpxbUs3X1U5emMybWhBSmpRTnl4X2dsaUc0aGQwaHhuaF9ReGZXTHdWT0pkdGFud3dkRnBUTzA?oc=5",
+      "source": "헤드라인제주",
+      "published": "2026-09-15 15:30",
+      "summary": "'바람.햇빛을 소득.일자리로'...제주도의 기후경제수도 구상은?  헤드라인제주",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "a6b5f543252d"
+    },
+    {
+      "title": "사우디 송유관 피격 후폭풍…국내 원유 수급 불확실성 다시 고조",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1RWW9EVmxSRE9IR2N3UVlXaE1LT1ZBWGd0VlJGSkQ4Mk9MbzA4WVMyN19nckYtVDlpZk13ZGt3TW5BRmFFa0thdVdRWm1ybHhMUUxqRlBMYmlONEx5WThEM09ka2E?oc=5",
+      "source": "디지털데일리",
+      "published": "2026-09-15 15:21",
+      "summary": "사우디 송유관 피격 후폭풍…국내 원유 수급 불확실성 다시 고조  디지털데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "cdb155d59507"
+    },
+    {
+      "title": "울산 중구의회 \"에너지 공공기관 울산혁신도시로\"…결의안 채택",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13MkVlT245U2tDVTdnMi12MG81TjNVc1ZZYlAzQ2V6MXo1MXhNeWRyc2NnUURYcFYwbEpUZTZBUjBZdjNlM1RsNE8waHNWdTdrbkRXZ3NZbUVSeXhuQXFGRtIBeEFVX3lxTFBxTEZHbEJ4UHZSZUJld01BRElmYzRxVFA5UVdHUzFkWktPaUhCVzkycFJPVXFUMlV0bjVGTlVqVGxXdkxDblotMGNSaTAtelVFRTcxcE9jaXpBRWE0blpjZnduNi1tbXEtZzM2UlZGVzk0WXpvUFdBWA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-15 15:20",
+      "summary": "울산 중구의회 \"에너지 공공기관 울산혁신도시로\"…결의안 채택  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "03b23849b4ad"
+    },
+    {
+      "title": "7000명이 함께한 에너지 절약…롯데GRS, ‘에너지주의’ 캠페인 마무리",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE40WURJYkhueU9FRlhmVVF2bDdMc2NjNXZfd2dWckZEZWY5N05oSHlpTFlwUFFwbHpLZHBOaDdOMUV6djdaUE5RVUFkSWFFSzdxR2trUGRQMTl4WnNUNXhNSmJRN2FKdU5pajhCUFJpZw?oc=5",
+      "source": "이코노미사이언스",
+      "published": "2026-09-15 15:19",
+      "summary": "7000명이 함께한 에너지 절약…롯데GRS, ‘에너지주의’ 캠페인 마무리  이코노미사이언스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "0774af1e9639"
+    },
+    {
+      "title": "가스公, 방콕 ‘가스텍 2026’ 동반성장관 운영…中企 18곳 해외 개척 지원",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5nVzF0b2Z0ZWk4X0c4dndyeXl5eENjNmp1X21DbG1tTmI4eVlnYUFYNFVoU05iQ1BicDNmbE0tZ2NRMlRPZ01fam9YOUxsZWo0TVRwSTZ2TQ?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-09-15 15:10",
+      "summary": "가스公, 방콕 ‘가스텍 2026’ 동반성장관 운영…中企 18곳 해외 개척 지원  헤럴드경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "222024772653"
+    },
+    {
+      "title": "국산 없는데 ‘국산 우선’ 공고…베란다 태양광 사업 논란",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0temdEd2N2M0xMbkg2ZXl2VTRCYzN3bm9WX3JYNlg3cXF5bEZ1NU9IUF9FUk95OXRMYnBybVh2eG11MWh6T1dCRXZFcU4yV0djTzFXTlBLUXpCZ09fZmc?oc=5",
+      "source": "기후에너지데이터뱅크",
+      "published": "2026-09-15 15:10",
+      "summary": "국산 없는데 ‘국산 우선’ 공고…베란다 태양광 사업 논란  기후에너지데이터뱅크",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "fb9f26c82841"
+    },
+    {
+      "title": "[지역자금 선순환의 길]박성훈 의원, “공공기관 자금도 지역에 돌아야”…지방은행 이용 확대 법안 발의",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SM2lndUhCeW5mNzBMSXkxUzNxTDBBb0g5Wk1lYk5BZ0xlT0xFdUhyakk0REZpYTdrTHdCRVhRQXFhTFVCSFJkYlRYYXhma3NtOVRyY2xIdmVOeFgzaFZfWWNzTUZUXzlJOF9PTHhwMnQ?oc=5",
+      "source": "전국뉴스",
+      "published": "2026-09-15 15:06",
+      "summary": "[지역자금 선순환의 길]박성훈 의원, “공공기관 자금도 지역에 돌아야”…지방은행 이용 확대 법안 발의  전국뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가",
+      "id": "a345d58175a9"
+    },
+    {
+      "title": "사우디 송유관 피격에 국내 원유 수급 ‘비상’…11월 이후 공급 우려 제기",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mcnRLaHphTDVaZzRtblhMT0pNRS03SE1zdU5iMks0S0hkNnc4dGlnTGxEX050VjdSSzZkT1haQmFPdzhSc2wxZTVBb245bDQ?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 15:06",
+      "summary": "사우디 송유관 피격에 국내 원유 수급 ‘비상’…11월 이후 공급 우려 제기  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "사우디 송유관 피격에 11월 이후 국내 원유 수급 '빨간불'",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TcEpmbC1SdV8yci1SSEFaUEVhSjJ3Y2ZNYmJXNUZLSHUzR2ZyVUpfbkFXVUNTd1Y3NEctSF85aDk2V0pJSXNQOVRCTmlnakpjNzFscFN2cDdCR1HSAWBBVV95cUxOV1JCZjdaTmVXdndmdUtidjRkdWN3NlZKcUtxWGQ4MFFNalA4WWhpbVpFcGZDSWpoQzl3dDFqM2pjYTh5SzhWcm1oVklwSkxDVmVHSkZ6X0ZTRXRPLThhaUM?oc=5"
+        }
+      ],
+      "query": "석유 수급",
+      "id": "61df2c61993c"
+    },
+    {
+      "title": "카타르 메운 美 LNG…정유·석화 동절기 수익성 '경고등'",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9QMEY4YUNXdlVwWUhpVGJKSkFTMm14XzBKeUF4UDBRSUtFNE1pSW9Sa25aODkyZ1hmck1rOFowZ2FHMkJZMGJQOGVCUHFuMHlqVEdGOEpaNE1jczNjRER3OWlqbTkyWGlJ?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-15 14:54",
+      "summary": "카타르 메운 美 LNG…정유·석화 동절기 수익성 '경고등'  ebn.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "f8ad5c1a0939"
+    },
+    {
+      "title": "[포착] 트럼프의 大굴욕, 안 때린다 했는데…푸틴, 우크라 주유소 공격 [영상]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1uWFRfY0p5RmE3QTB2SkJFTlpodlNWR2dvRW5PQVRJUWNmcGVnM0pYeWRrclphVHNyX0JJYll3ZGJvSjYycXZmRGxsTU5uOEpqd3ZYNGlFa05KUQ?oc=5",
+      "source": "서울신문",
+      "published": "2026-09-15 14:54",
+      "summary": "[포착] 트럼프의 大굴욕, 안 때린다 했는데…푸틴, 우크라 주유소 공격 [영상]  서울신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "8daf0c65c080"
+    },
+    {
+      "title": "“10월, 그 이후가 문제” 우회로까지 막힌 韓정유, 원유 확보전 [호르무즈發 비용 쇼크]",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRZzN6WDFsRUtjTzJYdnZmQWxUcHp6RV94bGRUR2tZZVU4bDZrdG04NXl2VjUtZk9MYVJIbnEtdUJmekJJSUVldnRlcWhic1VOUk9SbXpxWktYWDRTNXpOX3BnYkNabUhiZ045bQ?oc=5",
+      "source": "이투데이",
+      "published": "2026-09-15 14:53",
+      "summary": "“10월, 그 이후가 문제” 우회로까지 막힌 韓정유, 원유 확보전 [호르무즈發 비용 쇼크]  이투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "d91c68eb1f66"
+    },
+    {
+      "title": "유가 100달러 재돌파에 대한항공·현대차 수익성 '비상', LG전자·포스코도 물류비 상승에 촉각",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA0YjY4QmlPX3dieHNJdkhyWkNub0tXdW1nS0lfN2ZFclRQZ0duNkZSZ3hiVGFHM0FYZFU0RTlLdzRJUHhrbVA2QkMwaFFTbE5ETEVZZ0hZOThMQ1lzbmdFb0NLdnJXVmNBMm5DNUFHT2dLV2c?oc=5",
+      "source": "businesspost.co.kr",
+      "published": "2026-09-15 14:51",
+      "summary": "유가 100달러 재돌파에 대한항공·현대차 수익성 '비상', LG전자·포스코도 물류비 상승에 촉각  businesspost.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "42905db2ceca"
+    },
+    {
+      "title": "치솟는 개솔린 가격… 저렴한 주유소 찾아 ‘3만리’",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9VZWZJWGR2bjhyamx4S2w5NmJ0R0RHMldsNWhhNWRjTS1aN2N1Q2FFREJpejR4Uklrd3llT05DUElvVTRYbUp4cENDNXlZWmtZamF4V05ZTzRFcWFDeHNz?oc=5",
+      "source": "미주한국일보",
+      "published": "2026-09-15 14:47",
+      "summary": "치솟는 개솔린 가격… 저렴한 주유소 찾아 ‘3만리’  미주한국일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "67bbd0fc9a59"
+    },
+    {
+      "title": "“중동 석유길 완전 막혔다”...국제유가 얼마나 더 오를까",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1jVU1oMXZJbWlpbkc2UHFFcUd5Y20yMUhzQzBsSmJ4aDZzaDhQd25yRlhxY0NfNmpMcGEtSVZYQ2NqNDluS2JYX2JPUVM4OXM?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 14:39",
+      "summary": "“중동 석유길 완전 막혔다”...국제유가 얼마나 더 오를까  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "09cc2c268b51"
+    },
+    {
+      "title": "연말 마지막 몇 달 동안 원자재 가격을 통제하는 것.",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0tSFhLSUhVeWw5VlU2bXViZllzTlBRbkFpQ0dKaEVRMHJQYm1hRDh1QjZGZ012NGl4M2ZfU0sxTlZIY3luTE9MdFJLWVpOTldfczFLNU1vUzljbEt2T2oyMVRGYm1iRWwtQVdVckZCdU5SNHNZN0xnbg?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-15 14:32",
+      "summary": "연말 마지막 몇 달 동안 원자재 가격을 통제하는 것.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "f198a8a07e94"
+    },
+    {
+      "title": "경유값 40% 뛰자 시리아 전역서 시위…아사드 축출 후 최대 규모",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nSWMzSHA1US1iMnktaEI4NUpSZUVKc1FxWExJYW80TkJuZ25nM3ZQY212YVN2X1RsT0p5YnRNRjNuc2tEcnRiLTdmV28za2JBVjd6R21FQWZyMUlSZFE?oc=5",
+      "source": "뉴스투데이",
+      "published": "2026-09-15 14:31",
+      "summary": "경유값 40% 뛰자 시리아 전역서 시위…아사드 축출 후 최대 규모  뉴스투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "01a93ca90261"
+    },
+    {
+      "title": "원유 가격보다 더 무서운 경유값…美 사상 최고 찍은 이유",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAtXzNmbkI0SW02bkVnSE1vX1hrTThmYzRKcnJjMXFac1VqOFRLRVllTFllN0tIRmRndUNhRS1QR293am56X3FaZDhZSFF2QUU?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 14:27",
+      "summary": "원유 가격보다 더 무서운 경유값…美 사상 최고 찍은 이유  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "02be1c29d288"
+    },
+    {
+      "title": "롯데GRS, 두 달간 전력 6.5만여kWh 절감…에너지 절약 실천 확대",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpYjB0dzN4TmdxRHdHMmEtOGF0X1BSYjl2UDNaOFV6TldRei1PVDZ6ZWp6QTlldmhkX3VJTWF1YjRnQzh0azlTSkVxMEN2eFBOcUdvUkg0VnFsckhORjhZYkRvSkM1UGVoeV9EWnlR?oc=5",
+      "source": "이지경제",
+      "published": "2026-09-15 14:25",
+      "summary": "롯데GRS, 두 달간 전력 6.5만여kWh 절감…에너지 절약 실천 확대  이지경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "bb248080e13c"
+    },
+    {
+      "title": "한국석유공사 구리지사, 교문1동 취약계층에 추석 상품권 100만 원",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95NnZ6cFU0R1ZyblgzMVVWQWdJVkpMTDlrejRDaHp6dmJId3I2MG4ySVYzVG96b3ZGLW9qSVk1TXZSdnk5UXpxby1pYnBPem1URzhZWFFPREJLTWdpZW81bGNxbjRiTVFGNEo4a1hn?oc=5",
+      "source": "투어코리아",
+      "published": "2026-09-15 14:24",
+      "summary": "한국석유공사 구리지사, 교문1동 취약계층에 추석 상품권 100만 원  투어코리아",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사",
+      "id": "976391f11c29"
+    },
+    {
+      "title": "롯데 GRS, ‘에너지주의’ 캠페인 성료...약 30톤 탄소배출 감축 효과",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9CSzlPYWk1Nmc0TmdmSFl6UFQ5b3dkZUFUcjBNcEh6UGQ1ckFCdU1hTTlQZV9HVTYwQU9SOGY3UE1aMVNxV053RTl0cVFsMVdOQnREVHlyOGQ0Z3lJaWtGRGNWY0UxQ1lFMEo1eGxJLVhKemZw?oc=5",
+      "source": "파이낸셜리뷰",
+      "published": "2026-09-15 14:14",
+      "summary": "롯데 GRS, ‘에너지주의’ 캠페인 성료...약 30톤 탄소배출 감축 효과  파이낸셜리뷰",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "66f2e6f49931"
+    },
+    {
+      "title": "[분석] 제주 그린수소, 3.3MW 실증 넘어 100MW로…경제성·수요 확보가 성패 가른다",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203162",
+      "source": "에너지데일리",
+      "published": "2026-09-15 14:00",
+      "summary": "[에너지데일리 조남준 기자 ] 제주 행원풍력단지의 3.3MW 수전해 실증이 50~100MW급 그린수소 생산사업으로 확장될 가능성이 커지고 있다. 재생에너지 출력제어로 사용하지 못한 전력을 수소로 전환해 저장·활용하고, 생산된 수소를 지역 수요처에 공급하는 새로운 에너지 순환체계를 구축하려는 시도다.제주 실증은 재생에너지와 수소를 결합한 기술의 작동 가능성을 현장에서 확인했다는 데 의미가 있다. 다만 하루 최대 600kg의 생산능력과 현재 약 200kg의 실제 생산량 사이에 차이가 있는 만큼, 대규모 투자에 앞서 가동률과 생산비, 전",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "ffd0ef3c36ca"
+    },
+    {
+      "title": "광양서 묘목 싣던 4.5t 화물차 주유소 기둥 충돌…60대 운전자 숨져",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4wRXVfY3pXdDNjbFQ0NHpmbk5SZlRETEVUM01pc1BJbm94NkNBNEdtYXhmcm5Ld2FsN0ZVTWwya2FEbHVGTG9PVm9VRXhNcFB0cTV4Tkp6dVk5S2lac1hJZFBpelg2VzlackRIeVAzTdIBc0FVX3lxTFBySjFDUHhsOTRDa0paWl9YQ245VHRzUGUyRmh5MHl1ZzdXMFhrOTN2MGNqcGl3VUtWVDBReGZtMEdXWlVLaGlLcXZKNjVVZEJ2bTM2ZnEtWVB3eUZMakduYVJMRVB1dVhXLS1wNUNTV0NvbW8?oc=5",
+      "source": "데일리한국",
+      "published": "2026-09-15 13:56",
+      "summary": "광양서 묘목 싣던 4.5t 화물차 주유소 기둥 충돌…60대 운전자 숨져  데일리한국",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "광양서 4.5t 화물차 주유소 기둥 충돌…60대 운전자 숨져",
+          "source": "남도일보",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wVmgzY1hKVnI3RjEzUW12alpqQ1BQMVVYaDdZU0ZvZkVLQl94WEdDRWFxWmNxUGFrY1ZFVGRWWnQwWE93RGk1elVWZ05Nb1Bsd0xxMURLY0pFcHpEekJOWHpkaENqNFlMSkZtWtIBcEFVX3lxTFBtX2d6aWloUTBtT2ZualhIbHJqRndYT2ZDdGRIQmwxeEQzTGQzU2VnMnhkV19QSlVyNy1VQ2hUdkJlSWdTd0V2d01DZnh4djM5cjZfclF3ci13bUR2LXBmWm1SaTNFcnJxY0ZRelYwSzM?oc=5"
+        },
+        {
+          "title": "광양서 4.5톤 화물차 주유소 기둥 충돌…60대 운전자 숨져",
+          "source": "프레시안",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CVUNwUndLdUlNaElSSmJOVU1fc0k2eWhLSlZoU0paMm9OdDFhZ1pVd0o2UXFWTm81UzFXa1lZOWp2RnhCZjdPNnozRm5xX1NMdEYtTzRvMkpiQTBRZkMzNE03SWZLVWZBY01j?oc=5"
+        },
+        {
+          "title": "광양서 묘목 운반 중이던 4.5t 화물차 주유소 기둥과 충돌…60대 숨져",
+          "source": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZeHgwbDFmY1RRb3pIMVEzNEMtb0N0TDVSc1ZBdXVWbTdaVTVYMDdqQ1pkSlVFb0pnMC1ETHpJZ3E5amZTMDRkUHBjM19aRFN2MHloTEVsM2lYelHSAVZBVV95cUxOUFhnSW9RY1JnNnczNWxobUtkV3JtT0w4aUt1V0ZRUVh5VS1iX3RnSFZFaVp1Q280WTlpbzBBQUg2Y2g2SWJuM2tyN3Z4X1RrUXBNdGs2dw?oc=5"
+        }
+      ],
+      "query": "주유소",
+      "id": "22ec13a0c0b1"
+    },
+    {
+      "title": "대구 에너지 3개 기관, 주민참여형 햇빛발전소 확대 맞손",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9FaXpuT1V4dkRVSlR4WW5XTmVkX045UXM1MW9aMTZzdm5NaDh3QXJZemRYV0hRY1FLRVcydFVoeTZrbGFtU2tfZ1ZjRzFUaWtvbUdVeWNWWU0?oc=5",
+      "source": "kbsm.net",
+      "published": "2026-09-15 13:54",
+      "summary": "대구 에너지 3개 기관, 주민참여형 햇빛발전소 확대 맞손  kbsm.net",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "df8df6404328"
+    },
+    {
+      "title": "국제 유가 100달러 넘었는데…기름값 묶는 정부, 속타는 정유사",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB6c0xfTEYwcU15SFZpY3pldXBwT2cyem81SWpod01HeWdaejAzZ0M3T3d4M0VfZUtSNGhVQk14RkFQRmJVME56cHBhbTc5OUlEaUHSAVNBVV95cUxQWld6dWhyam1Xakw0aDdjelVNVEN0bHBialVuZGQyVDB6UVVqekN4cDRueDJSMTBpX2E1MWRzOU9TOHpOVXppckkxeGFUMTdBbFhTYw?oc=5",
+      "source": "서울경제",
+      "published": "2026-09-15 13:53",
+      "summary": "국제 유가 100달러 넘었는데…기름값 묶는 정부, 속타는 정유사  서울경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "f144f0792484"
+    },
+    {
+      "title": "에너지공단, ‘햇빛소득마을’ ReSCO 책임 강화…주민 신뢰 높인다",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEdGX1BZT3VDaHF6bVRoUnJlSTZXYXZ3aEJWSVdUNnpWTUg0amF1cVQ3NF9GY3BJWHlnZW5JOWRFWmxFT3pWeTIwdXhfeWZLUnRGRVBuX2Jqbk8zT1RPUW5vZ2RUUVA1elZ1NzN0VDFzVlhmUGhLdGx3T2t1NkN1eDZBWXloRTBZWGc?oc=5",
+      "source": "g-enews.com",
+      "published": "2026-09-15 13:42",
+      "summary": "에너지공단, ‘햇빛소득마을’ ReSCO 책임 강화…주민 신뢰 높인다  g-enews.com",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "a539893ebec2"
+    },
+    {
+      "title": "9~10월 원유 확보량 90% 이상…단기 수급 영향 제한적",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzTVRDWFdPb2MxQnBRNkdMTHpZczR1WlZwazc2RWk5VDI4TGZReEtBQ2tETVFfbF9McDM0a0tyMkJ1dUdsVzJWZjU0eXBVanpvRzFzU3dhWm5MRzcwekZNS1l2QWdfbXpWeExfMnJn?oc=5",
+      "source": "gukjenews.com",
+      "published": "2026-09-15 13:41",
+      "summary": "9~10월 원유 확보량 90% 이상…단기 수급 영향 제한적  gukjenews.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "a2a9502cfaf9"
+    },
+    {
+      "title": "가스공사 라건아, 이번 시즌에 만날 수 있다",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55RFRhNGNaME12ZU9FOU5FdXpleFBWY2pDTkIyV2lMSE5tcHpYbGZKMzd6d1k0clRQRG0ycUxDSUxCV0FJWGhVakMwNW1aSTJxeURudkNBTnEzWXVpV2U4MXh3?oc=5",
+      "source": "매일신문",
+      "published": "2026-09-15 13:40",
+      "summary": "가스공사 라건아, 이번 시즌에 만날 수 있다  매일신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "dbbe013eade5"
+    },
+    {
+      "title": "가스공사, 태국 '가스텍 2026'서 中企 해외 진출 돕는다",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfcTZaVGU3NzgwdkdwV245MEJiQ2FSSWQ3QlFNZnNDZHo4cW1fdDJoenRpaGQ3dXhKUXV1RDRBenNCNnh3U2RkeUR6TkNxNGc?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 13:36",
+      "summary": "가스공사, 태국 '가스텍 2026'서 中企 해외 진출 돕는다  v.daum.net",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "c61a12485048"
+    },
+    {
+      "title": "석유公 직원들, 교육비로 아이패드·맥북 '쇼핑'…7.7억어치 샀다",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA0NkxuRnpMelBLNEtybVAtQVVmbWVZbDRoTXg5dFlWdEtlX3d0ZWVWRnVyZ1N5aUhTQUlGZEFBRFg1d241SDF0Zk5QTlRpZ01Bb00tTENJbzFpQW9hZzJraNIBeEFVX3lxTFBtOHRRWXFlcWtsTDU0WnZUSmlPN09wWjJLQm1hclF2RWp1ODdRM0hEbjJCWUQzS2hYM2VhU0M1NU8zeHRaRHFCUFhMbngxcWl5UnNzd3BTUzZCTGZWbURNNUpoM3BIVWpJY3h2NFJnQzhpNFZ2TzZCNQ?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-15 13:32",
+      "summary": "석유公 직원들, 교육비로 아이패드·맥북 '쇼핑'…7.7억어치 샀다  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사",
+      "id": "c21322541054"
+    },
+    {
+      "title": "“메탄 누출, 에너지 낭비이자 기후 손실”…LNG 공급망 MRV 도입 촉구",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0a1JORVNoTGFqOGEtanRPbHdBVVVQdzgxLW1MbFczZXg3Q3l5Q29zT09XSlFsTG1yMUxjUDhIS2VRWllkLS1Ld3RqelNNcnBXWC13OENhOENpRWprdmx1NWtqOWQ3N2VKTUZ6QdIBcEFVX3lxTFB4c3YtWUIxcnhIVkNtOWxjZS1VVjBkOHVzVHBPLXBQQVV0WVduOGZsaXRwU19BSDg5ZXQ0SU1Rc1I2REpHNFVzcXZEbjhoMW5ISjlMRkFPVGRlM3RzaXl6OUxEaFBrTlhGblJDVmFJWUs?oc=5",
+      "source": "전기신문",
+      "published": "2026-09-15 13:31",
+      "summary": "“메탄 누출, 에너지 낭비이자 기후 손실”…LNG 공급망 MRV 도입 촉구  전기신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "ceaca3fa97dc"
+    },
+    {
+      "title": "가스공사, 협력사 수출길 텄다…'가스텍 2026'서 18개 중기 해외 판로 전방위 지원",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MM1g1Z3JvWFNFUjZlcHdzRGVNcHd6bXdZc2c4MGdORzBRRWxfVHhYcENkbmtTdFVRUFhJSFVGeERuMFczWjhtUHhfZnFRNmlCM0lVMXpiaDVJVFJzOU1xV3NvQmwzUDJZak1TdWQ5ONIBckFVX3lxTE9wVW1SYUtldnZRa2NBR1ZxNkgtdFkxOFFreW5DRWFGX1RGMS04akdUT04yUUFCOXJRMWJ4R2VLZnJ5ejZhNDU3d2tOOWNraVYzS0RCc0Q1Q2szekJQM3cwc3RlRFJPVmdXRFV4ZzQ4bHIwdw?oc=5",
+      "source": "popcornnews.net",
+      "published": "2026-09-15 13:12",
+      "summary": "가스공사, 협력사 수출길 텄다…'가스텍 2026'서 18개 중기 해외 판로 전방위 지원  popcornnews.net",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "e57724c3926b"
+    },
+    {
+      "title": "사우디 송유관도 가동 차질…정유업계, 원유 확보·운송비 '이중고'",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBwWHppNUg5dmIyQjhMREUtSUt6aHhxQ1dvcU11U1JrNUtJUWFjZFZpUnlJUW9GUU9WZ1VjME5JVUR4aUJ4VTY1UDU4bnZNczJ1RXF1N3I1WlJFbmt6dTNfTExaLXZaNVZnYzhfYUo3dnRZbmN5eVEzbNIBeEFVX3lxTFBwWHppNUg5dmIyQjhMREUtSUt6aHhxQ1dvcU11U1JrNUtJUWFjZFZpUnlJUW9GUU9WZ1VjME5JVUR4aUJ4VTY1UDU4bnZNczJ1RXF1N3I1WlJFbmt6dTNfTExaLXZaNVZnYzhfYUo3dnRZbmN5eVEzbA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-15 13:08",
+      "summary": "사우디 송유관도 가동 차질…정유업계, 원유 확보·운송비 '이중고'  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "f434e50c2a1f"
+    },
+    {
+      "title": "국제유가 추가 상승·FOMC 경계감…국고 3년 3bp↑",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zSm5vZXpPRGZxQkcySDlQak0ySm90VXZEc2NVNXlEcjhfTTJkQUhsVHh6Nk5zS3M3NWNpVVdRM1dGbEROM0pDR1drcWFDc0w0Z1lKMl81LTVoamtoVVRWeXJQLVVaVEc5X185WGlyWHU?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-09-15 13:06",
+      "summary": "국제유가 추가 상승·FOMC 경계감…국고 3년 3bp↑  연합인포맥스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "96adcab5d4c3"
+    },
+    {
+      "title": "남해군 ‘에너지 자립의 섬’ 정책 내실화 나서",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qNTlwV3Q2OEQ5Tlh4d2RsVGMzTTFBaW1Ydm5RVjRFbmxlVFV5YVdweUoxSU5vU2t3VjQydzRVR2RYdEw5cV9qVkhaTkQ5TzBYOGVKSW5EN1JQNTI4d2lqTVJ3WjhpZHJHZnc?oc=5",
+      "source": "idomin.com",
+      "published": "2026-09-15 13:04",
+      "summary": "남해군 ‘에너지 자립의 섬’ 정책 내실화 나서  idomin.com",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "2ee5915d63ca"
+    },
+    {
+      "title": "정부, AI 가스안전 혁신·합리적 규제 '속도'",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5udTlMV0ltcmplbHF3YXYyUVdUYnJXZWZkRnBaZlNtaGt0eVlwTHlqVlFjdGQtYWJKbklBc2NJYlJFcllCX1lwUzU5Vk9HUQ?oc=5",
+      "source": "etnews.com",
+      "published": "2026-09-15 12:52",
+      "summary": "정부, AI 가스안전 혁신·합리적 규제 '속도'  etnews.com",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "2158a5600cb4"
+    },
+    {
+      "title": "[공기업 센터] 국민체육진흥공단·한국가스공사·신용보증기금",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDX0RJc3VkTG5BdWw1Unc3OEIxdkJOVWRQVWM3U0NVdnAyaTlFaThlM25veGNIVm93UXdiS2lQQmtaUEtMTlFMTk1wbklzUUFBT3NPTDZiYjlyUzR2akQ1d0RRYk1Sbk3SAWtBVV95cUxPMEVpOVVaWmxUNTVOYTFabkRhdE1zMFAwRy1NN1NvSUV5UkJCdWl5cWlaTXFPZWRVQlFvSmpxejU5XzhsS1VhYXhza05GSkdralVYM2xNZWxpODZySFJ3OUNXQjlZcVpJR2N6MA?oc=5",
+      "source": "민주신문",
+      "published": "2026-09-15 12:50",
+      "summary": "[공기업 센터] 국민체육진흥공단·한국가스공사·신용보증기금  민주신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "64f3842e2e78"
+    },
+    {
+      "title": "2026년 9월 15일 현재 연료 가격: 국내 연료 가격은 어떻게 조정될까요?",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWnlDMDRiVGs0YmJvTVZzY01fcjRiOEJLZm1jdjhOSWNrYUp3ZlVzeVZlMVdraHhtay1Nbm5JMW9XcEdKWmgwU3E1SjU1RmxmREJnWjRaQmNhYlJubVJKNTRpRDZrRWM1WTZIVmRMOUl1UEVPUGVjUE9NZm91S3hlQUUzbUZxUEtYV0ZseDFPd1Flc24zS3g3LVo5YXBXR2lj?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-15 12:37",
+      "summary": "2026년 9월 15일 현재 연료 가격: 국내 연료 가격은 어떻게 조정될까요?  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "23aed60dd2dd"
+    },
+    {
+      "title": "[가스안전대상-산업부장관표창] 김동근 ㈜한국가스산업 대표",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9qRHNSU1RYUTc4YzBOMUt6VmhNNXB3cUNwd1g3QkZCN1N3ZmtvaU1QLXZEbm1HNGRRU0poT0NabzlXNlRJWVF0TndDLTdvakFnalN4aC1Yc21ocHNHd29pUXpqQTBabHQyZkhyckduQzVWZw?oc=5",
+      "source": "에너지신문",
+      "published": "2026-09-15 12:32",
+      "summary": "[가스안전대상-산업부장관표창] 김동근 ㈜한국가스산업 대표  에너지신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "aa27f77dd98f"
+    },
+    {
+      "title": "[정책] 공공데이터로 공공서비스 혁신한다…중기부, 스타트업 20개사 내외 모집",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ZdlhJRXVhaFZMVDN3MGdMTmp5cEw2QXIzSmxNTHdWWXRkU2ZXY3p5MWFJV25xMWs1RmNqSDZURFhQejZXYk8xVjRFUTdXRTBvZS0yeWpFbTdxQmVMdVctV0ZnWDNkZG81R3V3OA?oc=5",
+      "source": "브랜드뉴스",
+      "published": "2026-09-15 12:31",
+      "summary": "[정책] 공공데이터로 공공서비스 혁신한다…중기부, 스타트업 20개사 내외 모집  브랜드뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "2a9736024a1c"
+    },
+    {
+      "title": "가스공사 ‘가스텍 2026’서 중소기업 수출길 연다···18개사 동반 출격",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE94SGdBd2c1V1BJY2k4cF93M1FNdXRsZF9aYTRHR3BkQXhvWGk5Vk5MMVpWbTlYXzJVeThFLWxrWXhTa2Q5dVpEX29GYWZHVTBsXzB4aDFTVmV0ckw1WmVVSllqWFVWV3h2T3lHLU5mZzXSAXRBVV95cUxPUFREWTQ5elRRQzBZSF9vQTdORVRTS3dHN3R3VmF4MUJLQ21zclR6RmMwWV91WUNJNlBiTk5MR1BrLWZTT1BySWZsWXcyelFUdVVwa0t3RnlXWXF5WWJPSVk3Z05Uakl4cmktdnVsMWpZb2VaXw?oc=5",
+      "source": "이뉴스투데이",
+      "published": "2026-09-15 12:25",
+      "summary": "가스공사 ‘가스텍 2026’서 중소기업 수출길 연다···18개사 동반 출격  이뉴스투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "ac74cfb6e31a"
+    },
+    {
+      "title": "오늘(9월 15일) 연료 가격: 중동 지역의 긴장이 고조되면서 세계 유가가 상승했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZmV1LXFxNVRubXVYZXVFOVM0cTdoc3dvdzU3aU5UcnEtN3hYSzZmNnoxWGlsRFgyeW1OUUVXTjFrN3YydWtiUTBlZFpsMW9kRm1PRUI4dl9PUGpkSWlZYURiYTI4dDhsbjRDT0NFNlI1cDFpanJQeFNUcW9ONnpOel9IS2hEOURsXzhkTXZoeVhlSTMtaF96TGtFZWhwSUo0YWJkamxSZFZITS01a1IyOHZtUQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-15 12:11",
+      "summary": "오늘(9월 15일) 연료 가격: 중동 지역의 긴장이 고조되면서 세계 유가가 상승했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "7664c6dcfd03"
+    },
+    {
+      "title": "사우디 송유관 피격에 11월 국내 원유 수급 ‘빨간불’",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Lb1RXN0ZtZmZyYVJLZnJiZDdwS1JfMXlmRF91WjE1WVQ4RUsyMm1IdFFIVDdubzNDbUt5ZVNOeXBQWXNaY2RlaFNUVmZVNk0?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 12:09",
+      "summary": "사우디 송유관 피격에 11월 국내 원유 수급 ‘빨간불’  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "사우디 송유관 피격에 11월 국내 원유 수급 ‘빨간불’",
+          "source": "미주중앙일보",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB4R0cxMkk2UmtXVkhYTVNnT3hqNDdRWlp4WVlhdnR3TEZWTnFtTGk2eTQzQk9yNy0yazFpdHF5TEE2SEJHSmJLVF9FME0zRjZOSUJSTDhNZFdOTktOM2F3RDJn?oc=5"
+        }
+      ],
+      "query": "석유 수급",
+      "id": "ce9c6ddaf1f2"
+    },
+    {
+      "title": "사우디 송유관 폐쇄에 국제유가 상승‥105달러대",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82aGFpa2Q4dUxyS1VmUnp0RGVNRDJiTXE0ekR5S3lMVGViM1NZT2NXQ29NN1lkcHk1WWRQTXctRGEyZ1lzZVd0cTEyam9saUlQVWFqX1pzVnl1RklpVlp4LTY3eVlaNUdxSHJ2VVpsalg0YXZ6ZWN3U9IBeEFVX3lxTE5PQUt1YS1xVGd0ajVpbXNzZzg2Vmo1dGdkNnhtdTkydnlVWnVnWlpIakFXZTdVMHA3TVlJYV9RZkEzZGJmU0JNTHcwYTZ2eUZaMlRPRWlRZFZObEx4SkxMOEJ6T0ZLeWI4eTVFSTI4bTg3YXFVVGFXbg?oc=5",
+      "source": "MBC 뉴스",
+      "published": "2026-09-15 12:08",
+      "summary": "사우디 송유관 폐쇄에 국제유가 상승‥105달러대  MBC 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "사우디 송유관 폐쇄에 국제유가 상승…브렌트유 105달러대",
+          "source": "TBS 서울",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObC16dFJyeENqSDJsMURwSUEyeWhBaVJVckpmRGhWQ0N3b3BiZFVGNUY2aDNiVmtWZlhJbXBpTnVXdmNwOHc5LUFlaXlXVWd0Yzg3VG1NeWc0S1NxeHhEWGdJMG1XNC1IdGJoMGRwYS1UQTIxWE1wTkEtTS1pUEpaZ3J3VmRoQ1VPVVE?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "25c12e83c080"
+    },
+    {
+      "title": "에너지공단, 햇빛소득마을 사업관리 체계화...레스코 설명회 개최",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5uWEN4ZFZ4MnFGcGJqNVpmVEtIWkJWSWZaTXJNMWRLalNjUW5ZX1dCc2tlNXZ1V1FzNWxFcUR2X1o0MVZxeTdKSHRqd0toZmROajNrTXFPTV9GQ1RhVzF2MmpCazBuVTB5ZjdrS9IBcEFVX3lxTE1BUVBiMUhMckxyLUJuLVg0VHNVYWVNTk9lbDZzT01wbjNsbXB1dUM1RWQzODJTbE5Bc2I4ak9RRTcxZGdEeFBrLUYtNkFrSjlBWE1nZE82bzhpM3A4WExLa0VwdjdtVmF5bkM4WFJWaDU?oc=5",
+      "source": "전기신문",
+      "published": "2026-09-15 11:51",
+      "summary": "에너지공단, 햇빛소득마을 사업관리 체계화...레스코 설명회 개최  전기신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "34118ba94865"
+    },
+    {
+      "title": "주유소 기둥 들이받은 4.5톤 화물차 운전자 사망",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9pMm5BTGc1SVJ4a0dRYmpSSnowakczdm03SnpqcVBzdDg5VDR1cFNxWkhzTjRvYnJNTEtxWllQOVk2aGxGMnYwbW42REh3MkxNMWx0TzdOY0VlSFR5OEhCN0dRR1h4QVJzcy1qUk1qSQ?oc=5",
+      "source": "진일보",
+      "published": "2026-09-15 11:25",
+      "summary": "주유소 기둥 들이받은 4.5톤 화물차 운전자 사망  진일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "e6b24f6523f9"
+    },
+    {
+      "title": "부산 공공기관 예치금 8조원인데…지역은행 몫은 20%뿐",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5FRkNWM1dzVnItWmNrYTFISVdKZElua09wM1loSlE3TWpyWS1jSFpxcUhVWjVqd1R4RzVMN1NYcDhrSjVLZ3g2WHdtVGpibmZHeFE3TDU3akFRMEZhTVlvVXh4eXVGd3l2bGlVcnQ5T2p2OWc?oc=5",
+      "source": "마켓인",
+      "published": "2026-09-15 11:15",
+      "summary": "부산 공공기관 예치금 8조원인데…지역은행 몫은 20%뿐  마켓인",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가",
+      "id": "f6259417485b"
+    },
+    {
+      "title": "‘돈도 지역으로’…이전 공공기관 지역은행 이용 촉진법 주목",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9QLVFjTmhoWEU1aEZwLWtYbzlXODlSa2F1RnZwTUNna2V0ZlV6eW4tQXdsbndWNmFCbG9zM3Zpbzd1ZTQtVjN5ZFQxaE5KR0V5NmpBV1ZZN21pRnFlZDljaGlrTjRidWp4d2N5VDVaaFJIWVZU?oc=5",
+      "source": "부산일보",
+      "published": "2026-09-15 11:10",
+      "summary": "‘돈도 지역으로’…이전 공공기관 지역은행 이용 촉진법 주목  부산일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가",
+      "id": "57b53ca7af32"
+    },
+    {
+      "title": "주한독일상공회의소, ‘2026 한-독 재생에너지 비즈니스 포럼’ 개최",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mYjNBLWhpeWZaTDBqUFZfbHZGTE8wYi02THpoMkQzV1ZEOFo1WEZyaUVQVlU5M2pzMGQ0SGtPQ2JscmZJY05veUFITzhiN1cyT3NwVGFRRTdjeXVNd1A5SUVIckJJcnIt?oc=5",
+      "source": "테크월드",
+      "published": "2026-09-15 11:10",
+      "summary": "주한독일상공회의소, ‘2026 한-독 재생에너지 비즈니스 포럼’ 개최  테크월드",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "주한독일상공회의소, ‘2026 한-독 재생에너지 비즈니스 포럼’ 개최",
+          "source": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJQXpCVmtGUHpXWkxuMkN6RTlLZGRZQWxJMzRieEsyYXNzTHZMM05xUDNnM2F3ak5DR0prS2Z4Y1lFYS1ZTzJ3RnctSUIxYnhKb0RnUDRXU2Zndw?oc=5"
+        }
+      ],
+      "query": "에너지 정책",
+      "id": "f33b5f226fe8"
+    },
+    {
+      "title": "[기자의 눈] 지지율에 흔들려선 안 될 에너지·환경 정책",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VZ0FNYTE1S0pXajlicTcxSTdkZjVjZkNoRm02TC1QMUxRdXhwZk95S1BLZF9SM2daMmtpRGNDTzAzTlBjVDhyZ2RjXzV5eldJVkkxRFpoeEVHd2M?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-09-15 11:07",
+      "summary": "[기자의 눈] 지지율에 흔들려선 안 될 에너지·환경 정책  에너지경제신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "c71837f3a388"
+    },
+    {
+      "title": "지방이전 공공기관 자금도 지역으로…지방은행 이용 확대 담은 법안 발의",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1CNUowUXVxeFhQRGtBckhBTFZRNDZMc0Z4dDIxTUgxVkJtX1pIRkNvNTltN3lWUHJhc1prejF1TW1Tem9hR0JUXzN0ckpVMm9ZY3BJTGtEamNaejdMeEE?oc=5",
+      "source": "뉴스투데이",
+      "published": "2026-09-15 11:04",
+      "summary": "지방이전 공공기관 자금도 지역으로…지방은행 이용 확대 담은 법안 발의  뉴스투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가",
+      "id": "e009ed9bccfb"
+    },
+    {
+      "title": "가스공사, 태국 방콕 ‘가스텍 2026’서 동반성장관 운영",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE4tUlZRdmQ2ZVZRSi1NcTZaOTNKcjRPNmFFSnVjbGNWYi1PSHZEbVY5azRFUVc1OEJPNjIzcjB0YWlQWTVf?oc=5",
+      "source": "매일건설신문",
+      "published": "2026-09-15 11:02",
+      "summary": "가스공사, 태국 방콕 ‘가스텍 2026’서 동반성장관 운영  매일건설신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "d4e1c529226c"
+    },
+    {
+      "title": "[EE칼럼] 부족한 것은 kW가 아니라 km다",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BcEw3QnJZMFJ3eUljQXpnODBXeUJaZlJfdXFVd1hFd0Y1X2g3Rk55SUJMQzdDQlpac200TUlMOTNIc3NpUkRCQWpjQnNVYnZQenJNb21nQ3J5b0E?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-09-15 10:58",
+      "summary": "[EE칼럼] 부족한 것은 kW가 아니라 km다  에너지경제신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "7128094d51ec"
+    },
+    {
+      "title": "사우디 송유관 피격…국내 원유, 11월 도입분부터 수급불안 우려",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UQk5DU0NHVDNFZV84UUlnZHFYNF8wZF96SHE3QzRLNVFlekxzYVk2TGU2U1VCamhCUUxVWWRvRGkzdzBRd1p6ZlJ3RVVLZmlmVHpRSHNFUmR2QQ?oc=5",
+      "source": "경북매일",
+      "published": "2026-09-15 10:58",
+      "summary": "사우디 송유관 피격…국내 원유, 11월 도입분부터 수급불안 우려  경북매일",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "d1252cf7ca29"
+    },
+    {
+      "title": "원주시, 18일 제2차 공공기관 이전 포럼…강원혁신도시 발전전략 논의",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51ZENnMHdIWkh3bGFOb0Q3Q1V0VkZnVFg2T3hPcnVmZWpVVUM2Y2g4ZEFuVXRreko2WG1JamstU09PVEFsTUFZNll5eTlNWEtjUUt5MXhPMzE3MjZEVTYySkh5U3BKVGJvSFppNVhtZmU?oc=5",
+      "source": "신아일보",
+      "published": "2026-09-15 10:50",
+      "summary": "원주시, 18일 제2차 공공기관 이전 포럼…강원혁신도시 발전전략 논의  신아일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "cf07c3dc1d58"
+    },
+    {
+      "title": "원유 90% 확보했는데 왜 ‘비축유 스와프’까지 꺼냈나?",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CSngzS0l1UTZ2S2FyMXplU01JZlVmWWFxUHQ3NEowQS12MlUxcUtLWlFVaXhTRE5sOVpWTE9RcW16NEpWY0FUMnlORmczb3dWRlBsTzlBQTFwQ0FsMkhEOEJKWHQzbVRtWl9wbNIBcEFVX3lxTE9JMnotZGt3VmxZVVNlV3E2THNzYkhTTWlOb1AxcG9kV3YtdkFSMVFCd0U0a3ZuNk4yNldmaUNWUFZqUWxCVmxiSkZBcFZlWUtPWFQ5V0Z2LVZ4NnUxVldzU3hsbnBHdTI0VnBBeWhOWjQ?oc=5",
+      "source": "내외뉴스통신",
+      "published": "2026-09-15 10:37",
+      "summary": "원유 90% 확보했는데 왜 ‘비축유 스와프’까지 꺼냈나?  내외뉴스통신",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "eeaf5eb61ea6"
+    },
+    {
+      "title": "\"올겨울 어쩌나\" 사우디 송유관 피격에 비상 걸린 정유사 '팔수록 부담'",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55TUFPU1BRaEtQS0RZemJFd0kzYTh1NkU4Y3R1WldfYksxai1sQ3BfcUE1bEt1LTRhNVZscENKaDdrWG5VaVhoSlI1VWRpSWc?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-15 10:32",
+      "summary": "\"올겨울 어쩌나\" 사우디 송유관 피격에 비상 걸린 정유사 '팔수록 부담'  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "a991ac176494"
+    },
+    {
+      "title": "가스공사, 태국 가스텍서 국내 중소기업 18곳 해외 판로 지원",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44VHN4d1V5ZndXRGdmMjhxd19LWWdxdTFQal82ak94ejFvNjBnbkdxZ2hZRjN0SkoxWkcxTXhnQzdDdHJ1cW9tUzZVbE52UHlsMV9sTkNnVEIzVlo0bkRsUElVakR5aER5?oc=5",
+      "source": "시사캐스트",
+      "published": "2026-09-15 10:27",
+      "summary": "가스공사, 태국 가스텍서 국내 중소기업 18곳 해외 판로 지원  시사캐스트",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "a94355ed42d7"
+    },
+    {
+      "title": "유가 120달러 시대, 기름은 더 썼다 … 정부 '가격 통제'의 청구서",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdWNqOFpCWUdZaENldTVHZkFyVHZwWkxpZzNUSlB6bGhNRUtpRm9IUFQ1WUw2Qi05ZnVEVUVsaC13d0Fkb2E5dDVYN3pSbmc1bFFjSHAzUTFPdmpRektCbmNQVjllZUllc2VBeDNtLWJlSVJrNnpEUnVPV05MeDJOc9IBgAFBVV95cUxOdWNqOFpCWUdZaENldTVHZkFyVHZwWkxpZzNUSlB6bGhNRUtpRm9IUFQ1WUw2Qi05ZnVEVUVsaC13d0Fkb2E5dDVYN3pSbmc1bFFjSHAzUTFPdmpRektCbmNQVjllZUllc2VBeDNtLWJlSVJrNnpEUnVPV05MeDJOcw?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-09-15 10:27",
+      "summary": "유가 120달러 시대, 기름은 더 썼다 … 정부 '가격 통제'의 청구서  뉴데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "32f5b5a1716c"
+    },
+    {
+      "title": "'가격 통제의 역설' 유가 120달러 뚫었는데 기름은 더 썼다 … 날아오는 '최고가격제' 청구서",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ONlQ4WkR6M2tmb0xFQ0RCSnBaeGZKVHVsMUdSUzJjel9DbFl6c1o4dTJiZnN6dGhGUE5qRDl5U3hpMDRwQjhCNV9wWjY3YS1uNTlaaHFxc1AwcVN0VmNXLVhQV2FKMGJFRVFDTVRLUkVvQkRBM3RQcUFhNNIBgAFBVV95cUxOdWNqOFpCWUdZaENldTVHZkFyVHZwWkxpZzNUSlB6bGhNRUtpRm9IUFQ1WUw2Qi05ZnVEVUVsaC13d0Fkb2E5dDVYN3pSbmc1bFFjSHAzUTFPdmpRektCbmNQVjllZUllc2VBeDNtLWJlSVJrNnpEUnVPV05MeDJOcw?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-09-15 10:27",
+      "summary": "'가격 통제의 역설' 유가 120달러 뚫었는데 기름은 더 썼다 … 날아오는 '최고가격제' 청구서  뉴데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "cb0639f66e4a"
+    },
+    {
+      "title": "가스텍 2026…가스공사, 中企 해외시장 진출 지원",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tVlRwemx4bkhpeFVzekV0RjhxWjF6aHROdXFPa1VvUFU1dHRQOUZfUk5Yb3hjNlVzOHl4VjJKQWhZMnZ2ajNLMWFwMmpqZ0VsTk40VklzVkg3OWFjOTBVR2Q2U2pLR1hnR2t2Yw?oc=5",
+      "source": "에너지타임즈",
+      "published": "2026-09-15 10:21",
+      "summary": "가스텍 2026…가스공사, 中企 해외시장 진출 지원  에너지타임즈",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "db5accf4a34c"
+    },
+    {
+      "title": "[국제유가] 사우디 송유관 차질에 급등…트럼프 이란 협상 시사에 상승폭 축소",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41TmM3Y01YcHhHVDZhY2lGSXc2bmtnV3hsSlZCbEMtYmRzTVBISFppUzJOZEJtTEtyeV9LUFdjZW5pbzY1ZDR1Nm9DV0JodG9Rcm8xaWxsd2t6VnpydWtiQ1hKVWxUV1lETERGSA?oc=5",
+      "source": "굿모닝경제",
+      "published": "2026-09-15 10:21",
+      "summary": "[국제유가] 사우디 송유관 차질에 급등…트럼프 이란 협상 시사에 상승폭 축소  굿모닝경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "b920dc286080"
+    },
+    {
+      "title": "남해군, ‘에너지 자립의 섬’ 한국에너지공단 이사장 정부 역점사업 현장 점검",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBuSDVob3RWLXZJQ0lXVFNfV2tldzkzTy1sUk9KWWliQVNyVDJIRGVwaEdMWV9vNWtLXzkycUtLQmJIcmRreVpLU3hQaVZHb3gxaklWNUdHaFVCXzdZQ0ZLZ1RFd3dIcEIxMHNTelN5NExrWHfSAXdBVV95cUxQMkIzdWZfMGRHcGZZQ0FudkZqVVkwNllNcGo1REhkOURqRWVyRnJNTmd4RXFJVW9ZRWRBUWZyYnZ3Rk95VUVVQlcwWlZsZGVEcjR0dE1pME5fVVBoYWR0QzZIWjdKRnl6SjVXVmMwbzFhSjhqaVAyVQ?oc=5",
+      "source": "뉴스프리존",
+      "published": "2026-09-15 10:11",
+      "summary": "남해군, ‘에너지 자립의 섬’ 한국에너지공단 이사장 정부 역점사업 현장 점검  뉴스프리존",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "245e8aee97b5"
+    },
+    {
+      "title": "정유 슈퍼사이클 올라탄 SK이노베이션, 증권가 목표주가 줄줄이 상향",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBteDkycU1IdTFxREFCUTkzWHFaUms0SVdDRHFLSXJYQkNIekRzbERmdERueDI4bElLZno2akp6bmtBVFRxN190anZ0LW9LU2tlb29xUW42VURqUWRtaFp6MHpHMjJTbjVpMU4zei1yOA?oc=5",
+      "source": "마켓잉크",
+      "published": "2026-09-15 10:06",
+      "summary": "정유 슈퍼사이클 올라탄 SK이노베이션, 증권가 목표주가 줄줄이 상향  마켓잉크",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "1c77d8e4c2f3"
+    },
+    {
+      "title": "휘발유만큼 비싸진 '경유 뉴노멀'…도로 위 한숨 커지는 기업들 |",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE51NlozOXJ4V2l2c21BaXphdUdUMzlINUJOYVRhRFhrVnI5Y1JMdjNIYnZCT2tsODhvUlFQbWtRLTdOcVFUQzR2QUpEelkwcGZmd2hhTjVReTZPaC05RzZSVlphS1lSbUk3MzhoYjBfaU15a3ZC?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-09-15 10:04",
+      "summary": "휘발유만큼 비싸진 '경유 뉴노멀'…도로 위 한숨 커지는 기업들 |  연합인포맥스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "휘발유만큼 비싸진 '경유 뉴노멀'…도로 위 한숨 커지는 기업들",
+          "source": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96cm4zMnNjaHRYemxTajNzLWh0N05oQ2NvSEgwOWJ3UVg5TWFfM2QtM28wbnVqM3R6TTBrTG4zLWMxYWVaZTZQcWFSN3ZPQkVSekVqYmpJbGJmZUJxaVFKdkFRckhyam9yb1ZwblVMZ0s?oc=5"
+        }
+      ],
+      "query": "휘발유 가격",
+      "id": "52fb8f22111e"
+    },
+    {
+      "title": "전기차·저마진 '이중고'에 사라지는 동네 주유소..편의점엔 '새 시장' 기회로",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nbWVXY21BMGZiX1hfMXYweGdjMnFBQ2k2Y2U3dVhvRTVfaXNaX2tFak1ncnhaWDU3VGFhbVJiZHRpWEZJZ1RJVnd3aHNfbUdDcHc?oc=5",
+      "source": "한국정경신문",
+      "published": "2026-09-15 10:04",
+      "summary": "전기차·저마진 '이중고'에 사라지는 동네 주유소..편의점엔 '새 시장' 기회로  한국정경신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "0fc40e8b189d"
+    },
+    {
+      "title": "기후부, 베란다 태양광 인버터 '국산 우선 사용' 권고 했지만…공고 당시 국산 업체는 없어",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FQVBYb1p2VFk4by01QkR5YnRUeEE4VDl6aVdVYjR0RHZMeWlIMjZtS1ZKRzhLUVp2MnNTTldQb3h3cGlDTTN6VlliNmRua2ZDaG9jOG1wTFlIcURod1R1WdIBeEFVX3lxTE9tbzd0WXBjcG5NdEtwazM0SDNZaE5EU3Y1TUFWbFJjNVAzLUhKSDJ4WHptd2xXMWJUZ082RVVSUEplenVnMnNmSWlvQTVyOU5aS2wtcm9JMXdqY1YzR21wbGNqSjFxN1k4bFluU1lQNndiRnNVX2ZlVg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-15 10:02",
+      "summary": "기후부, 베란다 태양광 인버터 '국산 우선 사용' 권고 했지만…공고 당시 국산 업체는 없어  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "8fc3e2fe3f45"
+    },
+    {
+      "title": "후티 사우디 공격·호르무즈 협상 지연에 국제유가 상승",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PVU1fd1MxMGpMVWUtUVZaVkdEMEpZeGt3LXdjV1kzcW42VWtBOF9ORXVmZTBtNGswYjdKaHF0Tko3azQtVHQwa2VHeGtIVHo4ZDRjWGVWZ3ZMTDhrRVljeUsyUjVXTWVPeUR3V255MA?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-09-15 09:55",
+      "summary": "후티 사우디 공격·호르무즈 협상 지연에 국제유가 상승  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "936226caa1c6"
+    },
+    {
+      "title": "추석 귀성길 유류비 알뜰주유소와 오피넷으로 낮춘다",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uaWhKRnc5OTVsQk1MQ3RpNG51TVQ2cXNUbno2WnJZMEYxMmtNcjYtTnQ5Y1hQcWNyeTR4RC1RRUlSc2JGal93R1lqV21OXzU0Njd2TXIzX0thSHBSeFF2akx4X0hodzFT?oc=5",
+      "source": "공감신문",
+      "published": "2026-09-15 09:52",
+      "summary": "추석 귀성길 유류비 알뜰주유소와 오피넷으로 낮춘다  공감신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "d0c3dcc7c93e"
+    },
+    {
+      "title": "EBTS협동조합 진주지국, 영세 주유소 환경정화 봉사활동 전개",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9BUmIxQmpNN2NtZXRpX2d5b1lpWnFqSXY5WkZCVHVIcF9HN3c4T0EyNVBWaDMtVWJUck1tTzF4RllKY3pTd2p3OHRGNVBfN2dtTHJIZkFYNEl5Z052N3NsU01tNEZra2hoSkFhcw?oc=5",
+      "source": "경상일보",
+      "published": "2026-09-15 09:50",
+      "summary": "EBTS협동조합 진주지국, 영세 주유소 환경정화 봉사활동 전개  경상일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "28e1e91f58d9"
+    },
+    {
+      "title": "사우디 송유관 폐쇄에 브렌트유 105달러… 1900원 휘발유 오르나",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1oeHRCMHJ6RC1VaVFSSEtIRUdwVW9pMTRRZGtuN25oRXBVLUV0TjJjRE1EbVc1dk5yLW1FNnYwaWZPbFh3XzdqNGd4cVRsM1N3dV9heXlUdVRuRTBPZHNRVVB5dFR5a2hVZUxuZW40TGw?oc=5",
+      "source": "프레스뉴스",
+      "published": "2026-09-15 09:34",
+      "summary": "사우디 송유관 폐쇄에 브렌트유 105달러… 1900원 휘발유 오르나  프레스뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "c9758c3a9f74"
+    },
+    {
+      "title": "우회로 피격된 사우디, 다시 호르무즈로···원유 수출 확대 추진",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lcmhtUWIyMTRQdVVsYVN4VlpXdTEwYnlETlU4aHZwZVpmek5oU24xOVdIblEyM0JCbm40bHhHMzJCcWtreFBWZEdISHRIeEo3LTNQcE5oTFZuRTdibjhleHRjYTJaa2JLSWg3cg?oc=5",
+      "source": "smartbizn.com",
+      "published": "2026-09-15 09:32",
+      "summary": "우회로 피격된 사우디, 다시 호르무즈로···원유 수출 확대 추진  smartbizn.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "91597ec59fea"
+    },
+    {
+      "title": "최재관 한국에너지공단 이사장, 남해군 재생에너지 현장 방문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWeUN0SjdSSlBMaWFrTW9sc0U1R3hUWFRaUkhJZ2xkUnFyMW9GWmpzbF91T1pOMVJmbW8yU1hzUDZpeEYzaWVHcld6UmVOSWl2QmtjX1lfMnlCUQ?oc=5",
+      "source": "브릿지경제",
+      "published": "2026-09-15 09:23",
+      "summary": "최재관 한국에너지공단 이사장, 남해군 재생에너지 현장 방문  브릿지경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "84a2e5eaf7fa"
+    },
+    {
+      "title": "The E-STATION",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByZG1TZlh6WUszakRUTXhaSy11a3dwSnpEZjlTV2dhWVMwdFlVaUM5OG82NmFNWUNiS0dzS3VKazBqMjdXdFM3RXRsUWFzVGhtY18yNkt3bERHY2RVTllEYVQwZUNpYUw3OThfVw?oc=5",
+      "source": "에너지 미디어",
+      "published": "2026-09-15 09:19",
+      "summary": "The E-STATION  에너지 미디어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "3831f52baa79"
+    },
+    {
+      "title": "[유가정보 09/15] 휘발유 1858원대 제자리…경유 1844원으로 반등",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9xWWNfUXhEYlBCWE1uZGVUZWxqTTZ1NXZJOGxnSmVZSlhMZElSaGh6UlJsd2VIUndfVk1oZnpodjVzb0gzM0lYNVhZWEdteXVqSzhRVWU2X0EtVktlQkl6dTdUaE5LQ05MNHc?oc=5",
+      "source": "월요신문",
+      "published": "2026-09-15 09:15",
+      "summary": "[유가정보 09/15] 휘발유 1858원대 제자리…경유 1844원으로 반등  월요신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "310af30cadd1"
+    },
+    {
+      "title": "두바이유 115달러 육박… '최고가격제' 갇힌 정유사, 5兆 적자 비상",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BRkV4d3Vna2oweWxjUmh6TlB3UzgyejBwdVNULWlPWHRXV1dGS0Y0LWVPMHFIMU1WMlpMblFqS0k1YzJPbWhQdk8xYUxkQ3VkUHlIc1pOazNWUmRzQS1fVXIxd0UzWVA1ZnJJX2JaUDJnM05o?oc=5",
+      "source": "파이낸셜포스트",
+      "published": "2026-09-15 09:06",
+      "summary": "두바이유 115달러 육박… '최고가격제' 갇힌 정유사, 5兆 적자 비상  파이낸셜포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계",
+      "id": "cf60c03637ea"
+    },
+    {
+      "title": "힘들게 가스공사 복귀한 라건아 “영특한 알루마, 함께 뛰면 잘 맞는다”",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5xVkU2M1I1bUM1NVp5UlNjOU1LaHlDeDlaTm5sd1A1WHBreTZxTGVEZWFzaUZta3gxTE5fVnB2cXE5OHJCMHh2eWI0UWRXbXBMYXJROUUzU2tkeDYxaGFPV1d4eFpSOUNhbVdtLVcxaEI?oc=5",
+      "source": "점프볼",
+      "published": "2026-09-15 08:47",
+      "summary": "힘들게 가스공사 복귀한 라건아 “영특한 알루마, 함께 뛰면 잘 맞는다”  점프볼",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "8b142e750b89"
+    },
+    {
+      "title": "[국제유가] 사우디 에너지시설 공격에 상승…WTI, 101달러",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5CNE5WTGNRVHhGN25pZlFoNzhScFJzNzJXUG1CTERvTFhJd1p4Sm10ZkkzU05GSFJSNGVIWlFZWmFJODgyZUpOMC1sVjYyeUNCaGtDYU9jSVpBdjE2QlVSWmNwVktxeUFDSWZxOGNnRng?oc=5",
+      "source": "신아일보",
+      "published": "2026-09-15 08:39",
+      "summary": "[국제유가] 사우디 에너지시설 공격에 상승…WTI, 101달러  신아일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "65e25b408fd7"
+    },
+    {
+      "title": "치솟는 국제 유가...빼도 박도 못하는 '사면초가' 사우디 [자막뉴스]",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xa29pNmlveUtodnRDOHV2SkVJZGVmdURTM2hBRDRyX3Z2aVk1aHQ2QWFqb0g1U0k0bzVpUDlYdm8xR1lVaWhtblJnMTNsQ2xsQkNnb0ZFdnlwYUF5X1E?oc=5",
+      "source": "YTN",
+      "published": "2026-09-15 08:19",
+      "summary": "치솟는 국제 유가...빼도 박도 못하는 '사면초가' 사우디 [자막뉴스]  YTN",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "ae0673fdbdeb"
+    },
+    {
+      "title": "전남광주 광양서 주유소 기둥 충돌 60대 화물차 운전자 숨져",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UWTE0REtnNXFFSVBfRHJoaXFZR2JMb1hQdHBkc1M0SzRnc3VnS2FPSFdJck1UaUZZWHJPTkhBQ0I1R3kxRDdhNmx5Q29nOTRFZnpxYUZsSUZBOVRRck1B0gFkQVVfeXFMT1lGc2JuTi1sQ0JnMUU4SjBYUnhwTWFHTEI0MGNqMVZHbHZENU5TUjVLeFFnYkg4Q19lMnBQNVNWSm9qVU5Xak53TGlWQkx0alVwYUpzdmdjNG1tSlZkQk9ERkV3OA?oc=5",
+      "source": "뉴스1",
+      "published": "2026-09-15 08:13",
+      "summary": "전남광주 광양서 주유소 기둥 충돌 60대 화물차 운전자 숨져  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "c803ce61ba91"
+    },
+    {
+      "title": "사우디 송유관 드론 공격받아 폐쇄…국제유가 또 급등",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1FU3kwOUxwVURaajhqdkgzcjhrMUdjUmt6ZUlTY1JoUG9YdW1nZjdKRHZVNklBa210X0xBRno2VWlCb2Q2WUNJem53N3plSWpHWllOX0Vn?oc=5",
+      "source": "중앙일보",
+      "published": "2026-09-15 08:12",
+      "summary": "사우디 송유관 드론 공격받아 폐쇄…국제유가 또 급등  중앙일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "c6804dfcc172"
+    },
+    {
+      "title": "묘목 싣고 달리던 화물차, 주유소 기둥 충돌…60대 숨져",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBCWUp4RnhaVURFYjNYMTg5OU5Ed1pTU0NZeGZVRWd4NEVnaHNZTFYyVmJ3UTF1MGJKeEpsdHNSMV93alVrYWlrQm5kcW9uLU9GTUw1TGZweWduM1BRNlBhdlFn?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-15 08:10",
+      "summary": "묘목 싣고 달리던 화물차, 주유소 기둥 충돌…60대 숨져  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "2e73ea230a0f"
+    },
+    {
+      "title": "국제유가, 사우디 송유관 폐쇄 등 영향 반등⋯브렌트유 장중 배럴당 110달러 육박",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1KMzZmOGpBLU1MYU5MR3psTXNPeGJlSDZtOGNBS3RwQ25QaERrZHAxajhId2JMd0xheEVyZFREYmNhbHVrSnFiUm9XSElJelY3U3BwYWRQWjFLSEM2eHc?oc=5",
+      "source": "포커스온경제",
+      "published": "2026-09-15 07:16",
+      "summary": "국제유가, 사우디 송유관 폐쇄 등 영향 반등⋯브렌트유 장중 배럴당 110달러 육박  포커스온경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "472cbea1f3a1"
+    }
+  ]
+}
