@@ -6,7 +6,7 @@ import argparse
 import logging
 import sys
 
-from . import archive
+from . import archive, storage
 from .config import DRAFT_DIR, EXCLUSION_DIR, load_config
 from .digest import Digest, load_exclusions
 from .models import now_kst
@@ -27,14 +27,22 @@ def main(argv: list[str] | None = None) -> int:
     date = args.date or now_kst().strftime("%Y-%m-%d")
 
     draft_path = DRAFT_DIR / f"{date}.json"
-    if not draft_path.exists():
+    try:
+        use_supabase = storage.enabled()
+        remote_draft = storage.read("news_drafts", date) if use_supabase else None
+        remote_exclusions = storage.read("news_exclusions", date) if use_supabase else None
+    except Exception as exc:
+        log.error("Supabase 조회 실패 — 검토 결과 없이 발송하지 않습니다: %s", exc)
+        return 1
+    if (use_supabase and remote_draft is None) or (not use_supabase and not draft_path.exists()):
         # 수집이 실패했으면 빈 동향을 보내지 않고 조용히 멈춥니다.
         log.error("초안이 없습니다: %s — 06:40 수집 작업 로그를 확인하세요", draft_path)
         return 1
 
     config = load_config()
-    digest = Digest.load(draft_path)
-    excluded = load_exclusions(EXCLUSION_DIR / f"{date}.json")
+    digest = Digest.from_dict(remote_draft) if use_supabase else Digest.load(draft_path)
+    excluded = (set((remote_exclusions or {}).get("excluded", [])) if use_supabase
+                else load_exclusions(EXCLUSION_DIR / f"{date}.json"))
 
     total = len(digest.articles)
     shown = sum(len(items) for _, items in digest.by_sector(config, excluded))

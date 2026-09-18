@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import { readFile, writeFile, missingSettings } from '../api/_lib.js';
+process.env.SUPABASE_URL = 'https://example.supabase.co';
+process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-only';
+process.env.REVIEW_PIN = '123456';
+process.env.SESSION_SECRET = 'test-session';
+assert.deepEqual(missingSettings(), []);
+let called;
+globalThis.fetch = async (...args) => {
+  called = args;
+  return { ok: true, json: async () => [{ payload: { excluded: ['one'] } }] };
+};
+assert.deepEqual(await readFile('data/exclusions/2026-09-18.json'), { json: { excluded: ['one'] } });
+assert.match(called[0], /news_exclusions\?date=eq.2026-09-18/);
+await writeFile('data/exclusions/2026-09-18.json', { excluded: ['two'] });
+assert.equal(called[1].method, 'POST');
+assert.deepEqual(JSON.parse(called[1].body).payload, { excluded: ['two'] });
+globalThis.fetch = async () => ({ ok: false, status: 503 });
+await assert.rejects(readFile('data/drafts/2026-09-18.json'), /503/);
+await assert.rejects(readFile('data/other/2026-09-18.json'), /경로/);
+delete process.env.SUPABASE_SERVICE_ROLE_KEY;
+assert.deepEqual(missingSettings(), ['supabaseKey']);
+await assert.rejects(readFile('data/drafts/2026-09-18.json'), /불완전/);
+console.log('Supabase API storage checks passed');

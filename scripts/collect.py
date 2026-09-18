@@ -17,6 +17,7 @@ from .digest import Digest
 from .market import market_brief
 from .models import Article, now_kst
 from .notify import send_telegram
+from . import storage
 from .sources import (
     is_fresh,
     fetch_google_news,
@@ -128,6 +129,9 @@ def main(argv: list[str] | None = None) -> int:
 
     path = DRAFT_DIR / f"{digest.date}.json"
     digest.save(path)
+    if storage.enabled():
+        storage.save_draft(digest)
+        log.info("Supabase 초안 저장 완료")
     log.info("초안 저장: %s", path.relative_to(path.parents[2]))
 
     if not args.no_notify:

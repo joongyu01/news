@@ -19,12 +19,16 @@ export function settings() {
     token: process.env.GH_TOKEN || "",
     repo,
     branch: process.env.GH_BRANCH || "main",
+    supabaseUrl: (process.env.SUPABASE_URL || "").trim().replace(/\/$/, ""),
+    supabaseKey: (process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim(),
   };
 }
 
 export function missingSettings() {
   const s = settings();
-  return ["pin", "secret", "token", "repo"].filter((k) => !s[k]);
+  const storageKeys = s.supabaseUrl || s.supabaseKey
+    ? ["supabaseUrl", "supabaseKey"] : ["token", "repo"];
+  return ["pin", "secret", ...storageKeys].filter((k) => !s[k]);
 }
 
 // --- 세션 ------------------------------------------------------------------
@@ -86,6 +90,19 @@ export function checkPin(input) {
 
 const API = "https://api.github.com";
 
+function supabaseTarget(path) {
+  const s = settings();
+  if (!s.supabaseUrl && !s.supabaseKey) return null;
+  if (!s.supabaseUrl || !s.supabaseKey) throw new Error("Supabase 설정이 불완전합니다");
+  const match = /^data\/(drafts|exclusions)\/(\d{4}-\d{2}-\d{2})\.json$/.exec(path);
+  if (!match) throw new Error("지원하지 않는 뉴스 경로입니다");
+  return {
+    url: `${s.supabaseUrl}/rest/v1/news_${match[1]}`,
+    date: match[2],
+    headers: { apikey: s.supabaseKey, Authorization: `Bearer ${s.supabaseKey}` },
+  };
+}
+
 function ghHeaders() {
   const { token } = settings();
   return {
@@ -98,6 +115,15 @@ function ghHeaders() {
 
 /** 파일을 읽어 {json, sha} 로 돌려줍니다. 없으면 null. */
 export async function readFile(path) {
+  const target = supabaseTarget(path);
+  if (target) {
+    const response = await fetch(`${target.url}?date=eq.${target.date}&select=payload`, {
+      headers: target.headers, signal: AbortSignal.timeout(25000),
+    });
+    if (!response.ok) throw new Error(`Supabase 읽기 실패 ${response.status}`);
+    const rows = await response.json();
+    return rows.length ? { json: rows[0].payload } : null;
+  }
   const { repo, branch } = settings();
   const url = `${API}/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`;
   const resp = await fetch(url, { headers: ghHeaders() });
@@ -113,6 +139,17 @@ export async function readFile(path) {
 
 /** 파일을 쓰고 커밋합니다. sha 를 주면 덮어쓰기, 없으면 새로 만듭니다. */
 export async function writeFile(path, data, message, sha) {
+  const target = supabaseTarget(path);
+  if (target) {
+    const response = await fetch(`${target.url}?on_conflict=date`, {
+      method: "POST", signal: AbortSignal.timeout(25000),
+      headers: { ...target.headers, "Content-Type": "application/json",
+        Prefer: "resolution=merge-duplicates,return=minimal" },
+      body: JSON.stringify({ date: target.date, payload: data, updated_at: new Date().toISOString() }),
+    });
+    if (!response.ok) throw new Error(`Supabase 쓰기 실패 ${response.status}`);
+    return { ok: true };
+  }
   const { repo, branch } = settings();
   const resp = await fetch(`${API}/repos/${repo}/contents/${path}`, {
     method: "PUT",
