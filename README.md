@@ -246,3 +246,6 @@ python -m scripts.collect --dry-run          # 수집만 해보기 (저장 안 �
   이상으로 늘리거나 Vercel의 접근 제한 기능을 검토하세요.
 - 토큰·비밀번호는 **절대 저장소에 커밋하지 마세요.** GitHub Secrets 와 Vercel
   환경변수에만 넣습니다. `.env` 는 `.gitignore` 에 들어 있습니다.
+# 긴급 보고 후보 알림
+
+24시간 15분 간격으로 긴급 보도를 확인해 Telegram에 알립니다. AI API 호출 없이 제목 기준으로 판정하며, 발송 이력은 Supabase 단일 행에 최대 7일/500건만 저장합니다. [판정 기준·운영·비용 안내](docs/urgent-alerts.md)를 참고하세요.

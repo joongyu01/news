@@ -14,7 +14,7 @@ def enabled():
 
 
 def request(method, table, **kwargs):
-    if table not in ("news_drafts", "news_exclusions"):
+    if table not in ("news_drafts", "news_exclusions", "news_alert_state"):
         raise ValueError("Unknown news table")
     response = requests.request(
         method, f"{env('SUPABASE_URL').rstrip('/')}/rest/v1/{table}",

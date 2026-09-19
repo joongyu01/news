@@ -1,0 +1,50 @@
+name: 긴급 뉴스 알림
+
+on:
+  schedule:
+    # 정각 혼잡을 피해 매시 7/22/37/52분. GitHub 사정으로 지연될 수 있습니다.
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "발송·기록 저장 없이 후보만 확인"
+        type: boolean
+        default: false
+      send_test:
+        description: "점검 후 가동 확인 메시지 1회 발송"
+        type: boolean
+        default: false
+
+concurrency:
+  group: news-urgent-alerts
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -q -r requirements.txt
+      - name: 긴급 후보 확인 및 발송
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          SEND_TEST: ${{ inputs.send_test }}
+        run: |
+          args=()
+          [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
+          [ "$SEND_TEST" = "true" ] && args+=(--send-test)
+          python -m scripts.alerts "${args[@]}"
