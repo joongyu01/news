@@ -11,7 +11,7 @@ from urllib.parse import urlsplit
 
 import yaml
 
-from . import storage
+from . import storage, preferences
 from .classify import is_blocked
 from .config import ROOT, env, load_config
 from .dedupe import similarity
@@ -35,10 +35,14 @@ def load_rules():
     return rules
 
 
-def urgent_reason(article, rules):
+def urgent_reason(article, rules, options=None):
     title = article.title
+    if options and any(word.casefold() in title.casefold() for word in options.get("exclude", [])):
+        return None
     if re.search(rules["exclude_title"], title, re.I):
         return None
+    if options and any(word.casefold() in title.casefold() for word in options.get("watch", [])):
+        return {"id": "watch", "label": "관심 키워드", "action": "설정한 관심 키워드가 포함된 소식입니다"}
     for rule in rules["rules"]:
         if re.search(rule["scope"], title, re.I) and re.search(rule["trigger"], title, re.I):
             return rule
@@ -113,7 +117,19 @@ def already_sent(article, reason, history, threshold):
     )
 
 
-def select_alerts(articles, state, rules, now, config):
+def topic_key(article, reason):
+    """Optional strict mode groups the same facility/region/type for 24 hours."""
+    title = article.title
+    regions = re.findall(r"호르무즈|사우디|이란|미국|러시아|울산|여수|대산|인천|부산|대구|광주|대전|포항|구미|군산|익산|영천", title)
+    facilities = re.findall(r"석유관리원|정유공장|저유소|송유관|유조선|가스충전소|주유소|LPG|비축유|최고가격제|가짜석유", title, re.I)
+    events = re.findall(r"화재|폭발|누출|유출|피격|봉쇄|중단|방출|적발|구속|기소", title)
+    if not regions or not facilities or not events:
+        return ""
+    return '|'.join([reason['id'], ','.join(sorted(set(regions))),
+                     ','.join(sorted(set(facilities))), ','.join(sorted(set(events)))])
+
+
+def select_alerts(articles, state, rules, now, config, options=None):
     cutoff = max(now - timedelta(hours=rules["lookback_hours"]),
                  datetime.fromisoformat(state["started_at"]))
     selected = []
@@ -126,11 +142,19 @@ def select_alerts(articles, state, rules, now, config):
             continue
         if is_blocked(article, config):
             continue
-        reason = urgent_reason(article, rules)
+        reason = urgent_reason(article, rules, options)
         if not reason or already_sent(article, reason, known, rules["similarity_threshold"]):
             continue
+        if options and options.get("mode") == "strict":
+            if re.search(r"표창|수상|인터뷰|분석|파장|기대|검토|시행.*(?:후|영향)|방출.*(?:안|않)", article.title):
+                continue
+            topic = topic_key(article, reason)
+            if topic and any(old.get("topic") == topic and
+                             datetime.fromisoformat(old["sent_at"]) >= now-timedelta(hours=24) for old in known):
+                continue
         selected.append((article, reason))
-        known.append({"id": article.id, "title": article.title, "rule": reason["id"]})
+        known.append({"id": article.id, "title": article.title, "rule": reason["id"],
+                      "topic": topic_key(article, reason), "sent_at": now.isoformat()})
         if len(selected) >= rules["max_per_run"]:
             break
     return selected
@@ -159,34 +183,60 @@ def run(rules, *, dry_run=False, send_test=False):
                  "started_at": (now - timedelta(minutes=rules["initial_lookback_minutes"])).isoformat(),
                  "sent": []}
     trim_history(state, rules, now)
-    articles = gather(rules)
-    candidates = select_alerts(articles, state, rules, now, load_config())
-    log.info("수집 %d건 · 신규 긴급 보고 후보 %d건", len(articles), len(candidates))
+    prefs = preferences.load()
+    queries = list(rules["queries"])
+    words = sorted({word for opts in prefs["chats"].values() for word in opts.get("watch", [])})
+    if words:
+        # One extra query regardless of number of rooms; quote metacharacters.
+        queries.append(' OR '.join('"'+re.sub(r'["\\\r\n]', ' ', word)+'"' for word in words))
+    articles = gather({**rules, "queries": queries})
+    deliveries = []
+    for chat, options in prefs["chats"].items():
+        if not options.get("urgent", True) or preferences.quiet_now(options, now):
+            continue
+        history = [old for old in state["sent"] if old.get("chat", prefs["owner"]) == chat]
+        today_count = sum(datetime.fromisoformat(old["sent_at"]).astimezone(KST).date() == now.date() for old in history)
+        daily_limit = options.get("limit", 0)
+        remaining = min(rules["max_per_run"], max(0, daily_limit-today_count)) if daily_limit else rules["max_per_run"]
+        if not remaining:
+            continue
+        candidates = select_alerts(articles, {**state, "sent": history},
+                                   {**rules, "max_per_run": remaining}, now, load_config(), options)
+        deliveries.extend((chat, a, reason) for a, reason in candidates)
+    log.info("수집 %d건 · 신규 긴급 보고 후보 %d건(수신방별)", len(articles), len(deliveries))
     if dry_run:
-        for article, reason in candidates:
+        for chat, article, reason in deliveries:
             log.info("[시험] %s: %s", reason["label"], article.title)
-        return len(candidates)
+        return len(deliveries)
     # 첫 발송 전 저장 권한까지 검증. 발송별 저장으로 부분 실패도 재처리 가능.
     save_state(state)
-    for article, reason in candidates:
-        if send_telegram([message(article, reason)]) != 1:
-            raise RuntimeError("긴급 Telegram 발송 실패")
-        state["sent"].append({"id": article.id, "title": article.title[:500],
+    failures = 0
+    for chat, article, reason in deliveries:
+        try:
+            if send_telegram([message(article, reason)], chat_id=chat) != 1:
+                raise RuntimeError("긴급 Telegram 발송 실패")
+        except Exception:
+            failures += 1
+            continue
+        state["sent"].append({"id": article.id, "title": article.title[:500], "chat": chat,
+                              "topic": topic_key(article, reason),
                               "rule": reason["id"], "sent_at": now.isoformat()})
         trim_history(state, rules, now)
         save_state(state)
     state["last_checked_at"] = now.isoformat()
     state["last_collected"] = len(articles)
-    state["last_sent"] = len(candidates)
+    state["last_sent"] = len(deliveries)-failures
     save_state(state)
+    if failures:
+        raise RuntimeError("일부 구독방의 긴급 발송 실패")
     if send_test:
         if send_telegram(["✅ 긴급 뉴스 알림 가동 확인\n24시간, 15분 간격으로 확인합니다.\n"
                           "석유관리원 중대 보도 · 석유/가스 사고 · 공급 차질 · 긴급 정책\n"
                           "해당 소식이 없으면 알림을 보내지 않습니다.\n"
                           "AI 호출 없이 선별하며, 검색 반영·예약 실행 지연이 있을 수 있습니다."]) != 1:
             raise RuntimeError("가동 확인 메시지 실패")
-    log.info("긴급 알림 %d건 발송 완료", len(candidates))
-    return len(candidates)
+    log.info("긴급 알림 %d건 발송 완료", len(deliveries))
+    return len(deliveries)
 
 
 def main(argv=None):

@@ -21,6 +21,9 @@ class AlertTests(unittest.TestCase):
     def setUp(self):
         self.rules = alerts.load_rules()
         self.state = {"version": 1, "started_at": (NOW-timedelta(hours=6)).isoformat(), "sent": []}
+        pref = patch.object(alerts.preferences, "load", return_value={"owner":"test", "chats":{"test":alerts.preferences.defaults()}})
+        pref.start()
+        self.addCleanup(pref.stop)
 
     def select(self, articles):
         return alerts.select_alerts(articles, self.state, self.rules, NOW, load_config())
@@ -81,7 +84,7 @@ class AlertTests(unittest.TestCase):
             self.assertEqual(self.simulate(), 1)
             self.assertEqual(self.simulate(), 0)
         self.assertEqual(send.call_count, 1)
-        self.assertEqual(set(db[0]["sent"][0]), {"id", "title", "rule", "sent_at"})
+        self.assertEqual(set(db[0]["sent"][0]), {"id", "title", "rule", "sent_at", "chat", "topic"})
 
     @patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "test", "TELEGRAM_CHAT_ID": "test"})
     def test_db_read_or_initial_write_failure_never_sends(self):

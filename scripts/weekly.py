@@ -13,7 +13,7 @@ from . import archive
 from .config import DRAFT_DIR, EXCLUSION_DIR, load_config
 from .digest import Digest, load_exclusions
 from .models import now_kst
-from .notify import send_email, send_telegram
+from .notify import send_email, send_digest as send_telegram
 from .render import split_for_telegram
 
 log = logging.getLogger(__name__)

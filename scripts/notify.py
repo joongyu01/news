@@ -20,7 +20,7 @@ TIMEOUT = 25
 # 텔레그램
 # ---------------------------------------------------------------------------
 
-def send_telegram(chunks: list[str]) -> int:
+def send_telegram(chunks: list[str], chat_id: str | None = None) -> int:
     """평문 그대로 보냅니다. 마크다운 파싱을 켜지 않는 이유가 두 가지 있습니다.
 
       · 기사 제목에 * _ [ ] 가 들어가면 파싱 오류로 발송 자체가 실패합니다.
@@ -28,7 +28,8 @@ def send_telegram(chunks: list[str]) -> int:
 
     링크 미리보기는 끕니다. 기사가 10건 넘으면 화면이 감당이 안 됩니다.
     """
-    token, chat_id = env("TELEGRAM_BOT_TOKEN"), env("TELEGRAM_CHAT_ID")
+    token = env("TELEGRAM_BOT_TOKEN")
+    chat_id = chat_id or env("TELEGRAM_CHAT_ID")
     if not token or not chat_id:
         log.warning("텔레그램 설정 없음 — 건너뜁니다")
         return 0
@@ -55,6 +56,23 @@ def send_telegram(chunks: list[str]) -> int:
         if idx < len(chunks) - 1:
             time.sleep(0.4)          # 연속 발송 rate limit 회피
     return sent
+
+
+def send_digest(chunks: list[str]) -> int:
+    """Final digests go only to explicitly subscribed chats; reviews stay private."""
+    from . import preferences
+    if not env("TELEGRAM_BOT_TOKEN"):
+        return 0
+    settings = preferences.load()
+    count = 0
+    for chat_id, options in settings["chats"].items():
+        if not options.get("daily", True):
+            continue
+        try:
+            count += send_telegram(chunks, chat_id=chat_id)
+        except Exception as exc:
+            log.error("Telegram 구독방 발송 실패 (%s)", type(exc).__name__)
+    return count
 
 
 # ---------------------------------------------------------------------------
