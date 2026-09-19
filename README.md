@@ -1,5 +1,8 @@
 # 한국석유관리원 일일언론동향 자동화
 
+**다른 세션에서 이어서 작업:** [프로젝트 지침](AGENTS.md)과
+[Edge Computer Use 작업 인계](docs/computer-use-handoff.md)에 현재 연결 구조, 브라우저 작업 방법, 봇 명령 및 검증 절차를 정리했습니다.
+
 **Supabase 사용:** 기존 프로젝트에 뉴스 전용 테이블을 추가했습니다.
 수집·검토·발송의 DB 연결 설정은 [Supabase 연결 안내](supabase/README.md)를 보세요.
 Supabase 환경변수가 없으면 아래의 기존 GitHub 파일 방식으로 동작합니다.
