@@ -12,7 +12,7 @@
 <small>최대 3000자. 새 중요 소식이 없으면 제출하지 마세요. 기사 본문 전체 대신 요약을 입력하세요.</small>
 <button id="submit" type="submit">텔레그램 전달 접수</button> <button id="check" type="button">전달 상태 확인</button></form>
 <div id="status" role="status">연결 키와 보고 내용을 입력하세요.</div>
-<details><summary>관리자 연결 설정</summary><p><a href="/" target="_blank" rel="noopener">검토 페이지</a>에 로그인한 후 아래 버튼을 누르세요. 이 키는 뉴스 제출만 허용하며 Telegram 토큰이나 DB 키가 아닙니다.</p><button id="setup">전용 연결 키 불러오기</button></details>
+<details><summary>관리자 연결 설정</summary><p><a href="/" target="_blank" rel="noopener">검토 페이지</a>에 로그인한 후 아래 버튼을 누르세요. 이 키는 뉴스 제출만 허용하며 Telegram 토큰이나 DB 키가 아닙니다.</p><button id="setup">전용 연결 키 불러오기</button> <button id="copyLink">Gemini 연결 링크 복사</button></details>
 <script>
 const $=id=>document.getElementById(id);
 const fragment=new URLSearchParams(location.hash.slice(1));
@@ -21,4 +21,5 @@ async function request(method,body){const r=await fetch('/api/spark',{method,hea
 $('form').onsubmit=async e=>{e.preventDefault();$('submit').disabled=true;try{const r=await request('POST',{text:$('report').value});$('status').textContent=(r.status==='delivered'?'이 내용은 이미 발송됐습니다.':r.duplicate?'같은 내용이 이미 접수돼 있습니다.':'접수 완료. 다음 봇 실행에서 텔레그램으로 전달됩니다.')+'\n접수 번호: '+r.id;}catch(e){$('status').textContent=e.message;}finally{$('submit').disabled=false;}};
 $('check').onclick=async()=>{try{const r=await request('GET');$('status').textContent='전달 대기: '+r.pending+'건\n최근 발송: '+(r.recent.map(x=>x.id+' · '+x.sent_at).join('\n')||'없음');}catch(e){$('status').textContent=e.message;}};
 $('setup').onclick=async()=>{try{const r=await fetch('/api/spark?setup=1');const data=await r.json();if(!r.ok)throw Error(data.error);$('key').value=data.key;$('status').textContent='전용 연결 키를 불러왔습니다.';}catch(e){$('status').textContent=e.message;}};
+$('copyLink').onclick=async()=>{try{const key=$('key').value.trim();if(!/^[a-f0-9]{64}$/.test(key))throw Error('먼저 전용 연결 키를 불러오세요.');await navigator.clipboard.writeText(location.origin+'/spark.html#key='+key);$('status').textContent='연결 링크를 복사했습니다. 승인한 Gemini Spark 작업에만 전달하세요.';}catch(e){$('status').textContent=e.message;}};
 </script></body></html>
