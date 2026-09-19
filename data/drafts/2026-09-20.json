@@ -1,0 +1,1421 @@
+{
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20 08:30",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1388.1,
+      "change_pct": 0.40143213626993274,
+      "unit": "원"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 2091,
+    "fresh": 183,
+    "classified": 161,
+    "representatives": 102,
+    "duplicates": 27
+  },
+  "articles": [
+    {
+      "title": "‘15조원대 담합’ 석유업체 7곳…나프타 수급 불안 악용했나",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBuUHh5eXBtdTk4YTdCb3E5ZmRsQzFNMWVhQzBoNEtiR2Y3X1ozSUxxWndCQ0NGdVk3dWs5T0U0anZObDNQTkpqYTA2Q2JTVlpXOGc?oc=5",
+      "source": "JTBC",
+      "published": "2026-09-19 20:49",
+      "summary": "‘15조원대 담합’ 석유업체 7곳…나프타 수급 불안 악용했나  JTBC",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [
+        {
+          "title": "'15조원대 담합' 석유업체 7곳…나프타 수급 불안 악용했나",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnNU4yNVhRT0VHZXN2M3BnLTdMOVlja2dVS3JEeFJwWV9SdW03SVhOenhJYU5kbW9FVk05RXlNci12MDNIXzBHWGhqaTJ6akU?oc=5"
+        }
+      ],
+      "query": "석유 수급",
+      "id": "5ffd3d0fd2ed"
+    },
+    {
+      "title": "[기자수첩] 반복되는 ‘자원개발 뻥튀기’",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334435",
+      "source": "이투뉴스",
+      "published": "2026-09-19 16:00",
+      "summary": "[이투뉴스] 대왕고래 가스전 개발 성과를 알리던 당시의 적나라한 상황이 감사원 감사결과로 만천하에 드러났다. 산업부가 대규모 자원부존 가능성을 꼼꼼히 보고하면서도 성공가능성이 19%대로 낮은 만큼 대외홍보 자제라는 보고서를 냈음에도 당시 용산 대통령실은 깔끔하게 무시했다. 오히려 최대부존량을 부각시키는 한편 “금세기 최대 석유개발 사업으로 평가받는 가이아나 광구의 110억 배럴보다도 더 많은 탐사자원량”이라고 뻥튀기했다.윤석열 대통령의 독단과 질타, 참모진의 부화뇌동도 확인됐다. 2029년까지 단계적으로 진행하려던 시추일정까지 대통",
+      "sector": "energy",
+      "risk": [
+        "감사원"
+      ],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "5148fc6e0cfb"
+    },
+    {
+      "title": "중동전쟁 불안 틈타 가격 담합...석유화학업체 임원 2명 구속",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdm90UE50b2JDQWRHTHNFMzJfM09BYkRWZFNwYkhnR00wOC00WXN3R2piajVUWExmeXFGcFc1TGxZVVY3NHg5NUhBOHBwNmgzYjNzbFJFV3YwdXh6RnRHR093bFdlZy1PaW9OUUxRRWY3X2tPU0NYdFNzSW5IOHE0SERzMkpsS1U?oc=5",
+      "source": "조선일보",
+      "published": "2026-09-19 09:22",
+      "summary": "중동전쟁 불안 틈타 가격 담합...석유화학업체 임원 2명 구속  조선일보",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "80818ef3a202"
+    },
+    {
+      "title": "10차 석유 최고가격 동결…휘발유 리터당 1784원",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334443",
+      "source": "이투뉴스",
+      "published": "2026-09-20 09:26",
+      "summary": "[이투뉴스] 정부가 석유 최고가격을 재차 동결했다. 이에 따라 19일부터 4주간 리터당 휘발유 1784원, 경유 1773원, 등유 1380원의 최고가격이 적용된다.산업통상부는 19일부터 적용하는 10차 석유 최고가격을 기존 9차 수준으로 유지한다고 18일 밝혔다.국제유가가 상승하는 가운데 소비자 물가 부담도 커지자 민생안정에 무게를 두고 최고가격을 현행 수준으로 유지한다는 설명이다.8월 넷째주 평균 브렌트유 가격은 배럴당 89.5달러에서 이달 16일 105.8달러로 18.2% 올랐다. 같은 기간 두바이유는 92.3달러에서 128.0",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "id": "898c877ecf77"
+    },
+    {
+      "title": "사우디 동서 송유관 복구 추진등에 9월18 국제유가 하락",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228410",
+      "source": "에너지신문",
+      "published": "2026-09-20 08:39",
+      "summary": "[에너지신문] 18일 국제유가는 사우디의 동서 송유관 복구 추진, 중국의 이란 대상 후티 반군 공격 자제 요청 등으로 하락한 가운데 사우디의 유럽향 공급 일시 중단 발표 등은 유가 하락폭을 제한시켰다. 한국석유공사(사장 손주석)는 서부 텍사스산 원유인 WTI가 전일대비 배럴당 1.61달러 내린 100.30달러에, 북해산 Brent유는 0.95달러 하락한 103.87달러에 각각 마감했다고 밝혔다. 또한 국내 기준 유가로 적용되는 중동산 Dubai유는 전일대비 배럴당 5.30달러 하락한 118.40달러를 기록했다. 사우디가 후티 반군의",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "75e28e601912"
+    },
+    {
+      "title": "‘비축유로 유가 조율’…中, 이란전 거치며 ‘에너지 패권국’ 부상",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xVEdJSGtJUDFIVy1pZ2hwT2ozNHBja2FqalBCdkRMOXJKbjlGaGR3aW9IbUVET0c2VVBBMGVUczZkLWk4SlowTU9BbHNTWEhJN0VYXzBIZkNINHF3aUpzbU5pQUw?oc=5",
+      "source": "서울경제TV",
+      "published": "2026-09-20 08:00",
+      "summary": "‘비축유로 유가 조율’…中, 이란전 거치며 ‘에너지 패권국’ 부상  서울경제TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "c81aa3b3f7f0"
+    },
+    {
+      "title": "호주, 디젤•휘발유 가격 고공행진 재현",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IaWRSS0ZIQXVXaXJENFJ1SW5oYVczUUxGSVBlc3ZHdWg0TnRNQnpTMzVaYmtWa0ljYzVORWdUeVJHX2JIeWJJdmljclZnRFlwaC11SHZEMHhRQndtSjc2NFp3a0M3NFZrT1ZyUXRoeWw?oc=5",
+      "source": "호주 톱뉴스",
+      "published": "2026-09-20 07:57",
+      "summary": "호주, 디젤•휘발유 가격 고공행진 재현  호주 톱뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "5e5891873dc3"
+    },
+    {
+      "title": "도로 흉물이 편의점으로…폐주유소 되살린 CU의 '스토어 플래너' - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jOUZWWGRlaVNpT3ZRSHVyUkMwaG8xN0FvQURIRlhOZXpsc2NieWJ3YVBtOU9UVlJOR0F2LVZ2VnRwMmtSYTZmQXdGVjJDTU9ZVTF4a2RsOG8tQ3NlSHRkQ2JDMk5meHY5U0HSAW9BVV95cUxQSE5Sa0daSTFTLUJVRHpyOXBEWjQyQ2Q0U3I4R1R6WXh4a3dPWFM4X3JlYVFTRDhuWVVGelBITkhTOHotS0pxckl2QXRYU0VqcmswOVhNMURhVlFJNTFuQXVsRkJuRy1JRkswWVJ5LXc?oc=5",
+      "source": "머니투데이",
+      "published": "2026-09-20 07:00",
+      "summary": "도로 흉물이 편의점으로…폐주유소 되살린 CU의 '스토어 플래너' - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "ae5b42ad5e37"
+    },
+    {
+      "title": "미중 정상회담·유가에 쏠린 눈…코스피 6400~7500 [주간 증시 전망]",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOWkFud25GaGNESlVOUzFianQxRHFJZU9pUE44RGRZaGlqYkxXRlFDQjE0MHlRUi0zQ1hsMTdVbEZmRXRvdEJpaVdsR3ZmWFdSS2NMOG5yMVlhNGg2WWFSN0VEN05uYkR6LUZnLWdxVDVIMjhSWDBOenpqZkUwaXVSWlhMZm5NTlBfemNSd2VVc3JJV2ltNjhFV1ZQRlRpOUVkWWdXM3lMMXBvRFNYZG9sbkJBMnBmNnJ0MlRhS3ZVV24weXlyTVNRN3N1bXF5QTItaHl0alAzbXNlejRxeUNtTnhQRmtaTWNMMVBqUXRNTHVQN2Vzb3VfX3RneE1hMU1FQVpHbFVXZDQzWi1vMlE?oc=5",
+      "source": "데일리안",
+      "published": "2026-09-20 06:00",
+      "summary": "미중 정상회담·유가에 쏠린 눈…코스피 6400~7500 [주간 증시 전망]  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "12b01c126d6a"
+    },
+    {
+      "title": "주유소협회 \"고속도로만 인하 땐 가격 경쟁 왜곡\" 반발",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DMURSNDhSbnRfR3U1SXI0ZGN1cGJXYnFYM2RIX0pGeVF6bUpBMTJsYlRubHBacHFwRUs5THdxc3JLcnBaR1E2dG9ERFE3OVZIWl8zTU45RWdGeG1TeC11NTd0VXhEWDQ3ZUhpVnZn?oc=5",
+      "source": "gukjenews.com",
+      "published": "2026-09-20 05:35",
+      "summary": "주유소협회 \"고속도로만 인하 땐 가격 경쟁 왜곡\" 반발  gukjenews.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "9a513afa64e4"
+    },
+    {
+      "title": "전국 주유소 휘발유 가격 L당 1,858.6원으로 18주 연속 하락… 최고가격제 유지 영향",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAzYnJpYmI1cXJ5M2s1dzB3RmRoVnFzRTZWOVJaZ2dHNmdQT0JMcUNkd2oxWlV4TWd1aFVkYklXRFhHQWhlUkNwdVg4TmlsTWlrUXV6X1BwX0x1bzUzVmEtclBzbDVMR2V4?oc=5",
+      "source": "CBC뉴스",
+      "published": "2026-09-20 05:25",
+      "summary": "전국 주유소 휘발유 가격 L당 1,858.6원으로 18주 연속 하락… 최고가격제 유지 영향  CBC뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사",
+      "id": "5c90996e8742"
+    },
+    {
+      "title": "파티 비롤 IEA 사무총장, 이재명 대통령 예방... 에너지 전략 협력 논의",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvX0pOdk1md0J1TUJ1OGdrS1VOeVFDY2g5SWVya0RYd0FOOUtVOUY5M243ZEt4UFdPcm5QSV8yRlBMNVI2X2s3c0hOZWxKemFELTk4cDVtNUlsSWtmR0t5MVdyVmM1emhS?oc=5",
+      "source": "2news.co.kr",
+      "published": "2026-09-20 04:35",
+      "summary": "파티 비롤 IEA 사무총장, 이재명 대통령 예방... 에너지 전략 협력 논의  2news.co.kr",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "f94d30bf78e6"
+    },
+    {
+      "title": "기름값 18주째 하락…국제유가와 엇갈린 국내 주유소 가격 : 금융",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE81a1dqTkpSYlRYYUZVZGNTdkF4RVJvbnNKUjZWNm9NaGtsc255VWhvZ1I4eC1DeUFDR1VzcDVYWXhTdmpOd3BzMWl3?oc=5",
+      "source": "재경일보",
+      "published": "2026-09-20 04:21",
+      "summary": "기름값 18주째 하락…국제유가와 엇갈린 국내 주유소 가격 : 금융  재경일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "5facccecdb00"
+    },
+    {
+      "title": "EBTS협동조합 광주비엔날레지국, 작은 손길로 만드는 깨끗한 지역사회",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE83SHNYbkJhSzUxYml0akttUEN5cWdCdXNCVnBNZmsweVhrZzdSNmRyVXh6MU5UTDJTS3RXaDNXbE1GTlJzSTRXcjN3aFdURE5SNDFud2k3eHBacEVsNjhJT2hWOVA?oc=5",
+      "source": "정안뉴스",
+      "published": "2026-09-20 01:55",
+      "summary": "EBTS협동조합 광주비엔날레지국, 작은 손길로 만드는 깨끗한 지역사회  정안뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "542949ed7400"
+    },
+    {
+      "title": "프랑스 주유소 11% 연료 품절…경유 2.38유로",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1oRnU3bWtDT1c4aUVPY3gzTlJSTzhlbmxzTVRMeF9Oenl5ZklPb0FXN05VSVphSnNNMjFaVnRwX1phbkVpM3FtaUROU2lwdlFKeUhEcXVHZVY?oc=5",
+      "source": "토큰포스트",
+      "published": "2026-09-20 00:13",
+      "summary": "프랑스 주유소 11% 연료 품절…경유 2.38유로  토큰포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "9de956405f4e"
+    },
+    {
+      "title": "프랑스 주유소 11% 휘발유·경유 중 하나 품절",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5NWEdxWkN0LXh5cUlwZHFSRHpla1FQT3BxX1NSRThSQ3FzTmRja3pZV3dPMXNpcHFScFlZZFY1U2RjUTZkY01RWVBhekhZWUhkU0FuaTEySQ?oc=5",
+      "source": "토큰포스트",
+      "published": "2026-09-20 00:00",
+      "summary": "프랑스 주유소 11% 휘발유·경유 중 하나 품절  토큰포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "ac16ce41235b"
+    },
+    {
+      "title": "사우디 동서 송유관 복구 추진등에 9월18 국제유가 하락",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBFakl5aWw2TVlwM0ZJaGpON2I2S0xXS05saGh6dlVYQmdjNnpjZlRBWDNtV01DZXg3a2JMSVlwcnd3d3hpcjVtazFNN05NU3BpdzdUWm1YODNOOEJJSmpVUHRNVjN6WFlGTVJrb0tiMTk4UQ?oc=5",
+      "source": "에너지신문",
+      "published": "2026-09-19 23:39",
+      "summary": "사우디 동서 송유관 복구 추진등에 9월18 국제유가 하락  에너지신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "96131f212ef6"
+    },
+    {
+      "title": "노후 경유차 저공해화, ‘교체’에서 ‘재제조’로 길 넓힌다",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228406",
+      "source": "에너지신문",
+      "published": "2026-09-19 23:00",
+      "summary": "[에너지신문] 노후 경유차의 저공해화 방식이 차량을 새로 교체하는 데만 머물지 않고 기존 차량의 엔진을 재제조해 연료와 배출가스를 동시에 바꾸는 방식으로 확대될 수 있을지 주목된다.청연리멘무브가 추진하는 ‘운행건설기계 배출가스 저감을 위한 저공해 천연가스 엔진 재제조 및 저공해 천연가스 믹서트럭 튜닝’ 사업은 폐차되는 CNG 시내버스에서 엔진을 회수해 재제조한 뒤 노후 경유 믹서트럭에 장착하는 방식이다.핵심은 차량을 폐차하거나 새 차로 교체하는 것이 아니라 기존 차체를 활용하면서 엔진을 바꾸는 것이다.경유에서 천연가스로 연료를 전환",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "248efad00b75"
+    },
+    {
+      "title": "우수한 기술력으로 집단에너지·발전 사업 전개하는 삼천리그룹",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228405",
+      "source": "에너지신문",
+      "published": "2026-09-19 23:00",
+      "summary": "[에너지신문] 1955년 삼천리연탄기업사로 출발한 삼천리그룹이 도시가스 사업을 넘어 집단에너지와 발전 사업까지 사업 영역을 확대하며 대한민국 대표 종합에너지그룹으로 성장하고 있다.광명열병합발전소와 휴세스·안산도시개발의 집단에너지 사업, S-Power의 안산복합화력발전소를 기반으로 지역사회에 필요한 에너지를 안정적으로 공급하는 한편 연료전지와 신재생에너지, 미활용 열에너지, 수소 등 미래 에너지 분야로 사업 영역을 넓히며 백년기업을 향한 성장 기반을 다지고 있다.삼천리그룹은 도시가스, 열, 전기를 아우르는 에너지 사업을 기반으로 지역",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "712e26eba03d"
+    },
+    {
+      "title": "주유소 기름값 18주 연속 하락...\"명절 고속도로 기름값 100원 인하\"",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE94bDVSU2Jyb1ppT1NXZ3FtblRDS1plREZ3aWZpc3VjMXRLdHYtbkIyWVdtWnBHTzI5dnRwWTFMeVlvVWw1MktIU3phSjQwMUFaLTl6OW5OS0dSU25DdVE?oc=5",
+      "source": "YTN",
+      "published": "2026-09-19 22:37",
+      "summary": "주유소 기름값 18주 연속 하락...\"명절 고속도로 기름값 100원 인하\"  YTN주유소 기름값 18주째 하락…최고가격제 영향에 1800원대 지속  경향신문국제유가 폭등에도 기름값 동결‥추석 연휴 고속도로 주유소 리터당 100원 할인  imnews.imbc.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "주유소 기름값 18주 연속 하락...\"명절 고속도로 기름값 100원 인하\"",
+          "source": "YTN",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9WTnBIczVnaWZtYlJ2MThBRVl5cDEweUR0LW5LX3BBUHAyY1RXa0JoeExfZW4wRncydm9NUTRLWW9pVGdtc2xtODlYZHVvVGVfWkhjSXV1amgtSFN3VlZ4X1Z6OEp1Z1B0QTZMMzhjaw?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주 연속 하락...\"명절 100원 인하\"",
+          "source": "YTN",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BVzlhRHRycl9keE5TYXg5TzJNcS15WlluMzlSdy1ldS01a0VEX1JhTm00Z0xtVE1rNmtiZEVFbWgwSHl1Q3BvVkVKZVpJa0lXSjZpWk5VdTdzU0ZuU2c?oc=5"
+        }
+      ],
+      "query": "주유소",
+      "id": "b1da43315190"
+    },
+    {
+      "title": "[초대석] 문양택 기후에너지환경부 전력산업정책관···“전력 풍부한 비수도권, 산업용 전기요금 낮춘다”",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228402",
+      "source": "에너지신문",
+      "published": "2026-09-19 22:30",
+      "summary": "[에너지신문] 문양택 기후에너지환경부 전력산업정책관은 산업통상자원부에서 에너지기술과장, 재생에너지 산업·보급과장 등을 역임한 에너지·전력산업 전문가다.기후에너지환경부 전력산업정책과장을 거쳐 현재 전력산업정책관을 맡고 있다. 문 정책관에게 재생에너지 확대와 전력공급, 발전공기업 통합 등 주요 정책의 방향과 추진계획을 들었다.▶▶▶ 2040년을 향한 재생에너지 확대 이행방안은.단기적으로는 신속한 준공이 가능한 태양광을, 중장기적으로는 해상풍력특별법 시행에 따른 해상풍력 확대를 중심으로 정부·지자체·공공이 총력 대응할 계획이다.수도권 등",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "132fb012e45e"
+    },
+    {
+      "title": "[인터뷰] 이동진 대한LPG협회 회장···“탄소중립 과정 LPG 역할 정립”",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228401",
+      "source": "에너지신문",
+      "published": "2026-09-19 22:20",
+      "summary": "[에너지신문] 탄소중립과 에너지전환이 거스를 수 없는 시대적 흐름으로 자리 잡으면서 LPG산업이 새로운 전환점에 서 있다.전기차와 하이브리드차 확산으로 수송용 LPG시장 환경이 빠르게 변화하고 있을 뿐 아니라 일부 지역에서는 LPG충전소의 휴·폐업과 함께 업종 전환 사례도 늘고 있다.하지만 이동진 대한LPG협회 회장은 LPG의 미래를 단순히 기존 자동차 연료 시장의 유지 여부로만 보지 않는다.탄소중립이라는 목표를 향해 나아가되 모든 에너지와 산업, 자동차가 단기간에 전기와 수소로 전환되기 어려운 현실을 고려해야 한다고 강조했다.이동",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "0e8eb59d3b0a"
+    },
+    {
+      "title": "[인터뷰] 이영채 한국LPG판매협회중앙회 회장···\"공정한 에너지전환 필요”",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228400",
+      "source": "에너지신문",
+      "published": "2026-09-19 22:00",
+      "summary": "[에너지신문] LPG업계가 수요 감소와 경영비용 상승, 인력난에 이어 도시가스 및 LPG배관망 확대와 전기화 등 급격한 에너지전환에 직면하고 있다.특히 농어촌과 산간·도서지역 등 도시가스가 공급되지 않는 지역에서는 LPG가 여전히 중요한 생활에너지 역할을 담당하고 있지만 이를 공급하는 판매사업자의 경영 여건은 갈수록 악화되고 있다.이같은 실정에 이영채 한국LP가스판매협회중앙회 회장은 “LPG판매업계의 위기를 단순한 업계 경영난으로 볼 것이 아니라 지역 에너지 공급망과 안전관리 인프라 측면에서 바라보고 문제 해결을 위해 국회나 정부에",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "5478fc41788b"
+    },
+    {
+      "title": "대전도시공사, ‘주거·안전 혁신’ 국무총리 표창…갑천4BL·AI 화재예방 성과",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE93dlp2QUN3NmpTejZqYVdyQVlEbVlvVkZUZ0dDSG9JWVBNYzEwamljUG5yc1BkNjZkOGk1b2FfOEtkaDN6R2J1eGRsVVZqWGV3V1d1VQ?oc=5",
+      "source": "타임뉴스",
+      "published": "2026-09-19 21:14",
+      "summary": "대전도시공사, ‘주거·안전 혁신’ 국무총리 표창…갑천4BL·AI 화재예방 성과  타임뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "66cb6b21f61e"
+    },
+    {
+      "title": "[창간사] 에너지 대전환, 다시 ‘기본’을 묻는다",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228399",
+      "source": "에너지신문",
+      "published": "2026-09-19 21:02",
+      "summary": "[에너지신문] 에너지신문이 창간 16주년을 맞았습니다.민족의 명절 한가위를 앞두고 독자 여러분과 에너지산업에 종사하는 모든 분들의 가정에 건강과 행복이 가득하기를 기원합니다. 가족과 함께 따뜻하고 풍성한 한가위 보내시길 바랍니다.올해 에너지 시장은 그 어느 때보다 불확실성이 커지고 있습니다. 지정학적 갈등과 공급망 불안이 이어지는 가운데 에너지 가격과 수급을 둘러싼 변수도 확대되고 있습니다.에너지 안보는 이제 특정 연료의 안정적인 확보를 넘어 전력·가스·석유 등 에너지 전반의 공급망을 안정적으로 유지하고 위기에 대응할 수 있는 체계",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "0427146f0688"
+    },
+    {
+      "title": "[창간축사] 홍의락 한국가스공사 사장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228397",
+      "source": "에너지신문",
+      "published": "2026-09-19 21:01",
+      "summary": "[에너지신문] 에너지 산업 전반의 흐름을 짚어내며 산업계와 국민을 잇는 공론장 역할을 충실히 해온 에너지신문의 창간 16주년을 진심으로 축하드립니다.급변하는 대내외 여건 속에서도 정론직필의 사명감으로 현장을 지켜오신 임직원 여러분의 노고에 깊은 경의를 표합니다.오늘날 글로벌 에너지 시장은 탄소중립과 에너지 안보라는 중대한 과제를 마주하며 전례 없는 대전환기를 겪고 있습니다.인공지능(AI)과 첨단 데이터 산업의 급성장으로 전력 및 에너지 수요의 패러다임이 빠르게 재편되는 지금, 복잡한 산업 환경을 객관적으로 분석하고 올바른 방향을 제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[창간축사] 홍의락 한국가스공사 사장",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1jZjJTTHd5c3VXODc1cVdHNTVVRFozU21yM2lmdGdWUWRPbDJiWUR1QUxpOUxURWNsTFBPendqdXRkaUR5QUFkUFZmc2daMW1VMjZPTk80M3RlcTVwaWpjZEJsTzVFNFFRM0NfbVVjQ1BIQQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "id": "f568debaa4af"
+    },
+    {
+      "title": "[창간축사] 박경국 한국가스안전공사 사장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228396",
+      "source": "에너지신문",
+      "published": "2026-09-19 21:00",
+      "summary": "[에너지신문] 에너지 산업에 대한 깊이 있는 통찰로 정책과 현장을 연결하고, 국민과 산업계에 정확한 정보를 전달해 온 에너지신문의 창간 16주년을 진심으로 축하드립니다.에너지신문은 커지는 불확실성과 급변하는 에너지 환경 속에서 석유와 자원, 전력과 원자력, 가스, 신재생 에너지에 이르기까지 에너지 산업 전반의 흐름과 주요 현안을 충실히 짚어왔습니다.특히 수소신문 발행을 통해 수소 분야의 전문성을 한층 강화하는 등 대한민국을 대표하는 에너지 전문언론으로 자리매김해 왔습니다.오늘날 글로벌 에너지 환경은 지정학적 긴장과 공급망 재편 속에",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "08cd3810c4af"
+    },
+    {
+      "title": "[창간축사] 최재관 한국에너지공단 이사장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228394",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:58",
+      "summary": "[에너지신문] 에너지신문 창간 16주년을 진심으로 축하드립니다.‘바른 정보 참 언론’이라는 기치 아래 에너지 분야의 주요 현안과 정책 변화를 현장에서 집중 조명하며 전문 언론으로서 에너지 생태계 발전에 사명을 다해 오신 에너지신문 임직원 여러분의 노고에 깊은 감사의 말씀을 전합니다.현재 우리 사회는 거대한 에너지 전환의 한가운데 서 있습니다. 에너지 안보를 둘러싼 국제 정세의 변동성은 에너지의 94%를 수입에 의존하는 우리 경제에 경각심을 안겨줬습니다.이제 우리 사회는 산업 경쟁력을 확보하면서 기후위기 대응을 위한 글로벌 탄소중립이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[창간축사] 최재관 한국에너지공단 이사장",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8yWFpvb1h3bUlfeEZXaEN0dU1qVUNfeGF3bFlldVVuQm5yQmViaHlIUGJaT0swdkRiWWtJcC1nSkpMeTVZdXBxX3dJb2ZTOUpkWGtYRllJVXBWcjVXSUw4cUVpMklSdGpJaVJ5MG1Rc0s1QQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "id": "5b9022c679c4"
+    },
+    {
+      "title": "[창간축사] 최춘식 한국석유관리원 이사장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228393",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:57",
+      "summary": "[에너지신문] 에너지 산업의 든든한 동반자로 자리해 온 에너지신문의 창간 16주년을 진심으로 축하드립니다.에너지신문은 에너지 전 분야의 현안을 심도 있게 조명하고 정책과 산업을 잇는 가교역할을 충실히 해왔습니다. 현장의 목소리를 대변하며 산업계의 올바른 이정표를 제시해 온 임직원 여러분의 노고에 깊이 감사드립니다.한국석유관리원 역시 에너지 시장의 질서를 바로잡고 국민이 체감할 수 있는 안전한 석유 유통 환경을 조성하기 위해 끊임없이 역량을 집중해 왔습니다.특히 최근 장기화되는 중동 정세 불안으로 글로벌 에너지 수급의 불확실성이 그",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[창간축사] 최춘식 한국석유관리원 이사장",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE11amdxODY5TW9Mb1dFVHRCa29MNTlLbzZ6M3NIN2F0QU9veFRaVXRNeTRiUnU5QTFQUjRzaUFrVFNJWW40Y2JVWkU4MDBTR0VRVEl3alpBVFlsRXRhRmFjclg3RGRpeUpaaHdxTVQ0VmFkUQ?oc=5"
+        },
+        {
+          "title": "[창간축사] 최춘식 한국석유관리원 이사장",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9YcWJlNVVscXJkWlp4MklCS0VwcHVYV2dITVdwWnFCMFdYSEl5dDRMMXl3bmdQa3diWl81TG16WllrbGJIeFpQaTVRaGNrZWVtNlhpSW1NYmZoMDFDamdLYTNpRVA0b0RmUVc3dUstdjI?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "id": "bc13941d34d0"
+    },
+    {
+      "title": "[창간축사] 김현제 에너지경제연구원 원장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228392",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:56",
+      "summary": "[에너지신문] 안녕하십니까, 에너지경제연구원장 김현제입니다.에너지신문의 창간 특집호 발간을 진심으로 축하드립니다.에너지 정책과 산업 현장의 소식을 꾸준히 전해 오신 에너지신문 임직원 여러분께 감사드립니다.우리 에너지산업은 공급 안정과 기후변화 대응을 함께 추진하면서 인공지능 확산에 따른 전력수요 증가에도 대비해야 합니다.산업 경쟁력과 국민 생활에 미치는 영향까지 고려해야 하는 만큼, 정책의 효과와 비용을 객관적으로 살피고 중장기적인 해법을 찾는 일이 중요합니다.이러한 때일수록 에너지 전문언론의 역할이 더욱 중요합니다. 정책의 취지와",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[창간축사] 김현제 에너지경제연구원 원장",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tYnlvaEpNTWcyU0p5bUdZSFYzZ1NuYXFsOElGNkgzUEtuSmFQX2dpRVpyT0d0ZV9jMVlFUkFtQ0R5bjJadmpYcmdoWjYyNmJrWHVjSGF4cko0a1gtTDIxY3ZXbHIzYk1YTFFFOVFjbjlTZw?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "id": "433eb7faffab"
+    },
+    {
+      "title": "[창간축사] 김대한 한국전력공사 전력연구원장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228390",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:54",
+      "summary": "[에너지신문] 에너지 분야를 대표하는 전문언론인 에너지신문의 창간 16주년을 진심으로 축하드립니다.지난 2010년 창간 이후 에너지신문은 정확하고 깊이 있는 보도를 통해 우리나라 에너지산업의 발전 방향을 제시하고, 산업계와 정책 현장을 잇는 소통의 가교 역할을 충실히 수행해 왔습니다.이에 전문성과 신뢰를 바탕으로 산업의 미래를 함께 고민해 온 에너지신문의 노고에 깊은 감사와 경의를 표합니다.오늘날 인공지능(AI)의 확산과 에너지 대전환은 전력산업의 새로운 미래를 열고 있습니다.안정적인 전력공급을 넘어 국가 경쟁력 강화와 탄소중립 실",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "92a6c90a10ec"
+    },
+    {
+      "title": "[창간축사] 박종환 한국태양광산업협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228383",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:49",
+      "summary": "[에너지신문] 급변하는 글로벌 에너지 시장의 동향을 신속하고 정확하게 전하고, 대한민국 에너지 산업의 미래 비전과 대안을 제시해 온 ‘에너지신문’의 2026년 창간특집호 발행을 한국태양광산업협회 임직원과 회원사를 대표해 진심으로 축하드립니다.에너지신문은 창간 이래 전력·석유·가스·자원부터 신재생에너지와 미래 기술까지 산업 전반을깊이 있게 조명하며 정책과 기업에 합리적인 이정표와 혜안을 제공해 왔습니다. 균형 잡힌 시각과 깊이 있는 문제 제기는 이해관계자 간의 공론을 형성하며 에너지 산업계의 신뢰를 쌓아왔습니다.2026년, 세계는 탄",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "a62bb98cf0c9"
+    },
+    {
+      "title": "[창간축사] 김재홍 한국수소연합 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228380",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:47",
+      "summary": "[에너지신문] 우리나라 에너지 산업의 발전 과정을 함께 해온 에너지신문의 창간 16주년을 진심으로 축하드립니다. 에너지 산업계와 함께 오랜 기간 동고동락을 해온 에너지신문 임직원의 노고에도 감사드립니다.에너지신문은 에너지산업의 주요 이슈에 대해 항상 깊이 있고 전문적인 정보를 제공하면서 올바른 정책을 수립하고 대안을 제시하는데 기여를 해오고 있다고 생각합니다.뉴스가 있는 곳이라면 항상 먼저 달려가 신속하고 정확한 기사를 제공하면서 국민과의 소통에 앞장서 주셔서 감사드립니다.최근 글로벌 에너지 시장은 탈탄소의 흐름 속에 에너지 다원화",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "49ce7c10eb5a"
+    },
+    {
+      "title": "[창간축사] 조철희 한국신재생에너지학회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228379",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:46",
+      "summary": "[에너지신문] 에너지신문의 창간 16주년을 진심으로 축하드립니다.그동안 에너지신문은 급변하는 국내외 에너지 패러다임 속에서 대한민국 산업 전반에 걸친 깊이 있는 취재와 신속·정확한 보도를 통해 에너지 전문 언론으로서의 소임을 충실히 수행해 왔습니다.특히 에너지 전환과 지속가능한 산업 생태계 구축이라는 시대적 과제 앞에서 현장의 목소리를 생생하게 전달하고, 에너지 산업의 발전과 올바른 정책 방향을 모색하는 데에도 의미 있는 역할을 해왔습니다.우리 사회가 나아갈 방향을 제시해 주신 그간의 노고에 깊은 경의를 표합니다.오늘날 우리는 기후",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "6d03e44aae7d"
+    },
+    {
+      "title": "[창간축사] 정우식 한국재생에너지단체총연합회 사무총장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228378",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:45",
+      "summary": "[에너지신문] 대한민국 에너지 산업의 변화와 발전을 함께해 온 에너지신문의 창간 16주년을 진심으로 축하드립니다.그동안 에너지신문은 에너지와 기후, 환경 분야의 주요 현안을 신속하고 정확하게 전달하고, 산업 현장의 다양한 목소리와 정책의 흐름을 깊이 있게 조명하며 에너지 전문언론으로서 중요한 역할을 수행해 왔습니다.급변하는 에너지 환경 속에서도 전문성과 균형 잡힌 시각을 바탕으로 산업계와 정책 현장을 연결해 온 에너지신문 임직원 여러분의 노고에 깊은 감사와 경의를 표합니다.지금 우리는 기후위기 대응과 탄소중립 실현, 에너지 안보 강",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "0719a9c914b4"
+    },
+    {
+      "title": "[창간축사] 백민훈 한국방사성폐기물학회 학회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228375",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:42",
+      "summary": "[에너지신문] 에너지 정책과 산업에 대한 길잡이와 알림이 역할을 충실히 해 온 에너지신문의 창간 16주년을 진심으로 축하드립니다.지난 16년간 에너지신문은 에너지 정책과 산업에 대한 날카로운 진단과 깊이 있는 통찰을 제공해 대한민국 에너지 산업의 발전에 크게 이바지해 왔습니다.오늘날 에너지는 단순한 자원을 넘어, 국가의 흥망을 좌우하는 절대적인 요소이기에 경제적, 사회환경적 책임을 동시에 요구하고 있습니다.따라서 사회경제적 상황에 따라 특정 에너지원만이 아닌, 원자력과, 재생에너지, 그리고 화석에너지 등 다양한 에너지 믹스를 통해",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "243786f0cc16"
+    },
+    {
+      "title": "[창간축사] 이정환 한국지오에너지학회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228374",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:41",
+      "summary": "[에너지신문] 에너지신문의 2026년 창간특집호 발간을 진심으로 축하드립니다.오늘날 에너지산업은 탄소중립이라는 시대적 과제와 함께 에너지 안보, 공급망 불안, 기후변화, 기술 패권 경쟁 등 다양한 도전에 직면해 있습니다.이러한 급격한 변화 속에서 정확하고 객관적인 에너지 정보를 제공하고, 산업계와 정책 현장의 목소리를 전달하는 전문 언론의 역할은 더욱 중요해지고 있습니다.그동안 에너지신문은 에너지산업의 주요 현안과 정책, 기술 동향을 신속하고 깊이 있게 전달하며 우리나라 에너지산업의 건전한 발전에 기여해 왔습니다.앞으로도 전문성과",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[창간축사] 이정환 한국지오에너지학회 회장",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83QXg3QmVZeHF5Y0FORGZSYXJFU3JlbzlTSlp1Y1hkVThHRFcyUmh0UTU4THJ3SmJrQy1fUjhWbkFCQThPQngyMGI2c0IzX2hwM0dua2pzMEpnYjRHeXk3TUJVdjViVzJYZnFFb08xVWZzZw?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "id": "123fa7980d4c"
+    },
+    {
+      "title": "[창간축사] 안승배 한국주유소협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228373",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:40",
+      "summary": "[에너지신문] 에너지 전문 언론으로서 현장의 목소리를 충실히 전달해온 에너지신문의 창간 16주년을 진심으로 축하드립니다.최근 주유소업계는 전기·수소차 확산에 따른 수요 감소와 고비용 구조, 치열한 경쟁 등으로 경영 부담이 갈수록 커지고 있습니다.그러나 주유소는 여전히 국민 생활과 산업 활동에 필요한 에너지를 안정적으로 공급하는 중요한 기반시설입니다.협회는 올해 공정한 시장질서 확립과 영세·중소 주유소의 경영 부담 완화에 역량을 집중하겠습니다.주유소 전·폐업 지원 법안과 카드수수료 산정 시 유류세 등 세금을 제외하는 법안의 국회 통과",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "4ff5fd867379"
+    },
+    {
+      "title": "[창간축사] 김정훈 한국석유유통협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228372",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:39",
+      "summary": "[에너지신문] 석유, 가스, 신재생에너지 등 국내 에너지산업의 발전과 함께해 온 에너지신문의 창간 16주년을 진심으로 축하드립니다.지난 16년간 에너지신문은 에너지산업 주요 현안과 정책을 심도 있게 다루며 업계의 목소리를 전달하고 건전한 여론을 형성하는 데 큰 역할을 해왔습니다.급변하는 에너지 환경 속에서도 전문언론으로서 깊이 있는 분석과 신속한 정보를 제공해 온 에너지신문 관계자 여러분께 감사의 말씀을 드립니다.석유유통업계는 내연기관차 감소라는 구조적 변화와 치열한 가격경쟁에 더해 최고가격제에 따른 부담까지 가중되면서 그 어느 때",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "d423176d8178"
+    },
+    {
+      "title": "[창간축사] 채충근 한국가스학회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228370",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:37",
+      "summary": "[에너지신문] 에너지신문의 창간을 진심으로 축하드립니다.에너지산업 현장의 목소리를 전하고, 정확한 정보와 깊이 있는 분석으로 산업 발전에 힘써 오신 임직원 여러분께 감사드립니다.애독자 여러분께도 따뜻한 인사를 전합니다.에너지산업은 탄소중립과 안정적인 에너지 공급이라는 과제를 함께 풀어가고 있습니다.수소와 새로운 에너지 기술이 산업 현장에 뿌리내리기 위해서는 기술의 경제성과 함께 안전에 대한 사회적 신뢰를 확보해야 합니다.이를 위해 우리 학회는 인공지능(AI)과 위험성평가(RA)를 기반으로 수소·가스 안전관리의 혁신을 추진하고 있습니",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "8c6e4f50855d"
+    },
+    {
+      "title": "[창간축사] 송대호 한국가스연맹 사무총장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228369",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:36",
+      "summary": "[에너지신문] 에너지신문 창간 16주년을 진심으로 축하드립니다. 에너지산업의 변화와 현장의 생생한 목소리를 전해온 에너지신문 임직원 여러분께 감사의 말씀을 드립니다.최근 중동 지역의 지정학적 긴장과 호르무즈 해협을 둘러싼 불확실성이 지속되면서 천연가스 공급망 안정의 중요성이 다시금 부각되고 있습니다.여기에 유럽의 러시아산 가스 의존 축소와 낮은 재고 수준이 맞물리며 아시아와 유럽 간 LNG 확보 경쟁과 가격 변동성에 대한 우려도 커지고 있습니다.에너지 수입 의존도가 높은 우리나라에게 천연가스의 안정적인 수급은 국가 에너지 안보와 산",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "dc6674fefccd"
+    },
+    {
+      "title": "[창간축사] 김영태 한국기계설비건설협회 가스공사업협의회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228368",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:35",
+      "summary": "[에너지신문] 에너지 산업의 건전한 발전과 올바른 정보 전달을 위해 힘써온 에너지신문의 창간 16주년을 축하드립니다.창간 이래 에너지신문은 급변하는 국내외 에너지 환경 속에서 정책과 산업 현장의 목소리를 충실히 전달하며 에너지 전문 언론으로서 중요한 역할을 해왔습니다.특히 가스를 비롯한 에너지 전 분야의 주요 현안과 정책 변화, 기술 발전, 안전 문제를 깊이 있게 조명하며 산업계와 정부, 국민을 잇는 소통의 가교가 돼 왔습니다.최근 에너지 산업은 탄소중립과 에너지 전환이라는 시대적 흐름 속에서 빠르게 변화하고 있습니다. 이러한 변화",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "4aff0bf60de7"
+    },
+    {
+      "title": "[창간축사] 오기석 한국천연가스수소차량협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228367",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:34",
+      "summary": "[에너지신문] 에너지산업의 발전과 올바른 에너지 문화 확산을 위해 힘써온 에너지신문의 창간을 진심으로 축하드립니다.아울러 급변하는 에너지산업의 현장에서 정확하고 깊이 있는 정보를 전달하고 산업계의 다양한 목소리를 대변하기 위해 노력해 오신 에너지신문 임직원 여러분께도 깊은 감사와 격려의 말씀을 드립니다.앞으로의 에너지 전환은 특정 연료나 기술만으로 이뤄지기보다 기존 산업과 인프라를 활용하면서 단계적으로 탄소배출을 줄여가는 현실적인 접근도 중요합니다.바이오가스에서 생산되는 바이오메탄과 이를 액화한 BioLNG는 기존 천연가스 공급·저",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "8d593c926db4"
+    },
+    {
+      "title": "[창간축사] 강정구 한국천연가스수소충전협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228366",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:33",
+      "summary": "[에너지신문] 급변하는 국내외 에너지산업 흐름과, 생생한 산업 현장의 목소리를 성실하게 전달해 온 에너지신문 창간 16주년을 진심으로 축하드립니다.에너지산업은 탄소중립, 에너지 안보, 산업 경쟁력이라는 시대적 과제를 동시에 풀어야 하는 중요한 전환점에 서 있습니다.특히 수소는 친환경 에너지 전환의 중심 에너지원으로 그 역할과 가치가 크게 주목받고 있습니다.우리 (사)한국 천연가스·수소 충전협회는 수소차 보급 확대, 충전 인프라 확충, 충전 사업의 경제성 확보, 안전관리 강화와 현장의 목소리를 반영한 합리적인 제도 개선과 정책이 수립",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "8d99f6353be4"
+    },
+    {
+      "title": "[창간축사] 최계락 한국LPG산업협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228364",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:31",
+      "summary": "[에너지신문] 에너지신문의 창간 16주년을 진심으로 축하드립니다. 대한민국 에너지산업의 발전과 공정한 정보 전달을 위해서 헌신해 오신 임직원 여러분의 노고에 깊은 감사의 말씀을 드립니다.그동안 에너지신문은 에너지 전환이라는 거대한 흐름 속에서 균형 잡힌 정책 대안을 제시하고, 산업계의 목소리를 충실히 대변하는 공론의 장으로서 제 역할을 다해왔습니다.특히 친환경 LPG자동차의 역할과 분산형 에너지로서 LPG의 가치를 조명하고 업계의 발전을 돕는 든든한 파트너가 돼 줬습니다.최근 세계 에너지 시장은 불확실성이 그 어느 때보다도 커지고",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "a52d94a1a90f"
+    },
+    {
+      "title": "[창간축사] 이영채 한국엘피가스판매협회중앙회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228363",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:31",
+      "summary": "[에너지신문] 에너지신문의 창간 16주년을 진심으로 축하드립니다.건전한 에너지산업계의 발전 방향을 모색하고 올바르고 정확한 에너지 정보를 제공한다는 창간 정신 아래 출발한 에너지신문은, 그동안 에너지 정책과 산업 현장을 잇는 전문 언론으로서 그 역할과 위상을 굳건히 다져왔습니다.에너지 산업의 나아갈 길을 밝혀온 에너지신문 임직원 여러분의 노고에 깊은 경의와 감사의 말씀을 드립니다.특히 에너지신문은 매주 월요일 발행되는 정기 간행물과 일간 뉴스레터를 통해 신속하고 깊이 있는 소식을 전해왔으며 네이버, 카카오, 구글, 다우존스 등 국내",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "1541b7fc0179"
+    },
+    {
+      "title": "[창간축사] 한상원 한국가스전문검사기관협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228362",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:29",
+      "summary": "[에너지신문] 에너지신문 창간 16주년을 축하드립니다. 에너지신문은 그동안 주요 에너지 현안을 발굴하고 의제화하며 에너지산업의 올바른 방향을 제시해 왔습니다.특히 가스안전 분야에 많은 관심을 보여 주신 데 대해 전국의 검사기관을 대표해 감사의 말씀을 드립니다.국가가 민간에 위탁한 가스전문검사 업무는 높은 공익성을 지니고 있음에도 그동안 정책적 관심이 충분하지 못했고 검사기관 간 과다한 경쟁 속에서 관계기관의 지도·확인과 감독에 의존하는 구조를 벗어나지 못했습니다.이제는 민간의 전문성과 현장 역량을 적극 활용하는‘자율과 책임’기반의",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "55ef63d94955"
+    },
+    {
+      "title": "[창간축사] 신동현 한국가스기술사회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228360",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:28",
+      "summary": "[에너지신문] 에너지산업의 변화와 발전을 함께 기록하며 전문언론의 길을 걸어온 에너지신문의 창간 16주년을 축하드립니다.지난 16년간 가스산업을 비롯한 에너지 분야의 전문정보를 신속하고 정확하게 전달함으로써 산업계와 전문가, 정책 당국을 연결하는 소통의 창구로 자리매김해 왔습니다.지금 우리나라 가스·수소산업은 에너지 안보와 탄소중립이라는 두 가지 시대적 과제를 동시에 풀어가야 하는 중요한 전환점에 서 있습니다.천연가스는 전력과 산업 부문의 안정적인 에너지 공급을 뒷받침하는 핵심 에너지원인 동시에 재생에너지 확대 과정에서 전력계통의",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "45447c94c2e6"
+    },
+    {
+      "title": "[창간축사] 이동진 대한LPG협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228365",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:27",
+      "summary": "[에너지신문] 에너지신문 창간 16주년을 진심으로 축하드립니다.에너지시눔은 창간 이래 에너지 산업의 변화와 발전을 가장 가까이에서 기록하며 대한민국을 대표하는 에너지 전문언론으로 자리매김해 왔습니다.급변하는 에너지 환경 속에서도 깊이 있는 분석과 균형 잡힌 보도를 통해 현장과 정책을 잇는 가교 역할을 수행해 오신 임직원 여러분의 노고에 깊이 감사드립니다.최근 미국과 이란간의 전쟁으로 촉발된 국제 에너지시장의 불안정성은 아직도 해소되지 않고 있는 상황입니다.대부분의 에너지를 수입에 의존하고 있는 우리로서는 에너지 주권 확보의 중요성이",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "937dc35b0c2d"
+    },
+    {
+      "title": "[창간축사] 문쾌출 전국보일러설비협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228358",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:27",
+      "summary": "[에너지신문] 에너지신문의 창간 16주년을 진심으로 축하드리며, 지난 16년 동안 우리나라 에너지산업의 발전과 올바르고 정확한 정보 전달을 위해 언론의 사명을 다해 오신 대표님을 비롯한 임·직원 여러분의 노고에 깊은 감사와 경의를 표합니다.에너지는 국가 산업의 경쟁력과 국민의 안전하고 편안한 삶을 뒷받침하는 핵심 기반입니다.특히 에너지전환과 탄소중립, 수소경제 등 산업환경이 빠르게 변화하는 오늘날에는 정확한 정보와 균형 잡힌 시각으로 정책과 산업의 방향을 제시하는 전문언론의 역할이 매우 중요합니다.에너지신문은 매주 발행되는 전문신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "990827301d24"
+    },
+    {
+      "title": "[창간축사] 윤기주 한국열관리시공협회 회장",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228357",
+      "source": "에너지신문",
+      "published": "2026-09-19 20:27",
+      "summary": "[에너지신문] 우리나라 에너지 산업분야 메신저로서 올바르고 정확한 에너지관련 정보 제공으로 에너지분야 산업 발전에 기여한 ‘에너지신문’의 창간16주년을 진심으로 축하드립니다.에너지산업의 미래를 준비하는 데 있어 안전과 효율은 무엇보다 중요한 가치입니다.에너지 절약과 온실가스 감축이라는 과제를 실질적인 성과로 이어가기 위해서는 정책과 기술의 발전뿐 아니라, 이를 현장에서 구현하는 시공인의 전문성과 책임감이 뒷받침돼야 합니다.열관리시공업계는 국민의 생활과 가장 가까운 곳에서 에너지 이용의 안전을 지키고 있습니다.보일러와 냉난방 설비의",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "id": "efbc94f0da05"
+    },
+    {
+      "title": "장충모 전남개발공사 사장, 지방공공기관 발전유공 '국민포장' 수상",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yMTM3SEY4TS1YS3otSlc0ZkxMaUZXVy1mUGRWQXpvbEFoOU45Q0JFTU9CUThxNWpqdGxMSGlRUE5kQkxMOTdCS25KYW5fSFZpc215YnBKOUdDNHdic2J2c3pEOWhmbTBKT0E?oc=5",
+      "source": "전남인뉴스",
+      "published": "2026-09-19 19:56",
+      "summary": "장충모 전남개발공사 사장, 지방공공기관 발전유공 '국민포장' 수상  전남인뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가",
+      "id": "668aecf717d9"
+    },
+    {
+      "title": "파라과이 전력 소비량, 바이오매스 첫 추월… 에너지 전환 가속화 : 남미동아뉴스 ; Paraguay Times",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BQTFJNlVQWDllVEdieVZoelVYSzFxQm5mN3Z1RUNuTG5HNWtwSDdBX0lRbDkteE9RR0xUem92VnVYQWpna2JENDRvdmxYWnZUTFlKazhCbUxxQQ?oc=5",
+      "source": "뉴스케이",
+      "published": "2026-09-19 19:04",
+      "summary": "파라과이 전력 소비량, 바이오매스 첫 추월… 에너지 전환 가속화 : 남미동아뉴스 ; Paraguay Times  뉴스케이",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "0a4114ec33a4"
+    },
+    {
+      "title": "나주시농어업회의소, 혁신도시 공공기관 직거래장터 > 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FU3BHVGpNd3VaYm4tS09hYlgxQ0ZaNUxWamdwTVRrRmN6aFA3QVk1RWItY3E0aGtjZDltVXM3aGExSVFNaGVPaVJ0emt2ZEFhVS1memtCc1VRZWRfNjdOdDdUNVM0NkJ4T05wTVh2TTM?oc=5",
+      "source": "thekorea.kr",
+      "published": "2026-09-19 18:40",
+      "summary": "나주시농어업회의소, 혁신도시 공공기관 직거래장터 > 뉴스  thekorea.kr",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신",
+      "id": "9a93fca0aace"
+    },
+    {
+      "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1천800원대 지속",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFByeExpZW1FQ3JNQWw0T3FoX2xlYkl3YldYNHc3Qmo4NXdaUTRyR0lrV29TVEN1dFpnRlJ0UEZBQ2lHUURSNXZ6MHB5Y1M?oc=5",
+      "source": "시사일보",
+      "published": "2026-09-19 18:01",
+      "summary": "주유소 기름값 18주째 하락…최고가격제 영향에 1천800원대 지속  시사일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "주유소 기름값 18주째 하락…정부 최고가격제 영향",
+          "source": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9JWThDWjVwTS1zMmd5SkowcWdSLUVaMTktQUZuNXFyM0UxeUF2QkJWNXhURFEwdk83bVhsdEh2RWNTYjFmS0F1VlhRQll2alB1NXlXbHVFT3ZvdnR5VTNXRkJuR3hzWjg?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 18주째 하락…최고가격제 영향에 1800원대 지속",
+          "source": "위키트리",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13YVVoT0pnTEZtYXlORWJZb1U5X3ZLWHEyQXk3UGwyN0dTWl9CR1dHQ2dmLXdOek1Lc0dWVWJLbFdJakY4aGpBUzZIVUJoR2FtcXRWV2tn?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주 연속 하락…최고가격제 영향에 1800원대 유지",
+          "source": "뉴시안",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAydTExczBYcUtiYzBIRGpvWFc1ckxLZjlJUENNWGttdnByck0zU3VfQ3NTWEo5Zm82bFVGelFnTkt4NmZiM0U0cUdleUpEbEJodXh1a2pCZmtPMDdmbWFrejFUUDdQbmQ4aHfSAW5BVV95cUxOdlprUUZRMXZmMHFEXzJ1UFJjc3BMUWZITUxsV190QUVMQ1pnWUFRNXhFMXZtWER4WjNZTXJnX3dDX0lHaXdMUzQ4a1p3OGZGQzZmRngxQ0hPVVVCcHE4Nk9RWmc4N0hPcXRwRW1GZw?oc=5"
+        }
+      ],
+      "query": "한국석유공사",
+      "id": "f0ed222e10e9"
+    },
+    {
+      "title": "한-키르기스스탄 기후협력 ‘사업화’ 시동…재생에너지·탄소감축 공동사업 발굴",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203441",
+      "source": "에너지데일리",
+      "published": "2026-09-19 17:37",
+      "summary": "[에너지데일리 양미애 기자] 한국과 중앙아시아가 정부 차원의 기후·에너지 협력체계를 구축한 데 이어 민간에서도 재생에너지와 탄소중립을 중심으로 공동사업 발굴에 나선다. 정책 선언과 정보교류를 넘어 현지 수요에 맞는 재생에너지 프로젝트와 온실가스 감축사업을 구체화할 경우 국내 기후·에너지 기술의 중앙아시아 진출을 확대하는 새로운 협력 통로가 될 것으로 기대된다.기후변화재단(이사장 최재철)은 18일 키르기스스탄 재생에너지발전협회(Association of Renewable Energy Power Plants)와 재생에너지 및 기후행동",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "id": "9694f0a8ea93"
+    },
+    {
+      "title": "에너지진단도 AI·데이터로…에너지공단, 디지털 전환 속도",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE04dWdZeS02Ulh6MS1aZmE3dWxEVnJ1bVRpSERMNmFfeG5abk1uRVIycnBjUXduVTVmd3VXZXVfQVh2TVhUOHpjX3pTT1FPVFZJM3NsUUtkcno3R0lJdjJqRFBUUThPUmItaEg5RQ?oc=5",
+      "source": "에너지타임즈",
+      "published": "2026-09-19 16:57",
+      "summary": "에너지진단도 AI·데이터로…에너지공단, 디지털 전환 속도  에너지타임즈",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "8249975a2c95"
+    },
+    {
+      "title": "석유관리원, 진주 지역 주민·진해 군 장병 위한 '연료 무상 품질점검' 전개",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NOXdHUHFqbGxKaHp0cGJ2V2YyYlNBRjFDMzJEc0JQc1B1TDBRNXp0TDVQeVc4Y0pQcWZrMll5N3d3SHc2MmozNXpNVXhMTl9Ba00yU2docm5uTGNLV0xpLXdxd0lxT1l4Mmc?oc=5",
+      "source": "컨슈머타임스",
+      "published": "2026-09-19 16:39",
+      "summary": "석유관리원, 진주 지역 주민·진해 군 장병 위한 '연료 무상 품질점검' 전개  컨슈머타임스",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유관리원",
+      "id": "da82efd5929b"
+    },
+    {
+      "title": "국제유가 급등에도 주유소 기름값 18주째 하락…추석엔 100원 더 내린다",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTG1YcUNQbHM0VTF0SWlxemh0RlZJRlJOVDBzUDhOOWtqdnZuMnRPWDdtU05UMEh4Z0h0SzIwaVJkVEUwLXVCTGR1SzJrcUNPUWNyWk93SzR0dWktaWltYnh2dk4xS3d5azB1MHJXOENxRWswaVpKQU81OEJ5dEFpZlRiNDkydUQ2X0hr?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-09-19 16:39",
+      "summary": "국제유가 급등에도 주유소 기름값 18주째 하락…추석엔 100원 더 내린다  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "6c3979634bf9"
+    },
+    {
+      "title": "국제유가 뛰는데 최고가격은 또 동결...기름값 18주째 '나 홀로 하락'",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YZGlXN0NMQkVnanhIY3FfanNCTDNSOWRLczNncVRsajJoNnNrdHVyMjBuNHY1a2RmZldWcFJscmk1VG5VdTRXTi1qRWNvYmJXdEhqTS05c3diQ2tfOXNmTXMxNUJnV1FvSjJZ0gFvQVVfeXFMT0ZaRWJLWlR5ckRhVlFCZThta3hhblN4VEo4ek5kdE9IUFdzYnlUdWwybzkwTHVBWXlqVTBGdFloZEdXY2FoSlFuczByUWdWaHhtcDAzZkFyRXpjUEROeENlUUhGUWQwb1NySmE4STdj?oc=5",
+      "source": "펜앤마이크",
+      "published": "2026-09-19 15:44",
+      "summary": "국제유가 뛰는데 최고가격은 또 동결...기름값 18주째 '나 홀로 하락'  펜앤마이크",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "c2984aace400"
+    },
+    {
+      "title": "주유소 기름값 18주째 하락…최고가격제 영향",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzS3RJam1PRzIyZk16TlRJb2VPUFFvdXM0R014REdUalJGc184UDhnQ2hsdVlfT2FkMEZmSFpsMkZVZU85ZVo4Nk15cS1Jb3ZFZ0JEZVhteC1jVS1ta3YxNVJkQm5JTmVpdDhNMjNR?oc=5",
+      "source": "obsnews.co.kr",
+      "published": "2026-09-19 15:43",
+      "summary": "주유소 기름값 18주째 하락…최고가격제 영향  obsnews.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1800원대 유지 By EBN",
+          "source": "Investing.com 한국어",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE10dVdjaTZrR2IyMjlPUTQtOHYzY3NGdnQ5S2lZSnpmaUNtRnBteHN2VGU0OFRFcEtXbjhjenY4V241ZFVVdDY4eEJOTTZfdDluOElEc3BsemdpUWVkY3NQUGhVZ2xaQ2phOXJjUjYwcXM?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주 연속 하락…정부 최고가격제 영향",
+          "source": "뉴스토마토",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvTEp4NWNqbmNwRXVQSElNeEN4dXpCeTMzS2lDWWxEdnFlcWI3QWx4SFlaYmZPMl9sX1hHNnZzeGlFM3o4Mkx6Q19Lakl0bnM3bmhfS1lDTzZublRxOFZZMA?oc=5"
+        },
+        {
+          "title": "‘최고가격제’ 주유소 기름값 18주째 하락세…추석까지 이어질 듯",
+          "source": "한겨레",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9LOXFMREt5MXdRRnlRZXpSZUVFMURLMVBHVjc4TWttSWZOejludlN4UkFrckFJWXEtTGlSa280RDc0TUwtckFUUm1IVEI3b2c1ZUtONGpaMDQzOUI3ZmoyNVJPUWRoOGpQNGdsZHJZWGhkUQ?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주째 하락…정부 최고가격제 영향",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55S09wWHgxcnlvRmNYUWp4LWlVN09qR2pRbVdRZlEwOVVwc1RzY0FNLW1SdjRqWjl3c1UwaHhQU0NhWmo5YUY5NUpXS3FKWTRVT05IVnozQ2hqQkt5Rm5wQ9IBYEFVX3lxTE55S09wWHgxcnlvRmNYUWp4LWlVN09qR2pRbVdRZlEwOVVwc1RzY0FNLW1SdjRqWjl3c1UwaHhQU0NhWmo5YUY5NUpXS3FKWTRVT05IVnozQ2hqQkt5Rm5wQw?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 18주째 하락…최고가격제 영향 1,800원대 지속",
+          "source": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SRE9iTVFuQy1aWUxNOFZ2VDhvQmRtZHExanlrM19INktvSzdjNnRGNjEzUnZCb3RLZXQ2NF9QUzQ5R2J5bWhvVU5DTm52dWUzbFBEa3dwNDdLTFk?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주째 하락…최고가격제 동결에 1,800원대 유지",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE50bzlLVFU3WE9YTmZSWUdvSEh6TzBKaE5HR2NjbHE3VDI2bzdySlRSVVh4VHVGaTI5U3dEY2NBNm1WdDJrQ0xlVzlSdkVsQnc?oc=5"
+        },
+        {
+          "title": "국제유가 급등에도 주유소 기름값 18주째 하락…정부 최고가격제 영향",
+          "source": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYeWZWZVYtOUk1SzJIakZ5MTR2MS1YQl9vMXMyRmt4Q0M2cEt1aWtBemhydW5TcnhpQ1Z4MUdPX1NCMGlpbVlWWFdDdEVBc1VCQ2Nubm50cjJwdms1RlE1djY3UkdVRzA?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1,800원대 지속",
+          "source": "BBS불교방송",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1YQy1aSFhBTlV0Q0xkTGxPQlRFdFNoOHlqcFplVGxRTUZURmd0bXlOR1FKOEE4RnpZTTdZS2tzLUF1cWhhcXdIMFd3aDRTSUowU1NTZ1V6R0hwalJGU19FUXByandjOTBmNGt3?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주째 하락…정부, 석유 최고가격 동결",
+          "source": "여성신문",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92cVI1VDQtZ0tqdXpZaFM1by1wSTNONEdaSzZKbExxUkV5SzRlQ2RVc3hWUEF6MHhtSDBBdDU3UXRtZFZGWC1felo2c1hlaXZCbng2VHR1WFloWVB4N21aODlMZElxRU9sQURxN25xONIBc0FVX3lxTFBRUnY1amxyY29CSWVSS1RiVkVSVUN5aVB5Z2Ztbl8wRW01WkNpUGItbFU3YXhaOEJZOURmYU80NVdBRVBHdlBrc3ZhUU5BR2NwdG9sblpmT3V3WElIbzBsVzQtbDBsWmlBc0NGVE92bThhRlU?oc=5"
+        },
+        {
+          "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1천800원대 지속",
+          "source": "매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE53ZUJ4Q25RY29YQ2kzcHkyUjc5V2VLT2tHNkdlY3AzSVZfSDRCNXBEMjRCUWs2TG1rdk9ta2lwdlFTR1RJQ0dKMnlqMk1EeXhmdlE?oc=5"
+        }
+      ],
+      "query": "주유소",
+      "id": "e0c6ba7717e4"
+    },
+    {
+      "title": "[고유가 비상] 국제유가 100달러 넘었지만…정부, 석유 최고가격 4주 더 묶는다",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lb2pNUllYNzI2bktONzAxSFJBT1JOamtoYXFveUZmRmxTS0ZtZzNtYWlNdG9iODBnQThRZFNSTlYtdTNjYkIwRG5HQmNORmw5d1VrdmxBa2lzUk1la0JCX0ZOcUVuYVJwOUJrM1lR?oc=5",
+      "source": "코리아포스트 한글판",
+      "published": "2026-09-19 15:25",
+      "summary": "[고유가 비상] 국제유가 100달러 넘었지만…정부, 석유 최고가격 4주 더 묶는다  코리아포스트 한글판",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "ba151fec6bb7"
+    },
+    {
+      "title": "유류세 인하 11월 말까지…고속도로 100원 인하",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5KS2hMbUVVYU1aeUVpV2pYU3ZtbkpNR09DenpnRzhTUlhKLThsdnBWUC11Qlh5dWxJbV9HTW56VUZEM3NDdnpiZUxWZFBTOEZVbmMyNmh2eW1jdXFEZndRVU4wUjR5Znc?oc=5",
+      "source": "자본시장뉴스",
+      "published": "2026-09-19 15:00",
+      "summary": "유류세 인하 11월 말까지…고속도로 100원 인하  자본시장뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "75473300324d"
+    },
+    {
+      "title": "10차 석유 최고가격, '동결'",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBsZ0hEVUhyY2wybDNZTHVZZHNJdlFHdFhmcjlucTBCMS1FTWs4UFl0NFlTb1NrT3BRalkxVUx2OXdaREJF?oc=5",
+      "source": "시사코리아",
+      "published": "2026-09-19 14:34",
+      "summary": "10차 석유 최고가격, '동결'  시사코리아",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "fbcb0e9238fd"
+    },
+    {
+      "title": "가스공사, 추석 맞아 3억4000만원 나눔…취약계층·복지시설 지원",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84cDNsVTdaNkpoTzFOVmtQZUhxVmhvMmhQUmhsVGdvVEZRSkcydGduMGNsYmwyMlhFRnZvTFIyb2VReU9nU0trZGMwSEpvbzd4a2VodHE5T3pIZw?oc=5",
+      "source": "경북매일",
+      "published": "2026-09-19 14:25",
+      "summary": "가스공사, 추석 맞아 3억4000만원 나눔…취약계층·복지시설 지원  경북매일",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "6804439d3178"
+    },
+    {
+      "title": "오늘(9월 19일) 연료 가격: 세계 유가는 하락세를 이어가고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdjlKSG9oaHRBd3hBc2pCWk9IQnlJTGF4VXkwM2JUVmRKUVhPYjA1N3pDUVkwUThLcVREUF9IcTExSmVQVHBDM2JwWThZN2xIUFlhTFVhN2ZkNDJzR2xEYXlEdjZfRm02c3pISGlETnpRLTFZYmxNTURfNUFzUWNJRGs3bGx2V09rR2Q0Mg?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-19 14:20",
+      "summary": "오늘(9월 19일) 연료 가격: 세계 유가는 하락세를 이어가고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "9a3fb8f0f7be"
+    },
+    {
+      "title": "중국은 에너지 시장 규제에 있어 역할을 확대하고 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcXYwYlVwdkdDVkxYbHRPLWZNQmVaT0Z2a1VkN0JnbWUxZV9DdnhhNzRabW55OWoxQnVDaXEwYUZOTUlqWG4wYmlFWkt0R2JkMVpCYUVPc1dvX1ltdlJPRjZ0NXA4X2RseG5GZ09SOUJBdnR1RFNGZjdmc2hPYVI0ZkNCY2ZiYk9D?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-19 14:16",
+      "summary": "중국은 에너지 시장 규제에 있어 역할을 확대하고 있다.  Vietnam.vn",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "0a2880a1b5ae"
+    },
+    {
+      "title": "주유소 기름값 18주째 하락…추석 연휴 고속도로 100원 추가 인하",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPWDZ1Yl9URmg4NjdYSlItLVFQTEJXdG8yd3hPZTg5MHZNcXpOUEMtYWlydnZ2a1Z1dm5oSEpEREcyWHF6SGEwSDhPTS1lQ1ctLUVLZTQ1Z2x0TWZhT01JWW9sYzRNeDBjdWtkRllRakJFX2k0UmxTM3B2anBib0lsT2x3R1ZuR3pIVzQtZlBLWGJUY3l4aklTVjFEMnZRVmE1U2c5SjFkandkZFY5Z1JBc21BNGwxM1g1MUZkREVsTFRYOUZZWktEdW1oMnFWeG5DQ2JlLXNObFRYeGZmdU03WTZsVnZhYWtqajNONkpkRF94cGlSai13emlfakpXdlc0X3lqZTNHT2ZkajVPSmc?oc=5",
+      "source": "데일리안",
+      "published": "2026-09-19 14:08",
+      "summary": "주유소 기름값 18주째 하락…추석 연휴 고속도로 100원 추가 인하  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가 뛰는데 국내 기름값 18주째 하락…추석 연휴 고속도로 주유소 100원 인하",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBoeTZBZ1hRSDlVSVppTVd0Y3RVSE43MmdrVjlFYy1tYjNLTjVXcWV6UDkxaE1nSGRsN3plUjVsZ2t5WnByWkhkX0hudXg1cW8?oc=5"
+        },
+        {
+          "title": "국제유가 뛰는데 국내 기름값 18주째 하락…추석 연휴 고속도로 주유소 100원 인하",
+          "source": "강원도민일보",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5fOHpUdF9yeUJKb2dCaHhNNlpFSFRHRFVPYzRsTmx3LW1aUWc3OVgwbGUzcVFsNFZDclZqZ1p5aWN5RW1CT3c1THpZUm5jRU55cnlkTGFqSnFkLUNWd2hMdV9MVEdKZFgt?oc=5"
+        }
+      ],
+      "query": "휘발유 가격",
+      "id": "87b55f0aca29"
+    },
+    {
+      "title": "사우디 원유 공급 우려 완화되며 국제유가 3일째 하락…WTI 100달러",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE05eU9CUGlFekJ3Z0VxVjlRVGdyRWZaSFpxeUFYVmprcEVRZy1qM3czUlZrTU5FYy1BTkxjTWdTdTAyenFvV3p5QWZBYmJnMGJiNXVpVldRRktIZUVnRFNPakY4bmt5UFQzSlpYb2xJbnBJSlhUZGV5cWF5OHc?oc=5",
+      "source": "부산일보",
+      "published": "2026-09-19 13:30",
+      "summary": "사우디 원유 공급 우려 완화되며 국제유가 3일째 하락…WTI 100달러  부산일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "8da9bd66777e"
+    },
+    {
+      "title": "국제유가 10달러 급등했는데…국내 기름값 18주째 하락",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ITGd5U2ZERVhUdTJWU3lKdzhIRjJjWlVrVkhkempTOGJZWHF1ZjV0Q202V1FtX2Q5bzlvd3dlT1lDc1h2Z1FyQlB3bi02cHM?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-19 12:45",
+      "summary": "국제유가 10달러 급등했는데…국내 기름값 18주째 하락  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "2491b1e0db38"
+    },
+    {
+      "title": "한화투자증권 \"한국가스공사 상반기 실적 웃었지만…배당 앞에 놓인 뜻밖의 변수\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAwNFdTU21lTFlUdGd2eEZGRmZEdTdwVGFJUkw3bjRrZkk3XzV6MW1aSTdFaGJvSkU1V0JlZTctVHRWYW9kSzRWOS1tQmZoYWhFTXBUVS0yRXVFbzRVR0VlZzBETWFYYjZxbE9WdjFuSWZrbmM?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-09-19 11:34",
+      "summary": "한화투자증권 \"한국가스공사 상반기 실적 웃었지만…배당 앞에 놓인 뜻밖의 변수\"  핀포인트뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "fa035b9e435d"
+    },
+    {
+      "title": "[창간사] 에너지 대전환, 다시 ‘기본’을 묻는다",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9DdG02N1dfNWV4WnRzN0VSN1EtSlFGdGhrWTNYNjh6M1V0ZUxweDNaZWJCejFUZ2JGSU1NQzBEMGNvS2gzVkozbG0wb29iT2ctdEdVQTlDMnRDSGF2dU5vbU1TYlRNUVcxSThuQ1JOcG9Zdw?oc=5",
+      "source": "에너지신문",
+      "published": "2026-09-19 11:31",
+      "summary": "[창간사] 에너지 대전환, 다시 ‘기본’을 묻는다  에너지신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "37e56069976f"
+    },
+    {
+      "title": "주유소 기름값 18주째 하락… 국제유가 상승에도 소폭 내려 1800원대",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MenJSNFJhWVVkN09zZHlWLUVFUmZxMTBod1pVMUtpeElZNm5LenBFSEk0Wk1LMWhEZ19Yc2llMWFOZ0NOLVFYYUVhb2QyUEdSbjlqUWJKSF85RVdNck0zUmVELUIyZndVQUE?oc=5",
+      "source": "천지일보",
+      "published": "2026-09-19 11:17",
+      "summary": "주유소 기름값 18주째 하락… 국제유가 상승에도 소폭 내려 1800원대  천지일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사",
+      "id": "2812b5a50177"
+    },
+    {
+      "title": "[창간축사] 최승호 퍼시피코에너지 코리아 대표",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB6Y19lNV83RzIwT2daSnY2OVE3VVN0OWxFNVlYSmRJaXVfZjhTMWFLYjN5Slh4YlJrYmZhWDB6NlpURTlSbzFyc08ta3Jpa2pzSXBJUVVIY0VEX1hoU0JNbkZRVjIyUmdfX2ZkeUNzSzZQdw?oc=5",
+      "source": "에너지신문",
+      "published": "2026-09-19 11:14",
+      "summary": "[창간축사] 최승호 퍼시피코에너지 코리아 대표  에너지신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "1c62c90164bc"
+    },
+    {
+      "title": "[창간축사] 박은덕 한국에너지학회 회장",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXX0FlZjFyMGUyMmxjSFE4QU0xNFpwVVo1cW92UXNpM0JDc09qYkt5WjlsNlBNTnZyakJiM1NTQzVMZkJGVldUNWNMMzdBWURMTTFMZm5JdUxTaUVzWlRfbV9MV1lKSVhEV2RPTkNYNG0tZw?oc=5",
+      "source": "에너지신문",
+      "published": "2026-09-19 11:06",
+      "summary": "[창간축사] 박은덕 한국에너지학회 회장  에너지신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "f89fd3e63863"
+    },
+    {
+      "title": "국제유가 사흘째 하락… 사우디 송유관 복구 기대",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5rYlpOZi1xUGNocVdTRHNpS3BBLTcxaWJkWlJkeU9OdTZEZTN3c0FueUZuMWw1QjhlNEFsanpWRDBTWllfN1dmSjRDdWFPbFhSLUlyeXdfZFg1c2g2TWZLMmpCWS1kdkpaMmc?oc=5",
+      "source": "천지일보",
+      "published": "2026-09-19 10:59",
+      "summary": "국제유가 사흘째 하락… 사우디 송유관 복구 기대  천지일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "a92f3b8bf52f"
+    },
+    {
+      "title": "부산 주유소 휘발유 평균가 ℓ당 1842.2원… 전주보다 0.8원 ↓",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMk93ZGFON05vYUllc0l6VHFzVk9lSkQ2ZExfWTRHc3VkaE5CSUVRVWlTVFREcWpXcWpJOW1XQ2JXWHdLTVhZSzBFa2V2MU9OM2dMNTRhb3A5c1lsc2xYSHJZUHlWQUJLd1YwY0dicXhvb3czbE1HS2IwTWxTTk0wT0x3VjBOX0doZHFQQnlR?oc=5",
+      "source": "국제신문",
+      "published": "2026-09-19 10:38",
+      "summary": "부산 주유소 휘발유 평균가 ℓ당 1842.2원… 전주보다 0.8원 ↓  국제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "0876fb0c17cf"
+    },
+    {
+      "title": "고유가 다시 덮쳤으나 기름값 묶는다…석유 최고가격 동결",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WV19XTVpXeGZCMEtIUWVlbDBaYVY0QXZZTzNFeTNKejJETXFZbDVJNDJmcFJWTjNUT3EtellpaWVpMUY4bTRrWXZvamtrMWdVcl9URVlHYTFuMzdSZzlWT2FIbm04dXFLZ0IxYQ?oc=5",
+      "source": "에너지타임즈",
+      "published": "2026-09-19 10:28",
+      "summary": "고유가 다시 덮쳤으나 기름값 묶는다…석유 최고가격 동결  에너지타임즈",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "3ddab69c1378"
+    },
+    {
+      "title": "새소리음악중고등학교, 한국가스공사 대전충청지역본부서 ‘에너지와 소리의 하모니 콘서트’ 개최",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mVHBTRUdQdXRUX0ZxQXN0c2FZZEJFcWRXNVRiMkVKQXZ0SkZ1VkswY2VhUWQ1V0VkOWtOSnVQNFRYbERDNldIbTN6WjhnaXI1Zm1hb1p2OER6Z0hhY201WnNnVmxhQnZpQ2lEWQ?oc=5",
+      "source": "이론경제",
+      "published": "2026-09-19 10:25",
+      "summary": "새소리음악중고등학교, 한국가스공사 대전충청지역본부서 ‘에너지와 소리의 하모니 콘서트’ 개최  이론경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사",
+      "id": "1c407cd750fe"
+    },
+    {
+      "title": "중동 위기, 흔들리는 에너지안보 \"전기화'로 에너지 위기 돌파구 찾는다\"",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13ZXRZcHdjTFV1cjhSWDZfRklwd3hVdldPaDlDcUppZFNtS0FXT0RXSDlQNXhTYXhISDNGeHRKeEJybkJsRkFqbDkxVkVQNHFvdW9uVHJFRUFsMTFhUEZicHE2bGY?oc=5",
+      "source": "에너지안전신문",
+      "published": "2026-09-19 10:19",
+      "summary": "중동 위기, 흔들리는 에너지안보 \"전기화'로 에너지 위기 돌파구 찾는다\"  에너지안전신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "69f2ddcb5d13"
+    },
+    {
+      "title": "트럼프 “이란전쟁 곧 끝날 것”…“종전하면 휘발유 가격 내려간다”",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQUHFYMERLMmItSUdacnYyb2hNZTZmY3NpU3dmVnM3dlZIalNERk00cG9QNDZmNmRLemw4bFJxbndrTHJpT0dBWlpSa3hwbkpIcDJPSkxkR1d6NGdGYUt2WWFoVVI5YzhyUEZwbw?oc=5",
+      "source": "파이낸스투데이",
+      "published": "2026-09-19 10:02",
+      "summary": "트럼프 “이란전쟁 곧 끝날 것”…“종전하면 휘발유 가격 내려간다”  파이낸스투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "38bd820eee32"
+    },
+    {
+      "title": "국제유가 100달러 훌쩍 넘었는데 기름값 18주째 하락...정부, 최고가격 동결",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE12a01nODdIbUJONWVfMnZIZ2VvampiTHk5amdxZUtxYWJsci1IXzdRNFFaOGt2TnF4a1A0RlJlaDRiRDJUS3djT2x4Vy0wUXlDZDg4Zl91bVZScWduVnfSAWtBVV95cUxPNklWVGZ1VmV5MjFodXFBRnpKNHg2ajk1d2RmSGQxYWY4M1ltdTNJTmJha3Fnd3VaaEtfQXFrbHhYN0xaZmRtZ0RlYmk2S20tRnl5cWJjMEVMbmR0T0dDSUxKOG9QMVFHbDgxRQ?oc=5",
+      "source": "시사타파NEWS",
+      "published": "2026-09-19 10:00",
+      "summary": "국제유가 100달러 훌쩍 넘었는데 기름값 18주째 하락...정부, 최고가격 동결  시사타파NEWS",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격",
+      "id": "4c74934ba9c1"
+    },
+    {
+      "title": "국제유가 급등에도 국내 기름값 18주째 하락…최고가격제 효과",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yREpPVUpnWGx0LVZyX1hMczFZR2g1N1Q2eFQ2bW9QbnZoSHJ2OWtyMzhEaUJXQ2NmYVBTOEZDbGs0R1hIYkRmMnZEV0xQQlY2RXlsdEttby1XVEtWSklCNUw2a3pFZncxdlFidjZpTUrSAXRBVV95cUxPb3FzX3B4S0xJdFBmcWEydFlXVXRRWUNpN2lXZk90cjlOODkyZDlhNkUteTVhUHc4LW5DSGxWQ0ptRmRIcU8wOGpVRnF2X2FGRFdWUHFUeEtHU3d0cHBXcUxjeVR6akVyYmJBeGNCRHBVa2RWcw?oc=5",
+      "source": "산경투데이",
+      "published": "2026-09-19 09:57",
+      "summary": "국제유가 급등에도 국내 기름값 18주째 하락…최고가격제 효과  산경투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "bcd90abefcaf"
+    },
+    {
+      "title": "이소영 청문회가 던진 질문…환경단체 ‘해외재단 후원’ 논란 [기후에너지환경 단상]",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oRDBYUTduV3llRGczQnZqTXpSTDJsc3R0UkJnRjhLVUNNaElDWlh1eE9ueW14US0zdkFfUGs2V0V0WlY5eDlBTkdrWDRHdjZDRHFxbmJmT2tjRTA?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-09-19 09:47",
+      "summary": "이소영 청문회가 던진 질문…환경단체 ‘해외재단 후원’ 논란 [기후에너지환경 단상]  에너지경제신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책",
+      "id": "6a83a2f63d46"
+    },
+    {
+      "title": "이비티에스협동조합 구미복지센터지국, 구미시 소재 주유소 환경정화 봉사활동 실시",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE91cmxoS2todm13VmpadDZJNTVzZjNqY3pBVXd1b0UwaThiUHlpSEUxNldUczBKUE5EMzBzR2NzVndhT3ltXzBxZEJ6UGl6X2E2UVJlT0VsSkRLb0h2X3c?oc=5",
+      "source": "구미일보",
+      "published": "2026-09-19 09:47",
+      "summary": "이비티에스협동조합 구미복지센터지국, 구미시 소재 주유소 환경정화 봉사활동 실시  구미일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "d0b5496ccf59"
+    },
+    {
+      "title": "주유소 기름값 18주째↓ 최고가격제에 1800원대 지속",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWGRWV0kxREhTWFlsaHZzb1VQbUZQVXNEelZkcUNWOG5QbFdzSzRaX3RqUjQxYUVxbUw5NzhNVWJDU0J4S25PQ0VWaDl5eWtUMkpIMjhDenUxcTlxcll3RnFfMFRrWDEtNjhBU1Q3dlpRZk5DM2FteF9UWWtXd1RtRjZTTnhQbE5fTHZiZzBB?oc=5",
+      "source": "조선일보",
+      "published": "2026-09-19 09:37",
+      "summary": "주유소 기름값 18주째↓ 최고가격제에 1800원대 지속  조선일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "35850f77e6ab"
+    },
+    {
+      "title": "국제유가, 사우디 원유 공급 우려 완화에 사흘째 하락세",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81RkxLUUx3Z1Vsc3lBcmZVTmdqN2VzZTdEMnJyTE8xdzJyejZZcFVCblBhMGF4MUV0ODU2OWNUbjlMTWVsTGh0ckx1NnFuT05aak5vbC1fMG1NNE5YMC1scG5HdGVISTQ?oc=5",
+      "source": "연합뉴스TV",
+      "published": "2026-09-19 09:24",
+      "summary": "국제유가, 사우디 원유 공급 우려 완화에 사흘째 하락세  연합뉴스TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가, 사우디 원유 공급 우려 완화에 사흘째 하락세",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kRkRLRXJtNGRqVS14aDlPSDR4aXpxY2hDYkJnWlk3ZnZDdC1xRXRfUGg0TlFDalFGT0NjcllXOTVpZzlDUTZiRG93c051bjlaQWFia3Y2VUY0OWs1WElGddIBYEFVX3lxTE1kRkRLRXJtNGRqVS14aDlPSDR4aXpxY2hDYkJnWlk3ZnZDdC1xRXRfUGg0TlFDalFGT0NjcllXOTVpZzlDUTZiRG93c051bjlaQWFia3Y2VUY0OWs1WElGdQ?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "88c89a242520"
+    },
+    {
+      "title": "휘발유 가격 18주 연속 하락, 추석 연휴엔 더 싸진다?",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9GcWxxNTI2M2RkR1ZOZ0ZPRkY5R1F0TWJnUUdhVW45MDBLOEF1clJhMTJYYkZjZEpLdU0yTmRDY1V2a3F1bm9ta1ZXRU1HdlVPRXlQOWM2ckx6b05DOTJnT3dGWThjbkVa?oc=5",
+      "source": "공감신문",
+      "published": "2026-09-19 09:19",
+      "summary": "휘발유 가격 18주 연속 하락, 추석 연휴엔 더 싸진다?  공감신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "61432c940d1a"
+    },
+    {
+      "title": "국제유가 다시 120弗인데…최고가격제 7개월째 지속, 가격은 ‘동결’[Pick코노미]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBIRXJUOFdjMXdndWpKSUlwUVVCaFFfZW0xMW9mMjdTM0NtYWIyazJBMHNtVUdFZGZJM0tnN1hoQWxpbERYcFBua3VUdmtDdEliaFHSAVNBVV95cUxPcUw5dmFzOFEwTF9OckU1Y1JfTk9MNTFIUFMyUnNPdWt6NGpya2dOZXRCWXF4dlRLWXUzOEl3Q19OM1R5SHNvS3BRcDUzRmNXRlRPdw?oc=5",
+      "source": "서울경제",
+      "published": "2026-09-19 09:11",
+      "summary": "국제유가 다시 120弗인데…최고가격제 7개월째 지속, 가격은 ‘동결’[Pick코노미]  서울경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가 다시 120弗인데…최고가격제 7개월째 지속, 가격은 ‘동결’[Pick코노미]",
+          "source": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xTDl2YXM4UTBMX05yRTVjUl9OT0w1MUhQUzJSc091a3o0anJrZ05ldEJZcXh2VEtZdTM4SXdDX04zVHlIc29LcFFwNTNGY1dGVE930gFTQVVfeXFMT3FMOXZhczhRMExfTnJFNWNSX05PTDUxSFBTMlJzT3VrejRqcmtnTmV0QllxeHZUS1l1MzhJd0NfTjNUeUhzb0twUXA1M0ZjV0ZUT3c?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "1226d88ffb71"
+    },
+    {
+      "title": "예멘 후티반군이 뒤흔든 국제유가…사우디 연전연패 이유는[시사쇼]",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1XbEV0VjktMFVvOGhsVjZfM2RySDNuRV82X1lKZGhIaHhEa2VIYzZNZzYwRkM4WHFYdGhwUlJVNWd0Y2NrbnEySGxCcTVneWQxSDlWM0JUTnNoZzVJZ1hIUg?oc=5",
+      "source": "아시아경제",
+      "published": "2026-09-19 09:00",
+      "summary": "예멘 후티반군이 뒤흔든 국제유가…사우디 연전연패 이유는[시사쇼]  아시아경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "42644f60a41b"
+    },
+    {
+      "title": "석유 최고가격제 또 동결…국제유가 급등에 정유업계 부담 우려",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBpcjNSNlFsTnJQaHJySlFfV0ZqcnhQUjl2WjRYZVV1eWlKanVnbnB2YkxFZFMyNnA1NEZVaWVSRm9wUlVQZk5KZVRkQjR4UzBxZFBROXR0SzljellDTldRTmFmQndVTTlR?oc=5",
+      "source": "녹색경제신문",
+      "published": "2026-09-19 08:15",
+      "summary": "석유 최고가격제 또 동결…국제유가 급등에 정유업계 부담 우려  녹색경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유 최고가격제 또 동결…국제유가 급등에 정유업계 부담 우려",
+          "source": "녹색경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zcnN4TUZpODZ0TEE0OU9OTzU3ZXdDaXgweU9HeGlJczJYa2hvTDl0RXdKWUJCY1dOUlJaOGRQNFI4Z1ZuNVdfcmFScnUweG04ZkQ1d2RkcTZCTEJnWXN4LW5tWVh1Q1k?oc=5"
+        }
+      ],
+      "query": "국제유가",
+      "id": "4a3a918d5b24"
+    },
+    {
+      "title": "S-OIL, 독창적 브랜드 전략 체계 구축 · 지속적 마케팅 혁신 호평",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303277",
+      "source": "투데이에너지",
+      "published": "2026-09-19 08:11",
+      "summary": "양승직 S-OIL 영업전략부문장(오른쪽)이 '2026 한국경영대상'에서 '브랜드 전략 부문’ 7년 연속 수상 후 박기찬 산업정책연구원 원장(왼쪽)과 기념 촬영하고 있다./S-OIL 제공\n\n\n\n[투데이에너지 신영균 기자] S-OIL이 독창적인 브랜드 전략 체계를 구축한 상황에서 지속적으로 마케팅 혁신을 시도 중이다. 이를 또 다시 높이 평가받았다. S-OIL은 정부 산하 싱크탱크인 산업정책연구원이 주관하는 '2026 한국경영대상'에서 7년 연속 ‘브랜드 전략 부문’ 1위에 선정됐다고 17일 밝혔다. '한국경영대상'은 매년 전문가들이 ",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "id": "0c2b2ccada60"
+    },
+    {
+      "title": "전국 주유소 기름값, 최고가격제 영향에 1800원대...하락세는 18주째",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9FMjhWbDkxczVYZ0VYYU5PbWs1Rkg3Y2UwU3NxQmZ0TF85ZUZ5SEl0ZGcyUHotNjFaWkFxdjJtVnV0dlVRS1ZQbk1YSmdRLWtyS3Z4dzRDVmF0N25VM2RqdXdVWQ?oc=5",
+      "source": "조세금융신문",
+      "published": "2026-09-19 08:05",
+      "summary": "전국 주유소 기름값, 최고가격제 영향에 1800원대...하락세는 18주째  조세금융신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "5116e86b8d44"
+    },
+    {
+      "title": "한국에너지공단, ‘인재경영’ 최우수기관…채용·직무평가 체계 손질",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZUd5RC1jRENsTU9kMDBDSEM3ZVo0blZBRW9WTkx5UVF0cUdaa0lDV2t2Q2U1ZFdnWXpTUHlValFGOHlUNlVUZllRQWNqR0puYmJQN3hEaVQ5N3hMX2plZ0ZnSnU3dDBxQy1SbXNQVndpTWJBVWhDRVVIejN0T2NrcGRzQi1aWTVZRnc?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-09-19 08:00",
+      "summary": "한국에너지공단, ‘인재경영’ 최우수기관…채용·직무평가 체계 손질  글로벌이코노믹",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국에너지공단",
+      "id": "4a73d08f4159"
+    },
+    {
+      "title": "[이슈 : 글로벌 1, 2위 정제설비 보유 中·美, 석유 수출 금지하나?]",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBxaGNOb0N5S2V3aFUtV1VaSlQzdElxTXZVNDNEeW80UzItaGNueVVJZ256bTBiQVBhbzlPVWkwQkJhem93eW1oblQ3SDdGY2hnWUtsOFNOUVhLLWVBWVZOOENjWENNdGJuTE5FNNIBcEFVX3lxTE5BUVZnZFY0UGpOTGcxUkpLS2RGOU9JR2VCdDJUdThlU2FFbGRaTlc1dmJ6RjVOTURWRUZNbDFNSXVVVEhsRHFiTHk2dGZ6bWx4TlR6QkRQRG9IUmw4eFo3aFg5VDJ0ZUxlc1dIeV9GVUk?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-09-19 07:40",
+      "summary": "[이슈 : 글로벌 1, 2위 정제설비 보유 中·美, 석유 수출 금지하나?]  에너지플랫폼뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급",
+      "id": "2a593e9c3a72"
+    },
+    {
+      "title": "국제유가 3일 연속 하락…브렌트유 배럴당 104달러로 내려앉아",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAxREk5SUdHT21iYkFkLVBVRlV3bU1zeXFzZjYwVE5Kc2VHb0hZZ3lVdGZxMVZGS09PNkQ1X3hHMDhEVkVHaDBoV3dBRnRBSzVwRHZBS2pJR2VOME1JQlQ5aEdB?oc=5",
+      "source": "매일신문",
+      "published": "2026-09-19 07:31",
+      "summary": "국제유가 3일 연속 하락…브렌트유 배럴당 104달러로 내려앉아  매일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "62bc012c31f5"
+    },
+    {
+      "title": "국제 유가 치솟는데…석유 최고가격 동결 언제까지?",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MUlg0aHQzbzdKeG1fN3AxU1hSTV9QUFI2YWJaZGZKWFdPSXo4WUQ4RDF5dTRmY012dDJFZE4zQVhSTFcxWTIxNnVCNGE5VjVreDZsckxSdzk3UlE?oc=5",
+      "source": "KBS 뉴스",
+      "published": "2026-09-19 07:17",
+      "summary": "국제 유가 치솟는데…석유 최고가격 동결 언제까지?  KBS 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가",
+      "id": "3292db9a229d"
+    },
+    {
+      "title": "추석 고속도로 주유소 226곳 기름값 ℓ당 100원 인하…주유소협회 \"가격 왜곡\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JLTFCRW15YVdQUEhxU0QyVW9FcDFRZE1raTZES0RNZndObUltR1duazByU090ODUtZUpiYnI1Q3BOQ0ZFR3ozVlRrVGlZbkNKR0NHMEhfeU8zeFVBU1Bock1R?oc=5",
+      "source": "매일신문",
+      "published": "2026-09-19 07:17",
+      "summary": "추석 고속도로 주유소 226곳 기름값 ℓ당 100원 인하…주유소협회 \"가격 왜곡\"  매일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "98f5a8737ed4"
+    },
+    {
+      "title": "'석유 최고가' 그대로‥고속도로 주유소 '할인'",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9HazFOTHNaaHFGTXQybnhJNjV3R3ozd2JQZGwzVk1SZl81Rm95d252eVJRZElyS0lHYTlpd3NRTF8yTWpmTGpsaTN4NzEyUnVGdTBkRDd4dEFrYXlDTDlJNDUzeE5SOGg0RWk2bXVaT2ViT21FR0JPX0p30gF6QVVfeXFMUE9xTTM1cTFiWkZ3a29fVzNxT0hyOWRfT0QwOWVDcWxIQVRuUUtTbDM4WVBlVlVhcmdQMGtkSEJIMm43b2RYeUxFaDM2YldObXlKMkx2bUZUbzdHX3NmR0FmaVk3bXVKeDk1cWFRMXJTelE1OUVENFZIUHc?oc=5",
+      "source": "imnews.imbc.com",
+      "published": "2026-09-19 07:13",
+      "summary": "'석유 최고가' 그대로‥고속도로 주유소 '할인'  imnews.imbc.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "27d6d6440aa6"
+    },
+    {
+      "title": "국제 유가 상승에도 주유소 기름값 18주 연속 하락",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82RWVabVFrNzBEc0hKS0VRUkt4SV92MTI0WHdwTkJCTnRMU2x4YUJxR05fUl9DQ2dUZDcxWHZlSE5tclJ1ZVZZX005ZUdSMnZw?oc=5",
+      "source": "문화일보",
+      "published": "2026-09-19 07:08",
+      "summary": "국제 유가 상승에도 주유소 기름값 18주 연속 하락  문화일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사",
+      "id": "0d37d08fb262"
+    },
+    {
+      "title": "이번주 전국 휘발유·경유 가격 소폭 하락…국제유가는 변동성 지속",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONzJsclRfWmdPZ0hyRmFzb29rWXlvRE9yQmV3cVoxdmh1eUx0UEp2SXItZWJQMUVYN3JZSENxbk8zMnhVQ2UybVdUcWM5YndnTVFPdmZEWlg3Q2tSd0t3UjhsVGYyblFxd0dHT2dDT3N4MjU1WmU0SzBEWVAzQW1weQ?oc=5",
+      "source": "edaily.co.kr",
+      "published": "2026-09-19 07:00",
+      "summary": "이번주 전국 휘발유·경유 가격 소폭 하락…국제유가는 변동성 지속  edaily.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격",
+      "id": "ca13818b464a"
+    },
+    {
+      "title": "추석 고속道 기름값 100원 이하…일반 주유소 “문 닫으란 거냐”",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE54SjVicmpYOHc1Ti1zVnc5VW5FQVZUWFpINzQxakEzVDBIcnBldnh6VVYzemZOQWVacklPMWs2T2hvT0lqMnpjUUk4Z3JXOFRQQmQtaE5zMThiTVpOVmZyRzNR?oc=5",
+      "source": "미주중앙일보",
+      "published": "2026-09-19 07:00",
+      "summary": "추석 고속道 기름값 100원 이하…일반 주유소 “문 닫으란 거냐”  미주중앙일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소",
+      "id": "f15e2441c0a7"
+    }
+  ]
+}
