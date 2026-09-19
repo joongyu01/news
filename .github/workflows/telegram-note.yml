@@ -1,0 +1,41 @@
+name: 텔레그램 안내 전송
+on:
+  workflow_dispatch:
+    inputs:
+      messages_json:
+        description: '소유자에게 보낼 평문 메시지 JSON 배열 (최대 10개)'
+        required: true
+        type: string
+permissions: {}
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: 소유자에게 안내 전송
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MESSAGES_JSON: ${{ inputs.messages_json }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          try:
+              messages = json.loads(os.environ['MESSAGES_JSON'])
+              assert isinstance(messages, list) and 1 <= len(messages) <= 10
+              assert all(isinstance(m, str) and 0 < len(m.encode('utf-16-le')) // 2 <= 4000 for m in messages)
+              token = os.environ['TELEGRAM_BOT_TOKEN']
+              chat = os.environ['TELEGRAM_CHAT_ID']
+              assert token and chat
+              for index, message in enumerate(messages):
+                  payload = json.dumps({'chat_id':chat,'text':message,'disable_web_page_preview':True}).encode()
+                  request = urllib.request.Request(f'https://api.telegram.org/bot{token}/sendMessage',data=payload,
+                                                    headers={'Content-Type':'application/json'})
+                  with urllib.request.urlopen(request, timeout=20) as response:
+                      assert json.load(response).get('ok')
+                  print(f'발송 완료 {index+1}/{len(messages)}')
+                  time.sleep(0.4)
+          except Exception as error:
+              print(f'안내 전송 실패 ({type(error).__name__})')
+              raise SystemExit(1)
+          PY
