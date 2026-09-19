@@ -16,12 +16,13 @@ def enabled():
 def request(method, table, **kwargs):
     if table not in ("news_drafts", "news_exclusions", "news_alert_state", "news_bot_settings"):
         raise ValueError("Unknown news table")
+    prefer = kwargs.pop('prefer', 'resolution=merge-duplicates,return=minimal')
     response = requests.request(
         method, f"{env('SUPABASE_URL').rstrip('/')}/rest/v1/{table}",
         headers={
             "apikey": env("SUPABASE_SERVICE_ROLE_KEY"),
             "Authorization": f"Bearer {env('SUPABASE_SERVICE_ROLE_KEY')}",
-            "Prefer": "resolution=merge-duplicates,return=minimal",
+            "Prefer": prefer,
         }, timeout=25, **kwargs,
     )
     if not response.ok:

@@ -196,6 +196,9 @@ def run(rules, *, dry_run=False, send_test=False):
             continue
         history = [old for old in state["sent"] if old.get("chat", prefs["owner"]) == chat]
         today_count = sum(datetime.fromisoformat(old["sent_at"]).astimezone(KST).date() == now.date() for old in history)
+        if chat == prefs['owner']:
+            today_count += sum(datetime.fromisoformat(old['sent_at']).astimezone(KST).date() == now.date()
+                               for old in prefs.get('spark_recent', []))
         daily_limit = options.get("limit", 0)
         remaining = min(rules["max_per_run"], max(0, daily_limit-today_count)) if daily_limit else rules["max_per_run"]
         if not remaining:
