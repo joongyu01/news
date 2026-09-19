@@ -29,7 +29,8 @@ def load_rules():
         raise ValueError("Invalid urgent alert limits")
     # 설정 오류는 수집/발송 전에 드러나야 합니다.
     re.compile(rules["exclude_title"])
-    for rule in rules["rules"]:
+    re.compile(rules.get("topic_exclude_title", r"(?!)"))
+    for rule in [*rules["rules"], *rules.get("topics", [])]:
         re.compile(rule["scope"])
         re.compile(rule["trigger"])
     return rules
@@ -39,6 +40,10 @@ def urgent_reason(article, rules, options=None):
     title = article.title
     if options and any(word.casefold() in title.casefold() for word in options.get("exclude", [])):
         return None
+    if not re.search(rules.get("topic_exclude_title", r"(?!)"), title, re.I):
+        for topic in rules.get("topics", []):
+            if re.search(topic["scope"], title, re.I) and re.search(topic["trigger"], title, re.I):
+                return topic
     if re.search(rules["exclude_title"], title, re.I):
         return None
     if options and any(word.casefold() in title.casefold() for word in options.get("watch", [])):
@@ -146,7 +151,7 @@ def select_alerts(articles, state, rules, now, config, options=None):
         if not reason or already_sent(article, reason, known, rules["similarity_threshold"]):
             continue
         if options and options.get("mode") == "strict":
-            if re.search(r"표창|수상|인터뷰|분석|파장|기대|검토|시행.*(?:후|영향)|방출.*(?:안|않)", article.title):
+            if reason.get("kind") != "topic" and re.search(r"표창|수상|인터뷰|분석|파장|기대|검토|시행.*(?:후|영향)|방출.*(?:안|않)", article.title):
                 continue
             topic = topic_key(article, reason)
             if topic and any(old.get("topic") == topic and
@@ -162,7 +167,8 @@ def select_alerts(articles, state, rules, now, config, options=None):
 
 def message(article, reason):
     # Telegram 한 메시지 한도보다 짧게 유지하고 원문 링크를 함께 보냅니다.
-    return (f"🚨 긴급 보고 후보 | {reason['label']}\n\n"
+    heading = "📰 관심 주제 업데이트" if reason.get("kind") == "topic" else "🚨 긴급 보고 후보"
+    return (f"{heading} | {reason['label']}\n\n"
             f"{article.title[:500]}\n\n"
             f"매체: {article.source[:100]}\n보도 시각: {article.published} KST\n"
             f"확인할 점: {reason['action']}\n\n{article.url[:2500]}\n\n"

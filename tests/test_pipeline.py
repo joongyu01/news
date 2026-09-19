@@ -44,6 +44,16 @@ class TestClassify(unittest.TestCase):
                           source="스포츠", query="rss:가스신문")
         self.assertIsNone(sector_for(article, self.config, self.qmap))
 
+    def test_requested_monitor_topics_survive_rss_classification(self):
+        for title, sector in [("에너지시장감시단 조사 발표", "energy"),
+                              ("에너지 시장 감시단 조사 발표", "energy"),
+                              ("에너지·석유시장감시단 유통 실태 보고서", "energy"),
+                              ("에너지자원공사 본사 입지 논의", "public"),
+                              ("석유·가스공사 통합 법안 발의", "public")]:
+            with self.subTest(title=title):
+                item = Article(title=title, url="https://x/topic", source="A", query="rss:업계지")
+                self.assertEqual(sector_for(item, self.config, self.qmap), sector)
+
     def test_blocklist(self):
         self.assertTrue(is_blocked(Article(title="[부고] 홍길동 모친상",
                                            url="https://x/5", source="A"), self.config))

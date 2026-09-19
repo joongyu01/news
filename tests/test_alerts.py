@@ -49,6 +49,35 @@ class AlertTests(unittest.TestCase):
         self.assertEqual(self.select([missing, malformed, article(age=361), article(age=-20),
                                       article(url="javascript:bad")]), [])
 
+    def test_requested_topics_include_reports_and_policy_reversals(self):
+        for title, topic in [
+            ("에너지시장감시단, 가격 조사 결과 발표", "energy_watchdog"),
+            ("에너지·석유시장감시단, 유통 마진 분석 발표", "energy_watchdog"),
+            ("에너지 시장 감시단, 공급 차질 우려 제기", "energy_watchdog"),
+            ("석유 시장 감시단, 신규 조사 보고서 공개", "energy_watchdog"),
+            ("석유공사·가스공사 통합 법안 발의", "oil_gas_integration"),
+            ("석유·가스公 합병 추진", "oil_gas_integration"),
+            ("가스공사, 석유공사 통합 계획 보도 부인", "oil_gas_integration"),
+            ("석유공사 노조, 통합에 우려…재검토 촉구", "oil_gas_integration"),
+            ("에너지자원공사 본사 입지 논의", "oil_gas_integration"),
+            ("석유공사 기능 이관 검토", "oil_gas_integration"),
+        ]:
+            with self.subTest(title=title):
+                selected = alerts.select_alerts([article(title)], self.state, self.rules,
+                                                NOW, load_config(), {"mode": "strict"})
+                self.assertEqual(len(selected), 1)
+                self.assertEqual(selected[0][1]["id"], topic)
+                self.assertTrue(alerts.message(*selected[0]).startswith("📰 관심 주제 업데이트"))
+
+    def test_requested_topics_do_not_broaden_to_unrelated_company_news(self):
+        for title in ["한국가스공사 신입사원 채용", "석유공사 통합안전관리 시스템 도입",
+                      "가스공사 통합 관제 플랫폼 구축", "환경성적표지 시장감시단 출범",
+                      "[칼럼] 석유공사·가스공사 통합 전망", "에너지자원공사 관련 테마주 주가 상승"]:
+            with self.subTest(title=title):
+                self.assertIsNone(alerts.urgent_reason(article(title), self.rules))
+        self.assertIsNone(alerts.urgent_reason(article("에너지시장감시단 조사 발표"),
+                                               self.rules, {"exclude": ["감시단"]}))
+
     def test_same_url_and_syndicated_title_deduplicated(self):
         a = article()
         self.assertEqual(len(self.select([a, a, article("[속보] " + a.title, "https://other.test/2")])), 1)
