@@ -49,6 +49,24 @@
                  background:var(--bg);color:var(--ink);font-size:13px}
   .ghost{padding:7px 12px;border:1px solid var(--line);border-radius:7px;
          background:var(--bg);color:var(--ink);font-size:13px}
+  .filters{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+           padding:16px;margin-bottom:14px}
+  .filters h2{font-size:15px;margin:0 0 10px}
+  .searchbar{display:flex;gap:8px;flex-wrap:wrap}
+  .searchbar input,.searchbar select{font:inherit;padding:9px 10px;border:1px solid var(--line);
+      border-radius:7px;background:var(--bg);color:var(--ink);min-width:0}
+  .searchbar input{flex:1 1 230px}
+  .views{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 8px}
+  .views button[aria-pressed="true"]{background:var(--brand);color:var(--card);border-color:var(--brand)}
+  .result-count{font-size:13px;color:var(--dim);margin:0 0 10px}
+  .badge{display:inline-block;border-radius:4px;padding:1px 6px;font-size:11px;
+         margin:0 5px 4px 0;background:var(--bg);color:var(--dim)}
+  .badge.selected{color:var(--ok)}
+  .badge.excluded{color:var(--danger)}
+  .duplicate-mark{flex:0 0 24px;text-align:center;color:var(--dim)}
+  .meta a{color:var(--brand)}
+  .pager{display:flex;justify-content:center;align-items:center;gap:12px;margin:14px 0 22px}
+  button:disabled{cursor:default;opacity:.45}
 
   /* ---- 섹터 ---- */
   section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
@@ -111,7 +129,9 @@
 
 <script>
 const $ = (id) => document.getElementById(id);
-const state = { date: "", data: null, excluded: new Set(), dirty: false };
+const state = { date: "", data: null, excluded: new Set(), dirty: false,
+                view: "all", query: "", sector: "all", page: 1 };
+const PAGE_SIZE = 40;
 let saveTimer = null;
 
 // ---------------------------------------------------------------- 공통
@@ -169,6 +189,8 @@ async function load(date) {
     state.data = await api(`/api/draft${query}`);
     state.date = state.data.date;
     state.excluded = new Set(state.data.excluded);
+    state.page = 1;
+    if (!(state.data.sectors || []).some((s) => s.id === state.sector)) state.sector = "all";
     $("login").hidden = true;
     $("app").hidden = false;
     render();
@@ -301,54 +323,128 @@ function dateBar() {
     </div>`;
 }
 
+// 열람용 목록은 발송 목록(kept/plainText)과 독립입니다.
+// 이미 저장된 중복 기사도 각각 원문을 열 수 있게 펼칩니다.
+function reviewRows() {
+  return (state.data.sectors || []).flatMap((sector) => {
+    const selected = new Set(kept(sector).map((a) => a.id));
+    return sector.articles.flatMap((a) => [
+      { article: a, sector, status: state.excluded.has(a.id) ? "excluded" :
+          selected.has(a.id) ? "selected" : "overflow" },
+      ...(a.duplicates || []).map((article) => ({ article, sector, status: "duplicate", parent: a })),
+    ]);
+  });
+}
+
+function filteredRows(rows = reviewRows()) {
+  const words = state.query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+  return rows.filter((row) => {
+    if (state.sector !== "all" && row.sector.id !== state.sector) return false;
+    if (state.view === "unsent" && row.status === "selected") return false;
+    if (!["all", "unsent"].includes(state.view) && row.status !== state.view) return false;
+    const searchable = [row.article.title, row.article.source, row.article.summary]
+      .filter(Boolean).join(" ").toLocaleLowerCase();
+    return words.every((word) => searchable.includes(word));
+  });
+}
+
+function articleLink(article, label = article.title) {
+  // 저장된 외부 기사도 신뢰하지 않습니다. 웹 원문 링크만 열 수 있습니다.
+  let safe = false;
+  try { safe = ["https:", "http:"].includes(new URL(article.url).protocol); } catch {}
+  return safe ? `<a href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`
+    : escapeHtml(label);
+}
+
+function renderRow(row) {
+  const { article: a, status, parent } = row;
+  const labels = { selected: "발송 예정", overflow: "상한 초과", excluded: "담당자 제외", duplicate: "중복 묶음" };
+  const off = status === "excluded";
+  const tags = (a.risk || []).map((k) => `<span class="tag">${escapeHtml(k)}</span>`).join("");
+  const control = parent ? '<span class="duplicate-mark" aria-hidden="true">↳</span>' :
+    `<button class="tog" data-toggle-id="${escapeHtml(a.id)}" aria-label="${off ? "다시 포함" : "제외"}: ${escapeHtml(a.title)}">${off ? "✕" : "✓"}</button>`;
+  const meta = [a.source || "매체 미상", a.published || (parent ? "개별 보도 시각 미저장" : "시각 미상")];
+  if (parent) meta.push("대표 기사에 묶여 별도 발송되지 않음");
+  return `<div class="item ${off ? "off" : ""}">
+      ${control}<div class="body">
+        <span class="badge ${status}">${labels[status]}</span>
+        <div class="t">${tags}${articleLink(a)}</div>
+        <div class="meta">${meta.map(escapeHtml).join(" · ")}${parent ? ` · ${articleLink(parent, "대표 기사 보기")}` : ""}</div>
+      </div></div>`;
+}
+
+function renderResults() {
+  const rows = filteredRows();
+  const pages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+  state.page = Math.min(Math.max(1, state.page), pages);
+  const start = (state.page - 1) * PAGE_SIZE;
+  const page = rows.slice(start, start + PAGE_SIZE);
+  const summary = rows.length ? `${rows.length}건 중 ${start + 1}–${start + page.length}건 표시` : "조건에 맞는 기사가 없습니다.";
+  let html = `<p class="result-count" role="status">${summary}</p>`;
+  for (const sector of state.data.sectors || []) {
+    const items = page.filter((row) => row.sector.id === sector.id);
+    if (!items.length) continue;
+    html += `<section><h2>${escapeHtml(sector.title)}<span class="count">이 페이지 ${items.length}건</span></h2>`;
+    html += items.map(renderRow).join("") + "</section>";
+  }
+  if (!rows.length) html += '<div class="empty">검색어 또는 분야·표시 조건을 바꿔주세요.</div>';
+  html += `<div class="pager"><button class="ghost" id="prevPage" ${state.page === 1 ? "disabled" : ""}>이전 페이지</button>
+      <span>${state.page} / ${pages}</span>
+      <button class="ghost" id="nextPage" ${state.page === pages ? "disabled" : ""}>다음 페이지</button></div>`;
+  $("articleResults").innerHTML = html;
+  $("articleResults").querySelectorAll("[data-toggle-id]").forEach((button) => {
+    button.onclick = () => {
+      const id = button.dataset.toggleId;
+      state.excluded.has(id) ? state.excluded.delete(id) : state.excluded.add(id);
+      scheduleSave();
+      render();
+    };
+  });
+  for (const [id, step] of [["prevPage", -1], ["nextPage", 1]]) {
+    $(id).onclick = () => {
+      state.page += step;
+      renderResults();
+      $("articleResults").scrollIntoView({ block: "start" });
+    };
+  }
+}
+
 function render() {
   const d = state.data;
   const totalKept = (d.sectors || []).reduce((n, s) => n + kept(s).length, 0);
   const mk = marketLine();
   const rs = riskSummary();
+  const rows = reviewRows();
+  const counts = Object.fromEntries(["selected", "overflow", "excluded", "duplicate"]
+    .map((status) => [status, rows.filter((row) => row.status === status).length]));
+  const views = [["all", "전체", rows.length], ["selected", "발송 예정", counts.selected],
+    ["unsent", "미발송", rows.length - counts.selected], ["overflow", "상한 초과", counts.overflow],
+    ["excluded", "담당자 제외", counts.excluded], ["duplicate", "중복 묶음", counts.duplicate]];
 
   let html = `
     <header>
       <h1>${escapeHtml(titleLine(state.date))}</h1>
       <div class="sub">수집 ${escapeHtml(d.generated_at || "-")} ·
-        전체 ${d.sectors.reduce((n, s) => n + s.articles.length, 0)}건 중
-        <b>${totalKept}건 발송 예정</b></div>
+        저장된 기사 ${rows.length}건 · <b>${totalKept}건 발송 예정</b></div>
       ${mk ? `<div class="market">${escapeHtml(mk)}</div>` : ""}
       ${rs ? `<div class="riskbar">${escapeHtml(rs)}</div>` : ""}
       ${dateBar()}
-    </header>`;
-
-  for (const sector of d.sectors || []) {
-    if (!sector.articles.length) continue;
-    const keptIds = new Set(kept(sector).map((a) => a.id));
-    html += `<section><h2>${escapeHtml(sector.title)}
-      <span class="count">${keptIds.size} / ${sector.articles.length}건</span></h2>`;
-
-    let overflow = 0;
-    for (const a of sector.articles) {
-      const off = state.excluded.has(a.id);
-      const over = !off && !keptIds.has(a.id);
-      if (over) overflow += 1;
-      const tags = (a.risk || []).map((k) => `<span class="tag">${escapeHtml(k)}</span>`).join("");
-      const dup = a.duplicates && a.duplicates.length
-        ? ` · 동일 사안 ${a.duplicates.length}건` : "";
-      html += `
-        <div class="item ${off ? "off" : ""} ${over ? "over" : ""}" data-id="${a.id}">
-          <button class="tog" aria-label="${off ? "다시 포함" : "제외"}">${off ? "✕" : "✓"}</button>
-          <div class="body">
-            <div class="t">${tags}<a href="${escapeHtml(a.url)}" target="_blank"
-                 rel="noopener noreferrer">${escapeHtml(a.title)}</a></div>
-            <div class="meta">${escapeHtml(a.source)} · ${escapeHtml(a.published || "시각 미상")}${dup}${
-              over ? " · 상한 초과로 미발송" : ""}</div>
-          </div>
-        </div>`;
-    }
-    if (overflow) {
-      html += `<div class="cut">상한 ${sector.limit}건을 넘는 ${overflow}건은 발송되지 않습니다.
-        위에서 몇 건을 제외하면 아래 기사가 올라옵니다.</div>`;
-    }
-    html += `</section>`;
-  }
+    </header>
+    <div class="filters">
+      <h2>수집 기사 찾아보기</h2>
+      <div class="searchbar">
+        <input type="search" id="articleSearch" aria-label="기사 검색" placeholder="제목·매체·요약 검색" value="${escapeHtml(state.query)}">
+        <select id="sectorFilter" aria-label="기사 분야"><option value="all">전체 분야</option>
+          ${(d.sectors || []).map((s) => `<option value="${escapeHtml(s.id)}" ${state.sector === s.id ? "selected" : ""}>${escapeHtml(s.title)}</option>`).join("")}</select>
+        <button class="ghost" id="resetFilters">조건 초기화</button>
+      </div>
+      <div class="views" role="group" aria-label="기사 표시 범위">
+        ${views.map(([view, label, count]) => `<button class="ghost" data-view="${view}" aria-pressed="${state.view === view}">${label} ${count}</button>`).join("")}
+      </div>
+      <div class="sub">중복으로 묶인 다른 매체 기사도 원문을 볼 수 있습니다. 검색·필터는 발송 목록에 영향을 주지 않습니다.<br>
+        상한 초과 기사는 같은 분야의 앞선 기사를 제외하면 발송 목록에 올라옵니다.</div>
+    </div>
+    <div id="articleResults"></div>`;
 
   html += `
     <div class="preview">
@@ -358,6 +454,7 @@ function render() {
     </div>`;
 
   $("app").innerHTML = html;
+  renderResults();
   bind();
 }
 
@@ -381,12 +478,26 @@ function bindDateBar() {
 function bind() {
   bindDateBar();
 
-  $("app").querySelectorAll(".item").forEach((row) => {
-    row.querySelector(".tog").onclick = () => {
-      const id = row.dataset.id;
-      state.excluded.has(id) ? state.excluded.delete(id) : state.excluded.add(id);
-      scheduleSave();
-      render();                       // 번호와 상한 반영이 즉시 보여야 합니다
+  $("articleSearch").oninput = (event) => {
+    state.query = event.target.value;
+    state.page = 1;
+    renderResults();
+  };
+  $("sectorFilter").onchange = (event) => {
+    state.sector = event.target.value;
+    state.page = 1;
+    renderResults();
+  };
+  $("resetFilters").onclick = () => {
+    Object.assign(state, { view: "all", query: "", sector: "all", page: 1 });
+    render();
+    $("articleSearch").focus();
+  };
+  $("app").querySelectorAll("[data-view]").forEach((button) => {
+    button.onclick = () => {
+      state.view = button.dataset.view;
+      state.page = 1;
+      render();
     };
   });
 

@@ -31,3 +31,4 @@ jobs:
           node tests/bot.mjs
           node --check api/spark.js
           node tests/spark.mjs
+          node tests/review.mjs
