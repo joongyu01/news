@@ -4,6 +4,7 @@
 gather -> 신선도 -> 분류 -> 중복묶기 -> 초안 까지 한 번에 확인합니다.
 """
 
+import copy
 import unittest
 from unittest.mock import patch
 
@@ -44,7 +45,7 @@ FAKE_RESULTS = {
 
 def fake_naver(query, display=30):
     # 리스트를 그대로 돌려주면 테스트끼리 같은 객체를 공유하게 됩니다.
-    return [Article(**{**a.__dict__}) for a in FAKE_RESULTS.get(query, [])]
+    return copy.deepcopy(FAKE_RESULTS.get(query, []))
 
 
 def fake_trade_feeds():
@@ -86,6 +87,13 @@ class TestCollectPipeline(unittest.TestCase):
         rep = next(a for a in digest.articles if a.title.startswith("석유관리원, 품질검사"))
         self.assertEqual(len(rep.duplicates), 1)
         self.assertEqual(rep.duplicates[0]["source"], "투데이에너지")
+
+    def test_collection_counts_survive_draft_roundtrip(self):
+        from scripts.digest import Digest
+        digest = self.build()
+        self.assertEqual(digest.collection_stats, {
+            'raw':8, 'fresh':7, 'classified':5, 'representatives':4, 'duplicates':1})
+        self.assertEqual(Digest.from_dict(digest.to_dict()).collection_stats, digest.collection_stats)
 
     def test_risk_articles_sorted_first(self):
         digest = self.build()

@@ -29,6 +29,7 @@ jobs:
           node --check api/exclusions.js
           node --check api/telegram.js
           node tests/bot.mjs
+          node tests/usage.mjs
           node --check api/spark.js
           node tests/spark.mjs
           node tests/review.mjs

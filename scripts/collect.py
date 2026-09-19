@@ -76,6 +76,9 @@ def build(config) -> Digest:
         date=now.strftime("%Y-%m-%d"),
         generated_at=now.strftime("%Y-%m-%d %H:%M"),
         articles=merged,
+        collection_stats={"raw": len(raw), "fresh": len(fresh), "classified": len(classified),
+                          "representatives": len(merged),
+                          "duplicates": sum(len(a.duplicates) for a in merged)},
         market=[q.__dict__ for q in market_brief()],
         sectors=[
             {"id": s.id, "title": s.title, "limit": s.limit} for s in config.sectors

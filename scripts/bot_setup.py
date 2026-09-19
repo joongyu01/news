@@ -7,6 +7,8 @@ from . import storage, preferences
 from .config import env
 
 COMMANDS = {
+    "usage": "GitHub 사용량·API 잔여 한도 (개인 대화)",
+    "logs": "수집·발송 시각, 건수와 상세 로그",
     "help": "사용법", "status": "현재 방 설정", "subscribe": "이 방 구독",
     "unsubscribe": "이 방 구독 해제", "urgent": "긴급 알림 on/off", "daily": "아침 동향 on/off",
     "mode": "강도 strict/standard", "limit": "하루 상한 0~20", "quiet": "휴식 시간 22-07/off",

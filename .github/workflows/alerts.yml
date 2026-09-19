@@ -21,6 +21,7 @@ concurrency:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   alerts:
@@ -57,3 +58,12 @@ jobs:
           [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
           [ "$SEND_TEST" = "true" ] && args+=(--send-test)
           python -m scripts.alerts "${args[@]}"
+      - name: GitHub 사용량·운영 기록 갱신
+        if: ${{ !cancelled() && inputs.dry_run != true }}
+        continue-on-error: true
+        timeout-minutes: 1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python -m scripts.github_usage

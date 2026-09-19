@@ -20,6 +20,7 @@ class Digest:
     # 섹터 정의를 초안에 함께 적어둡니다. 검토 페이지(Node)가 config/news.yml 을
     # 따로 파싱하지 않아도 되고, 나중에 설정이 바뀌어도 과거 초안은 그대로 열립니다.
     sectors: list[dict[str, Any]] = field(default_factory=list)
+    collection_stats: dict[str, int] = field(default_factory=dict)
 
     # ------------------------------------------------------------------
     def by_sector(
@@ -53,6 +54,7 @@ class Digest:
             "generated_at": self.generated_at,
             "market": self.market,
             "sectors": self.sectors,
+            "collection_stats": self.collection_stats,
             "articles": [a.to_dict() for a in self.articles],
         }
 
@@ -63,6 +65,7 @@ class Digest:
             generated_at=data.get("generated_at", ""),
             market=data.get("market", []),
             sectors=data.get("sectors", []),
+            collection_stats=data.get("collection_stats", {}),
             articles=[Article.from_dict(a) for a in data.get("articles", [])],
         )
 

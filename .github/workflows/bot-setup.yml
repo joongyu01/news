@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: news-bot-setup
   cancel-in-progress: false
@@ -25,3 +26,9 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           REVIEW_URL: ${{ vars.REVIEW_URL }}
         run: python -m scripts.bot_setup
+      - name: GitHub 사용량 초기 조회
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python -m scripts.github_usage

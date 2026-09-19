@@ -235,6 +235,9 @@ def run(rules, *, dry_run=False, send_test=False):
     state["last_checked_at"] = now.isoformat()
     state["last_collected"] = len(articles)
     state["last_sent"] = len(deliveries)-failures
+    state["last_candidates"] = len(deliveries)
+    state["last_failures"] = failures
+    state["last_completed_at"] = now_kst().isoformat()
     save_state(state)
     if failures:
         raise RuntimeError("일부 구독방의 긴급 발송 실패")

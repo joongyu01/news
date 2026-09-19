@@ -1,8 +1,11 @@
 import crypto from 'node:crypto';
+import {usageText} from './_usage.js';
 
 export const DEFAULTS = {urgent:true, daily:true, mode:'standard', limit:0, watch:[], exclude:[], quiet:'off'};
 export const HELP = `뉴스 봇 명령어 (설정은 소유자만 변경)
 /status 현재 방 설정
+/usage GitHub 사용량·API 잔여 한도 (개인 대화)
+/logs 수집·발송 시각과 건수, 상세 로그 (개인 대화)
 /subscribe 이 방 알림 구독
 /unsubscribe 이 방 구독 해제
 /urgent on 또는 off 긴급 알림
@@ -47,11 +50,12 @@ export async function db(method, query='', body) {
 
 export function command(update, stored) {
   const m = update?.message;
-  if (!m || typeof m.text !== 'string' || !m.text.startsWith('/') || m.text.length > 500
+  if (!m || !isCommandText(m.text) || m.text.length > 500
       || !Number.isSafeInteger(update.update_id) || !Number.isSafeInteger(m.chat?.id)
       || !Number.isSafeInteger(m.from?.id) || m.forward_origin
       || !['private','group','supergroup'].includes(m.chat?.type)) return null;
-  const match = /^\/([a-z]+)(?:@([a-z0-9_]+))?(?:\s+(.*))?$/is.exec(m.text.trim());
+  const input = /^(usage|logs)$/i.test(m.text.trim()) ? '/'+m.text.trim() : m.text.trim();
+  const match = /^\/([a-z]+)(?:@([a-z0-9_]+))?(?:\s+(.*))?$/is.exec(input);
   if (!match || (match[2] && match[2].toLowerCase() !== 'news_joongyubot')) return null;
   const [_, cmd, bot, raw=''] = match;
   const args = raw.trim();
@@ -66,7 +70,17 @@ export function command(update, stored) {
   let options = payload.chats[chat];
   let text;
   let changed = false;
-  if (cmd === 'start' || cmd === 'help') text = HELP;
+  if (cmd.toLowerCase() === 'usage') {
+    text = m.chat.type !== 'private' ? '사용량은 봇과의 개인 대화에서 /usage로 확인해주세요.'
+      : args ? '/usage 또는 usage만 입력해주세요.' : usageText(stored.github_usage);
+  }
+  else if (cmd.toLowerCase() === 'logs') {
+    const selected = ({'수집':'collect','긴급':'alerts','발송':'dispatch'})[args] || args.toLowerCase();
+    if (m.chat.type !== 'private') text='운영 기록은 봇과의 개인 대화에서 /logs로 확인해주세요.';
+    else if (!['','collect','alerts','dispatch'].includes(selected)) text='/logs 또는 /logs collect, /logs alerts, /logs dispatch를 입력해주세요.';
+    else return {chat:m.chat.id, logs:selected};
+  }
+  else if (cmd === 'start' || cmd === 'help') text = HELP;
   else if (cmd === 'subscribe') {
     if (!options && Object.keys(payload.chats).length >= 5) text = '최대 5개 방까지 구독할 수 있습니다. 다른 방에서 /unsubscribe 후 다시 시도하세요.';
     else {
@@ -101,4 +115,8 @@ export function command(update, stored) {
   } else text='명령 형식을 확인해주세요. /help로 사용법을 볼 수 있습니다.';
   if (changed) payload.recent=[...(payload.recent || []),{id:update.update_id,text}].slice(-30);
   return {chat:m.chat.id, text, ...(changed?{payload}: {})};
+}
+
+export function isCommandText(text) {
+  return typeof text === 'string' && (text.startsWith('/') || /^(usage|logs)$/i.test(text.trim()));
 }
