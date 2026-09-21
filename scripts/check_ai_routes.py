@@ -18,7 +18,9 @@ def main():
     start = int(ledger.get('next_key', 0)) % len(keys)
     model = 'gemini-3.8-flash'
     results = []
-    for route in ('generateContent', 'interactions'):
+    format_check = env('COMPARE_FORMAT') == 'true'
+    routes = ('json_mode', 'plain_json') if format_check else ('generateContent', 'interactions')
+    for route in routes:
         for offset in range(len(keys)):
             index = (start + offset) % len(keys)
             today = now_kst().date().isoformat()
@@ -29,9 +31,14 @@ def main():
             ledger['requests'] = ledger.get('requests', 0) + 1
             ledger['next_key'] = (index + 1) % len(keys)
             alerts.save_state(state)
-            if route == 'generateContent':
+            if route != 'interactions':
                 url = f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
                 payload = {'contents': [{'parts': [{'text': 'Say OK.'}]}], 'generationConfig': {'maxOutputTokens': 512}}
+                if format_check:
+                    payload['contents'][0]['parts'][0]['text'] = 'Return only JSON: {"decisions":[]}'
+                    payload['generationConfig']['thinkingConfig'] = {'thinkingLevel': 'low'}
+                    if route == 'json_mode':
+                        payload['generationConfig']['responseMimeType'] = 'application/json'
             else:
                 url = 'https://generativelanguage.googleapis.com/v1beta/interactions'
                 payload = {'model': model, 'input': 'Say OK.', 'store': False,
@@ -58,7 +65,7 @@ def main():
             except (requests.RequestException, ValueError) as exc:
                 print(route, 'key_slot', index+1, type(exc).__name__, flush=True)
                 results.append(False)
-            time.sleep(3)
+            time.sleep(15)
     return 0 if all(results) else 1
 
 

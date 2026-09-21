@@ -2,6 +2,10 @@ name: AI API 진단
 on:
   workflow_dispatch:
     inputs:
+      compare_format:
+        description: "JSON 옵션 비교 (총 4회, 뉴스 발송 없음)"
+        type: boolean
+        default: false
       compare_routes:
         description: "3.8 호출 경로 비교 (키당 2회, 뉴스 발송 없음)"
         type: boolean
@@ -30,8 +34,9 @@ jobs:
           GEMINI_FREE_TIER_CONFIRMED: ${{ vars.GEMINI_FREE_TIER_CONFIRMED }}
           GEMINI_MODEL: gemini-3.8-flash
           COMPARE_ROUTES: ${{ inputs.compare_routes }}
+          COMPARE_FORMAT: ${{ inputs.compare_format }}
         run: |
-          if [ "$COMPARE_ROUTES" = "true" ]; then
+          if [ "$COMPARE_ROUTES" = "true" ] || [ "$COMPARE_FORMAT" = "true" ]; then
             python -m scripts.check_ai_routes
           else
             python -m scripts.check_ai
