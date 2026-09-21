@@ -97,9 +97,13 @@ def notify_reviewer(digest: Digest, config) -> None:
         return
     shown = sum(len(items) for _, items in digest.by_sector(config))
     risky = len(digest.risk_articles())
+    if digest.analysis:
+        shown = len(digest.visible_issues())
+        risky = 0
     lines = [
         f"📋 {digest.date} 동향 초안이 준비됐습니다.",
-        f"기사 {shown}건" + (f" · ⚠️ 주의 {risky}건" if risky else ""),
+        (f"AI 종합 분석 · 핵심 이슈 {shown}개" if digest.analysis else f"기사 {shown}건")
+        + (f" · ⚠️ 주의 {risky}건" if risky else ""),
         "",
         "빼실 기사를 눌러 제외하신 뒤 두시면,",
         "08:00에 최종본이 발송됩니다.",

@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     return json(res, 404, {
       error: `${date} 초안이 아직 없습니다`,
       date,
-      hint: "수집 작업은 매일 06:40에 돕니다.",
+      hint: "15분마다 수집한 기사를 매일 08:00에 AI가 종합 분석합니다.",
     });
   }
 
@@ -45,6 +45,7 @@ export default async function handler(req, res) {
     date: d.date,
     generated_at: d.generated_at || "",
     market: d.market || [],
+    analysis: d.analysis || {},
     sectors: sectors.map((s) => ({
       ...s,
       articles: (d.articles || []).filter((a) => a.sector === s.id),

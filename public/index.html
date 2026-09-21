@@ -261,6 +261,10 @@ function marketLine() {
 
 /** 제외되지 않고 섹터 상한 안에 드는 기사들 — 실제로 발송될 목록. */
 function kept(sector) {
+  if (state.data.analysis?.version === 1) {
+    const ids = new Set(visibleIssues().flatMap((i) => i.article_ids));
+    return sector.articles.filter((a) => ids.has(a.id));
+  }
   return sector.articles
     .filter((a) => !state.excluded.has(a.id))
     .slice(0, sector.limit || 99);
@@ -273,6 +277,7 @@ function riskKept() {
 }
 
 function riskSummary() {
+  if (state.data.analysis?.version === 1) return "";
   const risky = riskKept();
   if (!risky.length) return "";
   const kws = [];
@@ -282,6 +287,7 @@ function riskSummary() {
 
 /** 발송될 평문. scripts/render.py 의 render_plain 과 같은 결과를 냅니다. */
 function plainText() {
+  if (state.data.analysis?.version === 1) return analysisText();
   const out = [titleLine(state.date), ""];
   const mk = marketLine();
   if (mk) out.push(mk, "");
@@ -302,6 +308,29 @@ function plainText() {
   return out.join("\n").replace(/\s+$/, "") + "\n";
 }
 
+function visibleIssues() {
+  const ids = new Set((state.data.sectors || []).flatMap((s) => s.articles.map((a) => a.id)));
+  return (state.data.analysis?.issues || []).filter((i) => i.article_ids?.length &&
+    i.article_ids.every((id) => ids.has(id) && !state.excluded.has(id)));
+}
+
+function analysisText() {
+  const out = [titleLine(state.date), "", "[AI 종합 분석]", ""];
+  const issues = visibleIssues();
+  const articles = new Map((state.data.sectors || []).flatMap((s) => s.articles.map((a) => [a.id, a])));
+  issues.forEach((issue, n) => {
+    out.push(`${n + 1}. ${issue.title}`, `핵심: ${issue.summary}`, `새로운 점: ${issue.change}`, `업무 관련성: ${issue.impact}`);
+    issue.article_ids.forEach((id) => {
+      const a = articles.get(id);
+      out.push(`근거: ${a.title} / ${a.source}`, a.url);
+    });
+    out.push("");
+  });
+  if (!issues.length) out.push("오늘 발송할 주요 새 이슈가 없습니다.", "");
+  out.push("수집된 제목·매체 요약을 바탕으로 작성한 AI 분석입니다. 중요 사실은 원문 확인이 필요합니다.");
+  return out.join("\n").replace(/\s+$/, "") + "\n";
+}
+
 function renderEmpty(message) {
   $("app").innerHTML = `
     <header>
@@ -310,7 +339,7 @@ function renderEmpty(message) {
       ${dateBar()}
     </header>
     <div class="empty">${escapeHtml(message)}<br><br>
-      수집 작업은 매일 06:40에 돕니다.</div>`;
+      15분마다 수집한 기사를 매일 08:00에 AI가 종합 분석합니다.</div>`;
   bindDateBar();
 }
 
@@ -359,6 +388,7 @@ function articleLink(article, label = article.title) {
 function renderRow(row) {
   const { article: a, status, parent } = row;
   const labels = { selected: "발송 예정", overflow: "상한 초과", excluded: "담당자 제외", duplicate: "중복 묶음" };
+  if (state.data.analysis?.version === 1) labels.overflow = "분석 미선정";
   const off = status === "excluded";
   const tags = (a.risk || []).map((k) => `<span class="tag">${escapeHtml(k)}</span>`).join("");
   const control = parent ? '<span class="duplicate-mark" aria-hidden="true">↳</span>' :
@@ -418,7 +448,7 @@ function render() {
   const counts = Object.fromEntries(["selected", "overflow", "excluded", "duplicate"]
     .map((status) => [status, rows.filter((row) => row.status === status).length]));
   const views = [["all", "전체", rows.length], ["selected", "발송 예정", counts.selected],
-    ["unsent", "미발송", rows.length - counts.selected], ["overflow", "상한 초과", counts.overflow],
+    ["unsent", "미발송", rows.length - counts.selected], ["overflow", d.analysis?.version === 1 ? "분석 미선정" : "상한 초과", counts.overflow],
     ["excluded", "담당자 제외", counts.excluded], ["duplicate", "중복 묶음", counts.duplicate]];
 
   let html = `
@@ -430,6 +460,7 @@ function render() {
       ${rs ? `<div class="riskbar">${escapeHtml(rs)}</div>` : ""}
       ${dateBar()}
     </header>
+    ${d.analysis?.version === 1 ? '<p>AI가 고른 핵심 이슈만 발송합니다. 근거 기사를 제외하면 해당 이슈 전체가 빠집니다. 미선정 기사는 자동 승격되지 않습니다.</p>' : ''}
     <div class="filters">
       <h2>수집 기사 찾아보기</h2>
       <div class="searchbar">

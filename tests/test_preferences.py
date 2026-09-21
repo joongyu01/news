@@ -17,7 +17,7 @@ class PreferencesTests(unittest.TestCase):
         self.assertFalse(preferences.quiet_now({'quiet':'22-07'},NOW.replace(hour=7)))
 
     def test_custom_keywords_literal_and_excluded(self):
-        rules=alerts.load_rules(); a=article('관심 (a+)+$ 소식')
+        rules={**alerts.load_rules(),'topics_delivery':'instant'}; a=article('관심 (a+)+$ 소식')
         opts={**preferences.defaults(),'watch':['(a+)+$']}
         self.assertEqual(alerts.urgent_reason(a,rules,opts)['id'],'watch')
         self.assertIsNone(alerts.urgent_reason(article('aaaaaaaaaa 소식'),rules,opts))
@@ -42,7 +42,7 @@ class PreferencesTests(unittest.TestCase):
              patch.object(alerts,'save_state'), patch.object(alerts,'now_kst',return_value=NOW), \
              patch.object(alerts,'gather',return_value=[article()]), \
              patch.object(alerts,'send_telegram',return_value=1) as send:
-            self.assertEqual(alerts.run(alerts.load_rules()),1)
+            self.assertEqual(alerts.run({**alerts.load_rules(), 'ai_screening': False}),1)
         self.assertEqual(send.call_args.kwargs['chat_id'],'1')
 
     def test_digest_only_subscribed_rooms(self):

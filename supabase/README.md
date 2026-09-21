@@ -1,5 +1,10 @@
 # 뉴스 Supabase 연결
 
+2026-09-21 통합 수집: 기존 `news_alert_state`의 `urgent` 행 payload에 `pool`을 추가합니다.
+48시간·600건·기사 JSON 900KB 한도이며 통합 수집 워크플로만 이 행을 갱신합니다.
+아침 분석은 pool을 읽기만 하므로 새 테이블·권한·마이그레이션은 필요하지 않습니다.
+기존 RLS와 service_role 전용 접근을 유지합니다. [현재 운영 안내](../README.md)를 우선하세요.
+
 프로젝트: `jgkgacuzpoxkjuxcrjxc` (joongyu01's Project, 서울)
 
 `migrations/202609190001_news.sql`은 2026-09-19 프로젝트에 적용했습니다.

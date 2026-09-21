@@ -20,14 +20,10 @@ TIMEOUT = 25
 # 텔레그램
 # ---------------------------------------------------------------------------
 
-def send_telegram(chunks: list[str], chat_id: str | None = None) -> int:
-    """평문 그대로 보냅니다. 마크다운 파싱을 켜지 않는 이유가 두 가지 있습니다.
-
-      · 기사 제목에 * _ [ ] 가 들어가면 파싱 오류로 발송 자체가 실패합니다.
-      · 담당자가 복사해서 카카오톡에 붙여넣으므로 서식 기호가 없어야 깔끔합니다.
-
-    링크 미리보기는 끕니다. 기사가 10건 넘으면 화면이 감당이 안 됩니다.
-    """
+def send_telegram(chunks: list[str], chat_id: str | None = None, *, parse_mode=None) -> int:
+    """평문 또는 서버에서 escape한 HTML. 링크 미리보기는 끈다."""
+    if parse_mode not in (None, "HTML"):
+        raise ValueError("Unsupported Telegram format")
     token = env("TELEGRAM_BOT_TOKEN")
     chat_id = chat_id or env("TELEGRAM_CHAT_ID")
     if not token or not chat_id:
@@ -43,6 +39,7 @@ def send_telegram(chunks: list[str], chat_id: str | None = None) -> int:
                 "chat_id": chat_id,
                 "text": chunk,
                 "disable_web_page_preview": True,
+                **({"parse_mode": parse_mode} if parse_mode else {}),
             },
             timeout=TIMEOUT,
         )
@@ -58,7 +55,7 @@ def send_telegram(chunks: list[str], chat_id: str | None = None) -> int:
     return sent
 
 
-def send_digest(chunks: list[str]) -> int:
+def send_digest(chunks: list[str], *, parse_mode=None) -> int:
     """Final digests go only to explicitly subscribed chats; reviews stay private."""
     from . import preferences
     if not env("TELEGRAM_BOT_TOKEN"):
@@ -69,7 +66,7 @@ def send_digest(chunks: list[str]) -> int:
         if not options.get("daily", True):
             continue
         try:
-            count += send_telegram(chunks, chat_id=chat_id)
+            count += send_telegram(chunks, chat_id=chat_id, parse_mode=parse_mode)
         except Exception as exc:
             log.error("Telegram 구독방 발송 실패 (%s)", type(exc).__name__)
     return count

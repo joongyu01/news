@@ -21,6 +21,14 @@ class Digest:
     # 따로 파싱하지 않아도 되고, 나중에 설정이 바뀌어도 과거 초안은 그대로 열립니다.
     sectors: list[dict[str, Any]] = field(default_factory=list)
     collection_stats: dict[str, int] = field(default_factory=dict)
+    analysis: dict[str, Any] = field(default_factory=dict)
+
+    def visible_issues(self, excluded=None):
+        known = {a.id for a in self.articles}
+        excluded = excluded or set()
+        return [i for i in self.analysis.get("issues", [])
+                if i.get("article_ids") and set(i["article_ids"]) <= known
+                and not set(i["article_ids"]) & excluded]
 
     # ------------------------------------------------------------------
     def by_sector(
@@ -32,20 +40,28 @@ class Digest:
         기사가 하나도 없는 섹터는 아예 나타나지 않습니다.
         """
         excluded = excluded or set()
+        selected = ({id for issue in self.visible_issues(excluded) for id in issue["article_ids"]}
+                    if self.analysis else None)
         result: list[tuple[str, list[Article]]] = []
         for sector in config.sectors:
             picked = [
                 a
                 for a in self.articles
                 if a.sector == sector.id and a.id not in excluded
-            ][: sector.limit]
+                and (selected is None or a.id in selected)
+            ]
+            if selected is None:
+                picked = picked[:sector.limit]
             if picked:
                 result.append((sector.title, picked))
         return result
 
     def risk_articles(self, excluded: set[str] | None = None) -> list[Article]:
         excluded = excluded or set()
-        return [a for a in self.articles if a.risk and a.id not in excluded]
+        selected = ({id for issue in self.visible_issues(excluded) for id in issue["article_ids"]}
+                    if self.analysis else None)
+        return [a for a in self.articles if a.risk and a.id not in excluded
+                and (selected is None or a.id in selected)]
 
     # ------------------------------------------------------------------
     def to_dict(self) -> dict[str, Any]:
@@ -55,6 +71,7 @@ class Digest:
             "market": self.market,
             "sectors": self.sectors,
             "collection_stats": self.collection_stats,
+            "analysis": self.analysis,
             "articles": [a.to_dict() for a in self.articles],
         }
 
@@ -66,6 +83,7 @@ class Digest:
             market=data.get("market", []),
             sectors=data.get("sectors", []),
             collection_stats=data.get("collection_stats", {}),
+            analysis=data.get("analysis", {}),
             articles=[Article.from_dict(a) for a in data.get("articles", [])],
         )
 

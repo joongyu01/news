@@ -33,6 +33,6 @@ export function usageText(snapshot, now=Date.now()) {
   lines.push('', '계정 전체 청구액·유료 잔액: 미조회',
     '캐시·아티팩트 등 저장 비용은 실행 시간과 별도입니다.',
     'https://github.com/settings/billing/usage',
-    '기존 15분 예약 실행 때 갱신합니다. 예약 지연 가능.');
+    '기존 15분 수집 예약 실행 때 갱신합니다. 예약 지연 가능.');
   return lines.join('\n');
 }

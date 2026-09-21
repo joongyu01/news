@@ -1,9 +1,7 @@
-# 매일 08:00 (KST) 담당자 검토 결과를 반영해 최종본을 발송합니다.
-name: 동향 발송
+# 수동 재발송 전용. 정기 조간은 collect.yml에서 분석 후 발송.
+name: 동향 수동 발송
 
 on:
-  schedule:
-    - cron: "0 23 * * *"       # 23:00 UTC = 08:00 KST
   workflow_dispatch:
     inputs:
       date:
@@ -15,7 +13,7 @@ on:
         default: false
 
 concurrency:
-  group: news-dispatch
+  group: news-urgent-alerts
   cancel-in-progress: false
 
 permissions:

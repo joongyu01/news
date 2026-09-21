@@ -37,6 +37,7 @@ probe.state.data = {
   date: input.digest.date,
   generated_at: input.digest.generated_at,
   market: input.digest.market,
+  analysis: input.digest.analysis,
   sectors: input.digest.sectors.map((s) => ({
     ...s,
     articles: input.digest.articles.filter((a) => a.sector === s.id),

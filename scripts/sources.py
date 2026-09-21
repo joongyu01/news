@@ -151,10 +151,11 @@ def fetch_naver(query: str, display: int = 30) -> list[Article]:
 # 2. 구글뉴스 RSS (키 불필요 — 네이버 키가 없을 때의 대체 경로)
 # --------------------------------------------------------------------------
 
-def fetch_google_news(query: str) -> list[Article]:
+def fetch_google_news(query: str, *, language: str = "ko") -> list[Article]:
+    locale = "en-US&gl=US&ceid=US:en" if language == "en" else "ko&gl=KR&ceid=KR:ko"
     url = (
         "https://news.google.com/rss/search"
-        f"?q={quote(query)}&hl=ko&gl=KR&ceid=KR:ko"
+        f"?q={quote(query)}&hl={locale}"
     )
     resp = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT)
     resp.raise_for_status()
@@ -189,6 +190,7 @@ def fetch_google_news(query: str) -> list[Article]:
                 title=title,
                 url=entry.get("link", ""),
                 source=outlet or "출처 미상",
+                language=language,
                 published=published,
                 summary=_clean(entry.get("summary", ""))[:300],
                 query=query,

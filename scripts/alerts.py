@@ -1,7 +1,8 @@
-"""15분마다 긴급 보고 후보를 확인. AI 호출·Git 커밋 없이 Telegram으로 알림."""
+"""15분 수집과 주간 30분 AI 선별·묶음 알림을 별도 작업으로 실행."""
 from __future__ import annotations
 
 import argparse
+import html
 import logging
 import re
 import sys
@@ -11,13 +12,14 @@ from urllib.parse import urlsplit
 
 import yaml
 
-from . import storage, preferences
+from . import storage, preferences, rolling, screening
 from .classify import is_blocked
 from .config import ROOT, env, load_config
 from .dedupe import similarity
 from .models import Article, now_kst
 from .notify import send_telegram
-from .sources import KST, fetch_google_news, fetch_naver, naver_available
+from .render import article_anchor
+from .sources import KST, fetch_google_news, fetch_naver, fetch_trade_feeds, naver_available
 
 log = logging.getLogger(__name__)
 
@@ -46,7 +48,7 @@ def urgent_reason(article, rules, options=None):
                 return topic
     if re.search(rules["exclude_title"], title, re.I):
         return None
-    if options and any(word.casefold() in title.casefold() for word in options.get("watch", [])):
+    if rules.get("topics_delivery") != "daily" and options and any(word.casefold() in title.casefold() for word in options.get("watch", [])):
         return {"id": "watch", "label": "관심 키워드", "action": "설정한 관심 키워드가 포함된 소식입니다"}
     for rule in rules["rules"]:
         if re.search(rule["scope"], title, re.I) and re.search(rule["trigger"], title, re.I):
@@ -82,7 +84,15 @@ def gather(rules):
     if not any(ok for _, ok in results):
         raise RuntimeError("모든 긴급 뉴스 검색 실패")
     log.info("검색 성공 %d/%d", sum(ok for _, ok in results), len(results))
-    return [a for articles, _ in results for a in articles]
+    articles = [a for articles, _ in results for a in articles]
+    if rules.get("include_trade"):
+        articles.extend(fetch_trade_feeds())
+    for query in rules.get("foreign_queries", []):
+        try:
+            articles.extend(fetch_google_news(f"{query} when:26h", language="en"))
+        except Exception:
+            log.warning("해외 뉴스 검색 실패 — 국내 수집은 유지")
+    return articles
 
 
 def read_state():
@@ -140,6 +150,8 @@ def select_alerts(articles, state, rules, now, config, options=None):
     selected = []
     known = list(state["sent"])
     for article in sorted(articles, key=lambda a: a.published, reverse=True):
+        if article.language != "ko":
+            continue  # 해외 뉴스는 아침 분석 전용
         published = published_at(article)
         if not published or not cutoff <= published <= now + timedelta(minutes=5):
             continue
@@ -147,7 +159,19 @@ def select_alerts(articles, state, rules, now, config, options=None):
             continue
         if is_blocked(article, config):
             continue
+        decision = next((d for d in state.get("screening", {}).get("checked", []) if d["id"] == article.id), None)
+        if rules.get("ai_screening"):
+            if not decision:
+                continue
+            if not decision["urgent"]:
+                continue
+            if any(old.get("ai_event") == decision["event_key"] and
+                   datetime.fromisoformat(old["sent_at"]) >= now-timedelta(hours=24) for old in known):
+                continue
         reason = urgent_reason(article, rules, options)
+        if reason and reason.get("kind") == "topic" and rules.get("topics_delivery") == "daily":
+            # 관심 주제라도 실제 사고·확정 정책 규칙에 해당하면 즉시 알린다.
+            reason = urgent_reason(article, {**rules, "topics": []}, options)
         if not reason or already_sent(article, reason, known, rules["similarity_threshold"]):
             continue
         if options and options.get("mode") == "strict":
@@ -159,7 +183,8 @@ def select_alerts(articles, state, rules, now, config, options=None):
                 continue
         selected.append((article, reason))
         known.append({"id": article.id, "title": article.title, "rule": reason["id"],
-                      "topic": topic_key(article, reason), "sent_at": now.isoformat()})
+                      "topic": topic_key(article, reason), "sent_at": now.isoformat(),
+                      "ai_event": decision["event_key"] if decision else ""})
         if len(selected) >= rules["max_per_run"]:
             break
     return selected
@@ -175,13 +200,34 @@ def message(article, reason):
             "제목 기준 자동 선별입니다. 보고 전 원문과 공식 발표를 확인해주세요.")
 
 
-def run(rules, *, dry_run=False, send_test=False):
+def html_message(article, reason):
+    return (f"🚨 <b>{html.escape(reason['label'])}</b>\n\n{article_anchor(article)}\n\n"
+            f"보도 시각: {html.escape(article.published)} KST\n"
+            f"확인할 점: {html.escape(reason['action'])}\n\n"
+            "제목 기준 자동 선별입니다. 보고 전 원문과 공식 발표를 확인해주세요.")
+
+
+def bundled_message(items, now):
+    parts = [f"🚨 <b>긴급 뉴스 {len(items)}건</b> · {now.strftime('%m/%d %H:%M')} KST"]
+    for n, (article, reason) in enumerate(items, 1):
+        linked = Article.from_dict(article.to_dict())
+        linked.title, linked.source = linked.title[:240], linked.source[:60]
+        parts.append(f"<b>{n}. {html.escape(reason['label'][:60])}</b>\n{article_anchor(linked)}\n"
+                     f"확인할 점: {html.escape(reason['action'][:120])}")
+    parts.append("제목·매체 요약을 기준으로 선별했습니다. 중요한 사실은 원문을 확인해 주세요.")
+    return "\n\n".join(parts)
+
+
+def run(rules, *, dry_run=False, send_test=False, collect_only=False, screen_only=False, no_send=False):
     if not rules["enabled"]:
         log.info("긴급 알림 비활성화")
         return 0
-    if not dry_run and (not env("TELEGRAM_BOT_TOKEN") or not env("TELEGRAM_CHAT_ID")):
+    if not dry_run and not collect_only and (not env("TELEGRAM_BOT_TOKEN") or not env("TELEGRAM_CHAT_ID")):
         raise RuntimeError("Telegram 토큰과 수신 대화가 필요합니다")
     now = now_kst()
+    if now.hour < 6 and not collect_only:
+        log.info("00:00~05:59 휴식 시간 — AI·알림 생략")
+        return 0
     # DB 접근 실패 시 기록 없이 발송하지 않습니다.
     state = read_state()
     if state is None:
@@ -190,12 +236,30 @@ def run(rules, *, dry_run=False, send_test=False):
                  "sent": []}
     trim_history(state, rules, now)
     prefs = preferences.load()
-    queries = list(rules["queries"])
+    config = load_config()
+    queries = list(dict.fromkeys([*rules["queries"],
+                                *(q for sector in config.sectors for q in sector.queries)]))
     words = sorted({word for opts in prefs["chats"].values() for word in opts.get("watch", [])})
     if words:
         # One extra query regardless of number of rooms; quote metacharacters.
         queries.append(' OR '.join('"'+re.sub(r'["\\\r\n]', ' ', word)+'"' for word in words))
-    articles = gather({**rules, "queries": queries})
+    if screen_only:
+        articles = rolling.daily_articles(state, now)
+    else:
+        articles = gather({**rules, "queries": queries, "include_trade": True,
+                           "foreign_queries": config._raw.get("foreign_queries", []),
+                           "lookback_hours": max(26, rules["lookback_hours"])})
+        rolling.accumulate(state, articles, now, config)
+    # 알림을 꺼두었거나 전송이 실패해도 아침 분석용 수집은 유지한다.
+    if not dry_run:
+        save_state(state)
+    if collect_only:
+        log.info("기사 수집·저장 완료: %d건. AI 호출·발송 없음", len(articles))
+        return 0
+    if not dry_run:
+        if rules.get("ai_screening"):
+            screening.run(state, now, save_state)
+            articles = screening.approved(state, rolling.daily_articles(state, now), urgent=True)
     deliveries = []
     for chat, options in prefs["chats"].items():
         if not options.get("urgent", True) or preferences.quiet_now(options, now):
@@ -206,13 +270,17 @@ def run(rules, *, dry_run=False, send_test=False):
             today_count += sum(datetime.fromisoformat(old['sent_at']).astimezone(KST).date() == now.date()
                                for old in prefs.get('spark_recent', []))
         daily_limit = options.get("limit", 0)
-        remaining = min(rules["max_per_run"], max(0, daily_limit-today_count)) if daily_limit else rules["max_per_run"]
+        per_run = min(3, rules["max_per_run"])
+        remaining = min(per_run, max(0, daily_limit-today_count)) if daily_limit else per_run
         if not remaining:
             continue
         candidates = select_alerts(articles, {**state, "sent": history},
-                                   {**rules, "max_per_run": remaining}, now, load_config(), options)
+                                   {**rules, "max_per_run": remaining}, now, config, options)
         deliveries.extend((chat, a, reason) for a, reason in candidates)
     log.info("수집 %d건 · 신규 긴급 보고 후보 %d건(수신방별)", len(articles), len(deliveries))
+    if no_send:
+        log.info("검증 모드 — AI 판정은 저장, 실제 알림·발송 이력은 생략")
+        return len(deliveries)
     if dry_run:
         for chat, article, reason in deliveries:
             log.info("[시험] %s: %s", reason["label"], article.title)
@@ -220,16 +288,22 @@ def run(rules, *, dry_run=False, send_test=False):
     # 첫 발송 전 저장 권한까지 검증. 발송별 저장으로 부분 실패도 재처리 가능.
     save_state(state)
     failures = 0
+    grouped = {}
     for chat, article, reason in deliveries:
+        grouped.setdefault(chat, []).append((article, reason))
+    for chat, items in grouped.items():
         try:
-            if send_telegram([message(article, reason)], chat_id=chat) != 1:
+            if send_telegram([bundled_message(items, now)], chat_id=chat, parse_mode="HTML") != 1:
                 raise RuntimeError("긴급 Telegram 발송 실패")
         except Exception:
-            failures += 1
+            failures += len(items)
             continue
-        state["sent"].append({"id": article.id, "title": article.title[:500], "chat": chat,
-                              "topic": topic_key(article, reason),
-                              "rule": reason["id"], "sent_at": now.isoformat()})
+        for article, reason in items:
+            state["sent"].append({"id": article.id, "title": article.title[:500], "chat": chat,
+                                  "topic": topic_key(article, reason),
+                                  "ai_event": next((d["event_key"] for d in state.get("screening", {}).get("checked", [])
+                                                    if d["id"] == article.id), ""),
+                                  "rule": reason["id"], "sent_at": now.isoformat()})
         trim_history(state, rules, now)
         save_state(state)
     state["last_checked_at"] = now.isoformat()
@@ -242,10 +316,10 @@ def run(rules, *, dry_run=False, send_test=False):
     if failures:
         raise RuntimeError("일부 구독방의 긴급 발송 실패")
     if send_test:
-        if send_telegram(["✅ 긴급 뉴스 알림 가동 확인\n24시간, 15분 간격으로 확인합니다.\n"
+        if send_telegram(["✅ 긴급 뉴스 알림 가동 확인\n24시간 15분 수집, 주간 30분 AI 선별입니다.\n"
                           "석유관리원 중대 보도 · 석유/가스 사고 · 공급 차질 · 긴급 정책\n"
                           "해당 소식이 없으면 알림을 보내지 않습니다.\n"
-                          "AI 호출 없이 선별하며, 검색 반영·예약 실행 지연이 있을 수 있습니다."]) != 1:
+                          "06:00~23:30에 30분마다 새 기사를 AI로 선별하며, 예약 실행 지연이 있을 수 있습니다."]) != 1:
             raise RuntimeError("가동 확인 메시지 실패")
     log.info("긴급 알림 %d건 발송 완료", len(deliveries))
     return len(deliveries)
@@ -255,10 +329,15 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="긴급 보고 후보 알림")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--send-test", action="store_true")
+    parser.add_argument("--no-send", action="store_true")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--collect-only", action="store_true")
+    mode.add_argument("--screen-only", action="store_true")
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
     try:
-        run(load_rules(), dry_run=args.dry_run, send_test=args.send_test)
+        run(load_rules(), dry_run=args.dry_run, send_test=args.send_test,
+            collect_only=args.collect_only, screen_only=args.screen_only, no_send=args.no_send)
     except Exception as exc:
         log.error("긴급 알림 중단 (%s). 설정·소스·DB 연결을 확인하세요.", type(exc).__name__)
         return 1

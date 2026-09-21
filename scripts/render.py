@@ -11,6 +11,8 @@
 from __future__ import annotations
 
 import html
+import re
+from urllib.parse import urlsplit
 
 from .config import Config
 from .digest import Digest
@@ -50,6 +52,8 @@ def _dupe_suffix(article: Article) -> str:
 # ---------------------------------------------------------------------------
 
 def render_plain(digest: Digest, config: Config, excluded: set[str] | None = None) -> str:
+    if digest.analysis:
+        return render_analysis(digest, excluded)
     lines = [_title_line(digest.date), ""]
 
     quotes = _quotes(digest)
@@ -71,6 +75,73 @@ def render_plain(digest: Digest, config: Config, excluded: set[str] | None = Non
         lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
+
+
+def render_analysis(digest, excluded=None):
+    lines = [_title_line(digest.date), "", "[AI 종합 분석]", ""]
+    issues = digest.visible_issues(excluded)
+    articles = {a.id: a for a in digest.articles}
+    for n, issue in enumerate(issues, 1):
+        lines.extend([f"{n}. {issue['title']}", f"핵심: {issue['summary']}",
+                      f"새로운 점: {issue['change']}", f"업무 관련성: {issue['impact']}"])
+        for id in issue["article_ids"]:
+            a = articles[id]
+            lines.extend([f"근거: {a.title} / {a.source}", a.url])
+        lines.append("")
+    if not issues:
+        lines.extend(["오늘 발송할 주요 새 이슈가 없습니다.", ""])
+    lines.append("수집된 제목·매체 요약을 바탕으로 작성한 AI 분석입니다. 중요 사실은 원문 확인이 필요합니다.")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def article_anchor(article):
+    label = html.escape(f"{article.title} / {article.source}")
+    url = urlsplit(article.url)
+    if url.scheme not in ("http", "https") or not url.netloc:
+        return label
+    return f'<a href="{html.escape(article.url, quote=True)}">{label}</a>'
+
+
+def telegram_chunks(digest, config, excluded=None):
+    """HTML 태그·링크를 자르지 않고 이슈/기사 경계에서 분할한다."""
+    esc = html.escape
+    blocks = [f"<b>{esc(_title_line(digest.date))}</b>"]
+    if digest.analysis:
+        blocks.append("<b>AI 종합 분석</b>")
+        articles = {a.id: a for a in digest.articles}
+        issues = digest.visible_issues(excluded)
+        for n, issue in enumerate(issues, 1):
+            blocks.append("\n".join([f"<b>{n}. {esc(issue['title'])}</b>",
+                f"핵심: {esc(issue['summary'])}", f"새로운 점: {esc(issue['change'])}",
+                f"업무 관련성: {esc(issue['impact'])}",
+                *(f"↗ {article_anchor(articles[id])}" for id in issue["article_ids"])]))
+        if not issues:
+            blocks.append("오늘 발송할 주요 새 이슈가 없습니다.")
+        blocks.append("수집된 제목·매체 요약을 바탕으로 작성한 AI 분석입니다. 중요 사실은 원문 확인이 필요합니다.")
+    else:
+        if digest.market:
+            blocks.append(esc(brief_line(_quotes(digest))))
+        risky = digest.risk_articles(excluded)
+        if risky:
+            blocks.append(esc(_risk_summary(risky)))
+        for title, articles in digest.by_sector(config, excluded):
+            blocks.append(f"<b>{esc(title)}</b>")
+            blocks.extend(article_anchor(a) for a in articles)
+    chunks, current = [], ""
+    def length(text):
+        return len(html.unescape(re.sub(r"<[^>]*>", "", text)).encode("utf-16-le")) // 2
+    for block in blocks:
+        if length(block) > TELEGRAM_LIMIT:
+            raise ValueError("Telegram 이슈 길이 초과")
+        candidate = current + "\n\n" + block if current else block
+        if length(candidate) > TELEGRAM_LIMIT:
+            chunks.append(current)
+            current = block
+        else:
+            current = candidate
+    if current:
+        chunks.append(current)
+    return chunks
 
 
 def split_for_telegram(text: str, limit: int = TELEGRAM_LIMIT) -> list[str]:
@@ -109,6 +180,8 @@ def split_for_telegram(text: str, limit: int = TELEGRAM_LIMIT) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def render_markdown(digest: Digest, config: Config, excluded: set[str] | None = None) -> str:
+    if digest.analysis:
+        return render_analysis(digest, excluded)
     year, month, day = digest.date.split("-")
     lines = [f"# 한국석유관리원 일일언론동향 ({year}년 {int(month)}월 {int(day)}일)", ""]
 
@@ -162,6 +235,9 @@ a{color:#1a5490;text-decoration:none}
 
 
 def render_email(digest: Digest, config: Config, excluded: set[str] | None = None) -> str:
+    if digest.analysis:
+        return ("<!doctype html><html><meta charset='utf-8'><body><div style='white-space:pre-wrap'>"
+                + "\n\n".join(telegram_chunks(digest, config, excluded)) + "</div></body></html>")
     esc = html.escape
     parts = [
         "<!doctype html><html><head><meta charset='utf-8'>",

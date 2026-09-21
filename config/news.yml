@@ -162,3 +162,10 @@ limits:
 
 # 몇 시간 이내 기사만 수집할지
 lookback_hours: 26
+
+# 해외 원문은 누적 저장 후 아침 분석에만 포함합니다.
+foreign_queries:
+  - '(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com'
+  - '(oil OR fuel) (reserves OR release OR supply) (site:iea.org OR site:eia.gov)'
+  - 'OPEC (output OR production OR cuts) site:reuters.com'
+  - '(fuel OR diesel OR aviation) (standards OR regulation OR mandate) site:ec.europa.eu'

@@ -21,9 +21,9 @@ export const HELP = `뉴스 봇 명령어 (설정은 소유자만 변경)
 
 단톡방: 봇 초대 후 소유자가 /subscribe@news_joongyubot 전송.
 방마다 별도 설정, 최대 5개 방. 관심/제외 키워드 각 10개.
-관심 키워드는 일반 소식도 알릴 수 있습니다. 제목에 글자가 포함되면 매칭됩니다.
+관심 키워드는 수집에 반영합니다. 일반 관심 소식은 아침 분석에서 선별하고 실제 긴급 보도만 즉시 알립니다.
 strict: 같은 주제 24시간 중복 억제. standard: 기존 제목 유사도 기준.
-명령 응답은 즉시, 뉴스 검색은 15분 간격입니다.`;
+명령 응답은 즉시, 수집은 15분 간격, AI 선별은 06:00~23:30 매시 00/30분입니다.`;
 
 export function webhookSecret() {
   const key = (process.env.SUPABASE_SERVICE_ROLE_KEY || '').trim();
@@ -93,7 +93,7 @@ export function command(update, stored) {
     text = '이 방의 뉴스 구독을 해제했습니다. /subscribe로 다시 연결할 수 있습니다.';
   } else if (!options) text = '먼저 이 방에서 /subscribe를 보내주세요.';
   else if (cmd === 'status') {
-    text = `긴급: ${options.urgent?'켜짐':'꺼짐'} · 아침 동향: ${options.daily?'켜짐':'꺼짐'}\n강도: ${options.mode} · 일일 상한: ${options.limit || '없음'}\n휴식(KST): ${options.quiet}\n관심: ${options.watch.join(', ') || '없음'}\n제외: ${options.exclude.join(', ') || '없음'}\n뉴스 확인: 24시간 15분 간격 (예약/검색 지연 가능)`;
+    text = `긴급: ${options.urgent?'켜짐':'꺼짐'} · 아침 동향: ${options.daily?'켜짐':'꺼짐'}\n강도: ${options.mode} · 일일 상한: ${options.limit || '없음'}\n휴식(KST): ${options.quiet}\n관심: ${options.watch.join(', ') || '없음'}\n제외: ${options.exclude.join(', ') || '없음'}\n수집: 24시간 15분 간격 · AI 알림: 06:00~23:30 매시 00/30분 (예약 지연 가능)`;
   } else if (['urgent','daily'].includes(cmd) && ['on','off'].includes(args)) {
     options[cmd] = args === 'on'; changed = true; text = `✅ ${cmd} ${args} 적용했습니다.`;
   } else if (cmd === 'mode' && ['strict','standard'].includes(args)) {

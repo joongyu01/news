@@ -1,17 +1,13 @@
-name: 긴급 뉴스 알림
+name: 기사 수집·누적 저장
 
 on:
   schedule:
-    # 정각 혼잡을 피해 매시 7/22/37/52분. GitHub 사정으로 지연될 수 있습니다.
+    # 수집만 24시간 15분 간격. AI 선별은 screening.yml에서 별도 실행.
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "발송·기록 저장 없이 후보만 확인"
-        type: boolean
-        default: false
-      send_test:
-        description: "점검 후 가동 확인 메시지 1회 발송"
+        description: "수집만 확인 (저장 없음)"
         type: boolean
         default: false
 
@@ -24,9 +20,9 @@ permissions:
   actions: read
 
 jobs:
-  alerts:
+  collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,29 +30,17 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -q -r requirements.txt
-      - name: Gemini 검토 보고 전달
-        if: inputs.dry_run != true
+      - name: 기사 수집·누적 저장 (AI 호출 없음)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python -m scripts.spark_relay
-      - name: 긴급 후보 확인 및 발송
-        if: ${{ !cancelled() }}
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           DRY_RUN: ${{ inputs.dry_run }}
-          SEND_TEST: ${{ inputs.send_test }}
         run: |
-          args=()
+          args=(--collect-only)
           [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
-          [ "$SEND_TEST" = "true" ] && args+=(--send-test)
           python -m scripts.alerts "${args[@]}"
       - name: GitHub 사용량·운영 기록 갱신
         if: ${{ !cancelled() && inputs.dry_run != true }}

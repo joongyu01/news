@@ -20,6 +20,7 @@ def article(title="울산 정유공장 폭발, 근로자 2명 부상", url="http
 class AlertTests(unittest.TestCase):
     def setUp(self):
         self.rules = alerts.load_rules()
+        self.rules["ai_screening"] = False  # 이 클래스는 규칙/전송을 검증; AI는 test_screening에서 검증
         self.state = {"version": 1, "started_at": (NOW-timedelta(hours=6)).isoformat(), "sent": []}
         pref = patch.object(alerts.preferences, "load", return_value={"owner":"test", "chats":{"test":alerts.preferences.defaults()}})
         pref.start()
@@ -65,9 +66,8 @@ class AlertTests(unittest.TestCase):
             with self.subTest(title=title):
                 selected = alerts.select_alerts([article(title)], self.state, self.rules,
                                                 NOW, load_config(), {"mode": "strict"})
-                self.assertEqual(len(selected), 1)
-                self.assertEqual(selected[0][1]["id"], topic)
-                self.assertTrue(alerts.message(*selected[0]).startswith("📰 관심 주제 업데이트"))
+                self.assertEqual(selected, [], "일반 관심 주제는 아침 분석으로 모읍니다")
+                self.assertEqual(alerts.urgent_reason(article(title), self.rules)["id"], topic)
 
     def test_requested_topics_do_not_broaden_to_unrelated_company_news(self):
         for title in ["한국가스공사 신입사원 채용", "석유공사 통합안전관리 시스템 도입",
@@ -113,7 +113,7 @@ class AlertTests(unittest.TestCase):
             self.assertEqual(self.simulate(), 1)
             self.assertEqual(self.simulate(), 0)
         self.assertEqual(send.call_count, 1)
-        self.assertEqual(set(db[0]["sent"][0]), {"id", "title", "rule", "sent_at", "chat", "topic"})
+        self.assertEqual(set(db[0]["sent"][0]), {"id", "title", "rule", "sent_at", "chat", "topic", "ai_event"})
 
     @patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "test", "TELEGRAM_CHAT_ID": "test"})
     def test_db_read_or_initial_write_failure_never_sends(self):

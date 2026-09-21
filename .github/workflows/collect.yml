@@ -1,68 +1,75 @@
-# 매일 06:40 (KST) 뉴스를 모아 검토용 초안을 만듭니다.
-# 08:00 발송보다 80분 앞서 도는 이유는, GitHub 예약 작업이 혼잡한 시간대에
-# 10~20분씩 밀리는 일이 흔하기 때문입니다. 그 여유를 감안한 간격입니다.
-name: 동향 수집
+# 매일 08:00 KST, 누적 기사 분석 성공 후 바로 조간 발송.
+name: 조간 AI 분석·발송
 
 on:
   schedule:
-    - cron: "40 21 * * *"      # 21:40 UTC = 06:40 KST
-  workflow_dispatch:            # 수동 실행 (Actions 탭의 Run workflow)
+    - cron: "0 23 * * *"
+  workflow_dispatch:
     inputs:
       dry_run:
-        description: "저장·알림 없이 결과만 로그로 확인"
+        description: "AI 분석 결과만 확인 (조간 저장·발송 없음, 사용량은 기록)"
         type: boolean
         default: false
 
 concurrency:
-  group: news-collect
+  group: news-urgent-alerts
   cancel-in-progress: false
 
 permissions:
   contents: write
 
 jobs:
-  collect:
+  morning:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+      GEMINI_FREE_TIER_CONFIRMED: ${{ vars.GEMINI_FREE_TIER_CONFIRMED }}
+      GEMINI_MODEL: gemini-3.1-flash-lite
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
-
       - run: pip install -r requirements.txt
-
-      - name: 초안 생성
+      - name: 누적 기사 조간 분석
+        id: analyze
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          REVIEW_URL: ${{ vars.REVIEW_URL }}
+          DRY_RUN: ${{ inputs.dry_run }}
         run: |
-          if [ "${{ inputs.dry_run }}" = "true" ]; then
-            python -m scripts.collect --dry-run
-          else
-            python -m scripts.collect
-          fi
-
-      - name: 초안 커밋
+          args=(--no-notify)
+          [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
+          python -m scripts.morning "${args[@]}"
+      - name: 조간 발송
+        id: dispatch
         if: ${{ inputs.dry_run != true }}
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python -m scripts.dispatch --skip-sent
+      - name: 실패 알림
+        if: ${{ failure() }}
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python -m scripts.failure --stage morning
+      - name: 조간 기록 커밋
+        if: ${{ success() && inputs.dry_run != true }}
         run: |
           git config user.name "news-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/drafts
+          git add data/drafts archive
           git diff --staged --quiet && { echo "변경 없음"; exit 0; }
-          git commit -m "수집: $(TZ=Asia/Seoul date +%Y-%m-%d) 동향 초안"
-          # 검토 페이지가 같은 시각에 제외 목록을 커밋할 수 있어 재시도합니다.
+          git commit -m "조간: $(TZ=Asia/Seoul date +%Y-%m-%d) AI 분석·발송"
           for attempt in 1 2 3; do
             git push && exit 0
-            echo "push 실패 — 재시도 $attempt"
-            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
             sleep $((attempt * 5))
           done
           exit 1

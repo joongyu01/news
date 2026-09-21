@@ -11,7 +11,7 @@ from .config import DRAFT_DIR, EXCLUSION_DIR, load_config
 from .digest import Digest, load_exclusions
 from .models import now_kst
 from .notify import send_email, send_digest as send_telegram
-from .render import render_email, render_markdown, render_plain, split_for_telegram
+from .render import render_email, render_markdown, render_plain, telegram_chunks
 
 log = logging.getLogger(__name__)
 
@@ -19,12 +19,16 @@ log = logging.getLogger(__name__)
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="일일언론동향 발송")
     parser.add_argument("--date", help="발송할 날짜 (기본: 오늘, KST)")
+    parser.add_argument("--skip-sent", action="store_true", help="이미 아카이브된 날짜의 자동 재발송 방지")
     parser.add_argument("--dry-run", action="store_true",
                         help="실제 발송 없이 최종본만 출력")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
     date = args.date or now_kst().strftime("%Y-%m-%d")
+    if args.skip_sent and archive.archive_path(date).exists():
+        log.info("이미 발송된 날짜 — 재발송 생략")
+        return 0
 
     draft_path = DRAFT_DIR / f"{date}.json"
     try:
@@ -36,7 +40,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     if (use_supabase and remote_draft is None) or (not use_supabase and not draft_path.exists()):
         # 수집이 실패했으면 빈 동향을 보내지 않고 조용히 멈춥니다.
-        log.error("초안이 없습니다: %s — 06:40 수집 작업 로그를 확인하세요", draft_path)
+        log.error("초안이 없습니다: %s — 08:00 조간 분석 작업 로그를 확인하세요", draft_path)
         return 1
 
     config = load_config()
@@ -48,7 +52,7 @@ def main(argv: list[str] | None = None) -> int:
     shown = sum(len(items) for _, items in digest.by_sector(config, excluded))
     log.info("초안 %d건 · 담당자 제외 %d건 · 발송 %d건", total, len(excluded), shown)
 
-    if shown == 0:
+    if shown == 0 and not digest.analysis:
         log.error("발송할 기사가 없습니다 — 중단합니다")
         return 1
 
@@ -61,8 +65,8 @@ def main(argv: list[str] | None = None) -> int:
         print("\n" + plain)
         return 0
 
-    chunks = split_for_telegram(plain)
-    sent = send_telegram(chunks)
+    chunks = telegram_chunks(digest, config, excluded)
+    sent = send_telegram(chunks, parse_mode="HTML")
     log.info("텔레그램 %d개 메시지 발송", sent)
 
     count = 0

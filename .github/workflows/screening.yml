@@ -1,0 +1,61 @@
+name: 새 기사 AI 선별·긴급 알림
+
+on:
+  schedule:
+    # KST 06:00~23:30 매시 00/30분. GitHub 예약은 지연될 수 있습니다.
+    - cron: "0,30 0-14,21-23 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "저장된 AI 판정으로 후보만 확인 (API·저장·발송 없음)"
+        type: boolean
+        default: false
+      no_send:
+        description: "API 선별·판정 저장은 실행하고 Telegram 발송은 생략"
+        type: boolean
+        default: false
+
+concurrency:
+  group: news-urgent-alerts
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -q -r requirements.txt
+      - name: 저장된 새 기사 AI 선별
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+          GEMINI_FREE_TIER_CONFIRMED: ${{ vars.GEMINI_FREE_TIER_CONFIRMED }}
+          GEMINI_MODEL: gemini-3.1-flash-lite
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          NO_SEND: ${{ inputs.no_send }}
+        run: |
+          args=(--screen-only)
+          [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
+          [ "$NO_SEND" = "true" ] && args+=(--no-send)
+          python -m scripts.alerts "${args[@]}"
+      - name: AI 선별 실패 알림
+        if: ${{ failure() }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python -m scripts.failure --stage screening
