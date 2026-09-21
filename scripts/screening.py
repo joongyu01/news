@@ -34,14 +34,14 @@ SCHEMA = {"type": "object", "properties": {"decisions": {"type": "array", "maxIt
     "required": ["decisions"], "additionalProperties": False}
 
 
-def run(state, now, persist):
+def run(state, now, persist, *, force=False):
     articles = rolling.daily_articles(state, now)
     current_ids = {a.id for a in articles}
     record = state.setdefault("screening", {})
     checked = [d for d in record.get("checked", []) if d["id"] in current_ids]
     record["checked"] = checked
     last = record.get("last_attempt_at")
-    if last and now - datetime.fromisoformat(last) < timedelta(minutes=25):
+    if not force and last and now - datetime.fromisoformat(last) < timedelta(minutes=25):
         return
     known = {d["id"] for d in checked}
     pending = [a for a in articles if a.id not in known][:MAX_BATCH]

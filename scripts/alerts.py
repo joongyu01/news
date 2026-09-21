@@ -258,7 +258,7 @@ def run(rules, *, dry_run=False, send_test=False, collect_only=False, screen_onl
         return 0
     if not dry_run:
         if rules.get("ai_screening"):
-            screening.run(state, now, save_state)
+            screening.run(state, now, save_state, force=no_send)
             articles = screening.approved(state, rolling.daily_articles(state, now), urgent=True)
     deliveries = []
     for chat, options in prefs["chats"].items():

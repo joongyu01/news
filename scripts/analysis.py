@@ -140,7 +140,13 @@ def request_json(key, model, payload):
         headers={"x-goog-api-key": key, "Content-Type": "application/json"},
         json=payload, timeout=(10, 120))
     if not response.ok:
-        logging.getLogger(__name__).warning("Gemini API HTTP %d", response.status_code)
+        detail = ""
+        try:
+            detail = str(response.json().get("error", {}).get("message", ""))
+            detail = re.sub(r"(?:AIza|AQ\.)[\w.-]+", "[redacted]", detail.replace(key, "[redacted]"))[:300]
+        except (ValueError, AttributeError, TypeError):
+            pass
+        logging.getLogger(__name__).warning("Gemini API HTTP %d: %s", response.status_code, detail)
         raise RuntimeError(f"Gemini API HTTP {response.status_code}; 분석·발송 중단")
     data = response.json()
     candidates = data.get("candidates", [])
