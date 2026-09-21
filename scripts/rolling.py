@@ -5,7 +5,8 @@ from urllib.parse import urlsplit
 
 from .models import Article
 from .sources import KST
-from .editorial import prepare
+from .editorial import prepare, relevance
+from .classify import is_blocked
 
 MAX_ARTICLES = 600
 MAX_BYTES = 900_000
@@ -21,6 +22,14 @@ def published(article):
 
 def accumulate(state, incoming, now, config):
     previous = state.get("pool", {})
+    rejected = {a['id']: a for a in previous.get('rejected', [])
+                if a.get('observed_at', '') >= (now-timedelta(hours=48)).isoformat()}
+    for a in incoming:
+        score, _, reason = relevance(a)
+        if not score or is_blocked(a, config):
+            rejected[a.id] = {'id': a.id, 'title': a.title[:180], 'source': a.source[:60],
+                              'published': a.published, 'observed_at': now.isoformat(),
+                              'reason': '수집 규칙 제외: ' + (reason if not score else '기본 차단 키워드')}
     items = [Article.from_dict(a) for a in previous.get("articles", [])]
     by_id = {}
     for a in prepare([*items, *incoming], config):
@@ -39,6 +48,7 @@ def accumulate(state, incoming, now, config):
     while len(json.dumps(articles, ensure_ascii=False).encode("utf-8")) > MAX_BYTES:
         articles.pop()
     state["pool"] = {"articles": articles, "updated_at": now.isoformat(),
+                     "rejected": sorted(rejected.values(), key=lambda a:a['observed_at'], reverse=True)[:150],
                      "started_at": previous.get("started_at", now.isoformat())}
 
 

@@ -7,12 +7,18 @@ from . import storage, preferences
 from .config import env
 
 COMMANDS = {
-    "usage": "GitHub 사용량·API 잔여 한도 (개인 대화)",
-    "logs": "수집·발송 시각, 건수와 상세 로그",
-    "help": "사용법", "status": "현재 방 설정", "subscribe": "이 방 구독",
-    "unsubscribe": "이 방 구독 해제", "urgent": "긴급 알림 on/off", "daily": "아침 동향 on/off",
-    "mode": "강도 strict/standard", "limit": "하루 상한 0~20", "quiet": "휴식 시간 22-07/off",
-    "watch": "관심 키워드 add/remove/list", "exclude": "제외 키워드 add/remove/list",
+    "settings": "봇 전체 현재 설정", "status": "전체 설정 확인", "help": "명령어 사용법",
+    "articles": "수집 기사와 판정 (개인톡)", "excluded": "기사 제외 이유 (개인톡)",
+    "urgent_on": "전체 긴급 알림 켜기", "urgent_off": "전체 긴급 알림 끄기",
+    "daily_on": "전체 조간 알림 켜기", "daily_off": "전체 조간 알림 끄기",
+    "mode_strict": "엄격한 중복 억제", "mode_standard": "기본 중복 억제",
+    "limit": "상한 지정: /limit_5", "quiet": "휴식 지정: /quiet_22_07", "quiet_off": "추가 휴식 해제",
+    "watch_add": "관심 추가: /watch_add_키워드", "watch_remove": "관심 제거: /watch_remove_키워드",
+    "watch_list": "관심 키워드 목록", "exclude_add": "제외 추가: /exclude_add_키워드",
+    "exclude_remove": "제외 제거: /exclude_remove_키워드", "exclude_list": "제외 키워드 목록",
+    "subscribe": "이 방 구독", "unsubscribe": "이 방 구독 해제",
+    "usage": "사용량 (개인톡)", "logs": "운영 기록 (개인톡)",
+    "logs_collect": "조간 기록", "logs_alerts": "수집 기록", "logs_dispatch": "발송 기록",
 }
 
 
@@ -29,6 +35,17 @@ def main():
                           json={'update_id':0,'message':{'text':'/status','chat':{'id':0,'type':'private'},'from':{'id':0}}},timeout=20)
     if check.status_code != 200 or check.json().get('method') != 'sendMessage':
         raise RuntimeError('Webhook endpoint not ready')
+    for command in ('/settings', '/articles', '/excluded'):
+        check = requests.post(url+'/api/telegram', headers={'X-Telegram-Bot-Api-Secret-Token':secret},
+                              json={'update_id':0,'message':{'text':command,'chat':{'id':0,'type':'private'},'from':{'id':0}}}, timeout=20)
+        body = check.json()
+        if check.status_code != 200 or body.get('method') != 'sendMessage' or not body.get('text') or '실패' in body['text'] and command == '/settings':
+            raise RuntimeError('Bot query verification failed')
+        if command != '/settings' and body.get('parse_mode') != 'HTML':
+            raise RuntimeError('Article query not deployed')
+        if body['text'].startswith('기사 판정 조회에 실패'):
+            raise RuntimeError('Article database query failed')
+        print(f'{command} 응답 검증 완료 (실제 메시지 발송 없음)')
 
     def api(method, data):
         r=requests.post(f'https://api.telegram.org/bot{token}/{method}',json=data,timeout=20)
@@ -39,6 +56,8 @@ def main():
 
     me=api('getMe',{})
     api('setMyCommands',{'commands':[{'command':cmd,'description':desc} for cmd,desc in COMMANDS.items()]})
+    if {c['command'] for c in api('getMyCommands',{})} != set(COMMANDS):
+        raise RuntimeError('Telegram command registration mismatch')
     api('setWebhook',{'url':url+'/api/telegram','secret_token':secret,'max_connections':1,
                       'allowed_updates':['message']})
     info=api('getWebhookInfo',{})

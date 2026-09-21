@@ -22,6 +22,12 @@ def issue(a):
 
 
 class RollingTests(unittest.TestCase):
+    def test_rule_exclusions_are_bounded_and_have_reasons(self):
+        state={}
+        rolling.accumulate(state,[article('금값 시세',f'https://n/{i}') for i in range(200)],NOW,load_config())
+        self.assertEqual(len(state['pool']['rejected']),150)
+        self.assertIn('투자',state['pool']['rejected'][0]['reason'])
+        self.assertEqual(state['pool']['articles'],[])
     def test_repeated_collection_preserves_previous_news_without_growing_duplicates(self):
         state = {"sent": [{"id": "history"}]}
         first = article("석유관리원 품질검사 확대", "https://news.test/a")
@@ -172,6 +178,7 @@ class MorningTests(unittest.TestCase):
         with patch.object(morning, "now_kst", return_value=NOW), patch.object(morning.storage, "enabled", return_value=True), \
              patch.object(morning.storage, "read", return_value=None), patch.object(morning.alerts, "read_state", return_value=self.state), \
              patch.object(analysis, "analyze", side_effect=RuntimeError()), patch.object(morning.storage, "save_draft") as save, \
+             patch.object(morning.preferences, "load", return_value={"global": {"exclude": []}}), \
              patch.object(morning, "notify_reviewer") as notify:
             with self.assertRaises(RuntimeError):
                 morning.main([])

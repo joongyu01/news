@@ -26,7 +26,14 @@ def load():
         raise RuntimeError("Invalid bot settings")
     if not isinstance(payload.get("chats"), dict) or len(payload["chats"]) > 5:
         raise RuntimeError("Invalid subscriptions")
-    return payload
+    return normalize(payload)
+
+
+def normalize(payload):
+    import copy
+    common = {**defaults(), **payload.get("global", payload["chats"].get(payload["owner"], next(iter(payload["chats"].values()), {})))}
+    return {**payload, "global": common,
+            "chats": {chat: copy.deepcopy(common) for chat in payload["chats"]}}
 
 
 def quiet_now(settings, now):

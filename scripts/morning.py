@@ -3,7 +3,7 @@ import argparse
 import logging
 from datetime import datetime, timedelta
 
-from . import alerts, analysis, rolling, storage, screening
+from . import alerts, analysis, rolling, storage, screening, preferences
 from .collect import notify_reviewer
 from .config import DRAFT_DIR, load_config
 from .dedupe import dedupe
@@ -16,8 +16,9 @@ from .render import render_plain
 log = logging.getLogger(__name__)
 
 
-def build(config, state, now, previous=None, persist=None):
+def build(config, state, now, previous=None, persist=None, exclude_words=None):
     raw = rolling.daily_articles(state, now)
+    raw = [a for a in raw if not any(w.casefold() in a.title.casefold() for w in (exclude_words or []))]
     if alerts.load_rules().get("ai_screening"):
         record = state.get("screening", {})
         if not record.get("updated_at") or now-datetime.fromisoformat(record["updated_at"]) > timedelta(hours=3):
@@ -56,7 +57,9 @@ def main(argv=None):
     yesterday = (now-timedelta(days=1)).strftime("%Y-%m-%d")
     old = storage.read("news_drafts", yesterday)
     previous = (old or {}).get("analysis", {}).get("issues", [])
-    digest = build(config, alerts.read_state(), now, previous, alerts.save_state)
+    prefs = preferences.load()
+    words = prefs.get('global', prefs.get('chats', {}).get(prefs.get('owner'), {})).get('exclude', [])
+    digest = build(config, alerts.read_state(), now, previous, alerts.save_state, words)
     if args.dry_run:
         print(render_plain(digest, config))
         return 0

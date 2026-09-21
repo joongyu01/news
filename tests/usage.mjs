@@ -41,8 +41,8 @@ assert.equal(command(msg('/logs 수집'),stored).logs,'collect');
 assert.equal(command(msg('logs'),stored).logs,'');
 assert.equal(command(msg('/logs unknown'),stored).logs,undefined);
 for (const c of ['/usage','/logs','usage','logs']) {
-  assert.equal(command(msg(c,999,-1),stored),null);
-  assert.match(command(msg(c,999),stored).text,/소유자 전용/);
+  assert.match(command(msg(c,999,-1),stored).text,/개인 대화/);
+  assert.ok(command(msg(c,999),stored));
   assert.match(command(msg(c,123,-1),stored).text,/개인 대화/);
 }
 assert.equal(command(msg('/logs@other_bot'),stored),null);

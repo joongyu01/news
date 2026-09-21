@@ -7,6 +7,12 @@ from tests.test_alerts import NOW, article
 
 
 class PreferencesTests(unittest.TestCase):
+    def test_shared_settings_override_all_rooms_and_owner_migrates(self):
+        payload={'owner':'1','chats':{'1':{**preferences.defaults(),'watch':['석유']},'-2':preferences.defaults()}}
+        result=preferences.normalize(payload)
+        self.assertEqual(result['chats']['-2']['watch'],['석유'])
+        result['global']['urgent']=False
+        self.assertFalse(preferences.normalize(result)['chats']['1']['urgent'])
     def test_defaults_match_user_choice(self):
         self.assertEqual(preferences.defaults()['mode'],'standard')
         self.assertEqual(preferences.defaults()['limit'],0)
