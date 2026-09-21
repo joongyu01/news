@@ -78,9 +78,9 @@ def run(state, now, persist, *, force=False):
                            and d["freshness"] in ("new", "update"))
         return decisions
     previous = [{k: d[k] for k in ("event_key", "reason")} for d in checked[-80:]]
-    payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION}]},
+    payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION + "\n출력 구조: " + json.dumps(SCHEMA, ensure_ascii=False)}]},
                "contents": [{"role": "user", "parts": [{"text": json.dumps({"now": now.isoformat(), "today": rows, "previous": previous}, ensure_ascii=False)}]}],
-               "generationConfig": {"responseMimeType": "application/json", "responseJsonSchema": SCHEMA,
+               "generationConfig": {"responseMimeType": "application/json",
                                     "maxOutputTokens": 6000, "thinkingConfig": {"thinkingLevel": "low"}}}
     decisions, usage, attempts, model = analysis.complete(payload, validate, state, persist)
     by_id = {d["id"]: d for d in checked}

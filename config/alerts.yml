@@ -1,4 +1,4 @@
-# 제목만으로 보고 필요성이 높은 소식을 선별합니다. AI API를 호출하지 않습니다.
+# AI의 시급성 판정과 규칙을 함께 적용하고, 같은 시간대의 기사는 묶어서 알립니다.
 enabled: true
 ai_screening: true
 topics_delivery: daily

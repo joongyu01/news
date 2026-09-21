@@ -1,4 +1,4 @@
-"""하루 한 번 Gemini API로 근거가 있는 주요 이슈만 구조화한다."""
+"""무료 Gemini API 교대 호출과 누적 기사 조간 분석."""
 import json
 import logging
 import re
@@ -119,9 +119,9 @@ def analyze(articles, previous=None, state=None, persist=None):
     rows = input_articles(articles)
     context = {"today": rows, "previous": (previous or [])[:5]}
     # 기본/예비 각각 최대 한 번. 같은 키 중복, 유료 모델 대체, 검색 도구는 사용하지 않는다.
-    payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION}]},
+    payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION + "\n출력 구조: " + json.dumps(SCHEMA, ensure_ascii=False)}]},
                "contents": [{"role": "user", "parts": [{"text": json.dumps(context, ensure_ascii=False)}]}],
-               "generationConfig": {"responseMimeType": "application/json", "responseJsonSchema": SCHEMA,
+               "generationConfig": {"responseMimeType": "application/json",
                                     "maxOutputTokens": 6000, "thinkingConfig": {"thinkingLevel": "low"}}}
     def validate_report(data):
         issues = validate(data, {row["id"] for row in rows})
