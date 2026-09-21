@@ -125,6 +125,9 @@ def analyze(articles, previous=None, state=None, persist=None):
                                     "maxOutputTokens": 6000, "thinkingConfig": {"thinkingLevel": "low"}}}
     def validate_report(data):
         issues = validate(data, {row["id"] for row in rows})
+        if not previous:
+            for issue in issues:
+                issue["change"] = "전일 비교 근거 부족"
         foreign_ids = {row["id"] for row in rows if row["language"] == "en"}
         if sum(bool(foreign_ids.intersection(i["article_ids"])) for i in issues) > 2:
             raise ValueError("해외 이슈 상한 초과")

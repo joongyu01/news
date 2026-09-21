@@ -97,6 +97,12 @@ class AnalysisTests(unittest.TestCase):
             analysis.analyze([self.a])
         self.assertEqual(post.call_count, 1)
 
+    def test_missing_previous_report_cannot_claim_a_day_over_day_change(self):
+        generated = dict(issue(self.a), change="전일 대비 피해가 증가함")
+        with patch.object(analysis.requests, "post", return_value=self.reply({"issues": [generated]})):
+            result = analysis.analyze([self.a])
+        self.assertEqual(result["issues"][0]["change"], "전일 비교 근거 부족")
+
     def test_usage_metadata_retains_only_numeric_token_counts(self):
         data = self.reply().json()
         data['usageMetadata'] = {'promptTokenCount': 8123, 'candidatesTokenCount': 2200,
