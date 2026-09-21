@@ -1,6 +1,11 @@
 name: AI API 진단
 on:
   workflow_dispatch:
+    inputs:
+      compare_routes:
+        description: "3.8 호출 경로 비교 (키당 2회, 뉴스 발송 없음)"
+        type: boolean
+        default: false
 concurrency:
   group: news-urgent-alerts
   cancel-in-progress: false
@@ -24,4 +29,10 @@ jobs:
           GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
           GEMINI_FREE_TIER_CONFIRMED: ${{ vars.GEMINI_FREE_TIER_CONFIRMED }}
           GEMINI_MODEL: gemini-3.8-flash
-        run: python -m scripts.check_ai
+          COMPARE_ROUTES: ${{ inputs.compare_routes }}
+        run: |
+          if [ "$COMPARE_ROUTES" = "true" ]; then
+            python -m scripts.check_ai_routes
+          else
+            python -m scripts.check_ai
+          fi
