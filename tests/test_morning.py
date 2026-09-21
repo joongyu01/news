@@ -74,6 +74,8 @@ class RollingTests(unittest.TestCase):
 
 class AnalysisTests(unittest.TestCase):
     def setUp(self):
+        delay=patch.object(analysis.time, "sleep")
+        delay.start(); self.addCleanup(delay.stop)
         p = patch.dict(os.environ, {"GEMINI_API_KEY": "primary-test", "GEMINI_API_KEY_BACKUP": "backup-test",
                                    "GEMINI_FREE_TIER_CONFIRMED": "true", "GEMINI_MODEL": "gemini-3.8-flash"})
         p.start(); self.addCleanup(p.stop)
@@ -95,11 +97,11 @@ class AnalysisTests(unittest.TestCase):
         self.assertNotIn("primary-test", post.call_args_list[0].args[0])
         self.assertNotIn("tools", post.call_args.kwargs["json"])
 
-    def test_both_quotas_exhausted_stop_at_two_calls(self):
+    def test_all_models_exhausted_stop_at_three_calls(self):
         with patch.object(analysis.requests, "post", return_value=Mock(ok=False, status_code=429)) as post:
             with self.assertRaises(RuntimeError):
                 analysis.analyze([self.a])
-        self.assertEqual(post.call_count, 2)
+        self.assertEqual(post.call_count, 3)
 
     def test_primary_success_does_not_call_backup(self):
         with patch.object(analysis.requests, "post", return_value=self.reply()) as post:
@@ -133,7 +135,7 @@ class AnalysisTests(unittest.TestCase):
              patch.object(analysis.requests, "post", side_effect=requests.Timeout()) as post:
             with self.assertRaises(RuntimeError):
                 analysis.analyze([self.a])
-        self.assertEqual(post.call_count, 2)
+        self.assertEqual(post.call_count, 3)
         self.assertNotEqual(post.call_args_list[0].args[0], post.call_args_list[1].args[0])
 
     def test_unknown_citations_duplicate_issues_and_injected_markup_rejected(self):

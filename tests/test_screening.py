@@ -75,6 +75,8 @@ class ScreeningTests(unittest.TestCase):
 
 class RotationTests(unittest.TestCase):
     def setUp(self):
+        delay=patch.object(analysis.time, "sleep")
+        delay.start(); self.addCleanup(delay.stop)
         p=patch.dict(os.environ,{'GEMINI_API_KEY':'key-a','GEMINI_API_KEY_BACKUP':'key-b',
                                 'GEMINI_FREE_TIER_CONFIRMED':'true'})
         p.start(); self.addCleanup(p.stop)
@@ -108,6 +110,16 @@ class RotationTests(unittest.TestCase):
             analysis.complete({},lambda d:d,state,Mock())
         self.assertEqual(req.call_count,1)
         self.assertEqual(state['ai']['requests'],40)
+
+    def test_lite_fallback_keeps_validation_rotation_and_budget(self):
+        state={}
+        with patch.object(analysis,'request_json',side_effect=[RuntimeError(),RuntimeError(),({'ok':True},{'totalTokenCount':7})]) as req:
+            result=analysis.complete({},lambda d:d,state,Mock())
+        self.assertEqual(result[2:],(3,'gemini-3.1-flash-lite'))
+        self.assertEqual([c.args[0] for c in req.call_args_list],['key-a','key-b','key-a'])
+        self.assertEqual(state['ai']['requests'],3)
+        self.assertEqual(state['ai']['usage']['totalTokenCount'],7)
+        self.assertEqual([c.args[0] for c in analysis.time.sleep.call_args_list],[5,10])
 
     def test_fallback_records_actual_model_and_next_job_returns_to_primary(self):
         state={}

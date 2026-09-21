@@ -2,6 +2,7 @@
 import json
 import logging
 import re
+import time
 import requests
 
 from .config import env
@@ -77,7 +78,7 @@ def validate(data, allowed):
 
 
 def complete(payload, validator, state=None, persist=None):
-    """3.8 실패 시 다음 키의 3.7로 한 번 대체. 요청마다 키를 교대한다."""
+    """3.8 → 3.7 → 3.1 Flash-Lite 순으로 대체. 요청마다 키를 교대한다."""
     if env("GEMINI_FREE_TIER_CONFIRMED") != "true":
         raise RuntimeError("두 API 프로젝트의 무료 등급 확인이 필요합니다")
     keys = list(dict.fromkeys(k for k in [env("GEMINI_API_KEY"), env("GEMINI_API_KEY_BACKUP")] if k))
@@ -89,13 +90,15 @@ def complete(payload, validator, state=None, persist=None):
     state = state if state is not None else {}
     ledger = state.setdefault("ai", {})
     start = int(ledger.get("next_key", 0)) % len(keys)
-    models = [model, "gemini-3.7-flash"] if model == "gemini-3.8-flash" else [model] * len(keys)
+    models = [model, "gemini-3.7-flash", "gemini-3.1-flash-lite"] if model == "gemini-3.8-flash" else [model] * len(keys)
     for attempt, active_model in enumerate(models):
         today = now_kst().date().isoformat()
         if ledger.get("date") != today:
             ledger.update(date=today, requests=0, usage={})
         if ledger.get("requests", 0) >= 40:
             raise RuntimeError("하루 AI 요청 상한 40회 도달")
+        if attempt:
+            time.sleep(5 * (2 ** (attempt - 1)))
         index = (start + attempt) % len(keys)
         ledger["requests"] = ledger.get("requests", 0) + 1
         ledger["next_key"] = (index + 1) % len(keys)
@@ -119,7 +122,7 @@ def complete(payload, validator, state=None, persist=None):
 def analyze(articles, previous=None, state=None, persist=None):
     rows = input_articles(articles)
     context = {"today": rows, "previous": (previous or [])[:5]}
-    # 3.8 실패 시 3.7 한 번. 두 요청 모두 동일한 검증·무료 등급·횟수 제한 적용.
+    # 모델당 한 번. 모든 요청에 동일한 검증·무료 등급·횟수 제한 적용.
     payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION + "\n출력 구조: " + json.dumps(SCHEMA, ensure_ascii=False)}]},
                "contents": [{"role": "user", "parts": [{"text": json.dumps(context, ensure_ascii=False)}]}],
                "generationConfig": {"responseMimeType": "application/json",
