@@ -69,7 +69,7 @@ class RollingTests(unittest.TestCase):
 class AnalysisTests(unittest.TestCase):
     def setUp(self):
         p = patch.dict(os.environ, {"GEMINI_API_KEY": "primary-test", "GEMINI_API_KEY_BACKUP": "backup-test",
-                                   "GEMINI_FREE_TIER_CONFIRMED": "true", "GEMINI_MODEL": "gemini-3.1-flash-lite"})
+                                   "GEMINI_FREE_TIER_CONFIRMED": "true", "GEMINI_MODEL": "gemini-3.8-flash"})
         p.start(); self.addCleanup(p.stop)
         self.a = article()
 

@@ -96,7 +96,7 @@ class RotationTests(unittest.TestCase):
 
     def test_daily_cap_and_persist_failure_make_zero_requests(self):
         from scripts.models import now_kst
-        state={'ai':{'date':now_kst().date().isoformat(),'requests':50}}
+        state={'ai':{'date':now_kst().date().isoformat(),'requests':40}}
         with patch.object(analysis,'request_json') as req, self.assertRaises(RuntimeError):
             analysis.complete({},lambda d:d,state,Mock())
         req.assert_not_called()

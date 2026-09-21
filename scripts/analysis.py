@@ -83,7 +83,7 @@ def complete(payload, validator, state=None, persist=None):
     keys = list(dict.fromkeys(k for k in [env("GEMINI_API_KEY"), env("GEMINI_API_KEY_BACKUP")] if k))
     if not keys:
         raise RuntimeError("GitHub Actions Secret GEMINI_API_KEY가 필요합니다")
-    model = env("GEMINI_MODEL", "gemini-3.1-flash-lite")
+    model = env("GEMINI_MODEL", "gemini-3.8-flash")
     if not re.fullmatch(r"gemini-[a-z0-9.-]+", model):
         raise ValueError("잘못된 Gemini 모델 이름")
     state = state if state is not None else {}
@@ -93,8 +93,8 @@ def complete(payload, validator, state=None, persist=None):
         today = now_kst().date().isoformat()
         if ledger.get("date") != today:
             ledger.update(date=today, requests=0, usage={})
-        if ledger.get("requests", 0) >= 50:
-            raise RuntimeError("하루 AI 요청 상한 50회 도달")
+        if ledger.get("requests", 0) >= 40:
+            raise RuntimeError("하루 AI 요청 상한 40회 도달")
         index = (start + attempt) % len(keys)
         ledger["requests"] = ledger.get("requests", 0) + 1
         ledger["next_key"] = (index + 1) % len(keys)

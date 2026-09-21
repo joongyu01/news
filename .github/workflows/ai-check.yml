@@ -23,5 +23,5 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
           GEMINI_FREE_TIER_CONFIRMED: ${{ vars.GEMINI_FREE_TIER_CONFIRMED }}
-          GEMINI_MODEL: gemini-3.1-flash-lite
+          GEMINI_MODEL: gemini-3.8-flash
         run: python -m scripts.check_ai
