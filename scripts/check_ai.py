@@ -11,11 +11,16 @@ def main():
         raise RuntimeError('먼저 수집을 실행하세요')
     base={'contents':[{'role':'user','parts':[{'text':'Return only JSON: {"decisions":[]}'}]}],
           'generationConfig':{'responseMimeType':'application/json','maxOutputTokens':512}}
-    variants=[('minimal',base)]
     thought=copy.deepcopy(base);thought['generationConfig']['thinkingConfig']={'thinkingLevel':'low'}
-    variants.append(('thinking',thought))
-    schema=copy.deepcopy(thought);schema['generationConfig']['responseJsonSchema']=screening.SCHEMA
-    variants.append(('schema',schema))
+    def portable(value):
+        if isinstance(value, dict):
+            return {k: portable(v) for k, v in value.items() if k != 'additionalProperties'}
+        if isinstance(value, list):
+            return [portable(v) for v in value]
+        return value
+    schema=copy.deepcopy(thought);schema['generationConfig']['responseJsonSchema']=portable(screening.SCHEMA)
+    legacy=copy.deepcopy(thought);legacy['generationConfig']['responseSchema']=portable(screening.SCHEMA)
+    variants=[('portable_json_schema',schema), ('portable_response_schema',legacy)]
     for name,payload in variants:
         try:
             result,usage,attempts,model=analysis.complete(payload,lambda d:d,state,alerts.save_state)
