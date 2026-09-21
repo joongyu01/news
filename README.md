@@ -74,6 +74,8 @@ AI가 근거로 사용한 기사를 제외하면 **그 기사를 인용한 이�
 
 ## 검증
 
+Actions의 `AI API 진단`은 수동 실행 전용입니다. 짧은 JSON 응답을 한 번 요청하고 실패 시 다른 키로 한 번만 재시도합니다. 뉴스 저장·발송 없이 API 사용량만 같은 하루 상한에 기록하며, 실패하면 작업도 실패합니다. 기사 선별의 `no_send`와 조간의 `dry_run`으로 실제 기사 분석을 발송 없이 확인할 수 있습니다.
+
 ```sh
 pip install -r requirements.txt
 python -m unittest discover -s tests -q
