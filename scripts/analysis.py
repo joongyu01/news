@@ -77,7 +77,7 @@ def validate(data, allowed):
 
 
 def complete(payload, validator, state=None, persist=None):
-    """기본/예비를 요청 단위로 교대. 두 워크플로는 같은 concurrency 그룹을 쓴다."""
+    """3.8 실패 시 다음 키의 3.7로 한 번 대체. 요청마다 키를 교대한다."""
     if env("GEMINI_FREE_TIER_CONFIRMED") != "true":
         raise RuntimeError("두 API 프로젝트의 무료 등급 확인이 필요합니다")
     keys = list(dict.fromkeys(k for k in [env("GEMINI_API_KEY"), env("GEMINI_API_KEY_BACKUP")] if k))
@@ -89,7 +89,8 @@ def complete(payload, validator, state=None, persist=None):
     state = state if state is not None else {}
     ledger = state.setdefault("ai", {})
     start = int(ledger.get("next_key", 0)) % len(keys)
-    for attempt in range(len(keys)):
+    models = [model, "gemini-3.7-flash"] if model == "gemini-3.8-flash" else [model] * len(keys)
+    for attempt, active_model in enumerate(models):
         today = now_kst().date().isoformat()
         if ledger.get("date") != today:
             ledger.update(date=today, requests=0, usage={})
@@ -101,24 +102,24 @@ def complete(payload, validator, state=None, persist=None):
         if persist:
             persist(state)  # 호출 전에 순번·횟수를 저장한다. 실패해도 같은 순번을 반복하지 않는다.
         try:
-            data, usage = request_json(keys[index], model, payload)
+            data, usage = request_json(keys[index], active_model, payload)
             result = validator(data)
             for field, value in usage.items():
                 ledger["usage"][field] = ledger["usage"].get(field, 0) + value
             if persist:
                 persist(state)
             logging.getLogger(__name__).info("AI 사용량: %s", json.dumps(usage))
-            return result, usage, attempt + 1, model
+            return result, usage, attempt + 1, active_model
         except (requests.RequestException, ValueError, RuntimeError, KeyError, TypeError, IndexError):
-            if attempt + 1 == len(keys):
-                raise RuntimeError("두 AI 키 분석 실패; 발송 중단") from None
-            logging.getLogger(__name__).warning("AI 응답 실패 — 다음 키 1회 시도")
+            if attempt + 1 == len(models):
+                raise RuntimeError("AI 기본·백업 분석 실패; 발송 중단") from None
+            logging.getLogger(__name__).warning("AI %s 응답 실패 — %s 백업 1회 시도", active_model, models[attempt + 1])
 
 
 def analyze(articles, previous=None, state=None, persist=None):
     rows = input_articles(articles)
     context = {"today": rows, "previous": (previous or [])[:5]}
-    # 기본/예비 각각 최대 한 번. 같은 키 중복, 유료 모델 대체, 검색 도구는 사용하지 않는다.
+    # 3.8 실패 시 3.7 한 번. 두 요청 모두 동일한 검증·무료 등급·횟수 제한 적용.
     payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION + "\n출력 구조: " + json.dumps(SCHEMA, ensure_ascii=False)}]},
                "contents": [{"role": "user", "parts": [{"text": json.dumps(context, ensure_ascii=False)}]}],
                "generationConfig": {"responseMimeType": "application/json",

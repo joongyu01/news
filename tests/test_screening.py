@@ -100,6 +100,22 @@ class RotationTests(unittest.TestCase):
         with patch.object(analysis,'request_json') as req, self.assertRaises(RuntimeError):
             analysis.complete({},lambda d:d,state,Mock())
         req.assert_not_called()
+
+    def test_fallback_cannot_exceed_daily_cap(self):
+        from scripts.models import now_kst
+        state={'ai':{'date':now_kst().date().isoformat(),'requests':39,'usage':{}}}
+        with patch.object(analysis,'request_json',side_effect=RuntimeError()) as req, self.assertRaises(RuntimeError):
+            analysis.complete({},lambda d:d,state,Mock())
+        self.assertEqual(req.call_count,1)
+        self.assertEqual(state['ai']['requests'],40)
+
+    def test_fallback_records_actual_model_and_next_job_returns_to_primary(self):
+        state={}
+        with patch.object(analysis,'request_json',side_effect=[RuntimeError(),({'ok':True},{}),({'ok':True},{})]) as req:
+            result=analysis.complete({},lambda d:d,state,Mock())
+            self.assertEqual(result[2:],(2,'gemini-3.7-flash'))
+            analysis.complete({},lambda d:d,state,Mock())
+        self.assertEqual([c.args[1] for c in req.call_args_list],['gemini-3.8-flash','gemini-3.7-flash','gemini-3.8-flash'])
         with patch.object(analysis,'request_json') as req, self.assertRaises(RuntimeError):
             analysis.complete({},lambda d:d,{},Mock(side_effect=RuntimeError()))
         req.assert_not_called()

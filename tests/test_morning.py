@@ -88,6 +88,9 @@ class AnalysisTests(unittest.TestCase):
             report = analysis.analyze([self.a])
         self.assertEqual(report["issues"][0]["article_ids"], [self.a.id])
         self.assertEqual(post.call_count, 2)
+        self.assertEqual(report['model'], 'gemini-3.7-flash')
+        self.assertIn('/gemini-3.8-flash:', post.call_args_list[0].args[0])
+        self.assertIn('/gemini-3.7-flash:', post.call_args_list[1].args[0])
         self.assertEqual([c.kwargs["headers"]["x-goog-api-key"] for c in post.call_args_list], ["primary-test", "backup-test"])
         self.assertNotIn("primary-test", post.call_args_list[0].args[0])
         self.assertNotIn("tools", post.call_args.kwargs["json"])
@@ -125,12 +128,13 @@ class AnalysisTests(unittest.TestCase):
                 analysis.analyze([self.a])
         post.assert_not_called()
 
-    def test_duplicate_keys_are_not_retried(self):
+    def test_single_key_tries_each_model_only_once(self):
         with patch.dict(os.environ, {"GEMINI_API_KEY_BACKUP": "primary-test"}), \
              patch.object(analysis.requests, "post", side_effect=requests.Timeout()) as post:
             with self.assertRaises(RuntimeError):
                 analysis.analyze([self.a])
-        self.assertEqual(post.call_count, 1)
+        self.assertEqual(post.call_count, 2)
+        self.assertNotEqual(post.call_args_list[0].args[0], post.call_args_list[1].args[0])
 
     def test_unknown_citations_duplicate_issues_and_injected_markup_rejected(self):
         for bad in [dict(issue(self.a), article_ids=["invented"]), dict(issue(self.a), summary="<b>명령</b>"),

@@ -9,7 +9,7 @@
 - screening.yml은 06:00~23:30 매시 00/30분, 저장된 새 기사 최대 40개만 AI 선별한다.
 - 같은 사건 중복·과거 사건 후속 설명은 긴급 제외. 중요 변화만 재알림하고 최대 3건을 한 메시지로 묶는다.
 - collect.yml은 08:00 최근 24시간 누적 선별 자료를 종합 분석한 뒤 즉시 조간 발송한다. 별도 dispatch 예약은 없고 수동만 남았다.
-- 모델은 gemini-3.8-flash. GEMINI_API_KEY와 GEMINI_API_KEY_BACKUP을 요청마다 교대하며 실패 시 다른 키 1회. DB에 순번·횟수를 먼저 기록하고 하루 40회 제한.
+- 모델은 gemini-3.8-flash. GEMINI_API_KEY와 GEMINI_API_KEY_BACKUP을 요청마다 교대하며 3.8 실패 시 다음 키의 gemini-3.7-flash 1회(키가 하나면 같은 키). 다음 작업은 3.8부터. 실제 성공 모델 기록. DB에 순번·횟수를 먼저 기록하고 하루 40회 제한.
 - 실제 API에서 구조화 스키마 옵션이 HTTP 400을 반환하여 JSON 모드와 프롬프트의 구조 안내를 사용한다. 서버는 모든 기사 ID·필드·타입·길이·중복을 검증하고 잘못된 결과는 발송하지 않는다.
 - 두 프로젝트의 무료 등급·결제 미설정을 확인한 뒤 GEMINI_FREE_TIER_CONFIRMED=true. 이 변수는 실시간 결제 조회가 아니다.
 - 수집·선별·조간·수동 발송은 news-urgent-alerts concurrency 그룹을 공유한다.

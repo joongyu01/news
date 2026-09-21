@@ -16,8 +16,8 @@ def main():
             raise ValueError('진단 응답 형식 오류')
         return data
     try:
-        _, usage, attempts, _ = analysis.complete(payload, validate, state, alerts.save_state)
-        print('API OK', usage, 'attempts', attempts, flush=True)
+        _, usage, attempts, model = analysis.complete(payload, validate, state, alerts.save_state)
+        print('API OK', model, usage, 'attempts', attempts, flush=True)
     except Exception as exc:
         print('API FAILED', type(exc).__name__, flush=True)
         return 1
