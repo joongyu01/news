@@ -48,11 +48,26 @@ class RollingTests(unittest.TestCase):
         rolling.accumulate(state, [], NOW+timedelta(hours=49), load_config())
         self.assertEqual(state["pool"]["articles"], [])
 
-    def test_missing_and_stale_pool_fail_instead_of_researching(self):
+    def test_missing_and_expired_pool_fail_instead_of_researching(self):
         with self.assertRaises(RuntimeError):
             rolling.daily_articles({}, NOW)
         with self.assertRaises(RuntimeError):
-            rolling.daily_articles({"pool": {"updated_at": (NOW-timedelta(hours=3)).isoformat()}}, NOW)
+            rolling.daily_articles({"pool": {"updated_at": (NOW-timedelta(hours=25)).isoformat()}}, NOW)
+
+    def test_delayed_collection_uses_only_articles_in_analysis_window(self):
+        recent = article(age=180)
+        expired = article(url="https://news.test/expired", age=25*60)
+        future = article(url="https://news.test/future", age=-60)
+        state = {"pool": {"updated_at": (NOW-timedelta(hours=3)).isoformat(),
+                          "articles": [a.to_dict() for a in [recent, expired, future]]}}
+        with self.assertLogs("scripts.rolling", level="WARNING") as captured:
+            result = rolling.daily_articles(state, NOW)
+        self.assertEqual([a.id for a in result], [recent.id])
+        self.assertIn("180분", captured.output[0])
+
+    def test_future_collection_timestamp_is_rejected(self):
+        with self.assertRaises(RuntimeError):
+            rolling.daily_articles({"pool": {"updated_at": (NOW+timedelta(minutes=6)).isoformat()}}, NOW)
 
     def test_real_sent_noise_is_excluded_without_dropping_key_policy(self):
         noise = ["금값 4390달러로 반등…유가 하락에 숏포지션 청산",

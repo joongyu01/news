@@ -1,5 +1,6 @@
 """15분 수집의 제한된 기사 풀. 기존 urgent 행의 단일 writer가 갱신한다."""
 import json
+import logging
 from datetime import datetime, timedelta
 from urllib.parse import urlsplit
 
@@ -57,8 +58,14 @@ def daily_articles(state, now, hours=24):
     if not pool:
         raise RuntimeError("누적 기사 풀이 없습니다. 15분 통합 수집을 먼저 실행하세요.")
     updated = datetime.fromisoformat(pool["updated_at"])
-    if not timedelta(minutes=-5) <= now-updated <= timedelta(hours=2):
-        raise RuntimeError("통합 수집이 2시간 이상 갱신되지 않아 분석을 중단합니다.")
+    age = now-updated
+    if not timedelta(minutes=-5) <= age <= timedelta(hours=hours):
+        logging.getLogger(__name__).error("누적 기사 수집 시각이 분석 기간(%d시간)을 벗어났습니다", hours)
+        raise RuntimeError("누적 기사 수집 시각이 분석 기간을 벗어났습니다")
+    if age > timedelta(hours=2):
+        logging.getLogger(__name__).warning(
+            "수집 갱신 지연: %d분 전. 최근 %d시간 안에 게시된 누적 기사만 분석합니다",
+            int(age.total_seconds()/60), hours)
     items = [Article.from_dict(a) for a in pool["articles"]]
     return [a for a in items if (when := published(a)) and
             now-timedelta(hours=hours) <= when <= now+timedelta(minutes=5)]
