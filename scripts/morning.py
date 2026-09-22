@@ -1,9 +1,9 @@
 """08:00: 누적 기사만 읽어 하루 한 번 분석하고 검토 초안을 저장한다."""
 import argparse
 import logging
-from datetime import datetime, timedelta
+from datetime import timedelta
 
-from . import alerts, analysis, rolling, storage, screening, preferences
+from . import alerts, analysis, rolling, storage, preferences
 from .collect import notify_reviewer
 from .config import DRAFT_DIR, load_config
 from .dedupe import dedupe
@@ -20,10 +20,13 @@ def build(config, state, now, previous=None, persist=None, exclude_words=None):
     raw = rolling.daily_articles(state, now)
     raw = [a for a in raw if not any(w.casefold() in a.title.casefold() for w in (exclude_words or []))]
     if alerts.load_rules().get("ai_screening"):
-        record = state.get("screening", {})
-        if not record.get("updated_at") or now-datetime.fromisoformat(record["updated_at"]) > timedelta(hours=3):
-            raise RuntimeError("정기 AI 선별 결과가 없거나 오래되었습니다")
-        raw = screening.approved(state, raw)
+        # 예약 선별 지연이 조간 전체를 막지 않도록 미판정 기사는 조간 AI가 직접 판단한다.
+        # 기존 명시적 무관 판정만 제외한다. 기사 시각은 daily_articles의 24시간 제한 적용.
+        decisions = {d['id']: d for d in state.get('screening', {}).get('checked', [])}
+        pending = sum(a.id not in decisions for a in raw)
+        raw = [a for a in raw if decisions.get(a.id, {}).get('relevant') is not False]
+        if pending:
+            log.info("미선별 누적 기사 %d건은 조간 AI가 직접 관련성 판단", pending)
     articles = dedupe(prepare(raw, config))
     report = analysis.analyze(articles, previous, state, persist)
     report["pool_started_at"] = state["pool"]["started_at"]

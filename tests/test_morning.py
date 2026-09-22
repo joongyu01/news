@@ -180,6 +180,23 @@ class MorningTests(unittest.TestCase):
             self.assertEqual(morning.main(["--dry-run"]), 0)
         build.assert_not_called()
 
+    def test_missing_or_stale_screening_does_not_block_morning(self):
+        for record in [{}, {'updated_at':(NOW-timedelta(hours=8)).isoformat(), 'checked':[]}]:
+            self.state['screening']=record
+            with patch.object(morning.alerts,'load_rules',return_value={'ai_screening':True}), \
+                 patch.object(analysis,'analyze',return_value={'version':1,'issues':[]}) as ai, \
+                 patch.object(morning,'market_brief',return_value=[]):
+                morning.build(load_config(),self.state,NOW)
+            self.assertIn(self.a.id,[a.id for a in ai.call_args.args[0]])
+
+    def test_known_irrelevant_articles_stay_excluded_from_morning(self):
+        self.state['screening']={'checked':[{'id':self.a.id,'relevant':False}]}
+        with patch.object(morning.alerts,'load_rules',return_value={'ai_screening':True}), \
+             patch.object(analysis,'analyze',return_value={'version':1,'issues':[]}) as ai, \
+             patch.object(morning,'market_brief',return_value=[]):
+            morning.build(load_config(),self.state,NOW)
+        self.assertEqual(ai.call_args.args[0],[])
+
     def test_ai_failure_never_saves_or_notifies(self):
         with patch.object(morning, "now_kst", return_value=NOW), patch.object(morning.storage, "enabled", return_value=True), \
              patch.object(morning.storage, "read", return_value=None), patch.object(morning.alerts, "read_state", return_value=self.state), \
