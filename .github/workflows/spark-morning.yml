@@ -1,0 +1,65 @@
+name: Spark 조간 검증·발송
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "접수 결과 검증만 실행 (저장·발송 없음)"
+        type: boolean
+        default: true
+
+concurrency:
+  group: news-urgent-alerts
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  morning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -q -r requirements.txt
+      - name: Spark 조간 접수 결과 검증
+        id: prepare
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=()
+          [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
+          python -m scripts.spark_morning "${args[@]}"
+      - name: 검증된 조간 발송
+        if: ${{ steps.prepare.outputs.ready == 'true' && inputs.dry_run != true }}
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python -m scripts.dispatch --skip-sent
+      - name: 실패 알림
+        if: ${{ failure() && inputs.dry_run != true }}
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python -m scripts.failure --stage morning
+      - name: 조간 발송 기록 저장
+        if: ${{ success() && steps.prepare.outputs.ready == 'true' && inputs.dry_run != true }}
+        run: |
+          git config user.name "news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/drafts archive
+          git diff --staged --quiet && exit 0
+          git commit -m "Spark 조간 분석·발송"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
+            sleep $((attempt * 5))
+          done
+          exit 1
