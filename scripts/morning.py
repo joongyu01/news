@@ -28,11 +28,20 @@ def build(config, state, now, previous=None, persist=None, exclude_words=None):
         if pending:
             log.info("미선별 누적 기사 %d건은 조간 AI가 직접 관련성 판단", pending)
     articles = dedupe(prepare(raw, config))
-    report = analysis.analyze(articles, previous, state, persist)
-    report["pool_started_at"] = state["pool"]["started_at"]
-    report["pool_updated_at"] = state["pool"]["updated_at"]
+    fallback_notice = ""
+    try:
+        report = analysis.analyze(articles, previous, state, persist)
+    except RuntimeError:
+        # 기사 신선도·관련성·담당자 제외 검사는 그대로 유지한다.
+        # 원문 예외에는 인증정보가 있을 수 있어 고정 문구만 공개한다.
+        report = {}
+        fallback_notice = "AI 분석 실패로 기본 스크랩을 보냅니다. 관련성·중복 제거 규칙을 적용했으며 AI 분석은 포함하지 않았습니다."
+        log.warning(fallback_notice)
+    if report:
+        report["pool_started_at"] = state["pool"]["started_at"]
+        report["pool_updated_at"] = state["pool"]["updated_at"]
     return Digest(date=now.strftime("%Y-%m-%d"), generated_at=now.strftime("%Y-%m-%d %H:%M"),
-                  articles=articles, analysis=report,
+                  articles=articles, analysis=report, fallback_notice=fallback_notice,
                   market=[q.__dict__ for q in market_brief()],
                   sectors=[{"id": s.id, "title": s.title, "limit": s.limit} for s in config.sectors],
                   collection_stats={"raw": len(raw), "fresh": len(raw), "classified": len(raw),
@@ -50,7 +59,7 @@ def main(argv=None):
         raise RuntimeError("누적 기사 분석에는 기존 Supabase 연결이 필요합니다")
     date = now.strftime("%Y-%m-%d")
     existing = storage.read("news_drafts", date)
-    if existing and existing.get("analysis", {}).get("version") == 1:
+    if existing and (existing.get("analysis", {}).get("version") == 1 or existing.get("fallback_notice")):
         # 워크플로 재실행은 API 재호출·담당자 검토 덮어쓰기를 하지 않는다.
         digest = Digest.from_dict(existing)
         if not args.dry_run:
@@ -70,7 +79,8 @@ def main(argv=None):
     digest.save(DRAFT_DIR / f"{date}.json")
     if not args.no_notify:
         notify_reviewer(digest, config)
-    log.info("누적 기사 %d건 → 핵심 이슈 %d개", len(digest.articles), len(digest.analysis["issues"]))
+    log.info("누적 기사 %d건 → 핵심 이슈 %d개, 기본 스크랩 %s", len(digest.articles),
+             len(digest.analysis.get("issues", [])), bool(digest.fallback_notice))
     return 0
 
 

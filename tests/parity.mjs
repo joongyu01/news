@@ -38,6 +38,7 @@ probe.state.data = {
   generated_at: input.digest.generated_at,
   market: input.digest.market,
   analysis: input.digest.analysis,
+  fallback_notice: input.digest.fallback_notice,
   sectors: input.digest.sectors.map((s) => ({
     ...s,
     articles: input.digest.articles.filter((a) => a.sector === s.id),

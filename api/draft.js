@@ -46,6 +46,7 @@ export default async function handler(req, res) {
     generated_at: d.generated_at || "",
     market: d.market || [],
     analysis: d.analysis || {},
+    fallback_notice: d.fallback_notice || "",
     sectors: sectors.map((s) => ({
       ...s,
       articles: (d.articles || []).filter((a) => a.sector === s.id),

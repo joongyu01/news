@@ -55,6 +55,8 @@ def render_plain(digest: Digest, config: Config, excluded: set[str] | None = Non
     if digest.analysis:
         return render_analysis(digest, excluded)
     lines = [_title_line(digest.date), ""]
+    if digest.fallback_notice:
+        lines += [digest.fallback_notice, ""]
 
     quotes = _quotes(digest)
     if quotes:
@@ -106,6 +108,8 @@ def telegram_chunks(digest, config, excluded=None):
     """HTML 태그·링크를 자르지 않고 이슈/기사 경계에서 분할한다."""
     esc = html.escape
     blocks = [f"<b>{esc(_title_line(digest.date))}</b>"]
+    if digest.fallback_notice:
+        blocks.append(esc(digest.fallback_notice))
     if digest.analysis:
         blocks.append("<b>AI 종합 분석</b>")
         articles = {a.id: a for a in digest.articles}
@@ -184,6 +188,8 @@ def render_markdown(digest: Digest, config: Config, excluded: set[str] | None = 
         return render_analysis(digest, excluded)
     year, month, day = digest.date.split("-")
     lines = [f"# 한국석유관리원 일일언론동향 ({year}년 {int(month)}월 {int(day)}일)", ""]
+    if digest.fallback_notice:
+        lines += [digest.fallback_notice, ""]
 
     quotes = _quotes(digest)
     if quotes:
@@ -245,6 +251,8 @@ def render_email(digest: Digest, config: Config, excluded: set[str] | None = Non
         f"<h1>{esc(_title_line(digest.date))}</h1>",
         f"<div class='meta'>수집 {esc(digest.generated_at)}</div>",
     ]
+    if digest.fallback_notice:
+        parts.append(f"<p>{esc(digest.fallback_notice)}</p>")
 
     quotes = _quotes(digest)
     if quotes:

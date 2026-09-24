@@ -212,15 +212,36 @@ class MorningTests(unittest.TestCase):
             morning.build(load_config(),self.state,NOW)
         self.assertEqual(ai.call_args.args[0],[])
 
-    def test_ai_failure_never_saves_or_notifies(self):
+    def test_ai_failure_saves_basic_scrap_with_notice_and_preview_parity(self):
         with patch.object(morning, "now_kst", return_value=NOW), patch.object(morning.storage, "enabled", return_value=True), \
              patch.object(morning.storage, "read", return_value=None), patch.object(morning.alerts, "read_state", return_value=self.state), \
              patch.object(analysis, "analyze", side_effect=RuntimeError()), patch.object(morning.storage, "save_draft") as save, \
              patch.object(morning.preferences, "load", return_value={"global": {"exclude": []}}), \
-             patch.object(morning, "notify_reviewer") as notify:
+             patch.object(morning, "notify_reviewer") as notify, \
+             patch.object(morning, "market_brief", return_value=[]), patch.object(Digest, "save"):
+            self.assertEqual(morning.main(["--no-notify"]), 0)
+        notify.assert_not_called()
+        d = Digest.from_dict(save.call_args.args[0].to_dict())
+        self.assertEqual(d.analysis, {})
+        self.assertTrue(d.fallback_notice)
+        self.assertIn(self.a.url, render_plain(d, load_config()))
+        self.assertEqual(js_plain(d), render_plain(d, load_config()))
+        self.assertNotIn(self.a.url, render_plain(d, load_config(), {self.a.id}))
+        self.assertIn(d.fallback_notice, telegram_chunks(d, load_config())[0])
+        self.assertIn(d.fallback_notice, render_email(d, load_config()))
+        with patch.object(morning, "now_kst", return_value=NOW), \
+             patch.object(morning.storage, "enabled", return_value=True), \
+             patch.object(morning.storage, "read", return_value=d.to_dict()), \
+             patch.object(morning, "build") as build:
+            self.assertEqual(morning.main(["--dry-run"]), 0)
+        build.assert_not_called()
+
+    def test_stale_pool_does_not_become_fallback(self):
+        self.state['pool']['updated_at'] = (NOW-timedelta(hours=25)).isoformat()
+        with patch.object(analysis, 'analyze') as ai:
             with self.assertRaises(RuntimeError):
-                morning.main([])
-        save.assert_not_called(); notify.assert_not_called()
+                morning.build(load_config(), self.state, NOW)
+        ai.assert_not_called()
 
     def test_hyperlinks_escape_titles_and_preserve_plain_copy(self):
         d = self.digest()

@@ -22,6 +22,7 @@ class Digest:
     sectors: list[dict[str, Any]] = field(default_factory=list)
     collection_stats: dict[str, int] = field(default_factory=dict)
     analysis: dict[str, Any] = field(default_factory=dict)
+    fallback_notice: str = ""
 
     def visible_issues(self, excluded=None):
         known = {a.id for a in self.articles}
@@ -72,6 +73,7 @@ class Digest:
             "sectors": self.sectors,
             "collection_stats": self.collection_stats,
             "analysis": self.analysis,
+            "fallback_notice": self.fallback_notice,
             "articles": [a.to_dict() for a in self.articles],
         }
 
@@ -84,6 +86,7 @@ class Digest:
             sectors=data.get("sectors", []),
             collection_stats=data.get("collection_stats", {}),
             analysis=data.get("analysis", {}),
+            fallback_notice=data.get("fallback_notice", ""),
             articles=[Article.from_dict(a) for a in data.get("articles", [])],
         )
 

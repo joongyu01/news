@@ -289,6 +289,7 @@ function riskSummary() {
 function plainText() {
   if (state.data.analysis?.version === 1) return analysisText();
   const out = [titleLine(state.date), ""];
+  if (state.data.fallback_notice) out.push(state.data.fallback_notice, "");
   const mk = marketLine();
   if (mk) out.push(mk, "");
   const rs = riskSummary();
