@@ -2,6 +2,7 @@ import {command, db, validSecret, isCommandText} from './_bot.js';
 import {json} from './_lib.js';
 import {logsText} from './_logs.js';
 import {auditText} from './_audit.js';
+import {aiUsageText} from './_ai_usage.js';
 
 export default async function handler(req,res) {
   if (req.method!=='POST') return json(res,405,{ok:false});
@@ -14,6 +15,8 @@ export default async function handler(req,res) {
       const {payload,revision}=rows[0];
       const result=command(req.body,payload);
       if(!result) return json(res,200,{ok:true});
+      if(result.aiUsage) result.text = await aiUsageText() + '\n\n' + result.text;
+      if(result.aiStatus) result.text = await aiUsageText('status');
       if(result.logs !== undefined) result.text = await logsText(payload.github_usage, result.logs);
       if(result.audit) { result.text = await auditText(payload, result.audit); result.parseMode = 'HTML'; }
       if(result.payload) {

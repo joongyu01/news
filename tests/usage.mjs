@@ -3,6 +3,7 @@ import {usageText} from '../api/_usage.js';
 import {formatLogs} from '../api/_logs.js';
 import {command, DEFAULTS, webhookSecret} from '../api/_bot.js';
 import handler from '../api/telegram.js';
+import {formatAiUsage,formatAiStatus} from '../api/_ai_usage.js';
 
 const now=Date.parse('2026-09-19T12:00:00Z');
 const snapshot={repository:'joongyu01/news', checked_at:'2026-09-19T11:55:00Z',visibility:'public',standard_runners:true,
@@ -33,14 +34,14 @@ assert.ok(text.length<4096);
 const stored={version:1,owner:'123',chats:{'123':structuredClone(DEFAULTS)},recent:[],github_usage:snapshot};
 let id=10;
 const msg=(text,from=123,chat=123)=>({update_id:id++,message:{text,from:{id:from},chat:{id:chat,type:chat<0?'group':'private'}}});
-for (const c of ['/usage','usage','Usage','/usage@news_joongyubot']) {
+for (const c of ['/usage','usage','Usage','/usage@news_joongyubot','/useage','useage','/useage@news_joongyubot']) {
   assert.match(command(msg(c),stored).text,/GitHub 뉴스 봇 사용량/);
   assert.equal(command(msg(c),stored).payload,undefined);
 }
 assert.equal(command(msg('/logs 수집'),stored).logs,'collect');
 assert.equal(command(msg('logs'),stored).logs,'');
 assert.equal(command(msg('/logs unknown'),stored).logs,undefined);
-for (const c of ['/usage','/logs','usage','logs']) {
+for (const c of ['/usage','/useage','/logs','usage','logs']) {
   assert.match(command(msg(c,999,-1),stored).text,/개인 대화/);
   assert.ok(command(msg(c,999),stored));
   assert.match(command(msg(c,123,-1),stored).text,/개인 대화/);
@@ -61,7 +62,7 @@ globalThis.fetch=async(url,opts)=>{
   return {ok:true,json:async()=>[alert]};
 };
 let response=res();await handler({method:'POST',headers,body:msg('usage')},response);
-assert.equal(response.code,200);assert.equal(calls.length,1);
+assert.equal(response.code,200);assert.equal(calls.length,2);
 assert.match(response.body.text,/API 호출 한도/);
 response=res();await handler({method:'POST',headers,body:msg('/logs')},response);
 assert.equal(response.code,200);assert.match(response.body.text,/저장 기사: 3건/);
@@ -73,3 +74,41 @@ globalThis.fetch=async(url)=>url.includes('news_bot_settings')
 response=res();await handler({method:'POST',headers,body:msg('/logs')},response);
 assert.equal(response.code,200);assert.match(response.body.text,/조회 실패/);
 console.log('Usage/log commands: authorization, stale/error reporting, counts, read-only webhook passed');
+
+const ai={ai:{date:'2026-09-19',requests:3,usage:{totalTokenCount:1936}},
+  groq_ai:{date:'2026-09-19',requests:10,usage:{total_tokens:20000},recent:[
+    {at:now/1000-3600,tokens:25000},{at:now/1000-86401,tokens:90000}]}};
+text=formatAiUsage(ai,now);
+assert.match(text,/남은 요청: 37회/); assert.match(text,/남은 요청: 30회/);
+assert.match(text,/남은 토큰 예산: 175,000/); assert.match(text,/167,200토큰 · 29회/);
+assert.match(text,/1,936/); assert.match(text,/남은 토큰: 미확인/);
+assert.match(formatAiUsage(ai,now+86400000),/남은 토큰 예산: 200,000/);
+assert.match(formatAiUsage(ai,now+86400000),/남은 요청: 40회/);
+assert.match(formatAiUsage(null,now),/사용 기록 없음/);
+assert.match(formatAiUsage({groq_ai:{date:'2026-09-19',requests:45}},now),/남은 요청: 0회/);
+assert.match(formatAiUsage({groq_ai:{...ai.groq_ai,recent:[{at:now/1000,tokens:-1}]}},now),/기록 부족/);
+assert.ok((text+'\n\n'+usageText(snapshot,now)).length<4096);
+response=res(); await handler({method:'POST',headers,body:msg('/useage')},response);
+assert.match(response.body.text,/AI 사용량 조회 실패/); assert.equal(response.code,200);
+assert.equal(command(msg('/api_status'),stored).aiStatus,true);
+assert.equal(command(msg('/api_usage'),stored).aiUsage,true);
+assert.match(command(msg('/api_help'),stored).text,/AI API 명령/);
+for(const c of ['/useage','/api_usage','/api_status','/api_help']) {
+  for(const [from,chat] of [[123,-1],[999,999],[999,123]]) {
+    const denied=command(msg(c,from,chat),stored);
+    assert.equal(denied.aiUsage,undefined); assert.equal(denied.aiStatus,undefined);
+    assert.match(denied.text,/소유자/);
+  }
+}
+text=formatAiStatus({ai:{last_status:'ok',last_model:'gemini-test',last_success_at:new Date(now).toISOString()},
+  groq_ai:{last_status:'requesting',last_attempt_at:new Date(now-11*60000).toISOString()}},now);
+assert.match(text,/마지막 호출 성공/); assert.match(text,/작업 중단/); assert.match(text,/gemini-test/);
+assert.doesNotMatch(formatAiStatus({ai:{last_model:'secret\nunsafe'}},now),/secret/);
+response=res(); await handler({method:'POST',headers,body:msg('/api_status')},response);
+assert.match(response.body.text,/AI 상태 조회 실패/); assert.equal(response.code,200);
+globalThis.fetch=async(url)=>({ok:true,json:async()=>url.includes('news_bot_settings')
+  ? [{payload:stored,revision:1}] : [{payload:ai}]});
+response=res(); await handler({method:'POST',headers,body:msg('/api_status')},response);
+assert.match(response.body.text,/AI API 상태/);
+response=res(); await handler({method:'POST',headers,body:msg('/useage')},response);
+assert.match(response.body.text,/Gemini/); assert.match(response.body.text,/Groq/);

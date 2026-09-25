@@ -14,7 +14,9 @@ export const HELP = `뉴스 봇 마스터 관리 (소유자 개인톡 전용)
 키워드 안의 언더바는 띄어쓰기: /watch_add_석유_품질
 /articles 수집 기사와 판정 · /articles_2 다음 페이지
 /excluded 제외·긴급 제외 사유 · /excluded_2 다음 페이지
-/usage 사용량 · /logs 운영 기록 (개인톡)
+/useage 또는 /usage AI 잔여 예산·GitHub 사용량 (개인톡)
+/api_status 최근 API 성공·실패 · /api_help API 명령 안내
+/logs 운영 기록 (개인톡)
 /logs_collect · /logs_alerts · /logs_dispatch
 /subscribe 이 방 구독 · /unsubscribe 이 방 구독 해제
 /subscribe_대화ID · /unsubscribe_대화ID 대상 방 구독 관리
@@ -60,7 +62,7 @@ export function command(update, stored) {
       || !Number.isSafeInteger(update.update_id) || !Number.isSafeInteger(m.chat?.id)
       || !Number.isSafeInteger(m.from?.id) || m.forward_origin
       || !['private','group','supergroup'].includes(m.chat?.type)) return null;
-  const input = /^(usage|logs)$/i.test(m.text.trim()) ? '/'+m.text.trim() : m.text.trim();
+  const input = /^(useage|usage|logs)$/i.test(m.text.trim()) ? '/'+m.text.trim() : m.text.trim();
   const match = /^\/([^\s@]+)(?:@([a-z0-9_]+))?(?:\s+(.*))?$/is.exec(input);
   if (!match || (match[2] && match[2].toLowerCase() !== 'news_joongyubot')) return null;
   const parts = match[1].split('_');
@@ -87,9 +89,15 @@ export function command(update, stored) {
       }), '단톡방의 참여자 명단이 아니라 봇의 발송 대상 목록입니다.'].join('\n');
     } else text = stored.daily_report?.text || '아직 일일 운영 요약이 없습니다. 매일 20:00 KST 예약이며 지연될 수 있습니다.';
   }
-  else if (cmd.toLowerCase() === 'usage') {
+  else if (['usage','useage'].includes(cmd)) {
+    if (!args) return {chat:m.chat.id, aiUsage:true, text:usageText(stored.github_usage)};
     text = m.chat.type !== 'private' ? '사용량은 봇과의 개인 대화에서 /usage로 확인해주세요.'
-      : args ? '/usage 또는 usage만 입력해주세요.' : usageText(stored.github_usage);
+      : '/useage 또는 /usage만 입력해주세요.';
+  }
+  else if (cmd === 'api') {
+    if (args === 'status') return {chat:m.chat.id, aiStatus:true};
+    if (args === 'usage') return {chat:m.chat.id, aiUsage:true, text:usageText(stored.github_usage)};
+    text = 'AI API 명령 (소유자 개인톡)\n/api_status 최근 성공·실패, 모델, 호출 시각\n/api_usage 사용 토큰·남은 봇 예산\n/useage · /usage 같은 사용량 조회\n/logs_alerts 수집·선별 운영 기록\n/logs_collect 조간 운영 기록\n조회는 AI를 호출하지 않습니다. 실시간 공급자 잔액·접속 시험은 아닙니다.';
   }
   else if (cmd === 'articles' || cmd === 'excluded') {
     if (m.chat.type !== 'private') text='기사 판정은 개인톡에서 /articles 또는 /excluded로 확인해주세요.';
@@ -151,5 +159,5 @@ export function command(update, stored) {
 }
 
 export function isCommandText(text) {
-  return typeof text === 'string' && (text.startsWith('/') || /^(usage|logs)$/i.test(text.trim()));
+  return typeof text === 'string' && (text.startsWith('/') || /^(useage|usage|logs)$/i.test(text.trim()));
 }

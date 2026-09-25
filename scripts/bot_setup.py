@@ -18,7 +18,8 @@ COMMANDS = {
     "watch_list": "관심 키워드 목록", "exclude_add": "제외 추가: /exclude_add_키워드",
     "exclude_remove": "제외 제거: /exclude_remove_키워드", "exclude_list": "제외 키워드 목록",
     "subscribe": "이 방 구독", "unsubscribe": "이 방 구독 해제",
-    "usage": "사용량 (개인톡)", "logs": "운영 기록 (개인톡)",
+    "usage": "Groq·Gemini 잔여 봇 예산 (개인톡)", "logs": "운영 기록 (개인톡)",
+    "api_status": "AI API 최근 성공·실패와 모델", "api_help": "AI API 명령 안내",
     "logs_collect": "조간 기록", "logs_alerts": "수집 기록", "logs_dispatch": "발송 기록",
 }
 

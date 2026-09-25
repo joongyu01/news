@@ -107,6 +107,7 @@ def complete(payload, validator, state=None, persist=None, *, morning=False, pro
         index = (start + attempt) % len(keys)
         ledger["requests"] = ledger.get("requests", 0) + 1
         ledger["next_key"] = (index + 1) % len(keys)
+        ledger.update(last_status="requesting", last_attempt_at=now_kst().isoformat(), last_model=active_model)
         if persist:
             persist(state)  # 호출 전에 순번·횟수를 저장한다. 실패해도 같은 순번을 반복하지 않는다.
         try:
@@ -114,11 +115,15 @@ def complete(payload, validator, state=None, persist=None, *, morning=False, pro
             result = validator(data)
             for field, value in usage.items():
                 ledger["usage"][field] = ledger["usage"].get(field, 0) + value
+            ledger.update(last_status="ok", last_success_at=now_kst().isoformat())
             if persist:
                 persist(state)
             logging.getLogger(__name__).info("AI 사용량: %s", json.dumps(usage))
             return result, usage, attempt + 1, active_model
         except (requests.RequestException, ValueError, RuntimeError, KeyError, TypeError, IndexError):
+            ledger.update(last_status="failed", last_failure_at=now_kst().isoformat())
+            if persist:
+                persist(state)
             if attempt + 1 == len(models):
                 raise RuntimeError("AI 기본·백업 분석 실패; 발송 중단") from None
             logging.getLogger(__name__).warning("AI %s 응답 실패 — %s 백업 1회 시도", active_model, models[attempt + 1])

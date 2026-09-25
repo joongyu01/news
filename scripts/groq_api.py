@@ -50,6 +50,7 @@ def complete(payload, validator, state, persist, *, morning=False):
     ledger['reserved_tokens'] += reserve
     reservation = {'at': now.timestamp(), 'tokens': reserve}
     ledger['recent'].append(reservation)
+    ledger.update(last_status='requesting', last_attempt_at=now.isoformat(), last_model=MODEL)
     if persist:
         persist(state)  # Reserve before sending; unknown failures keep the reservation.
     stage = 'request'
@@ -81,8 +82,14 @@ def complete(payload, validator, state, persist, *, morning=False):
         data = json.loads(choice['message']['content'])
         stage = 'validation'
         result = validator(data)
+        ledger.update(last_status='ok', last_success_at=now_kst().isoformat())
+        if persist:
+            persist(state)
         logging.getLogger(__name__).info('Groq API OK · %s · %s', MODEL, json.dumps(usage))
         return result, usage, 1, 'groq/'+MODEL
     except (requests.RequestException, ValueError, KeyError, TypeError, IndexError, RuntimeError):
+        ledger.update(last_status='failed', last_failure_at=now_kst().isoformat())
+        if persist:
+            persist(state)
         logging.getLogger(__name__).warning('Groq analysis failed at %s', stage)
         raise RuntimeError('Groq 분석 실패; 유료 모델 대체 없음') from None

@@ -30,6 +30,9 @@ class GroqTests(unittest.TestCase):
         self.assertEqual(post.call_count,1)
         gemini.assert_not_called()
         self.assertGreater(state['groq_ai']['reserved_tokens'],0)
+        self.assertEqual(state['groq_ai']['last_status'], 'failed')
+        self.assertIn('last_failure_at', state['groq_ai'])
+        self.assertNotIn('test-secret', json.dumps(state))
 
     def test_validation_and_usage(self):
         state={}
@@ -39,6 +42,8 @@ class GroqTests(unittest.TestCase):
         self.assertEqual(result[0],{'ok':True})
         self.assertEqual(state['groq_ai']['reserved_tokens'],17)
         self.assertEqual(result[-1],'groq/qwen/qwen3.8-27b')
+        self.assertEqual(state['groq_ai']['last_status'], 'ok')
+        self.assertIn('last_success_at', state['groq_ai'])
 
     def test_daily_and_input_caps(self):
         for state,payload in [({'groq_ai':{'date':now_kst().date().isoformat(),'requests':40,'reserved_tokens':0}},self.payload),

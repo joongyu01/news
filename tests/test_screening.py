@@ -119,6 +119,10 @@ class RotationTests(unittest.TestCase):
         self.assertEqual([c.args[0] for c in req.call_args_list],['key-a','key-b','key-a'])
         self.assertEqual(state['ai']['requests'],3)
         self.assertEqual(state['ai']['usage']['totalTokenCount'],7)
+        self.assertEqual(state['ai']['last_status'], 'ok')
+        self.assertEqual(state['ai']['last_model'], 'gemini-3.1-flash-lite')
+        self.assertIn('last_failure_at', state['ai'])
+        self.assertIn('last_success_at', state['ai'])
         self.assertEqual([c.args[0] for c in analysis.time.sleep.call_args_list],[5,10])
 
     def test_fallback_records_actual_model_and_next_job_returns_to_primary(self):
