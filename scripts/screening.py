@@ -52,6 +52,7 @@ def run(state, now, persist, *, force=False):
     record["last_attempt_at"] = now.isoformat()
     persist(state)
     rows = analysis.input_articles(pending)
+    # Only the rows actually included in a bounded request are marked as checked.
     allowed = {row["id"] for row in rows}
     foreign = {a.id for a in pending if a.language != "ko"}
     def validate(data):
@@ -78,6 +79,9 @@ def run(state, now, persist, *, force=False):
                            and d["freshness"] in ("new", "update"))
         return decisions
     previous = [{k: d[k] for k in ("event_key", "reason")} for d in checked[-80:]]
+    from .groq_api import enabled
+    if enabled():
+        previous = [{k:v[:50] for k,v in d.items()} for d in previous[-2:]]
     payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION + "\n출력 구조: " + json.dumps(SCHEMA, ensure_ascii=False)}]},
                "contents": [{"role": "user", "parts": [{"text": json.dumps({"now": now.isoformat(), "today": rows, "previous": previous}, ensure_ascii=False)}]}],
                "generationConfig": {"responseMimeType": "application/json",

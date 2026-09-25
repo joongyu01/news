@@ -41,14 +41,16 @@ URL이나 HTML, 마크다운을 생성하지 않는다. 근거 링크는 서버�
 
 
 def input_articles(articles):
+    from .groq_api import enabled
+    compact = enabled()
     rows, size, foreign_count = [], 0, 0
     for a in articles[:MAX_INPUT_ARTICLES]:
         if a.language == "en" and foreign_count >= 20:
             continue
-        row = {"id": a.id, "title": a.title[:500], "summary": a.summary[:500],
+        row = {"id": a.id, "title": a.title[:100 if compact else 500], "summary": a.summary[:60 if compact else 500],
                "source": a.source[:100], "published": a.published, "language": a.language}
-        length = len(json.dumps(row, ensure_ascii=False))
-        if size + length > MAX_INPUT_CHARS:
+        length = len(json.dumps(row, ensure_ascii=False).encode('utf-8')) if compact else len(json.dumps(row, ensure_ascii=False))
+        if size + length > (2400 if compact else MAX_INPUT_CHARS):
             break
         rows.append(row)
         foreign_count += a.language == "en"
@@ -77,8 +79,11 @@ def validate(data, allowed):
     return data["issues"]
 
 
-def complete(payload, validator, state=None, persist=None):
+def complete(payload, validator, state=None, persist=None, *, morning=False):
     """3.8 → 3.7 → 3.1 Flash-Lite 순으로 대체. 요청마다 키를 교대한다."""
+    from . import groq_api
+    if groq_api.enabled():
+        return groq_api.complete(payload, validator, state, persist, morning=morning)
     if env("GEMINI_FREE_TIER_CONFIRMED") != "true":
         raise RuntimeError("두 API 프로젝트의 무료 등급 확인이 필요합니다")
     keys = list(dict.fromkeys(k for k in [env("GEMINI_API_KEY"), env("GEMINI_API_KEY_BACKUP")] if k))
@@ -121,6 +126,9 @@ def complete(payload, validator, state=None, persist=None):
 
 def analyze(articles, previous=None, state=None, persist=None):
     rows = input_articles(articles)
+    from .groq_api import enabled
+    if enabled():
+        previous = [{k:str(v)[:70] for k,v in x.items() if k in ('title','summary')} for x in (previous or [])[:2]]
     context = {"today": rows, "previous": (previous or [])[:5]}
     # 모델당 한 번. 모든 요청에 동일한 검증·무료 등급·횟수 제한 적용.
     payload = {"systemInstruction": {"parts": [{"text": INSTRUCTION + "\n출력 구조: " + json.dumps(SCHEMA, ensure_ascii=False)}]},
@@ -136,7 +144,7 @@ def analyze(articles, previous=None, state=None, persist=None):
         if sum(bool(foreign_ids.intersection(i["article_ids"])) for i in issues) > 2:
             raise ValueError("해외 이슈 상한 초과")
         return issues
-    issues, usage, attempts, model = complete(payload, validate_report, state, persist)
+    issues, usage, attempts, model = complete(payload, validate_report, state, persist, morning=True)
     return {"version": 1, "model": model, "issues": issues, "input_count": len(rows),
             "usage": usage, "attempts": attempts}
 

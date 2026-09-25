@@ -25,6 +25,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           REVIEW_URL: ${{ vars.REVIEW_URL }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
         run: python -m scripts.bot_setup
       - name: GitHub 사용량 초기 조회
         env:

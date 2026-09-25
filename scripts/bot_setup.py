@@ -73,6 +73,7 @@ def main():
     from .spark_relay import update
     names = chat_info(preferences.load())
     def save_names(p):
+        p['ai_provider'] = 'groq' if env('AI_PROVIDER') == 'groq' else 'gemini'
         old = p.get('chat_info', {})
         p['chat_info'] = {c:names.get(c, old.get(c, {'name':'이름 미확인'})) for c in p['chats']}
     update(save_names)
