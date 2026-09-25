@@ -27,6 +27,7 @@ def complete(payload, validator, state, persist, *, morning=False):
         messages.append({'role': 'user', 'content': '\n'.join(p.get('text', '') for p in c.get('parts', []))})
     size = sum(len(m['content'].encode('utf-8')) for m in messages) + 100
     if size > MAX_INPUT_BYTES:
+        logging.getLogger(__name__).warning('Groq input size %d exceeds %d bytes', size, MAX_INPUT_BYTES)
         raise RuntimeError('Groq 무료 요청 입력 상한 초과')
     state = state if state is not None else {}
     ledger = state.setdefault('groq_ai', {})
@@ -51,6 +52,7 @@ def complete(payload, validator, state, persist, *, morning=False):
     ledger['recent'].append(reservation)
     if persist:
         persist(state)  # Reserve before sending; unknown failures keep the reservation.
+    stage = 'request'
     try:
         response = requests.post('https://api.groq.com/openai/v1/chat/completions',
             headers={'Authorization': 'Bearer '+env('GROQ_API_KEY'), 'Content-Type': 'application/json'},
@@ -59,6 +61,7 @@ def complete(payload, validator, state, persist, *, morning=False):
         if not response.ok:
             logging.getLogger(__name__).warning('Groq HTTP %d (자동 재시도 없음)', response.status_code)
             raise RuntimeError('Groq API 응답 실패')
+        stage = 'response_json'
         body = response.json()
         usage = {k:v for k,v in body.get('usage', {}).items()
                  if k in ('prompt_tokens', 'completion_tokens', 'total_tokens') and type(v) is int and v >= 0}
@@ -69,11 +72,17 @@ def complete(payload, validator, state, persist, *, morning=False):
             ledger['usage'][k] = ledger['usage'].get(k,0)+v
         if persist:
             persist(state)
+        logging.getLogger(__name__).info('Groq response usage: %s', json.dumps(usage))
+        stage = 'finish_reason'
         choice = body['choices'][0]
         if choice.get('finish_reason') != 'stop':
             raise ValueError('Incomplete response')
-        result = validator(json.loads(choice['message']['content']))
+        stage = 'content_json'
+        data = json.loads(choice['message']['content'])
+        stage = 'validation'
+        result = validator(data)
         logging.getLogger(__name__).info('Groq API OK · %s · %s', MODEL, json.dumps(usage))
         return result, usage, 1, 'groq/'+MODEL
     except (requests.RequestException, ValueError, KeyError, TypeError, IndexError, RuntimeError):
+        logging.getLogger(__name__).warning('Groq analysis failed at %s', stage)
         raise RuntimeError('Groq 분석 실패; 유료 모델 대체 없음') from None
