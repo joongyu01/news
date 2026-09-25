@@ -47,7 +47,7 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
           args=(--no-notify)
-          [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
+          [ "$DRY_RUN" = "true" ] && args+=(--dry-run --refresh-analysis)
           python -m scripts.morning "${args[@]}"
       - name: 조간 발송
         id: dispatch

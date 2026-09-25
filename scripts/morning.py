@@ -52,14 +52,17 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="누적 기사 AI 종합 분석")
     parser.add_argument("--dry-run", action="store_true", help="API 분석은 실행, 저장·알림 없음")
     parser.add_argument("--no-notify", action="store_true")
+    parser.add_argument("--refresh-analysis", action="store_true", help="dry-run에서 저장 초안을 재사용하지 않고 분석 검증")
     args = parser.parse_args(argv)
+    if args.refresh_analysis and not args.dry_run:
+        parser.error("--refresh-analysis requires --dry-run")
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     config, now = load_config(), now_kst()
     if not storage.enabled():
         raise RuntimeError("누적 기사 분석에는 기존 Supabase 연결이 필요합니다")
     date = now.strftime("%Y-%m-%d")
     existing = storage.read("news_drafts", date)
-    if existing and (existing.get("analysis", {}).get("version") == 1 or existing.get("fallback_notice")):
+    if not args.refresh_analysis and existing and (existing.get("analysis", {}).get("version") == 1 or existing.get("fallback_notice")):
         # 워크플로 재실행은 API 재호출·담당자 검토 덮어쓰기를 하지 않는다.
         digest = Digest.from_dict(existing)
         if not args.dry_run:

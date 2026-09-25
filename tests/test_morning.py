@@ -204,6 +204,21 @@ class MorningTests(unittest.TestCase):
                 morning.build(load_config(),self.state,NOW)
             self.assertIn(self.a.id,[a.id for a in ai.call_args.args[0]])
 
+    def test_refresh_analysis_only_dry_run_without_draft_write(self):
+        d = self.digest()
+        with patch.object(morning, 'now_kst', return_value=NOW), patch.object(morning.storage, 'enabled', return_value=True), \
+             patch.object(morning.storage, 'read', return_value=d.to_dict()), patch.object(morning, 'build', return_value=d) as build, \
+             patch.object(morning.alerts, 'read_state', return_value=self.state), patch.object(morning.preferences, 'load', return_value={}), \
+             patch.object(morning.storage, 'save_draft') as save, patch.object(morning, 'notify_reviewer') as notify, \
+             patch.object(Digest, 'save') as local_save:
+            self.assertEqual(morning.main(['--dry-run', '--refresh-analysis']), 0)
+        build.assert_called_once()
+        save.assert_not_called()
+        local_save.assert_not_called()
+        notify.assert_not_called()
+        with self.assertRaises(SystemExit):
+            morning.main(['--refresh-analysis'])
+
     def test_known_irrelevant_articles_stay_excluded_from_morning(self):
         self.state['screening']={'checked':[{'id':self.a.id,'relevant':False}]}
         with patch.object(morning.alerts,'load_rules',return_value={'ai_screening':True}), \
