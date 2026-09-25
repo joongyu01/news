@@ -40,9 +40,9 @@ URL이나 HTML, 마크다운을 생성하지 않는다. 근거 링크는 서버�
 요청한 JSON 객체만 반환한다."""
 
 
-def input_articles(articles):
+def input_articles(articles, *, compact=None):
     from .groq_api import enabled
-    compact = enabled()
+    compact = enabled() if compact is None else compact
     rows, size, foreign_count = [], 0, 0
     for a in articles[:MAX_INPUT_ARTICLES]:
         if a.language == "en" and foreign_count >= 20:
@@ -79,10 +79,10 @@ def validate(data, allowed):
     return data["issues"]
 
 
-def complete(payload, validator, state=None, persist=None, *, morning=False):
+def complete(payload, validator, state=None, persist=None, *, morning=False, provider=None):
     """3.8 → 3.7 → 3.1 Flash-Lite 순으로 대체. 요청마다 키를 교대한다."""
     from . import groq_api
-    if groq_api.enabled():
+    if provider == "groq" or (provider is None and groq_api.enabled()):
         return groq_api.complete(payload, validator, state, persist, morning=morning)
     if env("GEMINI_FREE_TIER_CONFIRMED") != "true":
         raise RuntimeError("두 API 프로젝트의 무료 등급 확인이 필요합니다")
@@ -124,8 +124,8 @@ def complete(payload, validator, state=None, persist=None, *, morning=False):
             logging.getLogger(__name__).warning("AI %s 응답 실패 — %s 백업 1회 시도", active_model, models[attempt + 1])
 
 
-def analyze(articles, previous=None, state=None, persist=None):
-    rows = input_articles(articles)
+def analyze(articles, previous=None, state=None, persist=None, *, provider=None, rows=None):
+    rows = input_articles(articles) if rows is None else rows
     from .groq_api import enabled
     if enabled():
         previous = [{k:str(v)[:70] for k,v in x.items() if k in ('title','summary')} for x in (previous or [])[:2]]
@@ -144,7 +144,7 @@ def analyze(articles, previous=None, state=None, persist=None):
         if sum(bool(foreign_ids.intersection(i["article_ids"])) for i in issues) > 2:
             raise ValueError("해외 이슈 상한 초과")
         return issues
-    issues, usage, attempts, model = complete(payload, validate_report, state, persist, morning=True)
+    issues, usage, attempts, model = complete(payload, validate_report, state, persist, morning=True, provider=provider)
     return {"version": 1, "model": model, "issues": issues, "input_count": len(rows),
             "usage": usage, "attempts": attempts}
 
@@ -173,3 +173,21 @@ def request_json(key, model, payload):
              if k in {"promptTokenCount", "candidatesTokenCount", "thoughtsTokenCount", "totalTokenCount"}
              and type(v) is int and v >= 0}
     return json.loads(text), usage
+
+
+def analyze_dual(articles, previous=None, state=None, persist=None):
+    """Identical evidence and question, independent answers; serialize quota writes."""
+    rows = input_articles(articles, compact=True)
+    previous = [{k: str(v)[:70] for k, v in x.items() if k in ('title', 'summary')}
+                for x in (previous or [])[:2]]
+    reports = []
+    for provider in ('gemini', 'groq'):
+        try:
+            report = analyze(articles, previous, state, persist, provider=provider, rows=rows)
+            report.update(provider=provider, status='ok')
+        except RuntimeError:
+            report = {'provider': provider, 'status': 'failed', 'issues': [],
+                      'input_count': len(rows)}
+        reports.append(report)
+    return {'version': 1, 'mode': 'dual', 'input_count': len(rows), 'reports': reports,
+            'issues': [i for r in reports for i in r['issues']]}

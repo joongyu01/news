@@ -80,6 +80,9 @@ def render_plain(digest: Digest, config: Config, excluded: set[str] | None = Non
 
 
 def render_analysis(digest, excluded=None):
+    if digest.analysis.get("mode") == "dual":
+        from .config import load_config
+        return "\n\n".join(dual_blocks(digest, load_config(), excluded)) + "\n"
     lines = [_title_line(digest.date), "", "[AI 종합 분석]", ""]
     issues = digest.visible_issues(excluded)
     articles = {a.id: a for a in digest.articles}
@@ -104,13 +107,57 @@ def article_anchor(article):
     return f'<a href="{html.escape(article.url, quote=True)}">{label}</a>'
 
 
+def dual_blocks(digest, config, excluded=None, *, markup=False):
+    esc = html.escape if markup else str
+    groups = digest.by_sector(config, excluded)
+    ordered = [a for _, items in groups for a in items]
+    indexes = {a.id: n for n, a in enumerate(ordered, 1)}
+    blocks = [esc(_title_line(digest.date)),
+              f"동일 자료 {digest.analysis.get('input_count', 0)}건 · Gemini / Groq 독립 분석"]
+    for title, items in groups:
+        blocks.append(esc('[' + title + ']'))
+        for a in items:
+            label = article_anchor(a) if markup else f'{a.title} / {a.source}\n{a.url}'
+            blocks.append(f'{indexes[a.id]}. {label}')
+    selected = []
+    for report in digest.analysis.get('reports', []):
+        label = 'Gemini' if report['provider'] == 'gemini' else 'Groq'
+        blocks.append(f'[{label} 분석]')
+        if report['status'] != 'ok':
+            blocks.append('분석 실패 · 다른 모델 결과와 기본 기사 목록을 유지합니다.')
+            selected.append(None)
+            continue
+        blocks.append(esc('실제 모델: ' + report.get('model', '')))
+        issues = [i for i in report.get('issues', []) if i.get('article_ids') and
+                  all(id in indexes for id in i['article_ids'])]
+        selected.append({id for i in issues for id in i['article_ids']})
+        for n, i in enumerate(issues, 1):
+            refs = ', '.join(str(indexes[id]) for id in i['article_ids'])
+            blocks.append(esc(f"{n}. {i['title']}\n핵심: {i['summary']}\n새로운 점: {i['change']}\n업무 관련성: {i['impact']}\n근거 기사: {refs}"))
+        if not issues:
+            blocks.append('주요 새 이슈 없음 (담당자 제외 반영).')
+    blocks.append('[선택 비교]')
+    if len(selected) == 2 and all(x is not None for x in selected):
+        a, b = selected
+        for label, ids in [('공통 선택', a & b), ('Gemini만 선택', a - b), ('Groq만 선택', b - a)]:
+            refs = ', '.join(str(indexes[id]) for id in indexes if id in ids) or '없음'
+            blocks.append(f'{label} 기사: {refs}')
+        blocks.append('근거 기사 선택의 비교이며, 결론의 일치·불일치 판정은 아닙니다.')
+    else:
+        blocks.append('일부 모델 실패로 양쪽 비교가 불가능합니다.')
+    blocks.append('수집된 제목·매체 요약 기반 AI 분석입니다. 각 모델의 해석은 원문 확인이 필요합니다.')
+    return blocks
+
+
 def telegram_chunks(digest, config, excluded=None):
     """HTML 태그·링크를 자르지 않고 이슈/기사 경계에서 분할한다."""
     esc = html.escape
     blocks = [f"<b>{esc(_title_line(digest.date))}</b>"]
     if digest.fallback_notice:
         blocks.append(esc(digest.fallback_notice))
-    if digest.analysis:
+    if digest.analysis.get("mode") == "dual":
+        blocks = dual_blocks(digest, config, excluded, markup=True)
+    elif digest.analysis:
         blocks.append("<b>AI 종합 분석</b>")
         articles = {a.id: a for a in digest.articles}
         issues = digest.visible_issues(excluded)

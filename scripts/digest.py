@@ -42,7 +42,7 @@ class Digest:
         """
         excluded = excluded or set()
         selected = ({id for issue in self.visible_issues(excluded) for id in issue["article_ids"]}
-                    if self.analysis else None)
+                    if self.analysis and self.analysis.get("mode") != "dual" else None)
         result: list[tuple[str, list[Article]]] = []
         for sector in config.sectors:
             picked = [
@@ -52,7 +52,8 @@ class Digest:
                 and (selected is None or a.id in selected)
             ]
             if selected is None:
-                picked = picked[:sector.limit]
+                evidence = {id for i in self.visible_issues(excluded) for id in i["article_ids"]}
+                picked = [a for n, a in enumerate(picked) if n < sector.limit or a.id in evidence]
             if picked:
                 result.append((sector.title, picked))
         return result
@@ -60,7 +61,7 @@ class Digest:
     def risk_articles(self, excluded: set[str] | None = None) -> list[Article]:
         excluded = excluded or set()
         selected = ({id for issue in self.visible_issues(excluded) for id in issue["article_ids"]}
-                    if self.analysis else None)
+                    if self.analysis and self.analysis.get("mode") != "dual" else None)
         return [a for a in self.articles if a.risk and a.id not in excluded
                 and (selected is None or a.id in selected)]
 

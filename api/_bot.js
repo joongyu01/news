@@ -122,7 +122,7 @@ export function command(update, stored) {
       text = `대화 ${target}의 뉴스 구독을 해제했습니다. 소유자 운영 요약은 별도로 유지됩니다.`;
     }
   } else if (cmd === 'status' || cmd === 'settings') {
-    text = `봇 전체 공통 설정 · 구독 ${Object.keys(payload.chats).length}개 방\n모델: ${stored.ai_provider === 'groq' ? 'Groq Qwen 3.8 27B · 무료 20만 토큰 기준 · 조간 7,800토큰 확보 · 하루 최대 40회' : 'Gemini 3.8 Flash → 실패 시 3.7 → 3.1 Flash-Lite · 두 키 교대 · 하루 최대 40회'}\n긴급: ${options.urgent?'켜짐':'꺼짐'} · 아침 동향: ${options.daily?'켜짐':'꺼짐'}\n강도: ${options.mode} · 일일 상한: ${options.limit || '없음'}\n휴식(KST): ${options.quiet}\n관심: ${options.watch.join(', ') || '없음'}\n제외: ${options.exclude.join(', ') || '없음'}\n수집: 24시간 15분 간격 · AI 알림: 06:00~23:30 매시 00/30분 (예약 지연 가능)`;
+    text = `봇 전체 공통 설정 · 구독 ${Object.keys(payload.chats).length}개 방\n모델: ${stored.ai_provider === 'groq' ? '긴급 Groq Qwen 3.8 27B / 조간 Gemini+Groq 비교 · 무료 20만 토큰 기준 · 조간 7,800토큰 확보 · 하루 최대 40회' : 'Gemini 3.8 Flash → 실패 시 3.7 → 3.1 Flash-Lite · 두 키 교대 · 하루 최대 40회'}\n긴급: ${options.urgent?'켜짐':'꺼짐'} · 아침 동향: ${options.daily?'켜짐':'꺼짐'}\n강도: ${options.mode} · 일일 상한: ${options.limit || '없음'}\n휴식(KST): ${options.quiet}\n관심: ${options.watch.join(', ') || '없음'}\n제외: ${options.exclude.join(', ') || '없음'}\n수집: 24시간 15분 간격 · AI 알림: 06:00~23:30 매시 00/30분 (예약 지연 가능)`;
   } else if (['urgent','daily'].includes(cmd) && ['on','off'].includes(args)) {
     options[cmd] = args === 'on'; changed = true; text = `✅ ${cmd} ${args} 전체 구독방에 적용했습니다.`;
   } else if (cmd === 'mode' && ['strict','standard'].includes(args)) {

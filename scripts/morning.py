@@ -5,7 +5,7 @@ from datetime import timedelta
 
 from . import alerts, analysis, rolling, storage, preferences
 from .collect import notify_reviewer
-from .config import DRAFT_DIR, load_config
+from .config import DRAFT_DIR, load_config, env
 from .dedupe import dedupe
 from .digest import Digest
 from .editorial import prepare
@@ -30,7 +30,7 @@ def build(config, state, now, previous=None, persist=None, exclude_words=None):
     articles = dedupe(prepare(raw, config))
     fallback_notice = ""
     try:
-        report = analysis.analyze(articles, previous, state, persist)
+        report = (analysis.analyze_dual if env('MORNING_DUAL') == 'true' else analysis.analyze)(articles, previous, state, persist)
     except RuntimeError:
         # 기사 신선도·관련성·담당자 제외 검사는 그대로 유지한다.
         # 원문 예외에는 인증정보가 있을 수 있어 고정 문구만 공개한다.
@@ -48,12 +48,30 @@ def build(config, state, now, previous=None, persist=None, exclude_words=None):
                                     "representatives": len(articles), "duplicates": sum(len(a.duplicates) for a in articles)})
 
 
+def send_owner_test(digest, config, prefs):
+    from .notify import send_telegram
+    from .render import telegram_chunks
+    owner = str(prefs.get('owner', ''))
+    if not owner.isdigit() or int(owner) <= 0 or owner != env('TELEGRAM_CHAT_ID'):
+        raise RuntimeError('Private owner mismatch')
+    chunks = telegram_chunks(digest, config)
+    chunks[0] = '<b>[개인 테스트 · 조간 비교]</b>\n\n' + chunks[0]
+    sent = send_telegram(chunks, chat_id=owner, parse_mode='HTML')
+    if sent != len(chunks):
+        raise RuntimeError('Private test delivery incomplete')
+    print(f'소유자 개인톡 테스트 발송 완료: {sent}개 메시지 (그룹·이메일 발송 없음)')
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="누적 기사 AI 종합 분석")
     parser.add_argument("--dry-run", action="store_true", help="API 분석은 실행, 저장·알림 없음")
     parser.add_argument("--no-notify", action="store_true")
+    parser.add_argument("--owner-test", action="store_true", help="새 분석을 소유자 개인톡에만 발송; 초안/아카이브 변경 없음")
     parser.add_argument("--refresh-analysis", action="store_true", help="dry-run에서 저장 초안을 재사용하지 않고 분석 검증")
     args = parser.parse_args(argv)
+    if args.owner_test:
+        args.dry_run = True
+        args.refresh_analysis = True
     if args.refresh_analysis and not args.dry_run:
         parser.error("--refresh-analysis requires --dry-run")
     logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -75,6 +93,9 @@ def main(argv=None):
     prefs = preferences.load()
     words = prefs.get('global', prefs.get('chats', {}).get(prefs.get('owner'), {})).get('exclude', [])
     digest = build(config, alerts.read_state(), now, previous, alerts.save_state, words)
+    if args.owner_test:
+        send_owner_test(digest, config, prefs)
+        return 0
     if args.dry_run:
         print(render_plain(digest, config))
         return 0

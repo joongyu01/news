@@ -6,6 +6,10 @@ on:
     - cron: "17 20 * * *"
   workflow_dispatch:
     inputs:
+      owner_test:
+        description: "새 조간 비교 분석을 소유자 개인톡에만 테스트 발송"
+        type: boolean
+        default: false
       dry_run:
         description: "AI 분석 결과만 확인 (조간 저장·발송 없음, 사용량은 기록)"
         type: boolean
@@ -23,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
+      MORNING_DUAL: "true"
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -45,13 +50,15 @@ jobs:
         id: analyze
         env:
           DRY_RUN: ${{ inputs.dry_run }}
+          OWNER_TEST: ${{ inputs.owner_test }}
         run: |
           args=(--no-notify)
           [ "$DRY_RUN" = "true" ] && args+=(--dry-run --refresh-analysis)
+          [ "$OWNER_TEST" = "true" ] && args+=(--owner-test)
           python -m scripts.morning "${args[@]}"
       - name: 조간 발송
         id: dispatch
-        if: ${{ inputs.dry_run != true }}
+        if: ${{ inputs.dry_run != true && inputs.owner_test != true }}
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -63,7 +70,7 @@ jobs:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python -m scripts.failure --stage morning
       - name: 조간 기록 커밋
-        if: ${{ success() && inputs.dry_run != true }}
+        if: ${{ success() && inputs.dry_run != true && inputs.owner_test != true }}
         run: |
           git config user.name "news-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

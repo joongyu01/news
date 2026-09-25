@@ -261,13 +261,13 @@ function marketLine() {
 
 /** 제외되지 않고 섹터 상한 안에 드는 기사들 — 실제로 발송될 목록. */
 function kept(sector) {
-  if (state.data.analysis?.version === 1) {
+  if (state.data.analysis?.version === 1 && state.data.analysis.mode !== "dual") {
     const ids = new Set(visibleIssues().flatMap((i) => i.article_ids));
     return sector.articles.filter((a) => ids.has(a.id));
   }
-  return sector.articles
-    .filter((a) => !state.excluded.has(a.id))
-    .slice(0, sector.limit || 99);
+  const evidence = new Set(visibleIssues().flatMap(i => i.article_ids));
+  return sector.articles.filter(a => !state.excluded.has(a.id))
+    .filter((a, n) => n < (sector.limit || 99) || evidence.has(a.id));
 }
 
 function riskKept() {
@@ -316,6 +316,7 @@ function visibleIssues() {
 }
 
 function analysisText() {
+  if (state.data.analysis?.mode === "dual") return dualText();
   const out = [titleLine(state.date), "", "[AI 종합 분석]", ""];
   const issues = visibleIssues();
   const articles = new Map((state.data.sectors || []).flatMap((s) => s.articles.map((a) => [a.id, a])));
@@ -330,6 +331,40 @@ function analysisText() {
   if (!issues.length) out.push("오늘 발송할 주요 새 이슈가 없습니다.", "");
   out.push("수집된 제목·매체 요약을 바탕으로 작성한 AI 분석입니다. 중요 사실은 원문 확인이 필요합니다.");
   return out.join("\n").replace(/\s+$/, "") + "\n";
+}
+
+function dualText() {
+  const groups = (state.data.sectors || []).map(s => [s.title, kept(s)]).filter(([,items]) => items.length);
+  const indexes = new Map(groups.flatMap(([,items]) => items).map((a,n) => [a.id, n+1]));
+  const out = [titleLine(state.date), `동일 자료 ${state.data.analysis.input_count || 0}건 · Gemini / Groq 독립 분석`];
+  for (const [title,items] of groups) {
+    out.push(`[${title}]`);
+    for (const a of items) out.push(`${indexes.get(a.id)}. ${a.title} / ${a.source}\n${a.url}`);
+  }
+  const selected = [];
+  for (const report of state.data.analysis.reports || []) {
+    const label = report.provider === 'gemini' ? 'Gemini' : 'Groq';
+    out.push(`[${label} 분석]`);
+    if (report.status !== 'ok') {
+      out.push('분석 실패 · 다른 모델 결과와 기본 기사 목록을 유지합니다.'); selected.push(null); continue;
+    }
+    out.push('실제 모델: ' + (report.model || ''));
+    const issues = (report.issues || []).filter(i => i.article_ids?.length && i.article_ids.every(id => indexes.has(id) && !state.excluded.has(id)));
+    selected.push(new Set(issues.flatMap(i => i.article_ids)));
+    issues.forEach((i,n) => out.push(`${n+1}. ${i.title}\n핵심: ${i.summary}\n새로운 점: ${i.change}\n업무 관련성: ${i.impact}\n근거 기사: ${i.article_ids.map(id => indexes.get(id)).join(', ')}`));
+    if (!issues.length) out.push('주요 새 이슈 없음 (담당자 제외 반영).');
+  }
+  out.push('[선택 비교]');
+  if (selected.length === 2 && selected.every(x => x !== null)) {
+    const [a,b] = selected;
+    for (const [label, accept] of [['공통 선택', id => a.has(id) && b.has(id)], ['Gemini만 선택', id => a.has(id) && !b.has(id)], ['Groq만 선택', id => b.has(id) && !a.has(id)]]) {
+      const refs = [...indexes].filter(([id]) => accept(id)).map(([,n]) => n).join(', ') || '없음';
+      out.push(`${label} 기사: ${refs}`);
+    }
+    out.push('근거 기사 선택의 비교이며, 결론의 일치·불일치 판정은 아닙니다.');
+  } else out.push('일부 모델 실패로 양쪽 비교가 불가능합니다.');
+  out.push('수집된 제목·매체 요약 기반 AI 분석입니다. 각 모델의 해석은 원문 확인이 필요합니다.');
+  return out.join('\n\n') + '\n';
 }
 
 function renderEmpty(message) {
