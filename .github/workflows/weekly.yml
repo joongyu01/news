@@ -22,13 +22,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: KST 휴식 시간 확인 (00:00~05:16)
+        id: hours
+        shell: bash
+        run: |
+          minute=$((10#$(TZ=Asia/Seoul date +%H) * 60 + 10#$(TZ=Asia/Seoul date +%M)))
+          if [ "$minute" -lt 317 ]; then
+            echo "awake=false" >> "$GITHUB_OUTPUT"
+            echo "휴식 시간: 수집·분석·발송 생략"
+          else
+            echo "awake=true" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: ${{ steps.hours.outputs.awake == 'true' }}
       - uses: actions/setup-python@v5
+        if: ${{ steps.hours.outputs.awake == 'true' }}
         with:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+        if: ${{ steps.hours.outputs.awake == 'true' }}
       - name: 주간 요약 발송
+        if: ${{ steps.hours.outputs.awake == 'true' }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}

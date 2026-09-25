@@ -225,8 +225,9 @@ def run(rules, *, dry_run=False, send_test=False, collect_only=False, screen_onl
     if not dry_run and not collect_only and (not env("TELEGRAM_BOT_TOKEN") or not env("TELEGRAM_CHAT_ID")):
         raise RuntimeError("Telegram 토큰과 수신 대화가 필요합니다")
     now = now_kst()
-    if now.hour < 6 and not collect_only:
-        log.info("00:00~05:59 휴식 시간 — AI·알림 생략")
+    start_minute = 317 if collect_only else 360
+    if now.hour * 60 + now.minute < start_minute:
+        log.info("휴식 시간 — 수집·AI·알림 생략")
         return 0
     # DB 접근 실패 시 기록 없이 발송하지 않습니다.
     state = read_state()
@@ -316,7 +317,7 @@ def run(rules, *, dry_run=False, send_test=False, collect_only=False, screen_onl
     if failures:
         raise RuntimeError("일부 구독방의 긴급 발송 실패")
     if send_test:
-        if send_telegram(["✅ 긴급 뉴스 알림 가동 확인\n24시간 15분 수집, 주간 30분 AI 선별입니다.\n"
+        if send_telegram(["✅ 긴급 뉴스 알림 가동 확인\n05:17~23:59 수집, 주간 30분 AI 선별입니다.\n"
                           "석유관리원 중대 보도 · 석유/가스 사고 · 공급 차질 · 긴급 정책\n"
                           "해당 소식이 없으면 알림을 보내지 않습니다.\n"
                           "06:00~23:30에 30분마다 새 기사를 AI로 선별하며, 예약 실행 지연이 있을 수 있습니다."]) != 1:

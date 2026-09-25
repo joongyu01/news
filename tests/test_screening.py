@@ -148,7 +148,7 @@ class DeliveryTests(unittest.TestCase):
         self.assertIn('<a href=',send.call_args.args[0][0])
         self.assertEqual(len(state['sent']),2)
 
-    def test_collector_still_runs_at_night_without_ai_or_delivery(self):
+    def test_collector_sleeps_at_night_without_ai_or_delivery(self):
         state={'version':1,'started_at':NOW.isoformat(),'sent':[]}
         prefs={'owner':'owner','chats':{'owner':alerts.preferences.defaults()}}
         with patch.object(alerts,'now_kst',return_value=NOW.replace(hour=2)), \
@@ -156,7 +156,19 @@ class DeliveryTests(unittest.TestCase):
              patch.object(alerts.preferences,'load',return_value=prefs), patch.object(alerts,'gather',return_value=[] ) as gather, \
              patch.object(screening,'run') as ai, patch.object(alerts,'send_telegram') as send:
             self.assertEqual(alerts.run(alerts.load_rules(),collect_only=True),0)
-        gather.assert_called_once(); ai.assert_not_called(); send.assert_not_called()
+        gather.assert_not_called(); ai.assert_not_called(); send.assert_not_called()
+
+    def test_collection_resume_boundary(self):
+        for hour, minute, allowed in [(0, 0, False), (5, 16, False), (5, 17, True), (23, 59, True)]:
+            with self.subTest(hour=hour, minute=minute), \
+                 patch.object(alerts, 'now_kst', return_value=NOW.replace(hour=hour, minute=minute)), \
+                 patch.object(alerts, 'read_state', side_effect=RuntimeError('boundary reached')) as read:
+                if allowed:
+                    with self.assertRaisesRegex(RuntimeError, 'boundary reached'):
+                        alerts.run(alerts.load_rules(), collect_only=True)
+                else:
+                    self.assertEqual(alerts.run(alerts.load_rules(), collect_only=True), 0)
+                    read.assert_not_called()
 
     def test_error_notification_has_log_link_and_suppresses_repeats(self):
         from scripts import failure

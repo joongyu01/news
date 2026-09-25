@@ -40,13 +40,28 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
+      - name: KST 휴식 시간 확인 (00:00~05:16)
+        id: hours
+        shell: bash
+        run: |
+          minute=$((10#$(TZ=Asia/Seoul date +%H) * 60 + 10#$(TZ=Asia/Seoul date +%M)))
+          if [ "$minute" -lt 317 ]; then
+            echo "awake=false" >> "$GITHUB_OUTPUT"
+            echo "휴식 시간: 수집·분석·발송 생략"
+          else
+            echo "awake=true" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: ${{ steps.hours.outputs.awake == 'true' }}
       - uses: actions/setup-python@v5
+        if: ${{ steps.hours.outputs.awake == 'true' }}
         with:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+        if: ${{ steps.hours.outputs.awake == 'true' }}
       - name: 누적 기사 조간 분석
+        if: ${{ steps.hours.outputs.awake == 'true' }}
         id: analyze
         env:
           DRY_RUN: ${{ inputs.dry_run }}
@@ -58,19 +73,19 @@ jobs:
           python -m scripts.morning "${args[@]}"
       - name: 조간 발송
         id: dispatch
-        if: ${{ inputs.dry_run != true && inputs.owner_test != true }}
+        if: ${{ steps.hours.outputs.awake == 'true' && (inputs.dry_run != true && inputs.owner_test != true) }}
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python -m scripts.dispatch --skip-sent
       - name: 실패 알림
-        if: ${{ failure() }}
+        if: ${{ steps.hours.outputs.awake == 'true' && (failure()) }}
         env:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python -m scripts.failure --stage morning
       - name: 조간 기록 커밋
-        if: ${{ success() && inputs.dry_run != true && inputs.owner_test != true }}
+        if: ${{ steps.hours.outputs.awake == 'true' && (success() && inputs.dry_run != true && inputs.owner_test != true) }}
         run: |
           git config user.name "news-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

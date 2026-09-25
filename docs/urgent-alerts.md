@@ -12,7 +12,7 @@
 
 ## 예약
 
-- `.github/workflows/alerts.yml`: 24시간 15분마다 수집·누적 저장만 실행합니다.
+- `.github/workflows/alerts.yml`: 05:17~23:59에 약 15분마다 수집·누적 저장만 실행합니다.
 - `.github/workflows/screening.yml`: 06:00~23:30 KST 매시 00/30분, 저장된 새 기사 최대 40개를 Gemini 3.8 Flash로 선별합니다. 실패 시 3.7 Flash, 3.1 Flash-Lite 순서로 시도합니다.
 - `.github/workflows/collect.yml`: 05:17 KST 예약(08시 전 수신 목표), 최근 24시간 선별 자료를 종합 분석한 뒤 조간을 발송합니다.
 

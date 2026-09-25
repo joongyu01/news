@@ -59,7 +59,7 @@ export function formatLogs(snapshot, draft, alert, selected='', now=Date.now()) 
     }
   }
   lines.push('', '수동 실행에는 시험 실행도 포함됩니다. 실행 성공과 실제 발송 여부는 상세 로그에서 확인하세요.',
-    '예약: 수집 24시간 15분 간격 · AI 긴급 06:00~23:30 매시 00/30분 · 조간 05:17 예약 (08시 전 수신 목표, 지연 가능)',
+    '예약: 수집 05:17~23:59 약 15분 간격 · AI 긴급 06:00~23:30 매시 00/30분 · 조간 05:17 예약 (08시 전 수신 목표, 지연 가능)',
     '/logs_collect 수집 · /logs_alerts 긴급 · /logs_dispatch 발송 (각 최근 3회)');
   return lines.join('\n');
 }

@@ -2,8 +2,9 @@ name: 기사 수집·누적 저장
 
 on:
   schedule:
-    # 수집만 24시간 15분 간격. AI 선별은 screening.yml에서 별도 실행.
-    - cron: "7,22,37,52 * * * *"
+    # KST 05:17 재개, 00:00~05:16 휴식. AI 선별은 06시부터.
+    - cron: "17,32,47 20 * * *"
+    - cron: "7,22,37,52 0-14,21-23 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -24,13 +25,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
+      - name: KST 휴식 시간 확인 (00:00~05:16)
+        id: hours
+        shell: bash
+        run: |
+          minute=$((10#$(TZ=Asia/Seoul date +%H) * 60 + 10#$(TZ=Asia/Seoul date +%M)))
+          if [ "$minute" -lt 317 ]; then
+            echo "awake=false" >> "$GITHUB_OUTPUT"
+            echo "휴식 시간: 수집·분석·발송 생략"
+          else
+            echo "awake=true" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: ${{ steps.hours.outputs.awake == 'true' }}
       - uses: actions/setup-python@v5
+        if: ${{ steps.hours.outputs.awake == 'true' }}
         with:
           python-version: "3.11"
           cache: pip
       - run: pip install -q -r requirements.txt
+        if: ${{ steps.hours.outputs.awake == 'true' }}
       - name: 기사 수집·누적 저장 (AI 호출 없음)
+        if: ${{ steps.hours.outputs.awake == 'true' }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
@@ -43,7 +59,7 @@ jobs:
           [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
           python -m scripts.alerts "${args[@]}"
       - name: GitHub 사용량·운영 기록 갱신
-        if: ${{ !cancelled() && inputs.dry_run != true }}
+        if: ${{ steps.hours.outputs.awake == 'true' && (!cancelled() && inputs.dry_run != true) }}
         continue-on-error: true
         timeout-minutes: 1
         env:
