@@ -1,0 +1,1014 @@
+{
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26 08:18",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1355.05,
+      "change_pct": -0.9900628379365743,
+      "unit": "원",
+      "as_of": "2026-09-25",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 94.61000061035156,
+      "change_pct": 2.658416721883745,
+      "unit": "달러/배럴",
+      "as_of": "2026-09-24",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 106.5999984741211,
+      "change_pct": 3.4148201208179887,
+      "unit": "달러/배럴",
+      "as_of": "2026-09-24",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 67,
+    "fresh": 67,
+    "classified": 67,
+    "representatives": 58,
+    "duplicates": 9
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.8-flash",
+        "issues": [
+          {
+            "title": "토양오염 검사 없이 방치된 주유소 87곳 확인 및 관리 책임 논란",
+            "summary": "토양오염 검사를 제대로 거치지 않고 방치된 주유소가 87곳에 달하며, 이에 대해 정부 부처 간 책임 떠넘기기가 이어지고 있다는 단독 보도가 제기되었다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "폐업 및 방치 주유소에 대한 유통 이력 및 불법 석유 유통 잔여 위험 점검 등 사후 유통망 안전관리 감독 필요성이 대두될 가능성이 있다.",
+            "article_ids": [
+              "847541a1ad63"
+            ]
+          },
+          {
+            "title": "정부, 유가 상승 국면 속 석유 및 전기요금 동결 추진",
+            "summary": "정부가 국제 유가 상승세 속에서도 산업계의 부담을 경감하기 위해 석유류 및 전기요금 등 주요 에너지 가격 동결을 추진한다는 소식이 전해졌다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "정부의 석유 가격 안정 및 지원 정책에 발맞추어 유가 모니터링 체계와 국내 유통 단계별 가격 감시 업무가 강화될 가능성이 있다.",
+            "article_ids": [
+              "3be73d549cb7"
+            ]
+          },
+          {
+            "title": "미국의 디젤 수출 금지 논의로 인한 글로벌 원유·석유제품 수급 불안",
+            "summary": "미국 내 디젤 수출 금지 조치 가능성이 거론되면서 미국 원유 선물이 글로벌 벤치마크 대비 할인 폭을 넓히는 등 국제 석유제품 시장 변동성이 확대되고 있다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "국내외 경유 등 석유제품 수급 불균형과 가격 왜곡이 심화될 경우 대체 연료 유통 및 수급 모니터링 부담이 커질 가능성이 있다.",
+            "article_ids": [
+              "39661d4d6d1c"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1567,
+          "candidatesTokenCount": 452,
+          "totalTokenCount": 2019
+        },
+        "attempts": 1,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "provider": "groq",
+        "status": "failed",
+        "issues": [],
+        "input_count": 7
+      }
+    ],
+    "issues": [
+      {
+        "title": "토양오염 검사 없이 방치된 주유소 87곳 확인 및 관리 책임 논란",
+        "summary": "토양오염 검사를 제대로 거치지 않고 방치된 주유소가 87곳에 달하며, 이에 대해 정부 부처 간 책임 떠넘기기가 이어지고 있다는 단독 보도가 제기되었다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "폐업 및 방치 주유소에 대한 유통 이력 및 불법 석유 유통 잔여 위험 점검 등 사후 유통망 안전관리 감독 필요성이 대두될 가능성이 있다.",
+        "article_ids": [
+          "847541a1ad63"
+        ]
+      },
+      {
+        "title": "정부, 유가 상승 국면 속 석유 및 전기요금 동결 추진",
+        "summary": "정부가 국제 유가 상승세 속에서도 산업계의 부담을 경감하기 위해 석유류 및 전기요금 등 주요 에너지 가격 동결을 추진한다는 소식이 전해졌다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "정부의 석유 가격 안정 및 지원 정책에 발맞추어 유가 모니터링 체계와 국내 유통 단계별 가격 감시 업무가 강화될 가능성이 있다.",
+        "article_ids": [
+          "3be73d549cb7"
+        ]
+      },
+      {
+        "title": "미국의 디젤 수출 금지 논의로 인한 글로벌 원유·석유제품 수급 불안",
+        "summary": "미국 내 디젤 수출 금지 조치 가능성이 거론되면서 미국 원유 선물이 글로벌 벤치마크 대비 할인 폭을 넓히는 등 국제 석유제품 시장 변동성이 확대되고 있다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "국내외 경유 등 석유제품 수급 불균형과 가격 왜곡이 심화될 경우 대체 연료 유통 및 수급 모니터링 부담이 커질 가능성이 있다.",
+        "article_ids": [
+          "39661d4d6d1c"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-09-25T23:08:07.502751+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "미·이 휴전 협상 기대에 국제유가 하락…공급 차질 위험은 남아",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtOHN6YWsyNGR2dFk2dW1BS2p0WmY4TlUzUk5ZNmdCNXpfNkhRYk9JeE9mektpdnBUYV9tLXVLMEEwNFdWSTJhTzZXaUFfb2FUZFRMRmpOaWs?oc=5",
+      "source": "tokenpost.kr",
+      "published": "2026-09-25 18:12",
+      "summary": "미·이 휴전 협상 기대에 국제유가 하락…공급 차질 위험은 남아  tokenpost.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8213ead3cdd2"
+    },
+    {
+      "title": "유가 상승과 연준의 매파적 통화정책 기조로 인해 금 가격이 이번 주 급격한 하락세를 보일 것으로 예상됩니다.",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaGFLajVTRmhpVVUyd1V5Ymt1bTVsU3RSRDVDRktpVHZJa3REc2hMdFZ4WGhqRl9PS2Z1bXRPdjIxT0F2WTVSNkRyN2M4WXVVRG8wQ0JkSXVRRkZmNkpWbUhiVHdNSU1oX1hkX0RtemRSTDhyRnNLTWFTeVZSMzY5M2ZqbzlTdkZiOUZULXpZWHo?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-25 20:08",
+      "summary": "유가 상승과 연준의 매파적 통화정책 기조로 인해 금 가격이 이번 주 급격한 하락세를 보일 것으로 예상됩니다.  Vietnam.vn",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "81b4e5c68ee8"
+    },
+    {
+      "title": "[단독] 토양오염 검사도 없이 방치된 주유소 87곳…정부는 책임 떠넘기기",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5CRmFuaTEzMFE2TUVpNGpxVDBtU1lCRk1mUExFcHRnYTd2R3NWY2ZadmN6T0kwT0MzdEVtaWl3dGcyT2h5LXc?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-25 19:38",
+      "summary": "[단독] 토양오염 검사도 없이 방치된 주유소 87곳…정부는 책임 떠넘기기  v.daum.net",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "847541a1ad63"
+    },
+    {
+      "title": "정부, 국제 유가 뛰어도 석유·전기요금 동결…산업계 부담 던다",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvTjVQdFVNR242YWRNcEhENTNPSnB6SHdPNWlxSVZ3LWpraWF1c3piRUsxSmsyY295WktJaG0wN2dNLXZ6Ykkza1ljdjRVX2gybHBNU0kzUmdGZGtzY2dINU9oakZMci1GaV9ISw?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-09-25 13:26",
+      "summary": "정부, 국제 유가 뛰어도 석유·전기요금 동결…산업계 부담 던다  스페셜경제",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "석유·전기요금 동결 정책",
+      "id": "3be73d549cb7"
+    },
+    {
+      "title": "Talk of US export ban on diesel deepens US crude futures' discount to global benchmark",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOakktX2lMSTlPSnViWHdvbUxHTm14WGIwOGR5dzk2LThBRGJoMklPZXFIRlc2YlUzYWRLaGJMd21hREl5QnVsQXFnYVFhSDFsdnJhcy1wWGtaemRiS3RveDNxWHd0QUNnS1lmcjhEcFhXMTNSUjZySkhMZmxzU3ZVT2l6UnduUnUzT0JlQVdPUFN2cmhjNDdUT2JqU21zXy0tN1BFM2NNMUJmQTdVSFJjQnduaXA4dWl6MlMycm90U3UyUXQ3WVBj?oc=5",
+      "source": "reuters.com",
+      "published": "2026-09-25 21:43",
+      "summary": "Talk of US export ban on diesel deepens US crude futures' discount to global benchmark  reuters.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "39661d4d6d1c"
+    },
+    {
+      "title": "Italy seeks refiners' help to boost domestic fuel production in bid to ease prices",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdUd6QzFyeHBYYlMtd0RybG1XVjF0ZlZwMjVWS2JSVS1WbWR4WWNZQ2ZNajYtdUpGcm1QTC00WHdzWlRSaE0xNVdwNVVoOTZvNm9ubkw2NHRKQ216cWVRTEdQSlV4bUxpNVM2VWtSWDFQVU1RWmRqNVN3X2ZiMEFKMnpad3g1LVZXWWFkbTYzb3hHNk1hNFhORTVLamtIck9pNS1aYWdyNDBUaEgzWjVyS245VGM0X1M5WkRiYzBPUlRyUQ?oc=5",
+      "source": "reuters.com",
+      "published": "2026-09-25 19:23",
+      "summary": "Italy seeks refiners' help to boost domestic fuel production in bid to ease prices  reuters.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "ba8c1815a16b"
+    },
+    {
+      "title": "Crude oil exports via Hormuz at 33.7 million barrels this week, data shows",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZXFDTzBxRUNwS0tCV0ZKaDI2Wm5RRXdCLVBYLW12YVdIeDZCX09tV3RKcEhHQ0xEM0JVMXZ1UWpiVW9wMDlkU2Y0b2ozbmZyX1I4RHhyUWphREs3NDFhaTJhcTRTbFRiY2lTV0RVMEo3RlM4X2pBRlB2Y1AtSENKSGs1VUNKZXJTSnVfLUZWMjdYZTgzOTdMenZ1bFhjejRoQXBYUWowN05OeWZ4ZGloS09GLU1aTFZtSE51Qk9hVTBlX2VwSUE?oc=5",
+      "source": "reuters.com",
+      "published": "2026-09-25 12:49",
+      "summary": "Crude oil exports via Hormuz at 33.7 million barrels this week, data shows  reuters.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "06cb4a9709df"
+    },
+    {
+      "title": "9월 25일 휘발유 및 석유 가격 업데이트: 국제 가격 하락",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRng2OW53N0tWUUJPUDNJQ1Vsemtmc1NtUzN4ZUFBbmx0b1E5ZVZhZmZuM2ZheG5HNFBKRjgtemhONl8yMVBoWFBQakpHYnpRc29RMVNJSkdLdUk2VDB5SV9fWWZKbkg0cm9wRnl1UTk3ZmJLTzBXZFpRLXRzNkVwd01pYjlwM2pjZTNUNnZSTVlPMllPaU10NQ?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-25 22:12",
+      "summary": "9월 25일 휘발유 및 석유 가격 업데이트: 국제 가격 하락  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c182833e8a16"
+    },
+    {
+      "title": "미·이란 호르무즈 재개방 거론에도 디젤값 6.51달러",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92RXcyT2puaE8wVjF1Z0lGcUlQRHJCamhad0FxNE5oZ2hwU2JtMGJVUFU4T0ExckRsMUYwdmd6bHYtVlhzQVFldlNRMDRfSWhKVmZMeEVHUkh6TnJxRTdJ?oc=5",
+      "source": "tokenpost.kr",
+      "published": "2026-09-25 22:00",
+      "summary": "미·이란 호르무즈 재개방 거론에도 디젤값 6.51달러  tokenpost.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fcfccf4018c2"
+    },
+    {
+      "title": "러시아 노보샤흐틴스크 정유공장, 드론 공격에 가동 중단",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8tZ2lxMGEyY3FLWGNpVEQwN2FXUlI3UDV4UVBuSkZfWUhscUtRN0FqaTBFbXR6a0dtcGFFZE85dUR1UFRhRC1NVFFmcllIREpUSU5jNHhfUU0?oc=5",
+      "source": "tokenpost.kr",
+      "published": "2026-09-25 20:21",
+      "summary": "러시아 노보샤흐틴스크 정유공장, 드론 공격에 가동 중단  tokenpost.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "30c6076a1737"
+    },
+    {
+      "title": "에티오피아·지부티·단고테, 6억 6,000만 달러 정제 석유 파이프라인 계획 - 뉴스 및 통계",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYVQzT1d3SUhXRGRtWEozQXdKREZGbGlhSWhHdV9ucVQ5N2lueE5ocmhIUF83NUlvdzFvUUlZSkxHdUZpdVZDdUcyZ193Q3dWWTFQVjFvZDNkcnNQTTNkMHVuVm1VaDlBWl9uMEtHTHZ1MzI5YUZMLV9rQ085NzNoYllGSFp1TFNTd3N5VmJUR2JVTU9SWnYtV2N5M3VucjRIWVFRVEt1S1FFWk1oRXhJ?oc=5",
+      "source": "IndexBox",
+      "published": "2026-09-25 19:50",
+      "summary": "에티오피아·지부티·단고테, 6억 6,000만 달러 정제 석유 파이프라인 계획 - 뉴스 및 통계  IndexBox",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0a7c65bd41e6"
+    },
+    {
+      "title": "\"미·이란, '호르무즈 개방·봉쇄 해제' 맞교환 논의 중이지만…\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWlZqODdfWFNZdDRWWnlkZFdxZlpfSzBiZmRnV2ExNWNQb3R1MEEtdnloRENObVNLS1ZabFFMYUozZVU3SlZTUFVuT1Z1Ym9tQ2JrNk5OOVZqZw?oc=5",
+      "source": "한국경제",
+      "published": "2026-09-25 19:02",
+      "summary": "\"미·이란, '호르무즈 개방·봉쇄 해제' 맞교환 논의 중이지만…\"  한국경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "\"미·이란, 뉴욕서 호르무즈 개방과 봉쇄 해제 맞교환 논의\"",
+          "source": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBwWV80aWgyUmtOMGJpdWhNTlY1NXNsSWVXQTNqcF9OM1RnRjhVQUIyVWtSTlQwREQ2QnB6R29QT3BtYjBfR0lMUXQxb0hYMGxGVjFsWm1VaVI?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b05d44ba8c40"
+    },
+    {
+      "title": "연료 회사, 노스캐롤라이나 주유소에서 오염된 연료 판매 혐의 피소",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kSFhsU01wdkV0dTFMaV8xTWU3bGhEbmVxWFgwNFNYX3RQdF9ZT0ZSeUdpa3dDNHNPd1VLVm9ES3BGNzBrV2pJQmV6cTZJMjB3bjJkUXhvQmxlb0ktd2xRVC1scXQ0RGtPWGQ0ZEQxdDFoaWY4TDIw?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-09-25 19:00",
+      "summary": "연료 회사, 노스캐롤라이나 주유소에서 오염된 연료 판매 혐의 피소  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b931ad22111e"
+    },
+    {
+      "title": "베트남 국영 석유공사는 기초 수준의 기름 유출 대응 훈련인 \"TD-26\"을 실시합니다.",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdFVHSEJqUDZhODZpd2RleDdVS0RESThGYlpncXYxLWU3aksyd0tWVmZXNVpZNUhicXNhVlJYaEtEeHVOV21DS3JtSmQwMk9aaUY0OTlpdWROaW14VTF3MktoVF8tNlg5amtSUmNZRXN0ZG5CMEZiLUxWTmdybEcwOGc3bFpfTzBXMk9yZFRuenJMdThwNjZ4a1Y0QW4tcmoweTdSZ3VhQQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-25 18:49",
+      "summary": "베트남 국영 석유공사는 기초 수준의 기름 유출 대응 훈련인 \"TD-26\"을 실시합니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "57fbe3447b32"
+    },
+    {
+      "title": "E10 휘발유 가격은 리터당 27,000 VND를 넘어서 40리터를 구매할 때마다 58,000 VND가 추가로 소요됩니다.",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMlhyMFd1TjlDTWNJNGlRci1Ba1BNSlBDTjBWd0ttclUyT0hkd2FWVUdPOTFPQWZwU20xYkplbWJLai1DZVc0WWxvdWpyWkxESGFFNzVxaEhxeGZOMWxGY3pHVkRHQnhVeUc4TDEtanU2OUJWZFRiQWFBODVGMWpXZTRBc1ZhRmFVUEdHSkp1STRVOXFNZHc?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-25 18:43",
+      "summary": "E10 휘발유 가격은 리터당 27,000 VND를 넘어서 40리터를 구매할 때마다 58,000 VND가 추가로 소요됩니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "02ae854912f5"
+    },
+    {
+      "title": "페트로리멕스 시스템의 9월 25일 소매 휘발유 및 석유 가격",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVlRXajhDcEwzU1liYXZzVGtEUGl4ZDlCN1Q2Rm9oeUlETkZRaVlVS3RYdWNCMUxJYlpHTWF0MmRzMXQybUlqODRseWZyeTZBSXJKaHppRzBMV2hieW9rZm1Zb09tell3cmJTUkZZODgtNGt0TFhGSTBzYjhtNTBHMm5ybU42cHJRTGJrN2psYUg3LVpFQTlUVUln?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-25 18:21",
+      "summary": "페트로리멕스 시스템의 9월 25일 소매 휘발유 및 석유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d585ae837cfc"
+    },
+    {
+      "title": "사우디 원유 우회에 오만만 환적 포화…VLCC 운임 사상 최고",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxQlM5XzJHUFp0ck8zLTdiWnZBN1E0bjZORjFpckJvTlo3TGMtYlVRT0xybGZaV2dnbEMybkdTdXRtYURfc0VXbVFRYkNGUUxHTG5HcmZIekJaWV9LODRXOG8xbndaaWtr?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-25 18:00",
+      "summary": "사우디 원유 우회에 오만만 환적 포화…VLCC 운임 사상 최고  ebn.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cf4398353cfc"
+    },
+    {
+      "title": "사우디 원유 우회에 오만만 포화…유조선 운임 급등",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1ZklOUXVoY2I3VW10Y3pBdXhhQ3lfeG03YzV5aWRYN2owNmdOa0dEakNpb05oVDhFOFBncmptQk1wY0dmOExJcWRCTFhYU1NrT2x5QXY4ejhPQnlMdjdnSQ?oc=5",
+      "source": "네이트",
+      "published": "2026-09-25 17:50",
+      "summary": "사우디 원유 우회에 오만만 포화…유조선 운임 급등  네이트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ea9020d7834a"
+    },
+    {
+      "title": "더 많은 것을 얻기 위해 이른 아침이나 늦은 밤에 휘발유를 넣는 개념을 올바르게 이해하십시오",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS1pLdi0xLWxna0gxX1BaeWZ1eXBXcHJ6YkhrLTNtdzRNejNYOGlvVzVkb1piMU1iRklwaTNhU1NyRUFVa1RwbGU3ODdxQzYwNVNhZ0NCc21ray1oUEZBdDFNQTI3aTJNZHoydENTMTRjWUhwLV95RGh2TXRmVXlGY0JqZlpKbk9jN25xZVpEZGxCMzlORDd3a0tEczNPbU5WaG9kVnE1X1pqMlFKcmRxMVgwVk9lQlZS?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-25 17:30",
+      "summary": "더 많은 것을 얻기 위해 이른 아침이나 늦은 밤에 휘발유를 넣는 개념을 올바르게 이해하십시오  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d7616c62893f"
+    },
+    {
+      "title": "2035년까지 비중동산 원유비중 50% 이상으로",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334577",
+      "source": "이투뉴스",
+      "published": "2026-09-25 17:17",
+      "summary": "[이투뉴스] 정부가 2035년까지 비중동산 원유비중을 50%로 높인다. 또 광물 재자원화 기업 20개를 육성하고 해외자원 확보를 지원해 공급원을 늘린다. 자원확보와 비축시설 증설에 필요한 장기 투자재원을 마련할 '자원안보기금'도 신설한다.산업통상부는 자원안보협의회 심의·의결을 거쳐 이 같은 내용을 담은 '제1차 자원안보기본계획(2026~2035년)'을 수립했다고 최근 밝혔다. 국가자원안보 특별법에 따른 자원안보 분야 첫 법정 기본계획이다.이번 계획은 향후 10년간 자원안보 정책의 방향을 제시한 것으로, 자원확보 대책과 이를 뒷받침할",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "94c574126170"
+    },
+    {
+      "title": "오만만에 원유가 몰린다…해상환적 포화에 유조선 확보 경쟁",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE45UkJoT1BHZ0pEMVZEUGctdFRPeG9lMWJzRTV5UmpybGpRN080RnN3WkZpa0xETHRISkM3Q3NSM2JRMEdFUGJoMm1qSnlGSzNsMHJEWg?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-25 17:14",
+      "summary": "오만만에 원유가 몰린다…해상환적 포화에 유조선 확보 경쟁  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6cbe4c5c985f"
+    },
+    {
+      "title": "원유 공급 호르무즈 우회했지만...얀부·홍해도 불안",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5UQ25DSTZYSkJKQkR4TWlCSFJuZWt5ZEpXeDFWMndxcmdBZXVyS2lRVDlhXzJONnBocHZXdmxkVmdrbUUzQnZiUG9LVDBHalQ3SE5UNDVuckdtYW5tc3c?oc=5",
+      "source": "YTN",
+      "published": "2026-09-25 17:09",
+      "summary": "원유 공급 호르무즈 우회했지만...얀부·홍해도 불안  YTN",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "44aa252bff46"
+    },
+    {
+      "title": "사우디 원유 수출길 바꾸자 오만만 '포화'…유조선 용선료 급등",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBBQzFJeVlEYnR5Z1ZMczh4TUNQdHhDVE1VSmp2QzJ3ZVN6UHprYmpUM2gwU3loa1ZLU1BCNk96Q215UndTd0pxR3ZWSQ?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-25 17:03",
+      "summary": "사우디 원유 수출길 바꾸자 오만만 '포화'…유조선 용선료 급등  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "사우디 원유 수출길 바꾸자 오만만 '포화'…유조선 용선료 급등",
+          "source": "news.sbs.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9DLVJJUU9hb202MnVlSUxjTENJYUxQMVBSanZHSmx1NzlqZVVLSjV5OVpxY3VTdmFsbnNIOFBCRTBZZzA0djRqN2ZRZ1FyUTdzQmsza3hSREhOdF9XdjZnZ05xU2x5Zw?oc=5"
+        },
+        {
+          "title": "사우디 원유 수출길 바꾸자 오만만 '포화'…유조선 용선료 급등",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yLXJOdnZCdXRiQi04ZW45NUEtT0FzRjdJbmh6NXRJN3duM1RtcXV6MTBfMnJtNEhhZTNMdEVRM0FKVnpHVzlDZHRDVGNaWjRZZC1pSXNmallSTm1xcTNwcdIBYEFVX3lxTE8yLXJOdnZCdXRiQi04ZW45NUEtT0FzRjdJbmh6NXRJN3duM1RtcXV6MTBfMnJtNEhhZTNMdEVRM0FKVnpHVzlDZHRDVGNaWjRZZC1pSXNmallSTm1xcTNwcQ?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "79243269e96e"
+    },
+    {
+      "title": "중동 공급난에 K윤활기유 몸값 ‘껑충’…정유사 ‘방긋’",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE92OW9YQ203OFRJakJDVnlxZmZOUy0wMXV3WUtoZDV6d0xBM1JfS0xfdG9nYldBaTNqMUdkVkFUS0dUZTRkei15c2RhYkZjZHZrcnVReDhhNkhpd1ZObU1WbUl2bW54c1plV2Z30gFvQVVfeXFMUEw5RTlGa1hmaFJIOER1ZWJDa3N2UHlVdll0NWtMU0syM2NjQWZzS0lmY1VweGZJMjFYVmg3TV9IUkt3anotSnFsVmhOTm5IUmdXbHFPTlhmZk9iRUpGS3o0Sm5ZOVVzY2hFZzFNTUow?oc=5",
+      "source": "한스경제",
+      "published": "2026-09-25 17:01",
+      "summary": "중동 공급난에 K윤활기유 몸값 ‘껑충’…정유사 ‘방긋’  한스경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aefba805ffcb"
+    },
+    {
+      "title": "[국제] 마크롱, G7 회의 소집 추진...전략비축유 방출 논의",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51amNhbF9rSWdyeXA4dWItVzh2RnU1cFlJMkJqWEEtZE16V3F4bW5TaGVTTm9WMlJXRWdOam05Xy1idlNFY3lveEVqMHQ1SHcxZ0R0TXBRc3dfbDRVcEhoNHJMNTZESGp1Qkw5MHpvRDjSAXBBVV95cUxOdWpjYWxfa0lncnlwOHViLVc4dkZ1NXBZSTJCalhBLWRNeldxeG1uU2hlU05vVjJSV0VnTmptOV8tYnZTRWN5b3hFajB0NUh3MWdEdE1wUXN3X2w0VXBIaDRyTDU2REhqdUJMOTB6b0Q4?oc=5",
+      "source": "내외뉴스통신",
+      "published": "2026-09-25 16:56",
+      "summary": "[국제] 마크롱, G7 회의 소집 추진...전략비축유 방출 논의  내외뉴스통신",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[국제] 마크롱, G7 회의 소집 추진...전략비축유 방출 논의",
+          "source": "내외뉴스통신",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA3RUVEUlF5YzE2SUFCMHN4aVg1N3cyZlhWMGd3YlNrbzZzdzNWTkZQMGcyTHF1c2w4Q0JJWFFLeHdTYUFoZUhpb0ZiSG5tc1Z3d2s3YXpRazRWT0lLUnBmOHZ2bHpsZnZOUWYzdVRB0gFwQVVfeXFMTnVqY2FsX2tJZ3J5cDh1Yi1XOHZGdTVwWUkyQmpYQS1kTXpXcXhtblNoZVNOb1YyUldFZ05qbTlfLWJ2U0VjeW94RWowdDVIdzFnRHRNcFFzd19sNFVwSGg0ckw1NkRIanVCTDkwem9EOA?oc=5"
+        },
+        {
+          "title": "[국제] 마크롱, G7 회의 소집 추진...전략비축유 방출 논의",
+          "source": "서울뉴스통신",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9lb3FVSVF0UnYyS2RlODZBN3B4VGp4Qi0yaDNrcDM0WDk4ekRMbnp0eEp0aWJLdVZYOXJldDlSRWxybmdFRDJWbmVaUDBlbnd5UkNpS0dac1J4WFV4bURqdHpsalpBTlFPNktZ?oc=5"
+        },
+        {
+          "title": "[국제] 마크롱, G7 회의 소집 추진...전략비축유 방출 논의",
+          "source": "동방일보",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8zRHpGVl8wNE1kZ0lIcWtwM2dQSk5rWmJsbEpvM3U5NHRuX2ZJV0xXbGl3Rmc1TXFlVGc5cnVNWW9YYS1DYktsRmw4bmJldFYzOURmNlNTYWxvZWI5Q1lIY1FxNXp0V2tGUVhMcUd2bHI3YTg?oc=5"
+        }
+      ],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f444f066a5c9"
+    },
+    {
+      "title": "BSR은 엑손모빌로부터 원유를 구매하여 둥쿠앗 정유소의 공급량을 늘렸습니다.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc05wNzZSWS1DSkR1aXdldElxSFNKUmc2SWVaN3JiYUs2WkY5T3liUURWRl85ZUVHRGEtWmZ0aXdscWZoSG1zQXpTUVZrVnNxRVVCSkRkaVloMEN4aTFoWFN3S01yd3lDall1dE1GTVcybXpGaFVTZFhBYnZvT2RjX0RHUVh6Q0xSNTBSQW5neEVhTzNxWFFJbEx3?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-25 16:12",
+      "summary": "BSR은 엑손모빌로부터 원유를 구매하여 둥쿠앗 정유소의 공급량을 늘렸습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7b7bea4f01d4"
+    },
+    {
+      "title": "휘발유 및 석유 가격 변동에 앞서 상품 가격 상승세를 억제하는 해결책",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE12b2tlX0oxSGJSZzZNeGVMUE5sLWNQdzR2RkJTelhvNk5idWpYcDBUSW1BQzJBcS1lR2k2LXlaQ0o3TERFdHdLT1RSSmVSTFVtMXBSeGhHUGpkNVVnRTNBRTNIWldRV1ZiWk52MWd5dlhuekVPUG5wQ0d2dGhVOWIwMHUtZlBEd0dJQkFaVWxNM01rWmdtN25OaTZVZnVTQnBSamdBOVJCOWVVaGZuTVUtZzk4TXJxa2xyRUVn?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-25 16:07",
+      "summary": "휘발유 및 석유 가격 변동에 앞서 상품 가격 상승세를 억제하는 해결책  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f1a8575bfcd6"
+    },
+    {
+      "title": "중동 전쟁에 윤활기유값 폭등…한국 정유사에 몰리는 주문",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Eam1OTjB6S0lsSTNHQTU0UWNoVVFBaURSY2R1Zjc1dVdtVXhuZlNNcEY5YlhGVV9jVWEzSUVGck51dWVtaTZsVm4tYmR2U29rbThCM25ocmN0NTJadkZSNWlpRS1yWWxiUTlXX1lTMGVhOWJTQ2Q00gF3QVVfeXFMT0RqbU5OMHpLSWxJM0dBNTRRY2hVUUFpRFJjZHVmNzV1V21VeG5mU01wRjliWEZVX2NVYTNJRUZyTnV1ZW1pNmxWbi1iZHZTb2ttOEIzbmhyY3Q1Mlp2RlI1aWlFLXJZbGJROVdfWVMwZWE5YlNDZDQ?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-09-25 15:37",
+      "summary": "중동 전쟁에 윤활기유값 폭등…한국 정유사에 몰리는 주문  핀포인트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "중동 전쟁에 윤활기유값 폭등…한국 정유사에 몰리는 주문",
+          "source": "pinpointnews.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9oX0hnc3FKZWJ2Y3lRU1NKRkE3WU9WRm5wR3VjSUUtRm9zRzkyWWsySGlGYWdGWjltazVQYVhvYnh0RzF1bUJWYURBRGpXd3dPTWpHQlk1LXMxcm9zSDVwWV9jbXRWeGFSWWdKNnctS2F2UTjSAXdBVV95cUxPRGptTk4wektJbEkzR0E1NFFjaFVRQWlEUmNkdWY3NXVXbVV4bmZTTXBGOWJYRlVfY1VhM0lFRnJOdXVlbWk2bFZuLWJkdlNva204QjNuaHJjdDUyWnZGUjVpaUUtcllsYlE5V19ZUzBlYTliU0NkNA?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "926014dc2fa6"
+    },
+    {
+      "title": "국제유가, 후티 미사일 공격에 3%대 급등",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5fcklhT1BMVWlVbl81dTNReE0wSHlkVHY3UFBQX0tKZUNpUE12dnRZREM3UTFiRndtYnZGS2x3cmx0V1hLSEFrQUZkV1VpNGpIWGNaS2ZZUzJzUHcyamJWWGQ1U18zRG00dENjMUlMdk82aEXSAXdBVV95cUxQczFDYUg3NzIzbDYzSF9XNEtTcDdxZnhqdkVCaHhiaXNtNWZXbEZKb0lvckpwY29wbDQ4aGoxS3NkTzZ5TFZjNVZWWlc1S2dJdC1NenJFNGFpTGdlV0U1SzljMVJiRi1wZnZVa3dCbmhTYWJ5TVJ6SQ?oc=5",
+      "source": "pinpointnews.co.kr",
+      "published": "2026-09-25 15:06",
+      "summary": "국제유가, 후티 미사일 공격에 3%대 급등  pinpointnews.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cb624c524684"
+    },
+    {
+      "title": "오늘(9월 25일) 연료 가격: 세계 유가는 약 3% 상승했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNX0xZalF5Q1JJdmxJVEZldVdWUWtyNk4xazdJeGV0T3QyUmxyaXY5X1FKbTA0TVI1YjYxOEJ2MWxqaFVBMXlELXFKNWdKS2Y1ODFOaGpNWlYwRGVSNTN1SXZQUUhkLU9kTmZfWDZCQ3FESHVNU2gyY1ZUNS03cUNQWWs3OXdQZDk1VEE?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-25 15:03",
+      "summary": "오늘(9월 25일) 연료 가격: 세계 유가는 약 3% 상승했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f831a81abb5b"
+    },
+    {
+      "title": "[AI 열폭주 잡는 K산업]下 \"기름에 서버 풍덩\"…정유 4사 꽂힌 새 먹거리",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1iM29ma1ZPRXE5aHNibU1XTWJHb08tOTJzajdoZW93VjVmMzBkUHZIY2Z0bHo2c1FHazdjcjBUdzlLWEd2b2hLbXJ4eDlFNmpGWUZZVEVBTmJtNkNXOXhlU25PQXd2bGgxV3lnQw?oc=5",
+      "source": "비즈워치",
+      "published": "2026-09-25 15:00",
+      "summary": "[AI 열폭주 잡는 K산업]下 \"기름에 서버 풍덩\"…정유 4사 꽂힌 새 먹거리  비즈워치",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7c174c2f243b"
+    },
+    {
+      "title": "아람코 CEO \"동서 파이프라인, 수일 내 복구…원유 공급 지속\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZamp1SkMwVWdMVGNKZGI2SHhGdTBCdHAwTUhobnNncEVta19kMEpCMWpfcl9UeGIyUHl5QlRZTFlWZHhMZ0JydE9rUUh4dS1sWGVMNWhDNlk0SWlIejRpLVFn?oc=5",
+      "source": "매일신문",
+      "published": "2026-09-25 14:38",
+      "summary": "아람코 CEO \"동서 파이프라인, 수일 내 복구…원유 공급 지속\"  매일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "아람코 \"동서 파이프라인 차질 수일내 복구…원유 공급 계속\"",
+          "source": "yna.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kTnNSSWFxVXhiRGY1RmNhcDZaVjVtN0RZS1lqcGE5a3NHTWpZWXo5eGxCdC1Kd1Z0dlNVR2NDSF9aTzYya2h6REJ2X1ZKdDY1OWRITTVlLTZRLU9QRlI1ZtIBYEFVX3lxTE1kTnNSSWFxVXhiRGY1RmNhcDZaVjVtN0RZS1lqcGE5a3NHTWpZWXo5eGxCdC1Kd1Z0dlNVR2NDSF9aTzYya2h6REJ2X1ZKdDY1OWRITTVlLTZRLU9QRlI1Zg?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "13620500d9df"
+    },
+    {
+      "title": "국제유가 3% 넘게 급등…후티 미사일 공격에 공급 우려 재부각",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE81Q1hMNHBEQmpmNmRnRDItcmxDQUtRSVJ1UkpQdEJQVDBSelJzY2NULW1mVGZJWnQycDRCbVc2QXUwT20wR3lWdWp1UmxWVHVOWUpGVEhFTERpaGZsQ2hCWFRwN0trUHJzU2ZoSjR3?oc=5",
+      "source": "OBS경인TV",
+      "published": "2026-09-25 14:20",
+      "summary": "국제유가 3% 넘게 급등…후티 미사일 공격에 공급 우려 재부각  OBS경인TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7dbd8c7098f0"
+    },
+    {
+      "title": "미국과 이란은 호르무즈 해협 재개방을 위한 로드맵을 조용히 협상하고 있다.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMk9nTXBQVzBfR2ZFd083UkNpRzBYVFV4X3Blc3c0WXN1SHMxbzhWaFRKcUNIRk1HYTZUV004SUZlbWRHTUREb0FQbEs4YkZ1YzIxTWNWdnV4Wm5lR0RZWmFGc21YTzhBemdXWFF1cFMzS2ZfVGdKcUgtT1ZPcTdZR3UxWXBFaVBNQTRYNQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-25 13:48",
+      "summary": "미국과 이란은 호르무즈 해협 재개방을 위한 로드맵을 조용히 협상하고 있다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a34545804db9"
+    },
+    {
+      "title": "美·이란, 7개월 전쟁 종식 위한 '단계적 종전' 추진...호르무즈-경제봉쇄 맞교환 논의",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBCMmJlcW1ZamhobW1xWTFzTmlPVWhPOVNCb3NZd0c5cEJwZDVpUzBaYTgtbW5uaER2VUlvSWVMQVVJS05LTWxXQnhTaG5VUUdWZU9pUTE4Rk56S0ZkMkZDYzA4MVhpbnRUb3d2bXBNUXpZUQ?oc=5",
+      "source": "중앙이코노미뉴스",
+      "published": "2026-09-25 13:43",
+      "summary": "美·이란, 7개월 전쟁 종식 위한 '단계적 종전' 추진...호르무즈-경제봉쇄 맞교환 논의  중앙이코노미뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "39744d58ef8e"
+    },
+    {
+      "title": "중동 공급난에 몸값 뛴 윤활기유…정유업계 실적 견인",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE01X2FOSFY1SHZ6YnY5VHBXQ1hKT3RpUDRDTmV1NTFNVHQxN1dxREUwMTBKck9kb0FiRmFwY3VNVEh5R1VNbmZpVHBSMHRtbjhidVlWVzNKTTV0RHBGSk1KaEJBNXjSAWhBVV95cUxQOS04aTZjdHctNFF4b3FWWTgwZEg1M1Q3YWs2dVJjQm11WTBwWkRpX09PWkdPakZSaEw4SDRpX1FZc05GMjUweXQxek9CRHFvYXhPN0RicnVaYVdnd25SLWZMdWFTc2RGWQ?oc=5",
+      "source": "매일일보",
+      "published": "2026-09-25 13:24",
+      "summary": "중동 공급난에 몸값 뛴 윤활기유…정유업계 실적 견인  매일일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "000e7cbba402"
+    },
+    {
+      "title": "내년부터 의무화되는 '지속가능 항공유'…어디까지 왔나 |",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE02dFpVS1g3UFJRLXhHYlpzdkFfeVI5X0EwU29UYV9sdHdsOWItZ2lZVmNWN1Y4YzZnVjIyblNYaHZqTl9SRTlGUVFlbVpsdW9LM2tKWkJuUDVtZ0RSRDExaWtRQ1RpMkF3a0hRTWJlOXRFVHl3?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-09-25 13:08",
+      "summary": "내년부터 의무화되는 '지속가능 항공유'…어디까지 왔나 |  연합인포맥스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b1e67d68fa06"
+    },
+    {
+      "title": "아람코 \"호르무즈 봉쇄에도 韓 원유 공급 지속…우회 수송망 활용\"",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtTllJTnVZVWtRZldkX0k1RURFa243c0ZvTV8zcHdQUmpaTTRHeFVNTDZzeUtaMVdIY0ViN0l6RG05MlNNVkd5ZTg0WXpucllGUFVsTTNCVk5lMVY4bTEyYTJnSmVKTkNK?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-25 12:52",
+      "summary": "아람코 \"호르무즈 봉쇄에도 韓 원유 공급 지속…우회 수송망 활용\"  ebn.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ecf67460983d"
+    },
+    {
+      "title": "이란, 美에 ‘호르무즈 7일 재개방안’ 제시…협상 새 국면(종합)",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6aTlnQUZtNDU2SWZXT2NFcW50bnF0ODVJeWtIZXdOM2hJODZieXAyTTRleHMwUTZvcGx1bERId0tmX1JkbWVpMGw5bkVKWlcyLWVYeDFhUmlmNFVpMFhxQzdTU2R3ZlFCb1Vr?oc=5",
+      "source": "해사신문",
+      "published": "2026-09-25 12:51",
+      "summary": "이란, 美에 ‘호르무즈 7일 재개방안’ 제시…협상 새 국면(종합)  해사신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f87812e0bb0c"
+    },
+    {
+      "title": "오늘 9월 25일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMl83UjJTNk1SdmE0Tl8zMGVwSjFnU1Z3QTNXamhJeWdpM3BmQ05IdDZXYW91TXg5R3RRbE1tbVlWWkp1Q25ielltcFlxZmZOb1ZLVG13bTlxQ3dkTmgyUVRCNTNudGJ2YTdySXhoeW9Ua3Z4eUsyeWRVOW9Dem1wNlh3?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-25 12:45",
+      "summary": "오늘 9월 25일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5b09324d2333"
+    },
+    {
+      "title": "경유 ‘만땅‘ 만 원 주유소?",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB6cHF5ZWFQRGdSQ2xlZ3ZkdFJsR1pUakFEZFpZMkRjYnFyZFlleG5oLVQyM0hUcFYyTmRfTThGelc1T2RTcWRfTjVlbHM?oc=5",
+      "source": "브런치",
+      "published": "2026-09-25 12:18",
+      "summary": "경유 ‘만땅‘ 만 원 주유소?  브런치",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "03a5c920a853"
+    },
+    {
+      "title": "중동 공급난에 몸값 뛴 윤활기유…국내 정유사 하반기도 '효자' 기대",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5xMFdVbjlRb29MLWZfSmJORkVBczYxc3NXWmlDY3VWTm1jc3lnR2N3SUt4Sm5GemxiR19FVk0yTDQtQjhTbG5ZUVRVSnFrVlMwQVVwSFFZTzY?oc=5",
+      "source": "더트래커",
+      "published": "2026-09-25 12:04",
+      "summary": "중동 공급난에 몸값 뛴 윤활기유…국내 정유사 하반기도 '효자' 기대  더트래커",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d38a4885058e"
+    },
+    {
+      "title": "2026년 9월 25일 오늘 연료 가격: E10 휘발유 가격이 리터당 28,640 VND로 최고치를 기록했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV2pBdzdTdi1TLUlwdm1MRm5CZXJiOFUtVXhMX1ZUTVp1bHFFeUZ4VlRKUTJ4M1E4bFJPaHdQeFV1X1BZdmVKTElFMlVGaURGalAtbUo5dlc3d19jYjMtRXRUcmJGMW5kMERCNFAxcTFhNEc3VldHTkJ2M1VkRUlmLUp5UEtMWHB3NzhYRHU2UHFxU2xfVGtIcmlsMXk1Uzg?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-25 11:25",
+      "summary": "2026년 9월 25일 오늘 연료 가격: E10 휘발유 가격이 리터당 28,640 VND로 최고치를 기록했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2e5173036b5e"
+    },
+    {
+      "title": "오늘 9월 25일 휘발유 가격: 하락세로 전환",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ0pBbFp4S2JaNXItQ2pZbWZWZVUyd1MyNk96TkNGNlgwVnRiVmtiWm8wVHBycUtWNEtQck1KbWl2blUzNFg2YWl6RE52MTRkd2J3N01IMXNEd1BEc2Qyai1SdFlrMTRrQ0tqUzVqS1lIRU5GYmpfeEdyUUlJcnpzWlBOaFhFUEJRbE5n?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-25 11:20",
+      "summary": "오늘 9월 25일 휘발유 가격: 하락세로 전환  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3cbc474d2605"
+    },
+    {
+      "title": "트럼프 경유 수출금지 발언에 EU \"나쁜 생각\"…설득전 돌입",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1seDRXRkF1c1hHcVNva25mbmJIT2NyOWtoMFhQb3h6ZUc1a2hKbF9RLXF5aW5tYVphSU9sT2xCRnJubUh0eFlKU3ZJSzZkbU4tekdHQ21yTHFaU2p1SXlCbmtn?oc=5",
+      "source": "매일신문",
+      "published": "2026-09-25 10:53",
+      "summary": "트럼프 경유 수출금지 발언에 EU \"나쁜 생각\"…설득전 돌입  매일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fbaf6c9b1989"
+    },
+    {
+      "title": "美·이란, 호르무즈 재개방 '단계적 합의' 논의…봉쇄 해제 맞교환",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBHb3pHUG85aDRkRlo5cE45YkIxcl9QeHNSZEU0QmVfNFdWZEFodnlQeHdXbWQ5ZjdUNjRDUE1SOUhZalRUZFRSWUpUM3UxdTdLV3Z0bUtJZ1EtVVRFWkZ3?oc=5",
+      "source": "조세일보",
+      "published": "2026-09-25 10:53",
+      "summary": "美·이란, 호르무즈 재개방 '단계적 합의' 논의…봉쇄 해제 맞교환  조세일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b2716c1ab353"
+    },
+    {
+      "title": "이란 대통령 美에 '7일 협상안' 제시…호르무즈 재개방 협상 급물살",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkTWF5MmZHQmczQzhxWkhwS1Zndk1ZVXVxTndFN19nSlMwVkd4TC0xTFNQeWtuaHE3WHc1cGpwQW1zdENSdHlURUp3a0IzT0VKdHdDRmwtYl9fUDh5U2Z5bUNhR1liMEU3?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-25 10:53",
+      "summary": "이란 대통령 美에 '7일 협상안' 제시…호르무즈 재개방 협상 급물살  ebn.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "94aee9753fdb"
+    },
+    {
+      "title": "국제유가, 후티 미사일 발사에 급등…브렌트유 3.5%↑",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE82UWl1NkhLZmVyeThiZTB4YldyV183UnktV1JWZHIyNGJ0M0FZWEs1UWVrZEFUbWg5UUg4VWh4OUNWVnVCYjdaWXY0WEliUHk5UDhyUnFGY3FBN2pvSzJYSnU3d3hwaU9nVFY5VG5aWDdVMGvSAXNBVV95cUxPNlFpdTZIS2Zlcnk4YmUweGJXcldfN1J5LVdSVmRyMjRidDNBWVhLNVFla2RBVG1oOVFIOFVoeDlDVlZ1QmI3Wll2NFhJYlB5OVA4clJxRmNxQTdqb0syWEp1N3d4cGlPZ1RWOVRuWlg3VTBr?oc=5",
+      "source": "여성신문",
+      "published": "2026-09-25 10:50",
+      "summary": "국제유가, 후티 미사일 발사에 급등…브렌트유 3.5%↑  여성신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "eb6b0b5fd2a6"
+    },
+    {
+      "title": "미국 경유 수출 금지 예고에…\"병보다 해로운 처방\" |",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4wQjY5b1QtblVUOFVxQk1oNHExTEpZbHFBbks5M0p1bUR6b3JLM1dJNHFCUFRjTGJ5Ul9wVlJxZF9GSjBoNFA5UXlGUjV0ZEVzSkEwWjNXeVliV3psTEFmMjdPWHRmdm02VVBqNTB5MGN0QXdYd3c?oc=5",
+      "source": "포춘코리아",
+      "published": "2026-09-25 10:44",
+      "summary": "미국 경유 수출 금지 예고에…\"병보다 해로운 처방\" |  포춘코리아",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "86832a158c23"
+    },
+    {
+      "title": "이란 외무 \"全 전선 종전·봉쇄 해제시 7일후 호르무즈 개방\" 확인",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA4QUlTTjNRcTA0cXdhRld2WVFuYU4yNURsdUJUMkQxY3c0azhSNDkzbHpXMVYxTTM3NlR5ZGJka0Vkc245cW02OUdZcUVuTHNFMzhzU1dJWFVreVVhWldJSjRQX0JpWFZPekdHZGhlX1V4c0pFdVFaONIBeEFVX3lxTFA4QUlTTjNRcTA0cXdhRld2WVFuYU4yNURsdUJUMkQxY3c0azhSNDkzbHpXMVYxTTM3NlR5ZGJka0Vkc245cW02OUdZcUVuTHNFMzhzU1dJWFVreVVhWldJSjRQX0JpWFZPekdHZGhlX1V4c0pFdVFaOA?oc=5",
+      "source": "newsis.com",
+      "published": "2026-09-25 10:43",
+      "summary": "이란 외무 \"全 전선 종전·봉쇄 해제시 7일후 호르무즈 개방\" 확인  newsis.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3190aa8011d9"
+    },
+    {
+      "title": "미국 경유 수출금지 거론에 EU 화들짝 놀라 설득전 돌입",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Za3lWTGtoTFNHZlBzLUIyS3JobUtjaldCQkxNUkdwWTd3d0p3Ykg3N1MxZzNVVzVUSUVYMUdzaHVRSlhhSzNTWFFLZXBEUlBHMzlIM09pcWthMlZlU1prdtIBYEFVX3lxTE1Za3lWTGtoTFNHZlBzLUIyS3JobUtjaldCQkxNUkdwWTd3d0p3Ykg3N1MxZzNVVzVUSUVYMUdzaHVRSlhhSzNTWFFLZXBEUlBHMzlIM09pcWthMlZlU1prdg?oc=5",
+      "source": "yna.co.kr",
+      "published": "2026-09-25 10:39",
+      "summary": "미국 경유 수출금지 거론에 EU 화들짝 놀라 설득전 돌입  yna.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7c7bc2b4f287"
+    },
+    {
+      "title": "이란, 美에 ‘7일짜리 최종 제안’…호르무즈 해협 열겠다는 조건은?",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1xRnhxRWlwMWlIeGxwb0JDaWZTSWp5cXhuVzh2dzJabldUTkZUZ2FWZkQwN2U0aUhqc2EtYWF6VkJfdzl4Y0RHNlpGWUNoa0xMZWlRcUo5bGo4NnB3RVZmRmlWcWNmcTZfTnVOTFJ3WllPak40YUZR0gF3QVVfeXFMTXFGeHFFaXAxaUh4bHBvQkNpZlNJanlxeG5XOHZ3MlpuV1RORlRnYVZmRDA3ZTRpSGpzYS1hYXpWQl93OXhjREc2WkZZQ2hrTExlaVFxSjlsajg2cHdFVmZGaVZxY2ZxNl9OdU5MUndaWU9qTjRhRlE?oc=5",
+      "source": "pinpointnews.co.kr",
+      "published": "2026-09-25 10:11",
+      "summary": "이란, 美에 ‘7일짜리 최종 제안’…호르무즈 해협 열겠다는 조건은?  pinpointnews.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4dc8f608b600"
+    },
+    {
+      "title": "이란, “美에 호르무즈 재개방 위한 ‘7일 로드맵’ 제안”",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPa1BhbTFid1FvSUdSVnF2Rng4bzdaTUFtdHA3blNyY3ZEdko0MXVEMXJVV3ZJMjZDM1Z3THlYWHFHRDBucWxMTm93UWIwRlZfdkQtUVQ4NHk4TGxmN01aaTVBZU92YWdteVVudEczVVZlZldfbG9Tdmk4c05rQkFfUkpDZzdreDk5b1lfMkNQQklDc0FTcVg2a1pzeXN5QQ?oc=5",
+      "source": "조선일보",
+      "published": "2026-09-25 10:00",
+      "summary": "이란, “美에 호르무즈 재개방 위한 ‘7일 로드맵’ 제안”  조선일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "이란, 미국에 호르무즈 재개방 위한 '7일간 로드맵' 제안(종합)",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE00bkptVTNxYXJ3Ml8zOFNlM1hqN2JkVmVTdEZKbURvT3JYLV9UM3dJV1prUlNzVU5DT3VOV3RITERWZEZqc2lKVDRLMHh2b1hrUVc3dllIVlJHLVHSAWBBVV95cUxNVFBGOXJlQXFScmRuZjhydlZtODEwMHNhLXJDRVdtQVN6ZEZWNnlNbWFZZHFCaXhCXzJNVXJJNlkxVndHLVU5TU5DLXJvdWNNS1dEdGFYbTFIYTVyMWp2NVY?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8949190570a8"
+    },
+    {
+      "title": "[마켓펄스] “2004년 이후 최고치”...국제유가 상승에 美 국채금리 ‘급등’",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qLVZVazBnZmtKaTVHb3pOdnR0eWJWTW50UktCOTlHZVVicUYwOXIzeEZiVnBtS0ZPTko0SGl2cDQ2UGZzMFhyYi0wSFN6cGdzZVlzTGRHUGVGazR3Y0E2RlUzRWdNWnQ4UjVfNjU2b9IBb0FVX3lxTE9qLVZVazBnZmtKaTVHb3pOdnR0eWJWTW50UktCOTlHZVVicUYwOXIzeEZiVnBtS0ZPTko0SGl2cDQ2UGZzMFhyYi0wSFN6cGdzZVlzTGRHUGVGazR3Y0E2RlUzRWdNWnQ4UjVfNjU2bw?oc=5",
+      "source": "투데이신문",
+      "published": "2026-09-25 09:45",
+      "summary": "[마켓펄스] “2004년 이후 최고치”...국제유가 상승에 美 국채금리 ‘급등’  투데이신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c7fbfc668156"
+    },
+    {
+      "title": "원유 가격만 보면 연료비를 놓친다, IEA가 짚은 정제제품 병목과 기업의 조달 선택",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUmEwb20yR01BaGdGS3ZWemp0eUl0SHhvc0d1NjhYM19WZVdtbmVhTW9Dd0RTZTRfekpYNFN6R2tEQ1hhalNOT2djX2psenMwV0RGVmJhYjZqMnlDaGsyd0JfeXRaUW5YNjMxRlpSd0NXQU1KcERURHFDTGhhTGlwQnpSclRobnpLbms4Vm53?oc=5",
+      "source": "코리아비즈니스리뷰",
+      "published": "2026-09-25 09:23",
+      "summary": "원유 가격만 보면 연료비를 놓친다, IEA가 짚은 정제제품 병목과 기업의 조달 선택  코리아비즈니스리뷰",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "241e17416426"
+    },
+    {
+      "title": "미국·이란, 호르무즈 해협 재개방 및 경제봉쇄 해제 단계적 합의 모색",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9hbVBuc01kQWxKYzhrNFFUTXpDX2RaR1NhekNmWk1FWEVvRTM5ekFiaG9lNlh3R3BHQ3o2T1Rfd2cxNVBhcGQyd2ZmRUI3LVdYSGZaVlJqb3RCMW8yU194cGxJUGdsX2RnZU5ENmxxWdIBb0FVX3lxTE9hbVBuc01kQWxKYzhrNFFUTXpDX2RaR1NhekNmWk1FWEVvRTM5ekFiaG9lNlh3R3BHQ3o2T1Rfd2cxNVBhcGQyd2ZmRUI3LVdYSGZaVlJqb3RCMW8yU194cGxJUGdsX2RnZU5ENmxxWQ?oc=5",
+      "source": "글로벌E",
+      "published": "2026-09-25 09:19",
+      "summary": "미국·이란, 호르무즈 해협 재개방 및 경제봉쇄 해제 단계적 합의 모색  글로벌E",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "79825df952d4"
+    },
+    {
+      "title": "“美·이란, 호르무즈 재개방 위한 단계적 합의 모색”",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOR3RVUTlpOERNZEFybm1FdVI0ZEdjeWJxZmcxTnlVYXBMYVBWNnZkclpCd2p0b2FETmxqVjl4Z1g2VG8zRWJBZ0pyMTAtWWNhOVE0TlhhaTh3OWt1b3h2VWdKSndhTU5qOGZSMFhQb1lKempaYlAxbVBQaWFubjI4SjZMVzFnRk9iSDJPd1B3?oc=5",
+      "source": "국제신문",
+      "published": "2026-09-25 09:14",
+      "summary": "“美·이란, 호르무즈 재개방 위한 단계적 합의 모색”  국제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "db626da60897"
+    },
+    {
+      "title": "아람코 \"호르무즈 막혀도 韓·日 원유 공급…우회로도 검토\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUkwxRXFoc0oxd1BRRzFQRnlVdjlIQmdnaG52WlZ4V01CaWdTeU5nS3lWaldJMHhXXzFMWEswRjd0cE1TMnpNZWk5cWREeGlwWW5Qam1PZlBMQQ?oc=5",
+      "source": "한국경제",
+      "published": "2026-09-25 09:00",
+      "summary": "아람코 \"호르무즈 막혀도 韓·日 원유 공급…우회로도 검토\"  한국경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fdce05edb949"
+    }
+  ]
+}
