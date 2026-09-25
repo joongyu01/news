@@ -5,17 +5,25 @@ import {formatAudit} from '../api/_audit.js';
 const fresh=()=>({version:1,owner:'123',chats:{'123':structuredClone(DEFAULTS)},recent:[]});
 let nextUpdate=100;
 const msg=(text,id=nextUpdate++,chat=123,from=123)=>({update_id:id,message:{text,chat:{id:chat,type:chat<0?'supergroup':'private'},from:{id:from}}});
+const privateState={...fresh(),chat_info:{'123':{name:'관리자'}},daily_report:{text:'private summary'}};
+assert.match(command(msg('/subscribers'),privateState).text,/관리자/);
+assert.equal(command(msg('/daily_report'),privateState).text,'private summary');
+for(const query of ['/subscribers','/daily_report']) {
+  assert.match(command(msg(query,900,-987,123),privateState).text,/소유자/);
+  assert.match(command(msg(query,901,999,999),privateState).text,/소유자/);
+  assert.doesNotMatch(command(msg(query,902,123,999),privateState).text,/private summary|관리자/);
+}
 assert.equal(DEFAULTS.mode,'standard'); assert.equal(DEFAULTS.limit,0);
 let state=fresh();
-let result=command(msg('/subscribe@news_joongyubot',1,-987),state);
+let result=command(msg('/subscribe_-987@news_joongyubot',1),state);
 assert.ok(result.payload.chats['-987']);
 state=result.payload;
-result=command(msg('/urgent off',2,-987),state);
+result=command(msg('/urgent off',2),state);
 assert.equal(result.payload.chats['-987'].urgent,false);
 assert.equal(result.payload.chats['123'].urgent,false);
 state=result.payload;
-assert.equal(command(msg('/urgent off',2,-987),state).payload,undefined); // replay is idempotent
-assert.equal(command(msg('/urgent_off',3,999,999),state).payload.global.urgent,false);
+assert.equal(command(msg('/urgent off',2),state).payload,undefined); // replay is idempotent
+assert.equal(command(msg('/urgent_off',3,999,999),state).payload,undefined);
 assert.equal(command(msg('/status@other_bot'),state),null);
 assert.equal(command({...msg('/subscribe',3,-987),message:{...msg('/subscribe',3,-987).message,sender_chat:{id:-987}}},state),null);
 assert.equal(command(msg('/limit 999'),state).payload,undefined);
@@ -30,18 +38,18 @@ assert.equal(command(msg('/watch remove (a+)+$',5),state).payload.chats['123'].w
 state.global.watch=Array.from({length:10},(_,i)=>`word${i}`);
 assert.equal(command(msg('/watch add eleventh',6),state).payload,undefined);
 for(let i=0;i<3;i++) state.chats[String(-100-i)]=structuredClone(DEFAULTS);
-assert.equal(command(msg('/subscribe',7,-111),state).payload,undefined);
-assert.equal(command(msg('/unsubscribe',8,-987),state).payload.chats['-987'],undefined);
+assert.equal(command(msg('/subscribe_-111',7),state).payload,undefined);
+assert.equal(command(msg('/unsubscribe_-987',8),state).payload.chats['-987'],undefined);
 assert.equal(command(msg('ordinary message'),state),null);
 let globalState=fresh();
 globalState.chats['-987']={...structuredClone(DEFAULTS),urgent:false};
-result=command(msg('/watch_add_석유_품질',20,555,555),globalState);
+result=command(msg('/watch_add_석유_품질',20),globalState);
 assert.deepEqual(result.payload.global.watch,['석유 품질']);
 assert.deepEqual(result.payload.chats['-987'].watch,['석유 품질']);
 assert.equal(result.payload.chats['555'],undefined); // settings does not subscribe the private chat
-assert.match(command(msg('/settings',21,555,555),result.payload).text,/전체 공통 설정/);
-assert.equal(command(msg('/quiet_22_07',22,555,555),result.payload).payload.global.quiet,'22-07');
-assert.deepEqual(command(msg('/excluded_2',23,555,555),result.payload).audit,{page:2,excluded:true});
+assert.match(command(msg('/settings',21),result.payload).text,/전체 공통 설정/);
+assert.equal(command(msg('/quiet_22_07',22),result.payload).payload.global.quiet,'22-07');
+assert.deepEqual(command(msg('/excluded_2',23),result.payload).audit,{page:2,excluded:true});
 const auditState={pool:{articles:[
   {id:'a',title:'<기사>',url:'https://example.com/?a=1&b=2',published:'2026-09-21 12:00'},
   {id:'b',title:'대기 기사',published:'2026-09-21 12:00'}],rejected:[{id:'c',title:'행사',reason:'수집 규칙 제외: 홍보'}]},
@@ -74,3 +82,9 @@ globalThis.fetch=async()=>({ok:false,status:503});
 r=res();await handler({method:'POST',headers,body:msg('/limit 4')},r);
 assert.equal(r.code,503);
 console.log('Bot command authorization, limits, isolation, replay and webhook checks passed');
+
+for(const c of ['/urgent_off','/subscribe','/unsubscribe','/settings','/articles','/daily_report','/watch_add_x']) {
+ for(const [chat,from] of [[-987,123],[999,999],[123,999]]) {
+  const denied=command(msg(c,1200,chat,from),fresh()); assert.equal(denied.payload,undefined); assert.equal(denied.audit,undefined); assert.match(denied.text,/소유자/);
+ }
+}

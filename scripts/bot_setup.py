@@ -7,6 +7,7 @@ from . import storage, preferences
 from .config import env
 
 COMMANDS = {
+    "subscribers": "구독 목록 (소유자 개인톡)", "daily_report": "최근 일일 운영 요약 (소유자 개인톡)",
     "settings": "봇 전체 현재 설정", "status": "전체 설정 확인", "help": "명령어 사용법",
     "articles": "수집 기사와 판정 (개인톡)", "excluded": "기사 제외 이유 (개인톡)",
     "urgent_on": "전체 긴급 알림 켜기", "urgent_off": "전체 긴급 알림 끄기",
@@ -29,15 +30,18 @@ def main():
     rows = storage.request('GET','news_bot_settings',params={'id':'eq.main','select':'id'}).json()
     if not rows:
         storage.request('POST','news_bot_settings',json={'id':'main','payload':preferences.initial()})
+    owner = preferences.load()['owner']
+    if owner != env('TELEGRAM_CHAT_ID') or not str(owner).isdigit():
+        raise RuntimeError('Private owner mismatch')
     secret = hmac.new(key.encode(),b'news-bot-webhook-v1',hashlib.sha256).hexdigest()
     # Verify production API and DB before asking Telegram to deliver messages.
     check = requests.post(url+'/api/telegram',headers={'X-Telegram-Bot-Api-Secret-Token':secret},
-                          json={'update_id':0,'message':{'text':'/status','chat':{'id':0,'type':'private'},'from':{'id':0}}},timeout=20)
+                          json={'update_id':0,'message':{'text':'/status','chat':{'id':int(owner),'type':'private'},'from':{'id':int(owner)}}},timeout=20)
     if check.status_code != 200 or check.json().get('method') != 'sendMessage':
         raise RuntimeError('Webhook endpoint not ready')
     for command in ('/settings', '/articles', '/excluded'):
         check = requests.post(url+'/api/telegram', headers={'X-Telegram-Bot-Api-Secret-Token':secret},
-                              json={'update_id':0,'message':{'text':command,'chat':{'id':0,'type':'private'},'from':{'id':0}}}, timeout=20)
+                              json={'update_id':0,'message':{'text':command,'chat':{'id':int(owner),'type':'private'},'from':{'id':int(owner)}}}, timeout=20)
         body = check.json()
         if check.status_code != 200 or body.get('method') != 'sendMessage' or not body.get('text') or '실패' in body['text'] and command == '/settings':
             raise RuntimeError('Bot query verification failed')
@@ -54,9 +58,23 @@ def main():
             raise RuntimeError(f'Telegram {method} failed')
         return body.get('result')
 
+    for chat, sender in [(-1, int(owner)), (0, 0)]:
+        check = requests.post(url+'/api/telegram', headers={'X-Telegram-Bot-Api-Secret-Token':secret},
+            json={'update_id':0,'message':{'text':'/subscribers','chat':{'id':chat,'type':'group' if chat < 0 else 'private'},'from':{'id':sender}}}, timeout=20)
+        if check.status_code != 200 or '소유자' not in check.json().get('text',''):
+            raise RuntimeError('Master access guard not deployed')
+    for command in ('/subscribers', '/daily_report'):
+        check = requests.post(url+'/api/telegram', headers={'X-Telegram-Bot-Api-Secret-Token':secret},
+            json={'update_id':0,'message':{'text':command,'chat':{'id':int(owner),'type':'private'},'from':{'id':int(owner)}}}, timeout=20)
+        if check.status_code != 200 or check.json().get('method') != 'sendMessage' or '명령 형식' in check.json().get('text',''):
+            raise RuntimeError('Master query not deployed')
+    print('마스터 전용 조회·그룹/타 계정 접근 차단 검증 완료 (실제 메시지 발송 없음)')
+
     me=api('getMe',{})
-    api('setMyCommands',{'commands':[{'command':cmd,'description':desc} for cmd,desc in COMMANDS.items()]})
-    if {c['command'] for c in api('getMyCommands',{})} != set(COMMANDS):
+    api('setMyCommands',{'commands':[]})
+    scope = {'type':'chat', 'chat_id':int(owner)}
+    api('setMyCommands',{'scope':scope,'commands':[{'command':cmd,'description':desc} for cmd,desc in COMMANDS.items()]})
+    if {c['command'] for c in api('getMyCommands',{'scope':scope})} != set(COMMANDS):
         raise RuntimeError('Telegram command registration mismatch')
     api('setWebhook',{'url':url+'/api/telegram','secret_token':secret,'max_connections':1,
                       'allowed_updates':['message']})

@@ -1,0 +1,39 @@
+name: 일일 운영 요약 (소유자 개인톡)
+on:
+  schedule:
+    - cron: '0 11 * * *' # 20:00 KST, Actions 예약 지연 가능
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '발송·저장 없이 집계 확인'
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: news-urgent-alerts
+  cancel-in-progress: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -q -r requirements.txt
+      - name: 소유자 운영 요약
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=()
+          [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
+          python -m scripts.daily_report "${args[@]}"

@@ -2,7 +2,7 @@ import crypto from 'node:crypto';
 import {usageText} from './_usage.js';
 
 export const DEFAULTS = {urgent:true, daily:true, mode:'standard', limit:0, watch:[], exclude:[], quiet:'off'};
-export const HELP = `뉴스 봇 공통 설정 (어느 계정에서든 변경 가능)
+export const HELP = `뉴스 봇 마스터 관리 (소유자 개인톡 전용)
 /settings 현재 전체 설정 (/status도 가능)
 /urgent_on · /urgent_off 긴급 알림
 /daily_on · /daily_off 조간 알림
@@ -17,11 +17,13 @@ export const HELP = `뉴스 봇 공통 설정 (어느 계정에서든 변경 가
 /usage 사용량 · /logs 운영 기록 (개인톡)
 /logs_collect · /logs_alerts · /logs_dispatch
 /subscribe 이 방 구독 · /unsubscribe 이 방 구독 해제
+/subscribe_대화ID · /unsubscribe_대화ID 대상 방 구독 관리
+/subscribers 구독 목록 · /daily_report 최근 일일 운영 요약 (소유자 개인톡)
 /help 도움말
 
-설정은 모든 구독방에 공통 적용되며 응답은 요청한 방에만 보냅니다.
-개인톡에서 구독 없이 설정할 수 있습니다. 기사 상세 조회는 개인톡 전용입니다.
-구독/해제만 현재 방에 적용됩니다. 최대 5개 방, 키워드 각 10개.
+설정은 모든 구독방에 공통 적용됩니다. 관리는 소유자 개인톡에서만 가능합니다.
+단톡방과 다른 사람의 개인톡에서는 명령을 실행할 수 없습니다.
+대화ID를 생략하면 내 개인톡의 구독만 변경합니다. 최대 5개 방, 키워드 각 10개.
 수집 24시간 15분 간격 · AI 선별 06:00~23:30 매시 00/30분 · 조간 05:17 예약(08시 전 수신 목표, 지연 가능).
 관심 키워드도 업무 관련성·시급성 기준을 통과해야 발송됩니다.`;
 
@@ -67,13 +69,25 @@ export function command(update, stored) {
   if (cmd === 'quiet' && /^\d{2} \d{2}$/.test(args)) args = args.replace(' ', '-');
   if (m.from?.is_bot || m.sender_chat) return null;
   const chat = String(m.chat.id);
+  if (m.chat.type !== 'private' || chat !== String(stored.owner) || String(m.from.id) !== String(stored.owner))
+    return {chat:m.chat.id, text:'봇 관리는 소유자와의 개인 대화에서만 가능합니다.'};
   const payload = structuredClone(stored);
   const known = (stored.recent || []).find(x => x.id === update.update_id);
   if (known) return {chat:m.chat.id, text:known.text};
   const options = globalOptions(payload);
   let text;
   let changed = false;
-  if (cmd.toLowerCase() === 'usage') {
+  if (cmd === 'subscribers' || (cmd === 'daily' && args === 'report')) {
+    if (m.chat.type !== 'private' || chat !== String(stored.owner) || String(m.from.id) !== String(stored.owner))
+      text = '이 조회는 봇 소유자와의 개인 대화에서만 가능합니다.';
+    else if (cmd === 'subscribers') {
+      text = [`뉴스 구독 목록 · ${Object.keys(stored.chats).length}개 방`, ...Object.keys(stored.chats).map((id,i)=> {
+        const info = stored.chat_info?.[id];
+        return `${i+1}. ${info?.name || (id === String(stored.owner) ? '내 개인톡' : '이름 미확인')} · ${id.startsWith('-')?'단톡방':'개인톡'} (ID ${id})`;
+      }), '단톡방의 참여자 명단이 아니라 봇의 발송 대상 목록입니다.'].join('\n');
+    } else text = stored.daily_report?.text || '아직 일일 운영 요약이 없습니다. 매일 20:00 KST 예약이며 지연될 수 있습니다.';
+  }
+  else if (cmd.toLowerCase() === 'usage') {
     text = m.chat.type !== 'private' ? '사용량은 봇과의 개인 대화에서 /usage로 확인해주세요.'
       : args ? '/usage 또는 usage만 입력해주세요.' : usageText(stored.github_usage);
   }
@@ -90,14 +104,23 @@ export function command(update, stored) {
   }
   else if (cmd === 'start' || cmd === 'help') text = HELP;
   else if (cmd === 'subscribe') {
-    if (!payload.chats[chat] && Object.keys(payload.chats).length >= 5) text = '최대 5개 방까지 구독할 수 있습니다. 다른 방에서 /unsubscribe 후 다시 시도하세요.';
+    const target = args || chat;
+    if (!/^-?[1-9][0-9]{0,15}$/.test(target) || !Number.isSafeInteger(Number(target))) text = '/subscribe_대화ID 형식으로 입력해주세요.';
+    else if (!payload.chats[target] && Object.keys(payload.chats).length >= 5) text = '최대 5개 방까지 구독할 수 있습니다. /unsubscribe_대화ID로 해제 후 다시 시도하세요.';
     else {
-      payload.chats[chat] = structuredClone(options); changed = true;
-      text = '✅ 이 방의 뉴스 구독을 연결했습니다. /status로 확인하세요.';
+      payload.chats[target] = structuredClone(options); changed = true;
+      payload.chat_info ||= {};
+      if (target === chat) payload.chat_info[chat] = {name:String(m.chat.title || [m.chat.first_name,m.chat.last_name].filter(Boolean).join(' ') || '내 개인톡').replace(/[\r\n\x00-\x1f]/g,' ').slice(0,100)};
+      text = `✅ 대화 ${target} 구독 등록. 봇이 참여 중인 방 또는 봇과 대화를 시작한 개인톡만 수신할 수 있습니다. /subscribers로 확인하세요.`;
     }
   } else if (cmd === 'unsubscribe') {
-    delete payload.chats[chat]; changed = true;
-    text = '이 방의 뉴스 구독을 해제했습니다. /subscribe로 다시 연결할 수 있습니다.';
+    const target = args || chat;
+    if (!payload.chats[target]) text = '등록된 구독 대상이 아닙니다. /subscribers로 확인하세요.';
+    else {
+      delete payload.chats[target]; changed = true;
+      if (payload.chat_info) delete payload.chat_info[target];
+      text = `대화 ${target}의 뉴스 구독을 해제했습니다. 소유자 운영 요약은 별도로 유지됩니다.`;
+    }
   } else if (cmd === 'status' || cmd === 'settings') {
     text = `봇 전체 공통 설정 · 구독 ${Object.keys(payload.chats).length}개 방\n모델: Gemini 3.8 Flash → 실패 시 3.7 → 3.1 Flash-Lite · 두 키 교대 · 하루 최대 40회\n긴급: ${options.urgent?'켜짐':'꺼짐'} · 아침 동향: ${options.daily?'켜짐':'꺼짐'}\n강도: ${options.mode} · 일일 상한: ${options.limit || '없음'}\n휴식(KST): ${options.quiet}\n관심: ${options.watch.join(', ') || '없음'}\n제외: ${options.exclude.join(', ') || '없음'}\n수집: 24시간 15분 간격 · AI 알림: 06:00~23:30 매시 00/30분 (예약 지연 가능)`;
   } else if (['urgent','daily'].includes(cmd) && ['on','off'].includes(args)) {

@@ -22,6 +22,13 @@ def published(article):
 
 
 def accumulate(state, incoming, now, config):
+    # Only seven bounded aggregate records, never the raw crawling history.
+    stats = state.setdefault('daily_counts', {})
+    day = now.date().isoformat()
+    entry = stats.setdefault(day, {'started_at': now.isoformat(), 'collection_runs': 0, 'collected': 0})
+    entry['collection_runs'] += 1
+    entry['collected'] += len(incoming)
+    state['daily_counts'] = {d: stats[d] for d in sorted(stats)[-7:]}
     previous = state.get("pool", {})
     rejected = {a['id']: a for a in previous.get('rejected', [])
                 if a.get('observed_at', '') >= (now-timedelta(hours=48)).isoformat()}
