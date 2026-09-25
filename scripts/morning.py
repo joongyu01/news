@@ -1,4 +1,4 @@
-"""08:00: 누적 기사만 읽어 하루 한 번 분석하고 검토 초안을 저장한다."""
+"""05:17 예약: 누적 기사만 읽어 하루 한 번 분석하고 검토 초안을 저장한다."""
 import argparse
 import logging
 from datetime import timedelta

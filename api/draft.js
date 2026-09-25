@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     return json(res, 404, {
       error: `${date} 초안이 아직 없습니다`,
       date,
-      hint: "15분마다 수집한 기사를 매일 08:00에 AI가 종합 분석합니다.",
+      hint: "15분마다 수집한 기사를 매일 05:17 예약으로 AI가 종합 분석합니다. 08시 전 수신 목표이며 실행은 지연될 수 있습니다.",
     });
   }
 

@@ -1,9 +1,9 @@
-# 매일 08:00 KST, 누적 기사 분석 성공 후 바로 조간 발송.
+# 매일 05:17 KST 예약. 최근 약 2시간대 지연을 감안해 08시 전 수신 목표.
 name: 조간 AI 분석·발송
 
 on:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "17 20 * * *"
   workflow_dispatch:
     inputs:
       dry_run:

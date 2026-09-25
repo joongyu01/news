@@ -1,4 +1,4 @@
-"""08:00 실행 — 검토 결과를 반영한 최종본을 발송하고 아카이브에 남깁니다."""
+"""조간 분석 후 실행 — 검토 결과를 반영한 최종본을 발송하고 아카이브에 남깁니다."""
 
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     if (use_supabase and remote_draft is None) or (not use_supabase and not draft_path.exists()):
         # 수집이 실패했으면 빈 동향을 보내지 않고 조용히 멈춥니다.
-        log.error("초안이 없습니다: %s — 08:00 조간 분석 작업 로그를 확인하세요", draft_path)
+        log.error("초안이 없습니다: %s — 05:17 예약 조간 분석 작업 로그를 확인하세요", draft_path)
         return 1
 
     config = load_config()

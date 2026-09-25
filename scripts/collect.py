@@ -1,6 +1,6 @@
 """06:40 실행 — 뉴스를 모아 검토용 초안을 만듭니다.
 
-결과물은 data/drafts/YYYY-MM-DD.json 한 파일입니다. 08:00 발송 작업과
+결과물은 data/drafts/YYYY-MM-DD.json 한 파일입니다. 조간 발송 작업과
 검토 페이지가 모두 이 파일을 봅니다.
 """
 
@@ -91,7 +91,7 @@ def build(config) -> Digest:
 
 
 def notify_reviewer(digest: Digest, config) -> None:
-    """담당자에게만 '검토해 주세요' 알림. 전 직원 발송은 08:00 작업이 합니다."""
+    """담당자에게만 '검토해 주세요' 알림. 전 직원 발송은 조간 작업이 합니다."""
     review_url = env("REVIEW_URL")
     if not review_url:
         return
@@ -106,7 +106,7 @@ def notify_reviewer(digest: Digest, config) -> None:
         + (f" · ⚠️ 주의 {risky}건" if risky else ""),
         "",
         "빼실 기사를 눌러 제외하신 뒤 두시면,",
-        "08:00에 최종본이 발송됩니다.",
+        "조간 작업 완료 후 최종본이 발송됩니다.",
         "",
         review_url,
     ]
