@@ -99,13 +99,13 @@ class TestDedupe(unittest.TestCase):
         self.assertEqual(len(merged[0].duplicates), 1)
         self.assertEqual(merged[0].risk, ["담합", "검찰"])
 
-    def test_different_sectors_never_merge(self):
-        """제목이 같아도 섹터가 다르면 각 섹터에 하나씩 남아야 합니다."""
+    def test_same_event_merges_across_sectors(self):
+        """같은 사건은 분류가 달라도 첫 대표 하나만 남깁니다."""
         articles = [
             Article(title="석유 수급 안정 대책", url="https://a/1", source="A", sector="kpetro"),
             Article(title="석유 수급 안정 대책", url="https://a/2", source="B", sector="energy"),
         ]
-        self.assertEqual(len(dedupe(articles)), 2)
+        self.assertEqual(len(dedupe(articles)), 1)
 
     def test_identical_url_dropped(self):
         articles = [

@@ -15,6 +15,8 @@ from .digest import Digest, load_exclusions
 from .models import now_kst
 from .notify import send_email, send_digest as send_telegram
 from .render import split_for_telegram
+from .dedupe import dedupe
+from .editorial import prepare
 
 log = logging.getLogger(__name__)
 
@@ -28,6 +30,8 @@ def build(config, days: int = 7) -> tuple[str, int]:
     risk_counter: Counter[str] = Counter()
     risk_articles: list[tuple[str, str, str, str]] = []   # 날짜, 제목, 매체, url
     days_used = 0
+    candidates = []
+    dates = {}
 
     for offset in range(days):
         date = (start + timedelta(days=offset)).strftime("%Y-%m-%d")
@@ -38,12 +42,18 @@ def build(config, days: int = 7) -> tuple[str, int]:
         digest = Digest.load(path)
         excluded = load_exclusions(EXCLUSION_DIR / f"{date}.json")
         for title, items in digest.by_sector(config, excluded):
-            sector_counts[title] += len(items)
-        for article in digest.risk_articles(excluded):
+            for article in items:
+                candidates.append(article)
+                dates.setdefault(article.id, date)
+
+    # One representative per event across dates, sources, and sections; counts and
+    # highlights use the same filtered set rather than every archived risk keyword.
+    titles = {s.id: s.title for s in config.sectors}
+    for article in dedupe(prepare(candidates, config)):
+        sector_counts[titles[article.sector]] += 1
+        if article.risk:
             risk_counter.update(article.risk)
-            risk_articles.append(
-                (date, article.title, article.source, article.url)
-            )
+            risk_articles.append((dates[article.id], article.title, article.source, article.url))
 
     lines = [
         f"한국석유관리원 주간 언론동향 ({start:%m월 %d일} ~ {today:%m월 %d일})",
@@ -54,7 +64,7 @@ def build(config, days: int = 7) -> tuple[str, int]:
         return "\n".join(lines) + "\n", 0
 
     total = sum(sector_counts.values())
-    lines += [f"[집계] {days_used}일간 {total}건", ""]
+    lines += [f"[집계] {days_used}일간 중복 제외 {total}건", ""]
     for title, count in sector_counts.most_common():
         lines.append(f"· {title} {count}건")
 

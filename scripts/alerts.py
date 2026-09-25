@@ -15,7 +15,8 @@ import yaml
 from . import storage, preferences, rolling, screening
 from .classify import is_blocked
 from .config import ROOT, env, load_config
-from .dedupe import similarity
+from .dedupe import similarity, same_story
+from .editorial import urgent_exclusion
 from .models import Article, now_kst
 from .notify import send_telegram
 from .render import article_anchor
@@ -40,6 +41,8 @@ def load_rules():
 
 def urgent_reason(article, rules, options=None):
     title = article.title
+    if urgent_exclusion(article):
+        return None
     if options and any(word.casefold() in title.casefold() for word in options.get("exclude", [])):
         return None
     if not re.search(rules.get("topic_exclude_title", r"(?!)"), title, re.I):
@@ -122,12 +125,10 @@ def trim_history(state, rules, now):
 
 
 def already_sent(article, reason, history, threshold):
-    numbers = re.findall(r"\d+", article.title)
     return any(
         article.id == old["id"] or (
             reason["id"] == old["rule"]
-            and numbers == re.findall(r"\d+", old["title"])
-            and similarity(article.title, old["title"]) >= threshold
+            and same_story(article.title, old["title"], threshold)
         ) for old in history
     )
 
@@ -172,7 +173,11 @@ def select_alerts(articles, state, rules, now, config, options=None):
         if reason and reason.get("kind") == "topic" and rules.get("topics_delivery") == "daily":
             # 관심 주제라도 실제 사고·확정 정책 규칙에 해당하면 즉시 알린다.
             reason = urgent_reason(article, {**rules, "topics": []}, options)
-        if not reason or already_sent(article, reason, known, rules["similarity_threshold"]):
+        # Distinct model-assigned events include important updates. Do not let a
+        # lexical fallback overrule that semantic distinction; exact URLs still win.
+        comparable = [old for old in known if old['id'] == article.id or
+                      (not decision or not old.get('ai_event') or old['ai_event'] == decision['event_key'])]
+        if not reason or already_sent(article, reason, comparable, rules["similarity_threshold"]):
             continue
         if options and options.get("mode") == "strict":
             if reason.get("kind") != "topic" and re.search(r"표창|수상|인터뷰|분석|파장|기대|검토|시행.*(?:후|영향)|방출.*(?:안|않)", article.title):

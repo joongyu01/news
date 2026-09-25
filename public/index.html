@@ -248,11 +248,13 @@ function titleLine(date) {
 }
 
 function quoteText(q) {
+  const note = [q.as_of, q.basis, q.source].filter(Boolean).join(" · ");
+  const suffix = note ? ` (${note})` : "";
   const v = Number(q.value).toLocaleString("en-US",
     { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  if (q.change_pct === null || q.change_pct === undefined) return `${q.label} ${v}${q.unit || ""}`;
+  if (q.change_pct === null || q.change_pct === undefined) return `${q.label} ${v}${q.unit || ""}${suffix}`;
   const arrow = q.change_pct > 0 ? "▲" : q.change_pct < 0 ? "▼" : "-";
-  return `${q.label} ${v}${q.unit || ""} ${arrow}${Math.abs(q.change_pct).toFixed(1)}%`;
+  return `${q.label} ${v}${q.unit || ""} ${arrow}${Math.abs(q.change_pct).toFixed(1)}%${suffix}`;
 }
 
 function marketLine() {

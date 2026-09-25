@@ -42,6 +42,7 @@ class Article:
     duplicates: list[dict[str, str]] = field(default_factory=list)
     query: str = ""              # 어떤 검색어로 걸렸는지 (디버깅용)
     language: str = "ko"          # 해외 영문 기사는 아침 분석에만 사용
+    event_key: str = ""          # API 모델의 사건 판정; 규칙으로 생성하지 않음
 
     @property
     def id(self) -> str:

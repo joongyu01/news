@@ -6,7 +6,7 @@ from datetime import timedelta
 from . import alerts, analysis, rolling, storage, preferences
 from .collect import notify_reviewer
 from .config import DRAFT_DIR, load_config, env
-from .dedupe import dedupe
+from .dedupe import dedupe, same_article_event
 from .digest import Digest
 from .editorial import prepare
 from .market import market_brief
@@ -16,7 +16,7 @@ from .render import render_plain
 log = logging.getLogger(__name__)
 
 
-def build(config, state, now, previous=None, persist=None, exclude_words=None):
+def build(config, state, now, previous=None, persist=None, exclude_words=None, previous_articles=None):
     raw = rolling.daily_articles(state, now)
     raw = [a for a in raw if not any(w.casefold() in a.title.casefold() for w in (exclude_words or []))]
     if alerts.load_rules().get("ai_screening"):
@@ -25,9 +25,13 @@ def build(config, state, now, previous=None, persist=None, exclude_words=None):
         decisions = {d['id']: d for d in state.get('screening', {}).get('checked', [])}
         pending = sum(a.id not in decisions for a in raw)
         raw = [a for a in raw if decisions.get(a.id, {}).get('relevant') is not False]
+        for a in raw:
+            a.event_key = decisions.get(a.id, {}).get('event_key', '')
         if pending:
             log.info("미선별 누적 기사 %d건은 조간 AI가 직접 관련성 판단", pending)
-    articles = dedupe(prepare(raw, config))
+    articles = dedupe(prepare(raw, config, now))
+    articles = [a for a in articles if not any(a.id == old.id or same_article_event(a, old)
+                                             for old in (previous_articles or []))]
     fallback_notice = ""
     try:
         report = (analysis.analyze_dual if env('MORNING_DUAL') == 'true' else analysis.analyze)(articles, previous, state, persist)
@@ -92,7 +96,13 @@ def main(argv=None):
     previous = (old or {}).get("analysis", {}).get("issues", [])
     prefs = preferences.load()
     words = prefs.get('global', prefs.get('chats', {}).get(prefs.get('owner'), {})).get('exclude', [])
-    digest = build(config, alerts.read_state(), now, previous, alerts.save_state, words)
+    # Only compare with the previous dispatch selection, respecting reviewer exclusions.
+    previous_articles = []
+    from . import archive
+    if old and archive.archive_path(yesterday).exists():
+        excluded = set((storage.read("news_exclusions", yesterday) or {}).get("excluded", []))
+        previous_articles = [a for _, items in Digest.from_dict(old).by_sector(config, excluded) for a in items]
+    digest = build(config, alerts.read_state(), now, previous, alerts.save_state, words, previous_articles)
     if args.owner_test:
         send_owner_test(digest, config, prefs)
         return 0

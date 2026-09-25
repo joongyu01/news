@@ -13,6 +13,35 @@ MARKETS = r"금값|금\s*시세|코스피|코스닥|주가|증시|테마주|목�
 ACTION = r"적발|수사|구속|기소|고발|압수수색|과징금|담합|품질부적합|정량미달|불법유통|사망|폭발|화재|누출|공급\s*(?:중단|차질)|비리"
 
 
+def urgent_exclusion(article):
+    """Deterministic veto even when the model incorrectly approves a headline."""
+    t = article.title
+    if re.search(OPINION + "|" + MARKETS + r"|해상풍력|여행\s*(?:재고|자제|경보)|금융\s*(?:구조|재편)|방정식|의 비밀", t):
+        return "해설·투자·여행 정보는 긴급 대상 아님"
+    if re.search(r"최근\s*\d+년|\d+년간|되짚|돌아본|재조명", t):
+        return "과거 누적 통계·회고"
+    # A recap must not become urgent merely because it was posted today.
+    if re.search(r"지난\s*(?:\d+월\s*)?\d+일|지난해|작년", t + " " + article.summary) and not re.search(r"오늘|방금|추가.*(?:사망|피해)|새로.*(?:확정|중단)|정부.*(?:명령|결정)", t):
+        return "과거 사건 소개, 현재의 중요 변화 근거 없음"
+    return ""
+
+
+def stale_market(article, now):
+    from datetime import date
+    if not re.search(r"유가|시황", article.title):
+        return False
+    match = re.search(r"(\d{1,2})월\s*(\d{1,2})일?", article.title)
+    if not match:
+        return False
+    try:
+        day = date(now.year, *map(int, match.groups()))
+        if (day - now.date()).days > 180:
+            day = day.replace(year=now.year - 1)
+        return (now.date() - day).days >= 2
+    except ValueError:
+        return False
+
+
 def relevance(article):
     """(score, sector, reason); score=0 is excluded from daily analysis."""
     t = article.title
@@ -42,12 +71,12 @@ def relevance(article):
     return (90 if re.search(ACTION, t) else 60), "energy", "석유·연료 시장"
 
 
-def prepare(articles, config):
+def prepare(articles, config, now=None):
     from .classify import is_blocked, risks_for
     kept = []
     for a in articles:
         score, sector, _ = relevance(a)
-        if not score or is_blocked(a, config):
+        if not score or is_blocked(a, config) or (now and stale_market(a, now)):
             continue
         a.sector = sector
         # 예방 활동에 '가짜석유'가 들어갔다는 이유로 경보를 붙이지 않는다.

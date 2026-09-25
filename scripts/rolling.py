@@ -40,7 +40,7 @@ def accumulate(state, incoming, now, config):
                               'reason': '수집 규칙 제외: ' + (reason if not score else '기본 차단 키워드')}
     items = [Article.from_dict(a) for a in previous.get("articles", [])]
     by_id = {}
-    for a in prepare([*items, *incoming], config):
+    for a in prepare([*items, *incoming], config, now):
         when = published(a)
         if not when or not now-timedelta(hours=RETENTION_HOURS) <= when <= now+timedelta(minutes=5):
             continue
