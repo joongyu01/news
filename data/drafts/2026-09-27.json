@@ -1,0 +1,1414 @@
+{
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27 07:53",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1355.05,
+      "change_pct": -0.9900628379365743,
+      "unit": "원",
+      "as_of": "2026-09-25",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 92.41000366210938,
+      "change_pct": -2.3253323475842778,
+      "unit": "달러/배럴",
+      "as_of": "2026-09-25",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 104.31999969482422,
+      "change_pct": -2.138835658473656,
+      "unit": "달러/배럴",
+      "as_of": "2026-09-25",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 122,
+    "fresh": 122,
+    "classified": 122,
+    "representatives": 66,
+    "duplicates": 56
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.8-flash",
+        "issues": [
+          {
+            "title": "국내 석유제품 가격 19주 연속 하락세 유지 및 최고가격제 등 정부 조치 지속",
+            "summary": "전국 휘발유 가격이 1,858원을 기록하는 등 국내 석유제품 가격이 19주 연속 내림세를 이어갔다. 국제유가 안정세와 더불어 정부의 최고가격제 및 고속도로 주유소 할인 등 정책적 조치가 복합적으로 작용한 결과로 보도되었다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "석유 최고가격제 시행 등 유통 및 가격 정책이 이어짐에 따라, 가격 표시제 준수 여부 및 주유소 유통 질서에 대한 시장 모니터링 업무가 지속적으로 요구될 가능성이 있다.",
+            "article_ids": [
+              "15b9425da429",
+              "f96c9706e78c",
+              "c1b266c0fa6a"
+            ]
+          },
+          {
+            "title": "중동 정세 완화 기대 및 호르무즈 재개방 제안에 따른 국제유가 2% 이상 하락",
+            "summary": "이란전 관련 외교적 해결 기대감과 호르무즈 해협 재개방 제안 등의 영향으로 국제유가가 2% 이상 하락했다. 다만 이란의 제안을 트럼프 측이 일축하는 등 여전히 정세 불확실성이 상존하고 있다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "국제유가 급등락 및 중동발 원유 공급망 불확실성은 국내 수급 불안정 또는 가격 왜곡을 초래할 수 있어, 국내 원유 및 석유제품 수급 동향 모니터링 강화가 필요할 가능성이 있다.",
+            "article_ids": [
+              "9f5a6cecb4b3",
+              "a5e8709c30e3"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1670,
+          "candidatesTokenCount": 424,
+          "totalTokenCount": 2094
+        },
+        "attempts": 1,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "version": 1,
+        "model": "groq/qwen/qwen3.8-27b",
+        "issues": [
+          {
+            "title": "국내 급유값 19주 연속 하락, 최고가격제 및 고속도로 할인 효과 분석",
+            "summary": "2026년 9월 26일 전국 휘발유 평균가격은 1,858원을 기록하며 19주 연속 하락했다. 이 하락세는 국제유가 안정과 함께 정부의 최고가격제, 고속도로 유류할인카드 할인 등 가격 안정화 정책이 겹쳐진 결과로 보도되었다. 유가 안정기 진입에 따른 정책 효과와 시장 가격 변동성이 주목받고 있다.",
+            "change": "전일 자료에는 '우가 상승 국면 속'이라는 표현이 있었으나, 이날 자료에서는 19주 연속 하락 및 최고가격제 등 구체적인 가격 억제 정책의 실행 효과를 확인했다.",
+            "impact": "가격 차별 및 위계 석유 유통 질서 유지에 대한 모니터링 필요성이 부각된다. 최고가격제 운영 관련 직영주유소 여부와 가격 준수 여부 점검이 강화될 가능성이 있다.",
+            "article_ids": [
+              "15b9425da429",
+              "f96c9706e78c",
+              "c1b266c0fa6a"
+            ]
+          },
+          {
+            "title": "이란 호르무즈 해협 개방 제안 및 미군 나포 유조선 규모 수정 보도",
+            "summary": "이란이 호르무즈 해협 재개방을 제안했으나 트럼프 행정부는 이를 일축하고 해협 명칭 변경을 요구한 것으로 전해졌다. 또한 미군이 나포한 이란 유조선 3척의 원유 규모가 6억 달러로 수정 보도되었으며, 해당 유조선이 미국으로 향하고 있다고 보도되었다. 중동 정세 변화가 국제유가에 미칠 영향이 이관되고 있다.",
+            "change": "전일 자료에 해당 사건이 없었으므로 새로운 이슈로 포함한다.",
+            "impact": "호르무즈 해협 물류 차질 여부 및 원유 수급 불안정 확산 가능성을 감시해야 하며, 국제 유가 변동성이 국내 정유사 재고 및 품질 대응 정책에 영향을 미칠 수 있다.",
+            "article_ids": [
+              "9f5a6cecb4b3",
+              "a5e8709c30e3",
+              "b44dd82f21d0"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "prompt_tokens": 1563,
+          "completion_tokens": 557,
+          "total_tokens": 2120
+        },
+        "attempts": 1,
+        "provider": "groq",
+        "status": "ok"
+      }
+    ],
+    "issues": [
+      {
+        "title": "국내 석유제품 가격 19주 연속 하락세 유지 및 최고가격제 등 정부 조치 지속",
+        "summary": "전국 휘발유 가격이 1,858원을 기록하는 등 국내 석유제품 가격이 19주 연속 내림세를 이어갔다. 국제유가 안정세와 더불어 정부의 최고가격제 및 고속도로 주유소 할인 등 정책적 조치가 복합적으로 작용한 결과로 보도되었다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "석유 최고가격제 시행 등 유통 및 가격 정책이 이어짐에 따라, 가격 표시제 준수 여부 및 주유소 유통 질서에 대한 시장 모니터링 업무가 지속적으로 요구될 가능성이 있다.",
+        "article_ids": [
+          "15b9425da429",
+          "f96c9706e78c",
+          "c1b266c0fa6a"
+        ]
+      },
+      {
+        "title": "중동 정세 완화 기대 및 호르무즈 재개방 제안에 따른 국제유가 2% 이상 하락",
+        "summary": "이란전 관련 외교적 해결 기대감과 호르무즈 해협 재개방 제안 등의 영향으로 국제유가가 2% 이상 하락했다. 다만 이란의 제안을 트럼프 측이 일축하는 등 여전히 정세 불확실성이 상존하고 있다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "국제유가 급등락 및 중동발 원유 공급망 불확실성은 국내 수급 불안정 또는 가격 왜곡을 초래할 수 있어, 국내 원유 및 석유제품 수급 동향 모니터링 강화가 필요할 가능성이 있다.",
+        "article_ids": [
+          "9f5a6cecb4b3",
+          "a5e8709c30e3"
+        ]
+      },
+      {
+        "title": "국내 급유값 19주 연속 하락, 최고가격제 및 고속도로 할인 효과 분석",
+        "summary": "2026년 9월 26일 전국 휘발유 평균가격은 1,858원을 기록하며 19주 연속 하락했다. 이 하락세는 국제유가 안정과 함께 정부의 최고가격제, 고속도로 유류할인카드 할인 등 가격 안정화 정책이 겹쳐진 결과로 보도되었다. 유가 안정기 진입에 따른 정책 효과와 시장 가격 변동성이 주목받고 있다.",
+        "change": "전일 자료에는 '우가 상승 국면 속'이라는 표현이 있었으나, 이날 자료에서는 19주 연속 하락 및 최고가격제 등 구체적인 가격 억제 정책의 실행 효과를 확인했다.",
+        "impact": "가격 차별 및 위계 석유 유통 질서 유지에 대한 모니터링 필요성이 부각된다. 최고가격제 운영 관련 직영주유소 여부와 가격 준수 여부 점검이 강화될 가능성이 있다.",
+        "article_ids": [
+          "15b9425da429",
+          "f96c9706e78c",
+          "c1b266c0fa6a"
+        ]
+      },
+      {
+        "title": "이란 호르무즈 해협 개방 제안 및 미군 나포 유조선 규모 수정 보도",
+        "summary": "이란이 호르무즈 해협 재개방을 제안했으나 트럼프 행정부는 이를 일축하고 해협 명칭 변경을 요구한 것으로 전해졌다. 또한 미군이 나포한 이란 유조선 3척의 원유 규모가 6억 달러로 수정 보도되었으며, 해당 유조선이 미국으로 향하고 있다고 보도되었다. 중동 정세 변화가 국제유가에 미칠 영향이 이관되고 있다.",
+        "change": "전일 자료에 해당 사건이 없었으므로 새로운 이슈로 포함한다.",
+        "impact": "호르무즈 해협 물류 차질 여부 및 원유 수급 불안정 확산 가능성을 감시해야 하며, 국제 유가 변동성이 국내 정유사 재고 및 품질 대응 정책에 영향을 미칠 수 있다.",
+        "article_ids": [
+          "9f5a6cecb4b3",
+          "a5e8709c30e3",
+          "b44dd82f21d0"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-09-26T22:52:04.075712+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "국내 기름값 19주째 하락…최고가격제·고속도로 할인에 국제유가 안정 겹쳐",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fR3dra3JtaUlENmFIdEtYbVN3VTdaNUVNUm00QlVxbDVwX2pBMDBxaURyLWRpNHA4WjBXellCMnBnYWltRFhnQmJJZWZubGUtWkwzZzRvVnU?oc=5",
+      "source": "더트래커",
+      "published": "2026-09-26 15:00",
+      "summary": "국내 기름값 19주째 하락…최고가격제·고속도로 할인에 국제유가 안정 겹쳐  더트래커",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전국 주유소 기름값 '19주 연속' 하락…정부 최고가격제·고속도로 주유소 인하 영향",
+          "source": "중앙이코노미뉴스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1CY3BudlhCSmJwWklzYmRCNlFYYTdaaDZZUWVwRlBxNGx1Y2IxdUJuS29KcUc4WWNINk5vUU9SZXkySlpGdVFXQjdVU0pwLUdRQ2otcUQtZVFaWnkwUmtUcURWc21mYUVyMHR0alJhZWRXZw?oc=5"
+        },
+        {
+          "title": "주유소 기름값 19주 연속 내려…최고가격제·추석연휴 할인 영향",
+          "source": "신아일보",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5PRllNZXRIdVk0RTdLMU9EbkJvNUxWQVJwMUpWbTM2NDJSU1hScV9lNTBZakpwbzRqanFBdlFRbUJ1MHZXV0RDWXhLb0gxQkdEdnRaVmhWa05IblcyZXdrSnFWNTZQRy1vdnRaNWdMUzA?oc=5"
+        },
+        {
+          "title": "국내 기름값 19주째 하락…최고가격제·고속도로 주유소 할인",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1ZTGdlbjk0Wndad3JiaTktN1VyWTZHak1oWnJTUkVvOHVzYWNTY0QzS01kclFOdE9mZFVPWnBkdDUtNXFaU1daeXBzSlRpZGc?oc=5"
+        },
+        {
+          "title": "국내 기름값 19주째 하락…최고가격제·고속도로 주유소 할인",
+          "source": "SBS Biz",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9sT0JiY09Cd1VrZ1BWd3o4Y0o5dU53Nm1aSmhNYjIzNnRMRWlfVC1ZdTB4azU3QnJCSTBWVGNERnFFdk1SamhGaWt6SjlMc2pET2Vr0gFYQVVfeXFMTk9wbmxCZjNpMkttMmtWTG5vOXVpWEVERXR3ektPNkRkaklGMHBiOHlNeVlxNGxBSEttVkV0dm01SkUzR0wxM3lIdVIxQzZHdzJHaHUzaWJpOQ?oc=5"
+        },
+        {
+          "title": "정부 상한제·명절 특수 인하 효과에 유가 19주 연속 하향선",
+          "source": "생생비즈플러스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CR1NEYUl2SGlxcFdrTFFZVWN2Q2NzbG1UT1U3dHdBWUVqY3p4amJTMnlnX1dqdHBtODVCVVNVdzhSS1ctUzlBazktTWhjVjNoWlV3UUprd0pVWFFjbUx1NGh3ZzQ3TjIyT1dTZA?oc=5"
+        },
+        {
+          "title": "전국 휘발유 1858원⋯정부 가격조치에 19주 연속 내림세",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ON0F1VzgxRkZoZ0hGM0o3ZTh1UUFjUmtUVnZDUnhvSndaaE5vVEpZeTdqOFZEaW1ocnU3RGtHa1Z0ZzMzUk92RDNTZ2xSdTJSMmpYbg?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "국내 기름값 19주째 최고가격제 효과 지속",
+      "id": "15b9425da429"
+    },
+    {
+      "title": "전국 휘발유 1858원⋯정부 가격조치에 19주 연속 내림세",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1DVlFaOVZCUnBPSUc4Y25EUEY1U18wc3lpY1FLY0lWbmlSSHJLcmZPTDROSkhJS0toamZuTi1FUFMxbEliMmhRV1RNTQ?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 08:34",
+      "summary": "전국 휘발유 1858원⋯정부 가격조치에 19주 연속 내림세  v.daum.net",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전국 휘발유 1858원⋯정부 가격조치에 19주 연속 내림세",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwdUE2WDFtWFhqOFlVaWR3OWlCa2lEOWdXbUJrU3BaSjAzenhvWl9YMEpjUVVxaDhHbjdmQkxGME14Qy1VT3c?oc=5"
+        },
+        {
+          "title": "전국 휘발유 1858원⋯정부 가격조치에 19주 연속 내림세",
+          "source": "이투데이",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1QenU5Q3FfUTl0bXZjb2lQZ1NDTVdHaVJPMXdKMFBPQ1Zja25FQUhhUG13V3MtcHJlQjU0X2p2eVhWbFdEajBjRmx6aktMUWpMRTM2VQ?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f96c9706e78c"
+    },
+    {
+      "title": "19주 연속 내린 기름값…유가 안정세 속 '정책 효과' 겹쳐",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4dHNOd1p0RXFEZF9BdXlZangtS1FFTUs4dzVVNTF3ejh4eDJaUkdRSWtWQTZfdkVvY0h2ZjgxbGZHdXdRQkNkQ1duUV90ZEE1QzBSc21DMW54VFd6ajlFbzR2Mk5kNC0w?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-26 08:19",
+      "summary": "19주 연속 내린 기름값…유가 안정세 속 '정책 효과' 겹쳐  ebn.co.kr",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c1b266c0fa6a"
+    },
+    {
+      "title": "국제유가, 이란戰 '외교해법' 기대감ㆍ호르무즈 재개방 제안에 2% 이상 ↓",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5aZ0JWTWZCTE1oNS1TZ3puM0hwMHA2LUlsVkNhd3l6QzBhUldMN2lkZ2tTSm9PMWZvYkVsZkxkZEpFMDl0ZFBfeWZaMmFFbV9EUE16MXBrZ1pzdUNJTW91a21TbUdVR2ZTU1ZyT9IBcEFVX3lxTE5hUUFvdjIzeWs4aktqRmpidjRaT3RUWC1RLUZJQXFMaGZ1a1I0YTRsR1dFdUoyVzFTdkJ4VXVzU2xFREY4aVd3cnRMSTVVWnNKODRFU09yNUFINm1uWGxLaUJsQTcybF8yRzdueTVCM2s?oc=5",
+      "source": "글로벌경제신문",
+      "published": "2026-09-26 08:00",
+      "summary": "국제유가, 이란戰 '외교해법' 기대감ㆍ호르무즈 재개방 제안에 2% 이상 ↓  글로벌경제신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가, 이란戰 '외교해법' 기대감ㆍ호르무즈 재개방 제안에 2% 이상 ↓",
+          "source": "getnews.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hUUFvdjIzeWs4aktqRmpidjRaT3RUWC1RLUZJQXFMaGZ1a1I0YTRsR1dFdUoyVzFTdkJ4VXVzU2xFREY4aVd3cnRMSTVVWnNKODRFU09yNUFINm1uWGxLaUJsQTcybF8yRzdueTVCM2vSAXBBVV95cUxOYVFBb3YyM3lrOGpLakZqYnY0Wk90VFgtUS1GSUFxTGhmdWtSNGE0bEdXRXVKMlcxU3ZCeFV1c1NsRURGOGlXd3J0TEk1VVpzSjg0RVNPcjVBSDZtblhsS2lCbEE3MmxfMkc3bnk1QjNr?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9f5a6cecb4b3"
+    },
+    {
+      "title": "삼다수 재생에너지·AI 여행계획… 제주 17개 공공기관 혁신 상시점검",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBjUnNpSnVNenpBZ3ljdWdYWnVYdk5hb3JvLVd2czdHektaOUg1ZkpfRGlCZGREVjF2WDFGeVZiREh6U244dXc?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 09:01",
+      "summary": "삼다수 재생에너지·AI 여행계획… 제주 17개 공공기관 혁신 상시점검  v.daum.net",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "삼다수 재생에너지·AI 여행계획… 제주 17개 공공기관 혁신 상시점검",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB0LXJ5Tkt1YlZJM3pEcDdhWk9wR1QzbnEzVkRkRGVieVVpTllZQ2RUdG8zNTAwQmpMa2RxVTE4UDBOTEUyRDI1ZVFJN1ctM28?oc=5"
+        }
+      ],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "53380c06fe2a"
+    },
+    {
+      "title": "‘호르무즈→트럼프 해협’…이란 제안 일축한 트럼프",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBtN3NxbFR6cVZ6YnF0dWVoa2RkdmlhZGdZZ2p2ZkF1SVkwZXEzcDZ3WUdWNG9pQVBBeGdNTXFsdFphcmo5UUlqcVFiS043dlJSU3NmV1FYbzZFZm1tc2dZV0xJQjZmVDBsNWNB0gFUQVVfeXFMT2F1a3A1ckR6SWdmSm9GYWkya0llb0RVbm9WMnJPdnA5Qm5ZOWN4aXRHQjNHVGFjZGxXMDY4UFpGZHgyUG9tSXUxLTdVeUdZNUdWaGs3?oc=5",
+      "source": "세계일보",
+      "published": "2026-09-26 20:54",
+      "summary": "‘호르무즈→트럼프 해협’…이란 제안 일축한 트럼프  세계일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a5e8709c30e3"
+    },
+    {
+      "title": "미군 나포 이란 유조선 3척, 미국 향한다…원유 6000만달러 아닌 6억달러 규모 : 국제",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5xUlVzWDlVRU9LUmNFTGdKbGN3SENtbWpjWnpHUHdyZ0VUUnFqOGR6MFpvbXFqVUpYR0h5VkN6Y0UyMzBUVXM0cTJ3?oc=5",
+      "source": "재경일보",
+      "published": "2026-09-26 19:15",
+      "summary": "미군 나포 이란 유조선 3척, 미국 향한다…원유 6000만달러 아닌 6억달러 규모 : 국제  재경일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b44dd82f21d0"
+    },
+    {
+      "title": "9월 26일 PVOIL 시스템의 소매 휘발유 및 석유 가격",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOU2RkMEdTTjFxU0NZcmRuZHZ2UjFOSGtWbG1YTVItV2tuYVVVX2RncTM1TEJzN1FOSEMxb0dOZWZ5Mmh4WWllYlB2V3hnT2NCZ0lRWnJMaERoTXIxXy1qd1dGMjZPZkJJa1g2eVZuaHRncnVESUhQbmM3WFdEQWg5X1E1bG1PeGxzVVJOcDUwMkNLMzg?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-26 18:40",
+      "summary": "9월 26일 PVOIL 시스템의 소매 휘발유 및 석유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3481872a38f9"
+    },
+    {
+      "title": "'호르무즈→트럼프 해협'…트럼프, 이름 바꾼 지도 SNS에 게시",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnNFgxNVFwQkw0MUFJMi0wbFc0RTM0bVN4akdZbmxOYS1keUVVdFZuRFl2Y196UWJwMV8yQTlycDhlV1Q4MjJYRkJOQVJtbFRXRkJIQUN2YjLSAV5BVV95cUxObXdkc2gtaW9kNk1Nb1hORkI3cEVfN1RscjhjTHJzMjMxRWdDYlFrMHItM2tPQmJGZ2JZSHk4OU1hNFJZeDhneTJjZ1dadldzVjVZVG1aR0FXZGtuOU5n?oc=5",
+      "source": "뉴스1",
+      "published": "2026-09-26 18:32",
+      "summary": "'호르무즈→트럼프 해협'…트럼프, 이름 바꾼 지도 SNS에 게시  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e6d772da0ea3"
+    },
+    {
+      "title": "호르무즈 대신 '트럼프 해협'…트럼프가 올린 지도",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQOGVyeTJvTHNfM0wtR0swODB6MUtib1c5VTdOaW83ZGRGOWIyUmZkYnB4MmJyQUhTQ3dQYjdLSk42N1RHNjlDNFNDUTdxT3RVVUQ3RzV0TnNyX1ZudkhlbURiVmFfNDM4OG5OX1dsZk9yaGJPME9vbVJNa0RNdnRXd1hXSURZV1h2dEdFeFBoR2xtTWhUZnowN3B1em45ajQxYU1BckpRVi1jT29xRTFTakNmZlZIQWdvbEd0RXNHX2xYVC1IQWs4eFRQbWtwYUtCSkZPNVRLUlcxV2JyODdWbVl6QkVadjUxODltb2VfM0tIME1fem4zUl9ZLVNJV25IaHlJZlF0ZElNMWZiMWxYY1dvUWxRelMyMHNNT1JNTWxrRjQ?oc=5",
+      "source": "데일리안",
+      "published": "2026-09-26 17:38",
+      "summary": "호르무즈 대신 '트럼프 해협'…트럼프가 올린 지도  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1114a63cf4f8"
+    },
+    {
+      "title": "기름값 19주째 하락…고속도로 주유소 할인 등 영향",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE44NlFKMUdzTDFLOFhGUUN2SkNuamNnQnN5cFpla1Fva1RGQXNqYlBieTBaeGE3TXdDbTFxSUs1UVRTQ0R6ZVV4eEZXeVZDc2c?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 17:36",
+      "summary": "기름값 19주째 하락…고속도로 주유소 할인 등 영향  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "기름값 19주째 하락…고속도로 주유소 할인 등 영향",
+          "source": "news.sbs.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HcTR2ZDA1NFk3NWxhZUNtU3ctNXNZdGlzb3RTbUFlamJlcmxmM3lGQXp4bEdWM1lWc3ZKQ0xkUlJEbEEtMXZ4LVI0NUdjNGtXWmQxRmhKNnppbkM1OXo2WTExMjB2VU85TFHSAWZBVV95cUxOVThuczFMa2lJSWhEUHdqV1pfeDdBSERWQ0Z3R05EdExCeXdEWXduVTlwN2NGVmxnd1hoTzdvTEtJcjE0TmdNSmY4OGs4bmptWTVxdzhMc2ExTjJJLUI0REFVMHpYR1E?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…고속도로 주유소 할인 등 영향",
+          "source": "news.sbs.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VOG5zMUxraUlJaERQd2pXWl94N0FIRFZDRndHTkR0TEJ5d0RZd25VOXA3Y0ZWbGd3WGhPN29MS0lyMTROZ01KZjg4azhuam1ZNXF3OExzYTFOMkktQjREQVUwelhHUdIBZkFVX3lxTE5VOG5zMUxraUlJaERQd2pXWl94N0FIRFZDRndHTkR0TEJ5d0RZd25VOXA3Y0ZWbGd3WGhPN29MS0lyMTROZ01KZjg4azhuam1ZNXF3OExzYTFOMkktQjREQVUwelhHUQ?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…고속도로 주유소 할인 등 영향",
+          "source": "news.sbs.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTEZfY1pIQUVNdjB6US0ydTdTbmxjN28tQ2RUZERkTEE3aEQzUVRfdWlsZndsUDZOSkE2OHJCcDRyYng5OVQxQlBFOElfcW9OOXFINk91NTNyVkUxZUtvOC1wRTl2VTVEX0VfVGRJUlNRQUJFMHNZWUdzNDF3RE0zV3NsdkxBekhMWkdlRFZueFF2NmNZZkHSAWZBVV95cUxOVThuczFMa2lJSWhEUHdqV1pfeDdBSERWQ0Z3R05EdExCeXdEWXduVTlwN2NGVmxnd1hoTzdvTEtJcjE0TmdNSmY4OGs4bmptWTVxdzhMc2ExTjJJLUI0REFVMHpYR1E?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…고속도로 주유소 할인 영향",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBSS3BlLWp1SHQ3V0dPNzlWUmxKMmFKS05DZmR3bnBxTF80eDBvcG9rNG1HNjJsWU5SczBCb0p2RGhBN25JV0RzRmhPVDFCVmM?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…고속도로 주유소 할인 영향",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8ybWVJZVNPTzBpWVQ0dVcweG9lNlhIb0tUcWlacGU1YW1Za21QLTEzVGlISlBiaU5RdmxmRFhNMnhrYU96ZzNsbThQZ25Ic0JmZXZmZQ?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…고속도로 주유소 할인 영향",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9vcmMzSWZtRGZEQzIwSUF0a0dldnR1S1lqNkVKUmgzU0k4X1c2ZWdORUhrWlhYSEd0Y1Y4YlhoZjR2UG84amJZOTFCZC1fLW93WXduWUwwbFViR1NfUHYwdtIBYEFVX3lxTE9vcmMzSWZtRGZEQzIwSUF0a0dldnR1S1lqNkVKUmgzU0k4X1c2ZWdORUhrWlhYSEd0Y1Y4YlhoZjR2UG84amJZOTFCZC1fLW93WXduWUwwbFViR1NfUHYwdg?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…고속도로 주유소 할인 영향",
+          "source": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qQnJTM05kek1YZFJNZGFyRE15SUlIRFMxc2hmSEdGb2ZzX3A0WUR2TmZkclJONFg1OC1vbG43LV9WeEQ0MERhMDNUNnB0V2N6Zk5QZnZXdEtjSG04SlUxaGpKd3hPbGc?oc=5"
+        },
+        {
+          "title": "국내 기름값 19주째 하락…최고가격·고속도로 주유소 할인 영향",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5vekRBaC1QcWROeXc3UURaY0pnWlZfVW4yQlhjblZLSEN4S1E4bEREMHVIaUp3RlJ2aFlOMlhXRVNtZVBSd1pfYm1JV0ZidUk?oc=5"
+        },
+        {
+          "title": "국내 기름값 19주째 하락…최고가격·고속도로 주유소 할인 영향",
+          "source": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5qRmpJYkJLNUZyRERKTUFxV3lpOENORkowYWYtd2ZrNEdmaEtqUW1pYXRHWHNDREhhZDVtUnhzWlJEWTN0VjNrN2RDM1UyWTNVa2dFNENkWDkxR3c?oc=5"
+        },
+        {
+          "title": "국내 기름값 19주째 하락…고속도로 주유소 할인 영향",
+          "source": "매일경제TV",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAtd0FyNkY5WVFqOE9mQUdWdFJjQ3V6clFRS2FPM2U3YkR5cm54VTZTMHZRdW1DNXA5b3B2UWF4Yk1heVc4REJsZXI2bGU5VUhFQk9Sam9Sd1Z2UDJPc2ZRUkZTOHZQTnRUemxF?oc=5"
+        },
+        {
+          "title": "국내 기름값 19주째 하락…최고가격·고속도로 주유소 할인 영향",
+          "source": "news.sbs.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNV2ZKbDNYaF80VWx1ME1fNF84M0l5UV9tNkFQeHZoRmRCblJjenlJVlp4UDFWblA3TU9PT0Z4VWw2eHZhLTZnbl9fTUJGbV83a1ZvTzN0SEg1VkNtZGdObExwbF9fTTNNcFRyWUJURktIYjk4MnVaOGRhTWVzbzdGcmN1V1Nmdw?oc=5"
+        }
+      ],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2c373425c2a9"
+    },
+    {
+      "title": "주유소에 2인조 권총 강도",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcl92SmxZcGdPc3NRcnRBQ2g3d1NhN2ZfZE0wMnpyWWJOREp0cG0zRkJGanpJSmZKNEhSZGdBRlVGSURXTC1Oam1Sc2FfQzJESEQ2ZHJ4UENlQVFEVGozbVFJYXRTUUl5QUdMWVhhNHJ5UEZoTVZYOGFPT0w0M3NiTzFHN2p3LTkyRmJrdGYwTk4yZTFDSW45WjEteHFJOUdhc1RLVGNUWldDSS1TdDFVYVhHYUs0djZEMHVVOWRNMWhrclJmaWF1MTJsc1lvZmZaMTJINkYtc1pPQ1laREt2MGlUSjQ?oc=5",
+      "source": "미주조선일보",
+      "published": "2026-09-26 17:36",
+      "summary": "주유소에 2인조 권총 강도  미주조선일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a64329b3ef7d"
+    },
+    {
+      "title": "기름값 19주 연속 하락…휘발유 L당 1858원",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53bUhOOGdrN29SZEMyTnpBQTJjVlZPYXptUnp4Wks0NWRDLTcxY1hhOTFXdmNLRFQtVzMzWmpwVkgwZ3JOLTlLV3E3U1FHZ3lQbUUzOU9Cb2pUTVd3MWlMUzB1dlJIaW5HaE82Zkx30gFuQVVfeXFMTndtSE44Z2s3b1JkQzJOekFBMmNWVk9hem1SenhaSzQ1ZEMtNzFjWGE5MVd2Y0tEVC1XMzNaanBWSDBnck4tOUtXcTdTUUdneVBtRTM5T0JvalRNV3cxaUxTMHV2UkhpbkdoTzZmTHc?oc=5",
+      "source": "충청신문",
+      "published": "2026-09-26 17:19",
+      "summary": "기름값 19주 연속 하락…휘발유 L당 1858원  충청신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "기름값 19주 연속 하락…휘발유 L당 1858원",
+          "source": "충청신문",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XbS15UklDRVIyOXRkU0pLVjZQc1ZCdE1pb0RxOU5nS2IxLUNYM25vMlM3UldMN2VyVjh0dmZaLXRSTFNDMnBtclhOV3BHRHNuTmMyckcybjNlT1g4TmpvYk01U0NGanJ1UGfSAW5BVV95cUxOd21ITjhnazdvUmRDMk56QUEyY1ZWT2F6bVJ6eFpLNDVkQy03MWNYYTkxV3ZjS0RULVczM1pqcFZIMGdyTi05S1dxN1NRR2d5UG1FMzlPQm9qVE1XdzFpTFMwdXZSSGluR2hPNmZMdw?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 19주 연속 하락…휘발유 L당 1858원",
+          "source": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyeUt0QlZrRmhaZHJYd2E2bUZha05VRW9xSjZ5Q2FmYm1DT2tQbUl3Y2w2Nmx1WVpkbWVQRUFacUtZLU5tT2RTSjJGQ3RPblZVLUtXNFhrNER5V3RfV3ZjSmZYbWhtbWph0gFoQVVfeXFMUDJ5S3RCVmtGaFpkclh3YTZtRmFrTlVFb3FKNnlDYWZibUNPa1BtSXdjbDY2bHVZWmRtZVBFQVpxS1ktTm1PZFNKMkZDdE9uVlUtS1c0WGs0RHlXdF9XdmNKZlhtaG1tamE?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 19주 연속 하락…휘발유 L당 1858원",
+          "source": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE41eGpyazB4UHFCbGFKNU5ZWTlWczNseHFNRnROdWFxNnVuY1dHbUFycDNaT2NuNDRtS05uUUlmelFtcGw3bDJjbE15NkgzbUVvQlJSSF85blA3OGg5Wk9JdFlIVVDSAWhBVV95cUxQMnlLdEJWa0ZoWmRyWHdhNm1GYWtOVUVvcUo2eUNhZmJtQ09rUG1Jd2NsNjZsdVlaZG1lUEVBWnFLWS1ObU9kU0oyRkN0T25WVS1LVzRYazREeVd0X1d2Y0pmWG1obW1qYQ?oc=5"
+        },
+        {
+          "title": "기름값 19주 연속 하락, 휘발유 1858원…국제유가 진정 국면",
+          "source": "newsworks.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UY0VLaUg1eC1Ub2JEQlJCazFmYXZ2eFIzYmY4Z3ozQ09mOUNIZ1VrdWNLSnA2UW43N1dQekYyZHBLaXJGMjR4MlBBOEhsdzJ0bzVBRloyX2hmWDhFWXhvZTNVRzV4bFZTYlp0SVh2a25JcjTSAXNBVV95cUxNVGNFS2lINXgtVG9iREJSQmsxZmF2dnhSM2JmOGd6M0NPZjlDSGdVa3VjS0pwNlFuNzdXUHpGMmRwS2lyRjI0eDJQQThIbHcydG81QUZaMl9oZlg4RVl4b2UzVUc1eGxWU2JadElYdmtuSXI0?oc=5"
+        },
+        {
+          "title": "기름값 19주 연속 하락, 휘발유 1858원…국제유가 진정 국면",
+          "source": "newsworks.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE14T25zUmc5MXJtQllOMUhURVdSOHpUZlI1blIxSFhxVnVwZVIyNGxIMWk2WjJ0STJETmJFbXdpZFNPZkpEVTEtQVBEQ2VmMG56dkJJRjJ1Y2JUbC1XVW5NSHJKd2dkYXdhUWp2NzEtONIBc0FVX3lxTE1UY0VLaUg1eC1Ub2JEQlJCazFmYXZ2eFIzYmY4Z3ozQ09mOUNIZ1VrdWNLSnA2UW43N1dQekYyZHBLaXJGMjR4MlBBOEhsdzJ0bzVBRloyX2hmWDhFWXhvZTNVRzV4bFZTYlp0SVh2a25JcjQ?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 19주 연속 하락, 휘발유 L당 1858원",
+          "source": "미디어파인",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tYTRFSTRBZm1hYjBmV1dRbmVaVnMzUXNYdHR0cVlUWUtCTXUyZnhVOHdjUTFzMTRadVlfdS0wSUZvYnJkMldhYlpMTVNHQXo2Vk9QUkJwREJoMkNIYk5tTVUwOGQ2dHBlcU51dnh3?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…휘발유 1858원",
+          "source": "한스경제",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80RU1ybDVCTjBLMXFyOTJYLTE2dkUxQ1lfUElnQ2NoYmhiZlhERkVzZ3Z6OWFZbXFNME1iczZpWWxjVTNndmxZSzBfRlNWb08zXy0xdm56ZGpCaGQ2S190UWk1X21fcFo3d3dLMlBmMNIBb0FVX3lxTE80RU1ybDVCTjBLMXFyOTJYLTE2dkUxQ1lfUElnQ2NoYmhiZlhERkVzZ3Z6OWFZbXFNME1iczZpWWxjVTNndmxZSzBfRlNWb08zXy0xdm56ZGpCaGQ2S190UWk1X21fcFo3d3dLMlBmMA?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…휘발유 1858원",
+          "source": "한스경제",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TMGFLREdUVXJqQTN4aUNzYUthazJ5U2ZHREhZQXduQTJqbi12cGoyOVRVa3p0SkdHYnhNT2lJdmR3RXRHaHpjN1BiM2FMTFFZekxuZV9fUzM5YVdmZWN0Y0puYmJqOElVeVlMVdIBb0FVX3lxTE80RU1ybDVCTjBLMXFyOTJYLTE2dkUxQ1lfUElnQ2NoYmhiZlhERkVzZ3Z6OWFZbXFNME1iczZpWWxjVTNndmxZSzBfRlNWb08zXy0xdm56ZGpCaGQ2S190UWk1X21fcFo3d3dLMlBmMA?oc=5"
+        },
+        {
+          "title": "기름값 19주째 하락…휘발유 1858원",
+          "source": "한스경제",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE15M3ZuZFZOZ2t6cUxYQkNSUmg0djJJdkdQbXZPUXlERjkxMlJWSE81QS1Xb2tHY1dWaEl1NjNrUzlfUjNMQ2laWnZoVXE5dUFNXzd1eFd3anFOcnYwb3V1bklXVGtEV3daOGo40gFvQVVfeXFMTzRFTXJsNUJOMEsxcXI5MlgtMTZ2RTFDWV9QSWdDY2hiaGJmWERGRXNndno5YVltcU0wTWJzNmlZbGNVM2d2bFlLMF9GU1ZvTzNfLTF2bnpkakJoZDZLX3RRaTVfbV9wWjd3d0syUGYw?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 19주 연속 하락…휘발유 L당 1858원",
+          "source": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBldkJHb1ZOWmZDb0phMXdJcEh1SnNzXzBleHdLb1NBOXFvMTc5WVJva3VWUV9TaXJaX3ZLUy1SbnMtX2xfbTF2Nk5lVHVGeWN6V2VR0gFTQVVfeXFMUGV2QkdvVk5aZkNvSmExd0lwSHVKc3NfMGV4d0tvU0E5cW8xNzlZUm9rdVZRX1NpclpfdktTLVJucy1fbF9tMXY2TmVUdUZ5Y3pXZVE?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "be0bb2e560b8"
+    },
+    {
+      "title": "호르무즈서 유조선 잇따라 피격, 이란 “보복으로 10척 공격”…트럼프 \"이란 전멸 공격 중대 기로\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03bllqOGhEdXUzN3p4UjJHTzFVS0trMzBuX0FUOHdGamd4VXpNemo4NlJVNmlUdVZlSHFXWTBUMFlxTWp1VTZvbTBRT3dXOHotRVE?oc=5",
+      "source": "JTBC",
+      "published": "2026-09-26 16:36",
+      "summary": "호르무즈서 유조선 잇따라 피격, 이란 “보복으로 10척 공격”…트럼프 \"이란 전멸 공격 중대 기로\"  JTBC",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d3a664d47039"
+    },
+    {
+      "title": "트럼프, 이란 ‘7일 뒤 호르무즈 개방’ 제안 거부",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB5RGswMnQzR2tOM191N2xiV3YxV1lkZ2lEZnZzSW9zWTQ2NTlSNjRIUG04RkdSRkxsRm12NkRHYlRtbU1Pc1U3clBuYlowWTZGeExGd3ZiMVU4YXlzblpzT0FrWVVqMnhYMGVlVw?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-09-26 16:23",
+      "summary": "트럼프, 이란 ‘7일 뒤 호르무즈 개방’ 제안 거부  스페셜경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4fdd959b3f58"
+    },
+    {
+      "title": "호르무즈 봉쇄 장기화...韓 조선 빅3 훈풍",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ya1pGUTRCaDBZb00tbDg0WDdNUEExV2R0X1M1NHdvVm9idkNnYmY0SDJ2V0FkUGlhOVY0NF83allVZlpIOWhKYW9zVUthb0E?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 16:22",
+      "summary": "호르무즈 봉쇄 장기화...韓 조선 빅3 훈풍  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "호르무즈 봉쇄 장기화...韓 조선 빅3 훈풍",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5PTnZuSWZTeGdHSjIzU09SVWxuWW1BdS1SYWRpRjl1a1R2dVJkbHFYWnJhUGhvRGRkNWFBRFdqRTk2amJyWUE?oc=5"
+        },
+        {
+          "title": "호르무즈 봉쇄 장기화...韓 조선 빅3 훈풍",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zdjFzem9wMWJDcGRaaEhnVWRCVmxGZXhKeDZGSk5HTm1tYUU3dEQtMUpVOXo2c2NEX25ES1lvekI5RFIxQVczXzhiakFydVJtOFN0Qg?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "432982f34484"
+    },
+    {
+      "title": "9월 26일 휘발유 1856원·경유 1841원…서울 최고",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92aDkyYzBOTXNOMTV1TDNMaktadFp5UGtHaXZfeGdEMmlHMFN3RW1ZY1JMUFVkUDdqUTViMXpyb1BDRldySUIxWmtLb1pQVzBGc2l0b1BrQ0o5eF9vVDBHUExRUWF2dw?oc=5",
+      "source": "vegannews.co.kr",
+      "published": "2026-09-26 16:21",
+      "summary": "9월 26일 휘발유 1856원·경유 1841원…서울 최고  vegannews.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1889dcec1307"
+    },
+    {
+      "title": "미중, 이란 핵무기·호르무즈 통행료 동시 반대…해협 재개방 변수",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ocHdLLU44YTNlQmZIUERGdkttMm1ERVotbFljOWxSZ1VNemtnVElMVjV0dFlLYXNXRWZqaXdLM00wS1d6R3c?oc=5",
+      "source": "매일경제",
+      "published": "2026-09-26 16:19",
+      "summary": "미중, 이란 핵무기·호르무즈 통행료 동시 반대…해협 재개방 변수  매일경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3749f4d49100"
+    },
+    {
+      "title": "호르무즈 봉쇄에 가스선 운임 급등… 韓 조선사 가스선 수주 기대 커진다",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBOemNSazQ4TjJEcUNDTlYzOXUzU0hJbnM0c0hjZm5sMkpTOEM1TkJFT0tlRDhmZVBvUzhZaEVocXIzQklTVFhZOUw2ZVhfN0lnc1FIamI4QUJYR0cxVTYwc0xRT19pVms1enc?oc=5",
+      "source": "천지일보",
+      "published": "2026-09-26 15:59",
+      "summary": "호르무즈 봉쇄에 가스선 운임 급등… 韓 조선사 가스선 수주 기대 커진다  천지일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "호르무즈 봉쇄에 가스선 운임 폭등…'韓 조선' 수주 훈풍",
+          "source": "아시아타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1EWmszZlRCbngwWFVuTjJvTW80eVBUaGJydjFfcWRDUEFBdGdvVkRFcHJnNjhveHB2MXY2OHYweXVpOFRPdEd5LXplSG9qQ2lEb3V4LW9hV0FhaTIwUEE?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "faa0962a9807"
+    },
+    {
+      "title": "“주유소 갈 일 없겠네” 1500km 달리는 8천만원대 패밀리카, 카니발 ‘긴장’",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSDVVSE5vWDhKODZpRlRPVWVYTGRvMUR0eVRxbUlpSFFCUXRWYTZDcmZwTTFkSGUyeHpMV0J3ckxYV0dhbGdJQzZVV0c1ZVd5UTF6Y3RYM1dKaGxxMEFnN2NRekgzSkVSMG15WHRmSnRsRlhCd1phU0dDcUhBamlfcU1Bbw?oc=5",
+      "source": "news-wa.com",
+      "published": "2026-09-26 15:43",
+      "summary": "“주유소 갈 일 없겠네” 1500km 달리는 8천만원대 패밀리카, 카니발 ‘긴장’  news-wa.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0f7c00710d0e"
+    },
+    {
+      "title": "기름값 19주째 내렸다… 국제유가 급락에 더 떨어지나",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SMXRnY1RKSnhzMWFDaUc4V2IwSVBaVEZkajRpa3FEZUxsckVsQnVadTRWdGgtdWxSVkZZUWRKbm5kTVBwb2wxd2RTZXlwN0ZLVHYxVWpzTG5VM19CWGxWS3lFNF9ITlM2MXlTekJDdVFFMUk?oc=5",
+      "source": "JIBS제주방송",
+      "published": "2026-09-26 15:34",
+      "summary": "기름값 19주째 내렸다… 국제유가 급락에 더 떨어지나  JIBS제주방송",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "기름값 19주째 내렸다… 국제유가 급락에 더 떨어지나",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE53TVFsa21BOXdhTHAtdF9teUFZUVpsNFJYMDdmSUs2RFhIN3dJSEo0b3ZkN2JMNjI1TUYxc2JHUkhtYnNpZDVFWHdvd2U5M00?oc=5"
+        },
+        {
+          "title": "기름값 19주째 내렸다… 국제유가 급락에 더 떨어지나",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8xdnUwYWFwNElDVmFFMm5vM3p1amxBUjVQR09OR0ZEY3g2WV8zRWVwYWVSZExMSm5tYm5FMHQ0ZTgweUtvMUNXOU1rQQ?oc=5"
+        },
+        {
+          "title": "기름값 19주째 내렸다… 국제유가 급락에 더 떨어지나",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTWm1yWFI1N0Y1bEJsUWF1eUltUkdZak1pSFp2TjJod0ZoRUhTX3hEYzRoQkdxZjdXQWdSZWtvcmEwc3V5U0l4Z1RkM2R0UUkxLU5JZQ?oc=5"
+        },
+        {
+          "title": "기름값 19주째 내렸다… 국제유가 급락에 더 떨어지나",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5KYjhuZHVDenRwR0dhNFJMZ080eWU0UTZxVHhnNHgyM2dCbW03ZTdLVnFQYXFJY08tRkZVVjh6VzlvaDZ2X1E?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "041885f37745"
+    },
+    {
+      "title": "국내 기름값 19주 연속 하락…추석 연휴 고속도로 주유소도 100원↓",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0zVFMtTUFQNXVONzZuLVZMODR2R0F3LUdzdXJkQmY5M041SnR4Y3R1Z1huSENTa2dHVE80Y1A0SUpZaG9TMTl6OThyNDNQWmlkUnlMelU3UEtOLVJuNDRudTYyUjA?oc=5",
+      "source": "디지털데일리",
+      "published": "2026-09-26 15:29",
+      "summary": "국내 기름값 19주 연속 하락…추석 연휴 고속도로 주유소도 100원↓  디지털데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0d0ada98f09e"
+    },
+    {
+      "title": "美·이란 외교 협상 평행선…호르무즈 해협 재개방 안갯속",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5BWWF6Q18zV0lXWnVkZE5NNjBEZmw0SXBJcF9DWVFyZ1ZOVEp3X3A4VHE0dnFVWnNkX25sNjk2RURpRE5UNXJyUXh0WjB4MGVYbms4VUwtZlNEYm9SZWZUelkzRm1ETk1McWEwVdIBcEFVX3lxTFB5ZXBCZUNTXzdaOFgxVTZZOWllTUFiRGl0bUZ3ZDhqMVlVeUhrXzRRVWEtYW9wT19CRjdrbDRBc3NBejd3V2t6dUgyNjJQWGFiYWNzZ21rdHIxajgxYUtlUzhCSkRLWnQ5Q1lodktzYlU?oc=5",
+      "source": "데일리굿뉴스",
+      "published": "2026-09-26 15:12",
+      "summary": "美·이란 외교 협상 평행선…호르무즈 해협 재개방 안갯속  데일리굿뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3253c0d743e7"
+    },
+    {
+      "title": "미중정상 \"국제수로 통행료 반대\"…이란 호르무즈 통제 변수되나",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE51UHRxQ3dwbDNyRmdNcDNUaXA4NTZ0ek4tOGdFU3NpMjFFT2l4akNRZXZuaUoxeldXVVF0QUhydExGN1hoZHIyQ0dLdHMwYVBlRUtJc21IV29YdjBQM1dxUNIBYEFVX3lxTE51UHRxQ3dwbDNyRmdNcDNUaXA4NTZ0ek4tOGdFU3NpMjFFT2l4akNRZXZuaUoxeldXVVF0QUhydExGN1hoZHIyQ0dLdHMwYVBlRUtJc21IV29YdjBQM1dxUA?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-09-26 15:10",
+      "summary": "미중정상 \"국제수로 통행료 반대\"…이란 호르무즈 통제 변수되나  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e0b738f0d028"
+    },
+    {
+      "title": "\"트럼프, 이란의 '7일 계획' 거부\"...\"이란산 원유 유조선 미국으로 이동 중\"",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ZcDFmR18yUlJ1N2dPMmZGUkFfZVk3Wl9SU0lGbmNhZlVRNElWWmU3VEpPdkktUjBXVHg2QlpsQUwzUmFncmdpdjJLTERkeW5Ub1VNdFJjSFlQMHBfaXc?oc=5",
+      "source": "YTN",
+      "published": "2026-09-26 14:22",
+      "summary": "\"트럼프, 이란의 '7일 계획' 거부\"...\"이란산 원유 유조선 미국으로 이동 중\"  YTN",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "360eaa78b0a6"
+    },
+    {
+      "title": "19주째 내린 기름값... 휘발유 1,858원·서울은 1,900원대",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82MWNNVWxWY05JSmptdFVMWXRyVzRQZnpUeUlSVk5oVHZ0TXIzcDVKcThDckNDdXJVVjVFeWoySGZTVzNjNmVJaG5zOA?oc=5",
+      "source": "민중의소리",
+      "published": "2026-09-26 13:49",
+      "summary": "19주째 내린 기름값... 휘발유 1,858원·서울은 1,900원대  민중의소리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "58060ad41ca0"
+    },
+    {
+      "title": "중동 공급난에 존재감 커진 한국 윤활기유…정유업계 실적 이끄는 '숨은 주역' 부상",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5ZzV3cE5iNDlNcnlFVDRnV3FmTncwTkxfemM4ajVwNnVmYkhQMWZvclVrSTFWN2tLVXZ0NHVHaUN2ZW51MHN5VTNLRFExMXhlX1B4VzVWRVI5YXBjQjRUMWJhNXpXOV9fcDlBMjRhZDN6THctd1VsbEJfTdIBf0FVX3lxTE1ZT2sxWkVxTzBYZ09iODZqcmp0S0dHRlVyTXo2SjlUQkNHenJ4cENCaGNXNWVnekVwVkprdXpva3EwT3VCWVZvdDNJSzliQnp6dU5aY09XU2F5MFdDVm1XekdUcmRvTk1FQzBiOWptNXRhS3BhU2FXVnFoZFY0UjQ?oc=5",
+      "source": "데일리스포츠한국",
+      "published": "2026-09-26 13:49",
+      "summary": "중동 공급난에 존재감 커진 한국 윤활기유…정유업계 실적 이끄는 '숨은 주역' 부상  데일리스포츠한국",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ab0bf39c9165"
+    },
+    {
+      "title": "오늘(9월 26일) 연료 가격: 세계 유가가 하락세로 전환했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRlFHN0gybW5tcnlZekdQTFJmRnhBSjVzU3pEdlVsT2V0TThhektxRDJnWExDSWJjTmZ5UU1tRmx0d0FkaVhJTHozekNmOV9LQjBsNXlKcnhjN0VYT2FSbG1WbXZkdXhJcHF5UzhoQlMtZ2pyZGZES3djZWtVb2F3R3VtTGp5WXN0U3Aw?oc=5",
+      "source": "vietnam.vn",
+      "published": "2026-09-26 13:38",
+      "summary": "오늘(9월 26일) 연료 가격: 세계 유가가 하락세로 전환했습니다.  vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "870f70394774"
+    },
+    {
+      "title": "이란, 미국이 봉쇄 끝내면 7일 내 호르무즈 해협 재개방 제안 - 뉴스 및 통계",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaE5Lb0NaSWpQVXVHVnJ5Rm5CWlNUM2ZqQXJHYW1DT1BPV184OUdRWVFYV2xVOEt5WnJsZXktMlRyZFJMMWl0SmZoMFlnd2s4a0sxbTFvaE9LZkZPaVZGMDR1T25KcUp6OHFaY3F2OW51YkJGOVVVdlBhQXczeENKY2tZSFEzWEZiOG9tY3ZGcWVBM0ROaVFCa2NjaEl1SWVEbl9YdEtMQ05WQmdtTzJB?oc=5",
+      "source": "IndexBox",
+      "published": "2026-09-26 13:30",
+      "summary": "이란, 미국이 봉쇄 끝내면 7일 내 호르무즈 해협 재개방 제안 - 뉴스 및 통계  IndexBox",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ea8c7f2d9bf2"
+    },
+    {
+      "title": "\"7일이면 호르무즈를 연다\" 이란, 미국에 전격 종전안… 트럼프는 \"서두르지 않는다\"",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5FWUFBNkVmRXJBWEVTbEVubUMxVVRuNWlnNUsxZEtVelFqWnE2bUtHUWduam1zODdsbWVsQXZ3dmdneWVfazA1NVFB?oc=5",
+      "source": "얼리어답터뉴스",
+      "published": "2026-09-26 13:29",
+      "summary": "\"7일이면 호르무즈를 연다\" 이란, 미국에 전격 종전안… 트럼프는 \"서두르지 않는다\"  얼리어답터뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "\"7일이면 호르무즈를 연다\" 이란, 미국에 전격 종전안… 트럼프는 \"서두르지 않는다\"",
+          "source": "투데이타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Hekc5Q0w5QmpNcHlwRFcwOVRQbjc5N1ppRlV6ejlNR3lqZUd0aDRiX2RXWTAtMGVHVmtYN3RabVBQR0xwcGZVU1V4Q1A3Y0pJMGc?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6e16c50055a4"
+    },
+    {
+      "title": "미국 원유 재고 다시 증가, 정제품 재고는 감소",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNkg4bTZuU3NYYlZ0Vy10XzJrVzUwRWgzbGx0VEZvbHVnTUdWWmRUQjBXMTlMb2ZsMWtuQlNEODBVbHk3cWJuZWlLZk5NdGh4MkpMQ010Vk9SRUZEU19iVk9ET2dFSHFNaVNKMURhdk9saWlVbC11LWstRHVWMXYyZU9JS1JqaUJrY1l2cmNaVkVBOTY0VWtkY1F3?oc=5",
+      "source": "IndexBox",
+      "published": "2026-09-26 13:23",
+      "summary": "미국 원유 재고 다시 증가, 정제품 재고는 감소  IndexBox",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "94125272b881"
+    },
+    {
+      "title": "호르무즈 봉쇄에 치솟는 국제유가…배럴당 90달러 돌파",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMzZIM0JYNGh2WUNWN3lxcVRpajJCSkphTlhjN1pvODd3emk3aF9oREx5V2cxX3VvNF9fX3pMTmFmM1M2OEU5aVlCTWJvcGtfWk5iazFnd2FSeFVLamFTVjVmRktoc21JWGpHUnkzOUNzN2phVXBBSGdQd1FpalJXRnhZRVVOM3BkT1J1YUR4aFlYY0sxU0ZQbTA2aWVGSTNUZHc5bk16SkRSU3VwZUJ3SERn?oc=5",
+      "source": "미주조선일보",
+      "published": "2026-09-26 12:55",
+      "summary": "호르무즈 봉쇄에 치솟는 국제유가…배럴당 90달러 돌파  미주조선일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e3c84cf24cbe"
+    },
+    {
+      "title": "오늘 9월 26일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLTlzcHp5VlZINlk1ZktKVjZvTGoyYkhQbEo1YUxXcWNtMjlmbWhTQWh1RVNmTHdseU1Cbmp5MWZXaHJxWkZrM2ZOdUlhMWMzOHNEeE91ZGk2WGlaeWozMDRnb1VHc05kUVhYVUJaT01YNFRJaGx0RXViV05RZGJtamRB?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-26 12:26",
+      "summary": "오늘 9월 26일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "오늘 9월 26일 휘발유 가격: 급격히 하락",
+          "source": "Laodong.vn",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSm55NGlMdEs2NHBzLXlVS1JTWWtKQ0JSUHVKeElfTm5xY2Mtc2hXc3JUT1lmQVZ4NHNTQ1V0Y2RLODVmZzUya0trQUFzcGZERVBGSmp6YnVmdzJEUUpIelgxNjRnYWR3SFpPOUpQOGVvQmVWbE10T2lNbDFmeXVIVktnMFhIZw?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "738bbf2699a8"
+    },
+    {
+      "title": "트럼프, 호르무즈 개방안 거부…공습 재개 검토",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE80aU5xcEFQTk1MMEpQajM1bDIzSnlBeUp5bjVhTDJtdmJ1M0hXSWQxeU1yN0JTYndiQWNDT1A1TlRwRy1hQjZvOXZtQ1o4UEJRdGVWUHNUR0stSEFRSnB0dTdBSzFWYWpfOGxBNtIBcEFVX3lxTE1xcDJ2N2ZlODRlU09DRzJBR3BOMElMcF9pZFE4amg4aFFhTmRGeUZhSXdhZ0lDV3NXNlFuTzU5Q2JGQ3NzMnNkdVRaTHh5bVotZEpoYjVHeUdlc0lkMkZqaWtOeTI4VFdXQ0djV0NodEQ?oc=5",
+      "source": "소년한국일보",
+      "published": "2026-09-26 12:22",
+      "summary": "트럼프, 호르무즈 개방안 거부…공습 재개 검토  소년한국일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "76e47e77fae2"
+    },
+    {
+      "title": "2026년 9월 26일 오늘 휘발유 및 디젤 가격: 추세가 반전되어 하락하고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Fc1lEUzlkbkhSV3pjWm9FVHNxRk5aM0lmYzMzWEFoRmZlRjFOOTcyUGVnQ0sybTVZUjBMcEN4WThfSlM0Z0NTN0RRcTNkZ1gySmZRSXFOSUdON3JKZ1NCRks1S3ZkMTFNSjlWYVBrMzQ5VV92ZXhBM1RwOA?oc=5",
+      "source": "vietnam.vn",
+      "published": "2026-09-26 12:06",
+      "summary": "2026년 9월 26일 오늘 휘발유 및 디젤 가격: 추세가 반전되어 하락하고 있습니다.  vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ddb337578cba"
+    },
+    {
+      "title": "이란 ‘7일 내 호르무즈 개방’ 제안했지만…WSJ “트럼프 거부”",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4zeXZCWEZtQ3REMDZwbFlBUFBRTE9tODJwcjhxRHhDeV9keGwwczZya2VXeVQ1c205T2JFNkp4UTJYZWpWazlwWGhPZzNxdmx1Y3pIWm5UbTNZYXgyeGVPNVp0b2o2Z1JicFpF?oc=5",
+      "source": "해사신문",
+      "published": "2026-09-26 11:25",
+      "summary": "이란 ‘7일 내 호르무즈 개방’ 제안했지만…WSJ “트럼프 거부”  해사신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "77e3ab6892bb"
+    },
+    {
+      "title": "이란 \"호르무즈 열어도 핵은 못 내줘\"…트럼프, 협상 거부",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1aa1dyaFdTQ2VFMUlUN2lPTm1hVzVhaGUxMUpMX2hfRG56T3JXeFR5QXNUcFZLLTlFN09TdXpzZXVrRkNFc2MyQ0t0b2hLTU5KdXRtVGJKdjZPSFkwSGc?oc=5",
+      "source": "동행미디어 시대",
+      "published": "2026-09-26 11:21",
+      "summary": "이란 \"호르무즈 열어도 핵은 못 내줘\"…트럼프, 협상 거부  동행미디어 시대",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "17ab4e0abb60"
+    },
+    {
+      "title": "\"유가 100달러 넘으면 침체 온다?\" 유가 대신 이걸 봐야[주末머니]",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YUmdpT3RZTFBRWlluZnU2NExYZl9YSUdRU0U5SjRmLW9MVlJLejI5eHBlZ1duV0I5NWpFX0tydXBOak5PbDcyUWxsRWpwYTg?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 11:21",
+      "summary": "\"유가 100달러 넘으면 침체 온다?\" 유가 대신 이걸 봐야[주末머니]  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "990e247dae68"
+    },
+    {
+      "title": "전국 휘발유값 19주 연속 하락…추석 고속도로 할인도 영향",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE90YThCcDNIRzFnNzBFSEhZOUhmRnZLd25KQlBRLXRrcmRCN3BBWE44N0dJeFBoS0RLWGVoTk1XczJYQURTQ21mcHdHdjJTQQ?oc=5",
+      "source": "전자신문",
+      "published": "2026-09-26 11:19",
+      "summary": "전국 휘발유값 19주 연속 하락…추석 고속도로 할인도 영향  전자신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "624182072d61"
+    },
+    {
+      "title": "오늘(9월 26일) 연료 가격: 국제 유가는 하락했지만, 국내 유가는 급등했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOFNPMXF2UW12c0U2cG56cXpfS3l0aVFsazlkbzZVNHlsODNwV2c4V1pMa2lTS19OdE5tOWJMSWszbHBrRl9wRExGaFRxS2JoWTRDLUNSNGtWMjRXTTBocTQ3Qk5JcWFuRjNaNkpRUU5YbUs4YUZXYml0cFFOSDh1bmJqN1lkbzIyNDFFYW5QUFhoSmM?oc=5",
+      "source": "vietnam.vn",
+      "published": "2026-09-26 11:17",
+      "summary": "오늘(9월 26일) 연료 가격: 국제 유가는 하락했지만, 국내 유가는 급등했습니다.  vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f611f6d166c3"
+    },
+    {
+      "title": "호르무즈 해협을 통과하는 유조선 화물 운송액은 하루 100만 달러를 넘어섭니다.",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQlZoMnZFaDFqYXMwQUdCZFJGelhzY0lVc2ZZbXFtMTh6bnNlU2t1b3B5VUZUZ0FTVDVIeXlPRmlrZjdQVHlhQml4VkRmbS1aaXBNSklyNEkwZzlmOTI4Vkg4ZGVKMXUyS3RSUTdhY1pfY3E5UjBvbnlFZU5nYXlHcQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-26 10:59",
+      "summary": "호르무즈 해협을 통과하는 유조선 화물 운송액은 하루 100만 달러를 넘어섭니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "42a34ae71b90"
+    },
+    {
+      "title": "美 소비자심리 4개월 만에 최저…유가·금리 부담",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5fS1ZIS3dLSEVNMkhncFhWc0dpd0hkUWM3aEk5eEVwM2t5TlBEZkFiWG9jTjI0ZGRYYzRvSjNpVFhSRjV1ekxDWXo3LUVQLS03RXVEVTZmeHhzV3RpbnF0aDlDYVpmeTEtZC03Zw?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-09-26 10:49",
+      "summary": "美 소비자심리 4개월 만에 최저…유가·금리 부담  스페셜경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6df52eb3a989"
+    },
+    {
+      "title": "‘트럼프 선택에 달렸다’... 이란, 호르무즈 재개방 ‘7일 로드맵’ 제시",
+      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5rbHYxY2V1Ylo2ZnFHaDRqcXNXeTdaVWZCaWRaRlhrZU5HbndXaVJFSFozQ3BodGFHTzZz?oc=5",
+      "source": "t.co",
+      "published": "2026-09-26 10:46",
+      "summary": "‘트럼프 선택에 달렸다’... 이란, 호르무즈 재개방 ‘7일 로드맵’ 제시  t.co",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "‘트럼프 선택에 달렸다’... 이란, 호르무즈 재개방 ‘7일 로드맵’ 제시",
+          "source": "민중의소리",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5YWjh5WVFsMzdnSkRyVUpqQlJPQjd6cE1ONHZ0RnlOclhmWFEtMGNodmxpWGptS0FFY1dDdjFjWEg2M2FPSkwzdGdMcw?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "076a2a3318fe"
+    },
+    {
+      "title": "\"이란 원유 실은 유조선, 미 해군에 나포돼 본토 입항 임박\"",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9BbXE0dUdKMWk5d015ZENLQW13WTNjTkwtUnBDMUl0VlMxc2hIck4wVy1QaS1RR08wc3lGNXJwVEdpTHo4M1JSdG83VXdwakw2S1NVWGtHQTQ5MGJwbGFpUThxTk9mdw?oc=5",
+      "source": "news.sbs.co.kr",
+      "published": "2026-09-26 10:41",
+      "summary": "\"이란 원유 실은 유조선, 미 해군에 나포돼 본토 입항 임박\"  news.sbs.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "\"이란 원유 실은 유조선, 미 해군에 나포돼 본토 입항 임박\"",
+          "source": "imnews.imbc.com",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBLZmtWNGpqLXhkSVM2X1VFVTJqNVFZNWxmVHZBUEFpNFVqNWM1ZUxadUpaY0N2UFpIUlBZOXJTckloR29lRm54ZWc3bGZ5WllaU1BTSW1ST0hHY2wydFRYVG9FU2g2cUswT1dZSk5rYkUxRElS0gF0QVVfeXFMUEtma1Y0amoteGRJUzZfVUVVMmo1UVk1bGZUdkFQQWk0VWo1YzVlTFp1SlpjQ3ZQWkhSUFk5clNySWhHb2VGbnhlZzdsZnlaWVpTUFNJbVJPSEdjbDJ0VFhUb0VTaDZxSzBPV1lKTmtiRTFESVI?oc=5"
+        },
+        {
+          "title": "\"이란 원유 실은 유조선, 미 해군에 나포돼 본토 입항 임박\"",
+          "source": "imnews.imbc.com",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tMmNnbkhvNnE3dTBCdV8yekZRYmd0Mlp0ZHByZnlsVFlIVS1Rd1ZBSVotRy1oMVNzdFo1Z0JVRTNxMl9ZZjhuYjNfTjZXRVpaZG1YLTNnRVlMSVhkMXhCd0hrZ3dsZ3Bjc2NWRjRvT1ZLeFJW0gF0QVVfeXFMUEtma1Y0amoteGRJUzZfVUVVMmo1UVk1bGZUdkFQQWk0VWo1YzVlTFp1SlpjQ3ZQWkhSUFk5clNySWhHb2VGbnhlZzdsZnlaWVpTUFNJbVJPSEdjbDJ0VFhUb0VTaDZxSzBPV1lKTmtiRTFESVI?oc=5"
+        },
+        {
+          "title": "“이란 원유 실은 유조선, 미 해군에 나포돼 본토 입항 임박”",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9vNXVkZWtTVWdrZXVEeUdRWTlSOU1vTmthNGZoS2w0TUtEODl2R2EzWnp5VThjZ1lFMXl5LVZaYXhmLUYzSnVLSjRZZw?oc=5"
+        },
+        {
+          "title": "\"이란 원유 실은 유조선, 미 해군에 나포돼 본토 입항 임박\"",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wRVBnazJEMDBpX1NKcWdRZGwxWHVyRGwzR0VEZUN0V0pqOF9xVm50SEMzU1E2VXNtS05TVVI2elNYYWtQaEk1dEFxa0R2UDktZUE1cEFVNThsOGfSAWBBVV95cUxQUERuby0zNU96M2NsZEthU0hnLXduODFTem1Jak1uUUtKeE1pZmp0YmliYWRTMEdGUzhOWWh2VTR1NG5JMGhkNGZFMDVPRE9oYUtnM1B1TGRUNmdFenJBejQ?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a7183633ce12"
+    },
+    {
+      "title": "\"트럼프, 이란 '호르무즈 재개방안' 거부…11월 선거 후 공습 재개 가능성\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBZOXQ5T1F0SEZ5djBuNnAwUm40U2l4RzFraWNEcVRRc0piMEQ0QUFVWlpoMWdkS0RqR3J3dUM0c29pRUdUQVFFWGdjUlJUQ3BwUTdpcG9RcjcydUc0NEk3ddIBeEFVX3lxTFB5Qk9Rb2ZGcy00dG9DcVFWZEZFSlMtOTFYWThDVTlPSWtLQWVud3ZIYWsxaUJXU0tpMk5OTkFnMDNUTE9HZzZXSk5ORGdWTUtmb2FPaXp2d1lCS0dQNGZzaERnZHZSRldNemlDT1l3Vml2Z2JsV0ZCdw?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-26 10:37",
+      "summary": "\"트럼프, 이란 '호르무즈 재개방안' 거부…11월 선거 후 공습 재개 가능성\"  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6abc46d93688"
+    },
+    {
+      "title": "주유소 기름값 19주째 하락…국제유가 급락에 추가 인하 전망",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9McXRwSjlaR0swWFNVM0VrQmNGZjhVRkkwRmdfSTBzR1BqRkVTWll4ZS0yMHBvVmsteGp5M0ZiNllOTmJYWm5UZEZhNXlvRUE?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 10:34",
+      "summary": "주유소 기름값 19주째 하락…국제유가 급락에 추가 인하 전망  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "주유소 기름값 19주째 하락…국제유가 급락에 추가 인하 전망",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5tbjZPbkR6OFhJTkZFX2E4UDV2Qkp3MHd5c0NNVjltdk9YcnZYTzhuSHlXTXFMVnJWVXptS2V4bmpyZTBoMjE0R0Y0Tjc4bXNVb1VkOA?oc=5"
+        },
+        {
+          "title": "주유소 기름값 19주째 하락…국제유가 급락에 추가 인하 전망",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE50WnJtQUlnSUR3OGZPTjRhQWZCYUhGdGVuMUZJT2ljWWFlRFp0R3hTeWpLaEM2enhkd0gtY09PWm0xYWEtSEE?oc=5"
+        },
+        {
+          "title": "주유소 기름값 19주째 하락…국제유가 급락에 추가 인하 전망",
+          "source": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5IcGNsa1QxaVNibERaWGRoWkQ4WUxwNWFEY2NXWUxiNFlTb0t1RzZ2MDY1MXdqVG5vZk1hU0lyc29KNVRyTk5CdV9YOGJoQVRxZEpLSENJLXdTNWRYT3J4TW9ja1Q?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 19주째 내림세…국제유가 급락에 추가 인하 기대",
+          "source": "산경투데이",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5pTlkyTS1WZTBPbGluU242Rlg0R3NWM0NtZkV6TV80Qno3STJjZ3dSekl3c05CS1U1NF8wMmRhT0xYcFlJQ3h0eEJEQldqMDhIaUtvTmx2Z3lFX0gzZFRiSUNFN3p2TjJLQURuVm1NU3Fkc3pP0gF0QVVfeXFMTmlOWTJNLVZlME9saW5TbjZGWDRHc1YzQ21mRXpNXzRCejdJMmNnd1J6SXdzTkJLVTU0XzAyZGFPTFhwWUlDeHR4QkRCV2owOEhpS29ObHZneUVfSDNkVGJJQ0U3enZOMktBRG5WbU1TcWRzek8?oc=5"
+        },
+        {
+          "title": "전국 주유소 기름값 19주째 내림세…국제유가 급락에 추가 인하 기대",
+          "source": "산경투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BZzFBUG9STi1OUFRuS1Bta1VwSi11dzNpUEZmWld0czNlaUFrTnBqMVR6Z2Z6YTZrSHlOWkVuYTZLT3o2RmQyeXlLQVppbVlrQVU2endhZ0dldjBPdzgtbzZieDliUVBWMS0ybVpWSkHSAXRBVV95cUxOaU5ZMk0tVmUwT2xpblNuNkZYNEdzVjNDbWZFek1fNEJ6N0kyY2d3UnpJd3NOQktVNTRfMDJkYU9MWHBZSUN4dHhCREJXajA4SGlLb05sdmd5RV9IM2RUYklDRTd6dk4yS0FEblZtTVNxZHN6Tw?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "50837b4c8c8b"
+    },
+    {
+      "title": "주유소 기름값 19주 연속 하락…가격상한·추석 할인 영향",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNcmpOekdhYzlmRTN6SzZuWTdNdmJvYmdVU1NYZHlKcWJSTGwxaXYxQTdFRkFPYXJaMVpnWGxmTWNONUtkYUJGQld3TnFDSlBkcWJWNUx5WXhxSEZNaF9DOUthNVhsS3N4ZlRpdUhQbk1UMzJibUhPbUdZc2RQdm5pUmJUX3BDTE43MEdfaVJWZDBlTmhxajFiOHAyS21xZlVpRG9vekJrSTdRZDVwOWdhTmZLLTA2eFhKdEFOOFc1T3BfbGFxbWR4X01Uem96cjFVV2NFaThOMVFDdnFIN0x2LXl5djRnOVpIOUxteG9FN3poRU1kNXlIRlZ3N09wQTFvemxlSmZBcjg2bzZqQ0E?oc=5",
+      "source": "데일리안",
+      "published": "2026-09-26 10:24",
+      "summary": "주유소 기름값 19주 연속 하락…가격상한·추석 할인 영향  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "주유소 기름값 19주 연속 하락…가격상한·추석 할인 영향",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYZHlEbWhvdjRLeWIyQWRRV3phZDNIdXg1eVVqdVFqb3JybFhwdHJNNUt3ZTFFd0x3dGlHMFJQWmpmWlhGdm5OYUhUdHozWF8zSTFHZA?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1b2015b721d1"
+    },
+    {
+      "title": "휘발유 가격 19주 연속 하락…국제유가 급락에 낙폭 커지나",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9jOEp4M3V1UlRDSnNvYW1ISXJxVU9WR1RUZklxTE5QaWEwV1lPcEkxa3JGX0xObjhQSFdlakVxdzlQZjNfWWhVV0g4N0d6TmMxNWhlOEc0anhaNi14WGdCMFJrS0dWSFV0M2JZNlVn0gFuQVVfeXFMT2M4SngzdXVSVENKc29hbUhJcnFVT1ZHVFRmSXFMTlBpYTBXWU9wSTFrckZfTE5uOFBIV2VqRXF3OVBmM19ZaFVXSDg3R3pOYzE1aGU4RzRqeFo2LXhYZ0IwUmtLR1ZIVXQzYlk2VWc?oc=5",
+      "source": "파이낸셜투데이",
+      "published": "2026-09-26 10:17",
+      "summary": "휘발유 가격 19주 연속 하락…국제유가 급락에 낙폭 커지나  파이낸셜투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "휘발유 가격 19주 연속 하락…국제유가 급락에 낙폭 커지나",
+          "source": "파이낸셜투데이",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xU21RazN6eGxXb3JFQWdEVDJVc2xERjdIUGhrLWJjVzJRbVZhSm5GcFQ1a1Y5UjdvY3AxRmZFN21hTDRBNk5McEloNG0xLVQxLTY3d1B4bFc5NTluRDlxSDloSmxubFV4SnVj0gFuQVVfeXFMT2M4SngzdXVSVENKc29hbUhJcnFVT1ZHVFRmSXFMTlBpYTBXWU9wSTFrckZfTE5uOFBIV2VqRXF3OVBmM19ZaFVXSDg3R3pOYzE1aGU4RzRqeFo2LXhYZ0IwUmtLR1ZIVXQzYlk2VWc?oc=5"
+        },
+        {
+          "title": "휘발유 가격 19주 연속 하락…국제유가 급락에 낙폭 커지나",
+          "source": "파이낸셜투데이",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QXy1wczZSR3BFa0VmRTZxMXA0dDRPYUdQUnQyZ01jLTk1d2Z4T3NMd0x2RGliX2VCLThVQV84d2lEWlVOZUlwTjFzQTJrdEtLR2hQQjB5S3FBUFVRcm4tbHQzRjN2NHhDa2fSAW5BVV95cUxPYzhKeDN1dVJUQ0pzb2FtSElycVVPVkdUVGZJcUxOUGlhMFdZT3BJMWtyRl9MTm44UEhXZWpFcXc5UGYzX1loVVdIODdHek5jMTVoZThHNGp4WjYteFhnQjBSa0tHVkhVdDNiWTZVZw?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e657473ad8f5"
+    },
+    {
+      "title": "이란 \"7일 내 호르무즈 개방\" 제안…트럼프 \"거부, 선거 후 폭격 재개\"[WSJ]",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3dERNM3gySWhxdVpkU0hRcTU3U0ZuWGllZEFTM1NLTGVjMGJNbEU3T245UnhsYjdiQ2lscGE4TWc2NGh0NjZLUUpPMWwyeEZod0thcFNvV09YMGpsM2dJ?oc=5",
+      "source": "조세일보",
+      "published": "2026-09-26 10:02",
+      "summary": "이란 \"7일 내 호르무즈 개방\" 제안…트럼프 \"거부, 선거 후 폭격 재개\"[WSJ]  조세일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "45a491801d32"
+    },
+    {
+      "title": "19주 연속 기름값 하락…추석 고속도로 주유소 가격 100원 인하",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBQYUhrMnRjWGVXUXowNmJjYWFoaHpxMFpWNEthcWRXN1hsMEZTUHRWZldMVE9tM2hwYXlUampmeHNOS004MHltN1JKOFVqMkdGMVhTb01TMzlZakxO?oc=5",
+      "source": "newspim.com",
+      "published": "2026-09-26 09:59",
+      "summary": "19주 연속 기름값 하락…추석 고속도로 주유소 가격 100원 인하  newspim.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b3b7c60b5bfd"
+    },
+    {
+      "title": "휘발유 잡았더니 윤활유 폭등...엔진오일 교체 '빨간불'",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wZTNHamptS3hCT1lXSEo3c3BZYlFBalA0TlRpeExNRllBd2dRaDNvdEJ0V180eldrbUl1WGxzMnB5bHZ1c3hfN25JWGZPbDJ1aHJ2a21UWXI0cW81VHhyejlIYVRMU2vSAWdBVV95cUxOMGUzR2pqbUt4Qk9ZV0hKN3NwWWJRQWpQNE5UaXhMTUZZQXdnUWgzb3RCdFdfNHpXa21JdVhsczJweWx2dXN4XzduSVhmT2wydWhydmttVFlyNHFvNVR4cno5SGFUTFNr?oc=5",
+      "source": "abcn.kr",
+      "published": "2026-09-26 09:52",
+      "summary": "휘발유 잡았더니 윤활유 폭등...엔진오일 교체 '빨간불'  abcn.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "휘발유 잡았더니 윤활유 폭등...엔진오일 교체 '빨간불'",
+          "source": "ABC뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpQUNjV21TaFlidnpCazVmbVlRQWRHUjJ5eFRMNFVPMzhUZ2tFR0ZHeFNBM3VVUDU5dkluam5IU3BheGdXWnV3eWRtdjRMNHpGREhIVWlVYWhxVDF3dGhQU3BoSdIBZ0FVX3lxTE4wZTNHamptS3hCT1lXSEo3c3BZYlFBalA0TlRpeExNRllBd2dRaDNvdEJ0V180eldrbUl1WGxzMnB5bHZ1c3hfN25JWGZPbDJ1aHJ2a21UWXI0cW81VHhyejlIYVRMU2s?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "296dc85a4310"
+    },
+    {
+      "title": "호르무즈 봉쇄에 치솟은 가스선 운임…K조선 수주 기대감 커져",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ldURFQUdtd1VLUm5rM0RKdDlxNm1jUFYtUjR2YkR1Q0tPalhuZ3dvaWI2ODRGSGtuZUI0N19GWkJ3NFM1TUVhZm5zb3FPa1NKY18yZ1dOV1RvU3Bjd0pDby1oS21fWGd0?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-26 09:35",
+      "summary": "호르무즈 봉쇄에 치솟은 가스선 운임…K조선 수주 기대감 커져  ebn.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8e6eee135761"
+    },
+    {
+      "title": "‘주유 미뤄야 하나’ 추석 할인 효과에 국내 주유소 기름값 19주째↓…국제유가 급락에 추가 하락 기대",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE95VkhIaFV5bTE2cll4aVhWUTgtdV9HZXhCaE9rREs5b0hGRkJYNG1CQmNkQ2JLbUdxbVYyR2Q0U0ZIMGZsd1E?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 09:31",
+      "summary": "‘주유 미뤄야 하나’ 추석 할인 효과에 국내 주유소 기름값 19주째↓…국제유가 급락에 추가 하락 기대  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "‘주유 미뤄야 하나’ 추석 할인 효과에 국내 주유소 기름값 19주째↓…국제유가 급락에 추가 하락 기대",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wRVRTZTlaNW05YjFsLTIxaU1SdThqRUd4ZjQ1MUQ0Ny10bGZNR0RSWDhRWW5XdmlrZnJub2VpZjY3VzJvNmVqMXMtQzFYOGtxRGRibQ?oc=5"
+        },
+        {
+          "title": "‘주유 미뤄야 하나’ 추석 할인 효과에 국내 주유소 기름값 19주째↓…국제유가 급락에 추가 하락 기대",
+          "source": "헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WUWJpenV0cW5mcHFRWnZ3c3NoMGZocFM0YzNDQVV4bjlaMUh2RFdPbHRHbVdWdFdpVXU2UmZHM2RmZkc0MmxJNWJoTmJvdTV1S0ZQTUdR?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "472d1d8f7c8d"
+    },
+    {
+      "title": "이란, 미국에 '호르무즈 해협 7일 내 재개방' 제안",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBCTjRWXzJWWUNuNUplZFRsdG9wNU84VE1HdXdfWFF1TmlCcDN4VTJmWjBXSE1vZXYwRHJWRGwwMTV0cHRKbzBzOFBqYzdLRzg0dE9aN1BSWndDWTVuNTdZQnVWWdIBY0FVX3lxTFBCTjRWXzJWWUNuNUplZFRsdG9wNU84VE1HdXdfWFF1TmlCcDN4VTJmWjBXSE1vZXYwRHJWRGwwMTV0cHRKbzBzOFBqYzdLRzg0dE9aN1BSWndDWTVuNTdZQnVWWQ?oc=5",
+      "source": "bbc.com",
+      "published": "2026-09-26 09:20",
+      "summary": "이란, 미국에 '호르무즈 해협 7일 내 재개방' 제안  bbc.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e63bd492bc18"
+    },
+    {
+      "title": "호르무즈 봉쇄에 가스선 운임↑…韓 조선 수주 전망은 '맑음'",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04WmxDd0MzU0RBMjZKZXREMU5jY3JoLW0zNWJwUXJ3RkNPTTVfeW9fVHJCVVA2akhzOHVZTWg4cU9leFhkdU56ZzREVmd6LVU?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-26 09:18",
+      "summary": "호르무즈 봉쇄에 가스선 운임↑…韓 조선 수주 전망은 '맑음'  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "43ce58340ce7"
+    },
+    {
+      "title": "휘발유값 19주 연속 하락…서울, 전국 최고가 1904.2원 유지",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pQ05JLTYyRUE4Vy1rUVFGRFM1OUtod0VQMFdmek5FeUNmbkVWM05JcTV1WlRZS3RHb3pKQnIzTHFaWjdpVV9KanhWVzFFM0VfUWVONmxsVHJocUk4Nk1NMjRDcTNKVGRUZ0hwZHFn?oc=5",
+      "source": "gukjenews.com",
+      "published": "2026-09-26 09:16",
+      "summary": "휘발유값 19주 연속 하락…서울, 전국 최고가 1904.2원 유지  gukjenews.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cc28bfbe9f12"
+    },
+    {
+      "title": "유가 100달러에 금리까지 발목 … '新오일쇼크' 스태그플레이션 그림자",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZExVd0FhSk5qU3IzdU9PMEVVOVlfNjZRX2kzODNlMmM0cXdaX1RJYlRmdU5jY29GRGNnQkVWRk5tQWpmUjZQX3pEOTlxcWlhb2lTYmk5VVZzX2ZlNTJPYW9jYUtWWlVRM01BOFpzVTBQUzIwdkt2M1gyVXBGNVN0bNIBgAFBVV95cUxNZExVd0FhSk5qU3IzdU9PMEVVOVlfNjZRX2kzODNlMmM0cXdaX1RJYlRmdU5jY29GRGNnQkVWRk5tQWpmUjZQX3pEOTlxcWlhb2lTYmk5VVZzX2ZlNTJPYW9jYUtWWlVRM01BOFpzVTBQUzIwdkt2M1gyVXBGNVN0bA?oc=5",
+      "source": "newdaily.co.kr",
+      "published": "2026-09-26 09:00",
+      "summary": "유가 100달러에 금리까지 발목 … '新오일쇼크' 스태그플레이션 그림자  newdaily.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2f1a7c90cfe9"
+    },
+    {
+      "title": "휘발유 1858원, 19주째 하락…추석 고속도로 주유소 100원 인하 효과",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1JdHE0NHB6MnZHbjUxaHNmYWRqZ2Y3a3E1bjZNU2JHWTFtWVRHY0dCemhzRFR4Nm1JclFCYVZrQnBVOXc3dXk3dEQ2U2NaSDFLREVYTENWdVotODVTZWpqSUpR?oc=5",
+      "source": "매일신문",
+      "published": "2026-09-26 08:58",
+      "summary": "휘발유 1858원, 19주째 하락…추석 고속도로 주유소 100원 인하 효과  매일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c1aaa94fcace"
+    },
+    {
+      "title": "프랑스, 사우디 얀부 파병 결정…홍해 원유 수송로 방어 나선다",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYnZZX0xHQkxNQXlOSDlkZHhuVEtCWC1lb2g5QlhSZlF3dTNwUHZ1X01LYXlVX2t2V2Q4Um0wOE5ZME1XT0RIT1FsQ2phekhQc0Zua0NBbHRZTmJHbnAzd3JRVTNQdWRNbDBibHJmS0Jab2F1VVBaWk1KS21hLU9IMXllUmlZUjlO?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-09-26 08:46",
+      "summary": "프랑스, 사우디 얀부 파병 결정…홍해 원유 수송로 방어 나선다  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "프랑스 사우디 얀부 파병 및 홍해 원유 수송로 방어",
+      "id": "791ec16b4f02"
+    },
+    {
+      "title": "글로벌 LNG 수출 20% 카타르 멈춤, 호르무즈 풀려도 상당기간 차질",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5FamVZMWxjamhMUDBGRGxWcUdiNGxlWkg2NlhCaGRYTkh1VllQbkNoNjlhckZBUGowUEllT1dwU3dwODZCSmNiTjhIR2ZRUGRKX1hrUlNKR0FKREFqNkVsYmpQcTU0YU5jT3ljcDhVRmTSAXBBVV95cUxORWplWTFsY2poTFAwRkRsVnFHYjRsZVpINjZYQmhkWE5IdVZZUG5DaDY5YXJGQVBqMFBJZU9XcFN3cDg2QkpjYk44SEdmUVBkSl9Ya1JTSkdBSkRBajZFbGJqUHE1NGFOY095Y3A4VUZk?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-09-26 08:42",
+      "summary": "글로벌 LNG 수출 20% 카타르 멈춤, 호르무즈 풀려도 상당기간 차질  에너지플랫폼뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3b24a0bec04e"
+    },
+    {
+      "title": "\"미·이란, 호르무즈 대립 속 단계적 봉쇄 해제 타결 모색\"로이터",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTFNiZkFZRDlWd1ZGeTdRQ01TU2NsRlNBbHVtYWUyR2Uzal80cm5uem1XQzVpb0pCbTBIQW9IMHJFWU0zSGFWZU9GY1V4TlFwcFAwTUFvWmRoT2VQYTZZNk81WTVHejJoTTZFMlByQXc0Ulc1NWJ3NzAyc1l4bWdfbW0xUHBvVDVJ?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-09-26 08:33",
+      "summary": "\"미·이란, 호르무즈 대립 속 단계적 봉쇄 해제 타결 모색\"로이터  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "43de44fefa0d"
+    },
+    {
+      "title": "오늘(9월 26일) 연료 가격: 세계 유가는 주말을 앞두고 하락세로 돌아섰습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOGJ0UFdobzJZR2lzbVFUc2ktR2ktRldPTTdhUV9aUkF1Z2FkeXZGOU5GUnpjSU51dHAxZjJwU25FeUZoMGV2d2VOcUhwWllKZkVLekh2Yk55MGsxbE5ZUEtsQlFINXItMi1hV0YycklYb3FRNm03eTBfVFN0a2VzUVEybndYa0FjVnN3?oc=5",
+      "source": "vietnam.vn",
+      "published": "2026-09-26 08:32",
+      "summary": "오늘(9월 26일) 연료 가격: 세계 유가는 주말을 앞두고 하락세로 돌아섰습니다.  vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e235bfdc6c35"
+    },
+    {
+      "title": "사우디 9월 원유 수출 하루 600만 배럴…유가 급등세 일단 진정",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYlZaeElWNno1bkZQeUxZbEUyNkswbktTZHBHUmlGNmxrcVBOc1NPNXJGWmFyWlk1UDhQYlJ5WEF6ZUJhS2IyUmJKM1Y3RWhZZy1GZF8wVUJFa2hVSFNFcWVhWnd3UTFQcm1fS2xuMjlMdjAtckxOQzFPekc4cmwzTnprZFNFdmM0?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-09-26 08:28",
+      "summary": "사우디 9월 원유 수출 하루 600만 배럴…유가 급등세 일단 진정  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "731b17e60ea6"
+    },
+    {
+      "title": "국내 주유소 유가 19주 연속 하락, 휘발유 평균 L당 1,858원",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa3RuRW9rbGNVcjR2amtQVUJIblBCbkxmUG14TFhpc0JnSEpmeVN3TElKY2w5SWFhUlZFYi1Tbmlzek9PQmlDdkpUVER0NWp3QnVnZ080WEtPcFhxVG9KeUw2UWJSVmFTTEhYRzU1a3lXaUp1Y1h3bHJ2cXNHTVNIOHdOMl9xWWczRTF4aTgtUTVIb3dTdXQ1UUFENzJiQQ?oc=5",
+      "source": "Traders Union",
+      "published": "2026-09-26 08:07",
+      "summary": "국내 주유소 유가 19주 연속 하락, 휘발유 평균 L당 1,858원  Traders Union",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e145b34a4da9"
+    },
+    {
+      "title": "주유소 기름값 19주째 하락...수입 기준 두바이유 12달러 급락",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lbmd1TFRxSENjc2EtZEpmanFfeWM5MHlROEFTT0ZkRTQ0dFFhNUUyRjRyaGZSOHdvMHQ2Y3UtNEk5dmRFODVUTEhzeldOZFNrSGUycllVcEJmT2FYR3ZQb1VZNWo2NFpJMW9mQ3d3WdIBc0FVX3lxTE11eFNuNXpmeXVSX3padS14UXlWUk5QUHY5RTA4ZnJqSzBsVWRRdC0zV015VjdMVzNSUmxjc0xpQkUxMVNCMEwyZDkwZ0d0U1JLNTZDbVVvbGlZVXVWQm9ib2dDQUhXUVVYTDhZQ2VxT1NfQ2c?oc=5",
+      "source": "여성신문",
+      "published": "2026-09-26 07:59",
+      "summary": "주유소 기름값 19주째 하락...수입 기준 두바이유 12달러 급락  여성신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5e117e8ca360"
+    },
+    {
+      "title": "전국 주유소 기름값 19주 연속 하락…다음주 낙폭 커지나",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4wN29BWTF5MkhpXzVjQm5RWjV1bmNuUk1mS2kzeUh1MjBsVnhDWTM0Qk5UYXdpTEprOUZQTVFZc2RtVS1KTjlRblJtX21RYWNfRmQwMUxGUG1QTzQ?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-09-26 07:55",
+      "summary": "전국 주유소 기름값 19주 연속 하락…다음주 낙폭 커지나  에너지경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3d10f92e30b9"
+    }
+  ]
+}
