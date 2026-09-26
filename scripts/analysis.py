@@ -82,8 +82,16 @@ def validate(data, allowed):
 def complete(payload, validator, state=None, persist=None, *, morning=False, provider=None):
     """3.8 → 3.7 → 3.1 Flash-Lite 순으로 대체. 요청마다 키를 교대한다."""
     from . import groq_api
-    if provider == "groq" or (provider is None and groq_api.enabled()):
+    if provider == "groq":
         return groq_api.complete(payload, validator, state, persist, morning=morning)
+    if provider is None and groq_api.enabled():
+        try:
+            return groq_api.complete(payload, validator, state, persist, morning=morning)
+        except RuntimeError:
+            if env('GEMINI_FREE_TIER_CONFIRMED') != 'true' or not env('GEMINI_API_KEY'):
+                raise
+            logging.getLogger(__name__).warning('Groq 선별 실패 — 기존 무료 Gemini 백업으로 전환')
+            return complete(payload, validator, state, persist, morning=morning, provider='gemini')
     if env("GEMINI_FREE_TIER_CONFIRMED") != "true":
         raise RuntimeError("두 API 프로젝트의 무료 등급 확인이 필요합니다")
     keys = list(dict.fromkeys(k for k in [env("GEMINI_API_KEY"), env("GEMINI_API_KEY_BACKUP")] if k))

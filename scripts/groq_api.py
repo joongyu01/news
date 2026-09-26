@@ -32,6 +32,8 @@ def complete(payload, validator, state, persist, *, morning=False):
     state = state if state is not None else {}
     ledger = state.setdefault('groq_ai', {})
     now = now_kst()
+    if ledger.get('retry_after_at', 0) > now.timestamp():
+        raise RuntimeError('Groq 제한 대기 중')
     day = now.date().isoformat()
     # Keep a rolling window across midnight, so evening screening cannot
     # consume the following morning's allowance. This is a local estimate;
@@ -60,6 +62,15 @@ def complete(payload, validator, state, persist, *, morning=False):
             json={'model': MODEL, 'messages': messages, 'response_format': {'type': 'json_object'},
                   'reasoning_effort': 'none', 'max_completion_tokens': MAX_OUTPUT}, timeout=(10, 90))
         if not response.ok:
+            ledger['last_http_status'] = response.status_code
+            if response.status_code == 429:
+                try:
+                    delay = float(response.headers.get('retry-after', '1800'))
+                    if not 0 < delay <= 86400:
+                        delay = 1800
+                except (ValueError, TypeError, AttributeError):
+                    delay = 1800
+                ledger['retry_after_at'] = now_kst().timestamp() + delay
             logging.getLogger(__name__).warning('Groq HTTP %d (자동 재시도 없음)', response.status_code)
             raise RuntimeError('Groq API 응답 실패')
         stage = 'response_json'
@@ -82,13 +93,14 @@ def complete(payload, validator, state, persist, *, morning=False):
         data = json.loads(choice['message']['content'])
         stage = 'validation'
         result = validator(data)
-        ledger.update(last_status='ok', last_success_at=now_kst().isoformat())
+        ledger.update(last_status='ok', last_success_at=now_kst().isoformat(), last_http_status=200,
+                      retry_after_at=0, last_failure_stage='')
         if persist:
             persist(state)
         logging.getLogger(__name__).info('Groq API OK · %s · %s', MODEL, json.dumps(usage))
         return result, usage, 1, 'groq/'+MODEL
     except (requests.RequestException, ValueError, KeyError, TypeError, IndexError, RuntimeError):
-        ledger.update(last_status='failed', last_failure_at=now_kst().isoformat())
+        ledger.update(last_status='failed', last_failure_at=now_kst().isoformat(), last_failure_stage=stage)
         if persist:
             persist(state)
         logging.getLogger(__name__).warning('Groq analysis failed at %s', stage)

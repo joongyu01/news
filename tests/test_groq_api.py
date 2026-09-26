@@ -6,6 +6,38 @@ from scripts.models import now_kst
 
 
 class GroqTests(unittest.TestCase):
+    def test_rate_limit_uses_confirmed_free_backup_and_cooldown(self):
+        state = {}
+        response = Mock(ok=False,status_code=429,headers={'retry-after':'120'})
+        with patch.dict('os.environ', {'GEMINI_FREE_TIER_CONFIRMED':'true','GEMINI_API_KEY':'test-gemini'}), \
+             patch.object(groq_api.requests,'post',return_value=response) as post, \
+             patch.object(analysis,'request_json',return_value=({'ok':True},{'totalTokenCount':7})) as fallback:
+            for _ in range(2):
+                result=analysis.complete(self.payload,lambda x:x,state,Mock())
+            self.assertEqual(post.call_count,1)
+            self.assertEqual(fallback.call_count,2)
+            self.assertEqual(result[-1],'gemini-3.8-flash')
+        self.assertEqual(state['groq_ai']['last_http_status'],429)
+        self.assertEqual(state['groq_ai']['requests'],1)
+        self.assertEqual(state['ai']['requests'],2)
+
+    def test_explicit_groq_comparison_does_not_substitute_gemini(self):
+        with patch.dict('os.environ', {'GEMINI_FREE_TIER_CONFIRMED':'true','GEMINI_API_KEY':'test'}), \
+             patch.object(groq_api.requests,'post',return_value=Mock(ok=False,status_code=429,headers={})), \
+             patch.object(analysis,'request_json') as fallback, self.assertRaises(RuntimeError):
+            analysis.complete(self.payload,lambda x:x,{},Mock(),provider='groq')
+        fallback.assert_not_called()
+
+    def test_invalid_groq_result_is_validated_again_on_backup(self):
+        response=Mock(ok=True,json=lambda:{'choices':[{'finish_reason':'stop','message':{'content':'{}'}}]})
+        validator=Mock(side_effect=[ValueError('invalid'),{'ok':True}])
+        with patch.dict('os.environ', {'GEMINI_FREE_TIER_CONFIRMED':'true','GEMINI_API_KEY':'test'}), \
+             patch.object(groq_api.requests,'post',return_value=response), \
+             patch.object(analysis,'request_json',return_value=({'ok':True},{})):
+            result=analysis.complete(self.payload,validator,{},Mock())
+        self.assertEqual(validator.call_count,2)
+        self.assertEqual(result[0],{'ok':True})
+
     def setUp(self):
         self.env = patch.dict('os.environ', {'AI_PROVIDER':'groq', 'GROQ_FREE_TIER_CONFIRMED':'true', 'GROQ_API_KEY':'test-secret'})
         self.env.start()

@@ -55,6 +55,11 @@ export function formatAiStatus(state, now=Date.now()) {
     const model = typeof ledger?.last_model === 'string' && /^[a-zA-Z0-9./_-]{1,100}$/.test(ledger.last_model) ? ledger.last_model : '미기록';
     lines.push('',`[${name}] ${status}`,`최근 모델: ${model}`,`최근 요청: ${time(ledger?.last_attempt_at)}`,
       `마지막 성공: ${time(ledger?.last_success_at)}`,`마지막 실패: ${time(ledger?.last_failure_at)}`);
+    if (Number.isInteger(ledger?.last_http_status)) lines.push(`최근 HTTP: ${ledger.last_http_status}`);
+    const stage = ({request:'API 요청',response_json:'응답 해석',finish_reason:'응답 미완료',content_json:'JSON 해석',validation:'결과 검증'})[ledger?.last_failure_stage];
+    if (stage) lines.push(`실패 단계: ${stage}`);
+    if (Number.isFinite(ledger?.retry_after_at) && ledger.retry_after_at*1000>now)
+      lines.push(`Groq 재요청 대기: ${stamp(ledger.retry_after_at*1000)} KST · 무료 Gemini 백업 사용`);
   }
   lines.push('',`기사 수집 갱신: ${time(state?.pool?.updated_at)}`,
     `AI 선별 갱신: ${time(state?.screening?.updated_at)}`,
