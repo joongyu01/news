@@ -1,0 +1,1767 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29 09:22",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1357.93,
+      "change_pct": 0.2125382827202029,
+      "unit": "원",
+      "as_of": "2026-09-28",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 92.41000366210938,
+      "change_pct": -2.3253323475842778,
+      "unit": "달러/배럴",
+      "as_of": "2026-09-25",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 104.31999969482422,
+      "change_pct": -2.138835658473656,
+      "unit": "달러/배럴",
+      "as_of": "2026-09-25",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 123,
+    "fresh": 123,
+    "classified": 123,
+    "representatives": 99,
+    "duplicates": 24
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.8-flash",
+        "issues": [
+          {
+            "title": "가스공사·석유공사 통합 추진과 막대한 부채 문제 등 난제 지속",
+            "summary": "합산 부채 규모가 62조 원에 달하는 한국가스공사와 한국석유공사의 통합 논의가 진행 중이나, 재무 부담과 구조적 문제 등으로 인해 추진 과정이 첩첩산중이라는 지적이 제기되고 있다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "에너지 공기업 통합 여부에 따라 석유 비축 및 유통 감시 등 석유관리원 유관 기관과의 협력 체계 및 정책 추진 환경에 변화가 생길 가능성이 있다.",
+            "article_ids": [
+              "4a6977c26ead"
+            ]
+          },
+          {
+            "title": "정유업계 최고가격제 논의 및 14조 원대 유가 담합 혐의 재판 진행",
+            "summary": "정유업계를 대상으로 한 최고가격제 논의와 함께 유가 담합 수사 및 재판이 겹치며 정유사의 가격 결정 구조가 시험대에 올랐다. 14조 원대 유가 담합 혐의 재판에서는 HD현대오일뱅크가 혐의를 부인함에 따라 자진신고자가 증언대에 설 예정이다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "유류 가격 책정 및 유통 구조에 대한 정부의 감시와 시장 투명성 요구가 강화되어, 석유 유통 및 가격 모니터링 업무의 중요성이 증대될 가능성이 있다.",
+            "article_ids": [
+              "5b19bd518613",
+              "6978d856e6ff"
+            ]
+          },
+          {
+            "title": "중동·러시아발 공급 불안 및 미국 경유 수출제한 검토에 따른 에너지 위기 우려",
+            "summary": "중동 및 러시아발 원유 공급 차질에 더해 미국의 경유 수출제한 검토 가능성이 거론되면서 유럽을 중심으로 제2의 에너지 위기에 대한 우려가 확산되고 있다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "국제 경유 수급 불안정과 공급망 교란으로 인해 국내 유류 수급 및 경유 수입 기준 모니터링 필요성이 커질 가능성이 있다.",
+            "article_ids": [
+              "c9d6e76b05f1"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1658,
+          "candidatesTokenCount": 526,
+          "totalTokenCount": 2184
+        },
+        "attempts": 1,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "version": 1,
+        "model": "groq/qwen/qwen3.8-27b",
+        "issues": [
+          {
+            "title": "석유공사·가스공사 통합 논의 진행, 부채 규모 및 인력 배치 과제 부각",
+            "summary": "브릿지경제 보도에 따르면, 한국석유공사와 한국가스공사의 통합 추진 과정에서 약 62조 원 규모의 부채 승계가 핵심 쟁점으로 부상했다. 기사에서는 통합 법인의 재무 건전성 확보 방안과 에너지 수급망의 효율화를 위한 조직改編이 첩첩산중이라고 평가하며, 정부의 최종 승인 전까지 다양한 기술적·재무적 장벽을 논의하고 있다.",
+            "change": "전일 자료에 통합 관련 구체적인 재무 지표가 없었으나, '부채 62조 원'이라는 구체적인 규모와 '첩첩산중'이라는 진행 상황을 명시한 새로운 보도 자료가 추가로 확인됨.",
+            "impact": "석유관리원의 업무 범위가 통합 기관과의 협업 체계로 재편될 가능성이 있으며, 석유 품질·정량 검사와 인프라 관리 대상이 확대되어 행정 관리 체계의 조정과 인력 배치 재설계가 필요해질 수 있음.",
+            "article_ids": [
+              "4a6977c26ead"
+            ]
+          },
+          {
+            "title": "HD현대오일뱅크 14조 원대 유가담합 사건, 자진신고자 증언 진행",
+            "summary": "필드뉴스 보도에 따르면, HD현대오일뱅크가 14조 원 상당의 유가담합 혐의를 부인하는 가운데, 자진신고자가 핵심 증인으로 법정대에 오르는 절차가 진행 중이다. 해당 재판은 석유 시장의 공정 거래 질서 회복과 과거 가격 결정 과정의 위법성 여부를 가늠하는 분수령으로 지목되고 있다.",
+            "change": "전일 자료에 담합 수사 진행 상황만 있었으나, '자진신고자 증언대', '혐의 부인'이라는 재판을 둘러싼 구체적인 procedural 현황이 추가됨.",
+            "impact": "석유 유통 시장의 가격 결정 구조에 대한 법적 판단이 내려질 경우, 관리원의 정량·품질 점검 외에 가격 모니터링 및 부정 유통 단속 강도가 강화되는 정책적 파급효과가 예상됨.",
+            "article_ids": [
+              "5b19bd518613"
+            ]
+          },
+          {
+            "title": "중동·러시아발 공급 차질 및 미국 조치로 유럽 2차 에너지위기 우려",
+            "summary": "중동 및 러시아발 공급 차질에 이어 미국이 경유 수출 제한을 검토하면서 유럽 지역의 에너지 위기가 심화되고 있다는 분석이 나왔다. 이는 글로벌 석유 공급망의 불확실성을 높이고, 유사 시国内 비축유 방출이나 수입선 다변화 정책이 필요할 수 있음을 시사한다.",
+            "change": "전일의 호르무즈 해협 긴장 이어, '미국 경유 수출제한 검토', '유럽 제2 에너지위기'라는 새로운 지정학적 변수가 더해짐.",
+            "impact": "국제 유가의 변동성이 국내 정유 및 유통 가격에 급속히 전가될 수 있어, 관리원의 신속한 수급 상황 모니터링과 품질 기준 이행 강화를 통한 시장 안정화가 요구됨.",
+            "article_ids": [
+              "c9d6e76b05f1"
+            ]
+          },
+          {
+            "title": "국제유가 변동성 지속에 따른 유류세 인하 2개월 추가 연장",
+            "summary": "국제 유가가 요동치는 상황에서 정부가 물가 부담을 덜기 위해 유류세 인하 조치를 2개월간 추가 연장한다고 밝혔다. 이는 지속적인 적자에도 불구하고 에너지 가격안정정책을 유지하겠다는 정부의 의지로 해석된다.",
+            "change": "전일 '11월 말까지 연장' 잠정 보도에서, 이번에는 '2달 추가 연장'이라는 구체적인 기간 확정이 이루어짐.",
+            "impact": "유류세 인하 연장으로 인해 국내 석유 수요가 일시적으로 증가할 수 있어, 주요 정유 terminals의 정량 계량 정확성 점검과 판매소들의 가격 표기 준수에 대한 관리원 현장 점검이 중요해짐.",
+            "article_ids": [
+              "cfe87786997a"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "prompt_tokens": 1544,
+          "completion_tokens": 952,
+          "total_tokens": 2496
+        },
+        "attempts": 1,
+        "provider": "groq",
+        "status": "ok"
+      }
+    ],
+    "issues": [
+      {
+        "title": "가스공사·석유공사 통합 추진과 막대한 부채 문제 등 난제 지속",
+        "summary": "합산 부채 규모가 62조 원에 달하는 한국가스공사와 한국석유공사의 통합 논의가 진행 중이나, 재무 부담과 구조적 문제 등으로 인해 추진 과정이 첩첩산중이라는 지적이 제기되고 있다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "에너지 공기업 통합 여부에 따라 석유 비축 및 유통 감시 등 석유관리원 유관 기관과의 협력 체계 및 정책 추진 환경에 변화가 생길 가능성이 있다.",
+        "article_ids": [
+          "4a6977c26ead"
+        ]
+      },
+      {
+        "title": "정유업계 최고가격제 논의 및 14조 원대 유가 담합 혐의 재판 진행",
+        "summary": "정유업계를 대상으로 한 최고가격제 논의와 함께 유가 담합 수사 및 재판이 겹치며 정유사의 가격 결정 구조가 시험대에 올랐다. 14조 원대 유가 담합 혐의 재판에서는 HD현대오일뱅크가 혐의를 부인함에 따라 자진신고자가 증언대에 설 예정이다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "유류 가격 책정 및 유통 구조에 대한 정부의 감시와 시장 투명성 요구가 강화되어, 석유 유통 및 가격 모니터링 업무의 중요성이 증대될 가능성이 있다.",
+        "article_ids": [
+          "5b19bd518613",
+          "6978d856e6ff"
+        ]
+      },
+      {
+        "title": "중동·러시아발 공급 불안 및 미국 경유 수출제한 검토에 따른 에너지 위기 우려",
+        "summary": "중동 및 러시아발 원유 공급 차질에 더해 미국의 경유 수출제한 검토 가능성이 거론되면서 유럽을 중심으로 제2의 에너지 위기에 대한 우려가 확산되고 있다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "국제 경유 수급 불안정과 공급망 교란으로 인해 국내 유류 수급 및 경유 수입 기준 모니터링 필요성이 커질 가능성이 있다.",
+        "article_ids": [
+          "c9d6e76b05f1"
+        ]
+      },
+      {
+        "title": "석유공사·가스공사 통합 논의 진행, 부채 규모 및 인력 배치 과제 부각",
+        "summary": "브릿지경제 보도에 따르면, 한국석유공사와 한국가스공사의 통합 추진 과정에서 약 62조 원 규모의 부채 승계가 핵심 쟁점으로 부상했다. 기사에서는 통합 법인의 재무 건전성 확보 방안과 에너지 수급망의 효율화를 위한 조직改編이 첩첩산중이라고 평가하며, 정부의 최종 승인 전까지 다양한 기술적·재무적 장벽을 논의하고 있다.",
+        "change": "전일 자료에 통합 관련 구체적인 재무 지표가 없었으나, '부채 62조 원'이라는 구체적인 규모와 '첩첩산중'이라는 진행 상황을 명시한 새로운 보도 자료가 추가로 확인됨.",
+        "impact": "석유관리원의 업무 범위가 통합 기관과의 협업 체계로 재편될 가능성이 있으며, 석유 품질·정량 검사와 인프라 관리 대상이 확대되어 행정 관리 체계의 조정과 인력 배치 재설계가 필요해질 수 있음.",
+        "article_ids": [
+          "4a6977c26ead"
+        ]
+      },
+      {
+        "title": "HD현대오일뱅크 14조 원대 유가담합 사건, 자진신고자 증언 진행",
+        "summary": "필드뉴스 보도에 따르면, HD현대오일뱅크가 14조 원 상당의 유가담합 혐의를 부인하는 가운데, 자진신고자가 핵심 증인으로 법정대에 오르는 절차가 진행 중이다. 해당 재판은 석유 시장의 공정 거래 질서 회복과 과거 가격 결정 과정의 위법성 여부를 가늠하는 분수령으로 지목되고 있다.",
+        "change": "전일 자료에 담합 수사 진행 상황만 있었으나, '자진신고자 증언대', '혐의 부인'이라는 재판을 둘러싼 구체적인 procedural 현황이 추가됨.",
+        "impact": "석유 유통 시장의 가격 결정 구조에 대한 법적 판단이 내려질 경우, 관리원의 정량·품질 점검 외에 가격 모니터링 및 부정 유통 단속 강도가 강화되는 정책적 파급효과가 예상됨.",
+        "article_ids": [
+          "5b19bd518613"
+        ]
+      },
+      {
+        "title": "중동·러시아발 공급 차질 및 미국 조치로 유럽 2차 에너지위기 우려",
+        "summary": "중동 및 러시아발 공급 차질에 이어 미국이 경유 수출 제한을 검토하면서 유럽 지역의 에너지 위기가 심화되고 있다는 분석이 나왔다. 이는 글로벌 석유 공급망의 불확실성을 높이고, 유사 시国内 비축유 방출이나 수입선 다변화 정책이 필요할 수 있음을 시사한다.",
+        "change": "전일의 호르무즈 해협 긴장 이어, '미국 경유 수출제한 검토', '유럽 제2 에너지위기'라는 새로운 지정학적 변수가 더해짐.",
+        "impact": "국제 유가의 변동성이 국내 정유 및 유통 가격에 급속히 전가될 수 있어, 관리원의 신속한 수급 상황 모니터링과 품질 기준 이행 강화를 통한 시장 안정화가 요구됨.",
+        "article_ids": [
+          "c9d6e76b05f1"
+        ]
+      },
+      {
+        "title": "국제유가 변동성 지속에 따른 유류세 인하 2개월 추가 연장",
+        "summary": "국제 유가가 요동치는 상황에서 정부가 물가 부담을 덜기 위해 유류세 인하 조치를 2개월간 추가 연장한다고 밝혔다. 이는 지속적인 적자에도 불구하고 에너지 가격안정정책을 유지하겠다는 정부의 의지로 해석된다.",
+        "change": "전일 '11월 말까지 연장' 잠정 보도에서, 이번에는 '2달 추가 연장'이라는 구체적인 기간 확정이 이루어짐.",
+        "impact": "유류세 인하 연장으로 인해 국내 석유 수요가 일시적으로 증가할 수 있어, 주요 정유 terminals의 정량 계량 정확성 점검과 판매소들의 가격 표기 준수에 대한 관리원 현장 점검이 중요해짐.",
+        "article_ids": [
+          "cfe87786997a"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-09-28T17:37:44.050087+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "‘부채 62조’ 에너지 공룡기업 탄생하나... 가스·석유公 통합 ‘첩첩산중’",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvVHJTVVVtNGt6Zk51RzRja3FOWnVPV00tV05MenJHSC11WU90dXZfbUhEOGlhVlFDVUlLeFlDQnBrYU9lS18zY1UyUEhrV0hwaDAwSTFZVWlqQQ?oc=5",
+      "source": "브릿지경제",
+      "published": "2026-09-28 17:03",
+      "summary": "‘부채 62조’ 에너지 공룡기업 탄생하나... 가스·석유公 통합 ‘첩첩산중’  브릿지경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "석유공사·가스공사 통합 추진 상황",
+      "id": "4a6977c26ead"
+    },
+    {
+      "title": "‘14조 유가담합 재판’ HD현대오일뱅크 혐의 부인에 자진신고자 증언대 선다",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LX3REeGFDalBZZG5UWEVoOFFTRGl6TGdQR3o4SUl2ZGhOeEx6STZldkhoeEF6Y0ltd0E2MU1taHVoLW1JcFJVOC16TmVBTUF6dDU5T2g4SEtZbGtyOTFQUHVtWkdybFZGTkx2ZtIBbEFVX3lxTE1LX3REeGFDalBZZG5UWEVoOFFTRGl6TGdQR3o4SUl2ZGhOeEx6STZldkhoeEF6Y0ltd0E2MU1taHVoLW1JcFJVOC16TmVBTUF6dDU5T2g4SEtZbGtyOTFQUHVtWkdybFZGTkx2Zg?oc=5",
+      "source": "필드뉴스",
+      "published": "2026-09-28 16:39",
+      "summary": "‘14조 유가담합 재판’ HD현대오일뱅크 혐의 부인에 자진신고자 증언대 선다  필드뉴스",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [
+        {
+          "title": "역대급 실적에도 웃지 못하는 정유업계…'담합·가격통제' 겹악재",
+          "source": "내외뉴스통신",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBGVVRfXzZNcXB5S25FOUdRc3JiZXhEd1R6RHdPVFJGcW1nYXRYZ3kzcWJMXy0xOWl6cWxfbERqbkxkLWJ3UWxGdkhEZWk5dDB0a19ELVo0RFFzZEk4SVpRQ3EzZUJRQkJzM29qLdIBcEFVX3lxTE9IZ2tpbmppajAxdGUxWEZ5RWd2VzlSMlhJa25Vdm1ZUVFldzRXS3lWQmNjaDdUbDBkYklKQklSbGZncHQyQWlLQVlqWVNieGp5YjJxbTVHT3ZlVXpIWGJ6cEVDM0lOX3VnSERYb2tEczE?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "유가 담합 형사재판 및 최고가격제 이중고",
+      "id": "5b19bd518613"
+    },
+    {
+      "title": "중동·러시아발 공급 차질에 미 경유 수출제한 검토까지…“유럽 ‘제2 에너지위기’ 우려”",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHMml2YktINjFqRXdLVHhocFRua2k1eXByenJINkdGN21qaXJHUzhTU1c3dHczaWVBbllPX19PZ1RzYVFhV3NRbnZoSzAwZ1k?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-28 16:37",
+      "summary": "중동·러시아발 공급 차질에 미 경유 수출제한 검토까지…“유럽 ‘제2 에너지위기’ 우려”  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "중동·러시아발 공급 차질에 미 경유 수출제한 검토까지…“유럽 ‘제2 에너지위기’ 우려”",
+          "source": "khan.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iN256Yzd1aGVxYkVXX3pPYnBlNThsSTRXaXhDVkdRUk12Qm1OU1p4SFQ1R01vQkV6RjdWV0hDQUJjUGtQWVdoQUczQ0s0SkVFWDI3S1I1aTNtQdIBX0FVX3lxTE5hZTFQSjFkbENsR2V3VFFfX3ZBR0lkMGQzend3OVZpY2pzUG9PenQ5V3ZKeURrTjVuNnhOTE5zTEk3LTQ3SUlDMFo0YzlVSVlNZmlXQWRqR3RKaWtFYXAw?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "유럽 에너지 위기 및 수급 차질",
+      "id": "c9d6e76b05f1"
+    },
+    {
+      "title": "국제유가 또 요동에 정부, 유류세 인하 2달 추가 연장",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zeHoyQ0lGZkh2ODdyUmxYcW8yS0k5aWdfaHNGeExoekJYWkhvTGpZOHR3V0VQS3daNjJ2Y2h3QzRoaU0waEJmY21XdkFSUjBmdEJBUVNBdm5wQlZ6YzZ0TTh2NWxzUXBRTVBv?oc=5",
+      "source": "물류신문",
+      "published": "2026-09-28 15:29",
+      "summary": "국제유가 또 요동에 정부, 유류세 인하 2달 추가 연장  물류신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cfe87786997a"
+    },
+    {
+      "title": "10차 간 최고가격제…담합 수사 겹친 정유업계 '가격결정권' 시험대",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5mcjR2ZE1UOEtncGZRb3ZwNUlSdmNWRWdxYTRvY2w0YTE1YTJZeGJvdEtIbDNCbWdjdk10Z2p0SHRVNDhyYVg1eWZ0aXpxd1VIOXVzQQ?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-28 15:06",
+      "summary": "10차 간 최고가격제…담합 수사 겹친 정유업계 '가격결정권' 시험대  v.daum.net",
+      "sector": "government",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [
+        {
+          "title": "10차 간 최고가격제···담합 수사 겹친 정유업계 '가격결정권' 시험대",
+          "source": "뉴스웨이",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3a0dYcFZvdlNZUWx5c2NFUnQ1SVR6UllwdGIxOXdDSko2NkRmWVFmV3pGTVhTc2JQaVRCRUF3cmVsRTlZQS1Sd2QyZnRCTU9aVWJveHBUTWtnR3VVUGVlTU1uTDhoZkI1bFE?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6978d856e6ff"
+    },
+    {
+      "title": "AI 데이터센터 액침냉각 시장 '급성장'… 국내 정유사, 시장 공략법은",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qSy1tbm5pREJueEFxTEJXNnZsZ2FqX2o4Wk94WW4yUER2bDdqTExST0Nnc1pRT0RBbHRMT1pvSThUYW95bWplYVYxVXRIUXhUNnNsUmxwWjY4amR2LTNLU9IBeEFVX3lxTE04amVIbU9qM1lkMU1XRl9QZGJFY1lIUmxLZm1nS3V2Qk02eU9la2hrNmdfbVJLYUw4THJ6UEFpRlFvcWV5N0ZOVE1LTW1nZkdLc19DR3BlZVNXQ0x2clp0M01DRFFKY2pYaFc2RFZlT014NjhiRGY2RQ?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-28 14:38",
+      "summary": "AI 데이터센터 액침냉각 시장 '급성장'… 국내 정유사, 시장 공략법은  뉴시스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8e01c8edbd39"
+    },
+    {
+      "title": "베트남 빈그룹, ‘석유·가스’ 사업 진출…1조 동 규모 법인 신설",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjSENnTHAzaHFoREp5dl9DVWVaS0NZUERTSUhCTThSUzJ4WUZlWWhncTg0d0Z4djA1RGlldGxYTmVaejhnTTFfYjVXN3g1MWJta1JHckxwbldTX1d6OHJubnpoR2JMa3hSRlRhcQ?oc=5",
+      "source": "인사이드비나",
+      "published": "2026-09-28 14:12",
+      "summary": "베트남 빈그룹, ‘석유·가스’ 사업 진출…1조 동 규모 법인 신설  인사이드비나",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "da924bda7bba"
+    },
+    {
+      "title": "제주 LPG 담합 재발하면 ‘영업정지’ 가능…정부·여당 제재 강화 추진",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4WjR6OC1jNVNIZmNkYlc0bUpmWlpXY1FKM01zN3VMVWRoY0tEOVpfc1RZMWdraGZfYUVHbDZpNThjYmNtVlBEYndTS01hWE9NdWVkS1ByWWlFYVR3MVJTT1Fnelo1R0hxbWhRQW130gFuQVVfeXFMUDhaNHo4LWM1U0hmY2RiVzRtSmZaWldjUUozTXM3dUxVZGhjS0Q5Wl9zVFkxZ2toZl9hRUdsNmk1OGNiY21WUERid1NLTWFYT011ZWRLUHJZaUVhVHcxUlNPUWd6WjVHSHFtaFFBbXc?oc=5",
+      "source": "제주뉴스",
+      "published": "2026-09-28 11:43",
+      "summary": "제주 LPG 담합 재발하면 ‘영업정지’ 가능…정부·여당 제재 강화 추진  제주뉴스",
+      "sector": "government",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9f319e78ad45"
+    },
+    {
+      "title": "유가 담합·최고가격제 이중고에 정유업계 신음",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82OThJNV82ZEszMDVKNWlTa1JIRnhPUm9zeWlrRlJPSzBIX0tXRjZFNjdQUGJjbGs3SnQ0MGpoUjVmaGFQV2FKRlVmRGNyWXF1WFlrMEduZUREMVNFZTl6THh1NnhsOGJtNUl6RlZR?oc=5",
+      "source": "중소기업신문",
+      "published": "2026-09-28 10:24",
+      "summary": "유가 담합·최고가격제 이중고에 정유업계 신음  중소기업신문",
+      "sector": "government",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "94edc4a4aa1e"
+    },
+    {
+      "title": "‘기능’ 쪼개고, ‘부채’는 합치고... 에너지공기업 개편 ‘엇박자’",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KZUVFWUplYWJKbTI4N3EwM29IREI1by1lbV9tWTRWX2NRaE1UWUI4N2RqbnFFdU1pbkVldkZVT0RZOWRuT2dhUWxfMEoxRFlieDJyd09Kbmhxdw?oc=5",
+      "source": "브릿지경제",
+      "published": "2026-09-28 17:03",
+      "summary": "‘기능’ 쪼개고, ‘부채’는 합치고... 에너지공기업 개편 ‘엇박자’  브릿지경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "68bff3f214b8"
+    },
+    {
+      "title": "노동계, 공공기관 통폐합·지방이전 정책 규탄…\"실질적 노정교섭 촉구\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wemN5WUpfd2NOQ0tLb3lsUm53bTh0VzU0WnZiYVFnemlaS1JROTFiRVYySjZVcDFCVENxd0ZLVUNmTlVzT1ZlMlR2OU1CaGR5TmRLaFFSTDktUQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-09-28 15:57",
+      "summary": "노동계, 공공기관 통폐합·지방이전 정책 규탄…\"실질적 노정교섭 촉구\"  파이낸셜뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0fe5c8cf759c"
+    },
+    {
+      "title": "R]\"2차 공공기관 이전 어디로?\"... 강원도 차원 혁신 전략 중요",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tWlgzZmdrR2dJY19kOFlXNkZoUDY2WWR1YXVsUUZCT3NoNGE1cVdqUzh2SHVUZW1HYzR4aEl3Yy1IclAzVXJfTFlhZUJMOEZ6endNV1VhOC1Ha1dCUTI5NU9yWjFkX0NW?oc=5",
+      "source": "andongmbc.co.kr",
+      "published": "2026-09-28 10:00",
+      "summary": "R]\"2차 공공기관 이전 어디로?\"... 강원도 차원 혁신 전략 중요  andongmbc.co.kr",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "2차 공공기관 이전 지역(강원도) 전략 논의",
+      "id": "b15d8988afe8"
+    },
+    {
+      "title": "Tullow Oil swings to positive free cash flow as Ghana output, higher oil prices drive growth",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcVhQbFJWa3BzeDliUGZGQ1ZVY19mbmY1bmNleGw0ODF6RjV2a0ljSkp3a29lLTBpd1A5M2hxWTg0UmZoSWUzRHFPTEhMQ0t0bUVWWmdIbXJJVW5qVHpfSnZxTzlWdTczY0RZamlVVldsZVZKS185Q21LcG82bkYwZEV0UkdET1AzVUozeWgwekpYSXhJZHo5NVZxV0k2aTBpT2pwUjRreS10dlRNMDBxM2NzYWRkcmFqZkdDMDFNWm1BTkpQcFdGdzN3?oc=5",
+      "source": "Reuters",
+      "published": "2026-09-28 15:44",
+      "summary": "Tullow Oil swings to positive free cash flow as Ghana output, higher oil prices drive growth  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "0f98fc3d6a6f"
+    },
+    {
+      "title": "Goldman expects initial diesel price decline under US export curbs",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcHVPS0JzZDAyU2Z6dGxwVFM3dkZ3b2w3Ry16YUZidnktUVUxZnI0Qk9nd2o5SjlYNGdUdTJ5a2MtWFdRSTlTbWs1akdES1FUUVU3NE9DLWtHNHUtRkZfWXNGUHdkWW9KN085UkR5Sk41M2xBRFpRWjRvZFBXTjVnVVJ5YlNiTGNhOUNDS0RxVzFkbjIzLXdiTTZlaURuOUhJbVJZUk41N2xCSUcwdHROamhGT2hqU0RrV2c?oc=5",
+      "source": "Reuters",
+      "published": "2026-09-28 12:22",
+      "summary": "Goldman expects initial diesel price decline under US export curbs  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "04d24bbee5a1"
+    },
+    {
+      "title": "한국가스공사 당진LNG기지, 아파트 20층 높이 거대 LNG 저장탱크 들어서는데… '재해영향평가 공백' 논란",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EblJjaU9CLTc4cVliZ2hGMGV4Tkh5X1dBZ3QzVFdZM01KNUVNODNPYkRqUmtMcEVqQTdtT3JrQmJMS0xaQXJqN09XQnNrOHp4MEJMTlh0U2lqLU5DNU5vMXVKdGsxQVM3YzhYdkZ4b3E?oc=5",
+      "source": "ccdailynews.com",
+      "published": "2026-09-28 17:29",
+      "summary": "한국가스공사 당진LNG기지, 아파트 20층 높이 거대 LNG 저장탱크 들어서는데… '재해영향평가 공백' 논란  ccdailynews.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "86f5f5bc1b12"
+    },
+    {
+      "title": "중동 불확실성에 국제유가 또 급등…이란 \"美와 추가 협상 계획 無\" - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5M3FpS1ViazNiYV9BcE5CclpSV3hoU1paTFVEZmdzUEJMX2x2dV9yMGFBeDBDOWVaWDR5RklEa0tOYURTVWpuVUF5NnV6YUVPSjhqQkQ1bUFKekhSeV9qTXE5NXNlb05G0gFuQVVfeXFMT1hhcW9kdVJPYVk1Y3VXT3JNQWVSU2VoajlwcDNQZ3l1WXA5OUJMZmk3R0l4X05PSEN0WXVGc2Jkb3JRbjR4VFZlcGlpbWRudXlWdjhPV19PUXlzLU1LbDV5QmdIUVBQeEtsclN3YVE?oc=5",
+      "source": "머니투데이",
+      "published": "2026-09-28 17:16",
+      "summary": "중동 불확실성에 국제유가 또 급등…이란 \"美와 추가 협상 계획 無\" - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "25cf99171956"
+    },
+    {
+      "title": "트럼프, 경유 수출 금지 “진지하게 검토”···경제학자 “제발 그러지 마라”",
+      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQc3N6aFU3NW1kSGRjUlFqRXZibC1FeUVqY2pvY0Myd3p3c182aXNIUHdKZER5bnB1dF9aQ2Vnb2lySHJOLVZCUTQ5MmdTMThIZHRLdklwVGN3RmJtdWhlZUx6SUQ0XzJ4TU0xOEo0Qm1ndHVCVXV5dDhQd0IzWk5td0pEY2RwYzhnQjY3UmhxN0lsOU5nZDFmZ3FfUEhqODNadWt0eFEzU3ItQnJuVVNTellIYk94eERQbS0zMWIxNDJpanRHRnowUndTSlBqSE1sUmF6dThvMmNrY1ZqdFVDV3BsZ2JwQVZXQURzZ3Mxc2dtMUlJNzgwMjZSMXBjLVFqZEdsZGlQbGJkSDhIaWd6R0w1bTBtbWx3QXktSVFvYTFvbjVqbjRKejZTcGFDdw?oc=5",
+      "source": "Benzinga",
+      "published": "2026-09-28 17:09",
+      "summary": "트럼프, 경유 수출 금지 “진지하게 검토”···경제학자 “제발 그러지 마라”  Benzinga",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b3bc333180bf"
+    },
+    {
+      "title": "[미리 보는 국감] K-방산 수장들 국감 소환 기로…조선·정유업계도 긴장",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QbkN0MVo5UEpDQV9xLWpjOEc2eG9xZmZfRFNGYlV5VEF2UjhobFk4elFQcWdKUVUwajZrWXhjdWlSV3FQODg1RjRQWnhOa1dOMGZiQVoxcTRlZ9IBWEFVX3lxTE0tQ25MNHBfdGRHVlR4dzJ2ZWNMbUhOWC15dXh2S1VLWTRkNXpLcUhOX1Z3R2U3U1MxZV94NTJaMWktRFhhcC1yWVpiQ0d6S1NtbEdpSVJrTjk?oc=5",
+      "source": "아주경제",
+      "published": "2026-09-28 17:00",
+      "summary": "[미리 보는 국감] K-방산 수장들 국감 소환 기로…조선·정유업계도 긴장  아주경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ae921deb84a6"
+    },
+    {
+      "title": "\"LPG 사고 37건 중 10건, 소규모 미검사 시설서 발생\"",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uYjY3dDU2RVRpRTRwSDNfbnlJakE3cDYyUHlZN3UyWjFaUWxrZUFXdFlhbWpPQ3FJUUZ6RExJRGJycWw5S1R2UktoS2l0Z0lJTW1pWEUwOGIwazIwYWQ2ZElEOE9JUDJlUEE?oc=5",
+      "source": "월요신문",
+      "published": "2026-09-28 16:57",
+      "summary": "\"LPG 사고 37건 중 10건, 소규모 미검사 시설서 발생\"  월요신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ab037a47da26"
+    },
+    {
+      "title": "환율 다시 1,360원대, 유가 변수 겹치며 수입물가 경계감",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01aTE4RW9nWUNUV1ZxSUlWc19Ddl93a0xfdWl3TUpHMXN0ZHdLVXJOV011RlR4QWd6N2pwdmNROWxRQ0N0X1hlVElYSzVDeDFYb0tqM2RBVFhKbl85VVhBUE1Nd2kwWmJaMWF5Sw?oc=5",
+      "source": "센머니",
+      "published": "2026-09-28 16:51",
+      "summary": "환율 다시 1,360원대, 유가 변수 겹치며 수입물가 경계감  센머니",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "20140e388eb8"
+    },
+    {
+      "title": "소규모 LPG 사업장 사고 27% ‘미검사 시설’…검사 사각지대 줄여야",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1lMFFfWmVCOEJmYklxb19nUXBCSGVpYlYtZ3pmcC0yVFo4bEgzMXB3VVdwSTg5bHJWYng5bktUeDR1OEkxZ185ek9ZaGtmMW9Eclo1RlJKV3Y0LTdkbHJLNkFVaWw1T2FBS0xXMDM3eDhrdw?oc=5",
+      "source": "에너지데일리",
+      "published": "2026-09-28 16:43",
+      "summary": "소규모 LPG 사업장 사고 27% ‘미검사 시설’…검사 사각지대 줄여야  에너지데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "563acc239372"
+    },
+    {
+      "title": "‘105억 전세사기 공방’ 이승기, 두 아이 아빠 되더니 “싼 주유소 찾아다녀”(이승기이)",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1HRXByRE5rZ0NtSUV2VVMxa3hmX1p4Sk1PVWJZVWhlXzdUbnRUSUpDbFlyUGczMzJ0YlF6NDlHLTFyZGlOUkd6aHVYYXFxdHRkOGZhNFNPV25qWXJkeXZuTGFpZkJONUIyVU9vMV9zb0dmaFpoNXJMMUxUTQ?oc=5",
+      "source": "뉴스엔",
+      "published": "2026-09-28 16:43",
+      "summary": "‘105억 전세사기 공방’ 이승기, 두 아이 아빠 되더니 “싼 주유소 찾아다녀”(이승기이)  뉴스엔",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "305d3c06003f"
+    },
+    {
+      "title": "'기름값 짬짜미' 주유소, \"두 번 걸리면 문 닫는다\"..주유업계 초비상",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGcWt0cFFWM3V1bVJYSmF0UWl3NXlyUHZib1FBVjdlX3hXYS1NbnRuUVVtZ2FhLWFvRzRBT2N0d1hlUENlVFJQMGVPZy1BREw0QkE?oc=5",
+      "source": "한국정경신문",
+      "published": "2026-09-28 16:39",
+      "summary": "'기름값 짬짜미' 주유소, \"두 번 걸리면 문 닫는다\"..주유업계 초비상  한국정경신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d57f2e2a165f"
+    },
+    {
+      "title": "업무혁신 드라이브…석유공사, AI 활용 우수과제 발굴",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1yNGxFUE1iNnZud3dnamdKSFVXUWE2cVE3bkJDNG9IZXZzYW51c1JjM2U3eThaUVpHRGdYQlNzNUFvOV9BYlVIV3VjT21WcE9pdG9pcTJ1WFZ6OGJXRWxiNWhBdGhDbG5FU0F2LQ?oc=5",
+      "source": "에너지타임즈",
+      "published": "2026-09-28 16:34",
+      "summary": "업무혁신 드라이브…석유공사, AI 활용 우수과제 발굴  에너지타임즈",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "afffe83ab01b"
+    },
+    {
+      "title": "휘발유·경유 수출 묶인 사이에…정유업계 ‘효자’된 항공유",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3LXZtR2dCNlF3NVZiU01idmNMMURsUFlsb2FtSjhzcE5vUUhEY05NSFJHSkNvdHdYbkZwa3R1TjN4Tl85WnUweEpnTkRISmR6dEVhUmdRMDctUQ?oc=5",
+      "source": "한국경제",
+      "published": "2026-09-28 16:14",
+      "summary": "휘발유·경유 수출 묶인 사이에…정유업계 ‘효자’된 항공유  한국경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "36264e4a8259"
+    },
+    {
+      "title": "호르무즈 통과 원유량 약 ‘60%’ 회복…유조선 ‘잠행’ 증가",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwRWhKanpVNEpTWjYtTnBJZ3hSR0xBeWVsMUstM3FVX3E2N0FHTl95RFpNVDFHMmkxcmVXMmp5dVEzYV94cHJleVJSckpZWFg1RWFuZVo1cDlvdw?oc=5",
+      "source": "kbmaeil.com",
+      "published": "2026-09-28 16:06",
+      "summary": "호르무즈 통과 원유량 약 ‘60%’ 회복…유조선 ‘잠행’ 증가  kbmaeil.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "“호르무즈 통과 원유량 60% 수준 회복”…유조선 ‘잠행’ 늘었다",
+          "source": "직썰",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxV3lXeVhsYzBNOURWTERXaWNSWml6R1JhOENwRjJJVktvMF9vYmJVbEVwdVBBeFhYd3J6TjVyWDA4bWlndzZKS1BUOV9yM05xN1Vsb3FyNGlUak9YNUN4YVlkZmpDbll30gFsQVVfeXFMTzNFeUE1QUJKZkplVkJ4dlhmTF9CM1R4ek53dVk4ZzlCSFA3aFBiYUZCSE1OZUtsLWN6Vkd3cDRvcmtUbUxSWXVtOHlIRXdJaEJhdllwU0xUbkhDSkgtVzY1dmE1d3ZXWVlKei16?oc=5"
+        },
+        {
+          "title": "호르무즈 통과 원유량 60% 회복…유조선 비공개 운항 증가 영향",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9OX2xJTDFEX0RSMGx3bFNqYXNYZGhrUnpSd2RHaWN6NjNZN2FJV09hR0lfVG9qSzYzX01lVWk0TTZMV1RLWllSclpNM3c1NkE?oc=5"
+        },
+        {
+          "title": "호르무즈 통과 원유량 60% 회복…유조선 비공개 운항 증가 영향",
+          "source": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9XVFYzTnFkTVlDaUlQdVdtLVV1OVotS2JxQW1zSlYyT1VzOTZJcDNoNUNZeEdlUmVHUHRfUFFOVzhfcVZEVHVnVVZUZ004OTZ6Q01LaXY2TUPSAVhBVV95cUxPV1RWM05xZE1ZQ2lJUHVXbS1VdTlaLUticUFtc0pWMk9Vczk2SXAzaDVDWXhHZVJlR1B0X1BRTlc4X3FWRFR1Z1VWVGdNODk2ekNNS2l2Nk1D?oc=5"
+        },
+        {
+          "title": "유조선 잠행 증가에 호르무즈 통과 원유량 60% 수준 회복",
+          "source": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ubVUyQUo2Mk8yek01emhGNFlFS2ZiQTF0YWdyUE5fR1NMaFloMmRjN1ltVURiaUlKLUM3b2pHRG1CR2F1VmRzV09mTE5MYlF3SzVmdUlpQ3dIUQ?oc=5"
+        },
+        {
+          "title": "“호르무즈 통과 원유량 60% 수준 회복…유조선 잠행 증가 영향”",
+          "source": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9oWTNRZ3Fqd1BhM2xsVzlDRGs3QlRHdW9EQjV2TWhLYWZJT2F3Ql94NXB0REpGYXNSeGZDOThTTGVENTFHOWtXQTgtQldSNWs4LWVfM1pGbllTZUE?oc=5"
+        },
+        {
+          "title": "\"호르무즈 통과 원유량 60% 수준 회복…유조선 잠행 증가 영향\"",
+          "source": "yna.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Fd1ZwY0hMLTZibkpYbXZQUmFjcW1QeG15THRZTS0ydE9JdUhUSU4yc0xXV0k5eHFmQVNNT1l2Y1gySjE5ZE56cWtGZDh2Sk5nNzhMUUR0d2pQMzTSAWBBVV95cUxNZ2ppQVZ0V0t1SEpYblJLX2VZV21yUlhrTjhDenFILU00MmNVMVBMbnc1VUJmalZRUHYxdEozRzR0OVZMbFJBYVRqdVhjRzE5alJvdnRGYmVuUElVQm9YWGY?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d299949177d2"
+    },
+    {
+      "title": "\"소규모 사업장 LPG 사고 27%, 미검사 시설에서 발생\"",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBNRFQ2bW1hQ0syalM5RHl3MW9DaVlKSXhsVzNYZkJFV0Juejlsa2xIWU5xUzlBcFNkOFpfTGhJeDNiLXpZbmRNZnEtRHRGckd5eXVXNUstdURHU2oyZXZGa3ItTWdQX2JUYjk4?oc=5",
+      "source": "충청뉴스",
+      "published": "2026-09-28 16:05",
+      "summary": "\"소규모 사업장 LPG 사고 27%, 미검사 시설에서 발생\"  충청뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "소규모 사업장 LPG 사고 27%, 미검사 시설에서 발생… 장철민, “가스검사 누락 막을 개선책 마련해야”",
+          "source": "대한청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9udHdKODcweU9KNUNrdW80cXJqdlRPTzNBRU02UEhIVDZiVXZ0dDBaalpUU1RxY2dWcW1RU25pTi1CdXM?oc=5"
+        },
+        {
+          "title": "[국감] LPG 소규모 사업장 사고 27% '미검사 시설'서 발생",
+          "source": "굿모닝충청",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVMEprNGl3bEx1TnN5am5aX195NzFCXzBVa2lLaG9kaHVwN0hyMVpOSDdZNDhQd2ZHUEFFX193ejdwMGFQdmZUSFVpVjdJSDcydUlnQnZsc0FKWEM4VzNVbUFycEstMC0tYk8wMXB6OHljUQ?oc=5"
+        }
+      ],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4909245429cc"
+    },
+    {
+      "title": "위치신호 끈 유조선 증가에…호르무즈 원유 통과량 60% 회복",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE85bllMcjhaSEFVaFZtTEVxa1NJd3AxU1NEbUdUelF2bVptMmNkd1dScmFFbjNKNmN4MTNOM2x1NHI1X1dsNTlkaUxndG43N190RElLOEwzQXZhRHFINVVoNWJ4eTFHZ2NFcGFlQi1adHFTcHZnNjcwbdIBeEFVX3lxTE85bllMcjhaSEFVaFZtTEVxa1NJd3AxU1NEbUdUelF2bVptMmNkd1dScmFFbjNKNmN4MTNOM2x1NHI1X1dsNTlkaUxndG43N190RElLOEwzQXZhRHFINVVoNWJ4eTFHZ2NFcGFlQi1adHFTcHZnNjcwbQ?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-28 16:02",
+      "summary": "위치신호 끈 유조선 증가에…호르무즈 원유 통과량 60% 회복  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4c9036676546"
+    },
+    {
+      "title": "트럼프 \"젤렌스키, 러시아 정유공장 공격 축소 의사 밝혀\"",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4xTndHdldBaVI4dzFnNjdVVVlmTkNTMzkyVGdGb3pVbUlxQVRJc0xOYVhGZTI4dWg4RzVISlVkMFg1QUlVN2ZmYUFUNWhacWQ5ajdZbmNsSjXSAVhBVV95cUxOMU53R3ZXQWlSOHcxZzY3VVVZZk5DUzM5MlRnRm96VW1JcUFUSXNMTmFYRmUyOHVoOEc1SEpVZDBYNUFJVTdmZmFBVDVoWnFkOWo3WW5jbEo1?oc=5",
+      "source": "뉴스1",
+      "published": "2026-09-28 15:52",
+      "summary": "트럼프 \"젤렌스키, 러시아 정유공장 공격 축소 의사 밝혀\"  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fc3d35cf5da6"
+    },
+    {
+      "title": "[2026국감] 소규모 사업장 LPG 사고 27% '미검사 시설'서 발생",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9uUUNsZzZjTUg2QkVsVnJYb1dqYVdWQWhXcUVVb1dUekQ5OVJyYVJTR1VScnJBQzlxdDhVRVRqWEpaQmxRa2JaOGdxdnN4c3VKcVhNSFNpR1ZzSHdzc1FTUDhRSGc1VG1FdUhQb3I4MjUzY1lRbUo40gF3QVVfeXFMT25RQ2xnNmNNSDZCRWxWclhvV2phV1ZBaFdxRVVvV1R6RDk5UnJhUlNHVVJyckFDOXF0OFVFVGpYSlpCbFFrYlo4Z3F2c3hzdUpxWE1IU2lHVnNId3NzUVNQOFFIZzVUbUV1SFBvcjgyNTNjWVFtSjg?oc=5",
+      "source": "스트레이트뉴스",
+      "published": "2026-09-28 15:49",
+      "summary": "[2026국감] 소규모 사업장 LPG 사고 27% '미검사 시설'서 발생  스트레이트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "095764d825da"
+    },
+    {
+      "title": "2027년 친환경 항공유 의무화 코앞…정유업계 \"미국·일본급 지원 절실\" By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5QLVd3cXo2anJUX3BFbTdxMFVKX2kzUjcwcmhVeXFRWGhDbHM3eGU5Ri1sTzg5Nmt6a2h6MW83Q1RxSUhrWXBsejRSazNKRnpKVHFJX2pWRVhpdFJmYV85dzFFN3VLYnlnZmNOUmMwMVM?oc=5",
+      "source": "kr.investing.com",
+      "published": "2026-09-28 15:42",
+      "summary": "2027년 친환경 항공유 의무화 코앞…정유업계 \"미국·일본급 지원 절실\" By EBN  kr.investing.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a59fd420e09a"
+    },
+    {
+      "title": "사실상 봉쇄에도 원유 흐름 유지…호르무즈 유조선 운항 재개 : 국제",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1jdGZiVmdYdEJxS1JQbkFlRzJKSVBveTBDQkhITGM1cHJ0cTdZR3gtT3BXOFJOU0pwQjNtN01hWTZVNmlGNUpfNWNB?oc=5",
+      "source": "재경일보",
+      "published": "2026-09-28 15:41",
+      "summary": "사실상 봉쇄에도 원유 흐름 유지…호르무즈 유조선 운항 재개 : 국제  재경일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a030a0716c2b"
+    },
+    {
+      "title": "9월 치솟은 유가·환율·운임…10월 지역 제조업 ‘3중고 비상’",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE54cS11Sy1XMHRXNEtGQXU1WDRaSEx0NzFDOUFaSHlnZng2azU4VjJUZURMS2FNbGhTVlpXaGU5dGVFZUhFWkN2YUZXQnhmRWM?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-28 15:40",
+      "summary": "9월 치솟은 유가·환율·운임…10월 지역 제조업 ‘3중고 비상’  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b13ef6c18797"
+    },
+    {
+      "title": "[도쿄환시] 국제 유가 강세에 달러-엔 157엔대로 상승",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE90cTQ2WEtHM2RBVzR1dWxnbFV0VnNrMkRqdzl2NlVST2F3OElTbXZBYTgwNHdoYnY5R05ORkdpSGtfOG41Z3ZtTW8wM0JlY2t0ZGwzSGp3c1MyZXJDbHMxTnZsejRtcnY3WlBnR3diV0w?oc=5",
+      "source": "news.einfomax.co.kr",
+      "published": "2026-09-28 15:37",
+      "summary": "[도쿄환시] 국제 유가 강세에 달러-엔 157엔대로 상승  news.einfomax.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b567b272efbe"
+    },
+    {
+      "title": "석유공사, AI로 매설배관 수명 예측···현장 업무혁신 속도",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WdE5Rdk5OQmhEOVluWG84MVVBTU1nSVVFX081bWZEclBxNGo1NE9PT0tRRVdfQU5Vb0xzcUlNV0FURFJJeUhtZVRlRkpxZndpaFgwVFhjTlhYckJKTzFiaXpmWS1hMURYbUZ5VUFXLVJudDN00gF0QVVfeXFMTlZ0TlF2Tk5CaEQ5WW5YbzgxVUFNTWdJVUVfTzVtZkRyUHE0ajU0T09PS1FFV19BTlVvTHNxSU1XQVREUkl5SG1lVGVGSnFmd2loWDBUWGNOWFhyQkpPMWJpemZZLWExRFhtRnlVQVctUm50M3Q?oc=5",
+      "source": "이뉴스투데이",
+      "published": "2026-09-28 15:36",
+      "summary": "석유공사, AI로 매설배관 수명 예측···현장 업무혁신 속도  이뉴스투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b1a11df5019b"
+    },
+    {
+      "title": "산청군, 주민 생활 농로 놔두고 군의원 주유소 인근 농로 먼저 풀베기",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE42X1MzMHdrb09OaWZQbGJhaUI3MXhJbnlZMDlqdHUweGlhZXgtemJlTFY1cHB3TDhYQ3NRRV9CNEJSaExjWS1zODAyV1N1RXhoU3UyNEgzbVJHNlZ1NDhITDNzX1NFQzVC?oc=5",
+      "source": "gnnews24.kr",
+      "published": "2026-09-28 15:28",
+      "summary": "산청군, 주민 생활 농로 놔두고 군의원 주유소 인근 농로 먼저 풀베기  gnnews24.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2630d552983a"
+    },
+    {
+      "title": "호르무즈 통과 원유량 60% 수준 회복⋯AIS 끈 '다크 탱커' 증가",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE45QTNmWENPT25fWWhTaEFpMUdEUmNOc2xCRE1IMFM3dkdvMjJnYmxCUUtjQlFXdzNHWE54aVdVN3VzbG1NdTh3NVlvSk9lYmM?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-28 15:19",
+      "summary": "호르무즈 통과 원유량 60% 수준 회복⋯AIS 끈 '다크 탱커' 증가  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "호르무즈 통과 원유량 60% 수준 회복⋯AIS 끈 '다크 탱커' 증가",
+          "source": "이투데이",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAwbVBaV09hbjRFSlk5SDZfcG9XUmRKRnI3bzljUVNFRTI3aHVHLXROcUp4SnZvRVpNdDBodk5ETEVrRi0zb19ZVkZWQlpuMnpxSXJ4TjdPeXlIQlpjaDZxTmstdC02TlY5NUJ2Y0tvdkpNUk9o?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "636f24aa579a"
+    },
+    {
+      "title": "한국 나프타 수입 ‘깜짝 1위’ 오른 대만…국내 석화업계에 주는 메시지는?",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1hUmNhYWpxM2xoNzFlci1VQUJwNUZHVHR1dVFPU2FKcnotNGlKbnNyMHdoMUk3Sl9Bd3ZTVDg5c3JHUDZMaW40RkJOUEIwbkE?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-09-28 15:18",
+      "summary": "한국 나프타 수입 ‘깜짝 1위’ 오른 대만…국내 석화업계에 주는 메시지는?  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7afcc1c7ee45"
+    },
+    {
+      "title": "LPG사고 37건 중 10건 미검사 시설에서…관리체계 개선 필요",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00MWxFYVR3SWNmNU1hRmZSVUwwcS1XbGFqaG9DdVhHMWs3SWVDOEZad2ItclQ5ZDBBMUtCVE5fUE9OcWpWZ09lOHJoNlFNdGlza2puU0Z2cUxRc2E0RVY2b19fcDMwNl9lOEp5Uk1PTG0?oc=5",
+      "source": "에너지신문",
+      "published": "2026-09-28 15:09",
+      "summary": "LPG사고 37건 중 10건 미검사 시설에서…관리체계 개선 필요  에너지신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "41e01be66db2"
+    },
+    {
+      "title": "미검사 LPG 사업장서 사고 잇따라...소규모 사업장 사고 27% 차지",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB3dEF4cFVXZWJiNndBc0diR0JvX3JMSUV1Wnpoc0RWSGNzUlhWQ2hlSGtUTTRERnBVU1dkYm4yYVhXa29kU0o5aG1HWFljQkFxVEw2YVQtZV80X2FMcU5lUUloOFdvbDBHeUFBZXBUOVlsU1E?oc=5",
+      "source": "충남일보",
+      "published": "2026-09-28 15:07",
+      "summary": "미검사 LPG 사업장서 사고 잇따라...소규모 사업장 사고 27% 차지  충남일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "978c23cab229"
+    },
+    {
+      "title": "'105억 전세금' 못받은 이승기, 기름값 아끼는 근황..\"주유소 싼 곳 찾아다녀\"",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTHUyWlVCdkIzdWRjVURXUUdOR2pYQVdRLWZDVU85eGFGZkRhbWltaERuM1dyTEZLQXpRUVc5TE1NaTlKT3Z6QU93dnNUeWpwZi1mOWhtSWZBTFFxSEJoTnNsN1hpVVZsUVJPcWJDakJQQTNiUUo3a2tSd09qelZ5UWIzR3g?oc=5",
+      "source": "스포츠조선",
+      "published": "2026-09-28 15:05",
+      "summary": "'105억 전세금' 못받은 이승기, 기름값 아끼는 근황..\"주유소 싼 곳 찾아다녀\"  스포츠조선",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f484d79b1dae"
+    },
+    {
+      "title": "\"호르무즈 통과 원유량, 전쟁 전 60% 수준 회복…AIS 끄고 잠행\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9OZnpNQ3p5RV9hd2NqZWoyZkdFSy13eWdqclBrQ2Q3cExJWU5QLW5nUkFzSUxwakhyb3ZBMHpIVzNOXzFzR1dfTnM1dW1WMUNsdlM3ckQ0amNnNVU2QWdLVDNUSjVXUEtRNktQSFVqSW9TSkHSAXNBVV95cUxPTmZ6TUN6eUVfYXdjamVqMmZHRUstd3lnanJQa0NkN3BMSVlOUC1uZ1JBc0lMcGpIcm92QTB6SFczTl8xc0dXX05zNXVtVjFDbHZTN3JENGpjZzVVNkFnS1QzVEo1V1BLUTZLUEhVaklvU0pB?oc=5",
+      "source": "한국일보",
+      "published": "2026-09-28 15:01",
+      "summary": "\"호르무즈 통과 원유량, 전쟁 전 60% 수준 회복…AIS 끄고 잠행\"  한국일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "호르무즈 통과 원유량 60% 회복…\"AIS 끄고 운항\"",
+          "source": "데일리굿뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JR0NWSW9EWDVFbzcxWk00OEtmU01jb0s2cUtSc0FBU2lKbDFMdVBtUlNPSXNDZ2dWLTNDNzlfczllRVMwS3M3a0lVX2hUMWVPSUZ5V3B3djJROGUwSVhGSWVCZWlqUnJ4LUMtYg?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bb5217b3b06f"
+    },
+    {
+      "title": "오늘(9월 28일) 유가: 미국과 이란 간 평화 회담이 교착 상태에 빠지면서 상승세.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYUp0XzZGYTVSZ3dkdm1hTG9jU2JpZEFBZHNHTzREUnh0WGdwTWVIT3VjeUo5TjByUURaS3NXczNvTm9nVENUcVh1XzBJbmZJbHJUdTU3d2RRLUY2djNyVjFZNUo3V1VlR0xaQlVhR052S0xXdFo5NHM0ZlRCRFI4VTZjZlFHSlJRdFl2MF9DSXVDUQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-28 14:51",
+      "summary": "오늘(9월 28일) 유가: 미국과 이란 간 평화 회담이 교착 상태에 빠지면서 상승세.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5bbe42148c7b"
+    },
+    {
+      "title": "중동 원유수출, 전쟁 이후 최대 반등…사우디가 끌어올렸다",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSGdLY19jYVB0UXk5QlpmVjVKR0F3cWN6MnJEbjFPSy1TdGd4aUlyYl85cTAwZWhTZGdLdmdlaXlqVExlRlQwRjlUMEt1NGpBWXhBVXRJOHdLOUdUOU5tQkgxdHJ6U2UtUHB1Q2dNOF82c3lzVndfV3J3UGFqLXpyQw?oc=5",
+      "source": "edaily.co.kr",
+      "published": "2026-09-28 14:48",
+      "summary": "중동 원유수출, 전쟁 이후 최대 반등…사우디가 끌어올렸다  edaily.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d46cee625463"
+    },
+    {
+      "title": "한국석유공사, AI로 현업 문제 푼다…업무혁신 경진대회 시상",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE42czFuaGdsbVRBanMya3lnd1JCeHZpNDlYR2RWVUljQ3k0cnVzNWdGV1RmQmc1Ynl5SkVlbG1hX3MwTzRiWHBPN3YyWE9BQUFrdGwzLXh5Q2Fvb1Q2MVhfcjktWHBWNVQySFZn?oc=5",
+      "source": "프레시안",
+      "published": "2026-09-28 14:48",
+      "summary": "한국석유공사, AI로 현업 문제 푼다…업무혁신 경진대회 시상  프레시안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ce44cf91060a"
+    },
+    {
+      "title": "유럽 뚫은 K-정유…친환경 시장까지 보폭 넓힐까",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9RbTlEanYtZHhBcWpNT0NOV01tQzYzWDBMY0VyZF9feXBGX25vRDVnNTRCVGRMaTluTDBZTWdtMGYzQk1lbkwyZjhJdnpuUmdVUk00SDJnaEFIem5NYnpmQlM2WnLSAWhBVV95cUxQeVRKUklkWWF2M014RVZfYnFxV1k2NnoxWEFtR0JyblNkcVpNcTFSVVJRcFgyQ2FRNEloa3FucFNvN3lVVDZGNG9kN2tMdlBHXzNkOG9JaGF5dWt2NmRZaE5KR3Q4RGMzTw?oc=5",
+      "source": "m-i.kr",
+      "published": "2026-09-28 14:44",
+      "summary": "유럽 뚫은 K-정유…친환경 시장까지 보폭 넓힐까  m-i.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ef147378877a"
+    },
+    {
+      "title": "'러시아發 디젤 쇼크' 장기화…국내 정유사 수익성 개선 기대",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPNlV4NGJjbUQ4d0lyNy15ZnlOTU16WG94RjNsM0MzQjV0a3Q3dDBjNW1mZlI4Sm1va2VUZHRBaTFaaTd0Nm16UGZ2ejVPNHV6N2NPdFUxLUdkZlJBb0xhclZjdl8zTnpBNGxYbnpSbThOQ21wQlpMOVBxdzFTSTdNODZ2MTRvVjZpZnBVT0pQX3l2N1prLXh2R2lqQ2wzUmJqN1dteWgybVowTWhUenE2V3JILTFxTEZGb24zMXd3U0xYUVlaLTZlMUNZX3dnTWhrVUUtS1ZwNTJ3NkxhZUxuWjE1S1liZHpGc0loRHBPRDhQeEZaUXpOcnNLdUlKUm1DYlJwVFVRdVo5UXc1ZGstUkt5NnA1M0dLdmZfeTRRa3R3ODA?oc=5",
+      "source": "데일리안",
+      "published": "2026-09-28 14:43",
+      "summary": "'러시아發 디젤 쇼크' 장기화…국내 정유사 수익성 개선 기대  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6374fd7a08e8"
+    },
+    {
+      "title": "식품업계 가격 인상 잇따라…원재료·유가도 상승세",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pbXBtaHVuM2Q2Vk5CVjRhcnFkZXVRSWREQzlSUWxKY2Rva2FvWXh4VHZJUmd5b25lWDdsbTVoQkR1WVVla193MmNza3JTbW5BVWRvdDZYT1JlbFI2cE50d3U4TldNYm1J0gFoQVVfeXFMTWltcG1odW4zZDZWTkJWNGFycWRldVFJZERDOVJRbEpjZG9rYW9ZeHhUdklSZ3lvbmVYN2xtNWhCRHVZVWVrX3cyY3NrclNtbkFVZG90NlhPUmVsUjZwTnR3dThOV01ibUk?oc=5",
+      "source": "m-i.kr",
+      "published": "2026-09-28 14:43",
+      "summary": "식품업계 가격 인상 잇따라…원재료·유가도 상승세  m-i.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "40b9b801581a"
+    },
+    {
+      "title": "호르무즈 몰래 지나는 유조선 늘었다…원유 수송 60% 회복",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53VGt3aS1sR2lWV0ZYOU4ycmpyb2IzNUNYeTFDZXVMOE80anpLMHFnR3F3Mm1lS3NoREs1SGN5Ry1kOVdfMi15bEZhb0M1N01PZE5oM2hUN3pFemp5eW1sVjdzNUotLTVUQmd2djZaRmY?oc=5",
+      "source": "신아일보",
+      "published": "2026-09-28 14:40",
+      "summary": "호르무즈 몰래 지나는 유조선 늘었다…원유 수송 60% 회복  신아일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "막힌 호르무즈 몰래 지나는 유조선…원유 수송 60% 회복",
+          "source": "jnilbo.com",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50RHQyNWZQTzJVdzRRX2FSNFAwTk1OTTVBZEJ5RV9sSFRWNFVHSHFrSHBDRGhncWhLZXhZQ1ZXMjVseXhSNW1sa0gtVUJXMklscVBvUG9RZjVjWWUyZGpyVHg0QmFBRDdoMWZ3OXFGdw?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "05e3222d0cb1"
+    },
+    {
+      "title": "日 매체 “호르무즈 통과 원유량, 전쟁 이전 60% 수준까지 회복”…식별장치 끈 유조선 운항 늘어",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9iYkYtREl1aTVaVlZ3THFjeEMxdGJNaXZUUWFWRnpIZWlObDF4eDRWcXhPX2hacFkxN2hxNm5OdnJWSXF6X044czZqRXZSWjN4?oc=5",
+      "source": "문화일보",
+      "published": "2026-09-28 14:40",
+      "summary": "日 매체 “호르무즈 통과 원유량, 전쟁 이전 60% 수준까지 회복”…식별장치 끈 유조선 운항 늘어  문화일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a7350cc5fea6"
+    },
+    {
+      "title": "트럼프 '경유 수출금지' 만지작…유가 잡으려다 글로벌 공급망 흔드나",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iMkZSR1UwREp5VE04N1lWNEc1QWFvbFk1M1J6NlpackZHLWNtakxLMjRlVE1HbUk3dGxlRTNleVZ6YWs0WW8xV09JMkR3Q0dIb1dIaTEzUVE1R01ReTZHOUtBTXhmcDd3Yk41OQ?oc=5",
+      "source": "mstoday.co.kr",
+      "published": "2026-09-28 14:24",
+      "summary": "트럼프 '경유 수출금지' 만지작…유가 잡으려다 글로벌 공급망 흔드나  mstoday.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5bbd790c462a"
+    },
+    {
+      "title": "유조선 잠행 늘자… 호르무즈 통과 원유량 60% 수준 회복 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSklrVng2TUpYVDZIanhyaFBudGVfYU56c25VYXJCYV9QT09icU9YUFlCQl9IVC1GZ05wT2sxVHFGVWRoSkxHX190SmRKVERwMlVHcWNsMTRaY1hCLWc5ZGIyU0VWa2VCV2x6M2F5OGFxeER6T1VicFVCWUtGM3hpNmV2T3h4a0lteklTc0ZSWEk1RWg0a2U3ZUdVSE1qUdIBsgFBVV95cUxNUDhjNHdqbTV5OEVEYjhxZXZKcVdFa1Yyd0h6QUU3c1VxQmhFSWZXZDl5VzVRZHFlelhsck5EUWRSQjdmSWpjOGx0RUxhY1BHZ0d0ZkhrQ2stUmEzOHNSUUNUbThBWXBZVm5UeDJVMWxPaFk4MFpRM2xVZ1V3S3BYNm11MTRiSHQ3MUJuZ2thSktRa3NobDlPR0hscDN5UmVlWHVoNmhwcFRDOExuN3BibmNB?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-09-28 14:18",
+      "summary": "유조선 잠행 늘자… 호르무즈 통과 원유량 60% 수준 회복 - 조선비즈  Chosunbiz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "09911778365a"
+    },
+    {
+      "title": "호르무즈 '암흑 유조선' 급증…\"원유 공급량 전쟁 전 60% 회복\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hR0tPSl9mcGFUa3VaZEZ2SEI5SDBjdUlRYktlT1JJa05TcFlLZEdqZGNqdzBqd0pmZlRlZnpwd1E4bzB5T0EzazN0VG9oNHJ2bEx4T1owb0RVbm1wNU9wbVRn0gFnQVVfeXFMTUc0a3Y0M2tLZmJNNUluWElrQUZlRlNQQURPMXlJdVpBWUlFS2dKSi1UX3RUaW5hN2V4N2NKVzlwWUxWSUtaQWdBNi0xdVFnT0Z2RWVWTVBTUTdfU3lXZm9wdjRLdE1wOA?oc=5",
+      "source": "뉴스1",
+      "published": "2026-09-28 14:16",
+      "summary": "호르무즈 '암흑 유조선' 급증…\"원유 공급량 전쟁 전 60% 회복\"  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "037b62e5ad8e"
+    },
+    {
+      "title": "GPS 끄고 숨죽인 채 호르무즈 봉쇄 뚫는 유조선 덕에 국제 유가 ↓",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa3NBcmlIWTlHRktTWDluQXF3SDJwb3c4SEY3aVl1NDU0eG8ycS1VLWpkTW85NUxybGlnQ0I3VGlzMG9SbGpoNzh0bFhndUE4ZHVMZF8zNFd0V0NWWkNxRl8yVDJacDNFMi1mNjRnbmprOE1tR3FzNkxDb01HemdSTUpWLWlsMDVyaDdkU21PNXdkZmhiV1dYRHkwdFZhN19CRDVtUDhHZw?oc=5",
+      "source": "노컷뉴스",
+      "published": "2026-09-28 14:15",
+      "summary": "GPS 끄고 숨죽인 채 호르무즈 봉쇄 뚫는 유조선 덕에 국제 유가 ↓  노컷뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c7b007443d1d"
+    },
+    {
+      "title": "호르무즈 몰래 통과한 유조선↑ '유가 안정세'",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NTnNOSGx1VVBwMWJxUWpoZFdWREVfUDBQTWoxU0lidjliMkFTYm5ZbHlDSWVxTDJ5WnZaZ1VhS2pCMTNGbEVxUjFGNHJqNlYyM1NTWExNMFR0T0JwcDVaVmkzLW8ycnZwOHJDdkhn?oc=5",
+      "source": "세이프머니",
+      "published": "2026-09-28 14:11",
+      "summary": "호르무즈 몰래 통과한 유조선↑ '유가 안정세'  세이프머니",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "52767f91cc73"
+    },
+    {
+      "title": "“고속도로 주유소보다 더 저렴하게 못 드려 죄송합니다”",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE83LThNaFBDNmkzc056VHF3RkFPSVBIRlJUcXBCYjdfSzIzZE9sM21YdVVKaU1aZEQ5NW5vZUlrSXRXYlBaNDR2OFZ3bEpYczA5Ry1oWG91MmpUT2VTOXc?oc=5",
+      "source": "기후에너지데이터뱅크",
+      "published": "2026-09-28 14:10",
+      "summary": "“고속도로 주유소보다 더 저렴하게 못 드려 죄송합니다”  기후에너지데이터뱅크",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "“고속도로 주유소보다 더 저렴하게 못 드려 죄송합니다”",
+          "source": "에너지경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5CLTZtM3RCMkE4NmVwT0U4OVFLNWxIRkhCeVN0ZDc2dUlnbHVIX1NBOWd0R1lqTFhFRmhySEN1MUxJRWZHeVVHVFVjcUQxUHR2UUItcGNUa040MlFjV29QUXdZUQ?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0becb891f220"
+    },
+    {
+      "title": "원유 수입처는 日 두 배인데…위기 대응력은 더 약한 韓",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPenVuTzZhMS1RYUV3aFJOeWc0OW1XbDNpNXRCQUFxd2hoTHUxZmhHQlgzaEFjUkFhYVNid1BqWmhKRHBvU0t1a2FPZG1sanJuQmlvTnhuMlRfRlZZc1M2dlF6dkt2UmFvamdzRTVCcWprUjBMUERyUGVJOVhRMkJuZWUwRzVRODFWLVhTZ1k0RG9fT1FHeEdSay1HbExzQU1Qalg3RUx6S2Zjbkc4eXBFLVZKbE5jVTQzc3I1bzVhTG83eWZUc0w5NGtpQkpVb2c5Z24xb213MUpmX1ZJRGhsakFXVXY5SUNvYUFjUGwwRk9vUHJuQThTcjZSdmkteVU1OFIybHlUOGdEYk5ZZTM3QV9nalF6Wmo1?oc=5",
+      "source": "데일리안",
+      "published": "2026-09-28 14:07",
+      "summary": "원유 수입처는 日 두 배인데…위기 대응력은 더 약한 韓  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "원유 수입처는 日 두 배인데…위기 대응력은 더 약한 韓",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Ba3psMEMtVVlmbFFvQ3lhUEQyOFBVWlhHZWlUX3U4M2l6ZVRhTU5yREtMWEhycjljUjhDVTlKRkRUa3BZZ1JZMHpJNFc1RThVMkpz?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "204f18d5d0e6"
+    },
+    {
+      "title": "정유사 수출 비중 70%…미국 기름난에 한국 정유사 대박",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MbDFIVEZmM00weERIaXFkUHpfWjZWN0FrT0kwb08tQTdLdUwtTFRUcDg3VWp6UWVmWDBzWmwwNWpNZ2pONUhXS0dDRUN0TnhYcGJyUWxBaHNBOVJPUXFydUFyemotT2M?oc=5",
+      "source": "자본시장뉴스",
+      "published": "2026-09-28 14:00",
+      "summary": "정유사 수출 비중 70%…미국 기름난에 한국 정유사 대박  자본시장뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "142cffefd93d"
+    },
+    {
+      "title": "호르무즈 봉쇄에도 유가 안정된 이유…'위치 끈' 유조선 비밀 통항 급증",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LUFZwajhqTHA0eFZHeWVoLWNBc1ZQWm5VN213X05uVlY1RkdVc2xaLXM3c29TRWdGNjNxRlQ4cHBkUmJGMElhZUozYVltUlBRbUxmbDJuUThIdFg4SUJsby1yaUpqc1FNeF8w?oc=5",
+      "source": "일간투데이",
+      "published": "2026-09-28 13:58",
+      "summary": "호르무즈 봉쇄에도 유가 안정된 이유…'위치 끈' 유조선 비밀 통항 급증  일간투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f8276462e3f3"
+    },
+    {
+      "title": "美·이란, 호르무즈 해협 놓고 선제 양보 공방…핵 협상도 교착 : 국제",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Vc1RTWmptcDBuU0cwcTY1QW5GU2RNTEI2RE5vbzdpcWhGcDNNbENuM1hRZUZFWjdMaUpqdF9sdEh2YXhaWFE2Tl9R?oc=5",
+      "source": "재경일보",
+      "published": "2026-09-28 13:53",
+      "summary": "美·이란, 호르무즈 해협 놓고 선제 양보 공방…핵 협상도 교착 : 국제  재경일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0f5e6b3c0bc9"
+    },
+    {
+      "title": "오늘 9월 28일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaUl0ZEJnakxqdHNYSzIzeFluMERYT0c5aDBaZ0dNanBaRDN3WktneTZqaXVIRW9ZUGFuRGJvODlxb0ZzSkJTUnRRLXpEQnc1TU4zVkNoYUFublA1dHI5WFB6TENKNkQ1Vk92MWJNNXBOcllGRHlyVVVnLTA4RDVYT3ZB?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-28 13:51",
+      "summary": "오늘 9월 28일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "오늘 9월 28일 휘발유 및 석유 가격: 반전",
+          "source": "Laodong.vn",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQS0Qzbmhka25aN1dVdjktWUhEeE1vN3dNOEFXOTE0LVU3bVN3VmVjdEtsY2RERm1vUlRfdjZUazMwX0dlSTlEM04yZndnZnI0TTQ3Wk94dlZmVjhjWDRGTklLbFJrUWZpX3BGVmJrV3Vvcjc1Skdtem4tQVZXQnM4ZkRYVk5jdw?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "22b197402837"
+    },
+    {
+      "title": "석유공사, 조직 전반 AI · 데이터 활용 문화 확산",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yc2V6Nk84Z2t4elBGeGk5OUZNSU1PSG1mU1JnMTdqVDdOc1JEZjh2Z05PZEgtNzk5Sjdiajd0TUszNjJUQ2o5ZTBwVk9hSTlNcHpnX1NhQ1F2RmJqelhWTW44QWFVV1I3OXM1SjJ3?oc=5",
+      "source": "투데이에너지",
+      "published": "2026-09-28 13:43",
+      "summary": "석유공사, 조직 전반 AI · 데이터 활용 문화 확산  투데이에너지",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "094b936fd2de"
+    },
+    {
+      "title": "호르무즈 봉쇄에도 유가 안정...‘AIS 끈 유조선’ 원유 수송 60% 회복",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlNXhHZ2ZzVDdfb2lER1BxbzUxUUVHUGJtYkZna2QtZERHRlJyRm1ESHZKVkFXQUpvZGFGYjFDcU1kb014T1NzRkV5b0hRYllPRGVFRFlnQzduWlJidllwcVJoTVRqUFk?oc=5",
+      "source": "M이코노미뉴스",
+      "published": "2026-09-28 13:41",
+      "summary": "호르무즈 봉쇄에도 유가 안정...‘AIS 끈 유조선’ 원유 수송 60% 회복  M이코노미뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f7c3b67bc54c"
+    },
+    {
+      "title": "\"호르무즈 통과 원유량 60％ 수준 회복…잠행 증가 영향\"",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBhOHZ3MldadzFHZ1VjR3FWMURiaU1VWjU5aTdRWTlIYWJMOFlBV2lwamFFWnU0WG45RjFpZkxJRmtBWTJHSDVLRjgxbkNsTUFScC0xZGtiYkRlQXFndkxWbUhJX3pWcG8?oc=5",
+      "source": "연합뉴스TV",
+      "published": "2026-09-28 13:31",
+      "summary": "\"호르무즈 통과 원유량 60％ 수준 회복…잠행 증가 영향\"  연합뉴스TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ca37e7c4a23c"
+    },
+    {
+      "title": "호르무즈 봉쇄 뚫은 '잠행' 유조선…유가 20%↓ 반전 : 국제",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE45WDFBMkRiWUkteFZpY2t0VzZlWFpIS1pMMWJ6ZXkyd2czZ3FCaHUzb2pMWHNfcGVRa3N1dUExMy02LXpwc0ZOc3ZR?oc=5",
+      "source": "재경일보",
+      "published": "2026-09-28 12:58",
+      "summary": "호르무즈 봉쇄 뚫은 '잠행' 유조선…유가 20%↓ 반전 : 국제  재경일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b062ad4f4269"
+    },
+    {
+      "title": "\"호르무즈 통과 원유량 60% 수준 회복…몰래 움직이는 유조선 증가\"",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VYW0xMjh5eTJVdjd0NEliNU95QW9ocG5mcEoxak1oZnZKOTRjcjJVSmx6cXk3X0h4OFRQNkdyN0YtQlVUSzYwRk1Vc2hZdzB2WHdMSkZpdnh6anlvUG9CSDRMWWhCUQ?oc=5",
+      "source": "news.sbs.co.kr",
+      "published": "2026-09-28 12:56",
+      "summary": "\"호르무즈 통과 원유량 60% 수준 회복…몰래 움직이는 유조선 증가\"  news.sbs.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "15d687961463"
+    },
+    {
+      "title": "‘봉쇄’ 호르무즈 몰래 통과하는 유조선 급증…국제유가 급등 제동",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsNUNRVTM2OEZGSUF3ZXU3OU9qa1IxcXNLQ0xLVU9ENjhGZ080THR2bGVWOUp0NGFsbmM2ZC1VeVVJbHE2ME1OaEJIcTkxcTE0ZmhHVEUyclJHeURDbzlNbUVEeTFVWHh6S3dCSVFzZXlKX3Ns0gF0QVVfeXFMUGw1Q1FVMzY4RkZJQXdldTc5T2prUjFxc0tDTEtVT0Q2OEZnTzRMdHZsZVY5SnQ0YWxuYzZkLVV5VUlscTYwTU5oQkhxOTFxMTRmaEdURTJyUkd5RENvOU1tRUR5MVVYeHpLd0JJUXNleUpfc2w?oc=5",
+      "source": "산경투데이",
+      "published": "2026-09-28 12:42",
+      "summary": "‘봉쇄’ 호르무즈 몰래 통과하는 유조선 급증…국제유가 급등 제동  산경투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "‘봉쇄’ 호르무즈 몰래 통과하는 유조선 급증…국제유가 급등 제동",
+          "source": "산경투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFNG04SmxsZTVnMEtrR3RiSTMtV1lVS3c2Rjk0Rmw4ZWN4ZHJTUkh0T1p2VnRROEJtay1yVFJuS2hjRDBUU2hSWTJsV1JVY3hIV3ZkQlo0NUJuWi1SdzNuczJXYjFtVExndDRDaDdvUlXSAXRBVV95cUxQbDVDUVUzNjhGRklBd2V1NzlPamtSMXFzS0NMS1VPRDY4RmdPNEx0dmxlVjlKdDRhbG5jNmQtVXlVSWxxNjBNTmhCSHE5MXExNGZoR1RFMnJSR3lEQ285TW1FRHkxVVh4ekt3QklRc2V5Sl9zbA?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9fbe9b770d17"
+    },
+    {
+      "title": "전주시, 국제유가 상승으로 부담 가중된 농가 지원 나서...",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9HWUdBSE5vNmtHNi1IM3hsQk9PdVA0dDZCVjZPSkZMMGRjLXRnWHNWMFRUb3FkV0N6MlhURVNfbzlBTWpXcVlWVXdnUWlNQk9TSzhhb2NKMFdjWFdkdkFMeHVxTDNTdkw3dVo0Q2R30gFuQVVfeXFMT0dZR0FITm82a0c2LUgzeGxCT091UDR0NkJWNk9KRkwwZGMtdGdYc1YwVFRvcWRXQ3oyWFRFU19vOUFNaldxWVZVd2dRaU1CT1NLOGFvY0owV2NYV2R2QUx4dXFMM1N2TDd1WjRDZHc?oc=5",
+      "source": "아시아뉴스전북",
+      "published": "2026-09-28 12:36",
+      "summary": "전주시, 국제유가 상승으로 부담 가중된 농가 지원 나서...  아시아뉴스전북",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전주시, 국제유가 상승으로 부담 가중된 농가 지원 나서...",
+          "source": "아시아뉴스전북",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfZlJqNzNNdnlSVDBvLTZCRnNxbkFxZG5sVC1YS3hYTk04UHV2TDJQdXVSc0VISDc5NkVOczhzVWNUei1SX2l6NlVISXJtemp6NGVVUlYwR2EzdVVLdXFMdDVzWVBaVDBoZE1z0gFuQVVfeXFMT0dZR0FITm82a0c2LUgzeGxCT091UDR0NkJWNk9KRkwwZGMtdGdYc1YwVFRvcWRXQ3oyWFRFU19vOUFNaldxWVZVd2dRaU1CT1NLOGFvY0owV2NYV2R2QUx4dXFMM1N2TDd1WjRDZHc?oc=5"
+        }
+      ],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f8c3f58ade37"
+    },
+    {
+      "title": "휘발유 및 석유 초안에 대한 의견을 제시하면서 기업은 0동 할인 재발 방지를 위한 해결책을 제안했습니다",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMjQzRFJEUjA4OXFpQjVYRXF1MkNkaHV6Q3BrT0VWYjV1d29NWVNqT3VVSHdBM0Q5bFc4SUFKdjJmWnJySzhZSDJTM3VyWTBEeWdyUTAzSi1WSEVLcG5mN1d0RlRkY191UExZcnh2dzUwYVFUSnVYRmFXQTNUVjliU3psRWtVWFV6NlNaQVhPUEV5SWh0LWVYRkdKYThockNQdmhSb3M5dWJYM3B1UjNXY3VKSk5RY0dsRUkyc2E1dkhpcEVxclJ2di05RmxUQQ?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-09-28 12:32",
+      "summary": "휘발유 및 석유 초안에 대한 의견을 제시하면서 기업은 0동 할인 재발 방지를 위한 해결책을 제안했습니다  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d842ababca39"
+    },
+    {
+      "title": "“주유소 가는 전기차 나왔다”… 기름 넣고 1070km 달리는 제네시스",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOUpzbXJjekNfbXFyeWpTanFVQ09KVGV0c3REcm9yQ2xjVmREUWhudE02RkRqNi1Ua28wYmRmemZpR25hNW1TNTlqR0FVZTJKUEtkeExBV3lDVlhUVHlia1c4ZlJ3Z1RaYTNoeHNUZVdSakZPR2ZtQXlXQVUxNmRYcXpVRQ?oc=5",
+      "source": "news-wa.com",
+      "published": "2026-09-28 12:24",
+      "summary": "“주유소 가는 전기차 나왔다”… 기름 넣고 1070km 달리는 제네시스  news-wa.com",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bffd267792d8"
+    },
+    {
+      "title": "디젤 가격, 2008년 $4 휘발유 재현…인플레이션 신호?",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FaTBlMXI0VjJXdkZDZEFyRjBSR0tfUnc0aVU3Ym5ZNmd1enU2SEN1MDlrZFlPaWttUWtYRHBtMVlvRW0yODVZNjVZc2pkMVR3OV9uUTJieDlLNWM2aWE4NmxrRWliU0FlejA1VmdLVQ?oc=5",
+      "source": "BeInCrypto",
+      "published": "2026-09-28 12:01",
+      "summary": "디젤 가격, 2008년 $4 휘발유 재현…인플레이션 신호?  BeInCrypto",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "748175f508c1"
+    },
+    {
+      "title": "\"수리만 최대 3년\"…카타르발 LNG 대란에 유럽 공장 멈췄다 |",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vNzlzRnRJaFVVQS04cXVjdEdRTXcxRGVDUWNPME9BVXNKRHp4a1ROb1FHZElzS0hJcm1YdzVnTzhmb1BERlBKYWlBbXh3U3dERDlFMl9rMG0yOVRCTVBfbGlLa0tsSUMt?oc=5",
+      "source": "글로벌 비즈 뉴스",
+      "published": "2026-09-28 11:57",
+      "summary": "\"수리만 최대 3년\"…카타르발 LNG 대란에 유럽 공장 멈췄다 |  글로벌 비즈 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "128e25f92d99"
+    },
+    {
+      "title": "2026년 3분기 수익 전망: 소매 및 석유·가스 부문 성장세 가속화, 증권 부문은 하방 압력에 직면",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRWwtTGc1dkVmY2gwbDVEOHhSTlJGVTdsZlNPWGJvOW1DOXkxV2taSk5ZVDNGLXkwa2tKS19Ld0tqV1FOZllEb2thRzFYYi12d200dXROc25tM1RyWDRXaXB2V3pBZXBBbXBOSGhPeEpjaTNUTEphSGtzajY2a3ZLdjRkSWtGLVBEVnZQMldERlU5TEI0NHFHZnphNVE5REsxNTdTd3hKSndDNkstUExEN1o1UHE4Z09lWHRnYUtzSG1IM1lyUnc?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-28 11:55",
+      "summary": "2026년 3분기 수익 전망: 소매 및 석유·가스 부문 성장세 가속화, 증권 부문은 하방 압력에 직면  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6f5e95589a80"
+    },
+    {
+      "title": "오늘(9월 28일) 연료 가격: 세계 유가가 상승 추세입니다.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQM3pFTURNTVBnTUdGVnlqLU5nUThFWU05dU9TSnFUV1VtUDE1M2NkUm55MmxjcUFieGtQNmJsZldqNFA0VWtJbGdQeXktV0tiMm9neHFyZVRsM2VVTWdXQXA3LVVSVzVISkE4QW4xU2N6Z2NGQTBjSzZVZkFkVDNuZjVvNldUellrNXEtc2NB?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-28 11:50",
+      "summary": "오늘(9월 28일) 연료 가격: 세계 유가가 상승 추세입니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "645f5d055c2c"
+    },
+    {
+      "title": "트럼프, 이란 '호르무즈 재개방' 제안 거부하자…유가 1%대↑",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1EZ2x0YTZHWC1FMk44YldLRDBWZ0JaSGd6VTRwcm53YWZaOTVtbWdaOWd4dWNXSThPVzNETTUxRVhRclNpOWctYXBiQVUtOVEzQVVVNFJYMHNVN090STMzODVLc3F1VHk3UWwxelI5SmF1dnhBcFBMVNIBeEFVX3lxTE1EZ2x0YTZHWC1FMk44YldLRDBWZ0JaSGd6VTRwcm53YWZaOTVtbWdaOWd4dWNXSThPVzNETTUxRVhRclNpOWctYXBiQVUtOVEzQVVVNFJYMHNVN090STMzODVLc3F1VHk3UWwxelI5SmF1dnhBcFBMVA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-09-28 11:48",
+      "summary": "트럼프, 이란 '호르무즈 재개방' 제안 거부하자…유가 1%대↑  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d1109932b09f"
+    },
+    {
+      "title": "“경유도 美 우선주의”…트럼프 ‘수출금지 카드’에 세계 초긴장 [이슈+]",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zOUJXM0xyaHc3MlBLQlp2MEtrcGJaZHFDRk9UOXhEWVdwREhQekJXSFJrSXlGTm8tWW1QYmJSNENCX2QwN0pZekRZMEhEYUU1X09sVmhVY2gtZzg?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-09-28 11:18",
+      "summary": "“경유도 美 우선주의”…트럼프 ‘수출금지 카드’에 세계 초긴장 [이슈+]  에너지경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d13f80e7fd89"
+    },
+    {
+      "title": "유조선 위치 끄고 호르무즈 '잠행'…원유 공급 60%까지 회복",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEUDVuWjl5VHZ6YjhUM3VZaEZBS19wWDh3OTVXV2NTRHpCUlN4NVdicW94S25URXB0WWwxZ0Z6Y256QU5pMENhNGQyQldhVVZKRmRqc2w0RksyZw?oc=5",
+      "source": "한국경제",
+      "published": "2026-09-28 11:13",
+      "summary": "유조선 위치 끄고 호르무즈 '잠행'…원유 공급 60%까지 회복  한국경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ae4e96fb941e"
+    },
+    {
+      "title": "왜 우리만 빼? 정유사 지원서 빠진 알뜰주유소의 항변 혹은 떼쓰기 [추적+]",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9Ud1lZREhTTXJ5S0w2UDFGQ05hbUZ5aWItbDJGWWQ2YzNzQktNX2RPTExUWXdqeUxpdmZuazFNRHhYbUw0ekxQN1lzSG9iQ0pITmJCUFB5ZHd1UER6T1Y4LUJmQlNKMDlBd3ZRWXZB?oc=5",
+      "source": "thescoop.co.kr",
+      "published": "2026-09-28 10:57",
+      "summary": "왜 우리만 빼? 정유사 지원서 빠진 알뜰주유소의 항변 혹은 떼쓰기 [추적+]  thescoop.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aee10d2c9353"
+    },
+    {
+      "title": "로스 거버 \"유가 치솟는데 테슬라는 왜 광고 안 하나\"",
+      "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPaEo5c1VMY2ZZU25ubVIzYmtoWHJBSmg5UzJ5RmVNa2ZyQWExdnhrcGhsTjhFanFITG1WckVRU29rZVVhYWJYQ3RFSFBvZndmOVgwWWYyeTVYbS1ySUM1UDU0TDR6N3R6VVJQMVc2RGRBOWhRc3k2WE4tRlhlOHVyTFpidTVNN0tiMlRnem5yVWVfTUc5QTREdERZT2xkeDJjMGJLTGVWVnRNWGlqLVJycjY2bDNQMlhqNlVsUVJHZDY1eUdPM0JyeGxWX3A1bXU0dmJpTzc1YkJFeXBOLVJzLTNJVWQ1dldNOWpwUm1oOXg4V1dUcHhQNEN5eDhzQXFxeC1BbUR0TlNuc1hscDY2cFViNkpaTFZfRzJfQVNzNVl1NUpJNXBzUW1pTGJrU282aHJsZHl3QWFycGw1WDlfUlQyd3FNT2x1VC13OVZR?oc=5",
+      "source": "Benzinga",
+      "published": "2026-09-28 10:55",
+      "summary": "로스 거버 \"유가 치솟는데 테슬라는 왜 광고 안 하나\"  Benzinga",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "30c034083de1"
+    },
+    {
+      "title": "중국 경기 살아나나…석유화학주 매수세 유입 뚜렷",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9HSGxsVXV6d1dnYXlEa283SnkyaFBjbWhsS3JoR1J3TGxRYWdmbVhXcGZMUGwwZVMtdmtfd2FpSk1UM05DME13Ukc0UDFFcTd1aWMtNnJpa0xLRXVTZ3J5Q1lBWXNMcEVwaWFiVnh3alFTV2w3Qm1r0gF3QVVfeXFMT0dIbGxVdXp3V2dheURrbzdKeTJoUGNtaGxLcmhHUndMbFFhZ2ZtWFdwZkxQbDBlUy12a193YWlKTVQzTkMwTXdSRzRQMUVxN3VpYy02cmlrTEtFdVNncnlDWUFZc0xwRXBpYWJWeHdqUVNXbDdCbWs?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-09-28 10:53",
+      "summary": "중국 경기 살아나나…석유화학주 매수세 유입 뚜렷  핀포인트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9287c4b5c0e8"
+    },
+    {
+      "title": "트럼프 \"경유 수출금지 진지하게 검토\"…중남미·유럽 타격 예상 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE95dm5nVldYWGtrVm1sSzlyRUZvOFFTejdjNW1kcGhGMGZOY0lrMHVmZDRHV0Y5d19TVEV5TjRIYXgxNUcxdFJsS1hHdXBkZFFGMW1GRHhYT1JyUlhyb1FTdVkzYk9teTlTWmVLYXFSeXRLdzN1c3fSAXtBVV95cUxQb3dQR3hnY3dlRkc4RnFYTWV6eERHaFBBZjQ5WjNmY1Izdm4yV2czeV82ODc0TnVRQjZxWUdRYzVucExtUUtqZElzQ0dUQ2dZeFlma0o4eHVXRnR3d0w2OHo5YjlOaTl6MElDSS1tbW1XVUV2aTMzV2lkNlk?oc=5",
+      "source": "머니투데이",
+      "published": "2026-09-28 10:50",
+      "summary": "트럼프 \"경유 수출금지 진지하게 검토\"…중남미·유럽 타격 예상 - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "트럼프 \"경유 수출금지 진지하게 검토\"…중남미·유럽 타격 예상 - 머니투데이",
+          "source": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzeW5uRklwd0wxcUhMU0g0c1JoS2hlYTNEQUgwb1cyR2ppMnlOZkFqNUtUU3ZWWThnbFpibnpSbkJzemIyN1hoYm5aNFo1LXVUNGlWWnhOcWh0T1dyTTVqd082Zm1hdU9adnVOeE530gFuQVVfeXFMUHN5bm5GSXB3TDFxSExTSDRzUmhLaGVhM0RBSDBvVzJHamkyeU5mQWo1S1RTdlZZOGdsWmJuelJuQnN6YjI3WGhiblo0WjUtdVQ0aVZaeE5xaHRPV3JNNWp3TzZmbWF1T1p2dU54Tnc?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1de353ea6f68"
+    },
+    {
+      "title": "2026년 9월 28일 오늘 휘발유와 디젤 가격: 다시 상승했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0yRTUzaVdBQlFxb2ZaSF83MjRNLXZkRlV6b2pGYk4yTVFNLThCb21WRlBENXFJZGhpOV8xd05JS1E5Ukk5WlpuQUd5OWg4cnRhY19WVmdlcjBrZGdObXdDQ2Y1cExYdWNad09ZaXBaWDhJSGVaOTNVWg?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-28 10:44",
+      "summary": "2026년 9월 28일 오늘 휘발유와 디젤 가격: 다시 상승했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "58cf528bdb6a"
+    },
+    {
+      "title": "트럼프 \"이번 주 이란과 추가 협상\"⋯'호르무즈 7일 계획' 거부에도 대화 지속",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ycE8wcEM1US0yUTNRZWZQTmtTdkd4VG11UnZjTmdXVGZLYVB2SjFYamt1MUNiV1RWMEJ1LXRhdUlvMWwyZnBYVGxYYVkwYV91WkpPSzVqaTBzMFVTcnc?oc=5",
+      "source": "포커스온경제",
+      "published": "2026-09-28 10:40",
+      "summary": "트럼프 \"이번 주 이란과 추가 협상\"⋯'호르무즈 7일 계획' 거부에도 대화 지속  포커스온경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "트럼프 \"이번 주 이란과 추가 협상\"⋯'호르무즈 7일 계획' 거부에도 대화 지속",
+          "source": "포커스온경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10RjMtelU4d2NhOFhacF9iTm1EY3lVQkF3Q3d0MzB1Nm9uZEI5dzg5WXFyb0NiZ1VmbkZVVTJjOUtnVkpMLVh6dEZjZHd0b0luWXFROFhDc19Cek5rTkptUQ?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f4d63f5deac7"
+    },
+    {
+      "title": "[공기업 센터] 한국석유공사·부산교통공사·부산시설공단",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fUHFxc3F1SDR4X0g2SGczVHN3UDYtN1NJcmtRWHhIWXhYelJLSm1pWTM1b3VKc1VYOURwTzhGb19XampHSFNlT2ctVTVmLWllT0dJM2NqME90QWVZSnlIaC1acmNCYnVp0gFrQVVfeXFMT0lIRkxJbWtEN3dpdG9LQmYya01BY1dNV0pJaVQ4VzhFR3FreTBRY3owcGM0UDhsOUN2aUthakpwR0NIcmgzdnJhY2FrUEtQTno4RG9BUFVydlpiQ1JLYmlaWWl1ZjIwQ19yMXM?oc=5",
+      "source": "민주신문",
+      "published": "2026-09-28 10:32",
+      "summary": "[공기업 센터] 한국석유공사·부산교통공사·부산시설공단  민주신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "de5c840fb3c7"
+    },
+    {
+      "title": "국제유가 1% 넘게 상승…트럼프, 이란 제안 거부",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Vbkp2V2Exd1dwTnZFRE8zVnZPMmwteExpa3ZfaVZrMnF2Tk5BR3JrdHJuT2VsOUVSMlkwaU8zYVZWS2FnVlhCdDlDNy1iSHc1aWdDU1ZXM1I?oc=5",
+      "source": "토큰포스트",
+      "published": "2026-09-28 10:27",
+      "summary": "국제유가 1% 넘게 상승…트럼프, 이란 제안 거부  토큰포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e8883d10f3da"
+    },
+    {
+      "title": "[특징주] SK이노베이션, 국제유가 반등에 5%대 상승",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1LSkZqY2hPT1Z4bkdnUzRDbm9DcnRDeDRGR1FGNThMQXhjUXVRczJjeHVSRTUwRU1qSnl2b3R4eDJocjYxaFVvQWxjUmVNSl9weUtzZUFNd0oxc3lN?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-09-28 10:26",
+      "summary": "[특징주] SK이노베이션, 국제유가 반등에 5%대 상승  뉴스핌",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5d6561c6cf6f"
+    },
+    {
+      "title": "석유공사 AI 경진대회서 나온 아이디어…“배관 고장 미리 예측”",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBCNkxxLU12ZXVZM0pwUHplemxWaGdJeTJGUEFWSlhmenpuS3FTdDdyRjhyWnJwR0NMYXBla2lIdzNaQ1p3TmU0UG5YRlNvaHB1MUFsWWx3a3dwVUtUYUtFVFdXUHAzMHo3SF9vMGZHYUU?oc=5",
+      "source": "ikoreadaily.co.kr",
+      "published": "2026-09-28 10:14",
+      "summary": "석유공사 AI 경진대회서 나온 아이디어…“배관 고장 미리 예측”  ikoreadaily.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유공사 AI 경진대회서 나온 아이디어…“배관 고장 미리 예측”",
+          "source": "ikoreadaily.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5S1dmaTNBNHcyd0dSSnVmRy1mZUhjTjhLMVRaSFd5UG0ya3JfanRtSkFzZ2ZxYXFhY1praVNDY05iMFNHVVZjZnVxelFkYWZZRXJrMVdTMS1YMDY2UUdjNG5UYm5oVktqVzNsRnMtY3M5QQ?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "764306c2481f"
+    },
+    {
+      "title": "오늘(9월 28일) 유가: 국제 유가 상승으로 국내 유가는 리터당 3만 VND를 넘어섰습니다.",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUnpyUko1ZDd4X0phNkVlSWN6Q1FPaWdwUWNNYjZDWWZVTG55VFBjU0xNRm1MUmdWZWVDQVZtVEFpLXh1RlhzTjEzYzlOV0ZkeEJDODdWU0g3UmE4U0hXLVMzbmlmaUhHXzE4ZEdKN3UtcU5pOElucWJhODQ3dEdTTENKY245OXYwR0stRldWdnpzUWN2eFhyNWZDd28ybFVRYXg0VnFR?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-09-28 10:13",
+      "summary": "오늘(9월 28일) 유가: 국제 유가 상승으로 국내 유가는 리터당 3만 VND를 넘어섰습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bf5f665676fc"
+    },
+    {
+      "title": "인권위, “셀프주유소 이용시 장애인에게 정당한 편의 제공돼야”",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rZF9jc3k2c0ZoSGxOS0NfR0ZkLW1CWi01UUt0b0xzLWtuTHdMNkhwb1NudzBZaGN6T1R1MTltNnl1dFFBeDdSYUtvOTJlOFNKbzdMSEJMZTFyNS0xYlhoS04zMTdudXJrUlJzaHpKMA?oc=5",
+      "source": "미디어생활",
+      "published": "2026-09-28 10:10",
+      "summary": "인권위, “셀프주유소 이용시 장애인에게 정당한 편의 제공돼야”  미디어생활",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4e44460ea802"
+    },
+    {
+      "title": "[인포맥스 POLL] 9월 물가 2.94%↑…\"최고가격 동결에 유가 영향 제한\" |",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oVEI0QjdDZVIwWnRGTUZ2WENLWHNYcTBCZjYtckhLV3UwWXNLSTd4eko2LTIxZGl3eklNT0pYdEtiNS1Cc0ZuY09fTUtnQXhsamZiNF9PWDFYSTF4YkNoa3lUc3FRc09rVEpZQ1gyTlQ2c0N1?oc=5",
+      "source": "news.einfomax.co.kr",
+      "published": "2026-09-28 10:04",
+      "summary": "[인포맥스 POLL] 9월 물가 2.94%↑…\"최고가격 동결에 유가 영향 제한\" |  news.einfomax.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "45103ffc24bb"
+    },
+    {
+      "title": "석유공사, AI로 ‘비축기지 매설배관’ 수명·파손 확률 예측",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ULVhIakotc2FsZ1lvQzZMamlqcEtCMnNlQWlDWjRTNTRCR19IbFRNMVVmTEJHcFQxRTZ4dFg1NFgtcExNWG5LT2pvTGZPNVVqeDU1amRpN1BEMkxPRlFrSXZjNGswSTZjbm92OXVrYnBIVXRl0gF0QVVfeXFMT1QtWEhqSi1zYWxnWW9DNkxqaWpwS0Iyc2VBaUNaNFM1NEJHX0hsVE0xVWZMQkdwVDFFNnh0WDU0WC1wTE1YbktPam9MZk81VWp4NTVqZGk3UEQyTE9GUWtJdmM0azBJNmNub3Y5dWticEhVdGU?oc=5",
+      "source": "주간한국",
+      "published": "2026-09-28 09:57",
+      "summary": "석유공사, AI로 ‘비축기지 매설배관’ 수명·파손 확률 예측  주간한국",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유공사, AI로 ‘비축기지 매설배관’ 수명·파손 확률 예측",
+          "source": "주간한국",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8yT1hZTnhHVWhMRXlOTWttdU9EbkpucDRMNTI5RHdiaWtXS3FzRVdhb3dzTzVpcDlHaUpBZGtDUXpSbE16b2d4Y1ZqVEs5Zk1JenZ2R3A2VmVVZDF0Ym5kc0FESENzVV9PRkZLT1Vjb03SAXRBVV95cUxPVC1YSGpKLXNhbGdZb0M2TGppanBLQjJzZUFpQ1o0UzU0QkdfSGxUTTFVZkxCR3BUMUU2eHRYNTRYLXBMTVhuS09qb0xmTzVVang1NWpkaTdQRDJMT0ZRa0l2YzRrMEk2Y25vdjl1a2JwSFV0ZQ?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "27399755944b"
+    },
+    {
+      "title": "3高 다시 꿈틀…연말 경제 흔드는 금리·환율·유가 변수",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KVkVwZXlLd1dCblF0eGo2MWNWa0dsdlRsVUROd091UGYwaVF1dFFrdzRGQkhBUTViWmxlaWF4eUh4TnNfNnJYcXdHRXpYUTNpNHFDaUhHOGVtREpCa0lFS1ZTdkFJMmgwVGU0?oc=5",
+      "source": "한국부동산뉴스",
+      "published": "2026-09-28 09:54",
+      "summary": "3高 다시 꿈틀…연말 경제 흔드는 금리·환율·유가 변수  한국부동산뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "38c4ba6548c8"
+    },
+    {
+      "title": "[국제유가] 호르무즈 재개방 기대에 국제유가 하락…WTI 92달러대",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0yQ3lWQm9DRDBvcDkxak82QlRWeHc0MmVXQU40QmE5Mm1LYUd4ZWFaUUdNQVNSejc4ODdxSXdGTndQbjRZSkZ6Smx6WFIzai1ZV3IxTmU5WUM2Y3JrZGZYck50cDVkWEVWQXE3eQ?oc=5",
+      "source": "굿모닝경제",
+      "published": "2026-09-28 09:51",
+      "summary": "[국제유가] 호르무즈 재개방 기대에 국제유가 하락…WTI 92달러대  굿모닝경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bb354cd009f0"
+    },
+    {
+      "title": "美 '디젤 수출 금지' 카드에 국제 유가 '출렁'…WTI·브렌트유 격차 최대",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCdm55ZUZRYVVLR21obTdMX19ULUtCRnFtbDBvVjNCdzZjNGthbEZpUGo4djQ5S2Z4cnNOX2tlT2VvZ0hza0ZtM0s1MC1VdzhZMmJvMkt0SXQ4Y1NSaHUxT1hET2JqRXk0NUE?oc=5",
+      "source": "nbn 시사경제",
+      "published": "2026-09-28 09:43",
+      "summary": "美 '디젤 수출 금지' 카드에 국제 유가 '출렁'…WTI·브렌트유 격차 최대  nbn 시사경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "775aace8746a"
+    },
+    {
+      "title": "트럼프, 美 경유 수출 통제할까…글로벌 에너지 시장 충격파 예고",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAzX1o2U3lDd3dMM0pISlh0c0pacHJtMG45eFpxUlV0aXIwejBwdml1TFFfbnBQSmxVV3gwRkxVUHE2WTlZNHVtRG9NZWlseTA4Zl9OQ2J2WTZweExWRWt5SUl0YkpjRFhK?oc=5",
+      "source": "ebn.co.kr",
+      "published": "2026-09-28 09:43",
+      "summary": "트럼프, 美 경유 수출 통제할까…글로벌 에너지 시장 충격파 예고  ebn.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "859f535a2ede"
+    },
+    {
+      "title": "석유거래부터 매설배관 수명까지... AI로 빠르게 달라지는 석유공사",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kWDYxVVBmdUgwVVpOdjJ2Q3B2X1owOEJWVnFWWnlPUEpibVN6ZFd6Q2wwTlBNb3FCdTRjVjBPajRCZkZlTWdnNEVaUkxOdWk0Tjd3b1lsS1dTU0NtcGd6NnZjUmdINVZ2clZQWnh3?oc=5",
+      "source": "산업인뉴스",
+      "published": "2026-09-28 09:32",
+      "summary": "석유거래부터 매설배관 수명까지... AI로 빠르게 달라지는 석유공사  산업인뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c634d147a69a"
+    },
+    {
+      "title": "석유공사, AI 활용 업무혁신 본격화",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5SRGJTSnRURjJzbmhhVm1SS2dQZFJ5Y044dDl5d2tpalBFbXFoTWZsZWlSRmNOYzJGWjBjMGxDN25mNzdTLS1RSVVSUHBDMERIT1p3VHYzQVVCSnhjTERZMDFMTQ?oc=5",
+      "source": "국토일보",
+      "published": "2026-09-28 09:31",
+      "summary": "석유공사, AI 활용 업무혁신 본격화  국토일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유공사, AI 활용 업무혁신 본격화",
+          "source": "국토일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAzY2hRdVNNQ01HdllHRG4xRFdJOW85SG9Nb2ZXYnlySEg3RUNId29QUUZEdjJjampOTlJqREVFRFNHOW42V2lzZGJocGRtbGlsUGNkSnZhSUVwb1Z1M3VzX211V2Q?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "68edf8dd08a0"
+    },
+    {
+      "title": "SK인천석유화학, 액화수소시설 대정비…수소버스 운행 차질 우려에 비상체계 가동",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BcDJ3dXhNTUNWdndGMG9fdVMzczEzRWhETTlfbXdsY0V6bUd1ZjhjV0dWYW9KQzVMVjgtamY5N1FjcWI4Y0JIZ3Ywem9Bd1l4QS1uMHJRUEpPUQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-09-28 09:30",
+      "summary": "SK인천석유화학, 액화수소시설 대정비…수소버스 운행 차질 우려에 비상체계 가동  파이낸셜뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2402b9438591"
+    },
+    {
+      "title": "iM증권 \"이번주 환율 1340~1390원 전망, 유가·금리 변수 속 보합권 전망\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52bXpGa2x0eVlNTkp5SzV5ZV93dEFBbEh4cTBTaUVoUlM5bmhhVTJvNVNPYlcyMTlndjhTUmV3Smg0VTd6MzdZVUU1alhKNU45Qnl1bGVzdjFzUHFLSWR3b1lkQWhCYmpfeEdWbk10WTRRQm8?oc=5",
+      "source": "비즈니스포스트",
+      "published": "2026-09-28 09:23",
+      "summary": "iM증권 \"이번주 환율 1340~1390원 전망, 유가·금리 변수 속 보합권 전망\"  비즈니스포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aa28f6ac55bd"
+    }
+  ]
+}
