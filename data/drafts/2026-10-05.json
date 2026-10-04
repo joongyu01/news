@@ -1,0 +1,902 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05 08:11",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1348.28,
+      "change_pct": -0.9542559521623197,
+      "unit": "원",
+      "as_of": "2026-10-02",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 91.11000061035156,
+      "change_pct": -1.8951244580373867,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-02",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 102.25,
+      "change_pct": -0.05864290883145503,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-02",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 57,
+    "fresh": 57,
+    "classified": 57,
+    "representatives": 43,
+    "duplicates": 13
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 8,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.7-flash",
+        "issues": [
+          {
+            "title": "정부, 석유 최고가격제 시행 시 손실보전 예산 '유가 100원당 1.5조원' 산정",
+            "summary": "정부 및 산업부가 석유 최고가격제 도입에 따른 정유사 손실보전 예산을 가격 격차 100원당 1.5조원 규모로 산정한 것으로 보도되었습니다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "석유 최고가격제 시행 및 가격 정책 추진 시 주유소 유통 가격 모니터링과 유통 질서 관리 업무가 확대될 가능성이 있습니다.",
+            "article_ids": [
+              "db75c195a0ae",
+              "e004f9294474",
+              "50dcd66999ff"
+            ]
+          },
+          {
+            "title": "SK주유소 등 정품·정량 약속 주유소 가짜석유 적발 보도",
+            "summary": "정품 및 정량 공급을 내세운 주요 정유사(SK) 상표 주유소 중 가짜석유 유통 등으로 93곳이 적발된 내용이 보도되었습니다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "정유사 폴 주유소를 포함한 유통망 전반의 가짜석유 및 정량 미달 단속, 품질 검사 강화 필요성이 증대될 가능성이 있습니다.",
+            "article_ids": [
+              "86735245c921"
+            ]
+          },
+          {
+            "title": "공공기관 통폐합 및 지방 이전 정책에 대한 반발 확산",
+            "summary": "공공기관 통폐합과 추가 지방 이전에 대한 반발이 확산되는 가운데, 지자체 및 지방의회가 국회에 공공기관 개편 관련 대응 건의문을 전달하는 등 논란이 이어지고 있습니다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "공공기관 구조개편 및 지방 이전 관련 정책 기조에 따라 관리원 조직 운영 및 제도 변화에 영향을 줄 가능성이 있습니다.",
+            "article_ids": [
+              "9bd1367ba9c0",
+              "c743bca53e5b"
+            ]
+          }
+        ],
+        "input_count": 8,
+        "usage": {
+          "promptTokenCount": 1784,
+          "candidatesTokenCount": 485,
+          "totalTokenCount": 2269
+        },
+        "attempts": 2,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "version": 1,
+        "model": "groq/qwen/qwen3.8-27b",
+        "issues": [
+          {
+            "title": "정부, 석유 최고가격제 손실보전 예산 '유가 100원당 1.5조원' 산정",
+            "summary": "산업통상자원부를 비롯한 정부는 석유 최고가격제 시행 시 발생할 수 있는 정유사 손실보전 예산을 유가 격차 100원당 약 1.5조원 규모로 산정했다. 이번 산정은 국제 유가 변동에 따라 국내 소비자 가격과 정유사 최종소비자가격 간 차이를 기준으로 한 것으로, 향후 관련 재원 마련 논의의 기초 자료가 될 전망이다.",
+            "change": "전일 국내 휘발유 가격 하락세 보도와 달리, 오늘은 가격 경직성을 제도화할 경우 입찰될 예산 규모가 구체적으로 공개된 것이 새로운 사실이다.",
+            "impact": "최고가격제 도입 논쟁 시 정유사 손실보전 재원 부담이 커질 가능성이 있으며, 이는 정부 예산 편성 및 정유사 수익성 구조에 영향을 미쳐 석유 유통 시장 안정화 정책에 변수로 작용할 수 있다.",
+            "article_ids": [
+              "e004f9294474",
+              "50dcd66999ff",
+              "4bd54dd5e0b9"
+            ]
+          },
+          {
+            "title": "SK주유소 '정품·정량' 공약 대비 가짜석유 93곳 적발",
+            "summary": "세이프타임즈 보도에 따르면, '정품·정량'을 약속한 SK주유소와 관련해서 가짜석유 판매로 93곳이 적발되었다는 내용이 확인되었다. 해당 보도는 특정 프랜차이즈의 품질 관리 체계와 실제 현장 관리 사이에서 발생할 수 있는 부정유통 문제를 지적하고 있다.",
+            "change": "신규 적발 건수에 대한 보도로, 전일 자료에는 포함된 사안이 아님.",
+            "impact": "주유소 프랜차이즈 체인의 품질 관리 허점을 드러내었으며, 에너지시장감시단 등 관리원의 가짜석유 차단 및 정량 정품 유통 점검 강화 필요성을 높이는 계기가 될 수 있다.",
+            "article_ids": [
+              "86735245c921"
+            ]
+          },
+          {
+            "title": "공공기관 통폐합·지방이전 반발 확산, 석유공사-가스공사 통합 논의 배경",
+            "summary": "경향신문 등 보도에 따르면 공공기관 통폐합 및 지방 이전에 대한 현장 및 지역 사회의 반발이 확산되고 있다. 특히 '숫자 채우기식 지방 이전'에 대한 비판이 제기되며, 조직 개편에 대한 사회적 합의 과정의 중요성이 부각되었다.",
+            "change": "전일 석유·가스코사 통합 관련 명시적 뉴스는 없었으나, 오늘 공공기관 개편 전반에 대한 반발 여론이 확대된 점이 확인되었다.",
+            "impact": "석유공사·가스공사 통합 등 대규모 조직 개편 시 노동계 및 지역 사회의 저항이 예상되며, 조직 안정화 및 업무 연속성 유지에 부정적 영향을 미칠 가능성이 존재한다.",
+            "article_ids": [
+              "9bd1367ba9c0",
+              "c743bca53e5b"
+            ]
+          }
+        ],
+        "input_count": 8,
+        "usage": {
+          "prompt_tokens": 1670,
+          "completion_tokens": 768,
+          "total_tokens": 2438
+        },
+        "attempts": 1,
+        "provider": "groq",
+        "status": "ok"
+      }
+    ],
+    "issues": [
+      {
+        "title": "정부, 석유 최고가격제 시행 시 손실보전 예산 '유가 100원당 1.5조원' 산정",
+        "summary": "정부 및 산업부가 석유 최고가격제 도입에 따른 정유사 손실보전 예산을 가격 격차 100원당 1.5조원 규모로 산정한 것으로 보도되었습니다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "석유 최고가격제 시행 및 가격 정책 추진 시 주유소 유통 가격 모니터링과 유통 질서 관리 업무가 확대될 가능성이 있습니다.",
+        "article_ids": [
+          "db75c195a0ae",
+          "e004f9294474",
+          "50dcd66999ff"
+        ]
+      },
+      {
+        "title": "SK주유소 등 정품·정량 약속 주유소 가짜석유 적발 보도",
+        "summary": "정품 및 정량 공급을 내세운 주요 정유사(SK) 상표 주유소 중 가짜석유 유통 등으로 93곳이 적발된 내용이 보도되었습니다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "정유사 폴 주유소를 포함한 유통망 전반의 가짜석유 및 정량 미달 단속, 품질 검사 강화 필요성이 증대될 가능성이 있습니다.",
+        "article_ids": [
+          "86735245c921"
+        ]
+      },
+      {
+        "title": "공공기관 통폐합 및 지방 이전 정책에 대한 반발 확산",
+        "summary": "공공기관 통폐합과 추가 지방 이전에 대한 반발이 확산되는 가운데, 지자체 및 지방의회가 국회에 공공기관 개편 관련 대응 건의문을 전달하는 등 논란이 이어지고 있습니다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "공공기관 구조개편 및 지방 이전 관련 정책 기조에 따라 관리원 조직 운영 및 제도 변화에 영향을 줄 가능성이 있습니다.",
+        "article_ids": [
+          "9bd1367ba9c0",
+          "c743bca53e5b"
+        ]
+      },
+      {
+        "title": "정부, 석유 최고가격제 손실보전 예산 '유가 100원당 1.5조원' 산정",
+        "summary": "산업통상자원부를 비롯한 정부는 석유 최고가격제 시행 시 발생할 수 있는 정유사 손실보전 예산을 유가 격차 100원당 약 1.5조원 규모로 산정했다. 이번 산정은 국제 유가 변동에 따라 국내 소비자 가격과 정유사 최종소비자가격 간 차이를 기준으로 한 것으로, 향후 관련 재원 마련 논의의 기초 자료가 될 전망이다.",
+        "change": "전일 국내 휘발유 가격 하락세 보도와 달리, 오늘은 가격 경직성을 제도화할 경우 입찰될 예산 규모가 구체적으로 공개된 것이 새로운 사실이다.",
+        "impact": "최고가격제 도입 논쟁 시 정유사 손실보전 재원 부담이 커질 가능성이 있으며, 이는 정부 예산 편성 및 정유사 수익성 구조에 영향을 미쳐 석유 유통 시장 안정화 정책에 변수로 작용할 수 있다.",
+        "article_ids": [
+          "e004f9294474",
+          "50dcd66999ff",
+          "4bd54dd5e0b9"
+        ]
+      },
+      {
+        "title": "SK주유소 '정품·정량' 공약 대비 가짜석유 93곳 적발",
+        "summary": "세이프타임즈 보도에 따르면, '정품·정량'을 약속한 SK주유소와 관련해서 가짜석유 판매로 93곳이 적발되었다는 내용이 확인되었다. 해당 보도는 특정 프랜차이즈의 품질 관리 체계와 실제 현장 관리 사이에서 발생할 수 있는 부정유통 문제를 지적하고 있다.",
+        "change": "신규 적발 건수에 대한 보도로, 전일 자료에는 포함된 사안이 아님.",
+        "impact": "주유소 프랜차이즈 체인의 품질 관리 허점을 드러내었으며, 에너지시장감시단 등 관리원의 가짜석유 차단 및 정량 정품 유통 점검 강화 필요성을 높이는 계기가 될 수 있다.",
+        "article_ids": [
+          "86735245c921"
+        ]
+      },
+      {
+        "title": "공공기관 통폐합·지방이전 반발 확산, 석유공사-가스공사 통합 논의 배경",
+        "summary": "경향신문 등 보도에 따르면 공공기관 통폐합 및 지방 이전에 대한 현장 및 지역 사회의 반발이 확산되고 있다. 특히 '숫자 채우기식 지방 이전'에 대한 비판이 제기되며, 조직 개편에 대한 사회적 합의 과정의 중요성이 부각되었다.",
+        "change": "전일 석유·가스코사 통합 관련 명시적 뉴스는 없었으나, 오늘 공공기관 개편 전반에 대한 반발 여론이 확대된 점이 확인되었다.",
+        "impact": "석유공사·가스공사 통합 등 대규모 조직 개편 시 노동계 및 지역 사회의 저항이 예상되며, 조직 안정화 및 업무 연속성 유지에 부정적 영향을 미칠 가능성이 존재한다.",
+        "article_ids": [
+          "9bd1367ba9c0",
+          "c743bca53e5b"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-10-04T18:38:06.090834+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "'정품·정량' 약속한 SK주유소 … 가짜석유 93곳 적발",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBGS3JhTGVqaTMtUlk3eEFQY1NmOU9aYUFDU3p5WXdfcU1QVnRoRWhwUFB1R3gtME1jaVBmTjRHOU9WbUxSMkNvLThiZXhIMDhwRXJPSTFTNDJQMnZnb01Ob1kzbVR1Yi00TE5vTl9sZ1BpVGvSAXNBVV95cUxQRktyYUxlamkzLVJZN3hBUGNTZjlPWmFBQ1N6eVl3X3FNUFZ0aEVocFBQdUd4LTBNY2lQZk40RzlPVm1MUjJDby04YmV4SDA4cEVyT0kxUzQyUDJ2Z29NTm9ZM21UdWItNExOb05fbGdQaVRr?oc=5",
+      "source": "세이프타임즈",
+      "published": "2026-10-04 14:35",
+      "summary": "'정품·정량' 약속한 SK주유소 … 가짜석유 93곳 적발  세이프타임즈",
+      "sector": "energy",
+      "risk": [
+        "가짜석유"
+      ],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "SK주유소 가짜석유 93곳 적발",
+      "id": "86735245c921"
+    },
+    {
+      "title": "석유최고가격제 손실보전, 100원 차이에 1.5조",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfN2pKeVFMVEhiS0dESkNDdW1oaTBMREw2Vk9uMUx2U1RDWGcxMWlSVVpkMWFFSVpmTC1ZMU1MdFVwRHZvZXVZMUNUYU00emlaeTBMaVdxTWpCZw?oc=5",
+      "source": "fnnews.com",
+      "published": "2026-10-04 14:44",
+      "summary": "석유최고가격제 손실보전, 100원 차이에 1.5조  fnnews.com",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "정부, 정유사 손실보전 예비비 ‘가격 격차 100원당 1.5조’ 산정",
+          "source": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9EQWxpUk84NzZXdE1DZFJmaDJZV3c4bFRETHh1WXlqSnd2QUJraFBoNDJiSjh4UFNJTkJSR0czdVBGTWRWb3NYWTZGYmM1QkJ5RlhLUFBaTE5CaU9WSlNhM0lvMy1RQdIBZkFVX3lxTE9EQWxpUk84NzZXdE1DZFJmaDJZV3c4bFRETHh1WXlqSnd2QUJraFBoNDJiSjh4UFNJTkJSR0czdVBGTWRWb3NYWTZGYmM1QkJ5RlhLUFBaTE5CaU9WSlNhM0lvMy1RQQ?oc=5"
+        },
+        {
+          "title": "산업부, 석유 최고가격제 손실보전 예산 ‘유가 100원당 1.5조원’ 산정",
+          "source": "천지일보",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3aUFsYzBuaTBieFJESXlfTjZ0WUl4Q2NjNW11QW40UjZldVdSakNMaDdzdjZZMDUyc2tERlNaN3ZkOWVzZ0NHZVROdDQ4U3ByNUZESnpOdS1DdWs5aWdZNDQwMmQzS2c5RXc?oc=5"
+        },
+        {
+          "title": "산업부, 석유 최고가격제 격차 100원당 예산 1.5조 산정",
+          "source": "세계일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzXzk1cHd1OXdVRXUtaUZpVGNLZ2M4cFF5M3JxdG16WFNOa1ZNN0JSNTJlWjYyU2otMjlYZVhqZDVjY0tZeFhQWG1Pemx3a09m0gFUQVVfeXFMT1JLRGIwZ0xPekxjRU5kLU9ZT19MaDBjeVBHYVV5ZVh5TlJHR1NfUzNwWHZlM3V5QmZDYm9FbnAyTDhCa3pmQjhkeVM3LS1vb2lhSlFN?oc=5"
+        },
+        {
+          "title": "산업부, 석유 최고가격제 가격 차이 100원당 보전금 1.5조 산정",
+          "source": "직썰",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80S3RfTkdiUmFzY3BDeUNKd2VSMFVWeTJaU2VJR29mU29PbFRZeHRSblRtb2VHZzl5UWJRdlUtemRJbVVBMDZqM1gxTjlDRkRUREhRN2RlMm44TFpSUGE3Um1pQndEWU5K?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "석유최고가격제 손실보전 예산 100원당 1.5조 산정",
+      "id": "db75c195a0ae"
+    },
+    {
+      "title": "정부, 석유 최고가격제 손실보전 예산 ‘유가 100원당 1.5조원’ 산정 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ01xUi1jQ3pLRDRnQld2NklfSlVWMllFNTRWa1I1OHVxMUVvWDdnZ1VCcG81bDJYYUFfWVZvdktBTnpnWUY2MEhyOTcwWTJraVVHdHRDZUtWTnNkRnNwT3VwaUhmWldxVUFXNWdRNkc3WG5HeXp0QWJNcE8zQW5pZi1WVFQ3TEN6X1hyMGNIVzZnMmFySTRLUHlB0gGaAUFVX3lxTE9DTXFSLWNDektENGdCV3Y2SV9KVVYyWUU1NFZrUjU4dXExRW9YN2dnVUJwbzVsMlhhQV9ZVm92S0FOemdZRjYwSHI5NzBZMmtpVUd0dENlS1ZOc2RGc3BPdXBpSGZaV3FVQVc1Z1E2RzdYbkd5enRBYk1wTzNBbmlmLVZUVDdMQ3pfWHIwY0hXNmcyYXJJNEtQeUE?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-10-04 10:34",
+      "summary": "정부, 석유 최고가격제 손실보전 예산 ‘유가 100원당 1.5조원’ 산정 - 조선비즈  Chosunbiz",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "정부, 석유 최고가격제 손실보전 예산 ‘유가 100원당 1.5조원’ 산정 - 조선비즈",
+          "source": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcXRXb00wTU95VVRtWmJ6eGFwM2lBTEtsNkxhTTU0MzUzc2lGVlFfWXMxZW1xT0c4dFpnckt6Tk1iMHYwMXZWeGdlczljSGhtM2NqVnZEWXRSUnF2blNVZVlIUnFSbnl3d0cwNWNUOEdvVVpVRkQ2LV9wWEFqY0NRWFQxRlhid9IBmgFBVV95cUxPQ01xUi1jQ3pLRDRnQld2NklfSlVWMllFNTRWa1I1OHVxMUVvWDdnZ1VCcG81bDJYYUFfWVZvdktBTnpnWUY2MEhyOTcwWTJraVVHdHRDZUtWTnNkRnNwT3VwaUhmWldxVUFXNWdRNkc3WG5HeXp0QWJNcE8zQW5pZi1WVFQ3TEN6X1hyMGNIVzZnMmFySTRLUHlB?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e004f9294474"
+    },
+    {
+      "title": "정유사 최고가격제 손실보전, 가격차 100원당 1.5조원 산정",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA0RGZTenZXcmpXa1VyUFRJTzBTX0V6a1dDdEN6TVpGeXkzUkxNeU4zRTVnSlF3dUsydi1EX1ZnOUs3eWgzeGFma2p2dzZiZ28?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-10-04 10:27",
+      "summary": "정유사 최고가격제 손실보전, 가격차 100원당 1.5조원 산정  v.daum.net",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "산업부, 석유 최고가격제 격차 100원당 예산 1.5조 산정",
+          "source": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5PbXRFVDRLb2FjTnVyN3BYUFBwQjFJSGpKeTV0YVFlNFBtOWNfZ09tY08yRjNpNHduV1pBUURsa0tXQWNJOW5XUFl4MjR2bE0?oc=5"
+        },
+        {
+          "title": "석유 최고가격제 손실보전 ‘100원당 1.5조’...유가 150달러도 대비",
+          "source": "ebn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wbE1EZFFhY3lOY0s0SUcyalBIMjFXc0hscFNoZzJpejBFSFRUbFRYcXhSdmk3RjJFcmhSa2pKZk94NmtIYk1UZ2RWZUJzUXFCNkVVZHVPSzN1b1BDTVVjQUNDaXFZV1hr?oc=5"
+        },
+        {
+          "title": "정부, 석유 최고가격제 가격 격차 100원당 1.5조 산정",
+          "source": "g-enews.com",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZnZtX1lZMmpMQmFUX1F2RHFUNXlaV2ItaVM4cGFVMUFnUkswUXVETGZ6NlFZMEJqQTNsSFJKclJwZTkybkk2RzE0Ry02TFdpZVVCd3AxdDdTd3l2cUtadWpQZHhVQkVLbFZPckdnRFY4MzBadk9nYkZsRGlYSFJBdEkzZi16UQ?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "석유 최고가격제 손실보전 예산 산정",
+      "id": "052509a1a4f0"
+    },
+    {
+      "title": "산업부, 석유 최고가격제 격차 100원당 예산 1.5조 산정",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5BSW5DZ0J3dHFLZi1BcHRmTDJ0WGNxUzlOelhvOFg5SWFYVTFRQnVGcF9WSXloNHJWUUZCcXhLR21UaTFhb2hWM2FaMmt4dExUdTdTb1B1WG00QUN5a3U3S2pVSXprUQ?oc=5",
+      "source": "news.sbs.co.kr",
+      "published": "2026-10-04 10:03",
+      "summary": "산업부, 석유 최고가격제 격차 100원당 예산 1.5조 산정  news.sbs.co.kr",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "50dcd66999ff"
+    },
+    {
+      "title": "정부, 석유 최고가 손실보전 ‘100원 당 1.5조’ 책정",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBHeU40RHlQcjlvV1BleE55c21Td2RCSVNYSFdyTFUwOVMzTFdOZGdSNUdYcjltUGdIak9GbDJYT3RPa0N1RWgyR1d5R0I5RnZBS3NGdnJuYw?oc=5",
+      "source": "세계비즈",
+      "published": "2026-10-04 08:45",
+      "summary": "정부, 석유 최고가 손실보전 ‘100원 당 1.5조’ 책정  세계비즈",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4bd54dd5e0b9"
+    },
+    {
+      "title": "공공기관 통폐합·이전 반발 확산…“숫자 채우기식 지방 이전 반대”",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZbWprR2J6a0xIR1JGWmJtUUYyblRkY1MyZTZjeWx6Y3ZKNG9HRmJIMDFSczlwZU9tZWVvRDlmZk1aWS1sZWRLVzItZjZ4bms5blgxVEFZQU00QdIBX0FVX3lxTE1xTmphX1gzSzlwWlQwUkx2RHZJaWpLVTc5QmNEYUt5R2E2MVFtbW9lYUJiVWQ3X2l5TUNFV280TWJNUEs3aF80YW1taEFWZVdVNldkZUdfamlXZTh2dlhj?oc=5",
+      "source": "경향신문",
+      "published": "2026-10-04 17:02",
+      "summary": "공공기관 통폐합·이전 반발 확산…“숫자 채우기식 지방 이전 반대”  경향신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9bd1367ba9c0"
+    },
+    {
+      "title": "진주시의회, 국회서 공공기관 개편 대응 촉구 건의문 전달",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1lTlVlb0NnZnBqYU01WTNkSU9uelVZdFhubVBhWnBvZV85WWMtYVZPWUU1ZEJKOElDN0lva216blJ6b3pDYmJWcXNMNEU4WnhuMDVpem1GRXhpT0JRaGdrdkd1Z0dXc2pLbTFDNFI3Nl9ySDBTcnc?oc=5",
+      "source": "jinju.news",
+      "published": "2026-10-04 11:42",
+      "summary": "진주시의회, 국회서 공공기관 개편 대응 촉구 건의문 전달  jinju.news",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c743bca53e5b"
+    },
+    {
+      "title": "트럼프 강한 압박에 G7, 비축 경유 푼다",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1RNUpXd2dLd2dadk52NDEwRHpZNlRsQ3V0bDFmeDl3WmtkYktrbVlBdzRQSGh4c20wMlV3X3lseGR3LXYzVTMxYWNIMFhUaVlV?oc=5",
+      "source": "블루밍비트",
+      "published": "2026-10-04 18:19",
+      "summary": "트럼프 강한 압박에 G7, 비축 경유 푼다  블루밍비트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "dbd374ff8f22"
+    },
+    {
+      "title": "휘발유·경유 수출 제한속…정유업계 '효자'된 항공유",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FbUk0ZXNwSnByaW1XOVE4Y3NWVm1wSXJfT2dCQUFVTXM5MDIzazNvR1dpQlBsY3JBQTBNMUZlMzhPNW5IdEhHTjAwcjU1R01HT0RacGh4MjVBZw?oc=5",
+      "source": "한국경제",
+      "published": "2026-10-04 18:16",
+      "summary": "휘발유·경유 수출 제한속…정유업계 '효자'된 항공유  한국경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "011ee6bdc5bc"
+    },
+    {
+      "title": "10월 4일 MIPEC 시스템의 소매 휘발유 및 석유 가격",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOODlqWnhabGtNY0NuUl9xbzFiVWpQc1pxRnYxdkRDWnNMWDBFczIweHlvUjBWSjM3SjEyYnBVNFVPWDhXNWowMHhFbGN5TXEydWRlRGhyX09YRmg0STRRM0FSY3lmOTJrMGJ2YXNKbm50cWdJVjRzQ0hsR3NheHBDVkwwN25oU0N3VHFRWXRnYUljaXM?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-04 17:51",
+      "summary": "10월 4일 MIPEC 시스템의 소매 휘발유 및 석유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4ab14ddf19c1"
+    },
+    {
+      "title": "[The Numbers] 휘발유차는 49%, 전기차는 17%…‘탈가솔린’ 임계점 넘은 자동차 100년 질서",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hUUpDX2xIaEVQNTV6VlhFVmpfeEM3V3VoaF9vbFp4V0JfR1VpZ2dhSEVYaU9oYjNtT2NFMG5BeVQzbDRRbllBUjJSU2tUNHd5Y1lUemR0SzdWZ2J5Y3Bjcg?oc=5",
+      "source": "뉴스스페이스",
+      "published": "2026-10-04 17:46",
+      "summary": "[The Numbers] 휘발유차는 49%, 전기차는 17%…‘탈가솔린’ 임계점 넘은 자동차 100년 질서  뉴스스페이스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0ecfc0fe20d4"
+    },
+    {
+      "title": "중국 석유제품 수출 중단…아시아 연료 공급 압박",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1OQ3djNWphZXhnWTlFbXdKWk1kX3I0SnRiWmhiQUVyTHh1ZmViaXZmZ1VyUVAzZWFuWkJSZU8zdTI0T3M?oc=5",
+      "source": "대한청년일보",
+      "published": "2026-10-04 17:41",
+      "summary": "중국 석유제품 수출 중단…아시아 연료 공급 압박  대한청년일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "046711543fd6"
+    },
+    {
+      "title": "사우디 원유 수출 재개에 유가 진정…키움증권 “상방 리스크 완화”",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2QjkySkRnZFBtcnZUV3I3VlBSZXRoOUFOZC1XdVBuZERDejFFZzZvU1N3dE95bXRBYnBpVXk4ZzJUcGdhYl9BeFJWb2FqZjE4ajM3UExZdkFjdnBadlota0NveTRyZ1lvWFN4S3d6NXpXMlHSAXdBVV95cUxOeUIxc3hnb3hrYVR3MTJudzhmRkJmSGZlNmpOM3dPYVoyUWdOQzZHalN0dzJhY0NQODY4UVMxaHZ6eHlaS1NXQy10LURYNzVIYVVMZHJlWU9QaGI4WXUzNGd5ZUN2TE9ReXpjVGpkQ1BFbHBYN3RoNA?oc=5",
+      "source": "pinpointnews.co.kr",
+      "published": "2026-10-04 17:39",
+      "summary": "사우디 원유 수출 재개에 유가 진정…키움증권 “상방 리스크 완화”  pinpointnews.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "58ad0c30a531"
+    },
+    {
+      "title": "이란 \"호르무즈 재개방 없을 것\"…기존 입장 재확인",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1PM1d1SDY5djdhTnpWc1JyTTFjOUota0ZpazdHc2tpOUlhaW9EVW9XNmE5SWhmTkNWcGY0eGZTNzJNSFVkNTZWUmFMMXNyY2Fo?oc=5",
+      "source": "블루밍비트",
+      "published": "2026-10-04 17:37",
+      "summary": "이란 \"호르무즈 재개방 없을 것\"…기존 입장 재확인  블루밍비트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cc4c58c14577"
+    },
+    {
+      "title": "기름값 상한 유지에 4조2000억원 확보…정유사 손실 11월 정산",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9SOGwtRmg1c2Rkd3hpSzhnNzF5Y05MV0VpdHdVbGk4cTZzUndpR3F5dDZhZFViOTZhMDRpWFRjTzdjaHpQRVgzWVRtTFN1VmlMSGcwMmxISQ?oc=5",
+      "source": "dailian.co.kr",
+      "published": "2026-10-04 17:22",
+      "summary": "기름값 상한 유지에 4조2000억원 확보…정유사 손실 11월 정산  dailian.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2b3050d4200d"
+    },
+    {
+      "title": "미국 답변 받은 이란 호르무즈 재개방 안 한다",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wVHFKUlc3dUl5VVVDd3FHb1ROV1BnYWlMYXRXbUFMdTlDMGRyVlR1aERwdWxIQ0Ric05IQzdPV2VNYXp3SENyUFdHNnJHWWtWMS1tN3VqUkVSMHpuWTBMM3VTbVRzY0XSAVhBVV95cUxPWE5hRER5dEFGM3laNWZKS0QwVXZhUzhBbDN5YkRUWk11VUdoWkUzc0NpYTRHd0ZPaVVQV2xYWk96Q0Q5WVNZbXFXTENVME00ZWI0WHZUTmdj?oc=5",
+      "source": "SBS Biz",
+      "published": "2026-10-04 17:02",
+      "summary": "미국 답변 받은 이란 호르무즈 재개방 안 한다  SBS Biz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0192a05eb050"
+    },
+    {
+      "title": "‘유가 쇼크’에 유럽 목 비틀기…미국 \"경유 방출 안 하면 수출금지\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yVjd5MTBHalNrYlJQcEtjRUQ4Z3JWNU5oWHBNbFFBRnpVeGc3TWJTN0tRNzQ0RGNuT2hFY0g2N2pVamtaRGo1V1JfSmdfeE0tbUE?oc=5",
+      "source": "JTBC",
+      "published": "2026-10-04 16:33",
+      "summary": "‘유가 쇼크’에 유럽 목 비틀기…미국 \"경유 방출 안 하면 수출금지\"  JTBC",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "882564a37239"
+    },
+    {
+      "title": "가스公 ‘제10회 KOGAS 포럼’ 개최, AI·첨단산업 전력수요 급증…천연가스 역할 모색",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5pV2F0WU5CV2Z2dTZZcms4S3lsVlNyakRpUnBuR1BHazRmM01DR1JlSHVoMDlxZWZxZlR5RVJqZFMxOTRVTUlMUnFZX29sdG8?oc=5",
+      "source": "v.daum.net",
+      "published": "2026-10-04 16:32",
+      "summary": "가스公 ‘제10회 KOGAS 포럼’ 개최, AI·첨단산업 전력수요 급증…천연가스 역할 모색  v.daum.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스公 ‘제10회 KOGAS 포럼’ 개최, AI·첨단산업 전력수요 급증…천연가스 역할 모색",
+          "source": "경북매일",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BSi0xY01fT3A0YVcyVFhvQ0FTdjJ0a1M2bHZ2U0dIdFhzeWRabXZXdHlBM0hoT2F6RjRscGNWZGVxXzhneGl2RjZkZ2syT0VCYUFhRjhXMTVsdw?oc=5"
+        }
+      ],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "40f5cc8a2e73"
+    },
+    {
+      "title": "이란 \"호르무즈 재개방 안해\"…미국 답변 받고 기존 입장 재확인",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Sa045eFlmcU5PNmRCU3BrNUdNYkZ0Q3FQMUFSWThRNFRkM245ZFdYcU95emNfQVAwT0hKdlliemIwVzA4cVpKYjlRVnNTX1NsbVpzY1JqTllVbXhQVnlBeNIBYEFVX3lxTE5Sa045eFlmcU5PNmRCU3BrNUdNYkZ0Q3FQMUFSWThRNFRkM245ZFdYcU95emNfQVAwT0hKdlliemIwVzA4cVpKYjlRVnNTX1NsbVpzY1JqTllVbXhQVnlBeA?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-04 16:27",
+      "summary": "이란 \"호르무즈 재개방 안해\"…미국 답변 받고 기존 입장 재확인  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "812b496cb7e3"
+    },
+    {
+      "title": "미국과 이란의 무력 외교, 그리고 호르무즈 해협 재개방의 과제.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSkEwMGpNQ3o0cDFBQ2NDbHJVNDhIZ3FBY1hhRUR2TS1yV1BCYnA3YkZVXzVGUVFBYnBpekFleWZRaXI4bXc1Q0dQekJzc202Ylk1UWlSVUlfVnBPem5Oc0R6dDM0enR6Q3JmN1dKRmJpeXJDeWdpR1pqTHQ3R0w5amJzMmlfWHdMVnF1TmlMQ2dXaVU?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-04 16:00",
+      "summary": "미국과 이란의 무력 외교, 그리고 호르무즈 해협 재개방의 과제.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "65c3bbf20224"
+    },
+    {
+      "title": "원유 ETF 35%·달러 인버스 31%…3분기 수익률 상위권 싹쓸이",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FYnZvNU1zd1hLekhGcGdBQjA0d0xjU2dqTGtQN21YaTJFQ1dPdmtqTW1mNEVwSEVxb1RGVU1UVm9OeHNKNFAxUk5yZXRFcXJJX2JST1JFUEt4UG84M0lPa1ZmRFlKNTFuWFlOX1huMXEyUEJFdjRrSWp3Zw?oc=5",
+      "source": "부산일보",
+      "published": "2026-10-04 15:39",
+      "summary": "원유 ETF 35%·달러 인버스 31%…3분기 수익률 상위권 싹쓸이  부산일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6f6d124682ed"
+    },
+    {
+      "title": "G7의 결정은 단기적으로 유가를 상당히 낮출 수 있다.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQVVGTXpVeTdCMThnOU1hZFVPQXZ6ZEdZOGFfWTNiaDBtOXN2VVJMa3pSeW13OWdhTDdZMDNQbUxpeEQ0QXBvbW9SS19ONjZDR3JBamtqYWlDdFlNQ1RCVEdaR2dPTlBVcWN0ZE5tQVRtM2ctQ2djVENrbGUxemJwWTNkR19pYk9XV01SUnBoUEJyRk9ENzNJcQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-04 15:11",
+      "summary": "G7의 결정은 단기적으로 유가를 상당히 낮출 수 있다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "22971dce4b9b"
+    },
+    {
+      "title": "휘발유 가격 소폭 내려…20주 연속 하락",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WOTJ2a1pEVFB2czRwRU5wWER3bno3OGpxRlctZmFjbW9WV3IwMGVlN0R0eC1tUVA0cDRxVHNraGtHS3gzVTI0WlAzX1ZOb1gxWm5vRFpB?oc=5",
+      "source": "매일경제",
+      "published": "2026-10-04 14:32",
+      "summary": "휘발유 가격 소폭 내려…20주 연속 하락  매일경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fcfbac88ba4a"
+    },
+    {
+      "title": "G7은 에너지 가격 안정을 위해 1억 배럴의 원유를 방출하기로 했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNm1sSktJOURXZV9vblJrVlUydmo4SVQxVVZzcTBxRHdEZnRUZHJ0bmt6U0d5VHFQTGhlNjJRZWZIYWMtcUtpckFFMnJtOXBzR0JSRktQRGYwLW1udHI0WktfRVBPWFFwbVllbVJpbFhvSUE5UldyN04wU2NVdFV6NjlOdVlEbFE?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-04 14:23",
+      "summary": "G7은 에너지 가격 안정을 위해 1억 배럴의 원유를 방출하기로 했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "466f79c7a665"
+    },
+    {
+      "title": "오늘 10월 4일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPS21GaW5CdFlCWWxWbFRiX0pESmlsNGh3RmdvR3FCb1JGSFpYVUhtczdxNGtqOG5CQ0lsYlZHSEZrd3F2TVJ2UE9UU3JFR2FPeUhRY0I5N3Z0TS1rUU1oNVFTc1ZQQzRDYkJfMjlzaVlrWVlWR2xxd2VlZ0I2d0JoRXJn?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-04 13:55",
+      "summary": "오늘 10월 4일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6eb3be20fadf"
+    },
+    {
+      "title": "G7 비축유 1억 배럴 방출 합의에 국제유가 하락… 두바이유는 1.59달러↑",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ja1NjcHRMVDZsNlRRTXBWY1FLdzExams1OUNLZWszTWN0WHRLV1JOS2pKWFdzaE9hWkpaeGh2WktYcHBoeFBNem0tT1dSQkppRnRmZElEWlEyeDhhdWpaNUF0TXdnQkRzWUx0V0xBNkxJWkxh?oc=5",
+      "source": "파이낸셜포스트",
+      "published": "2026-10-04 12:27",
+      "summary": "G7 비축유 1억 배럴 방출 합의에 국제유가 하락… 두바이유는 1.59달러↑  파이낸셜포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7147e58df4f4"
+    },
+    {
+      "title": "고금리·고유가에도 나스닥100 굳건한 이유",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE90anlfLVktSDRIbHVkamh1ZlpHaTRfTVJMZHRsZ1lBRHYtS2ozQjdzd3ZwdkRoY29wcTNldkR5b1NGZDZ1akE?oc=5",
+      "source": "매일경제",
+      "published": "2026-10-04 12:13",
+      "summary": "고금리·고유가에도 나스닥100 굳건한 이유  매일경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4a49b1c33fe1"
+    },
+    {
+      "title": "미국과 러시아, 우크라이나 분쟁 종식을 위한 회담 개최… 수십억 달러 규모 석유 거래 언급.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPekFZektVaU1wbjdfWTB1MlNPMGhpNm9wT0t3RHlmSndqWEtzWFRrSkFDcWQwT0ZjSnlSM1UyMkt6UWREX252SXItR2FBQ29TbjhkeGdsWVV3T1Zld2RMXzVNOVRSeElST0tFSm9zdF90dGhMZkdpc1V2NmtWamhFY3U1Vmc4ZjBKeUlhUUtUWlEzNDBScy1DS2pycjZ4eEQ2ZWF0dkdpTkpEekRIaW9ENQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-04 12:09",
+      "summary": "미국과 러시아, 우크라이나 분쟁 종식을 위한 회담 개최… 수십억 달러 규모 석유 거래 언급.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b70680c5e113"
+    },
+    {
+      "title": "전국 기름값 20주 연속 하락…휘발유 L당 1857.6원",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5zejd3aDlrN3pjZDRnU3lZMjlmZWYxdll6WF9sUzlHUFZuWXdwaGZSOG82QUpndjl5Z0Zna0RqRlp3cHRKaU43eTY1aDJtQmdwRXRwd0dhTndXOUtDemVrcy1RNTI5V1N2NzlURdIBbEFVX3lxTE5zejd3aDlrN3pjZDRnU3lZMjlmZWYxdll6WF9sUzlHUFZuWXdwaGZSOG82QUpndjl5Z0Zna0RqRlp3cHRKaU43eTY1aDJtQmdwRXRwd0dhTndXOUtDemVrcy1RNTI5V1N2NzlURQ?oc=5",
+      "source": "kmib.co.kr",
+      "published": "2026-10-04 12:06",
+      "summary": "전국 기름값 20주 연속 하락…휘발유 L당 1857.6원  kmib.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전국 기름값 20주 연속 하락…휘발유 L당 1857.6원",
+          "source": "kmib.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNLXlDSEFqODdSNURDbE1fMHc3NnB1RGpDdnYxTW5pcXEzUG5pMVRpM19aQkl4X2tEQzJMYnBFaDhZSmxpWUhZSTJxUnJfT2pNVDVWR2t2OUNyandUamlWZktqUmgxR0VBNWlJMnhmX2Ria25Za1hYWGZvMWYzbEVfV0pLVWZuUdIBbEFVX3lxTE5zejd3aDlrN3pjZDRnU3lZMjlmZWYxdll6WF9sUzlHUFZuWXdwaGZSOG82QUpndjl5Z0Zna0RqRlp3cHRKaU43eTY1aDJtQmdwRXRwd0dhTndXOUtDemVrcy1RNTI5V1N2NzlURQ?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9054756fddbb"
+    },
+    {
+      "title": "[글로벌 경제] G7, 비축유 1억배럴 푼다…‘100달러 유가’에 긴급 공조",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0zRVVLU2FabWc2RmprRDV4OFJMWVRvdDFsV0wwRnpXbmQ0T1ZsT3dmWlBrOFMwZGxwUTVnWFhtZXNra1JuSW9fbF92RUlROHVFekdPdzMwZjZVaUZrQ0ZlT1FqYk8?oc=5",
+      "source": "지이코노미",
+      "published": "2026-10-04 11:41",
+      "summary": "[글로벌 경제] G7, 비축유 1억배럴 푼다…‘100달러 유가’에 긴급 공조  지이코노미",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "848e817e92c8"
+    },
+    {
+      "title": "주유소 기름값 20주 연속 하락…휘발유 1857.6원·경유 1843.3원",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rTnMtbldaamVFWEhNZmp5YUptT2FFZWZrc0drVzJ1ZGFfZVpaVjNLYVlxN1JFWGIydnV5TV9LQ1pycUZhSndMQXc3OW9Yc3RtRUJJcEgzaS1vZ2s4N1llUUo4YXUzTER1VS1yd1VNdw?oc=5",
+      "source": "피플투데이",
+      "published": "2026-10-04 11:36",
+      "summary": "주유소 기름값 20주 연속 하락…휘발유 1857.6원·경유 1843.3원  피플투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "544248cf2add"
+    },
+    {
+      "title": "휘발유·경유 20주째 내렸지만 하락폭 1원 미만…휘발유 리터당 1857.6원",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE40VlpCUGx3cEhLcGhVNGJYLXlmbnJlWWpNMl93OG5ENVVJTkhPNkVtNk9OWnRHZmZOdkhjWFYyMVJRa0tOZnEyQ0lweVhEY3FVZzIwQVJscTVOOVpjN2ZfM0ZZZno1aDZIM0Jn?oc=5",
+      "source": "데일리 이코노미",
+      "published": "2026-10-04 11:35",
+      "summary": "휘발유·경유 20주째 내렸지만 하락폭 1원 미만…휘발유 리터당 1857.6원  데일리 이코노미",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "11f74862c405"
+    },
+    {
+      "title": "[좋은 기름을 만드는 진짜 훈련]S-OIL, 국군의 날 맞아 ‘진짜도일이’ 공개…AI로 만난 원유들의 특별훈련",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEdC1memJtMy00TWFsZ3g0MTdQUktIR1Ftb1ZyVHZHVmRZVTlLZzFHMjJRNlA5Q1lWZkRDcVhWeEVQX1lUTVFGSmtZZnlfTHM1TkhwUE84NkVxci0tSnJjVU8yXzk5WF8xaGJsdnp3aV8?oc=5",
+      "source": "전국뉴스",
+      "published": "2026-10-04 11:30",
+      "summary": "[좋은 기름을 만드는 진짜 훈련]S-OIL, 국군의 날 맞아 ‘진짜도일이’ 공개…AI로 만난 원유들의 특별훈련  전국뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "577ce06e78a8"
+    },
+    {
+      "title": "오늘 휘발유 가격 4. 10: 일제히 하락",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVkzOF9qZFlWb2lzOWZMdkl6YlRxeVlVYUZobk91MW1EMEktWkNEOUdrQlk0QkRxQkRwOTVlTVZjeWJ6M0VUMFQ2aUhiaklYUlhyRFJqUjR6SnZjVEdVVDlkUWRHekxDNHRUaXZOMVE1NWFIRV9Oc0cyOU8yTm5meXdVQVNRd3B4NG9DTQ?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-04 10:56",
+      "summary": "오늘 휘발유 가격 4. 10: 일제히 하락  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0741fc53292a"
+    },
+    {
+      "title": "G7 비축유 1억 배럴 방출…국내 경유값은 언제 내리나",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xdHFHTFVXS3U5ZEtBV0tyckxpSEpmMW9TZ3pZYTVfT3FyMkJkcVNTZTJxUkd2UFZwVkFORXE0dl83LXVUWTdRZ0swMWQ0TzFERnNSTnV5SUs0a1RXVDFaT3plM0dmdXJYNkZiZA?oc=5",
+      "source": "중소기업신문",
+      "published": "2026-10-04 10:50",
+      "summary": "G7 비축유 1억 배럴 방출…국내 경유값은 언제 내리나  중소기업신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "G7 비축유 1억 배럴 방출…국내 경유값은 언제 내리나",
+          "source": "중소기업신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rSV9BTEJ1d25TVTU4cXNxaWVJelNiZkdSRERFLXplS0R5eXcyMFZDQnQ5RGNVRjFJOF9sN3ExR0xvZVRPTFNfTk1CZWtxeE9VQlNqejI1ZC1WcmpFZV91U01rbnlCWmVGc3JYUHVB?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "77d051c7b45d"
+    },
+    {
+      "title": "5개월째 내리는 기름값…휘발유 20주 연속 하락",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE41djhDMDN6dTJqVTFWa1JKS0VyQ18zVmlaV1Q3U3YtZG5iWUxUVWlfbEdWMnRSTloyQnRmTklxR0NzZnB1b1dFVjAzSQ?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-04 10:40",
+      "summary": "5개월째 내리는 기름값…휘발유 20주 연속 하락  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d4c31d10487d"
+    },
+    {
+      "title": "전국 휘발유 가격 20주째 하락…평균 1857.6원",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1PT3FhVXBlSFNHQWk5NWJKNFF1LUE1X2ZUaTJkeTVkQkQ0OTRpWV9Obm10SE1QRXp2dk12X01kb05KNHZncTBlNUF5Yw?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-04 10:40",
+      "summary": "전국 휘발유 가격 20주째 하락…평균 1857.6원  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "127b5414f03b"
+    },
+    {
+      "title": "중동 리스크에 원유 다변화…정유업계, 공급망·설비 부담 여전",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ZcmhndTVjamJWWC1qZ21MM1MzZjY3VWhrTHVUN1RULU8zNXdqMGg5T0tjQTUyQjNGdUNsaTlDWVlrUG9kN2RRdUJzeXlWeW5rRm5aM2l5TGvSAVhBVV95cUxOWXJoZ3U1Y2piVlgtamdtTDNTM2Y2N1Voa0x1VDdUVC1PMzV3ajBoOU9LY0E1MkIzRnVDbGk5Q1lZa1BvZDdkUXVCc3l5Vnlua0ZuWjNpeUxr?oc=5",
+      "source": "미디어펜",
+      "published": "2026-10-04 10:22",
+      "summary": "중동 리스크에 원유 다변화…정유업계, 공급망·설비 부담 여전  미디어펜",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5acd97666272"
+    },
+    {
+      "title": "이란 혁명수비대, 닷새간 호르무즈해협서 유조선 7척 넘게 공격",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcXJaRmJNakVCRWNibnNKakROX2Z1dXpRRkJlSWFOd3JyQjJtZkpKTXhVSHk4eU10VVcwUE84ZEdCeW9RTC05ZURMSFZMVmxPNzctWFU5YzR0TG05a21lTDFjN3FUUjFXak92cVc5emJpSWZORjc0TVN2ZzhpSVJfRQ?oc=5",
+      "source": "edaily.co.kr",
+      "published": "2026-10-04 09:35",
+      "summary": "이란 혁명수비대, 닷새간 호르무즈해협서 유조선 7척 넘게 공격  edaily.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "이란 혁명수비대, 닷새간 호르무즈해협서 유조선 7척 이상 공격",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94SzNGekJmcjZUaF81NU9vV2c1SlVUYVlOU216eGRqNkFJcVljVzlPT3NFcF9CWFBrSWNRWVZ1STdsd09IazRaVEctZ2Fha2NaYnhRYkJ6RzBYbWxGbDlpYkNzMTRHU0hkbzZJaVBMV0FkSFZaNkdFZ9IBeEFVX3lxTE94SzNGekJmcjZUaF81NU9vV2c1SlVUYVlOU216eGRqNkFJcVljVzlPT3NFcF9CWFBrSWNRWVZ1STdsd09IazRaVEctZ2Fha2NaYnhRYkJ6RzBYbWxGbDlpYkNzMTRHU0hkbzZJaVBMV0FkSFZaNkdFZw?oc=5"
+        },
+        {
+          "title": "이란 혁명수비대, 닷새간 호르무즈해협서 유조선 7척 이상 공격",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hM3R4QVI2TWZZSXJ4UmQ0UTVjdS1RT0NNWnE4TnhHY2U4eGZPWXd1U1RuNGlUbGliUFNETENrUHZidHFOQlhpMEdibmY0NXNVeFhzZHJCYXhGUThFTmlLWNIBeEFVX3lxTE94SzNGekJmcjZUaF81NU9vV2c1SlVUYVlOU216eGRqNkFJcVljVzlPT3NFcF9CWFBrSWNRWVZ1STdsd09IazRaVEctZ2Fha2NaYnhRYkJ6RzBYbWxGbDlpYkNzMTRHU0hkbzZJaVBMV0FkSFZaNkdFZw?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "432e1058607e"
+    },
+    {
+      "title": "일요일 대화: 휘발유 및 석유 시장의 투명성 강화",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTjZwcndxMWZtQmp6Q0hOdzFhQzJOd3hqQ0tPTm1Cd1J6TXNVRWVVVkRfZVl4bGZnMGVUZzhpMDlzWWUxeVd5bnRSTlNvOENvMDI3b2xfWWQ3U2Z2dWUtNENZOWZCcW5LZkhjeFNrZEd5T0N6S0RaNC1PLTdiS1BWaEhzZU5yWWRGTFNFN29B?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-04 08:59",
+      "summary": "일요일 대화: 휘발유 및 석유 시장의 투명성 강화  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cd2337dedd48"
+    },
+    {
+      "title": "호르무즈서 하루 새 유조선 2척 피격…‘정체불명 발사체’ 공격 잇따라",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CdGJ3VWlVOG56MnpkdGRrYzlfTG5YdmZoMWFqLS1qdzZwNVFhcmNzZzBZU2g0cVdqaEZ0Q29DZWVBV1k2WURvRjgwdEpCNE9UeHRUYk53MkFUNzZ1RGphX1dMSUFpa1pvLVJR?oc=5",
+      "source": "해사신문",
+      "published": "2026-10-04 08:28",
+      "summary": "호르무즈서 하루 새 유조선 2척 피격…‘정체불명 발사체’ 공격 잇따라  해사신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c8522dd7f2e5"
+    },
+    {
+      "title": "오늘(10월 4일) 연료 가격: 세계 유가는 안정세를 유지하고 있으며, 새 주 초 가격 변동을 기다리고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOU1JpRXZ4MVdudGE3U0pWTVN4LUhvZUQzS0NTRFFlRW92aW5GbGQwM0N6Mi1tRFh0T3hUS3BmNENJN09ZUGhQLXRaMzVHUlRLdUhwWGM1d1Y1V0s3Q0tob2cya0Vydm0zZFFiZkZ0aEFNNks4czlwRmk0OUE1WDd4X0F2TF9jcDBaUFlVUUc4UVVGVXRnbGZBdElB?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-04 08:27",
+      "summary": "오늘(10월 4일) 연료 가격: 세계 유가는 안정세를 유지하고 있으며, 새 주 초 가격 변동을 기다리고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7b77c4b4f459"
+    }
+  ]
+}
