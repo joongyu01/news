@@ -1,0 +1,2077 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08 09:12",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1338.69,
+      "change_pct": -0.006722538430505247,
+      "unit": "원",
+      "as_of": "2026-10-07",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 89.44000244140625,
+      "change_pct": 0.011184318680909,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-06",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 100.58000183105469,
+      "change_pct": 0.25917278411224215,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-06",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 163,
+    "fresh": 163,
+    "classified": 163,
+    "representatives": 119,
+    "duplicates": 42
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.8-flash",
+        "issues": [
+          {
+            "title": "한국석유관리원-한국국제협력단(KOICA), 감사기법 교류 및 내부통제 강화를 위한 업무협약 체결",
+            "summary": "한국석유관리원과 한국국제협력단(KOICA)이 감사업무 협약을 체결하고, 감사기법 교류와 전문 인력 협력, 교차 감사 등을 통해 내부통제 체계 구축 및 감사 전문성 강화를 추진하기로 했다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "타 기관과의 교차 감사 및 감사기법 공유를 통해 기관 내부통제 체계가 고도화되고 감사 실무 역량이 강화될 가능성이 있다.",
+            "article_ids": [
+              "77eb965a9ae1",
+              "b63006a2092c",
+              "2bd9e63ee22d"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1576,
+          "candidatesTokenCount": 199,
+          "totalTokenCount": 1775
+        },
+        "attempts": 1,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "provider": "groq",
+        "status": "failed",
+        "issues": [],
+        "input_count": 7
+      }
+    ],
+    "issues": [
+      {
+        "title": "한국석유관리원-한국국제협력단(KOICA), 감사기법 교류 및 내부통제 강화를 위한 업무협약 체결",
+        "summary": "한국석유관리원과 한국국제협력단(KOICA)이 감사업무 협약을 체결하고, 감사기법 교류와 전문 인력 협력, 교차 감사 등을 통해 내부통제 체계 구축 및 감사 전문성 강화를 추진하기로 했다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "타 기관과의 교차 감사 및 감사기법 공유를 통해 기관 내부통제 체계가 고도화되고 감사 실무 역량이 강화될 가능성이 있다.",
+        "article_ids": [
+          "77eb965a9ae1",
+          "b63006a2092c",
+          "2bd9e63ee22d"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-10-07T22:53:42.790313+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "석유관리원·KOICA, 감사정보 공유…내부통제 협력",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8wVG84U252ei1KR0NoUDNwMzBSUFNON1k4Ukh4aF9YQlBjSDBBbm1ENjAzZ05IN3JqcHNPRlZ3b3o3c25Ddk9lQ2NQc3RXYndQYVdRenplbWprUHhoSHpIQnZNVlQ?oc=5",
+      "source": "국토일보",
+      "published": "2026-10-07 17:42",
+      "summary": "석유관리원·KOICA, 감사정보 공유…내부통제 협력  국토일보",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "77eb965a9ae1"
+    },
+    {
+      "title": "석유관리원, 코이카와 맞손⋯감사기법 교류·내부통제 강화 체계 구축",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBHazk0OXZ2dFNadHZxSU03RlUzRWZLdm5zM0RJbktHQy14QlFTSklsWlhVcTNIVzBzelA2X2pnRFBQazg0UGgxY3BCbE1rUHJEOUxWSA?oc=5",
+      "source": "이투데이",
+      "published": "2026-10-07 17:24",
+      "summary": "석유관리원, 코이카와 맞손⋯감사기법 교류·내부통제 강화 체계 구축  이투데이",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b63006a2092c"
+    },
+    {
+      "title": "코이카-석유관리원, 교차 감사·전문성 제고 등 감사 역량 강화 맞손",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tM0t2Tm9taDlob0JGU1dFVkFsWjFtb0FqTTZMT2g5VkJ5NWhhMjlRZE9WcWRpaXFfUXpiRmRieElUcGtpRnJKdjFhSWtUaHM4anhGdG1GdUViZw?oc=5",
+      "source": "브릿지경제",
+      "published": "2026-10-07 17:18",
+      "summary": "코이카-석유관리원, 교차 감사·전문성 제고 등 감사 역량 강화 맞손  브릿지경제",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2bd9e63ee22d"
+    },
+    {
+      "title": "감사 기법과 전문 인력 교류로 내부통제 강화…석유관리원·KOICA 맞손",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Oa3VucVJHdjZXeFRFXzFERk9TaDlRaEJfTWNSYTduRERPbWtPM1RJLURCbHo3Ymc3aU96by1yVm85R0pTM1p0RXdHcWNyR1JpRmgzVmdoeEhSV096UTcybGp0Q2lhTC10aTFfMExDNFk?oc=5",
+      "source": "에너지코리아뉴스",
+      "published": "2026-10-07 16:44",
+      "summary": "감사 기법과 전문 인력 교류로 내부통제 강화…석유관리원·KOICA 맞손  에너지코리아뉴스",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "94195cecec8e"
+    },
+    {
+      "title": "석유관리원, 한국국제협력단과 감사업무 협약",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNUlZ3RlR0bmVZVC1NMnpSN1pjbEgxSkdSbUJvSU1fUUZFbzhiM2o5cURmVGFtWVIyc3EySFNvaHR4VHU0LXhtckFHeThQY2NpSncyNHZfT3FiRzNOLUdGS1o4UUotd1BPdkJlbVkyOVA0S3R2NFJhVU11SEpaQXg2T09TSC16NGVGX0g4VE9CeFh1MXVsNFJfczRqWW1VNm45bklnSG1mY05ZcEVLY2xubzZsaGdHUVdDVXg1VjhwZmlPUW9QcVdFclhyUEp1SzJoc240VVlSV0RwZ29pVWlQR01XaXc4NndRZmp6aWxZQlg2RlR3cGZ2Ym9ZemRfaFJuRDI0OWR2d2FCYW1pakVocUtGNVlQYVVpTVJVZnVuWGFuSDczajExNXgtekI?oc=5",
+      "source": "데일리안",
+      "published": "2026-10-07 16:23",
+      "summary": "석유관리원, 한국국제협력단과 감사업무 협약  데일리안",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "01e3bb9d5c50"
+    },
+    {
+      "title": "코이카-한국석유관리원, 감사 전문성 제고 위해 맞손",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFSVppb3RVeUVkMzJVZnZwQ053a011N0d2MHVrbmlTNDlmOHdsUk9DajVXdXdtd2xpZnNyOGgzVWk0WkoxSXlkOVRWX1BKb1VWcHZGZ0phd1RJOFZKUXhpSHBiU0d4MHV4LTBQc2lqaVRHUVFn?oc=5",
+      "source": "부산일보",
+      "published": "2026-10-07 16:09",
+      "summary": "코이카-한국석유관리원, 감사 전문성 제고 위해 맞손  부산일보",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "15424f858418"
+    },
+    {
+      "title": "코이카, 한국석유관리원과 감사업무 협약 체결…내부통제 강화",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB5OHo4bmxSOE82VWxCY2U2VG9YWDZvRHU2WmpRMGdNbFFMWWctWnNONnQyZXNQbnN0eFJGRndIM3FuQkxJcmdCaVo5T0Nld01CX1o5YTEyWEszQnZ6UmdaU1E0TzUwaTF0SkZmNllyRkc?oc=5",
+      "source": "스마트경제",
+      "published": "2026-10-07 16:05",
+      "summary": "코이카, 한국석유관리원과 감사업무 협약 체결…내부통제 강화  스마트경제",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "코이카, 한국석유관리원과 감사업무 협약 체결",
+          "source": "ACN아시아콘텐츠뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hQk9iOU9mUE56RExRX0pSR281eHNPVG9EQTY4TWVCS29wSGQxMmJjT29hOHljaE42aGVVckJNVFB0Z0pXNDU1Y2FDN0dBLUtaRE9tT0Q1d2MxbmVqZFFsTUw5NmVqalk4?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8cdd383f93e7"
+    },
+    {
+      "title": "[게시판] 코이카-한국석유관리원, 감사 전문성·내부통제 강화 협약",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBMZlkxdlpndDJiUkxJelpQcVU5S2ZZOHlCcjVRQ0tnTWJyQ19KUHdBWWIxaG03MHgxT1RmMVdGbkszemg2ZV9GcEQwOXR5MEQ2clhnTG9VRF9uaThFZ2ZOVNIBYEFVX3lxTFBMZlkxdlpndDJiUkxJelpQcVU5S2ZZOHlCcjVRQ0tnTWJyQ19KUHdBWWIxaG03MHgxT1RmMVdGbkszemg2ZV9GcEQwOXR5MEQ2clhnTG9VRF9uaThFZ2ZOVA?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-07 16:00",
+      "summary": "[게시판] 코이카-한국석유관리원, 감사 전문성·내부통제 강화 협약  연합뉴스",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1b87467cf836"
+    },
+    {
+      "title": "코이카-한국석유관리원, 감사 역량 강화 협력",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rZzNvMUtJXzB1QjZCLXN6SDVBVU5zZUc2YURvWFQ4LXdvaFdzRTltUEd5dzlFckZQQ3BUc0Jwam1KNXVTQjdXQ0d4NHZLc0gzSTViSFdUaU85Nkk?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-10-07 16:00",
+      "summary": "코이카-한국석유관리원, 감사 역량 강화 협력  에너지경제신문",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "코이카-한국석유관리원, 감사 역량 강화 협력",
+          "source": "로컬세계",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBPR0JHcEVLN3N5V1hfRk84Tzd0aUFDVDRyM1dFTHhnenF2WkxYZGNxbVhSUm4wZmdLNDNIX1M0YTBuV2RIX3Q5R2J6a3BBbnJGSi01NzhmaExEWUJqZERkddIBWEFVX3lxTE03Wl81Q1lvY3ZhUVBDTUdXU3dHbFMwUXRhbW80bEE0ZDRNakdmVWRWNHNpOG1kNEVHMmQweVhmbE9NejdoeW1nS2VNY2NMdW9ndnpDM3Z2b00?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e27707c0accb"
+    },
+    {
+      "title": "SK에너지·HD현대오일뱅크, 44조원대 유가 담합 의혹…공정위 제재 착수",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhUDJPVGtMOVMxRVVmQlBCMjg5akR1b1cxSy1VbXN1dWw4YldOekk5RXZnLUk4MUxrTU16U1pLeUpVR195VXM1Q2djRzlZSk84NnBuaWtLYjFIWFNpX005bldKTlRHODV1UTNoYl9uRjBVMlU00gF0QVVfeXFMUGFQMk9Ua0w5UzFFVWZCUEIyODlqRHVvVzFLLVVtc3V1bDhiV056STlFdmctSTgxTGtNTXpTWkt5SlVHX3lVczVDZ2NHOVlKTzg2cG5pa0tiMUhYU2lfTTluV0pOVEc4NXVRM2hiX25GMFUyVTQ?oc=5",
+      "source": "포인트데일리",
+      "published": "2026-10-07 17:47",
+      "summary": "SK에너지·HD현대오일뱅크, 44조원대 유가 담합 의혹…공정위 제재 착수  포인트데일리",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [
+        {
+          "title": "SK에너지·HD현대오일뱅크, 44조대 유가 담합 혐의…공정위 심의 착수",
+          "source": "여성신문",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9FQk12dkZMOGxQRmlEMURFZVNoYm1DYzdGZk5BTmxYXzZTb0lfVTEzbUZRVlQxWlNPMzZfR0xlS2ZoWllUSTFlbmtPU05lcE5GaklQVkVleXlFZ2VfcnEyWVRKQ0E4Y2hDaXZiVWNkbV9kUjDSAXNBVV95cUxPRUJNdnZGTDhsUEZpRDFERWVTaGJtQ2M3RmZOQU5sWF82U29JX1UxM21GUVZUMVpTTzM2X0dMZUtmaFpZVEkxZW5rT1NOZXBORmpJUFZFZXl5RWdlX3JxMllUSkNBOGNoQ2l2YlVjZG1fZFIw?oc=5"
+        },
+        {
+          "title": "SK에너지·HD현대오일뱅크, 44조대 유가 담합 혐의…공정위 심의 착수",
+          "source": "여성신문",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9RakVvbHdRWXU5VEljSEpwT2tKTzltdURra2s2QmpJMVhRVWxvN3BxUy1YUmI4TEZJMlRyMVEtWlhlbjBvYlpmVEg4U2xyWUhueVFYZi1EbWVWajU2Y2lEZVotMXBxendQQzIxV0E4Z9IBc0FVX3lxTE9FQk12dkZMOGxQRmlEMURFZVNoYm1DYzdGZk5BTmxYXzZTb0lfVTEzbUZRVlQxWlNPMzZfR0xlS2ZoWllUSTFlbmtPU05lcE5GaklQVkVleXlFZ2VfcnEyWVRKQ0E4Y2hDaXZiVWNkbV9kUjA?oc=5"
+        },
+        {
+          "title": "공정위, SK에너지·현대오일뱅크 44조원대 유가 담합 혐의 심의",
+          "source": "딜라이트닷넷",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAwc2NjMVhDNlBudTJMaDlES0txenNlTjFqSmYya1U4NEhYaFRVTHRMWWxCSTQzWE5nTTNzSGxESVA1MmVSQkdxRTg3ZUxpUDhjNzZLNnktVWRkRUlhMzEtMFc1WGo2WDVhYWJiVGZMT3lud9IBckFVX3lxTFAwc2NjMVhDNlBudTJMaDlES0txenNlTjFqSmYya1U4NEhYaFRVTHRMWWxCSTQzWE5nTTNzSGxESVA1MmVSQkdxRTg3ZUxpUDhjNzZLNnktVWRkRUlhMzEtMFc1WGo2WDVhYWJiVGZMT3ludw?oc=5"
+        },
+        {
+          "title": "‘44조원 유가 담합’ 의혹 SK에너지·HD현대오일뱅크 공정위 심판대",
+          "source": "포쓰저널",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2SE0tSE1qbHBxOUVXUTNCRVJhLWwwTDhYazJRV1pHQkkwMWNwdDY1RDZXeDNGT3FuMkc1aGpVWFdKUjgybUFpUUtEVnVHWnRkbEQxd2RycENsa1BvUzNHT2I1VFI?oc=5"
+        },
+        {
+          "title": "SK에너지·현대오일뱅크, 44조원대 유가 담합 혐의... 공정위 심의 착수",
+          "source": "인포스탁데일리",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zdzFMalkzSXhZTEVZUGd5WWYydUw3VTRhR2JaN0NRUmRnM3I1VHY5azl1S1V5UTJHU0N5QVp1aDYyLTZpa1NDU0JNQk5WRXVPajJ0V2U1dzBPS3ZLMWtOZEhXSWJmQ1lTRmszNURCWDZzNHpLZmc?oc=5"
+        },
+        {
+          "title": "공정위, 전쟁 틈타 44조원대 유가 담합한 SK에너지·HD현대오일뱅크 제재 본격 착수",
+          "source": "생생비즈플러스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5UVGV1MU0zRk02MVFSNHR3VVlFOEhQT3Q5VWt0X1NieDFXMVIzTTZnMXZpUndxVlZWLUNzdkRiQTZYb2M0WFlEcjRzNDhkd0lVUXA0Zy1ZNWRhLWcxUjdTUnRLbjJuT2E5Z1ZmQw?oc=5"
+        },
+        {
+          "title": "SK에너지·현대오일뱅크, 44조원대 유가담합 의혹‥공정위, 제재 착수",
+          "source": "Daum",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE52X1BLRXZNcWdRVFZtZ3VwM0tFN2twaGMzQlhHUkY2OFlCQVVOVkFXd05vaE9DRlJPa2hERmxFczNMMzc4M1E4cDBiM0xVSG8?oc=5"
+        },
+        {
+          "title": "SK에너지·HD현대오일뱅크, 44조원대 유가 담합 의혹",
+          "source": "애드뉴스인천",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ndVlxcnhBTGRxUzRKaEg3TUdKOTg0ZWh6dlFKNzdjcWd6MlI5cXA1Q0lvVGtlU2pmSGpGREtld2NNMkZhalJfb1hzdnRWdkZEbG0td1NjR1ZQNDl3Ykd5ZWwtaEFtd2NvQTFj?oc=5"
+        },
+        {
+          "title": "'44조원대' 유가 담합…공정위, SK에너지·현대오일뱅크 제재 착수 - 머니투데이",
+          "source": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5LZ05GQ2dKNy01Nlp1djdxZnFBc0xJOXhJVHlpNlk5UUp0VjJlcXYyTTluQmQ4OVhOTWtOOUJGcDFmVUhTREMtcGktYXp5d1pCUVYzV292TmlOeUFrRWh4NDBINUtucGk4ZzFB0gFwQVVfeXFMTzc4SlFWb2J6RzdGUFNRclQ2OXBrSGdDZ3RWcWFVR2NTdDVEOV82SEYtTkZKcE9SQmpGU0pySW1RVlZESkM4NzJkeWR6OHBnbWF3UVhDd19YOS1yc1AtT1Q0Q2FQU0JIaUZERkhkTU1ZTw?oc=5"
+        },
+        {
+          "title": "'44조원대' 유가 담합…공정위, SK에너지·현대오일뱅크 제재 착수 - 머니투데이",
+          "source": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE83OEpRVm9iekc3RlBTUXJUNjlwa0hnQ2d0VnFhVUdjU3Q1RDlfNkhGLU5GSnBPUkJqRlNKckltUVZWREpDODcyZHlkejhwZ21hd1FYQ3dfWDktcnNQLU9UNENhUFNCSGlGREZIZE1NWU_SAXBBVV95cUxPNzhKUVZvYnpHN0ZQU1FyVDY5cGtIZ0NndFZxYVVHY1N0NUQ5XzZIRi1ORkpwT1JCakZTSnJJbVFWVkRKQzg3MmR5ZHo4cGdtYXdRWEN3X1g5LXJzUC1PVDRDYVBTQkhpRkRGSGRNTVlP?oc=5"
+        },
+        {
+          "title": "SK에너지·현대오일뱅크, 44조원대 유류 담합 혐의…공정위 제재 착수",
+          "source": "SBS Biz",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE11d0hsTGpSZ2ZVZXBGUEU3YkNNMHFJTmlZTUVyUzhpNVlaOXFJNnhibTNTcFoxcF82TG9ZcFV6TlpwYnlXQlE0N3RFVUNvQUV5c0lpMEI0UzPSAVhBVV95cUxNdXdIbExqUmdmVWVwRlBFN2JDTTBxSU5pWU1FclM4aTVZWjlxSTZ4Ym0zU3BaMXBfNkxvWXBVek5acGJ5V0JRNDd0RVVDb0FFeXNJaTBCNFMz?oc=5"
+        }
+      ],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3e36a87ea2fe"
+    },
+    {
+      "title": "공정위 “SK·현대오일 44조 담합”…정유사 “이미 공개된 정보” 반발",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1IcFdtRnUzeUhjODlaM2t3alZvekZBcmk5bWxWRU1LNjhqYV8zdEhEN2tuV2FPemw2S2dzTnV2R3lTdjc2RnZ0bkJxcDdNTGVoX1h2VS1YMzZveWhKOTB1ajBn?oc=5",
+      "source": "미주중앙일보",
+      "published": "2026-10-07 17:16",
+      "summary": "공정위 “SK·현대오일 44조 담합”…정유사 “이미 공개된 정보” 반발  미주중앙일보",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "70aefa715132"
+    },
+    {
+      "title": "SK에너지·HD현대오일뱅크 4.6조 과징금 폭탄 맞나…공정위, 4년 유가담합 판단",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtV1QxZU5xclpQaTd4QkpKb3l1MmtDNVV6SlRtVVQ0NTA0MGJhbnRCTlZZdm5GQ2gzbS1hamZKOV95X19WTy1qeWZ0ZXEwWjZiY05rMWRHbS1MQVNkTmRQdGRXTzdVZ2Vmd28tVnlR?oc=5",
+      "source": "이지경제",
+      "published": "2026-10-07 16:54",
+      "summary": "SK에너지·HD현대오일뱅크 4.6조 과징금 폭탄 맞나…공정위, 4년 유가담합 판단  이지경제",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "과징금"
+      ],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d6be44a224eb"
+    },
+    {
+      "title": "공정위, SK에너지·현대오일뱅크 '44조 원대 석유 담합' 제재 절차 착수",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xWnFBWWZfVHpZdnRQVG5YdFlHU2RETnZ1dndMdDd3M1NRbWZCUXZIX2wwa0ZLeVNFQU8xSVpuQktoZDA4bUVGdVlkcUJKeFppdUpKbnhncUFVWlNQa19ZUGxzUEhRdmc1QkIw?oc=5",
+      "source": "내외경제TV",
+      "published": "2026-10-07 16:33",
+      "summary": "공정위, SK에너지·현대오일뱅크 '44조 원대 석유 담합' 제재 절차 착수  내외경제TV",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [
+        {
+          "title": "44조원대 석유제품 담합 의혹…공정위, SK에너지·현대오일뱅크 심의 착수",
+          "source": "디지털데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12b1llSVBpNXlOb2FiZzV0aWVTbGoxUHBjSkJBMEd1SWxUVnFHMG1DQVV4RUlNX0VxcFZPMGlCVHBSWF9EZmVDczFjOGZXVEd5cURSR2x5dm40NTFWakFMbGdMVVA?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9b859e33e31b"
+    },
+    {
+      "title": "국제유가 불안 틈타 44조 원대 기름값 담합 의혹…공정위, SK·HD현대오일에 칼 빼들었다",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5QeGgtRDc3OFk4dWE0UWFab2ZoR282c20ycHlWTl9NTkZzblpoWjVfM2dtd0F5RzVCZHZOZVB0SzFlcmRYWnVNZG5pUXF1NkhwM1JZdFFFQTlKaFE2alhNdHRqSTJyeWhXN0xrUENLeVlTUQ?oc=5",
+      "source": "인더스트리뉴스",
+      "published": "2026-10-07 16:28",
+      "summary": "국제유가 불안 틈타 44조 원대 기름값 담합 의혹…공정위, SK·HD현대오일에 칼 빼들었다  인더스트리뉴스",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9ce2086312ec"
+    },
+    {
+      "title": "공정위, SK에너지·현대오일뱅크 석유제품 담합 혐의 심의 착수",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGU3VzNUVSQU9HY0dQOE1yMFZZbjRtS1Nxd2JPZUxON1BaVG80QzZzbXdUSEhMdXNiQ3I4LVhJV24xaXBSUThVVGl4SDlTZmI4YTlsd05mNGkzYXhSQXdZUjFjN2ZiZk0?oc=5",
+      "source": "중소벤처기업신문",
+      "published": "2026-10-07 16:12",
+      "summary": "공정위, SK에너지·현대오일뱅크 석유제품 담합 혐의 심의 착수  중소벤처기업신문",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [
+        {
+          "title": "공정위, SK에너지·현대오일뱅크 석유제품 가격담합 사건 심의 착수",
+          "source": "쿠키뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vazM5aV9iVklvaElienQ4RWhkemFkbEVQdEJQM29IbDNQYlFIbUxubWFNYXJBaFJaNU5NUVRkNXAtWi10US1vRXJ1ZTZ1Y2xOYy1YU0czbFVoODU0V2luaXpxQQ?oc=5"
+        },
+        {
+          "title": "SK에너지·HD현대오일뱅크, 석유제품 가격 담합 의혹 … 공정위 심의 착수",
+          "source": "워크투데이",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBISXpTSjZ4Qmo5X0F5TUVlLUVRcEFBMFpGSjdDVmd6SEp0aE1xNUhJblFkYnJWcDkyV294VVd0QnlOdnV4VENReUs5eHlNWHVTajVsMkFTUXJEQjlHUXN3WnVib1NfN3FPdDZsVQ?oc=5"
+        },
+        {
+          "title": "공정위 ‘SK에너지·현대오일뱅크’ 유류가격 담합 혐의 심의",
+          "source": "Daum",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1DSm1yN1JoY01sT1hlcHVLdjRqOThyQlJ6bHU4M2lidElheXByZzFOQTFDYk1Ba0tEUHE3aTkzRzEzclBfSkQ4aUNjYU9OZlE?oc=5"
+        },
+        {
+          "title": "전쟁기간 석유제품 담합했나…공정위, SK에너지·현대오일뱅크 심의 개시 |",
+          "source": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5DUGgzZHNTZWxIZDc3VXRCNVZyWU14eDItTFQ3VDJ2Wk5MWjU4Z2t3bWxLMVh5dmFYdzBlZWFvT21EYWt6SmJrM1hFRHpPOVNSbUtfVjZsUmI3UWlTZlQtRkVEdWZzbjBWWEVrQlFPZV9saUhH?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2ecde51109b5"
+    },
+    {
+      "title": "공정위, 국제유가 불안정 이용한 '44조원 유가 담합' 의혹 심의 착수",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0wSzYwR0pIdmdMN1VKVTFtUFdlNXFxS1R1N3lNZFZTQjJkQVZsLXJjSHZta0trRlRGM0lUZW5UMGwyMjVXQjhOeGI2TUxnVFphU2x1TE9NQ1pwdVFVNklDNGMxY2E4WjZXWjRtcE5BbzfSAXNBVV95cUxOY1R2cng3ckx6NWZ1TmJkcGR3cjRzbHYyOVQ4RkkwYTIyRjVKU0l0TXY2MGRqd0hVdnE5WFRvM203aDNTWHAxRUZ1SHJRc3k0Y2JOOVF5ZnZ5TmtIZ0NoVGZvdzdZX1ZZTmRKOUlwV0o5UkRv?oc=5",
+      "source": "화이트페이퍼",
+      "published": "2026-10-07 15:58",
+      "summary": "공정위, 국제유가 불안정 이용한 '44조원 유가 담합' 의혹 심의 착수  화이트페이퍼",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f3ff6a03539d"
+    },
+    {
+      "title": "공정위, 4년간 44조 유가 담합 SK에너지·현대오일뱅크 제재 착수",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5xb0lySnV6VXRiTXVYU0l5RUhfRGhiblVrVkJPQlN1S0tYNXpic19SRW41OUlLSXdxZE1DWEhaMnROM2xpeExJdWlKMFRsNExnU3fSAVNBVV95cUxONW5aVFhsZXN3MWgyNTU2SUdXNWdod0VLbUFTUTJfb2pxa0Nkd3d4VFZlazhFcE9XeHJOYVllR2g5V2VKbUtUNFM2UGtxNjJ2WFN0VQ?oc=5",
+      "source": "서울경제",
+      "published": "2026-10-07 15:43",
+      "summary": "공정위, 4년간 44조 유가 담합 SK에너지·현대오일뱅크 제재 착수  서울경제",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ef496955da52"
+    },
+    {
+      "title": "\"이미 공개된 정보가 담합?\" … 정유 2사, 공정위 제재 착수에 \"충분히 소명할 것\"",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMFJNU1NrdTM4R2lRM0lsYXRGYTdHNHNmQVBGZ1VUTmZJUFlnUXBVMlUybHZ1ZEZsbWctSTZMd0U2cElUaFJJNFFDMWp0WXVERmtkNUVydGpYUmtkZzd6bndmSDM4LTBKRXdhT2o1T01jX01CZUlDNFpoaDZ4RTBMZNIBgAFBVV95cUxPMFJNU1NrdTM4R2lRM0lsYXRGYTdHNHNmQVBGZ1VUTmZJUFlnUXBVMlUybHZ1ZEZsbWctSTZMd0U2cElUaFJJNFFDMWp0WXVERmtkNUVydGpYUmtkZzd6bndmSDM4LTBKRXdhT2o1T01jX01CZUlDNFpoaDZ4RTBMZA?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-10-07 15:38",
+      "summary": "\"이미 공개된 정보가 담합?\" … 정유 2사, 공정위 제재 착수에 \"충분히 소명할 것\"  뉴데일리",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [
+        {
+          "title": "\"이미 공개된 정보가 담합?\" … 정유 2사, 공정위 제재 착수에 \"충분히 소명할 것\"",
+          "source": "뉴데일리",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5xR09MNEtWallXa0k1dFVPQjc2MFFJdXduSEhsOXBZalVFNmRuTWprVFA4N1hiV2I0MXl1TWdsY0N0TThmVmttblRpRTdyWVlvMTF2QXZvN01fcmdlSFJndEZ6TERlS1c3QXozSERTVzdfMmxGN0U2WEJ4TdIBgAFBVV95cUxPMFJNU1NrdTM4R2lRM0lsYXRGYTdHNHNmQVBGZ1VUTmZJUFlnUXBVMlUybHZ1ZEZsbWctSTZMd0U2cElUaFJJNFFDMWp0WXVERmtkNUVydGpYUmtkZzd6bndmSDM4LTBKRXdhT2o1T01jX01CZUlDNFpoaDZ4RTBMZA?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0ca9d402344b"
+    },
+    {
+      "title": "국감 증인석에 4대 정유사 수장 줄소환 임박…가격담합 의혹 풀릴까",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9HbXFfZ1lXWHdEa21lbXJhS0dXVjJ6czU5b1dFMk1fZWxDWl9femdGbVNUNWFEbnZSamU2TzdDd2o5VVdHUGFPamxxaGVPbmFSdkJmbHRCN3JDNS1GTHRRM2xJYzNBcHByd2F6bA?oc=5",
+      "source": "세정일보",
+      "published": "2026-10-07 15:27",
+      "summary": "국감 증인석에 4대 정유사 수장 줄소환 임박…가격담합 의혹 풀릴까  세정일보",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "정유사 유가 담합 의혹 국감 증인 채택",
+      "id": "ff7e1258742e"
+    },
+    {
+      "title": "공정위, SK에너지·HD현대오일뱅크 유류가격 담합 심의 착수…관련 매출 44조",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdWY3VE9DSEludUEyQVVrbVY4VEE5d2hGWHNKZE0wMFhCQ281Y1RUT3JiZndiNHcwZjhuWkt3WUZWTmg5a0dGbnRnY2stS0dhLUp1VTBDZFlLX0FiU2dnamNIeVpfUG9nTG5aT05TdGZtRkt5LS1CODFZc3dLaW9HQ1lwempqdw?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-10-07 15:27",
+      "summary": "공정위, SK에너지·HD현대오일뱅크 유류가격 담합 심의 착수…관련 매출 44조  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [
+        {
+          "title": "미·이란 전쟁 틈타 휘발유 가격 담합했나···SK에너지·현대오일뱅크 공정위 심의 돌입",
+          "source": "Daum",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vd3huZk41RnZsOFZ5SDZYME1RZjB2T1Bfb1NORHQ0VE44VnV2alU1c2VhSTYzeXIxQnEwcTY3RnBGVHlPY2FkY0tRU2xSMTg?oc=5"
+        }
+      ],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "정유사 유가 담합 혐의 공정위 심의 착수",
+      "id": "7fbde0a1f1f6"
+    },
+    {
+      "title": "전쟁 틈타 ‘44조원 유가 담합’...SK에너지·HD현대오일뱅크 제재 심의",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UbENXN2NlMVB5eDR1VVZlbWlKWEMzcWluTUl0Q01OMzFfRmNxUUJlU0plMEtaX2F5SnVsMzYwWVd1R0Fya1lZaVZId1dqREtBcG9nc3hiek9ZbXRWX0I2djAxb9IBZ0FVX3lxTFBKdHJXR3BRMEVZVzQtM1NLUTZvRG1sdGVxQ3FfZE54NGlpeTVnbXNyS2RiQTV4SW5nelhObWUxQnFjT3dLd2lLUFIwY2g4c2ZwV2NEV3NWNlRxdllySHFHWk9HLUg0QU0?oc=5",
+      "source": "ABC뉴스",
+      "published": "2026-10-07 14:52",
+      "summary": "전쟁 틈타 ‘44조원 유가 담합’...SK에너지·HD현대오일뱅크 제재 심의  ABC뉴스",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [
+        {
+          "title": "전쟁 틈타 44조대 유가담합…SK에너지·HD현대오일뱅크 심판대에(종합)",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LQTNHNVJMY0RiT0h0TTN6cEdreTN5a3ZOb215alFaWlFmMnF5cWU1Z2tIcE8wSC0tcjlDUEs2aU4zaUpGNWljdlFUS2VrMDlCY1UxLUhuS25JWWvSAWBBVV95cUxOeHJVRE9raGNod01uREJMLTBMVzdMcmhIdkRsZUNzZTA1dmhjaXNIeFFIb05qX3l4WG0tZHZnR2tvN1RtLTk5Sm5mSWVMaWFTX0hqUUFCM3huZzF1Tld6TTI?oc=5"
+        },
+        {
+          "title": "전쟁 틈타 44조대 유가담합…SK에너지·HD현대오일뱅크 심판대에(종합)",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54clVET2toY2h3TW5EQkwtMExXN0xyaEh2RGxlQ3NlMDV2aGNpc0h4UUhvTmpfeXhYbS1kdmdHa283VG0tOTlKbmZJZUxpYVNfSGpRQUIzeG5nMXVOV3pNMtIBYEFVX3lxTE54clVET2toY2h3TW5EQkwtMExXN0xyaEh2RGxlQ3NlMDV2aGNpc0h4UUhvTmpfeXhYbS1kdmdHa283VG0tOTlKbmZJZUxpYVNfSGpRQUIzeG5nMXVOV3pNMg?oc=5"
+        },
+        {
+          "title": "전쟁 틈타 44조대 유가담합…SK에너지·HD현대오일뱅크 심판대에(종합)",
+          "source": "매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBWdUZMWkRJWURWMGJncnZXVm1KT1E1YjZ3OWh6emdYVUctSlVQX0VnaGxUM3ZrTmk2a19yQ3hiOFdSM3dFMHVKb3daV29adl85LVE?oc=5"
+        },
+        {
+          "title": "전쟁 틈타 44조원대 유가담합…SK에너지·현대오일뱅크 심판대에",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VbU0xXzhTWERZWVY5UWZabmMyV0N1OUVFQ1Ezb2h0OEJQdF81d3AxZTlXUjJzSlB0c2luUDUxdlVpM3FzamszakRxajRpLUhBWFBmdUhlODZ2RTDSAWBBVV95cUxQY1kwYWkxYjNOLWp0QWlaZ0dERUk1UVhPYUVTc0ZjdWZldWdydVFCOE1ub2pCd2lVZEFaMTdIb0x5SkFlck1TSXNJd1ZUOTBTWkwxV193M0EwSFdNLTJXNlk?oc=5"
+        },
+        {
+          "title": "전쟁 틈타 44조원대 유가담합…SK에너지·현대오일뱅크 심판대에",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjWTBhaTFiM04tanRBaVpnR0RFSTVRWE9hRVNzRmN1ZmV1Z3J1UUI4TW5vakJ3aVVkQVoxN0hvTHlKQWVyTVNJc0l3VlQ5MFNaTDFXX3czQTBIV00tMlc2WdIBYEFVX3lxTFBjWTBhaTFiM04tanRBaVpnR0RFSTVRWE9hRVNzRmN1ZmV1Z3J1UUI4TW5vakJ3aVVkQVoxN0hvTHlKQWVyTVNJc0l3VlQ5MFNaTDFXX3czQTBIV00tMlc2WQ?oc=5"
+        },
+        {
+          "title": "전쟁 틈타 44조원대 유가담합…SK에너지·현대오일뱅크 심판대에",
+          "source": "매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5idGNQQ1h4RUR1RW11U1dKMXlPcl8wR3ktQnJOdndfblQzRFRnVHRIS0V1TW16c3hnRDZNaDhnMkExUnFKQjg0QXpTWFNKcDdjNlE?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "68644c1846b6"
+    },
+    {
+      "title": "전쟁 틈타 유가 짬짜미?…SK에너지·현대오일뱅크 ‘44조원’ 담합 의혹",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9SX2tRNDZNZWdkLXZrSWRNTkc1ekFOaXJHNEZxQ2FIVEhjb1gtb28yUEh4MHBjaG9kSWFGVVJKYThkU19SZWxKRjFOc0Q5MllmMFduSlh3?oc=5",
+      "source": "매일경제",
+      "published": "2026-10-07 14:41",
+      "summary": "전쟁 틈타 유가 짬짜미?…SK에너지·현대오일뱅크 ‘44조원’ 담합 의혹  매일경제",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ed0665b279f8"
+    },
+    {
+      "title": "SK에너지·HD현대오일뱅크 44조 대 담합 혐의…정유 4사 국감도 앞둬",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Ya3RycnptaGNLckYxQmRianV6YlVYbW91djJHZFB3ZmFPUkxEQ0RZRFpVX2x4c1BqVHgyMVpfTGpqeGpiaWgyVFU4UElxcUtJX0Z5WkV5UGtjdGc1WXU2LWZaU1BWYW9tcmdEVjN6c9IBckFVX3lxTE5pSHpkSkFOQUZRT2dhLWwwbTByM0tnYnJWR0hhNy04ZDVnbkswd3U5ell0TWZUMHZHdEQ1eDVCWVN5SGFxREZIb1JNSllzVG1rV19nWk1hTm5jQVpUSG1XYktzY2s2VUxRZHlPZDNmRld6QQ?oc=5",
+      "source": "팝콘뉴스",
+      "published": "2026-10-07 14:15",
+      "summary": "SK에너지·HD현대오일뱅크 44조 대 담합 혐의…정유 4사 국감도 앞둬  팝콘뉴스",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "439e1a65087f"
+    },
+    {
+      "title": "정유 양대사 '가격 담합' 심의…과징금 최대 4.6조원 거론",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBBR3ZaNE5QcEZXTHJOa3h6c3NRWjFCOWxMRW9XdGlRb2tyRjZzTVZlZmZWNFFxaE8wUWsyYU01VDVzYVBueF9lTEVvMlFNLXliUm9UamFld1VmWkZmS25yMzBmYlh3ZEVQLUF1bEdrbFU?oc=5",
+      "source": "리드경제",
+      "published": "2026-10-07 14:10",
+      "summary": "정유 양대사 '가격 담합' 심의…과징금 최대 4.6조원 거론  리드경제",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "과징금"
+      ],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6b4b7b139828"
+    },
+    {
+      "title": "국제유가 요동 틈타 가격정보 공유했나…정유사 2곳 ‘담합’ 심판대",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OSHRpNkEzNlA2QTM2d181TklaRVBPbWlCczY2M3dHdjNHcG1aUEtNRXl6cnRIZkhHbDRGc2EzTW54QjVRSERtclAtWnpVT1VkODNBLWpR?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-10-07 13:47",
+      "summary": "국제유가 요동 틈타 가격정보 공유했나…정유사 2곳 ‘담합’ 심판대  헤럴드경제",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7f01126ae446"
+    },
+    {
+      "title": "정유업계 가격 담합 의혹 본격 심의…공정위, SK에너지·현대오일뱅크 심사보고서 송부",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE05ZW5PcjdNeS1yZnlqc1BGZTFGVXZBSllzSzF1cjFURXZ3MHlIYkl2eVNpcXFGMjAxV1h5c2xlRjRmT0E?oc=5",
+      "source": "한국공공정책신문",
+      "published": "2026-10-07 13:40",
+      "summary": "정유업계 가격 담합 의혹 본격 심의…공정위, SK에너지·현대오일뱅크 심사보고서 송부  한국공공정책신문",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [
+        {
+          "title": "정유업계 가격 담합 의혹 본격 심의…공정위, SK에너지·현대오일뱅크 심사보고서 송부",
+          "source": "유스연합",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1xaGw4alFDbjFBT20xZGFucENhTmxwaXppVFdFeTJLUkZmWE9Ca0o0dU9zemZ0RV95bmVCdzJJRkdxQldlclBIOVNFcWNYWElDZTE0?oc=5"
+        },
+        {
+          "title": "정유업계 가격 담합 의혹 본격 심의…공정위, SK에너지·현대오일뱅크 심사보고서 송부",
+          "source": "대한청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KaERuQUxQeWM5bTEzNTFreG1RRHBwb1FXZjRYSURXQUN2emcwcGxFYU1IdW9mU0l5QXRCRzFJa0lfMDhCbUk3NUFaTXRiYkJhblN4YlN3?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "22423560ca5c"
+    },
+    {
+      "title": "44兆 기름값 담합 의혹…국내 정유사 2곳, 공정위 심사대 올랐다",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4wcEJkOEF4SVN2YmN6VHFFQ1VIbDhsU3RvbmVybVFsSEdRbkZFc21oblpjQmFyQk9TY3lEUVNQNjR1Qkc0X0xuNzN1b25rSGJkWDROV3hYU1V3SlNjZmJqb2p2MmZRUmVCcXN0YzV30gFuQVVfeXFMTjBwQmQ4QXhJU3ZiY3pUcUVDVUhsOGxTdG9uZXJtUWxIR1FuRkVzbWhuWmNCYXJCT1NjeURRU1A2NHVCRzRfTG43M3VvbmtIYmRYNE5XeFhTVXdKU2NmYmpvanYyZlFSZUJxc3RjNXc?oc=5",
+      "source": "뉴시안",
+      "published": "2026-10-07 13:16",
+      "summary": "44兆 기름값 담합 의혹…국내 정유사 2곳, 공정위 심사대 올랐다  뉴시안",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "38e25fd1cb3d"
+    },
+    {
+      "title": "44.1조원 규모 유가담합···SK에너지·현대오일뱅크 공정위 심의",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5XandmY0NWYXlrdE5YRVRVRGlpN1o1RnBwS2VRRjVrTUcyNVEyd3dtMXN6NEtibFFoNUxQU2ROR2tRRkNXVGtfQ2Q0c1VUMVlrUzNKX2x4V2NmTXZwTUtvcURJMFUtdFM1WlB6ZXNR?oc=5",
+      "source": "더리포트",
+      "published": "2026-10-07 12:25",
+      "summary": "44.1조원 규모 유가담합···SK에너지·현대오일뱅크 공정위 심의  더리포트",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0f3792da1e4f"
+    },
+    {
+      "title": "SK에너지·현대오일뱅크, 휘발유·경유·등유 가격 '44조 담합' 혐의…공정위 제재 절차 착수",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TbUwzdXUzaDRLelk5cW9XbjdXckpncFdHcmhJblBtendnb3kwVmpySWU3WlRFRXEzUVJSWUdTSmkxbE5rQUctWmFtemhyR3EwanRhVV9SLUoxVXE5ejdCOVZUN3BJRUkz?oc=5",
+      "source": "Queen 이코노미퀸",
+      "published": "2026-10-07 12:22",
+      "summary": "SK에너지·현대오일뱅크, 휘발유·경유·등유 가격 '44조 담합' 혐의…공정위 제재 절차 착수  Queen 이코노미퀸",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "47d5d5bed074"
+    },
+    {
+      "title": "정유사 2곳 유가정보 교환·가격 담합 의혹…공정위 심의 개시",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kU2dUaEJuUWp0SG5CdE4yTEdEWlNzZ3g0UVRESzFOX1Vma0daMF8zQXpnWS1lRThCRWt3TDE4eHpFSkhlQnhqUHptem9faDJBNzI3VTVDcFlLSk1LcEx6dV9KQUR0d19oZm9DWDNvdU03d3c?oc=5",
+      "source": "스페셜타임스",
+      "published": "2026-10-07 12:21",
+      "summary": "정유사 2곳 유가정보 교환·가격 담합 의혹…공정위 심의 개시  스페셜타임스",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7da0bc285c63"
+    },
+    {
+      "title": "SK에너지·현대오일뱅크 44조 정유 담합 심의…과징금 최대 4.6조 가능(종합)",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBoU3RUaHpLbmxfVWEzRThRTzlyYnRqVnAtWVVYSFJhZEhtX3BBTVpRZnZwWXJ6ME95bWNCMWlib3pwVFdSVEdGVXBqQVpKakFURTFYZTkxWUFDOFVEY1FuRG00R0Q3ckNpZFczek9ENkpIR1FrQUxEStIBeEFVX3lxTFBoU3RUaHpLbmxfVWEzRThRTzlyYnRqVnAtWVVYSFJhZEhtX3BBTVpRZnZwWXJ6ME95bWNCMWlib3pwVFdSVEdGVXBqQVpKakFURTFYZTkxWUFDOFVEY1FuRG00R0Q3ckNpZFczek9ENkpIR1FrQUxESg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-07 12:19",
+      "summary": "SK에너지·현대오일뱅크 44조 정유 담합 심의…과징금 최대 4.6조 가능(종합)  뉴시스",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "과징금"
+      ],
+      "duplicates": [
+        {
+          "title": "SK에너지·현대오일뱅크 44조 정유 담합 심의 착수…과징금 최대 4.6조",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54V2JBX1JyaldjdUxJR3lYMnc2NG95b0tzWmd6RFhacmQ5Nm5RdWdna3Z6RzhlaGEzSUdlRlhPNzBPQ3QyeVhOZ0ZlZkpqUE1GY3RXM0FJTW5qNHF1dUNsV9IBeEFVX3lxTE1rNlF0QnVJYXFVRzhnUndIN0lhZmRYM0FwVGt1QWU3NGpCQXotTDVMcWFWU2J5dU9Ya3VqSjlfLXRLYnhmMVV2eS1FZExNUzlxX2lKUXBtVElKNTFyYzZZSjdGeEQ4QmUyR0VydVdGR0lGVi1XQnRRQQ?oc=5"
+        },
+        {
+          "title": "SK에너지·현대오일뱅크 44조 정유 담합 심의 착수…과징금 최대 4.6조",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1rNlF0QnVJYXFVRzhnUndIN0lhZmRYM0FwVGt1QWU3NGpCQXotTDVMcWFWU2J5dU9Ya3VqSjlfLXRLYnhmMVV2eS1FZExNUzlxX2lKUXBtVElKNTFyYzZZSjdGeEQ4QmUyR0VydVdGR0lGVi1XQnRRQdIBeEFVX3lxTE1rNlF0QnVJYXFVRzhnUndIN0lhZmRYM0FwVGt1QWU3NGpCQXotTDVMcWFWU2J5dU9Ya3VqSjlfLXRLYnhmMVV2eS1FZExNUzlxX2lKUXBtVElKNTFyYzZZSjdGeEQ4QmUyR0VydVdGR0lGVi1XQnRRQQ?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5f0e1da022c9"
+    },
+    {
+      "title": "공정위, 러·우 전쟁 기간 휘발유 등 가격 담합한 SK에너지·현대오일뱅크 제재 착수",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQlJUclplbl9EYl9VRFBKSDBqeGhzQmx3SVd2LWR5X21DVUdDYURkNXAtZjZuZ0VoMEhzQm00R2hJbW4xSlZ6SkdWMGVHN3Y1ZUlfb1J6ZXBMM0dPSFBZR3dxekZzUlFObndxamZ3QWNZN2VYRmlJRVhuRjI2ZXhoTFl2WHBkazBFSGRTN0dn?oc=5",
+      "source": "조선일보",
+      "published": "2026-10-07 12:06",
+      "summary": "공정위, 러·우 전쟁 기간 휘발유 등 가격 담합한 SK에너지·현대오일뱅크 제재 착수  조선일보",
+      "sector": "energy",
+      "risk": [
+        "담합",
+        "제재"
+      ],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cb6a6b935f62"
+    },
+    {
+      "title": "이란 전쟁 뒤 기름값 담합 혐의…정유사 2곳 공정위 심의",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE83LXYwWXdTUXJuWllRT09MbVVJWFJrSUlpSVdzWVFRTFFwOFlHOUxGcFM5MU5CZTlzME8xOHFLQkszX05iZk9hWWZXS1JiVlk?oc=5",
+      "source": "Daum",
+      "published": "2026-10-07 12:03",
+      "summary": "이란 전쟁 뒤 기름값 담합 혐의…정유사 2곳 공정위 심의  Daum",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e4d39c173039"
+    },
+    {
+      "title": "공정위, 정유사 석유류 가격 담합 심의 착수…관련 매출 44조원",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90R3dPWk8yT1o0R2o3YnFSWWlka19TczI0UXl2VXFWRmFEb21KQmdhbHZOSFFSeGtrTlEwU0hYQWQxZ1JsZkxpTndjQ0lWeE9nOE5xVjF3SUU1Tmg4U05GLTZPMWtKUE5nOXc?oc=5",
+      "source": "Daily NTN",
+      "published": "2026-10-07 12:00",
+      "summary": "공정위, 정유사 석유류 가격 담합 심의 착수…관련 매출 44조원  Daily NTN",
+      "sector": "energy",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "68e27ddd6304"
+    },
+    {
+      "title": "이란, 호르무즈 해협 폐쇄 유지…‘불법’ 항로 봉쇄 예고",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LWUMxZHhzeVdjdF8zczB0aGxDWkFETW1OaVZLT2FjWDFOcW5FNGpaRk1FOVVxWjFrWkhibFJ2VGhWUmxkMkNwTUM1QlhJVXpyODZJZU9Tbzk?oc=5",
+      "source": "토큰포스트",
+      "published": "2026-10-07 19:51",
+      "summary": "이란, 호르무즈 해협 폐쇄 유지…‘불법’ 항로 봉쇄 예고  토큰포스트",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "58b4083aaa66"
+    },
+    {
+      "title": "최고가격제 국감 질의는 무산…정유 4사, 12일엔 ‘주유소 기름값’ 도마에",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBjWDFBZmVmWjlTMHVtSmZiWk9GQjNQbHJuMUVKVXVxOTlZYWplMU8wZ3ZXY2YyeUNCLWFwcDh1eW0tUjdZaVI1VzctTUFuTnoyVnZQcDFXb2hIS0g2b01PeHNfMlgyejFHR05wVmJn?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-07 15:16",
+      "summary": "최고가격제 국감 질의는 무산…정유 4사, 12일엔 ‘주유소 기름값’ 도마에  아시아투데이",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "91aef75e0318"
+    },
+    {
+      "title": "\"최고가격제 끝나면 경유 2200원?\"…11차 발표 앞두고 한 달 기름값 계산해보니",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aQkJncloyVVpQRGlnRUUxX0lsb2h2c3hWZk5UVzdobGV4cTdxZzYxS0pKUktrVEdNckVLZ3Foa0RhcmgwSjRjcUEtTDd5QXdySHF0bXEydDZTRzRsbzRFTk8xUjF6Xy14OVNSLU82T0VkTG8?oc=5",
+      "source": "경제시그널",
+      "published": "2026-10-07 12:00",
+      "summary": "\"최고가격제 끝나면 경유 2200원?\"…11차 발표 앞두고 한 달 기름값 계산해보니  경제시그널",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7e83e9b79499"
+    },
+    {
+      "title": "우크라, 韓 대러 석유제품 공급 비판…제재 정책과 극명한 대비",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jUEFkQ1lYRDZxVHJOWlRSU2IzckNLLU13V1JIR2w0Zzc0bHNWekhfWXhGUGVZTXNNeXFwZTJjandaZkNDSmFrTExuT3BaenlNNVBnekg1Zl9rQdIBWEFVX3lxTFB6Sk1GTVpLSWVOS0E5a0hFRmFzaGtYS1JxRXg3aDJCR2FWMHotck5wSmpDd0tPTkFYMTU1bVpYOFgxQmdrblRacnE3MHVsMG5hRlN5UTNjTnM?oc=5",
+      "source": "아주경제",
+      "published": "2026-10-07 09:14",
+      "summary": "우크라, 韓 대러 석유제품 공급 비판…제재 정책과 극명한 대비  아주경제",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "우크라, 韓 대러 석유제품 공급 비판…제재 정책과 극명한 대비",
+          "source": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6Sk1GTVpLSWVOS0E5a0hFRmFzaGtYS1JxRXg3aDJCR2FWMHotck5wSmpDd0tPTkFYMTU1bVpYOFgxQmdrblRacnE3MHVsMG5hRlN5UTNjTnPSAVhBVV95cUxQekpNRk1aS0llTktBOWtIRUZhc2hrWEtScUV4N2gyQkdhVjB6LXJOcEpqQ3dLT05BWDE1NW1aWDhYMUJna25UWnJxNzB1bDBuYUZTeVEzY05z?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "73861b709614"
+    },
+    {
+      "title": "[전문가 기고] 데이터로 보는 한·일 LPG 안전관리체계한국은 공공기관 집중, 일본은 지정·등록기관 활용",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127075",
+      "source": "가스신문",
+      "published": "2026-10-07 22:35",
+      "summary": "LPG산업환경에 맞는 검사체계로 전환 필요\n\n\n\n황병조 초빙교수\n\n\n법률은 전문적인 용어를 사용하고 다른 법률과의 관계뿐만 아니라 다중 이해관계자의 관점을 반영해야 하기 때문에 구조가 복잡하고 이해하기 어려운 것이 일반적이다. 특히 액화석유가스의 안전관리 및 사업법(이하, 액화석유가스법)은 60년 이상의 사건/사고의 영향으로 양벌 규정 등의 2~3중 규제가 구조화되어 있어 LPG사업자들은 늘 잠재적 범법자가 될 수 있는 사업환경에 노출되어 있다.\n\n필자는 한국의「액화석유가스법」과 일본의 「액화석유가스의 보안 확보 및 거래 적정화에 ",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[전문가 기고] 데이터로 보는 한·일 LPG 안전관리체계한국은 공공기관 집중, 일본은 지정·등록기관 활용",
+          "source": "가스신문",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRMzFFUzNha0lJWXRpeVhnaERGR01kTFhoeVZUQzFyWG9WX0VpWkNHV3JNaG4zcEc3UmxJaDFPSHBlM1JMVGxIdFRjcE1PMy0zN2NjV3N5VENxbV9JbnVENVFYZ3RsaWh0N2c?oc=5"
+        }
+      ],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "ce5f48f6f525"
+    },
+    {
+      "title": "공공기관 없는 ‘혁신도시’ 대전·충남, 2차 기관 이전 수혜 ‘촉각’",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhMEJWSE11UDk4NVV6MXdiYUE4QV9pemdPZ19IZXNPQTloRi1iQW1pUHRsLUlEWldRLTBFbkdTU2R6SjVJZEVfaFcxUHJ2ZnpWVXpkSl9Tb24zZmY5R19N0gFfQVVfeXFMUGEwQlZITXVQOTg1VXoxd2JhQThBX2l6Z09nX0hlc09BOWhGLWJBbWlQdGwtSURaV1EtMEVuR1NTZHpKNUlkRV9oVzFQcnZmelZVemRKX1NvbjNmZjlHX00?oc=5",
+      "source": "경향신문",
+      "published": "2026-10-07 21:29",
+      "summary": "공공기관 없는 ‘혁신도시’ 대전·충남, 2차 기관 이전 수혜 ‘촉각’  경향신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "34bb1c8c3c3f"
+    },
+    {
+      "title": "경북신보·여성정책개발원 경영평가 S등급…예산·기관장 연봉 연계",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRndpdnhIVTE5N1RkVGJiYk1CV25DZ01IUExQMDluX3k1R2x6WEFZZG5VcTZSRVNTams5YnoyWWg3VHp0b21wcVYxdXdnN21SMHJtQnF6eUF2R1dQMG9ocmJZdW8xS2J2V2I3MXJVU1hrZkkzeFVvUXdIQzdSRmlFMQ?oc=5",
+      "source": "이데일리",
+      "published": "2026-10-07 17:14",
+      "summary": "경북신보·여성정책개발원 경영평가 S등급…예산·기관장 연봉 연계  이데일리",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8865670f7813"
+    },
+    {
+      "title": "영양고추유통공사 경영평가 3년 연속 최하위…운영 성과 검증 요구",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9hYWZpRk9MdVp6bjFSbzFyOE1QN0hUYUUxUTJuMHk3YTFITDA4UkhUSEFHUlBKUXp5QUFrMlczbW9nWWVTeGhSZXdlQ09DYmlJdzRBLXBOdFE1dkI5TWxLV0plWEUya3RDaEY5a2VGOA?oc=5",
+      "source": "경북일보",
+      "published": "2026-10-07 16:54",
+      "summary": "영양고추유통공사 경영평가 3년 연속 최하위…운영 성과 검증 요구  경북일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b661ebe3d456"
+    },
+    {
+      "title": "대구YMCA “2차 공공기관 이전, 지역 나눠주기 아닌 혁신 성장으로”",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVODZzX0JpTzVIWDBacmlWcHBSZVRRY184M0VyejM1aERMZ3FpM0gtc2RKWGNpSHhtX3EtYmsydXI4SFBUOG1rcTl4MzZ2dTRRcjM0dUNWdlJSd0l6QUxUcFprcDRIR0RRbnc?oc=5",
+      "source": "www.hidomin.com",
+      "published": "2026-10-07 14:47",
+      "summary": "대구YMCA “2차 공공기관 이전, 지역 나눠주기 아닌 혁신 성장으로”  www.hidomin.com",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "050e44d73dec"
+    },
+    {
+      "title": "강동문화재단, 지방공공기관 발전 유공 행정안전부 장관표창 수상..\"경영혁신과 지역 문화 발전 기여\"",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1tX2l6OVpvSndNWkctcFdJXzZ6elRNMTRyR1dDQkM3YTltN2h5UUp1RExTVXY3VnBpTXByblhXLUZ3Sm44dHhUNVpsbFNfSDdrV29PSl9ienlhWGhGZU5oS1ZIS3lYWExfZ2lB?oc=5",
+      "source": "시정일보",
+      "published": "2026-10-07 11:08",
+      "summary": "강동문화재단, 지방공공기관 발전 유공 행정안전부 장관표창 수상..\"경영혁신과 지역 문화 발전 기여\"  시정일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "dc55c84a9a1f"
+    },
+    {
+      "title": "도시공사, 경영평가 전국 1위 등 대외평가 6개 성과",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02cFNZd0Flb2R3OUdISjRzang0dXYzUmZmTEw2dnRQU1Fuek13dTNhbVhQbE9VOTBzRG52elZwek5mS1U3Yk1mLUo1LXF1cE1UUGY5QzEweWtHS0tVamlZSnhETFRwa0xqTThmOQ?oc=5",
+      "source": "용인시민신문",
+      "published": "2026-10-07 10:59",
+      "summary": "도시공사, 경영평가 전국 1위 등 대외평가 6개 성과  용인시민신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "21182b7e56de"
+    },
+    {
+      "title": "강원랜드 ‘방만경영’ 논란…영업익 줄고 경영평가 C등급에 성과급 195%·승진 배분까지",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE84VjZjU3JJNGNOWnZPbzNUNTdlUjFQMDRPVm92WFJVNEdMb3NrLUtYMEoxQlpENkVydEVJMEVaaFVGa3BWLU12eXNTdmNiclBCM2h0NFhxd1NXSVhfeUJiNTJJTkpiaG1wYU1Yblo3WFBPQQ?oc=5",
+      "source": "중앙이코노미뉴스",
+      "published": "2026-10-07 09:31",
+      "summary": "강원랜드 ‘방만경영’ 논란…영업익 줄고 경영평가 C등급에 성과급 195%·승진 배분까지  중앙이코노미뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "25310b2c799a"
+    },
+    {
+      "title": "경북신용보증재단, 기관·기관장 경영평가 '동시 S등급'",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE95YjRhaEk4VDZOb1JmYXNjSDFINWhBMVJnVlBtdmd3ZlVUWDAyNWhwQjZOVDdOYUJacnhtVEtkTmkzMFNYMnl2MDhRNmFQMHRhR2JPYkJTaVE4V3hzXy1iMnh4SHo0T0hGUDhoZnZIRGFxZw?oc=5",
+      "source": "프라임경제",
+      "published": "2026-10-07 09:13",
+      "summary": "경북신용보증재단, 기관·기관장 경영평가 '동시 S등급'  프라임경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4dc601939278"
+    },
+    {
+      "title": "South African rand slips as stronger dollar and oil supply risks weigh",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVjdTMnJCcXR4d0xSblZKVU5zX0VBT0lQX2h4NXFFaWI2Qk1LeWI1TXc3bzVjN0dWYVZTN01ydEl4WWhDSjZrXzRYODhpWXRKMTllS0piQ2kwT3JwR01xdmZsYS1yU3o1M3JhT1JwWDFDQ1R2X19OdEVWS1FPU0RheTFMT1dfVVpqRXBYR0dnN1ZXOXRpeEw4LWlfRmJVSW5Nd3NXSEg0OUpWeDZkR29sbl9n?oc=5",
+      "source": "Reuters",
+      "published": "2026-10-07 15:52",
+      "summary": "South African rand slips as stronger dollar and oil supply risks weigh  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "1956790b0f6b"
+    },
+    {
+      "title": "Oil gains as US storm and Houthi air strikes threaten supply",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSHYwa2g1N1NQR1ZHcFR2eVJ3cjJySlZLVlA1UjBQeU9yNl81Z2tGYTk3TVk4V3JMcXh1LVpscTVDdTdrZGFOZjd4VWNzeXNEM1lHYmV5bDFzV2ZrN3NuQUE4VXV6cE16enQzSi1ZU3l1aXVPa00yVDkxeDRYbFI5WjhOVGR0VHFUMWNkWFMtNmxDSW9YRUtHY2pKWTlxTFRPclRzTA?oc=5",
+      "source": "Reuters",
+      "published": "2026-10-07 13:36",
+      "summary": "Oil gains as US storm and Houthi air strikes threaten supply  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "ee12d30fed00"
+    },
+    {
+      "title": "한국지역난방공사, LNG 도입전략 모색 위한 연구용역 추진",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127086",
+      "source": "가스신문",
+      "published": "2026-10-07 22:55",
+      "summary": "한국지역난방공사가 국내 발전 시장의 환경 변화에 따라 열과 전기사업의 미래 지향성을 높이기 위해 LNG 도입전략을 전면적으로 점검하기 위해 연구용역에 나섰다.\n\n\n\n[가스신문 = 주병국 기자] 한국지역난방공사가 안정적인 열과 전기 공급을 위해 보다 경쟁력 있는 LNG 연료 도입을 위한 다양한 방식의 전략 수립에 나선다.\n\n한난은 ‘LNG 도입을 위한 시설 이용전략 수립’을 위한 연구용역을 추진하기 위해 지난달 30일 나라장터를 통해 공고했다.\n\n이번 연구용역은 착수일로부터 4개월간 진행되며, 국내 LNG 시장과 한난의 사업 여건을 ",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "91ed20825e1f"
+    },
+    {
+      "title": "익산시, LPG용기 검사비 일부 지원",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127093",
+      "source": "가스신문",
+      "published": "2026-10-07 22:49",
+      "summary": "익산시는 가스안전을 위해 LPG용기의 재검사 비용을 지원한다.\n\n\n[가스신문 = 김재형 기자] 익산시가 도시가스가 공급되지 않는 지역의 LPG 사용자를 대상으로 가스사고를 예방하고 안전관리를 강화하기 위해 LPG판매업소의 용기 검사비 일부를 지원한다.\n\n익산시는 ‘2026년 LPG용기 안전관리 지원사업’을 추진하고 관내 LPG판매사업 허가를 받은 사업자를 대상으로 지원 신청을 받는다고 밝혔다.\n\n이번 사업은 도시가스 미공급 지역에서 LPG를 사용하는 취약계층과 영세 소상공인 등이 안전하게 LPG를 사용할 수 있도록 판매업소가 부담하",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "39df77d18c23"
+    },
+    {
+      "title": "[초점] ‘원유 동맹’ 넘어 전기차·에너지 신산업으로…한·사우디 산업협력 외연 넓힌다",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203878",
+      "source": "에너지데일리",
+      "published": "2026-10-07 22:38",
+      "summary": "[에너지데일리 양미애 기자] 한국의 최대 원유 공급국인 사우디아라비아와의 경제협력이 석유·건설 중심에서 전기차와 에너지 신산업을 아우르는 첨단산업 분야로 빠르게 확장되고 있다. 특히 사우디가 ‘비전 2030’을 기반으로 전기차를 비롯한 비석유 제조업 육성에 나서면서 자동차·배터리·전력·충전 인프라 등에서 경쟁력을 갖춘 국내 기업들의 중동시장 진출 기회도 확대될 것으로 기대된다.에너지 분야에서도 기존 원유 수입 중심의 관계에서 벗어나 전력과 유틸리티, 미래에너지 인프라 등으로 협력영역을 다변화할 가능성이 커지고 있다. 사우디의 대규모",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "328c5ee856d8"
+    },
+    {
+      "title": "\"LPG차 이렇게 좋은데 왜 안타지?\" [아車차]",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB6YWxMTGZibks0dTVmdC13cGRyOEFkYzZNeGhUTEZFX2ZmSDVybDhvSWpMWFJQWF9IOGRaSzNEVU1RTjJGcG5ybVprcmsyS3FmSk9ETU5yZDBoa1hPalZidXlOblBNbW1DNWNaZHZhanFETDBhV3lpSDBiZw?oc=5",
+      "source": "이데일리TV",
+      "published": "2026-10-07 22:28",
+      "summary": "\"LPG차 이렇게 좋은데 왜 안타지?\" [아車차]  이데일리TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2a8923a1175d"
+    },
+    {
+      "title": "타오위브 투자사 마나코 랩스, 프랑스 아비아 주유소 124곳에 AI 솔루션 상용화",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lM2NEU3ZjWlhGVldrS0hGTHZCb252WGVVNG13OXBoS0g1N2Z6VDgtXzVFRmU5SmFObDM2emVqaklncXVNUFU1YTVQZ3RKOWJaczVHVnB0bk9aNFI3RkJhYW9rQ1JMcmRsSGZXU095WjZPeEU?oc=5",
+      "source": "데이터투자",
+      "published": "2026-10-07 21:36",
+      "summary": "타오위브 투자사 마나코 랩스, 프랑스 아비아 주유소 124곳에 AI 솔루션 상용화  데이터투자",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2f070b1d93ef"
+    },
+    {
+      "title": "휘발유와 디젤 공급은 안정적이며, 가격은 시장 메커니즘에 따라 결정됩니다.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWUJPdlpwZDZrRzlvNmdYNTJDVkZVMW5PcGdSUzhCak5mWDdobWVpSG9IdG5XeXQ5d0N4OWkyMXFTMTdlWVhjdlc3OFNNNzl2NnBlWVhZTU53c2QyeXJxRkx4NldCNjFOMUZoUENVa3haM3RTYlhZby1kZFNMaHdJeWhIYVBuTWpmZjBfXw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 21:20",
+      "summary": "휘발유와 디젤 공급은 안정적이며, 가격은 시장 메커니즘에 따라 결정됩니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c0c78e760975"
+    },
+    {
+      "title": "기업들이 휘발유와 경유의 판매 가격을 결정할 수 있다면 시장 경쟁은 더욱 치열해질 것이다.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaDh5djFJeHp4UTFaTks2Qlg3MFlaNFlMRjV5VHFYelVTeG5jcWYtdFhzaDhVanV5WXIwRVlsaVlaSVhlV19rQVBoQk93THJUZ1pJRnEtWTgyX0d0T3hYRHZ5S2kwQzJqSjRmdFRROVd5emJaQ1hiV1pLM0xwaVRhWC1oOUZ5Qi1Oam51b0dhYzM2SmZ0RHc4TQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 21:19",
+      "summary": "기업들이 휘발유와 경유의 판매 가격을 결정할 수 있다면 시장 경쟁은 더욱 치열해질 것이다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cae3a280492e"
+    },
+    {
+      "title": "[국감자료] 알래스카 LNG, 검증 전 추진 논란…산업부, '미확정' 입장 고수",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303919",
+      "source": "투데이에너지",
+      "published": "2026-10-07 20:51",
+      "summary": "산업통상부 김정관 장관(사진 좌측)과 최수진 의원이 6일 국정감사를 진행하고 있다./사진 국회TV 캡쳐\n\n\n\n[투데이에너지 신일영 기자] 알래스카 LNG 프로젝트의 경제성 검증이 완료되기 전에 한미 양국 간 협의 대상에 포함된 것을 두고 논란이 일고 있다.\n\n6일 국회 산업통상자원중소벤처기업위원회의 산업통상부 국정감사에서는 알래스카 LNG 프로젝트의 사업성과 대미 투자 협상 과정이 주요 쟁점으로 다뤄졌다.\n\n최수진 의원(국민의힘)은 산업부 내부 문서를 근거로 알래스카 LNG 프로젝트가 당초 대미 투자 사업 타당성 분석 대상에 포함되",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "language": "ko",
+      "event_key": "",
+      "id": "fe0e86e91370"
+    },
+    {
+      "title": "중동 원유 풀려도…‘높은 운송비 장벽’에 아시아 기름값 고공행진",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1TN1dPMExPc3JfeXRwRGNqR3F4bGJyb3Y4YTYwYkRoMW40cWVDaVhzQkV1N0I1dXpvbG5idDVPT2xXZzJlXzEyQ0ZvTFVUOUdLOHI3dnoybTdZRm12aktWV3d2R1A2NEd0aUVVUlVzaWljQQ?oc=5",
+      "source": "한겨레",
+      "published": "2026-10-07 20:45",
+      "summary": "중동 원유 풀려도…‘높은 운송비 장벽’에 아시아 기름값 고공행진  한겨레",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fd3c2214273d"
+    },
+    {
+      "title": "남부발전 ‘LNG 직도입 설명회’ 개최",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303920",
+      "source": "투데이에너지",
+      "published": "2026-10-07 20:29",
+      "summary": "한국남부발전이 지난 6일 부산빛드림본부에서 ‘부산복합 LNG 직도입 설명회’를 개최했다. /한국남부발전 제공\n\n\n\n[투데이에너지 이종수 기자] 한국남부발전(사장 김준동, 이하 ‘남부발전’)이 지난 6일 부산빛드림본부에서 ‘LNG 직도입 설명회’를 개최했다.    \n\n이번 설명회는 2027년 총 3개소의 LNG 직도입 발전소 확대 운영과 발전5사 통합 준비에 대응해 전사적 LNG 통합 수급운영체계를 고도화하기 위해 마련됐다. 특히, 부산복합은 20년간 운영된 노후 복합 발전소에 직도입이 처음 적용되는 사례로, 근무자들의 이해 증진과 ",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "language": "ko",
+      "event_key": "",
+      "id": "1235122d0138"
+    },
+    {
+      "title": "정유 4사 대표 국감 총출동...주유 방식 넘어 거래관행까지 살핀다",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1RWTFSWEFaSGRQNllzQkp2Rnd4dTk1cktoTnJQbGF2ektOWnhDcHhYSEVmMzA5SmdJTzZfeTdkLUw2b3FYTmE4ZU9zbzRGYjJWU3lQUFFhd0vSAVhBVV95cUxNUVkxUlhBWkhkUDZZc0JKdkZ3eHU5NXJLaE5yUGxhdnpLTlp4Q3B4WEhFZjMwOUpnSU82X3k3ZC1MNm9xWE5hOGVPc280RmIyVlN5UFBRYXdL?oc=5",
+      "source": "아주경제",
+      "published": "2026-10-07 20:19",
+      "summary": "정유 4사 대표 국감 총출동...주유 방식 넘어 거래관행까지 살핀다  아주경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3b3b4776f071"
+    },
+    {
+      "title": "SK에너지, 고객이 선택한 주유소 16년 연속 1위 _ 밸류업 경영",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1XTkdHOWNMal9UQXItcWgyZGExNlFNc1Ayc0lnd1hJR1FGbHg1YkpiLUdDalRNQzU0YVJLcDlyTkhwRXNfczNLMWtpTnJxc1FFVjJkUzk2TEhRMkZ0bTZTNThaWUJCdw?oc=5",
+      "source": "자투리경제",
+      "published": "2026-10-07 19:41",
+      "summary": "SK에너지, 고객이 선택한 주유소 16년 연속 1위 _ 밸류업 경영  자투리경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "181dbf7b03ac"
+    },
+    {
+      "title": "김명우 전남광주통합특별시의원, 농업용 LPG 화물차 면세유 기준 개선 촉구",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE92bDRjeVR3OUg0ajNZZmZyX3BLTVRuZFNqZE9kREJ1UHRZc3JPQWRrNVpXQkl1SldSUjFWWmlSMEkxdTlURWp6Vk04Qk91NzhWZDdWSlRmem5MZ09vdlJRWWEyeEhHNXh6eDZtNko2S1liUQ?oc=5",
+      "source": "웹이코노미",
+      "published": "2026-10-07 19:27",
+      "summary": "김명우 전남광주통합특별시의원, 농업용 LPG 화물차 면세유 기준 개선 촉구  웹이코노미",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "김명우 전남광주통합특별시의원, “농업용 LPG 화물차 면세유, 현실에 맞는 기준 필요”",
+          "source": "한국소통투데이",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SSWVpYTZDMUlEZFVGTWl1VGVRU1hfeUFkNFFIR2hvZm5kWEt0Ri1ST0ZtT0J5eng2bnVwczBNZVNVUmF2ZVRvWUEwM3ZuMHEtX0pKQkY0MVZsek0?oc=5"
+        }
+      ],
+      "query": "(가짜석유 OR 면세유) (대규모 OR 전국 OR 구속) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "400ff3672bcf"
+    },
+    {
+      "title": "산업통상부는 휘발유와 경유 가격 관리 메커니즘에 대한 최신 정보를 발표했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNclpNc3c5bEFqLVo3NjItSzVMTDMybHBCUm5MbTZKYUVGNGhLYlp0MmR5N3hYZktXRWxYWkg3R2FYTnFDSUFwRExtLUw5TWhKX2lpeHVGbGxJUGExckliUllYUGJiU000LVpYeWFrRnNOUThhTzkteFFRZGRqSVhUS1I2dnNySmhoWkFYOS1PeHkzNlBJdmtv?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 19:26",
+      "summary": "산업통상부는 휘발유와 경유 가격 관리 메커니즘에 대한 최신 정보를 발표했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "541c672af848"
+    },
+    {
+      "title": "폴란드, 공동 합의 시 비축유 방출 준비 완료",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBoTHJ0d0NYZTZ1Tk56ZWRnYVRNelBYR3lySXMxdlFQNlYxa1dqbEMzaHVVSGRJY3d3QVo2dkVTOEw5a2FzeURQazFHV29Kc3JTYXljbEZ2RFRNcGpicWpEMFhnOUh3dHBRcm8xb0RPeVpFSEY4SHc?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-10-07 19:23",
+      "summary": "폴란드, 공동 합의 시 비축유 방출 준비 완료  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c2b75dd83ac7"
+    },
+    {
+      "title": "남부발전, ‘LNG 직도입 설명회’ 개최… LNG 통합 수급운영 체계 구축 추진",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203871",
+      "source": "에너지데일리",
+      "published": "2026-10-07 19:15",
+      "summary": "[에너지데일리 송병훈 기자] 한국남부발전(사장 김준동)은 지난 6일 부산빛드림본부에서 ‘LNG 직도입 설명회’를 개최하고, 2027년 1월 부산복합 발전소의 LNG 직도입 개시에 대비해 직원들의 이해도 제고와 함께 LNG 복합 발전소 운영에 대한 비전을 공유했다고 7일 밝혔다.이번 설명회는 2027년 총 3개소의 LNG 직도입 발전소 확대 운영과 발전5사 통합 준비에 대응해, 전사적 LNG 통합 수급운영체계를 고도화하기 위해 마련됐다. 특히 부산복합은 20년간 운영된 노후 복합 발전소에 직도입이 처음 적용되는 사례로, 근무자들의 이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "81716ecfec29"
+    },
+    {
+      "title": "미 국무 “이란, 호르무즈 통제력 완전 상실…원유수송 전쟁 전 수준”",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9KdzFwVjFvd1QxX2hzT2NmREV5Y1FRTlllOC13Sk1ROXctaFk4MmIwR3lyalVpWFdMMVpmVDJmdnd2NERIRTVyZk1zcXAxb1NaMWQwbmREMERPeW8?oc=5",
+      "source": "KBS 뉴스",
+      "published": "2026-10-07 19:06",
+      "summary": "미 국무 “이란, 호르무즈 통제력 완전 상실…원유수송 전쟁 전 수준”  KBS 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ebca2bc9f091"
+    },
+    {
+      "title": "관세청, 원유 수입선 다변화 관세행정 지원대책 확대",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE02THh1bDEwdkctbVBYWTd6bEpGdkdURWRMYW16QzdrNnptakJXU0RIRHNNb0RuYVotbVhrY2FsTjk0eWlvSTNvVUUweTMyN3Jqc21XNEdXSHhuUDVhS01QY3FkVmNQYTl3UXV3MmhLWTLSAXBBVV95cUxNNkx4dWwxMHZHLW1QWFk3emxKRnZHVEVkTGFtekM3azZ6bWpCV1NESERzTW9EbmFaLW1Ya2NhbE45NHlpb0kzb1VFMHkzMjdyanNtVzRHV0h4blA1YUtNUGNxZFZjUGE5d1F1dzJoS1ky?oc=5",
+      "source": "뉴스체크",
+      "published": "2026-10-07 18:56",
+      "summary": "관세청, 원유 수입선 다변화 관세행정 지원대책 확대  뉴스체크",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2016747ab097"
+    },
+    {
+      "title": "LPG배관망 내년 예산, 634억900만원 규모",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228807",
+      "source": "에너지신문",
+      "published": "2026-10-07 18:51",
+      "summary": "[에너지신문] 20207년도 LPG배관망사업에 대해 정부가 마련한 예산안은 올해보다 41억5200만원이 줄어든 643억900만원 안팎 수준인 것으로 파악됐다. 산업통상부가 마련해 지난 9월 국회에 제출한 2027년도 예산안에 따르면 읍면단위 LPG배관망 구축사업에 480억900만원으로 올해 608억1100만원에 128억200만원이 감소한 규모다. 마을단위 LPG배관망 사업에는 154억원으로 올해 67억5000만원에 비해 86억5000만원이 줄어든 것으로 나타났다. 제주도를 대상으로 한 읍면단위 배관망사업에 55억원을 배정되면서 올해",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "LPG배관망 내년 예산, 634억900만원 규모",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBfQWU3TkNHUkZ5ZXk5YzlNc25kcmlWeDV2UHJFSjllX1Voa09lZ1ZhVVVVYXNQNWhyRDk0R01PVVJqV3JkNXhRZTNvMHZpdnRPRzJ0dHliajRqbzZ6OERTMXk4ekpnZGVSdFlSUHJfRTV5UQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "3448f37af97f"
+    },
+    {
+      "title": "MIPEC 시스템의 10월 7일 소매 휘발유 및 석유 가격",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZ3FubGlhTWhvZHY1emNCQW5XRUVhMl9IWF9Gb015T0NUQmthZ1VWVy03VzJBdElqTm5vd3FBS0NPV2FJZkFCRTdNVm5MZF9BM2txZlh1ZzFYVDlKRlUzRU9GZ2tSQ3ZxcndRMGhvUEEyQzVITlBaZnhwTW01a25PNVdleEJ1cTNCd3FncS0tQnFoU3M?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-07 18:46",
+      "summary": "MIPEC 시스템의 10월 7일 소매 휘발유 및 석유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4d57435d31f4"
+    },
+    {
+      "title": "러시아산 원유 가격이 세계 시장에서 13년 만에 최고치를 기록했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYlBRV1dsRjA1azlLNjFTZWp3VzNqZXZqRDJDWnFfclYtdGg0MmIzclNORFRYdllPM015TzV6VXh3UEE3Vno0dUl1R3NoT0NpUmg1M2k5d1I4RWh1ZDRlT0JjSWwxblBYQ05ZU2FmRjlzMGRrektqVVpqU196OHNJY0dxYTRVS2M0UnFTdWh6V3N3LXlPYVY2Q2JWOFg?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 18:24",
+      "summary": "러시아산 원유 가격이 세계 시장에서 13년 만에 최고치를 기록했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0033fd51ab17"
+    },
+    {
+      "title": "10,500명 이상의 석유 유통 상인이 판매 가격을 자율적으로 결정할 것으로 예상됩니다",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTDdQUktrUW9pMHJ0WFpBNk44Mk9LYU9nUVVZdE4wRXc0V0E3bjl6bWtpNUh1b250ZUZDbF9CSEVNbTFHWThqYURzSkxjY2xRc2d5blFOSG1TSld4S0VSYkFraE9Db09BWW5FVkV4d25xYS10QXhBSk5XdXpUWVlSX2FKTW5NanJGcnhVOXNLZ2sxZ1JtcEJUR2h5UGxsRTR3VUhWRTJwQ2xFVVRuTE1sb2ZlMktKUlhqeFJvMUJR?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-07 18:01",
+      "summary": "10,500명 이상의 석유 유통 상인이 판매 가격을 자율적으로 결정할 것으로 예상됩니다  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "08c57b85ca8b"
+    },
+    {
+      "title": "이란과의 갈등은 미국의 석유 가격 전망에 계속해서 영향을 미치고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWXlkcXItcjA4YzFKQWR3czVZQnIxYlo2cXNtbDc1UE5ZWmdua1NDT0lGVnJOTnowSDRUUV94WTFvSi1XdDRnX3RSbk1IdjdWekg4NHM2QmxtSExIbGI3T3ducWQ1eEpfRjB6MDFhN1VWSW9RYU95UU5yRXl2RXU1OGhKeTRMVGQzRXB6ZzlR?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 17:41",
+      "summary": "이란과의 갈등은 미국의 석유 가격 전망에 계속해서 영향을 미치고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4168240bd685"
+    },
+    {
+      "title": "LS일렉트릭, 대만 최대 석유화학 기업과 JV… 전력기기 넘어 수주사업 확대",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203856",
+      "source": "에너지데일리",
+      "published": "2026-10-07 17:40",
+      "summary": "[에너지데일리 송병훈 기자] LS일렉트릭이 대만 최대 석유화학·전자소재 기업인 난야플라스틱과 손잡고 현지 전력사업을 본격적인 수주·엔지니어링 사업으로 확대한다. 그동안 전력기기 공급을 중심으로 대만 시장을 공략해왔다면, 현지 제조 기반과 EPC 네트워크를 갖춘 난야플라스틱과 합작법인을 설립해 전력 인프라 프로젝트를 직접 수주할 수 있는 사업 기반을 구축한다는 전략이다.LS일렉트릭은 6일 서울 LS용산타워에서 대만 포모사플라스틱그룹 계열사인 난야플라스틱, KHI와 대만 현지 전력사업을 주도할 합작법인(JV) 설립 계약을 체결했다고 7",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "5d98adc254df"
+    },
+    {
+      "title": "트럼프, \"누구나 면세 경유 구매할 수 있도록 하겠다\"",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334854",
+      "source": "이투뉴스",
+      "published": "2026-10-07 17:30",
+      "summary": "[이투뉴스] 도널드 트럼프 미국 대통령이 면세 경유를 일반도로용 차량에도 사용할 수 있도록 규제를 한시적으로 완화했다. 내달 2일 중간선거를 앞두고 고유가에 부담을 느끼는 농민과 화물차 운전자들의 표심을 겨냥한 조치로 풀이된다.5일(현지시간) 에 따르면 트럼프 대통령은 이날 네브래스카주 유세에서 일반 차량의 면세유 사용을 허용하고 관련 연방세 납부를 유예하는 행정명령에 서명했다.미국에서 면세 경유는 농기계·건설기계 등 비도로용으로 쓸 때 세금이 면제된다. 일반 도로차량에 넣으면 세금추징과 벌금부과 대상이 된다. 이번 행정명령",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "611be83c38c0"
+    },
+    {
+      "title": "청주시 흥덕구, LPG 가스안전 생활실천 캠페인",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IMlhfMm96NmVxX3NzOEJKdWZmQmhOWXZkT1VWc19ybmpCWHQ3UmYwRFBYU3drak9DelNQQUJKZnZzcTNnS3ZsdjdEbTRZc0pLaktab2FxYk9fOFlGRHluS1JfQUtDVVpZRV93?oc=5",
+      "source": "BBS불교방송",
+      "published": "2026-10-07 17:29",
+      "summary": "청주시 흥덕구, LPG 가스안전 생활실천 캠페인  BBS불교방송",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2d6cca91236e"
+    },
+    {
+      "title": "국제유가 반등에 국고채 금리 상승…30년물은 하락",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA3ZjVqc0dWM1VsTTZNZklQZGpkaFlqaDd3T0JXdFdERGMwQnA4bC0wZ2FHdlF1a1oxQ0JRLUgxN2NqNURlcHBSRmhMcjA3VzBQbFMyTXMzeklud25DY3hUcThaVUpZOEVPYVdvR2lKOUJoZw?oc=5",
+      "source": "스페셜타임스",
+      "published": "2026-10-07 17:25",
+      "summary": "국제유가 반등에 국고채 금리 상승…30년물은 하락  스페셜타임스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cb7f33265b08"
+    },
+    {
+      "title": "유가 반등에 국고채 금리 대체로 상승…3년물 3.961%(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zTzFHUVhwZUNXQXpvR01nalN5Z1puOEpfLWhnNnZTdWhodVZWX1NRTWpDelBfTE92THU1bmFrWkVmc0NmcVVYMFZNb1hwNHB6VzlPX1gwdk1sdjhsSG5nSw?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-07 17:17",
+      "summary": "유가 반등에 국고채 금리 대체로 상승…3년물 3.961%(종합)  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "유가 반등에 국고채 금리 대체로 상승…3년물 3.961%(종합)",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11bkw4ZTQ0em1hak83NDZjMmNwblgxblNXQWExS1lFQ0c1X3lYNDdmVUdEY3M4NklWMk1OMFdlaEFqbktXaXFJZFVTRHd6elduZlA3QXdQLVdhNkE?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ec6f8de28dd9"
+    },
+    {
+      "title": "'비축유 곳간'도 비었다...세계 상업용 재고 60억배럴 밑으로",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5YMm02MU4xUDRYbFBfT0ZhQlVvQ0lYNDNIcjE0SXh1MTlhQlFyZWhBWm5kMV9NV0dXRU5aQUFJVUwydGJSNjBxZ3dSVWxrX1l5RjBOelJ3?oc=5",
+      "source": "중앙일보",
+      "published": "2026-10-07 16:56",
+      "summary": "'비축유 곳간'도 비었다...세계 상업용 재고 60억배럴 밑으로  중앙일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5e82e44f4e2e"
+    },
+    {
+      "title": "미국은 전략 비축유에서 추가로 4천만 배럴의 원유를 방출할 준비를 하고 있다.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWUotNE56dTh0aVV4QnJKdkotNEUycExlOWpRTHlHZUFUeUk2ZC1XOFFMdmxpNG9wUXBROVFUbkRucmUwYkt3bUJvUEh2XzAzbkNaMWlIVnIySU1yLUFQN29XMEk0VWhhWlVOREpPeXZJYkM0eFk4R1NsNWZEYXpyb3pMUXd6YUVnRlR0NTJYNkszaHUyM2Zia3d1eFJKQQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 16:54",
+      "summary": "미국은 전략 비축유에서 추가로 4천만 배럴의 원유를 방출할 준비를 하고 있다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ee1b07bf1fe4"
+    },
+    {
+      "title": "원유는 돌아왔는데 배가 없다…정유사, ‘비싼 운송’ 장기화",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE10c2F3Qm5Hd294YjBUSmUzZFJZUWZicVhwRUkxTXhjUWZXNF85dl9RNFByRm5FS011enVDdVlucGFPalJIZVRNWnJtS25IeGd6RUFUUjlxQVQ?oc=5",
+      "source": "더트래커",
+      "published": "2026-10-07 16:48",
+      "summary": "원유는 돌아왔는데 배가 없다…정유사, ‘비싼 운송’ 장기화  더트래커",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9bf72fc42109"
+    },
+    {
+      "title": "휘발유값 잡으려 10조원 쓴 일본…“연내 재원 바닥날 수도”",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kVDhEejlYalhhUHdDN0Jtb2tkZ25Fb0NPOEs2U1BsSkRvMEVTeFhKbjBwLWJBNWplZEN1Z0xrSXQzc1JKd2NGV21hYVVVX1I1b2libk1GaFJhQ1pvMFVoUFA0QUs?oc=5",
+      "source": "www.ppss.kr",
+      "published": "2026-10-07 16:45",
+      "summary": "휘발유값 잡으려 10조원 쓴 일본…“연내 재원 바닥날 수도”  www.ppss.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6db086d06d47"
+    },
+    {
+      "title": "호르무즈서 또 유조선 피격, 목숨 건 운항에 인건비·용선료 6배 껑충",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9UZlVtLUMxdmYxeGRfNnUyQjZKTDZ2LW5PQ0NvcWgzcW8zcWtmbEVCRVc0QXdpY1RZNUZidlNremtuUmhscURuODN1N1o1dFd2aENLRw?oc=5",
+      "source": "JTBC",
+      "published": "2026-10-07 16:36",
+      "summary": "호르무즈서 또 유조선 피격, 목숨 건 운항에 인건비·용선료 6배 껑충  JTBC",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "09b79ef04c87"
+    },
+    {
+      "title": "사우디 송유관 83% 회복…원유 공급 숨통 트이나",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8xNXJDVE1KY1VaeDBkTjg1bW91dlJVUHZ5UC13NnlZb1BhMG9IVWlNM2YzbHptamdMLV9DSk1LbTJTcG5Hem5DbTk3SVRuX3pKVTJzMktwQ0FmRjRfeUpDWUs5RlBkTkVPV3VaYmY2c9IBb0FVX3lxTE8xNXJDVE1KY1VaeDBkTjg1bW91dlJVUHZ5UC13NnlZb1BhMG9IVWlNM2YzbHptamdMLV9DSk1LbTJTcG5Hem5DbTk3SVRuX3pKVTJzMktwQ0FmRjRfeUpDWUs5RlBkTkVPV3VaYmY2cw?oc=5",
+      "source": "한스경제",
+      "published": "2026-10-07 16:19",
+      "summary": "사우디 송유관 83% 회복…원유 공급 숨통 트이나  한스경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c7a52822ae9a"
+    },
+    {
+      "title": "고흥군, 남양면 장담마을 LPG 배관망 구축 완료",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE42V2pTZ0FvV1ZUbk1EWjFfd3ZSalljd21tRXY5MFA0MnF5SUlzdGR0VUhkcVRqREZEWlJCMDAzQ3RVbWswamducGZ1NHd3aGxWendQdkdwZnlzYkRjUlNaVUd3a2JZREpDZnBJ0gFvQVVfeXFMT1c3RHJOb0t0eFFXZnhLb2NXWEluVzhjVnNNdEowcG5jaUQyaEp1ZDAteDdGY1VqeklTZm90TU1ORENIMkpXeUcycG53SXNtVVU1YXphM0ZKY2F5Z0xBQnl6Tk5lSC1JSUZLNE91UlFn?oc=5",
+      "source": "빛가람뉴스",
+      "published": "2026-10-07 16:19",
+      "summary": "고흥군, 남양면 장담마을 LPG 배관망 구축 완료  빛가람뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "고흥 장담마을 LPG배관망 구축 완료",
+          "source": "국제뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBGbkRSVDgxN2c3cGFvbUprX3B6TFVacFRsWm5majdrc0ZuckxfcUozOXluSVJ0aE80dkhxSVFYcEJ3eGZhbVh0NVJMVDdKTjFQNE1QdXpWS01ubE9zSTNEVGFpZ1VSVDVEbFBUUnZR?oc=5"
+        }
+      ],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e1565c95aaeb"
+    },
+    {
+      "title": "[특별기고] 일본 LPG안전관리 다층적 거버넌스와 시사점",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334589",
+      "source": "이투뉴스",
+      "published": "2026-10-07 16:05",
+      "summary": "소비자 책임·공급자 의무·보안기관 인정·위탁·인정판매사업자 제도책임 분산과 인센티브 단계화…법적 강제 범위와 자율의 영역 구분[이투뉴스] 일본의 LP가스 안전관리 체계는 소비자·판매사업자·보안기관·인정판매사업자·민관 합동 안전위원회가 각자의 역할을 분담하는 다층적 거버넌스 구조로 설계되어 있다. 이 구조는 1967년 제정된 「액화석유가스의 보안 확보 및 거래 적정화에 관한 법률」(이하 '액석법')을 법적 근간으로 하되, 법적 의무와 자율적 캠페인·포상·지원이 결합한 복합 체계이다. 따라서 각각의 주체·역할·법적 근거·한계를 체계적으",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "7a50820aafd2"
+    },
+    {
+      "title": "일본, 고유가 막느라 10조원 썼다…“연내 유가 보조금 바닥날 수도”",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9OZ2U0VVJmWmUwZVdmNGs1bV9tRERLZXBVYWFsM2RPUFM1RWQyR3hfMnUyNEFYU1pPSWpNZXNTVVFWWV9jbm5EOS0yb2VOTnBTYURvSGx2bVpBZExFaWNIQzBuZEFvV0ZjWFpXaWU0UkVVTmZpbHdR0gF3QVVfeXFMT05nZTRVUmZaZTBlV2Y0azVtX21EREtlcFVhYWwzZE9QUzVFZDJHeF8ydTI0QVhTWk9Jak1lc1NVUVZZX2NubkQ5LTJvZU5OcFNhRG9IbHZtWkFkTEVpY0hDMG5kQW9XRmNYWldpZTRSRVVOZmlsd1E?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-10-07 15:44",
+      "summary": "일본, 고유가 막느라 10조원 썼다…“연내 유가 보조금 바닥날 수도”  핀포인트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "10409aa41289"
+    },
+    {
+      "title": "日유가보조금 10조원 넘게 투입…\"재정압박·현실왜곡 부작용\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9FbUllZmc4clB3dWI1VWVHSUZheFFkbElnVmxybmY5eHd4cncwYlhqWjNub3dUandCQW5JOWhmMjRWZU41ZWJCU1RzRFdhSVJZeVE?oc=5",
+      "source": "매일경제 마켓",
+      "published": "2026-10-07 15:13",
+      "summary": "日유가보조금 10조원 넘게 투입…\"재정압박·현실왜곡 부작용\"  매일경제 마켓",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4300cee6ee93"
+    },
+    {
+      "title": "“원유 재고 비상”…이란 전쟁 장기화에 유가 전망 줄상향",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE54eTRJNjBiVGlWa1otMVh3Vlp5bjdLVE1GVDc5Xzh0WXFMTWMxcGFibFBQVFJSaTNDYTR3MHdkYS05OEVxU1UtZ2dCcldYbzFubTVBQnJrczVXc19iNGtpbFVSYw?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-10-07 15:11",
+      "summary": "“원유 재고 비상”…이란 전쟁 장기화에 유가 전망 줄상향  에너지경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "“원유 재고 비상”…이란 전쟁 장기화에 유가 전망 줄상향",
+          "source": "에너지경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE81dUgzQkNkZkZDOU9RU28zYnhsOGZiMTUydnYyOVZJaDdqTXNydHloWlNKemY0ajR3bDV2bXplRkJPU1VpWXFGLUJMX1JvMWVLby1FZjc4RzE0SjQ?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a61d022ab3ea"
+    },
+    {
+      "title": "[진단] 'LPG 화물차 구매 보조금 지원 재추진' 공감대 확산",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fMS16SU5XanNTRUtlaEgtNnZQa1ZyVXpFXzFHaXdxY0RmNE1RR29ZRDNyTHl4VnVfWVdGU1ZhTzk5Z3hCU2FJM1pJQTJoeUthd1MyNTYyZzltbUw1Qi1jNlBhSTJlQzJPS2dTbg?oc=5",
+      "source": "투데이에너지",
+      "published": "2026-10-07 15:09",
+      "summary": "[진단] 'LPG 화물차 구매 보조금 지원 재추진' 공감대 확산  투데이에너지",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[진단] 'LPG 화물차 구매 보조금 지원 재추진' 공감대 확산",
+          "source": "투데이에너지",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wVkhmYU9qN2EyNlozZlRPLW44RDNfZ21rWXBKMFFHWmN4Y2pFQlhTMEQ2RmRnemRMNnhVaUJxbjhMNDIyb1MyTjNPdEdqNGFVMFZTeDcxRFM3N2dtaGI4MWd2N0M3QUVqY1JMMHFn?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "28ec893ad59c"
+    },
+    {
+      "title": "정유사 3분기 영업익 5조 넘지만…전쟁 끝나도 길어져도 '걱정'",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5vYjkxMUtLOFhfZlp3TzNNY3JaODFkenRVUFNwWTVwMzhWdW04cTB3VXFVTDI2NjdxOFdfNWNFdE81VWVlWFl0UDZNSXZEazA?oc=5",
+      "source": "Daum",
+      "published": "2026-10-07 15:02",
+      "summary": "정유사 3분기 영업익 5조 넘지만…전쟁 끝나도 길어져도 '걱정'  Daum",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "정유사 3분기 영업익 5조 넘지만…전쟁 끝나도 길어져도 '걱정'",
+          "source": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42cGVkUDJlUDlYMXVjWW9NM3FNN0YtUkM0N1JxREFjNXkzUktQVmxMcGtudU1VLXZiVkNnaENYdWtJWjVZTlNUVFMteVVwNnRyNl80RUF6S19JUm1GYTczb0dHN3Y?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d1555253dbb0"
+    },
+    {
+      "title": "공정위, SK에너지·현대오일뱅크의 유가 가격 짬짜미 의혹 심의",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOend1d0g4eWpiWFo4XzJvUzFMbmZZalFjcjdJTm1iUU9CRDNzd0VUZFZGUWt6RXhWQ2FWdjNDaURVMmJ4WE9YTTRMRzNUc3dTM0tac040VEdQMkMzc3haMlh2bThzd2k0S1JoaUVodzhHckpVUmxNTnBSYkFGRkppbjNVNWRsMTFHU0pz?oc=5",
+      "source": "국제신문",
+      "published": "2026-10-07 14:52",
+      "summary": "공정위, SK에너지·현대오일뱅크의 유가 가격 짬짜미 의혹 심의  국제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "공정위, SK에너지·현대오일뱅크의 유가 가격 짬짜미 의혹 심의",
+          "source": "국제신문",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeDlRS2licnV4a0FINXpzVFd6aGdoQU84YlRIWmRPVnk4NmU1bGhNTGNkTDNUdVJCUExOSWp2Tll4ekdnUXZObTdnTFJ1dG5IQkxWQW9BUUhXTnRpT25GeHp1TDlJTUREbHFlQzdENzFPbTd5dFREa191Y1dLQW85ZnFoQW94UGNPTnlxM2J3?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f0b645541c44"
+    },
+    {
+      "title": "유럽이 친 SOS에…한국 항공유 수출 역대 최대 기록 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORzZ1ajBDYjV6b3A2REtISDRXaURjYkt6Q1haYlc1SjhVVFR3RDlUTW9VdHBnSEhZQWRmaVRoS2JpTE5fN0JBc0lWUW4zQ0xtVUU1dEEyem13UXg3Zmt1ZVdtb0Fla0VlaG1pY09rbmMyamdHZmlETnF3R3pibkRCNWttXzbSAZgBQVVfeXFMT3BNbV90WGhMZUdVYmt3SnRrd3JaVEdlTDZ4d1dUM21HYVZMUS1BTGxCZEFjT1BaMkhGTUNpYVlfdm4ycklOUXRhRjJxSGptUm5td2dNN0VWQ2p4RHpKNXNzNWVOUGU4MGZDMGV4RXJIWGVFQXhHbFdKZkFFUGdlNDlzNkRDN20tbm1yWmRUaEhHbndrcTNVZ2U?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-10-07 14:35",
+      "summary": "유럽이 친 SOS에…한국 항공유 수출 역대 최대 기록 - 조선비즈  Chosunbiz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d180afc8d0cd"
+    },
+    {
+      "title": "트럼프, 경윳값 잡으려 화물차 면세 경유 허용… 주유소 “나중에 세금 내야 하나” - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS3huZGRGZVhIeVNsTEpyaWpfcjRwaXZKcjJFMjVOU2dQeEtNNnpqSklGTDhCRENYWWJ1RkNNN19uWDZITDRHSnc4WFdNSWxIc2QxQTE1a1hBNzFIYTNBNDlrMmp6eHhONlh4NW1SdUE3SUhBeFJwcmF3VEZES2IySUFXS3BSeVRRWTJ1ZXpuOU9hY2Z3Zno2ZUx6U2ZfQdIBsgFBVV95cUxPSlY1Zld3YkNIQXFNeDlidldsMDNYRU95VTFrQWkxNWpncTlOZFN1OS1QZEczRnVmTlREVHJrRzZnVFY2dWtwZF8yV3k5SU5RLVIydlRQM2c1YWxFWFZ4WVQ5VzR0M3R2TXNUeVpKaG95YXUzRjZMdThFWGdRVG9fbkxpZmlmZ2FQNFlhYU8ySVBhWUxqcW5Tc2E3dUxWM0FUMG13SEE5NUc5LVYybnR2OUhn?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-10-07 14:33",
+      "summary": "트럼프, 경윳값 잡으려 화물차 면세 경유 허용… 주유소 “나중에 세금 내야 하나” - 조선비즈  Chosunbiz",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6af7d278fb7c"
+    },
+    {
+      "title": "인사이더 정유사 매도…은행은 건너뛰다, 투자자 어찌해야 하나?",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBrZ2l2QkV5anFLb0dLRndNNVVQSkNvN2ZwWDVJeDFubmV0WmVMaXFOdWlyTmh0OHdRN1N5WjhlRVR1XzA0V0tYV3RKZGhIYklCbXMxdElhOGNseXVDY2V4TnlOSDFxM0JiUjViQjhvNXMwNElGd2c?oc=5",
+      "source": "BeInCrypto",
+      "published": "2026-10-07 14:23",
+      "summary": "인사이더 정유사 매도…은행은 건너뛰다, 투자자 어찌해야 하나?  BeInCrypto",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "634785159fbf"
+    },
+    {
+      "title": "LPG 수요 늘어난다…대성산업·SK가스 등 에너지株 '들썩'",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE56Y2hLamZqNElENkNJUVVDSndwSmRyYVlLY2tQd3FmbFZFd0FDQWJHUDRTV3FWRDFpeXpqZWt6UW9ZSXNMTUxxZy03NU4wVDJBNjA4MUJSY0Jsb0dib2pTYUdWTmZZakRheWFkeTFpWXdCZzFCT3pZ0gF3QVVfeXFMTnpjaEtqZmo0SUQ2Q0lRVUNKd3BKZHJhWUtja1B3cWZsVkV3QUNBYkdQNFNXcVZEMWl5empla3pRb1lJc0xNTHFnLTc1TjBUMkE2MDgxQlJjQmxvR2JvalNhR1ZOZllqRGF5YWR5MWlZd0JnMUJPelk?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-10-07 14:20",
+      "summary": "LPG 수요 늘어난다…대성산업·SK가스 등 에너지株 '들썩'  핀포인트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "LPG 수요 늘어난다…대성산업·SK가스 등 에너지株 '들썩'",
+          "source": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1YZEx1ZUVLZGVwQ0Q4bmZXdUpHaW5QUkVNOXdsOV9rQjAwZmpMVUc2M0hsaVgwaFR4eHkzTnFoZHpVRHJlMXh0aTZNZG5FYXY1dUUtbW5vTjJFbVZNMzNTSjJiOWthRzdQc0o3UjlsdUdHTlHSAXdBVV95cUxOemNoS2pmajRJRDZDSVFVQ0p3cEpkcmFZS2NrUHdxZmxWRXdBQ0FiR1A0U1dxVkQxaXl6amVrelFvWUlzTE1McWctNzVOMFQyQTYwODFCUmNCbG9HYm9qU2FHVk5mWWpEYXlhZHkxaVl3QmcxQk96WQ?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cc147f7a87de"
+    },
+    {
+      "title": "2026년 10월 7일 현재 연료 가격: 휘발유 가격이 또 한 번 인상될까요?",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYXFxbGlSTUktaTRVRTFobjlsV2ZEcGt1SGxxUG5XTU1FcmRtakpvVnptelVvU1FZdjBkLWhRcVlrSGVKcUZkU05XMTlBWk5qaFd0S0Z6aWJIR1FIb3FxZGJ0NGdwTncxVmpXSHdXM3YweWYyOWdMWHJ4OGJjSi1xd1U1MkNxTUpvdGZnbnh3?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 14:20",
+      "summary": "2026년 10월 7일 현재 연료 가격: 휘발유 가격이 또 한 번 인상될까요?  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a6e27a02c911"
+    },
+    {
+      "title": "[가스공사, AI로 일하는 방식 혁신]한국가스공사, 정보자산 기반 AX TF 출범…천연가스 업무 전반 AI 전환 가속",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBiZTRVTl9tRnNkZXBCU0NEQTFrY3Y1Q0wtdFRWMy1Qakg5UzJSS3VrU1dzeWlMbTYzREVpTGFTUXNVZi1PdXVVd2J0YjJEc3lIOHlJLWZiV1JPc1BqSW5uVXo1OTRhcldUQWZ6U04tMEs?oc=5",
+      "source": "전국뉴스",
+      "published": "2026-10-07 14:12",
+      "summary": "[가스공사, AI로 일하는 방식 혁신]한국가스공사, 정보자산 기반 AX TF 출범…천연가스 업무 전반 AI 전환 가속  전국뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4deefc6019de"
+    },
+    {
+      "title": "정제마진 3주째↑, 수출 제약에 정유사 수혜 제한…“탄력 조정” 목소리",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9YVmQwTnlXb0xLeWhHTnVOX1F0MlA1cnMwa2dRMTg3bmVDZjktX0l0dEY4b05QWV9OTDR2UENfdk5jMzRHemYzUWdfYXBWVzdJ?oc=5",
+      "source": "문화일보",
+      "published": "2026-10-07 13:58",
+      "summary": "정제마진 3주째↑, 수출 제약에 정유사 수혜 제한…“탄력 조정” 목소리  문화일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4f35180a3428"
+    },
+    {
+      "title": "중동산 반토막·미국산 두 배 폭증…울산 나프타 공급망 급변",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBRWXBWX2ozbkhoR3phNENaNVV6Zm9rdEFyS25zNUdaTU1yUUcxQ1VUeXJpakRxbW9ab3Bpd2J2SFdramstWmt4SDNQVkwxT2F5ZnfSAVNBVV95cUxNR0JVM0xTTUxpdjJDNTVLanlRTktURFFvMDI4Rk9nWmpJWTh5ZURZZ3lqUTFWZkp5NDdtbzZHN05Nc3F2TS1TQktvWGJWRl9iRVYwcw?oc=5",
+      "source": "서울경제",
+      "published": "2026-10-07 13:21",
+      "summary": "중동산 반토막·미국산 두 배 폭증…울산 나프타 공급망 급변  서울경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3aa82cbf74a9"
+    },
+    {
+      "title": "오늘 10월 7일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRndVX1Q4SUQ4cHVPWE1GYWVaVE9DRmxWczBNYlV1ZVRrSWR1clQya2RaUktwYlBZTUZfQTdBYzZkQTdCRHFKU2sxbW1UNTNiTVVZV2pKN1VyVzVMX3hNZUhWeTdjZl9EMFItc3VYZXgzOWhhMTJxQXRZSkl2MldrMFdB?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-07 13:00",
+      "summary": "오늘 10월 7일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "오늘 10월 7일 휘발유 가격: 반전",
+          "source": "Laodong.vn",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZm5JZFc1MFlCTWpJTHE4U1lEdDJMLW04eExzXzhvUldSUk8wcDZ4MU5qS0VfQXhwOGZ3S3htME9OYW1RSmVja2xyeGlpOTFaYVFkSmZJM0ZaZXFjU0NSVDVmdVkxZ0VIUmdLMkl3T292ZmdkeERBelhzTHNULVZYaXNSTHZpQQ?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1f12788da096"
+    },
+    {
+      "title": "한국가스공사, 천연가스 분야 인공지능 대전환 이끈다…전사적 ‘AX TF’ 공식 출범",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0zRTJxT1RKNHVRNjh6ZkJDZEs3a0ZPM1dSVEtiYkg5LVBpcFVJRS1VUGJPQlFUV1ZOQUJkX3pUektZc1I2MHlCSVBPUC1PcC13Y2w1LWZMYXQwTWFtTDlBeExHM2U?oc=5",
+      "source": "외교저널",
+      "published": "2026-10-07 11:54",
+      "summary": "한국가스공사, 천연가스 분야 인공지능 대전환 이끈다…전사적 ‘AX TF’ 공식 출범  외교저널",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6228a7d18050"
+    },
+    {
+      "title": "트럼프, 고유가 대응 위해 '연방 휘발유세 일시 중단' 검토",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DT3lZTldWS056anJ4eUkwTlVjNE5teE9yei1oU1ByOXh6QlRRVmp4ejU5VnhCa1ZiWkZ0Q2hnTmo4eEZVS3BNZjAzWGUyVl9GQ1UtelBoNGt5MkNMd1lkaGJzYVIyVFpCSU5rZA?oc=5",
+      "source": "프리진경제",
+      "published": "2026-10-07 11:43",
+      "summary": "트럼프, 고유가 대응 위해 '연방 휘발유세 일시 중단' 검토  프리진경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c9a6384feef2"
+    },
+    {
+      "title": "국제유가 100달러 위에서 다시 상승…美 첫 허리케인까지 덮친다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE83ZDIzS3FBRDlWVEpTVHY2ZVFZTlo4cm80dXI4NlAtSjN2TVF4WncwN2YtSTMteFQ4YWdlZGstQ2NCNXFnOFdNOF93MWVlTW1scUZzSWJ5cmZEMEs1QmZiN0lqWkpraXhFMTVyMEdsc1HSAXRBVV95cUxNYU1yeldtUXQ5ZHNrVHdQVWZQcHJld0JTZmVXNnp0bU52Nll3YmszRXJ6OEI3MTZ1TmttNVdULTRPdHpFM2F4VlpRdTVQUGwxek5iTnZZOVRZOFhTRDBBVUR5dHIxMWVLSHg3YmEtblItQk5MUQ?oc=5",
+      "source": "뉴스워커",
+      "published": "2026-10-07 11:36",
+      "summary": "국제유가 100달러 위에서 다시 상승…美 첫 허리케인까지 덮친다  뉴스워커",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b75197435645"
+    },
+    {
+      "title": "유가는 내리는데 휘발유는 뛴다…엇갈리는 석유제품 가격",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE54aXFWa0dvTW9CeDZXd091QTR2dENmZ05kX3hqZ3dEU3ppbjdIS1NHU1pMODBpcndNQkxPQUxsd1M1Z3RCYk1KczJwaTZlZUh0ZkRPRmoxUGRER2ZPeGVyRHNhbk0yNTFr?oc=5",
+      "source": "녹색경제신문",
+      "published": "2026-10-07 11:24",
+      "summary": "유가는 내리는데 휘발유는 뛴다…엇갈리는 석유제품 가격  녹색경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "204407358cb1"
+    },
+    {
+      "title": "오늘(10월 7일) 연료 가격: 중동 지역의 공급 회복세에 힘입어 세계 유가는 안정세를 유지하고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOenAzNE5yQ1R6ZGpYeTFOOGdLeXFHWkV1Ui13U3hKbEg2Y2NtNER2M0FmZ2RBRUtDZnI2QUljajUxZzJuSDlvLUpDQlo3SllRd1Bzam41TjNic0xraTJUcTh4YjM0YWJtekJTR0YxUE11dnJ6TG5VYlpKRHhUemw3dThvYkI2TTdrd1BfWUpzYkVnN3hxRzVwc0JqWm94UkI4TzJfYWRZbFZFZXpudzNmLWl3?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 11:03",
+      "summary": "오늘(10월 7일) 연료 가격: 중동 지역의 공급 회복세에 힘입어 세계 유가는 안정세를 유지하고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c10dfbbe9b28"
+    },
+    {
+      "title": "한국 항공유 수출, 유럽 공급 부족 속 3년 6개월 만에 최대",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9PMTg3eEFSRzBWNmFDbEIzZGhvWXBjWlBsMnd6bmhYdUFCckJ3Sm95RDBsM0FKREE3RlBncC1RWHMtdDZvXzN3VjBUbGNPUjlNYXhXMXJFYk9UTnUzQ3lkcW5wZUZCYm10UkE?oc=5",
+      "source": "nbn 시사경제",
+      "published": "2026-10-07 11:02",
+      "summary": "한국 항공유 수출, 유럽 공급 부족 속 3년 6개월 만에 최대  nbn 시사경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a604e27d7974"
+    },
+    {
+      "title": "쉘 CEO \"중동 원유 수송량, 전쟁 이전 수준의 80%까지 회복\"",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9JRWt5c3UwRmdxZGJkeGZzVDNFZFpEU3A1V1c5N2x1bHRwemxoZTJOS1FXVFdBRTVHRU5wVGV0SHFidkFtenFkRWkxcERxcGhEc3MtNW1xcXZtV3UzNk5DQWxESQ?oc=5",
+      "source": "더구루",
+      "published": "2026-10-07 10:48",
+      "summary": "쉘 CEO \"중동 원유 수송량, 전쟁 이전 수준의 80%까지 회복\"  더구루",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "df39a5cefe97"
+    },
+    {
+      "title": "국제유가, 중동 수출 증가·G7 비축유 방출에 1.8%↓",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9CY1hVb1A4WFhEdERLSGJUenJZVG42aHVUVTNJalFmY0pWYnA1Nl9nbGlsdWpkOXVFVWduRWxfYTFVZWpxOTJoRg?oc=5",
+      "source": "씬짜오베트남",
+      "published": "2026-10-07 10:40",
+      "summary": "국제유가, 중동 수출 증가·G7 비축유 방출에 1.8%↓  씬짜오베트남",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4654df8873d1"
+    },
+    {
+      "title": "한국 항공유, 유럽발 수요에 수출 '신기록'",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jejNvQ3VEMnpOVC16UTVweXZkWjBac19LQXMxc2JEOXhsYXRnYV9KczVEU29TNGhndWxmaGNJdFRPZEpfTDdPaHVrbUs5elFaVXdiRzNkUVRORXU2R3lyMjlvcWg4U09SZFNIUTNn?oc=5",
+      "source": "중소기업신문",
+      "published": "2026-10-07 10:13",
+      "summary": "한국 항공유, 유럽발 수요에 수출 '신기록'  중소기업신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "산업통상자원부 에너지 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ef282c179335"
+    },
+    {
+      "title": "호르무즈서 파나마 유조선 피격…인도인 등 선원 부상",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GZ3pFSnlOaEViOHkwd2RRTWN4Q0VFVUp2QUJvNTdNczNjYV9OTEVseG5CdXBMVVFzenlCaVlqY1lpbnd4MllZek5WaE5RcFEwOFBjeFFYR1c3X3B4NjZYekNaQ1pUR3JZNlcyRw?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-10-07 10:11",
+      "summary": "호르무즈서 파나마 유조선 피격…인도인 등 선원 부상  스페셜경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "705589de8e8f"
+    },
+    {
+      "title": "발전·석유가스 공기업 통합 본사 잡아라…울산, 에너지 거점 승부수",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8tVFF0MTJhQ21Cbmx4X1dCRTloa1RyYmphd0FDZ09Tb1h3LVRtWTZXQ3k1Mzkyd0pHaHVfbUFNY1NPd01LSENtSVdGVVcyRkE3S1YtRWEwNkNnT3A4LUlFUzE1YXRKUQ?oc=5",
+      "source": "잉크뉴스",
+      "published": "2026-10-07 10:08",
+      "summary": "발전·석유가스 공기업 통합 본사 잡아라…울산, 에너지 거점 승부수  잉크뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "dec4d88b1e2e"
+    },
+    {
+      "title": "“중국이 잠그자 정유사가 웃었다”…아시아 기름값 뒤집은 수출 중단",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tYURzNzdOTFA1Z2J5ZVBsdi1YeXpkTVNDbWpJajhWZjljSTJSQV9Pb2pnSm9QYy1vVDlFdjZrdFFod3BXWU05OHpMVHBreXNVNDQ0R1plOXNtVS0xMW91Y1ZFMVo4NGpkSkE?oc=5",
+      "source": "월요신문",
+      "published": "2026-10-07 10:07",
+      "summary": "“중국이 잠그자 정유사가 웃었다”…아시아 기름값 뒤집은 수출 중단  월요신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "106c11249001"
+    },
+    {
+      "title": "\"기름값 아끼려다 오히려 손해\" 더 비싼 GV80 하이브리드...사야할 이유가 있을까?",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9WZ0s2MUxaQU4tWDI1TFJUaTNQdWt5M0hwSnJPQ2tXNzZpYjhsaHl4a0lMbFViQm1rb0NGMGNpRlBoMTZ5clotSGxiQzZOdFdHR2JDMmstRUZZcURlWmYyM2dXVUZ4a2pKTEgtMg?oc=5",
+      "source": "오토버프",
+      "published": "2026-10-07 10:05",
+      "summary": "\"기름값 아끼려다 오히려 손해\" 더 비싼 GV80 하이브리드...사야할 이유가 있을까?  오토버프",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f12a60b79827"
+    },
+    {
+      "title": "아람코 CEO 아민 나세르: 글로벌 석유 재고 2년 내 회복",
+      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxQQldvTjhteno2anZCYlJNLXVPVVg3ZXVLRzVIaGdndkVGaU1iVWpmaE5Kclk0eWVqc0NSUXpRMzVrSTVhbS1sclVlQWlJZFlxNlRTN2hxTzhyNF9RM3BSNGFRVFQxR0VNUzBjOUhBUTYwemZwcEhpOS1WZ3o0ckc5cXFsekh4RFNzWU5NOUQ0UEVrdmJyUjdhMmt2UzRuQWhSLU9lMDFmX2dvNzlpMDJBTnZBS09vaF9KNWZpMjdCcnBZbFhKaTNzM2x4czdGR2RLVzRSSVdWbUlsczhoaHVNLTVUM01oVi1pUFhYOXhNOUNlZVZXMTZtTHExdWJaY0FnNUtNaGlWTVV2Q3pNVW1ndXhWVmZQRDJBNzdRUTFHRU54SW5hbTlvb0NDREQ1NDFLSmtDWndXcjUwZGQ2WHZ4ZFUxRzlaQ3J0OVg2Wg?oc=5",
+      "source": "IDNFinancials",
+      "published": "2026-10-07 10:00",
+      "summary": "아람코 CEO 아민 나세르: 글로벌 석유 재고 2년 내 회복  IDNFinancials",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a961556d1a09"
+    },
+    {
+      "title": "국제유가, 중동 수출 회복·공급 우려 속 강보합 마감",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Uc19WV2JPeGtNOXdmdGFRQjhwNW5NUktGbUl1NDNBTUlrb1BsdWZWQ0pEaVUyOHRDeGVsMzJ6bGxZUE1QMUtnYWJWUE9wTUJ1d0xsaGlxaWhCNDBUczdGUTVSRnd3amJRNGhSSXFR?oc=5",
+      "source": "OBS경인TV",
+      "published": "2026-10-07 09:52",
+      "summary": "국제유가, 중동 수출 회복·공급 우려 속 강보합 마감  OBS경인TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5f0c86064015"
+    },
+    {
+      "title": "오늘(10월 7일) 국내외 유가: 브렌트유는 배럴당 97.55달러로 하락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQUx3VUZaT1R5OTZfa2Rmb3dPWlNISkRCcTR3aERQZVUyemY5OGhOeGxaRENhRzIxazZqeUlJRV9nVGxrS0tqaThWbnpjaXpkMVU5MGViam1taDU4QkVmMTdoZnNpVEhreVlLVU1MUGh2WkpBYUVQNzFERlhKeGVCalFwTnJoazVZU3Q0TXU2Wnp4ZFI0S2RLMlVDc2MyRXVzbng4bFlYZWY4akIwQWtCeQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-07 09:42",
+      "summary": "오늘(10월 7일) 국내외 유가: 브렌트유는 배럴당 97.55달러로 하락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7aba51e31d5b"
+    },
+    {
+      "title": "이언주 \"AI 전력·핵심광물·알래스카 LNG, 낱개 아닌 '경제안보 패키지'로 다뤄야\"",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBsTUJZMktHaGk3Q3NNQ04zQ1lOckJVUzNGLWdZYWtLeEZ5QjE2V3JRb3FZRjR5NFkwS0txUkNCUTdHQmlwNGdwbG1Ock1hX2xfQjR1S3d0NGZmM0tlR0lVSlU1YmFCYUxOamc?oc=5",
+      "source": "포인트경제",
+      "published": "2026-10-07 09:29",
+      "summary": "이언주 \"AI 전력·핵심광물·알래스카 LNG, 낱개 아닌 '경제안보 패키지'로 다뤄야\"  포인트경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "산업통상자원부 에너지 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1b51e831179a"
+    },
+    {
+      "title": "G7 비축유 방출 결정에 \"내 성과\"…\"곧 유가 하락\" 호언장담",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5SamJnc1NTQi1sQVBtQzc5TGJ4ZWg4MWlVRDUtUE1BU3BVVXpTRFNmNUVMdUZNV2hOZGNwaVZTQnFUcWw3SzdKWDkxMHU0RC0yb0E?oc=5",
+      "source": "JTBC",
+      "published": "2026-10-07 09:20",
+      "summary": "G7 비축유 방출 결정에 \"내 성과\"…\"곧 유가 하락\" 호언장담  JTBC",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fd09ff88fdb3"
+    },
+    {
+      "title": "중동 공급 불안 지속으로 국제 유가 상승",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1INjB5NjR0WDhQa0xFYk01U1Vjc00xRzNtbThlaEFhRzNqY3FSZVI2TFZyc0J1bDFSUS1KcFFoX19kaWJwRjRGRDlPa0MzNURXcXhsWjZoWElVTlZxLVJOY2hMbVNKdWRFVWVFVmVwaw?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-10-07 09:17",
+      "summary": "중동 공급 불안 지속으로 국제 유가 상승  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "965642a29547"
+    }
+  ]
+}
