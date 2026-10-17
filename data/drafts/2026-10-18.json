@@ -1,0 +1,1413 @@
+{
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18 07:20",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1332.1,
+      "change_pct": -1.0253362062560503,
+      "unit": "원",
+      "as_of": "2026-10-16",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 101.41000366210938,
+      "change_pct": 3.5112814111911077,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-16",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 109.86000061035156,
+      "change_pct": 3.719790888895067,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-16",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 113,
+    "fresh": 113,
+    "classified": 113,
+    "representatives": 69,
+    "duplicates": 43
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.8-flash",
+        "issues": [
+          {
+            "title": "정부 석유 최고가격 동결 지속 및 가격·수출 통제에 따른 정유업계 반발",
+            "summary": "정부가 물가 안정을 우선하여 석유 최고가격을 11차에도 재차 동결하고 휘발유 1,784원, 경유 1,773원으로 유지하고 있다. 이에 따라 정부의 석유가격 및 수출 통제 기조가 이어지면서 정유사의 손실과 기회비용을 충분히 감안하지 않는다는 지적이 제기되고 있다.",
+            "change": "전일 석유 최고가격 4주 추가 동결 보도에 이어, 가격 동결과 수출 통제 정책으로 인한 정유사 손실 및 기회비용 미반영 논란이 새롭게 다루어졌다.",
+            "impact": "정부의 석유 최고가격 유지 및 수급·수출 통제 정책에 맞춰 한국석유관리원의 국내 유통 가격 모니터링, 최고가격 준수 여부 점검, 유통시장 모니터링 업무 부담이 지속될 가능성이 있다.",
+            "article_ids": [
+              "cca44de68171",
+              "e759c5dbee8e",
+              "4f7b555d54a9"
+            ]
+          },
+          {
+            "title": "호르무즈 해협 통과 초대형 유조선 기뢰 충돌 폭발 보도",
+            "summary": "이란 혁명수비대 측 주장 등을 인용한 외신에 따르면, 호르무즈 해협을 통과하던 200만 배럴 적재 규모의 초대형 유조선이 기뢰에 부딪혀 폭발 및 화재가 발생했다는 보도가 나왔다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "주요 원유 수송로인 호르무즈 해협 내 유조선 폭발로 원유 수급 불안과 국제유가 변동성이 확대될 수 있으며, 이에 따라 국내 수급 보고 체계 점검 및 유통 시장 모니터링 강화가 요구될 가능성이 있다.",
+            "article_ids": [
+              "6033072b9530",
+              "dcc67eebd718",
+              "d616c10ca3b1"
+            ]
+          },
+          {
+            "title": "44조원대 정유사 담합 의혹 관련 사법부 심리 진행",
+            "summary": "44조원대 규모에 달하는 정유사들의 담합 의혹 사건에 대해 법원의 판단 방향에 관심이 집중되고 있다는 보도가 나왔다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "정유업계의 유통 및 공급망 공정거래 관련 사법 판단 동향에 따라 석유 유통 및 거래 질서 감시와 관련된 유관 부처 협조 업무에 영향을 미칠 가능성이 있다.",
+            "article_ids": [
+              "94e02b7039c5"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1639,
+          "candidatesTokenCount": 644,
+          "totalTokenCount": 2283
+        },
+        "attempts": 1,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "version": 1,
+        "model": "groq/qwen/qwen3.8-27b",
+        "issues": [
+          {
+            "title": "호르무즈 해협 유조선 기뢰 폭발, 중동 석유 수급 불안정 우려 확산",
+            "summary": "호르무즈 해협을 지나는 초대형 유조선(VLCC)이 기뢰에 부딪혀 폭발·화재가 발생했다는 보도가 나왔다. 이란 혁명수비대는 기뢰 충돌을 주장했으며, 해당 선박은 약 200만 배럴의 원유를 적재하고 있었다. 이번 사건은 중동 지정학적 리스크가 현실화되는 신호로, 글로벌 원유 공급망에 불확실성을 더하고 있다. 국내 원유 도입 경로의 60% 이상이 호르무즈 해협을 거치므로, 물류 차질 시 국내 정유사의 원유 수급에 직접적 영향을 줄 가능성이 있다.",
+            "change": "전일 자료에는 해당 사건이 없었으며, 오늘 새로 발생한 중동 지역 유조선 폭발 사건이다.",
+            "impact": "호르무즈 해협은 국내 원유 수입의 핵심 통로로, 해운보험료 상승과 운항 중단 시 원유 도입 일정이 지연되거나 비용이 증가할 가능성이 있다. 관리원은 긴급 시나리오에 대비한 정·량 검사와 재고 관리 체계를 점검하고, 관련 정유사 및 선사에게 물류 상황을 모니터링해야 한다.",
+            "article_ids": [
+              "6033072b9530",
+              "dcc67eebd718"
+            ]
+          },
+          {
+            "title": "석유시장 조정위원회, 최고가격제 11차 동결…물가 안정 우선",
+            "summary": "정부가 석유시장 조정위원회를 열어 휘발유와 경유 최고가격을 4주간 동결하기로 결정했다. 휘발유는 리터당 1,784원, 경유는 1,773원으로 유지된다. 이는 국제유가 상승에도 불구하고 국내 물가 부담을 최소화하기 위한 조치로 풀이된다. 일각에서는 가격 동결이 정유사의 수익성 악화로 이어질 수 있으며, 이 Such costs가 향후 정유 업계의 투자 및 공급 의지에 영향을 줄 수 있다는 지적도 나온다.",
+            "change": "전일 '4주 추가 동결 결정'이라는 결과가 보고된 바 있으며, 오늘 기사들은 이를 확정적 사실로 상세히 보도했다. 가격 수치(휘발유 1,784원, 경유 1,773원)가 구체화되었다.",
+            "impact": "최고가격제 동결은 시장 내 가격 인플레이션을 억제하지만, 정유사의 마진 압박을 가중시킬 가능성이 있다. 관리원 입장에서는 가격 통제 기간 중 품질·정량 적발 건수가 변동할 수 있으며, 정유사의 불만 제기가 늘어날 수 있어 업무 협조 범위 확대에 대비해야 한다. 또한, 가격 왜곡으로 인한 불법 유통(밀반입·병행수입) 가능성이 높아질 수 있으므로 단속 강도를 신중히 고려해야 한다.",
+            "article_ids": [
+              "e759c5dbee8e",
+              "4f7b555d54a9"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "prompt_tokens": 1551,
+          "completion_tokens": 721,
+          "total_tokens": 2272
+        },
+        "attempts": 1,
+        "provider": "groq",
+        "status": "ok"
+      }
+    ],
+    "issues": [
+      {
+        "title": "정부 석유 최고가격 동결 지속 및 가격·수출 통제에 따른 정유업계 반발",
+        "summary": "정부가 물가 안정을 우선하여 석유 최고가격을 11차에도 재차 동결하고 휘발유 1,784원, 경유 1,773원으로 유지하고 있다. 이에 따라 정부의 석유가격 및 수출 통제 기조가 이어지면서 정유사의 손실과 기회비용을 충분히 감안하지 않는다는 지적이 제기되고 있다.",
+        "change": "전일 석유 최고가격 4주 추가 동결 보도에 이어, 가격 동결과 수출 통제 정책으로 인한 정유사 손실 및 기회비용 미반영 논란이 새롭게 다루어졌다.",
+        "impact": "정부의 석유 최고가격 유지 및 수급·수출 통제 정책에 맞춰 한국석유관리원의 국내 유통 가격 모니터링, 최고가격 준수 여부 점검, 유통시장 모니터링 업무 부담이 지속될 가능성이 있다.",
+        "article_ids": [
+          "cca44de68171",
+          "e759c5dbee8e",
+          "4f7b555d54a9"
+        ]
+      },
+      {
+        "title": "호르무즈 해협 통과 초대형 유조선 기뢰 충돌 폭발 보도",
+        "summary": "이란 혁명수비대 측 주장 등을 인용한 외신에 따르면, 호르무즈 해협을 통과하던 200만 배럴 적재 규모의 초대형 유조선이 기뢰에 부딪혀 폭발 및 화재가 발생했다는 보도가 나왔다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "주요 원유 수송로인 호르무즈 해협 내 유조선 폭발로 원유 수급 불안과 국제유가 변동성이 확대될 수 있으며, 이에 따라 국내 수급 보고 체계 점검 및 유통 시장 모니터링 강화가 요구될 가능성이 있다.",
+        "article_ids": [
+          "6033072b9530",
+          "dcc67eebd718",
+          "d616c10ca3b1"
+        ]
+      },
+      {
+        "title": "44조원대 정유사 담합 의혹 관련 사법부 심리 진행",
+        "summary": "44조원대 규모에 달하는 정유사들의 담합 의혹 사건에 대해 법원의 판단 방향에 관심이 집중되고 있다는 보도가 나왔다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "정유업계의 유통 및 공급망 공정거래 관련 사법 판단 동향에 따라 석유 유통 및 거래 질서 감시와 관련된 유관 부처 협조 업무에 영향을 미칠 가능성이 있다.",
+        "article_ids": [
+          "94e02b7039c5"
+        ]
+      },
+      {
+        "title": "호르무즈 해협 유조선 기뢰 폭발, 중동 석유 수급 불안정 우려 확산",
+        "summary": "호르무즈 해협을 지나는 초대형 유조선(VLCC)이 기뢰에 부딪혀 폭발·화재가 발생했다는 보도가 나왔다. 이란 혁명수비대는 기뢰 충돌을 주장했으며, 해당 선박은 약 200만 배럴의 원유를 적재하고 있었다. 이번 사건은 중동 지정학적 리스크가 현실화되는 신호로, 글로벌 원유 공급망에 불확실성을 더하고 있다. 국내 원유 도입 경로의 60% 이상이 호르무즈 해협을 거치므로, 물류 차질 시 국내 정유사의 원유 수급에 직접적 영향을 줄 가능성이 있다.",
+        "change": "전일 자료에는 해당 사건이 없었으며, 오늘 새로 발생한 중동 지역 유조선 폭발 사건이다.",
+        "impact": "호르무즈 해협은 국내 원유 수입의 핵심 통로로, 해운보험료 상승과 운항 중단 시 원유 도입 일정이 지연되거나 비용이 증가할 가능성이 있다. 관리원은 긴급 시나리오에 대비한 정·량 검사와 재고 관리 체계를 점검하고, 관련 정유사 및 선사에게 물류 상황을 모니터링해야 한다.",
+        "article_ids": [
+          "6033072b9530",
+          "dcc67eebd718"
+        ]
+      },
+      {
+        "title": "석유시장 조정위원회, 최고가격제 11차 동결…물가 안정 우선",
+        "summary": "정부가 석유시장 조정위원회를 열어 휘발유와 경유 최고가격을 4주간 동결하기로 결정했다. 휘발유는 리터당 1,784원, 경유는 1,773원으로 유지된다. 이는 국제유가 상승에도 불구하고 국내 물가 부담을 최소화하기 위한 조치로 풀이된다. 일각에서는 가격 동결이 정유사의 수익성 악화로 이어질 수 있으며, 이 Such costs가 향후 정유 업계의 투자 및 공급 의지에 영향을 줄 수 있다는 지적도 나온다.",
+        "change": "전일 '4주 추가 동결 결정'이라는 결과가 보고된 바 있으며, 오늘 기사들은 이를 확정적 사실로 상세히 보도했다. 가격 수치(휘발유 1,784원, 경유 1,773원)가 구체화되었다.",
+        "impact": "최고가격제 동결은 시장 내 가격 인플레이션을 억제하지만, 정유사의 마진 압박을 가중시킬 가능성이 있다. 관리원 입장에서는 가격 통제 기간 중 품질·정량 적발 건수가 변동할 수 있으며, 정유사의 불만 제기가 늘어날 수 있어 업무 협조 범위 확대에 대비해야 한다. 또한, 가격 왜곡으로 인한 불법 유통(밀반입·병행수입) 가능성이 높아질 수 있으므로 단속 강도를 신중히 고려해야 한다.",
+        "article_ids": [
+          "e759c5dbee8e",
+          "4f7b555d54a9"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-10-17T22:55:03.342212+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "200만 배럴의 석유를 실은 초대형 유조선이 호르무즈 해협에서 기뢰에 부딪혀 폭발했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYlJhdjR1UEF3UGhwTFY2UzhmbVpyYzEtTVhjSkNHcXlxazRxeFhtTlhuRWtFNVZqOHZiaXNoV2oyUkR3QjVuRkpLTU9lcnZ5VU1tNGFPQUMzTDBsQnJRYW5ZbnBRWXNkbGFtVFd5TVlhcFpWWnktRjFnTEhRamhKNmlWb25YYkt2UDNkNnppcVZQSHZSd05NbzVaNTE?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 22:12",
+      "summary": "200만 배럴의 석유를 실은 초대형 유조선이 호르무즈 해협에서 기뢰에 부딪혀 폭발했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "호르무즈 해협 초대형 유조선 기뢰 폭발",
+      "id": "6033072b9530"
+    },
+    {
+      "title": "이란 혁명수비대 “호르무즈 통과 유조선 폭발·화재”…기뢰 충돌 주장",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tcjVQdVdVRFk2dVBJaTUySm94ZVhqS1BqelFMVVBIS1dDd19zRThFQmRUeGVYRGIzWkx0RTZZUzFpUERBR183N2tlcHZzVk0xR256eDVXVTc5dHppd2VnaWI4V1d4RWxQMWpYY2VmWm3SAXRBVV95cUxOWnpua2lkZ1V4RDdGSnhqVTFOSnA0TWdCWG9xenFvUGdBT0V3RkRIdVlZUDVZVlZWR0loeTZnYkZNNU9jbXZDY19UWWpVSVJvUUJDa2ZuSUd0UDlZMW45b3p1aU5MbDZIeVlCQ0N1NHFId2I0Nw?oc=5",
+      "source": "더페어",
+      "published": "2026-10-17 19:23",
+      "summary": "이란 혁명수비대 “호르무즈 통과 유조선 폭발·화재”…기뢰 충돌 주장  더페어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "호르무즈 해협 유조선 기뢰 충돌 폭발",
+      "id": "dcc67eebd718"
+    },
+    {
+      "title": "이란: 호르무즈 해협에서 또 다른 초대형 유조선이 기뢰에 의해 폭발했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeVUzNEhUbmNVZjNSSEN4S0E1ZnpXbEVsVmRJZzZld3lIQ2pnVjdSUmxOYlpHSzZUa3E4YjE0SWFkakpidUR2U1B6enRVOFJtNElKb1JLbkFBVXpGRHhkYnNYSDNWaFpUM0FrLUhReEhYSi1ZWnFYWUZaQmd0M01oaUxSblpHRFAxbWNxbjVLaC1GYzRfcUMyTnFRNEZSZw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 19:01",
+      "summary": "이란: 호르무즈 해협에서 또 다른 초대형 유조선이 기뢰에 의해 폭발했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "200만 배럴 싣고 가다 ‘쾅’…호르무즈·걸프만 유조선 잇단 화재",
+          "source": "이데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObkhsNFFKaTZZMmNnTEtmYVpvbnJjNTlQNDN0WGhaMlA5RUw5M0JwVlVTRWVOUGRTTlN1WWU1bHN5bTRxZGxRNVVkZGNSNUZ6SmxOM1dURDJIUFl5MzBiNWJ3TWR4ajR1OGJyUmRFUFB6UzQ2bFI4aG04TUtSMkl0Wg?oc=5"
+        },
+        {
+          "title": "호르무즈 해협 유조선 기뢰 충돌 화재…걸프만에선 로켓 피격",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5kdXI3TzJlOVktSVFwV00wWkVRaUE1QktkcVU4cUpUSERISm5FOEJ3Zk5RVm1kaDY2My1HcHlkeE1kR2FERmtrNUI0azdHN2w1YmJWYVdxY0tuM3ltX210ekMtaTllYV9nVGM5c3hLWEQya204Z1U3WNIBeEFVX3lxTE5kdXI3TzJlOVktSVFwV00wWkVRaUE1QktkcVU4cUpUSERISm5FOEJ3Zk5RVm1kaDY2My1HcHlkeE1kR2FERmtrNUI0azdHN2w1YmJWYVdxY0tuM3ltX210ekMtaTllYV9nVGM5c3hLWEQya204Z1U3WA?oc=5"
+        },
+        {
+          "title": "호르무즈 해협 유조선 기뢰 충돌 화재…걸프만에선 로켓 피격",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zcmZmb0hHQ3BnaG5xTzl6ZjVLNGJ5dWhZWTQ2ODdKM0xQT3hTRFVUYU5uSmNmRWVsQi1acENYNTRIVEpVQzNXdHZXZldlbVBUTXhUTkdOOGlRdUQ0cWxUeNIBeEFVX3lxTE5kdXI3TzJlOVktSVFwV00wWkVRaUE1QktkcVU4cUpUSERISm5FOEJ3Zk5RVm1kaDY2My1HcHlkeE1kR2FERmtrNUI0azdHN2w1YmJWYVdxY0tuM3ltX210ekMtaTllYV9nVGM5c3hLWEQya204Z1U3WA?oc=5"
+        },
+        {
+          "title": "이란은 유조선이 호르무즈 해협에서 기뢰에 부딪혀 폭발했다고 주장합니다.",
+          "source": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZmZ3Yl9BNjUwM3Zxb3hIR3ozRVpQSEpPMlNRTU83dU03SHQ1WTF5eURSdlJaaXJBbWFkOUVsakpoblN1UWZoaTR5UjhPMnNocFd5QTlJcUVDVUhqTFU1WWcyNW80RU16ZFZCOXRzUjhEdWstbVV0WG01dGMxZ2ZMVGM4U2lPUFhQSllpbVZYN3lBWVB0UzBUQkRTbWNkQXJSVGFXaE9B?oc=5"
+        },
+        {
+          "title": "또 다른 초대형 유조선이 호르무즈 해협에서 제 유조선과 충돌하여 화재가 발생했습니다.",
+          "source": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeDk2MUM1aXd5RVg4YWdieHdxUjJtMFhfY2w2Y1JNUDZCYmw0RlR6SmJpeV9pam50TXgySGxwNTFFZFdPaUR4eUlYR256cnh0b21pSUU3MEZTRTN6LVp2Zlc2OXltUEtXcXZQc0Z4QnZnQmdjY0U2WEdvSUd3NE1zaUhPNDl5SkR3bG41clpzTVg3Zw?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "호르무즈 해협 유조선 화재 확산",
+      "id": "d616c10ca3b1"
+    },
+    {
+      "title": "44조원대 정유사 담합 의혹, 법원의 저울은 어디로 기울까",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xc2xmOURLYTdPbnhKS000UW8zNGtfenFPM3dBUmZqbXZuMkJBTW40NG1PbEFLcHBlU29UTEt4UW9GZ2tDWlZwem9HZDVLa3ZSSUpHdnVLUVhMSks3QVZqUkNMb0NTMTZyN08wZ2I2RdIBc0FVX3lxTE4xbENfWmFFdzNjT3RmTmhpMVBHLTNyUEl3VXF6S3FxVjNsRVlpcXdpYVFfZ2NYbFVSU1pzOW5VbWV6X3VydGg1Z3JydkdDR0F6SU1aanJNRU12MXhMemIwMDdFc3VIblp3YUwtTklPcFZMLXM?oc=5",
+      "source": "시사저널",
+      "published": "2026-10-17 17:00",
+      "summary": "44조원대 정유사 담합 의혹, 법원의 저울은 어디로 기울까  시사저널",
+      "sector": "government",
+      "risk": [
+        "담합"
+      ],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "44조원대 정유사 담합 소송 심리",
+      "id": "94e02b7039c5"
+    },
+    {
+      "title": "석유가격·수출 ‘통제’중인 정부 ‘정유사 손실, 기회비용 감안 안해?’",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1QQ25ra3lTZ0Z6ZFY2TXJHZHlzY3Z3dWpPdGc2aE9LaWFEeFFodWQ4SGFvWjJpTmg3SXJUV2RNa1ZjLWVwQ1NuQUZwUFZMazhpc1A4WFFxVGNseFJYaWdaM3pOTDhaRFRiSWFnaVlTbUbSAXBBVV95cUxNUENua2t5U2dGemRWNk1yR2R5c2N2d3VqT3RnNmhPS2lhRHhRaHVkOEhhb1oyaU5oN0lyVFdkTWtWYy1lcENTbkFGcFBWTGs4aXNQOFhRcVRjbHhSWGlnWjN6Tkw4WkRUYklhZ2lZU21G?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-10-17 15:32",
+      "summary": "석유가격·수출 ‘통제’중인 정부 ‘정유사 손실, 기회비용 감안 안해?’  에너지플랫폼뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유가격·수출 ‘통제’중인 정부 ‘정유사 손실, 기회비용 감안 안해?’",
+          "source": "에너지플랫폼뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TN2xDRmJZZ0JxUGpTZW1CNHlDeG5EODk4X2NyRzNJSG43clEzZDlKUloyaFgxZ1JPazFtd28yS0QyOWh5WG13aGVUREhCNWN4cC1UXzNTRlY2WVg4OWVPbzZsRk9EVXR3ZUpCZNIBcEFVX3lxTE1QQ25ra3lTZ0Z6ZFY2TXJHZHlzY3Z3dWpPdGc2aE9LaWFEeFFodWQ4SGFvWjJpTmg3SXJUV2RNa1ZjLWVwQ1NuQUZwUFZMazhpc1A4WFFxVGNseFJYaWdaM3pOTDhaRFRiSWFnaVlTbUY?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "정유사 손실·기회비용 논란",
+      "id": "cca44de68171"
+    },
+    {
+      "title": "정부, 석유 최고가격 11차도 동결…물가 안정 우선",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByWGFtcEx4WWNhN3BUbV9OTFBkRGZlQy1mY2E3WS1aaWhmejN6aHlpRUtzV0dLNmtVd1hjVjhfaWNKV01nYW53aEdOcWx6RVlwZmVMaVdobU9MbFpHZk0xY0R1YkdISGFZUENnOQ?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-10-17 10:52",
+      "summary": "정부, 석유 최고가격 11차도 동결…물가 안정 우선  스페셜경제",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "11차 석유 최고가격 동결",
+      "id": "e759c5dbee8e"
+    },
+    {
+      "title": "정부, 석유 최고가격 다시 동결… 휘발유 1784원·경유 1773원 유지",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EcW4tZGdGLVZqU0V0b3pIYWpDSXRGWlJNTVVWOHJyV0NEbDlnWUdXb0F3N1Y4dEJGcko4QlA2MlQ1c0pzQWF2SW1QbVhqMmhSd3BWejhCajdnQVFrOUhVNDRQN20zLWhz?oc=5",
+      "source": "녹색경제신문",
+      "published": "2026-10-17 09:13",
+      "summary": "정부, 석유 최고가격 다시 동결… 휘발유 1784원·경유 1773원 유지  녹색경제신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "11차 석유 최고가격 동결 발표",
+      "id": "4f7b555d54a9"
+    },
+    {
+      "title": "11월 LPG가격 인상 쉽지 않을 듯…물가안정 부담에",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229035",
+      "source": "에너지신문",
+      "published": "2026-10-17 21:10",
+      "summary": "[에너지신문] 11월 국내 LPG가격 인상이 쉽지 않을 것으로 전망된다. SK가스와 E1 등 LPG수입사의 미반영 손실을 제외하고서 국제LPG가격과 환율 변동에 따른 인상요인이 일부 발생한 가운데 물가안정을 위한 정부의 정책 기조가 여전히 변하지 않고 유지되고 있기 때문이다. 이란과 후티 반군의 사우디 정유시설 공격, 중국의 석유제품 수출 중단 등 중동 전쟁에 따른 위기가 재고조되면서 국제유가는 배럴당 100달러 이상을 넘어서면서 이에 영향을 받은 국제LPG가격은 물론 LNG가격도 상승 추세를 나타내고 있다. 고유가에 따른 물가 인",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "11월 LPG가격 인상 쉽지 않을 듯…물가안정 부담에",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5CaHhKSHVlbS1UUmQ1ekV2WW14aWxTaFZMLXpjT2Y2cE9YS0F1cUxub1VzQjVVMElzQmNhMHdTZFpxWnFkRTJ3Q3phSFdVQkxwV0NaVHpIaHd2M3Npb096VzF5aW0xRkdISW5FT2RKZGg?oc=5"
+        },
+        {
+          "title": "11월 LPG가격 인상 쉽지 않을 듯…물가안정 부담에",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtcllKSXF2MUhPWHVMY1NURFhzU2FCQ0l6RGN2MEpBWU1JaXVTU0c4Z2R2M3loeFFfY0dKRDJCMl9lSXU5N1RITzJlTTg2ZWwxTk96am1OdWFCa29xLWp0NllWYS1SWHJqNjhXMF8tS3V4UQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "ca2cabbf83ee"
+    },
+    {
+      "title": "IEA, 치솟는 경유가 잡기 위해 ‘2천만 배럴 이상’ 조기 방출",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJRWpLSTFkVC16VTZlbEdXM2lsbTFlMnl1RDJ5SFFCaWhPN2gyaFhTSFhhd0REUzcxam5zcGduQWpObXNJNEYxeUNIenVLSDlHQXBDMmZfZVYwN3RJa0hJeDhONS12Ykk?oc=5",
+      "source": "산경e뉴스",
+      "published": "2026-10-17 20:33",
+      "summary": "IEA, 치솟는 경유가 잡기 위해 ‘2천만 배럴 이상’ 조기 방출  산경e뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "25de65288aae"
+    },
+    {
+      "title": "11월 국내 LPG가격, 큰 폭 인상요인",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127199",
+      "source": "가스신문",
+      "published": "2026-10-17 20:10",
+      "summary": "11월에 국내 LPG가격이 어떻게 조정될지 관심이 커지고 있다.\n\n\n\n[가스신문 = 김재형 기자] 10월 국내 LPG가격이 kg당 80원 인상된 가운데 11월에도 kg당 70원 이상의 추가 인상요인이 발생한 것으로 분석된다. 다만 국내 LPG공급사들이 두 달 연속으로 가격을 크게 인상하는 것에 부담을 느끼고 있어 실제 얼마나 반영할지 주목된다.\n\n11월 국내 LPG가격에 영향을 미치는 10월 LPG수입가격은 프로판이 톤당 680달러, 부탄이 730달러로 각각 조정됐다. 전월 대비 프로판은 55달러(8.8%), 부탄은 70달러(10.",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "04472c28199b"
+    },
+    {
+      "title": "주유소 기름값 22주 연속 내림세⋯휘발유·경유 1800원대",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9BUHV5cU9yR3pUdHJWdVIyNUpCaThjRWpXbkJyWFVieEk3YndsWERQYnhhTFMzeGpBcDdYTEtfYzdXSGRwTThsaWZ5Yw?oc=5",
+      "source": "아이뉴스24",
+      "published": "2026-10-17 19:54",
+      "summary": "주유소 기름값 22주 연속 내림세⋯휘발유·경유 1800원대  아이뉴스24",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국내 기름값 22주 연속 하락…휘발유·경유 1800원대 지속",
+          "source": "파이낸셜투데이",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9XdWkzbzVSZXhoYXBMNHE0SWF6WG9BY2Z2X1dfMW9qUHNVN21lYjVZUFpiUnpzUXBQNnVhUUdmQzdnQ0ktM1V5V195QzUySHhEc2hwUVFaSmlpdm5IbndpMWpFMi1Wb3ZyNmZn0gFuQVVfeXFMTXBOMjJjZDJfTkxLMVhBVmkyT1pGU0xFZy1KLU9fM1RsLW0xY0RqbHVrdGh0TUFld0wtSlp0a2tBbHNWRDJvdU50YUpOX0IxUlNid1RSb3dhUXJpa2RhdWwyYU0wcS1iSlZXdTViUFE?oc=5"
+        },
+        {
+          "title": "국내 기름값 22주 연속 하락…휘발유·경유 1800원대 지속",
+          "source": "파이낸셜투데이",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIWnk2emJBbEhEMWtsMS1mWl9WTFh4RThJczV2LW9sMWdEUUtRMTdZby15cVZqZ0JfOXRxRHR3V3c4eGdSdlA1djlYT09FcnJyNVNIMXZwaHRmMVVLbHlIV1V6QldBb1ZFZ1HSAW5BVV95cUxNcE4yMmNkMl9OTEsxWEFWaTJPWkZTTEVnLUotT18zVGwtbTFjRGpsdWt0aHRNQWV3TC1KWnRra0Fsc1ZEMm91TnRhSk5fQjFSU2J3VFJvd2FRcmlrZGF1bDJhTTBxLWJKVld1NWJQUQ?oc=5"
+        },
+        {
+          "title": "국내 기름값 22주 연속 하락세…휘발유·경유 1800원대",
+          "source": "중앙신문",
+          "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPU1c1WXdSdFU4TjNubU5TSUZuRFNEN21Dc2JFSHJuS2NiWXByclNVeDdFeFpqYWdtZDlIRFRoMmVOMHZPc05XTloyWmszUXhzZ000cmREV1NvQU96ellFVXN4VUNYX1FDSFlXanFmZU9EaUZkbTlXU2o5cTNuTG5tRFlVM3czUWNOTW9VTW5JTV96QWgwX256NVlENlY0TEVQT1JBb1JfUEhvbE0za1hyNGJJTXhZaXdZSXVhM1NwRUxaaDlQY091Ry1wX2cxNUVqOWY4STRXQzNCcmVwLW5OSGtLb0V1Ym5MTXlaN0MyODlkRTFZZmpPejFxZDZmSG5nZUhHTTB0U3M2M0dzOUFJTG94dVdrdG9MdXVINmx1MElUcXhWdTd2QnBwV3ZyY3JaWXFDbHhnOXFUWmJqdVFZcU13?oc=5"
+        },
+        {
+          "title": "국내 주유소 기름값 22주 연속 하락…휘발유·경유 1800원대 지속",
+          "source": "위키트리",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sZ0tGRGRRVTVFUWJSRWVTWWgwWWl5OFFhM0EwaEx3ZElMdDlzWEhmbXl0aW42N1djd1MzT1FkZ1htRWxTbVFuNkZMdmVPSkszVjRqUGZ3?oc=5"
+        },
+        {
+          "title": "주유소 기름값 22주 연속 하락…휘발유·경유 1800원대 지속",
+          "source": "강원도민일보",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1CX0pKMWhwN2YwMnJfSDhKcTBuMGdRc3lZYW1WdTJrbk56a0s3bWxsckdRZXluNklabXhfQ1UzUlNteW1YNjBmOFBUYkVSbHhLUmFDZ3AyM2oxTVBJejhZbFdEUUxYQjdi?oc=5"
+        },
+        {
+          "title": "주유소 기름값 22주 연속 하락…휘발유·경유 1800원대 지속",
+          "source": "강원도민일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1iTnNMRkJzOUNtSGJaMVJ5QUxGU1VzN3NNc3dwSTQxVHdReHR4QTRJaTZhUTVqUS04TkZKbkVjRE1FNU9VQUtsLU5uMVA2ZVFqNXZXeW56d3hCeXBBUW9vOVEtSVZtdE0?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c15361256dda"
+    },
+    {
+      "title": "국제유가 100달러에도 기름값 동결…휘발유 1,784원·경유 1,773원",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBuUndJaXEzMmZkU3UxQXhYcXltZFVkdjZFZU5obXdTR0QycDd2QWtqaUlNYTE3RXE4UzhuQ0VHRG5QODdJaVBjNA?oc=5",
+      "source": "소비자를 위한 신문",
+      "published": "2026-10-17 19:51",
+      "summary": "국제유가 100달러에도 기름값 동결…휘발유 1,784원·경유 1,773원  소비자를 위한 신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b8cd3a7a00d0"
+    },
+    {
+      "title": "트럼프, 국제유가 110달러 육박에 ‘대러 추가 제재’ 면제",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ON09Ub1ZUbWp5OXpfcVhvS2xHMUNQNl9GMk4zSTZKR09MeFh1eHBPcm1VdkhYeXBId3RRMGg0RjEzWnhWR1hRZ1lFYnVHczFzZnZmcA?oc=5",
+      "source": "데일리안",
+      "published": "2026-10-17 19:34",
+      "summary": "트럼프, 국제유가 110달러 육박에 ‘대러 추가 제재’ 면제  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "트럼프, 국제유가 110달러 육박에 ‘대러 추가 제재’ 면제",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOdFRqdkc1c2NvWU43MzdtUndkR0RBcFdNbkN5TE82YVJrOS1CbGRfVXVqUUN0d3JRQXZfYkFCbmtzYVgxUmdmVk5rd25DWkZ4a3FPODlCNHhjTE1vcmVpMmN5dUlXWUFNb1RUczBsOVJVU1VmMlkta01fUzd2a0pZUDNQOW9LYUNRZzNPZm9ocTc0Y0R4WHhGT3NCbkoyWjk0ZFpGWHkyRVBXRTAtZTE3SS1IUF9rTzRpcFM2X205aHN0UHMydjZ3MktiZGdxdVV2bWhvekk1UHZsUWEwRnJjX2hKRFNEckdlMXJZY2MxZnJGMW1DZUFtOFZlTGtCQzBMVF9V?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "da93f44a6f9c"
+    },
+    {
+      "title": "PVOIL 시스템의 10월 17일 소매 휘발유 및 석유 가격",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQk5QUGdCcm5pT0F4enoyOWV4MVF6X0JrYVdJOW9oYTRLNVluWWhGSE9HQlQ0alh5bVhGTXd2TGtaR3MzVVhSLU0yRERXZEh5QkxJS2h0SnduMTdzUWwweWEycDRVQXVpUDNLUUdZSDV2UWhYX2pYcVgtWk1VZGgwdTRqa0R3blcwZUNaYzZSV3pQZWV0?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-17 17:23",
+      "summary": "PVOIL 시스템의 10월 17일 소매 휘발유 및 석유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "deaa9a92d53a"
+    },
+    {
+      "title": "사우디·호르무즈 불안에 유가 재폭등…美 비축유 1700만 배럴 푼다",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9zckhpLTZSbGJScktBUEwwMl9UVDZ0UjZ0R3lwT2dYYkswemlFVl9xWGpmTkJxTi1SeVQ0cy1RdEN3M1hOcG5xdnBOMG9MSUwyTXhUUU1ZdzBkeDlzc3hpcWlQUHpsTERRa0xBRWJZQ1VvRGtG?oc=5",
+      "source": "파이낸셜포스트",
+      "published": "2026-10-17 17:20",
+      "summary": "사우디·호르무즈 불안에 유가 재폭등…美 비축유 1700만 배럴 푼다  파이낸셜포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3d2e48591bde"
+    },
+    {
+      "title": "중동 긴장 고조에 국제유가 급등…WTI 100달러 돌파",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1FeWh0UFpfWTEyek5tMXU4R3VVelJZMjh4eEcwR1JnZl90ZEk1QUpKQ2ZnWUQtWUdVWUhISjUtMmR5em5BR1ZCcjJaam1oelNWajJ5bnppOGRRSXBlY0F5a2MzOFU1WHdEMVpSdQ?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-10-17 16:53",
+      "summary": "중동 긴장 고조에 국제유가 급등…WTI 100달러 돌파  스페셜경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "중동지역 긴장감 고조에 국제유가 급등세···WTI 100달러 넘어서",
+          "source": "투데이코리아",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82NGdNdno5Zy1hWFRrWlRiOUgzYUpxNlUtQUdGaUxxVFV5eUhkOUVwYmFfcFhQalNHSzlfaTZuWC1jYUhEQjBZZVRieGNFeURiVk9kNFdvU196UmxnMlVzZlMtYnpLRGhDbUhMZ2hTanI?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c8fd12ccd2d0"
+    },
+    {
+      "title": "국내 기름값 22주 연속 하락‥휘발유·경유 1천8백 원대",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96QXo5R3dEV0wtNXRpaUxRM19rMmlOa3pPZjFMY3d2dEh2ZGNMZnBaTlNjNU9RSjdXMVE3eFJzVnFHS1lfaktrTUU0cHJDdXBSZ3B1ZU45bjFxdHA4NUxwR3JuSEQydC1xbU9xaWZ5YnhDamhv0gF0QVVfeXFMUEJjd1J2MXdzQmV1c2JtYWF3VHRDOWMzU21TbTZhSDh2ODM5STRvVWd0VDJBaGlRNEp6bVllbDlpa3lTQ2JXUWNVc3FUUXhXTl81R1BrNmU3bFlaYkIzdUp3TGM1RFJNSWFSaEdWNkNEZ2FZd0I?oc=5",
+      "source": "MBC 뉴스",
+      "published": "2026-10-17 16:42",
+      "summary": "국내 기름값 22주 연속 하락‥휘발유·경유 1천8백 원대  MBC 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aaa886988944"
+    },
+    {
+      "title": "트럼프, 유가 급등에 ‘대러 추가 제재’ 취소…정치권 “또 푸틴에 굴복”",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQTU1azVtdU9EekVFdG9uN1BSMGJ3QmFzR3JXUERJOFFySUVaRHh1Z0Y4NkNFd3h1MlRPMU9IQU4xN041QmY2S2VzcWNMemFhY0M1NGp0b21vUVN6YlBzb0pmS3FDcDRIeHQxQ3dOVW8yaDN6Yk9heEViMjJJT25LWU1n?oc=5",
+      "source": "한겨레",
+      "published": "2026-10-17 16:25",
+      "summary": "트럼프, 유가 급등에 ‘대러 추가 제재’ 취소…정치권 “또 푸틴에 굴복”  한겨레",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1fc359479ef1"
+    },
+    {
+      "title": "기름값 22주째 하락…휘발유·경유 1,800원대",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qRlRzWjZZNXJWUmwxSFcxYy1Qb0pjQ0paNV9jeVNrMFBNTkhlQjdhMGV0dmVfbTZHT0JMUnFoY09OaDdqVDNZLVhWQXJsenVka3l6Vll5RHlBV2owY0FITNIBYEFVX3lxTE9qRlRzWjZZNXJWUmwxSFcxYy1Qb0pjQ0paNV9jeVNrMFBNTkhlQjdhMGV0dmVfbTZHT0JMUnFoY09OaDdqVDNZLVhWQXJsenVka3l6Vll5RHlBV2owY0FITA?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-17 14:50",
+      "summary": "기름값 22주째 하락…휘발유·경유 1,800원대  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "기름값 22주째 하락…휘발유·경유 1,800원대",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hY25fcFFLWUd2ZnRFYUhxRWdsejBLbjNKM3ZsM0l1eEY4ZGI2M2gteWNRSnlZdWZfcWI0LU9ZX1o0VlZab2hXMWlsdWFENFhTN01RNmloMzZjalHSAWBBVV95cUxPakZUc1o2WTVyVlJsMUhXMWMtUG9KY0NKWjVfY3lTazBQTU5IZUI3YTBldHZlX202R09CTFJxaGNPTmg3alQzWS1YVkFybHp1ZGt5elZZeUR5QVdqMGNBSEw?oc=5"
+        },
+        {
+          "title": "기름값 22주째 하락…휘발유·경유 1,800원대",
+          "source": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jNVJBNTVENnJ6aG5ramJ3d2poYktHcWNJLW5qNnFDVU9weHN2YnJuUzBralRnM1lKWDlkaWJfRkFuX2lnekVxaGZTQmFrZVBsT29WNkgtdGpDVHpIU2VidHJ6SG1OeGc?oc=5"
+        },
+        {
+          "title": "한국 기름값 22주 연속 하락…휘발유·경유 1,800원대 유지",
+          "source": "씬짜오베트남",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9YME1YZTctdTlCRmRCeURZR3F2Y2xNb3lNRE5peF9pdHhMX0F6dUNzZGJRWUxab3R3QU5KNjBEdjk0VGg3ckIzMA?oc=5"
+        },
+        {
+          "title": "국내 기름값 22주 연속 하락…휘발유·경유 1천800원대 지속",
+          "source": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hdUgzSm1vY3c5VFNWVXI5bndZSGt3X1EtT2pFeGdySE1NVkhxMUxRTk5EaFptaVI1ZlRuVEtWRVBqeE5SZlQ3LXJydGVUN2dzY2xhamtST1MwS2M?oc=5"
+        },
+        {
+          "title": "국내 기름값 22주 연속 하락…휘발유·경유 1천800원대 지속",
+          "source": "SBS Biz",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Wa2l5UjE3QVpFejRJbGk1amhFOUplYnhLR001MlBVTGZqYmxvNGpZUjFiWXZLRXhMc20xOUtheGdsOVVwbXpxUG9CMXRIc3pCcUgya19HYXnSAVhBVV95cUxOVmtpeVIxN0FaRXo0SWxpNWpoRTlKZWJ4S0dNNTJQVUxmamJsbzRqWVIxYll2S0V4THNtMTlLYXhnbDlVcG16cVBvQjF0SHN6QnFIMmtfR2F5?oc=5"
+        },
+        {
+          "title": "기름값 22주째 하락…휘발유·경유 1,800원대 지속",
+          "source": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MZzVtZmpQdl9pR3ZralJTMFRqTTBrbzdFeUdZSWo5U1d3RS16cklZNkRxMnVvWWdobmhvcTVQVTVZVnNxeWw5dnJ0ekItWlk0WWVENWRIWnFIREtoenJlN1QwMGxsNmM?oc=5"
+        },
+        {
+          "title": "국내 기름값 22주째 하락…휘발유·경유는 여전히 1,800원대",
+          "source": "BBS불교방송",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE12bkF5RXpieGNlWVQ2NFVQcWFDc1ZhNHlYeWhEeEN3Y09hYlU2T2Q0OU11YTRRdm55aWROblAwcnFlNFBiTFM1TFZZUXY4dkFUbHNiSlVZWFNhWkNKcC05RDJkdmN6Sk1qTnRV?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "342baf0e7b06"
+    },
+    {
+      "title": "오늘의 연료 가격(2026년 10월 17일): 브렌트유가 급등하여 배럴당 110달러를 기록했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORHNZYXNCUkxsbVV6anZ0RDJUaVpjY09WaDBwanBTb1lsdHZ6XzR1NlB6TF9xbGh3UEtpU3N5SXh0Yl85aEZTV0ctNmxWbURqYUY2RTdhTzk3UHRsd252d3B3QTgwWGF4aWhjOU9aSEVhbzBxSUF3Z2tqX3lodWt1YzRCYy1wdEVmRTBaSVVDemZ3dW9OUTcxS2J4eFYwSGNQTGc?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 14:13",
+      "summary": "오늘의 연료 가격(2026년 10월 17일): 브렌트유가 급등하여 배럴당 110달러를 기록했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b1d8856eb9f7"
+    },
+    {
+      "title": "세계 석유 가격이 배럴당 110달러를 기록했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1xemNXclBKajZ0THd3eUdsWjRQMTNxNFcxZGFtMWhIV0VaMlliTmM3alRDR0c0dmhySmpGZ1RYbGhacWRHRWZ6VmQ0ektPSFpUbUplSENBdHNVbzdlcjRhSktlOE1qMzVmQmdpc2ZDTTN1QTQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 14:09",
+      "summary": "세계 석유 가격이 배럴당 110달러를 기록했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "180631578274"
+    },
+    {
+      "title": "국제유가 급등에 수입물가 4개월 만에 반등… 외국인은 8개월째 ‘셀코리아’",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1wSlVpRU1QSFUybTN2NlpNbjlobVNPb0lvbU53NjNqbXB5cEVsYnVXNi15amdmZUQwZ1hmZ1RxNGJXVjVjQTlfR2o3QVJaR2x1SmlCOTcxcmZlczdMUmZXVjdPNjF5SlhmTmVF0gFUQVVfeXFMUHA0d3RFLVdYbmZ0Tk50S0h2ek0zeHZlN0wwZHRwVnhZeW50bUtzdTU5YWtaNk1yZXVlZG8xeExEY2xNUC1VOER3OWpweE9EUHkyejE2?oc=5",
+      "source": "세계일보",
+      "published": "2026-10-17 13:51",
+      "summary": "국제유가 급등에 수입물가 4개월 만에 반등… 외국인은 8개월째 ‘셀코리아’  세계일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가 급등에 수입물가 4개월 만에 반등… 외국인은 8개월째 ‘셀코리아’",
+          "source": "세계일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1QUHNXdldIQndvV2lhOHZlSGttblFEdXpSN21WN29mdXB3NE16d19qeWVKTGJjZ0VibVVJeFRsTE5fbG9QaE5YNjVpUTQ3NDE50gFUQVVfeXFMUHA0d3RFLVdYbmZ0Tk50S0h2ek0zeHZlN0wwZHRwVnhZeW50bUtzdTU5YWtaNk1yZXVlZG8xeExEY2xNUC1VOER3OWpweE9EUHkyejE2?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4ec6444cd778"
+    },
+    {
+      "title": "美 물가 3.7% 급등…고유가·AI 투자에 금리 인상 효과 제한",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBUbDdjN2JCaUVWVHI2TW5ZWFQ1a3pmTXlUc0ZZYjJ1M0Y3bTBTLTZiWUEyTlpqLW00OEJnYkM1OTExUGNmU1JtMDBSX092RzVQVkZ3Vm5GMTl1UEFOUGJ2R2ZLUHJOdS1NRFdrcg?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-10-17 13:51",
+      "summary": "美 물가 3.7% 급등…고유가·AI 투자에 금리 인상 효과 제한  스페셜경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "24f0248e6912"
+    },
+    {
+      "title": "오늘 10월 17일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNem52TS00X0hPcTRvZDExc2ptamZLZEFyb3ZETnBtWWM3OU5sdTY5UkZpdjI0WWQ3M0lLM0FNQ1pJUTIxMHB3R1l6NnczVnlBaFc2cGZMOUM0NXhtSVFoelF4Z2FhYzJxNXZ2VG5zLXJUQ1BxbnpLcUMzWDBwU3E1cjFBTQ?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-17 13:11",
+      "summary": "오늘 10월 17일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5bd44e6e54a4"
+    },
+    {
+      "title": "“이란 전쟁은 서방 제국주의의 일부”, 호르무즈 파병 논의 두고 강연 열려",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hTVI3VnBBS05PRWU4d1BrUzM1R01ZR1Etb2hMU2E0Y2hzSWRkcHdyT0FZbmpVSFM0MWRNZ3l4eFBzSzMwaUhoM20yNDR0US0waE1EcUFiblhuYXhONmZlVGtzR2tkUQ?oc=5",
+      "source": "서울대저널",
+      "published": "2026-10-17 12:55",
+      "summary": "“이란 전쟁은 서방 제국주의의 일부”, 호르무즈 파병 논의 두고 강연 열려  서울대저널",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "de632b7cfcf6"
+    },
+    {
+      "title": "오늘(10월 17일) 연료 가격: 세계 유가가 급등하여 배럴당 거의 110달러에 달했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYnkySm5RaVZmSTlfd05RdUwxN2NYWEhEUUdVaDFGN1RGb0dJQkkzLVBzUFJ3WnBHcmlLdkNJaW9kanU4WDNwMlJLbzRhc3RpRjZTTGpQZ1hDTjBTTjlxZndFbUVZd1kxR1FzX1BoUEU0ZS1iR042eUF1VXB0MmtzbTRvdkhybjhqQjU5MHFKaFVYQlY0TEplb2dTdHpoWkE0UkpmR1BWWUk?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 12:49",
+      "summary": "오늘(10월 17일) 연료 가격: 세계 유가가 급등하여 배럴당 거의 110달러에 달했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e5719711d315"
+    },
+    {
+      "title": "주유소 기름값 22주 연속 하락…휘발유 L당 1856.6원",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQbXdpRnU3cDdIZzBGSXZsNTlydkp4V0lXTWdlN3h2TkU2SG5MOXJIMUhKSC1IVDRXLVotMFB0X2RycWZNQ09OSTFxTHlseHVjVXE2eks2LUZEQzJxTXMyWnlEN1I?oc=5",
+      "source": "서울경제TV",
+      "published": "2026-10-17 12:38",
+      "summary": "주유소 기름값 22주 연속 하락…휘발유 L당 1856.6원  서울경제TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전국 주유소 기름값 22주 연속 내려… 휘발유 평균 L당 1856.6원",
+          "source": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbWV2SUpGSFAwcDROQmFPamxPcjNYZ0tOMlFHclRNMk02LWVjbHdfUmphdnIyLWVmNjFXZXFtREdlTUVmc3Q1UVc1NDJrb1lhWkxNVW9YWW54ckFBTXVyb3NlTmhleGhPUkIySlpHOUdILUNuYk1MM2J6UFlubkMxSmhJcmxZckk3MERZ?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ee1777c1e46c"
+    },
+    {
+      "title": "가스공사 인니 LNG 70만t 도입 중단 위기, 인니 전량 내수 선언",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5nWnhFOHBFSVdoNXJvaW8xSUhFUjlRdVN6aURkeEp3Z0xVbUxTUzl1N2pOU05ZVUZ6RVpaQndieGxJUEo1SktHaEVpM1d0MDd6QUg4VFJJcjU3RFhXTzlZeHI3aEJFT1F0VnJv?oc=5",
+      "source": "한국신용신문",
+      "published": "2026-10-17 12:35",
+      "summary": "가스공사 인니 LNG 70만t 도입 중단 위기, 인니 전량 내수 선언  한국신용신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3db54c1b87d1"
+    },
+    {
+      "title": "2026년 10월 16일 오늘 연료 가격: E10 휘발유 가격이 리터당 1,500 VND 이상 급락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDFSNnpLYnBOSG44TENMb004XzY5ZmdhUDZsaXFtLXl4b0VFNWw1TlJ3YlJvNWJxT3JKR0ZMWU5RQXZnaEpLMmdsLUpBOFBYRWNGcUZOM19QcDd2amJBZm90U2J1TzM1TUR3enl2YVRkVV9ycGthU0gwX3Bpem5leE9VN29IMHNrUUhreW9iTnNQT3RSdlZDSEw2NA?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 12:33",
+      "summary": "2026년 10월 16일 오늘 연료 가격: E10 휘발유 가격이 리터당 1,500 VND 이상 급락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b2a8c43cb7f4"
+    },
+    {
+      "title": "오늘의 연료 가격(2026년 10월 17일): 세계 유가가 급등했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNUxJZTMzWWtLQU1pRVh2bUZCcDJjM2d2RFZHTUtBTmtZUzhvRXh3SHdiNy1NRkY0M285OExNMWowT2d5dHZCMEVVeDhTRGhsTnY4eHQ4ZVBLU1hxT2xFUEdYQU1ITjcxQVR3bTVUenk1VFNoNHNoRUJRU1Zqam9jei0tQzV6WFE?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 12:11",
+      "summary": "오늘의 연료 가격(2026년 10월 17일): 세계 유가가 급등했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "17f6e27b3cf4"
+    },
+    {
+      "title": "국내 기름값 22주째 내리막···휘발유 1856.6원",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BaVM1WVBEdm41QkpuRTlELUtwSlU5ZzZIWDZ0VnJUMWN5azUzZlBleTY4UTc1eWR2bWZBM1BrUTVHbXA0WGRNcW9Rc0hEdFA2d3k2NXhwbGx5U2RFTlR4c0FuUE9KOUFldkE?oc=5",
+      "source": "뉴스웨이",
+      "published": "2026-10-17 12:06",
+      "summary": "국내 기름값 22주째 내리막···휘발유 1856.6원  뉴스웨이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f932cb5978fc"
+    },
+    {
+      "title": "국내 주유소 기름값 22주 연속 내려... 휘발유 1,856원·경유 1,842원",
+      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9FdkFoQlVsS2VXWU51WFlySGtfT1B0NFA2RVBnS1VkZ3l6Mjd0eEp4Q25LZ2hmWEpZVnl3?oc=5",
+      "source": "Howl.link",
+      "published": "2026-10-17 12:05",
+      "summary": "국내 주유소 기름값 22주 연속 내려... 휘발유 1,856원·경유 1,842원  Howl.link",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국내 주유소 기름값 22주 연속 내려... 휘발유 1,856원·경유 1,842원",
+          "source": "민중의소리",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pMzhaXzFlUWxWWS1sbG1yS3FoY1MyMmZTOGhHWk1pdnkzYlY2S1JUNEUzWHVsZHFkaFN2OU1nZTdvdFdvZkpuTUlFVQ?oc=5"
+        }
+      ],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bdd546ad1441"
+    },
+    {
+      "title": "국제유가, 5월 이후 처음 110달러 넘어···전쟁 장기화로 미국 에너지 비용 부담 확대",
+      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOMGtHcExlUXRTMjFFSGlhak84ZFVZVWUwWFdacmIzU2owT2Y2SFpQQW9uWW8zak5GTjZKelFkSWNkMWtKeEdsdGd5RW5QZEFGLTFuekhCSTE1RGxVWXBRN1hJd2t1V3p2T1kwMkJIQUJoQWtuREZMWmd2b3NHcnNlWE15N0lWZWd5cGpSRHF1TmNyY25SblpaVFhkQXgyQ0ctaFBDenh6VHdlQ25nb0lXSERGX0FFVjJQNDBEUGVZUTJFZE5uRkU4OVpDeU0wWExGQVZ6Tl82bzQ3Sm1JMDBBZDdRSDJ5RzRTUmN0cENzWGFfbkpOdmxYYVBsZUFYbHlsVUJfckRDbzdJZmJiWjBhbGd3UC1PNWcxYzVkRjNWaVdLLVZ0VDR3ZE01bFg3eUhlWFBHX3V3UGFUSTB1eWlfUXdKTi11NXhuc3U3Tg?oc=5",
+      "source": "Benzinga",
+      "published": "2026-10-17 11:53",
+      "summary": "국제유가, 5월 이후 처음 110달러 넘어···전쟁 장기화로 미국 에너지 비용 부담 확대  Benzinga",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a899d904ed3d"
+    },
+    {
+      "title": "오늘 10월 17일 휘발유 가격: 5개월 만에 최고치로 상승",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbS1rNllOTlJnbzZFSFpsNVVJS2dqaWhsMWJ0eXp0Q25xajhtenotdTNCVVhfWGtEVk0zQWJJUFlzUmhtUjhQVXdjVklVaG45WHh5TThtUjdPamk3OTdYOV9MTjZST2Z5M0FBVVJ0cjlfVW96bWItd3dvQWJzZTVON2YyWjVJRkdDUl9xWTUxdl9mSWR0aV9SOGJScw?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-17 11:43",
+      "summary": "오늘 10월 17일 휘발유 가격: 5개월 만에 최고치로 상승  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b43a2ff58da2"
+    },
+    {
+      "title": "국내 주유소 기름값 22주 연속 하락...대구 휘발유 평균 L당 1829.9원",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1peTMyb0pvZ2FQMXNzNldFY3dYYURja2p1MTRMYlYxY1dxUnV6ekdkVU5fb0E2VFpJNGVrMndKd2dGbnhFNWl5U1pPeXdPQkdLTUlNek5aTnFaXzJYVXI4MWdBb0QzQVpMVlE?oc=5",
+      "source": "경북도민일보",
+      "published": "2026-10-17 11:35",
+      "summary": "국내 주유소 기름값 22주 연속 하락...대구 휘발유 평균 L당 1829.9원  경북도민일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6996d0b83742"
+    },
+    {
+      "title": "후티 공세·선박 피격 겹쳐…호르무즈 원유 수송 긴장 고조",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzZnlScDVGWWJLZTVDeW5ZTmdsWWN6b3I2XzJEVF9BZGJ1ajRjMjY4SDNNNXRJR2NhYlpaUzBleVZ0bDJaV2tvc1Z6dXhXTElkZ2FfVUNCSTZ6Unp0R2tiUThibkNkQWJYdkE?oc=5",
+      "source": "데일리팝",
+      "published": "2026-10-17 11:21",
+      "summary": "후티 공세·선박 피격 겹쳐…호르무즈 원유 수송 긴장 고조  데일리팝",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "91834fb037e4"
+    },
+    {
+      "title": "휘발유 1856원·경유 1842원…주유소 기름값 22주째 하락",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5wMGxIdndBMlZuMWJ6ekFPa0JlRlBpaEJCOUZvZEZqVVYzR3EwR0Foa2FXZVM2REJTallmVERtLWVyZlhtWm8ta2FsZVBLZ0VnTjJ1SzZxM2nSAVRBVV95cUxOYV9JRWtZZmpRNXY3TDlIMkhWcmszODZfWVBhc08yMkN4TkpaV204MGNWRHp6R2UxVC1pbTJiYXdXeU1Ub1ZEandDNFp4bHowNUhreXo?oc=5",
+      "source": "세계일보",
+      "published": "2026-10-17 10:49",
+      "summary": "휘발유 1856원·경유 1842원…주유소 기름값 22주째 하락  세계일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "휘발유 1856원·경유 1842원…주유소 기름값 22주째 하락",
+          "source": "세계일보",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hX0lFa1lmalE1djdMOUgySFZyazM4Nl9ZUGFzTzIyQ3hOSlpXbTgwY1ZEenpHZTFULWltMmJhd1d5TVRvVkRqd0M0WnhsejA1SGt5etIBVEFVX3lxTE5hX0lFa1lmalE1djdMOUgySFZyazM4Nl9ZUGFzTzIyQ3hOSlpXbTgwY1ZEenpHZTFULWltMmJhd1d5TVRvVkRqd0M0WnhsejA1SGt5eg?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c3a89a62cbce"
+    },
+    {
+      "title": "국제유가 급등, 브렌트유 5개월 만에 최고치",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5RRWdkek5kd093S1ZJb1ktSXF5ZFlTUi10TlVrZDdUbG9CNjRpN2ZMLUdKLXdzcEp6bUhleEM2RmtfQzlUQmZ4dw?oc=5",
+      "source": "씬짜오베트남",
+      "published": "2026-10-17 10:43",
+      "summary": "국제유가 급등, 브렌트유 5개월 만에 최고치  씬짜오베트남",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a8803b887d79"
+    },
+    {
+      "title": "국제안보 악재에 국제유가 급등…브렌트유 110달러 육박",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GTWMxeWhzUUlWMVFOREQxLW1wZ2FNb01CLWRkbHltbmlaemJJSVVfQjRiRl9mOVVqMjBPc002Y2p1dzJrOVFMMWtPR1hMTzBnVHJrMkZHVHktZw?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-10-17 10:19",
+      "summary": "국제안보 악재에 국제유가 급등…브렌트유 110달러 육박  파이낸셜뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d62c9489a9c8"
+    },
+    {
+      "title": "佛 기술 의존 낮출까···LNG 화물창 국산화 잰걸음",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LMGJiWGVUREFhZ0UyTEZ2enhEa1Y4ODhVUTY4M0JLMzk3OHJXdVgtZnlXUHJ4UkV1MFVKWjEtVXRRNE5RclhWSFRrWFBxUzMzTHkzaFlsdG9KbmtHQVlXZllpZ2c1S1NYY21Ia1JfR2hHMGQ4aFHSAXZBVV95cUxOSzBiYlhlVERBYWdFMkxGdnp4RGtWODg4VVE2ODNCSzM5NzhyV3VYLWZ5V1ByeFJFdTBVSloxLVV0UTROUXJYVkhUa1hQcVMzM0x5M2hZbHRvSm5rR0FZV2ZZaWdnNUtTWGNtSGtSX0doRzBkOGhR?oc=5",
+      "source": "시사저널e",
+      "published": "2026-10-17 10:19",
+      "summary": "佛 기술 의존 낮출까···LNG 화물창 국산화 잰걸음  시사저널e",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "dd9a088650cc"
+    },
+    {
+      "title": "국제 유가 급등에도 기름값 또 묶여…정유업계 \"유동성 부담 확대\"",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJU0ZHN0tjTXNVM3JUWmhFSEZiVl9kVFc0WXctWmljcFl0dS1EVkxLdGthdC1oTlFRYUdaMFRiM0RtTU5RNllFUWpUZVoyUnZoR3IxLdIBWEFVX3lxTFByLVFNMWtKOGdNc0o5d0s4RU5mejhZUVdVUmRDLVlfcDA4QnphVkhnczhCWmd4SDVRc2lkOFdra1hrelNfb1NJeGQ2Z0lXZGlRQk5qZ1FXM1A?oc=5",
+      "source": "미디어펜",
+      "published": "2026-10-17 10:18",
+      "summary": "국제 유가 급등에도 기름값 또 묶여…정유업계 \"유동성 부담 확대\"  미디어펜",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제 유가 급등에도 기름값 또 묶여…정유업계 \"유동성 부담 확대\"",
+          "source": "미디어펜",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByLVFNMWtKOGdNc0o5d0s4RU5mejhZUVdVUmRDLVlfcDA4QnphVkhnczhCWmd4SDVRc2lkOFdra1hrelNfb1NJeGQ2Z0lXZGlRQk5qZ1FXM1DSAVhBVV95cUxQci1RTTFrSjhnTXNKOXdLOEVOZno4WVFXVVJkQy1ZX3AwOEJ6YVZIZ3M4QlpneEg1UXNpZDhXa2tYa3pTX29TSXhkNmdJV2RpUUJOamdRVzNQ?oc=5"
+        },
+        {
+          "title": "국제 유가 급등에도 기름값 또 묶여…정유업계 \"유동성 부담 확대\"",
+          "source": "미디어펜",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJU0ZHN0tjTXNVM3JUWmhFSEZiVl9kVFc0WXctWmljcFl0dS1EVkxLdGthdC1oTlFRYUdaMFRiM0RtTU5RNllFUWpUZVoyUnZoR3IxLQ?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0048a9e1370d"
+    },
+    {
+      "title": "전국 주유소 휘발유 평균 가격 내렸지만...국제유가는↑",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Gb3VLS1llRzAwZkl4X0RPUGN0MzJPVDd4NzFUY1VhWFh5ZkJ0ZW5weGk3NVViT2VETHMtOW1wajJHcTNlRXFSbFl1ZGR3VllVWmxlbGUwMzBTdU9mUjZzZ2kxTC1CS2VLd2JtMWNR?oc=5",
+      "source": "국제뉴스",
+      "published": "2026-10-17 10:12",
+      "summary": "전국 주유소 휘발유 평균 가격 내렸지만...국제유가는↑  국제뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ed0052dc82cd"
+    },
+    {
+      "title": "중동·우크라이나 지정학적 리스크 심화…국제유가 급등 By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Mbk1hMC1Rd3lkUGprRnVkcG5SUkhXNTc3ckJjVmZwQnpsNzdaaFVlYzlXTVU5UWZQUjNiY29jS01DNWpmUktod3NXM01fd2tYWmJqLVdqN1FCdkN3dEJwOXZZbUVfaHo3YVBCRjQ3bjA?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-10-17 10:11",
+      "summary": "중동·우크라이나 지정학적 리스크 심화…국제유가 급등 By EBN  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "중동·우크라이나 지정학적 리스크 심화…국제유가 급등",
+          "source": "www.ebn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9nNVEwSHdMRVpKSU5SUXpzZEdqM2NHV210ZGdZdEdpWnBYZm02VDU2d0ZvOVlia1J5OTNIa2lLZU9XdTFTTzFzZVBnZ0N3aGhVT01SN1BwTjZ5YnMwR29SUXVwM2w3MG9x?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9318fffeb057"
+    },
+    {
+      "title": "국내 기름값 22주 연속 하락…휘발유 L당 1,856.6원",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZaGtqYVFlZU1Ta2dheE04bVdlVVVuX2VaTVFPb3pkYmFCS2swUG9LbmxMQmZkTUk5V0g4cWc1eGYzR1JVNGRSelVnaGJpQ3RVcC1IWndtekxWa2l5TGFwZnpBMi15Y2VNWnRB?oc=5",
+      "source": "매일경제TV",
+      "published": "2026-10-17 10:06",
+      "summary": "국내 기름값 22주 연속 하락…휘발유 L당 1,856.6원  매일경제TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "dcec47674d11"
+    },
+    {
+      "title": "11차 석유 최고가격, 10차 수준 동결…휘발유 1784원, 경유 1773원",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14cW9CeXpxc0Z6TTA4ZHM4dUxVYkpUV1QxWm9uRExBcGVYWldUSl9sQS13SzJJcHlQQXlLUEpsZy1hQWoyU0hNdlpUbE1qcDR2d0ZLdy1B?oc=5",
+      "source": "지디넷코리아",
+      "published": "2026-10-17 09:57",
+      "summary": "11차 석유 최고가격, 10차 수준 동결…휘발유 1784원, 경유 1773원  지디넷코리아",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e89e7a9955f7"
+    },
+    {
+      "title": "싱가포르뉴스 싱가포르 주요 유류사 릴레이 인상 막 내려... SPC도 휘발유·경유 가격 3센트 올려",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oLXNmTnNEeGF5ajB0cWpNNkNhVm1IQ25nMkFQZHRkdzc2ODFGRWk0bGU4dTBpQi1qcVV5Yi1zRTBvNmoxcUI3dVdpMWFRcWdvT0tUY3hoTE5sZw?oc=5",
+      "source": "뉴스케이",
+      "published": "2026-10-17 09:55",
+      "summary": "싱가포르뉴스 싱가포르 주요 유류사 릴레이 인상 막 내려... SPC도 휘발유·경유 가격 3센트 올려  뉴스케이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e66afaaa9e72"
+    },
+    {
+      "title": "국제유가 급등에도 국내 기름값 ＇안정＇…22주째 내렸다",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1IcWV5ZjVJdzNUUUYxbTlUN1oyY3lLdGJ3WUZ6VHRIVk5PU3MyYVQ4MktLWWp2OXVTOVZHaXlCVXF4cVJrQWQ0S2dMQUJhRkFHeTFoQ294WkR5aGkxY2g5RkNYNTJmVl9na1g3V1JSeXFVMm8?oc=5",
+      "source": "한국경제TV",
+      "published": "2026-10-17 09:51",
+      "summary": "국제유가 급등에도 국내 기름값 ＇안정＇…22주째 내렸다  한국경제TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가 급등에도 국내 기름값 ＇안정＇…22주째 내렸다",
+          "source": "한국경제TV",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9xaUc5b0NqZUxVM3hrU05XUldLOE9DZUVsSERlVURuT21sWjFiRV9Jbk0tNUZzdFQ4OW5oVFhxN2huV2RBSWplSHY0cmx5bUpKbFpBOENxNHhtUEhFVU1laVRWNW96b0Y2RHZqNl9aaDV1TnJiakNz?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ba8b17beeb12"
+    },
+    {
+      "title": "중동·우크라이나 긴장 고조에 국제유가 급등…브렌트유 110달러 육박",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8yODR3V2FjREFQaDVZOUFVVlJkaUJia1d1dWlYUUlEcGxDTFJVb1FlM2MwT25USVJoZ1pZYjdqU0FISkxBZVRodUNxeHdNbXdOTUZWQ3V6amdVd2JlV1FoNXlGcHg?oc=5",
+      "source": "서울경제TV",
+      "published": "2026-10-17 09:50",
+      "summary": "중동·우크라이나 긴장 고조에 국제유가 급등…브렌트유 110달러 육박  서울경제TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "브렌트유 110달러 육박…중동·우크라 공급 불안에 국제유가 급등",
+          "source": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1PYUNuY2I0bENaNkVWVzN6Q2Ntd3F6ZllrWDFIeUM1ZVF0ODhuRjc3eXRvZ0MxYUItRXQxQWFrQmNNU1FjVmhBOGlNVDRGWEd3Y1hpVV9NeDIyYmtyNV9Iclc4Tjg3a3pFQUpYbUtPaW45NmdEbnVF0gF3QVVfeXFMTU9hQ25jYjRsQ1o2RVZXM3pDY213cXpmWWtYMUh5QzVlUXQ4OG5GNzd5dG9nQzFhQi1FdDFBYWtCY01TUWNWaEE4aU1UNEZYR3djWGlVX014MjJia3I1X0hyVzhOODdrekVBSlhtS09pbjk2Z0RudUU?oc=5"
+        },
+        {
+          "title": "브렌트유 110달러 육박…중동·우크라 공급 불안에 국제유가 급등",
+          "source": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4bC1UTnlNVGl0NFFzQVh4eEJTcGpLRExtZWRlb2w3RzZFaVVwWXJ4UVRHY1Ztd2pJQ0JTd2RiUThULTRDSzlNT0NmdmhOcFF1OXc1R3gwUmF0YW90RzFRVDRYYmlJVWVvXzYxYmNoUWloZjjSAXdBVV95cUxNT2FDbmNiNGxDWjZFVlczekNjbXdxemZZa1gxSHlDNWVRdDg4bkY3N3l0b2dDMWFCLUV0MUFha0JjTVNRY1ZoQThpTVQ0RlhHd2NYaVVfTXgyMmJrcjVfSHJXOE44N2t6RUFKWG1LT2luOTZnRG51RQ?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ff3e7591bf16"
+    },
+    {
+      "title": "국내 기름값 22주째 내리막…국제유가 상승에도 ‘1800원대 방어’",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1mT1ppQmF0czhid0lsemMwM0x0dEpnQjljUDREOWJvMkMzQUd3NGdJdGt6T0ZBeDBDZmJqN0hzVDJaaG8tVWhVSlVpVWN0RzNPRld2ZnJLRzlqWG1xUUc0ZEFHaDB3VTlmcTNvWndlQdIBb0FVX3lxTE1mT1ppQmF0czhid0lsemMwM0x0dEpnQjljUDREOWJvMkMzQUd3NGdJdGt6T0ZBeDBDZmJqN0hzVDJaaG8tVWhVSlVpVWN0RzNPRld2ZnJLRzlqWG1xUUc0ZEFHaDB3VTlmcTNvWndlQQ?oc=5",
+      "source": "뉴스로드",
+      "published": "2026-10-17 09:33",
+      "summary": "국내 기름값 22주째 내리막…국제유가 상승에도 ‘1800원대 방어’  뉴스로드",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국내 기름값 22주째 내리막…국제유가 상승에도 ‘1800원대 방어’",
+          "source": "뉴스로드",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9NTHRCY1NqdXh0dFotdUJzM25BbEg2Q0FvMkt4OWNBdUk5SlpQV2NFNm4xd1ozOHRaNzktamRtRVR1aWZ0elQ1RUZrZ2NFMXhvaHpjMFhLOEJHRjUwNTNJZ3dOcnZUZTZoRjBB0gFvQVVfeXFMTWZPWmlCYXRzOGJ3SWx6YzAzTHR0SmdCOWNQNEQ5Ym8yQzNBR3c0Z0l0a3pPRkF4MENmYmo3SHNUMlpoby1VaFVKVWlVY3RHM09GV3ZmcktHOWpYbXFRRzRkQUdoMHdVOWZxM29ad2VB?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d974c656f109"
+    },
+    {
+      "title": "국내 기름값 22주 연속 내림세…휘발유·경유 1천800원대 지속",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IaHNZVGNMUVJ3Q1JGeERrNHFFUVhkQjlPNHVRZF9CY2VhV2dxOU1xV25PX0NCOVBUYzJHQTRscDZiMGIxbGdoV1RrNkxRczMyQmRyN2FxUUI3ek54VFRoLTlUS29TQQ?oc=5",
+      "source": "news.sbs.co.kr",
+      "published": "2026-10-17 09:33",
+      "summary": "국내 기름값 22주 연속 내림세…휘발유·경유 1천800원대 지속  news.sbs.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c7bd5544ef19"
+    },
+    {
+      "title": "중동·우크라 불안에 국제유가 급등…브렌트유 5개월來 최고",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1sS0hZdzVlMDV5b01WSjhJWDdXOWVOVlFHcUlrSHFiZTZlcWNDN3pteXZWTWtOZXl0MURwampJckh6bVNkOWVINTR2YXpHdElqVVg1c0l4SQ?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-10-17 09:24",
+      "summary": "중동·우크라 불안에 국제유가 급등…브렌트유 5개월來 최고  헤럴드경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "71613c70a034"
+    },
+    {
+      "title": "카타르 LNG 충격, 세계 에너지 흔든다",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1TQkdYMkFTZWVFLUNsLWJiamVWUzdEOE5PdDA4eHVCRFpQWWpCdHdKTXRiejh3NEhPckdWUmlWaTR2d1NZaVdOWUVB?oc=5",
+      "source": "뉴스N연합",
+      "published": "2026-10-17 09:21",
+      "summary": "카타르 LNG 충격, 세계 에너지 흔든다  뉴스N연합",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "카타르 LNG 충격, 세계 에너지 흔든다",
+          "source": "유스연합",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE51SHBxTTlSZUlhNnBSMXNES25IeG53UHVhSVF1SGpuUlkyTVJJS2NvZnNqcXNRTGZiNHktV3B2Zm1JSVB3cG12SktISzBsV2pqamk4?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "94edc257fbac"
+    },
+    {
+      "title": "부산 주유소 휘발유 평균가 ℓ당 1838.3원… 전주보다 1.2원 ↓",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbGhNSlpsTDRiUUNFZGgtNGxkcHdUYlQtbVJpZUZTaHFEOHFEVEx2OHNiOGo4STFxeFZLSS03MGRKYmc0LURHaGRUaklNWXl6Y1VqalVRdDVZbUxVLXU5d2phVDU0bDBteExhbXl0N2p5bkZ0dlhJNjRMX0wzMjhCc1o5MGxleFM3dzVudThB?oc=5",
+      "source": "국제신문",
+      "published": "2026-10-17 09:16",
+      "summary": "부산 주유소 휘발유 평균가 ℓ당 1838.3원… 전주보다 1.2원 ↓  국제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "55a67cb24b02"
+    },
+    {
+      "title": "비축·AI·원유트레이딩 강화…석유공사, 민간 전문가 7명 영입 추진",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WT2JiU0lkYUp5UGRZTWNSN1ZTXzRab2JPdzEzRG04ZDlfUEg3dzNlZUFld1dkVEVoOVFpTVRCdl9lbmRaeDhoVVZ3ZHdyOGdsWXRZN2E2SGJ1aXFKeC1vZHpqQUtWX3Y0N2JzQw?oc=5",
+      "source": "에너지타임즈",
+      "published": "2026-10-17 09:10",
+      "summary": "비축·AI·원유트레이딩 강화…석유공사, 민간 전문가 7명 영입 추진  에너지타임즈",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d3e2ded36930"
+    },
+    {
+      "title": "산업부, 11차 석유최고가격을 10차 수준으로 동결 발표",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UbnZoQUpVVmVYSzNQLTl1U21OQTJhbHhSR0pGZ3prSUxjb0xLN0lJLTNVSFJ6cHZjVXFyelo4SVlMQ2t1a1hySFpNb2tNcUFfWm43SFJsbllIMWdIMkhR?oc=5",
+      "source": "헬로티",
+      "published": "2026-10-17 09:10",
+      "summary": "산업부, 11차 석유최고가격을 10차 수준으로 동결 발표  헬로티",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7c8788ad6b18"
+    },
+    {
+      "title": "주유소 기름값 22주 연속 하락…휘발유 1천856.6원·경유 1천842.8원",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XOUdFSmZybzJUeURzZFIyQ0JtY18yZ2E1TG9fOTg5bndSc0xNMUpZOVFHcHppOW40YkdWQlVaQlc1OUdmZFVVbUQ3bWR5UGdBODNSczdjcXdSbS1vVFNoQ19vR1dFdnc?oc=5",
+      "source": "청년일보",
+      "published": "2026-10-17 09:05",
+      "summary": "주유소 기름값 22주 연속 하락…휘발유 1천856.6원·경유 1천842.8원  청년일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9dcf7e66c3fb"
+    },
+    {
+      "title": "석유 최고가격 네 번째 동결…휘발유 1,784원·경유 1,773원 유",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1KLWRYZjRKMzZHTmw3Y09xOXl5SXNWRHBCbUNKMU4yd2dYcnNCd2Q5OHFITVljYWlZUHhzZ05HbjRSeVJQTDRpWVdENFByMTlkUTgyMUdB?oc=5",
+      "source": "대한청년일보",
+      "published": "2026-10-17 09:00",
+      "summary": "석유 최고가격 네 번째 동결…휘발유 1,784원·경유 1,773원 유  대한청년일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유 최고가격 네 번째 동결…휘발유 1,784원·경유 1,773원 유",
+          "source": "https://www.didimkorea.net/",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9lNGkwZTZSaXJRNnFfOEl1RExQdkdWUS1GV1NJTUpRMTFXVU53dGJPbjVoajRJZDcxT0FteWczbXVZWlg2NEZTNVZ1cWdPVG8?oc=5"
+        },
+        {
+          "title": "석유 최고가격 네 번째 동결…휘발유 1,784원·경유 1,773원 유",
+          "source": "투데이타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41WWRYeWplRkhQaWpTMWpXOHBSWmJSTUd1b2hvdDNsZGFxVkMtSjA0WWxCaXRlRUF4VjUycWlHNTZ1VmR5YmhXTGEyTXp1YzhaWUE?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5f8bd22c6e84"
+    },
+    {
+      "title": "[속보] 기름값 22주째 하락…휘발유·경유 1800원대",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBja2dJR19FbkJ1N2xRZS1uSVBjVm1Yd2xCSjV1dzVldEJxZlNoLVl4MGZpX2dteDRGLVQybTc3cFMxNENTdTZtY1R0WWNXbFRSTHhMSHRLRlZUMTRscFF6QnZDbTVzbS12Qnd3bA?oc=5",
+      "source": "한경매거진&북",
+      "published": "2026-10-17 08:55",
+      "summary": "[속보] 기름값 22주째 하락…휘발유·경유 1800원대  한경매거진&북",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국내 기름값 22주 연속 하락…휘발유·경유 1800원대 이어가",
+          "source": "이투데이",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5RbEJ1MjVNS1lEaXBzMU12QjQzcnluc1dGWWhUSUllc2JWQnNhelBwSnQxSC02RkpEQlowbk00Z1QyTzBLeF9MOTlaRm1PUE9oTGpkUmRxZWE2eXZiMUdfMTdCOVFjcUtWVkJyR0prTi1aSFY5?oc=5"
+        },
+        {
+          "title": "국내 기름값 22주 연속 하락…휘발유·경유 1800원대 이어가",
+          "source": "https://spt.co.kr/",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JQWI2MUdHSXZHOGhoUWNoNGVzQWc1NEtPblBXOURRb09DeDlfNzUxVUIyOU9GeFk2cmVxa0xWNXRHdnQ0TEt0aHMzd1JYTmdueDU4WTYyX3hobE1r?oc=5"
+        },
+        {
+          "title": "국내 기름값 22주 연속 하락…휘발유·경유 1800원대 이어가",
+          "source": "이투데이",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBkN01HY0xLcmJZaFI0dFBZSGFCTlpQSzJlVFFtejc5cF9ZZnFUckstaGgzaERvMlZaTTNYa0VINWtrbWwybFQyaDd3Wk9SLVNEM3hhTw?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e106255bd1bb"
+    },
+    {
+      "title": "석유 시장에서 긍정적인 신호가 나오고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1FZUx4UVZaM2hjVml0YTc2a1RqQ1BiN1VXMm5yNGhwX2N5LVRtOEJzRG5nNngtVmZjbDhEWld2VmtwT1ZDalExdmd2ZDd2ekUwc181c09oNTk5aVZxTVZOYkJmTW5IenQ2eXdEb3hkQmhVd0NO?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 08:38",
+      "summary": "석유 시장에서 긍정적인 신호가 나오고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1e1ed55259e4"
+    },
+    {
+      "title": "국제유가 급등, WTI도 100달러 돌파…후티 얀부 타격·에너지 휴전 무산",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ucUFhdmFhRXYyc2ZxV0xmNUlQRE9UeHlrVEpLa2tJcmJ2OGhOUjE5YWtIQUtCNVNMSUtHQWdfZzBBeWVxRTZ1UDBPR1dTeGJjS1hwONIBWEFVX3lxTE41dW91bnREenZIUzU0UEJHLU1EcHZ1UmFoNVBXNnYwVldaZ18tVG9GYU1DanpQUlE2ZmJNbk9Cbl9BQTR0bWFLRXVKVExabWNLWUlEQzNKUzY?oc=5",
+      "source": "미디어펜",
+      "published": "2026-10-17 08:34",
+      "summary": "국제유가 급등, WTI도 100달러 돌파…후티 얀부 타격·에너지 휴전 무산  미디어펜",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제유가 급등, WTI도 100달러 돌파…후티 얀부 타격·에너지 휴전 무산",
+          "source": "미디어펜",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE41dW91bnREenZIUzU0UEJHLU1EcHZ1UmFoNVBXNnYwVldaZ18tVG9GYU1DanpQUlE2ZmJNbk9Cbl9BQTR0bWFLRXVKVExabWNLWUlEQzNKUzbSAVhBVV95cUxONXVvdW50RHp2SFM1NFBCRy1NRHB2dVJhaDVQVzZ2MFZXWmdfLVRvRmFNQ2p6UFJRNmZiTW5PQm5fQUE0dG1hS0V1SlRMWm1jS1lJREMzSlM2?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7f07d393fc84"
+    },
+    {
+      "title": "기름값 22주째 내렸다…대구 휘발유 1829.9원 ‘전국 최저’",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBaRm5LRXRNQk1RVy0yTXJZU3N5NHFIcDUzcEp5NnR2M1plLWpqWUlJY0tOa2wwNXQ0V191N2ZYbmZUMUJzcnd4VFBFUHJJMllRMGs5N1Rfa0ZlQQ?oc=5",
+      "source": "경북매일",
+      "published": "2026-10-17 08:26",
+      "summary": "기름값 22주째 내렸다…대구 휘발유 1829.9원 ‘전국 최저’  경북매일",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "796bdad9fdd6"
+    },
+    {
+      "title": "전국 주유소 기름값 소폭 하락…휘발유·경유 1800원대",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9rNkp3d21BaDd1NjJibWh5UWY0azJ6NmEwZlBLTGViMHBiOTBoaHFtU1d0VDlMbTJfazRVaHI0eEIxLUFkbzRSQTFsNkFoUXcx?oc=5",
+      "source": "문화일보",
+      "published": "2026-10-17 08:22",
+      "summary": "전국 주유소 기름값 소폭 하락…휘발유·경유 1800원대  문화일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "004385de2f51"
+    },
+    {
+      "title": "오늘(10월 17일) 연료 가격: 세계 유가가 이번 주 마지막 거래일을 맞아 급등했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZkpISkJrdEt4MjU4VDF5M0dSVGs0dDhWNktHZ0JxemJudlVNT09Ld1Y4YW53ZURucEVlZGcwZF9fazNPckN0UFhTNDNTRGs3MEhtLUp4b3lQTDk1eGFXdDFuSWh0QWdxRVdtR3h3TXlWZGh1YmtEbVhCdEN5WmJtTlpRZ2RLUWlaYXRKQjZhQnVEcm9KNldzN3gydGR1Z1ZyWXc?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 08:14",
+      "summary": "오늘(10월 17일) 연료 가격: 세계 유가가 이번 주 마지막 거래일을 맞아 급등했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0912c78c3059"
+    },
+    {
+      "title": "이란이 호르무즈 해협에서 전례 없는 도발을 감행한 이유 설명",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOHNfb3RMcWJkYmd0bVVvNkFoWW1kbWNoNkNFSC11eDUySWR6aFEyUGZoMzlRVFdVUUFiN3FEaDdPX2VqUjhtUlRFUkpLdmVXeEVESVliRmZUZVJpdTBZNVRHSTdrbHZ1bE5lcFdwTEdFYjRjemdNTGJhbUVvcGw3QmR3NmlEejlHZWZGNkhzRzQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 08:10",
+      "summary": "이란이 호르무즈 해협에서 전례 없는 도발을 감행한 이유 설명  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "16aec5f3c953"
+    },
+    {
+      "title": "중동 지역의 불확실성 속에 유가가 이번 주 상승세를 보일 전망입니다.",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUGxGTG5TWU10OW11XzFPZFhmQW1UYXY3TUJOM1F4bjZLeVRISlZEYXVMWEVGMHFfc1BTZGJRNHYyOUU2dFVPMkNNOFdEcHZzcG9aaERNdkNBMVRqZUU4TzR4YlJ3Um5yMldRNmVFMXJsQndCS1JoNDdDSkJvb2xiTjhZSWE0Y0toZ0VB?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-17 08:01",
+      "summary": "중동 지역의 불확실성 속에 유가가 이번 주 상승세를 보일 전망입니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "dc288551cac5"
+    },
+    {
+      "title": "[분석] 밖으론 중동발 고유가, 안으론 22주 하락…디커플링 심화",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9xR3NyNUJna1U0ZjVTY1RjVnNKZ3VQcnZEbTlhVzJaTEFYQzJtSE9xYW9tUXByQ3RsRGRDcFN6Y18xUDBlS2tUdFJDal9CeU1fMGI3LTVhd0p4cTBqdjMtZnRqb2pEZWdISWJocVd4Zl9kYXBV?oc=5",
+      "source": "파이낸셜포스트",
+      "published": "2026-10-17 08:00",
+      "summary": "[분석] 밖으론 중동발 고유가, 안으론 22주 하락…디커플링 심화  파이낸셜포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e94177e73abb"
+    },
+    {
+      "title": "석유 최고가격 4주 더 동결…“국제유가 100달러 넘어도 서민 부담 먼저”",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9CYVVXMFcta0dhZjNxMGstTlM1Tzh1UnVzQ0h3ZHJkZnlLNVBYb2ZuZGhIMEhPenA0QVQ0bFZFRDBERUk0WklmOGxoSVZQVjJiZ1FIeUdUaFBYdW1rekxRNG1kcExSTGhLZ1hn?oc=5",
+      "source": "뉴스로드",
+      "published": "2026-10-17 08:00",
+      "summary": "석유 최고가격 4주 더 동결…“국제유가 100달러 넘어도 서민 부담 먼저”  뉴스로드",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유 최고가격 4주 더 동결…“국제유가 100달러 넘어도 서민 부담 먼저 고려”",
+          "source": "뉴스로드",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9CYVVXMFcta0dhZjNxMGstTlM1Tzh1UnVzQ0h3ZHJkZnlLNVBYb2ZuZGhIMEhPenA0QVQ0bFZFRDBERUk0WklmOGxoSVZQVjJiZ1FIeUdUaFBYdW1rekxRNG1kcExSTGhLZ1hn0gFvQVVfeXFMUFFGNWJZbnZTSGJrMC0tUFFjUVhOYmptT25wUWlNNGQ0eHBDZmpVblpPRXF5T2dxYUZFRFFBTWRBNDFlRnhoYlNpU1RZVlM3am5ORUY3M3RYWkpGNVRQSUFvMTVyd1VPV3VsV0tXMmFF?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bccda04f735c"
+    },
+    {
+      "title": "전국 기름값 22주 연속 하락…충청권 휘발유 1860원대",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFByY0d6NEtPYUVfcGdzQzFRWnF4SzlIN2VtMFYtYjBQMl9RSURlenp6blczQVNCN2hVZXJTQWg0dkdfTjB6OWZTblZnZ0pnZG1aRDFVQlgyeFl0V3E5d3N5ODBLUkwyRW5IMXE3bFlzTjNMclHSAXNBVV95cUxQcmNHejRLT2FFX3Bnc0MxUVpxeEs5SDdlbTBWLWIwUDJfUUlEZXp6em5XM0FTQjdoVWVyU0FoNHZHX04wejlmU25WZ2dKZ2RtWkQxVUJYMnhZdFdxOXdzeTgwS1JMMkVuSDFxN2xZc04zTHJR?oc=5",
+      "source": "대전일보",
+      "published": "2026-10-17 07:58",
+      "summary": "전국 기름값 22주 연속 하락…충청권 휘발유 1860원대  대전일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전국 기름값 22주 연속 하락…충청권 휘발유 1860원대",
+          "source": "대전일보",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLT0stRi1ZSXhtQlF2YjRFb0FQNTlJMlN4R1I1QVIxU2xadF9DcHRUb1dQVFRHcUlyc2p6bWF2NW1vNllaUjF4ZVZQczM1YXZxSWlId2lFM3VvSjVvTXVtMHY4NzNILVVNZHlCZHpzMNIBc0FVX3lxTFByY0d6NEtPYUVfcGdzQzFRWnF4SzlIN2VtMFYtYjBQMl9RSURlenp6blczQVNCN2hVZXJTQWg0dkdfTjB6OWZTblZnZ0pnZG1aRDFVQlgyeFl0V3E5d3N5ODBLUkwyRW5IMXE3bFlzTjNMclE?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "15001de20ddd"
+    },
+    {
+      "title": "기름값 잡힐 틈이 없다…전쟁 악재에 국제유가 ＇껑충＇",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83eHZPM0pzcGYtMktTU3F5SWFqYm5QSmRHNzROSkdqTEc4elpNWWlNTlhtVzRLRm82Y01UcktfblJtaHMxdWFuc1FsY1Ztd3NCZkZRTVlqcjJtTmZDakMtWXNpXy1raUxLaUllX3JJZVdQWUE?oc=5",
+      "source": "한국경제TV",
+      "published": "2026-10-17 07:22",
+      "summary": "기름값 잡힐 틈이 없다…전쟁 악재에 국제유가 ＇껑충＇  한국경제TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f500fb9830a1"
+    }
+  ]
+}
