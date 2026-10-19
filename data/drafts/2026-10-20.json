@@ -1,0 +1,3511 @@
+{
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20 08:43",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1329.49,
+      "change_pct": -0.19593123639365667,
+      "unit": "원",
+      "as_of": "2026-10-19",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 101.41000366210938,
+      "change_pct": 3.5112814111911077,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-16",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 109.86000061035156,
+      "change_pct": 3.719790888895067,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-16",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 279,
+    "fresh": 279,
+    "classified": 279,
+    "representatives": 215,
+    "duplicates": 58
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.8-flash",
+        "issues": [
+          {
+            "title": "석유공사·가스공사 통합 추진 관련 사전 협의 미흡 및 실효성 논란 확산",
+            "summary": "한국석유공사와 한국가스공사의 통합 추진에 대해 사전 협의 및 경제성 분석 미흡 지적이 이어졌다. 가스공사 사장이 통합 효과에 의문을 제기하며 무조건 따를 수 없다는 입장을 나타냈고, 국회에서도 차이를 외면한 통합은 비효율적이며 실효성 검증과 기관별 혁신이 우선이라는 지적이 제기되는 등 반발과 문제점 지적이 쏟아졌다.",
+            "change": "통합 추진 논란에 대해 정부의 일방 통보 지적과 함께 가스공사 사장의 신중·회의적 반응, 국회(이언주 의원 등)의 실효성 검증 및 기관별 혁신 우선 요구가 새롭게 제기되었다.",
+            "impact": "에너지 공공기관 구조개편 논의의 진행 경과와 기관 간 반발 양상에 따라 향후 자원·에너지 관련 공공기관 전반의 정책 환경 및 협력 체계에 간접적인 영향이 미칠 가능성이 있다.",
+            "article_ids": [
+              "e7175dce4e38",
+              "0428adb0ffa4",
+              "6eb2c9c10a97"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1607,
+          "candidatesTokenCount": 304,
+          "totalTokenCount": 1911
+        },
+        "attempts": 1,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "version": 1,
+        "model": "groq/qwen/qwen3.8-27b",
+        "issues": [
+          {
+            "title": "석유·가스공사 통합 심의 단계에서 사전 협의 부재 및 경제성 미검증 집중 지적",
+            "summary": "한국석유공사와 한국가스공사 통합 추진과 관련해 사전 협의 없이 정부 일방 통보라는 절차적 문제가 제기되었다. 가스공사 사장은 통합 효과에 의문을 표했으며, 여야 의원들이 경제성 분석과 기관별 혁신 우선 원칙을 강조하며 실효성 검증을 요구했다.",
+            "change": "전일 자료에 이어, 가스공사 사장의 구체적 발언과 이언주 의원 등 개별 정치권 인사의 의견이 보도로 확인되며 통합 반대·검증 여론이 확대된 점이 새 사실이다.",
+            "impact": "석유·가스 분야 규제 주체 통합 논의 진전 가능성에 따라, 관리원의 업무 범위 재설정 및 조직 개편 필요성(가능성)이 부각될 수 있으며, 장기적으로 연료 유통 관리 체계에 변동이 생길 수 있다.",
+            "article_ids": [
+              "e7175dce4e38",
+              "0428adb0ffa4",
+              "6eb2c9c10a97"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "prompt_tokens": 1470,
+          "completion_tokens": 283,
+          "total_tokens": 1753
+        },
+        "attempts": 1,
+        "provider": "groq",
+        "status": "ok"
+      }
+    ],
+    "issues": [
+      {
+        "title": "석유공사·가스공사 통합 추진 관련 사전 협의 미흡 및 실효성 논란 확산",
+        "summary": "한국석유공사와 한국가스공사의 통합 추진에 대해 사전 협의 및 경제성 분석 미흡 지적이 이어졌다. 가스공사 사장이 통합 효과에 의문을 제기하며 무조건 따를 수 없다는 입장을 나타냈고, 국회에서도 차이를 외면한 통합은 비효율적이며 실효성 검증과 기관별 혁신이 우선이라는 지적이 제기되는 등 반발과 문제점 지적이 쏟아졌다.",
+        "change": "통합 추진 논란에 대해 정부의 일방 통보 지적과 함께 가스공사 사장의 신중·회의적 반응, 국회(이언주 의원 등)의 실효성 검증 및 기관별 혁신 우선 요구가 새롭게 제기되었다.",
+        "impact": "에너지 공공기관 구조개편 논의의 진행 경과와 기관 간 반발 양상에 따라 향후 자원·에너지 관련 공공기관 전반의 정책 환경 및 협력 체계에 간접적인 영향이 미칠 가능성이 있다.",
+        "article_ids": [
+          "e7175dce4e38",
+          "0428adb0ffa4",
+          "6eb2c9c10a97"
+        ]
+      },
+      {
+        "title": "석유·가스공사 통합 심의 단계에서 사전 협의 부재 및 경제성 미검증 집중 지적",
+        "summary": "한국석유공사와 한국가스공사 통합 추진과 관련해 사전 협의 없이 정부 일방 통보라는 절차적 문제가 제기되었다. 가스공사 사장은 통합 효과에 의문을 표했으며, 여야 의원들이 경제성 분석과 기관별 혁신 우선 원칙을 강조하며 실효성 검증을 요구했다.",
+        "change": "전일 자료에 이어, 가스공사 사장의 구체적 발언과 이언주 의원 등 개별 정치권 인사의 의견이 보도로 확인되며 통합 반대·검증 여론이 확대된 점이 새 사실이다.",
+        "impact": "석유·가스 분야 규제 주체 통합 논의 진전 가능성에 따라, 관리원의 업무 범위 재설정 및 조직 개편 필요성(가능성)이 부각될 수 있으며, 장기적으로 연료 유통 관리 체계에 변동이 생길 수 있다.",
+        "article_ids": [
+          "e7175dce4e38",
+          "0428adb0ffa4",
+          "6eb2c9c10a97"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-10-19T22:39:40.590727+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "석유관리원 수도권남부본부, 인천공항공사와 비상발전기 연료 품질관리 ‘맞손’",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TZEpoc3pTejB3cXpNTTc0NFR6TkdyZGlMdFJ0ZjFFMElFb2FQdTllZXNrSEZXR2tuSTQ3QmdjZ0IyRlZZTVpHaE1iU0ZuY2NCbVU1OWcxU1ZldHhNdjNoQ1pJMXI0eUl3SEF3QzlB?oc=5",
+      "source": "중부일보",
+      "published": "2026-10-19 19:13",
+      "summary": "석유관리원 수도권남부본부, 인천공항공사와 비상발전기 연료 품질관리 ‘맞손’  중부일보",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "석유관리원-인천공항 비상발전기 연료 품질관리 협약",
+      "id": "22ec28bec9c3"
+    },
+    {
+      "title": "석유·가스公 통합 추진…사전 협의·경제성 검토 미흡 지적",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229053",
+      "source": "에너지신문",
+      "published": "2026-10-19 21:47",
+      "summary": "[에너지신문] 한국석유공사와 한국가스공사의 통합 추진과 관련해 사전 협의와 경제성 분석이 충분히 이뤄졌는지를 두고 국정감사에서 지적이 나왔다. 양사 부채가 64조원을 넘는 상황에서 통합에 따른 비용 절감과 협상력 강화 효과를 입증할 구체적인 용역이나 데이터가 부족하고, 기존 공동구매·공동협상·공동투자 방식과의 비교도 필요하다는 것이다.박성민 국민의힘 의원(울산 중구)은 19일 대구 한국가스공사 본사에서 열린 산업통상부 소관 공공기관 국정감사에서 정부의 석유·가스공사 통합 추진 과정과 재무 대책, 경제적 효과 등을 집중적으로 질의했다",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유·가스公 통합 추진…사전 협의·경제성 검토 미흡 지적",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1YLWxQdkJadndvNWpHN3N0N1d0Y2hrTEEzSFlfb2xEWXRlcV9uNUwybF9maVVfckdmRW5OYXBoWjliRzhhTWZfSjhzeGF5eUd0RV9ma09faXk0clEyV0NyUDBvRHBRS2JxNjI0emxzcEtBZw?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "석유·가스공사 통합 사전 협의·경제성 미흡 지적",
+      "id": "e7175dce4e38"
+    },
+    {
+      "title": "“가스공사·석유공사 통합 사전협의 없이 정부 일방통보”",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9yYWtBQlhKSW42cjUzNmtuc2dLVWphbGQyZC1UOC0wTXNMS3IyV1JuUHVWS19iSk1HNkU1Z2lZaW9WV0dpV2luaDZ4TkcyaS1oNU1uUzlXMXhVWjNvcXFkbDAyOVFmNTJVbTNr?oc=5",
+      "source": "영남일보",
+      "published": "2026-10-19 21:25",
+      "summary": "“가스공사·석유공사 통합 사전협의 없이 정부 일방통보”  영남일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "박성민 \"가스·석유공사 통합, 사전 협의 없이 일방 통보\"",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VajM1ZUw0dktQSjFSZjJ4V2lmbS1vMVVYQzcwdmJZTFhvWHZuV2g4cHpEY2Rvek1HTjVldW1TeVJHdUM0ZW1wdElzZHBZZFhLNDdxcUZVUFhJeHE1cEgwVk16NEd3eFRnNE5BeklWcXV4QWE0dW1pSdIBeEFVX3lxTE1VajM1ZUw0dktQSjFSZjJ4V2lmbS1vMVVYQzcwdmJZTFhvWHZuV2g4cHpEY2Rvek1HTjVldW1TeVJHdUM0ZW1wdElzZHBZZFhLNDdxcUZVUFhJeHE1cEgwVk16NEd3eFRnNE5BeklWcXV4QWE0dW1pSQ?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "가스·석유공사 통합 정부 일방통보 주장",
+      "id": "0428adb0ffa4"
+    },
+    {
+      "title": "‘가스공사·석유공사 통합’ 문제점 쏟아졌다",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5OT2lZU1k1YTF6UWZ6ZkJvYVRBNktBc25IR3N1b1hHWHBfTVpfaFh5dWlpNzNKaXFlc1lLM1JfYjFMcVdNWTVwZHJLWkFwVzE3eUc0LTBzNWs3czFPVEFFTW5yTDVkMUxudDJV?oc=5",
+      "source": "대구신문",
+      "published": "2026-10-19 21:20",
+      "summary": "‘가스공사·석유공사 통합’ 문제점 쏟아졌다  대구신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "가스·석유공사 통합 실무적 문제점 공개",
+      "id": "b28936839acd"
+    },
+    {
+      "title": "가스공사 사장 \"통합 효과 의문, 무조건 따를 순...\"",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZ0NaVW1ZRnJFMUpld2xjRkRUMUd3SUY5TzlDb2MtSmpXNURuandYRDcza1hOUGl1SjVKa0NWalo1V29WLWtNSDVmbGN2MC1jLVBUTEt5RzFiUG9lbUwtdElZUVJjTG9PRzNvdV9oU2thZHhFWnZmVjZvenlIUlF2bnlmbkpmQQ?oc=5",
+      "source": "Tbc.co.kr",
+      "published": "2026-10-19 21:00",
+      "summary": "가스공사 사장 \"통합 효과 의문, 무조건 따를 순...\"  Tbc.co.kr",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "가스공사 사장 통합 효과 의문 지속 입장",
+      "id": "6eb2c9c10a97"
+    },
+    {
+      "title": "이언주 의원 \"가스공사·석유공사 통합 실효성부터 검증해야\"",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNT0RSMUVKdXBqOUFkMDYxei04SC1NT1RjZGRlbFhHRVhzTVpSQzlQYVFsVjdsVDdZNmtFOUdHOGhyU0c0OWVIZC14TGEyaGdEVXNmb1lVRjFxVGNxWmxpQnZzdVQxOVhOTEV6ZGpvMDNGWmhJOHBFdDJobll6WFkxcFRuVDRTQ3V6bFBYVUJwcGFMc0NHR3c?oc=5",
+      "source": "경기평화신문",
+      "published": "2026-10-19 20:42",
+      "summary": "이언주 의원 \"가스공사·석유공사 통합 실효성부터 검증해야\"  경기평화신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "이언주 의원 \"가스공사·석유공사 통합 실효성부터 검증해야\"",
+          "source": "경기평화신문",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVlVhUUdVOW5ndEM5dGs3NHk5RW9iRWxldjVDX3NyMGIxOEpzckRYRGdScWJmNTIxdWhKc3ZSUUszc2s4cVYxWXhNTWVDWWdUMnlJYWpDdjloLUI2amluekxSNzB2Q1NFNkp6cHN3WVNuNzZHclFUQncwWjRvc3NnUGFIaUlqVUV6SE53?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "국회 차원 가스·석유공사 통합 실효성 검증 촉구",
+      "id": "25813dbdaada"
+    },
+    {
+      "title": "이언주 의원,“차이 외면한 석유·가스공사 통합은 비효율…기관별 혁신이 우선”",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tS2d4QUlXUWxfSldUYXdQNkdCTFUyYVl3QTdqSFoteWQwYUloZ0M1NWZNR1I4VlE2YzVYWEVKbE1GN3ZOVi01X3hGbnhlYUh1aDFzSUl3dTQ5NGMxZlo1NnE4Zm4ydms?oc=5",
+      "source": "경인신문",
+      "published": "2026-10-19 20:31",
+      "summary": "이언주 의원,“차이 외면한 석유·가스공사 통합은 비효율…기관별 혁신이 우선”  경인신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "34175f8ff639"
+    },
+    {
+      "title": "[국감] 국정감사장서 \"가스공사-석유공사 통합 반대\" 시위",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=335213",
+      "source": "이투뉴스",
+      "published": "2026-10-19 20:23",
+      "summary": "[이투뉴스] 19일 대구 동구 한국가스공사 본사에서 열린 국회 2026년도 산업통상자원중소벤처기업위원회 국정감사장에서 민주노총 공공운수노조 한국가스공사지부 노조원들이 가스공사와 석유공사 통합에 반대하는 피켓을 들고 시위를 벌이고 있다. 한국가스공사 노조는 한국가스공사와 한국석유공사 통합을 재고하고 신중하게 보완 방안을 검토할 것을 요구했다. 단순한 기관 통합은 에너지안보를 강화하지 못하고, 석유공사의 부실을 가스공사로 이전할 뿐이라는 판단이다. 석유공사는 2025년 말 부채 21.9조원, 자본 -2.5조원인 완전자본잠식상태로, 이들",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[국감] 국정감사장서 \"가스공사-석유공사 통합 반대\" 시위 |",
+          "source": "이투뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4wQ0hTUFZxYlptMk83dFZQOFEtRm5ZUlo0dE50ZGZ0MVpHY0o1bWRDZFhaZlFfSGUtQW1SUUZNVWxrZHhLV25BX1dfck1OSldDYWdiWlJsWV9CRWVfV0JZTDV3LWdXWnF4QVRZ?oc=5"
+        },
+        {
+          "title": "[국감] 국정감사장서 \"가스공사-석유공사 통합 반대\" 시위",
+          "source": "이투뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ocG54Y2pNV0JyZzYyd1AyazhBWkRwMlRoVmtKcjNpcUJJN1pmQmNpdzg3cWVqa1ZTLVRnblZGTjkwSTNDUG5jWUFzR2NZQy1qWU1EY2ZJRU5rLVFmVGJQYjVUNlloNlNx?oc=5"
+        }
+      ],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "1e1818a66b92"
+    },
+    {
+      "title": "박성민 의원 “석유·가스공사 통합, 정부가 일방적 추진”",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmMkZZRkw4WkhGTzlZbGNmM3h1dWNhWDNTd29TU3NCUElEUE8tbElJakxVUmVzYTcwR25GSkxJeUVrMnp0NTdaWm5KWHJWRUlrLXNnZTBYS3Q4Rm0yQlNPR01hM0txZw?oc=5",
+      "source": "울산제일일보",
+      "published": "2026-10-19 20:19",
+      "summary": "박성민 의원 “석유·가스공사 통합, 정부가 일방적 추진”  울산제일일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "961b9521ac29"
+    },
+    {
+      "title": "[2026 국감] 가스공사·석유공사 통합 공방… “사전 협의 없었다”",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Gc0tUNnowcUVDZElFRlhUSng0LWptZWx2cElyNTlPeXBIcFZIdk05MEdlUHdaT2VNaGVjTHEwT0VmWXBmN3ZVcG1VVlRKQXlfNFNiMEVnUUFXcUpoOGs0M2hfNEFkYzJyY3dxM2R5QQ?oc=5",
+      "source": "비즈트리뷴",
+      "published": "2026-10-19 20:14",
+      "summary": "[2026 국감] 가스공사·석유공사 통합 공방… “사전 협의 없었다”  비즈트리뷴",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[2026 국감] “가스·석유공사 통합, 사전 협의도 없었다”…졸속 논란",
+          "source": "울산매일 - 울산최초, 최고의 조간신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1OZWJQcVh6Um1qdTBhcmxNY1pnekZibE1oQVVlRWtvM1RYalVfRnpRcldXT0ZZN2dHYnFwUlBHeHhRdnAzQkcxSkhNaTVjVGJQSm5uOEttUmFPdWI4THA0NG1NSUszQVFFRG5jY09R0gFuQVVfeXFMTU5lYlBxWHpSbWp1MGFybE1jWmd6RmJsTWhBVWVFa28zVFhqVV9GelFyV1dPRlk3Z0dicXBSUEd4eFF2cDNCRzFKSE1pNWNUYlBKbm44S21SYU91YjhMcDQ0bU1JSzNBUUVEbmNjT1E?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ca646a7d6d8b"
+    },
+    {
+      "title": "[국감 현장] 석유공사-가스공사 통합 추진 '집중 포격'",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9FVmNzOGlNcXh6dms3OHRxeER0YXptTDZKOUR1TF9CTGdlbTdham1nOFRFV1VENTB0cjhZTmM3TUlOc0dBclNoZEgxOFo1VGNKODk0MTNITDREVTZUQWFIZEtJV3pXS2tnbEdlbw?oc=5",
+      "source": "투데이에너지",
+      "published": "2026-10-19 19:47",
+      "summary": "[국감 현장] 석유공사-가스공사 통합 추진 '집중 포격'  투데이에너지",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f0643b92333a"
+    },
+    {
+      "title": "[2026 국감] 석유·가스공사 통합 패싱에 '가짜 석탄'까지…에너지 공기업 뭇매",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE13SGdWVlFKT3lSbFR5OTY3d1l3dVhSRThWM2dFWGJyT2EzMmZVMmlLV25xa05sTlhVNjBsRWN0OEtzaklTZnlfMllGem9IbHRHWE9qUlcxSVBMVms3?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-10-19 18:34",
+      "summary": "[2026 국감] 석유·가스공사 통합 패싱에 '가짜 석탄'까지…에너지 공기업 뭇매  뉴스핌",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ae1f2a79d2d6"
+    },
+    {
+      "title": "野 \"가스公·석유公 통합 일방적\"…가스公 사장 \"주주 이익 훼손 없도록\"(종합) |",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CUkxHN2h3ZGtwdll2Njd3VlBJUlNQOEp4TG5YNXFQUkhDVEtyd2syMzBpTlhEMHRCd29idmhRUDl5ZWFiY2E5LU1Tb2pCXzFINEFwZjFrSFdBb01IYlNNY1U4anhqZVlvT25ZVmE3UFVzVU1s?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-10-19 18:32",
+      "summary": "野 \"가스公·석유公 통합 일방적\"…가스公 사장 \"주주 이익 훼손 없도록\"(종합) |  연합인포맥스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "野 \"가스公·석유公 통합 일방적\"…가스公 사장 \"주주 이익 훼손 없도록\"(종합)",
+          "source": "KB Think",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE44MGV2djBkckRzMFB3ZjFhcjhFZWYxMUlReTc5cmRPX3MyUXhvdGlZZlUyQ1FuaDN1dFFLVjlJQjFvY3Z4QXR1LUs2aUM2LXc5SVFwV19mZEdLQjZyUzhQZFdfeGQ2UTZqVWdaOXZYZ3Zzdw?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f548cd01824b"
+    },
+    {
+      "title": "가스·석유공사 통합 발표에 양사 사장도 '깜깜'…국감서 '졸속 추진' 도마",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ORHg3MXJSU1Z0YnNEVVdqNEVOTXowb1M5Q3FWYXNxRXpndUtwTGM0dVN5YWxKWWtqWVVCMHpxWmE3eWNiTktaM0NEeGc2QzFaMHQ4cTBqWmpzR2VTVF9zSkltMVBRMjRhYkE?oc=5",
+      "source": "경북도민일보",
+      "published": "2026-10-19 18:31",
+      "summary": "가스·석유공사 통합 발표에 양사 사장도 '깜깜'…국감서 '졸속 추진' 도마  경북도민일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ff26d3af8fc7"
+    },
+    {
+      "title": "[2026 국감] 석유·가스공사 통합 집중 추궁…사전 협의·재무 부실 도마",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3b0ZXUi1JalZnbXhWb1pmVG96NDY3QWZGSFo4eGFFNHBfRWZuUmdubHdab3dHbmk2TDBGN0tLX2VwOUtQY0I1MkpSZWtvamVYalhUSHg4WEQxNEVhSmwzR1BYeXRPcy1RWkVneG9LRdIBb0FVX3lxTFA3b0ZXUi1JalZnbXhWb1pmVG96NDY3QWZGSFo4eGFFNHBfRWZuUmdubHdab3dHbmk2TDBGN0tLX2VwOUtQY0I1MkpSZWtvamVYalhUSHg4WEQxNEVhSmwzR1BYeXRPcy1RWkVneG9LRQ?oc=5",
+      "source": "한국아이닷컴",
+      "published": "2026-10-19 18:28",
+      "summary": "[2026 국감] 석유·가스공사 통합 집중 추궁…사전 협의·재무 부실 도마  한국아이닷컴",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[2026 국감] 석유·가스공사 통합 집중 추궁…사전 협의·재무 부실 도마",
+          "source": "데일리한국",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ua1NHN3c1TFNDcFBmWXJrVlNZQUNxTUNiTFRXdUwxcFpZbFdvR2d2SnJmdFcwOHZZN1NWWExWVUpqN3EwQVp4ejF5ODdwaUN6cnBGNm0xeW4xUE5aTk1ZTmFxSllYV2d2Vno3OFhFZ9IBc0FVX3lxTE1IV2JtNnlHSVpkNFA0OFl1VzR4UUhxZGFheFJLc3o5WmNia3pPMlFCS2VUUW01SkVCa045UXJlRm5DOTAzNXhpZFNTUUN5eWtpV2hkcUt4UWdTVExuYUgzVDlyc3ZwNkFyRkFxYjhkODN4Q00?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d74601ffc99b"
+    },
+    {
+      "title": "석유·가스公 통합 이슈 국감서 도마…사전 협의 없는 추진에 부실 우려(종합)",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvQ0t4alJtd0dDUUdrbi10NHI3S1N6cVBaSV82Q3FmMW9sbEF6UFFqUy01ZlpzeTN0QXg1NnA2U2Z1U29Jb1lzQ1hyNkNiSHNYc2RoaU03aXRRSWhlSlpubV9aQV9nVEQyaURsR3Y3UHJPZWM?oc=5",
+      "source": "마켓인",
+      "published": "2026-10-19 18:22",
+      "summary": "석유·가스公 통합 이슈 국감서 도마…사전 협의 없는 추진에 부실 우려(종합)  마켓인",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유·가스公 통합 이슈 국감서 도마…사전 협의 없는 추진에 부실 우려(종합)",
+          "source": "이데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdUwwclFfcWgyNVlqYTBFX0poWW1DUUNDMDdQZEg5a1V6WTlmOWR2OHE4LUg3ZVFlam1nTk45WmRrdjI3aWVEVUtwakZUcTZ2cUZycWtPV2tFZF85V3FIMzNwLWFkUm0yOTBKR2tsQXNVaHVuY1pmcXVUaVhPdzd2cw?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aeed7f4fe857"
+    },
+    {
+      "title": "[2026 국감] 가스·석유공사 “통합 발표 사전에 못들어…협의 기다리는 중”",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zakRCc3BiRmtUVWUzaWpjMXNzYWhUNzhObmp3YXE2Q2tPSkFjbEMxbkFuaURZUExHVWY1ZTNfWC1OYnU4QnhrQzQwNzYzOGd6SnZxVzJCMktac3pCb2c?oc=5",
+      "source": "기후에너지데이터뱅크",
+      "published": "2026-10-19 18:10",
+      "summary": "[2026 국감] 가스·석유공사 “통합 발표 사전에 못들어…협의 기다리는 중”  기후에너지데이터뱅크",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "09e0b5e5bcd2"
+    },
+    {
+      "title": "석유·가스公, 통합 국감서 도마…\"일방적 지침 따를 수 없어\"(종합)",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5GMm5sc1ZVNFNQQWpkYjBxVFpxRnZ2YjFIT0o4RXgxTEdXbGpPMFNiZS1qS3dxY2pQLW5FajFOcFBvS0lKem9ha1lzUTVFc3BqSzJGN21Ud2RmYklCX3NvVnZ5Y3Z2bUpHUjI2Mm1uTUpLbEhZN0o5ZtIBeEFVX3lxTE5GMm5sc1ZVNFNQQWpkYjBxVFpxRnZ2YjFIT0o4RXgxTEdXbGpPMFNiZS1qS3dxY2pQLW5FajFOcFBvS0lKem9ha1lzUTVFc3BqSzJGN21Ud2RmYklCX3NvVnZ5Y3Z2bUpHUjI2Mm1uTUpLbEhZN0o5Zg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 17:59",
+      "summary": "석유·가스公, 통합 국감서 도마…\"일방적 지침 따를 수 없어\"(종합)  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "53400b1b1c4e"
+    },
+    {
+      "title": "석유·가스공사 사장도 통합 몰라… \"정부 지침 무조건 따를 순 없어\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4wRm1DYVRSd3h5RTNJenlUa0lYclhsM0IyUFk1c29QMHg5dnJoNzFIWkNSVlF5VE8zWHNRX21GUExKZjlBUWlxZFFLZkZUMDhoZUoyTU4yaHpXWlBZUmJDWEpWR2Y1U0Y2a2dUZUNtLXJvRWfSAXNBVV95cUxOMEZtQ2FUUnd4eUUzSXp5VGtJWHJYbDNCMlBZNXNvUDB4OXZyaDcxSFpDUlZReVRPM1hzUV9tRlBMSmY5QVFpcWRRS2ZGVDA4aGVKMk1OMmh6V1pQWVJiQ1hKVkdmNVNGNmtnVGVDbS1yb0Vn?oc=5",
+      "source": "한국일보",
+      "published": "2026-10-19 17:56",
+      "summary": "석유·가스공사 사장도 통합 몰라… \"정부 지침 무조건 따를 순 없어\"  한국일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유·가스공사 사장도 통합 몰라… \"정부 지침 무조건 따를 순 없어\"",
+          "source": "한국일보",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoV0U2VU1haGFyOWFGeTNjOUlSZnJnSlNiUGhfVkUwcXk3QVZ5eER5SzFNRW1NYk1JZ3JCSVZNTzBDVVQtWl9zR1lGVUppb2VWZElTTC1JdGtEWE1TX1NXRUR3SlY0MjZuajhwWXpR0gFzQVVfeXFMTjBGbUNhVFJ3eHlFM0l6eVRrSVhyWGwzQjJQWTVzb1AweDl2cmg3MUhaQ1JWUXlUTzNYc1FfbUZQTEpmOUFRaXFkUUtmRlQwOGhlSjJNTjJoeldaUFlSYkNYSlZHZjVTRjZrZ1RlQ20tcm9FZw?oc=5"
+        }
+      ],
+      "query": "((석유공사 OR 가스공사) (통합 OR 합병 OR 통폐합 OR 기능이관 OR 기능조정 OR 본사)) OR 에너지자원공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4c879a74a230"
+    },
+    {
+      "title": "가스·석유公 통합에 부채·주주권 논란…대구 본사도 미정",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84VU0xNjIybnhid2M4ZDluVmpaYkxXUzJlNjFwVFZQNjBPTjB5N3lEUUZwN05ac1d1Q3p3RnloaFdyTFFOLUd3aG85WkpEN2lsZFFtMlo0REtTdw?oc=5",
+      "source": "경북매일",
+      "published": "2026-10-19 17:55",
+      "summary": "가스·석유公 통합에 부채·주주권 논란…대구 본사도 미정  경북매일",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "efcf101a3eec"
+    },
+    {
+      "title": "석유·가스공사 통합 도마…부실 떠안고 실익 불투명",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1CcUJHVUN0MnFDd2NRanM3cUozaER6LXAwT1VJN3RJV1Y0ckxIV3g0MEVpdHhHU1RzaFN4dVFwYllhbE55Y0o2MVFDVmF2Z0dyVFFVMGZmSVpuWmc0MUZZ?oc=5",
+      "source": "MTN 머니투데이방송",
+      "published": "2026-10-19 17:45",
+      "summary": "석유·가스공사 통합 도마…부실 떠안고 실익 불투명  MTN 머니투데이방송",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "da74062f9f4d"
+    },
+    {
+      "title": "[2026 국감] 한국석유공사·가스공사, 부채 65조 안고 통합 추진…'졸속 행정' 논란",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1RbVpoaTF1RnR1Uk5aMXdnN1BaaU0yeGRlWGY4b3Awa2lvUTRjVnR4ZW8wTHY3VFE2aW5vT0FsUHp6UUItbzBRN3l6REVTRnhlY25CNnJlNVF0dGduOFRZdVpod0tMUTd2UFdlNy05RdIBckFVX3lxTE91V1NWMS1UeG5WQlNxbG1KdjcwZnNUaktGbXFIT24yQ2pCU2ZJRG80VUFZQk9VdjdGWThJOWVhUEhtZ1VxdjdROGNiRWhNNlAyRWMxbDRCS3R6QlQ3Y0QwN3IxLVpvT0RqcnJfcjltLVhXQQ?oc=5",
+      "source": "팝콘뉴스",
+      "published": "2026-10-19 17:32",
+      "summary": "[2026 국감] 한국석유공사·가스공사, 부채 65조 안고 통합 추진…'졸속 행정' 논란  팝콘뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "db959eb6bd19"
+    },
+    {
+      "title": "가스·석유공사 통합 추진…\"당일 사실 확인\"",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fcUxicjBabnVqZTVSc2NPY3JHZGxkalVodEUxME9rcVQ3QU5mak5OeEdfZ0tUbmFETnZmeGNFVzdUUnpYS2J6X1lWdld2d21qeENjY0JKZHhVdTlxSXZKNVRKUXM?oc=5",
+      "source": "매일일보",
+      "published": "2026-10-19 17:19",
+      "summary": "가스·석유공사 통합 추진…\"당일 사실 확인\"  매일일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c32e8a33ac78"
+    },
+    {
+      "title": "기관장도 로드맵 몰랐다…가스·석유공사 통합 절차 논란 잇따라",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMTRYbjNYWHZ4VlI0eHBMZUVkZnZPNHRIeFZOSnlfYkdKUG9jbEZQLVdhNGc1b01IbFZ6NFdnb2VHV2g1X0NaSTlYMmdaMXZFUEx0ZUdPRDNLcVoyN3I0VF80THp6U3hD0gFsQVVfeXFMUE0xb3lpZlhFcnBQSUtaRm5ISy1LRFV3VXk5bTN3S29YazNSMDF5eDl4WFJWWjE3TjZuZ1A4X2Ftb2xJNVZXa3gzWHJaeDQ2NldveW0wV0RBdlFBSEEta011X25nWEFHR041eGI2?oc=5",
+      "source": "직썰",
+      "published": "2026-10-19 17:09",
+      "summary": "기관장도 로드맵 몰랐다…가스·석유공사 통합 절차 논란 잇따라  직썰",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "896079ed5689"
+    },
+    {
+      "title": "가스·석유공사 통합 일방적 추진 지적, 홍의락·손주석 \"정부 사전 협의 없었다\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EbnNPOEVpTjVqLXJFaTBHNlZqMlZjcTM4LWlpdFNka3hlYjVhZlFsTkNXY3kweld3c0VPTllhclNuX29veFMxdzRaeUp2d1pKM29fZmc2REVuZGo5bU5MNFNQODlsZHF3MV9KM2hjNWhZVTA?oc=5",
+      "source": "비즈니스포스트",
+      "published": "2026-10-19 17:08",
+      "summary": "가스·석유공사 통합 일방적 추진 지적, 홍의락·손주석 \"정부 사전 협의 없었다\"  비즈니스포스트",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "72abe624b29e"
+    },
+    {
+      "title": "석유·가스公 사장 \"통합 시너지 의문\"...정부 '일방 추진' 우려 나와 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1IUXJxaDlZWlk0UUpNeHRkNGY3c1djb01ta19RQTBIbmdkbTN1QUJYRy1NT1N3bHJxdWJEcV96dDdDNGxsdVpJSTRpRjdfTWMzNFN4c0w1bXczSHJfVnQ1Z3JEREJ6aFJZdHJfWlg3UWxMd9IBckFVX3lxTE1IUXJxaDlZWlk0UUpNeHRkNGY3c1djb01ta19RQTBIbmdkbTN1QUJYRy1NT1N3bHJxdWJEcV96dDdDNGxsdVpJSTRpRjdfTWMzNFN4c0w1bXczSHJfVnQ1Z3JEREJ6aFJZdHJfWlg3UWxMdw?oc=5",
+      "source": "머니투데이",
+      "published": "2026-10-19 17:06",
+      "summary": "석유·가스公 사장 \"통합 시너지 의문\"...정부 '일방 추진' 우려 나와 - 머니투데이  머니투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유·가스公 사장 \"통합 시너지 의문\"...정부 '일방 추진' 우려 나와 - 머니투데이",
+          "source": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LVEswUUU4Z1BUTnhQN2lvZFdIZXEzV3Vwem5vZHZBRy11cFhDU0gxeXVwM21UbmxVQXhFdnFwSXFfRHlONFlHemFVZ1FIbU54YVRLWXhrNGNsSDYtdDJhWEN6R2RxYlcwem9mZHBIQkpxc2lJVFNDZmp30gF_QVVfeXFMUDNBeWFRVVRILTlhWFB2OVM0LXhoNTRJNVNkcEc1djVDaVhlRHpERDZYcEdIV3lIY3RwQl9faTkwU2djSnRMcFNwLVMtbVdTOVZTbEk5aW93NURhaDJlZVlMZmNYdVUtTC1SeHBvU2xxWmxUTmtuSzBpSzFoUFhvZw?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c75a0db10ca4"
+    },
+    {
+      "title": "[2026 국감] 가스·석유공사 통합부터 해외투자 부실까지…자원공기업 경영 전반 도마",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNWGJ5cmFiNlBYRTFDQUYzbGo2OGhDUHFLRGc4d3BYRl9qcEJUS0ZidUF0TTRXRWtvYlZnR3JRVVRoTUtEZ2hLVXJmMkM5SERzcFY4SllDY1BMM3NXcHF4OF81YlQtVEtqQmxDZExKUTNXYi1sb1JVY0tRSkFid24yVFRsS1FPQkVhMFhDWHdjZzNRdkxndmNWMmZJT3F6UWdWaFpUcGJhTm02Z1V0SllmWFd3OXhueTEwQkVyNm9pLTJPbWtPdFlVZ3BKLWRyNW5aWlBZQUtBNkg3VVh6X2gwekEtck1zMHlIZTVWUDRBYVB4ejYwM1Ezbw?oc=5",
+      "source": "데일리안",
+      "published": "2026-10-19 17:05",
+      "summary": "[2026 국감] 가스·석유공사 통합부터 해외투자 부실까지…자원공기업 경영 전반 도마  데일리안",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "61cab4785a8d"
+    },
+    {
+      "title": "가스공사·석유공사 통합 논란…사장들도 사전 협의 몰랐다",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE94UDdqZFJrVjVUcFNzR1Roc29pZVZ0cHJhSmZNbTdjWXVXa2F0YWZLMnhpWEpxck9rQ1Z3a3ljV1o0UmhCYUtlNzNRSHRyMGdSamplM2UtR3dndjljODBGdVM3Ynh1amotMWQxME9wdm9CY3VPOTVr0gF3QVVfeXFMT3hQN2pkUmtWNVRwU3NHVGhzb2llVnRwcmFKZk1tN2NZdVdrYXRhZksyeGlYSnFyT2tDVndreWNXWjRSaEJhS2U3M1FIdHIwZ1JqamUzZS1Hd2d2OWM4MEZ1UzdieHVqai0xZDEwT3B2b0JjdU85NWs?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-10-19 16:59",
+      "summary": "가스공사·석유공사 통합 논란…사장들도 사전 협의 몰랐다  핀포인트뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "71e257064d24"
+    },
+    {
+      "title": "‘가스-석유공사 통합’ 험로 예고…사장들 “사전 협의 없었다”",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBSSHFhWDc3aFIyZExjMUt6SV9zdEg3bGZqdjB3clR5TVJNVFNaSkFNRmlJc0pYLTBEMGJ3ZDFqdEd0cVFpWmdQLTE2TndqOU5aRVd4X2czeklwTWdvakVjQXdDbnlCNmxrRUFJOGU2RkM3QQ?oc=5",
+      "source": "한겨레",
+      "published": "2026-10-19 16:48",
+      "summary": "‘가스-석유공사 통합’ 험로 예고…사장들 “사전 협의 없었다”  한겨레",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "607d76740280"
+    },
+    {
+      "title": "가스·석유공사 통합, 사전 협의 부재 국감서 도마",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1CZXpXU1hublRzMFNhUlZaeEF6bkxTS09vdHFzMjFjNGpmYnpZOTdsWkMxVmcwM3BKV2ZMTVpiamw0R3R2WkhVQmltZlVYTlU0dlhCN1R3SUZlNHZESDNSTjZ5XzJKYk9ta3lVQ0NOZw?oc=5",
+      "source": "경북일보",
+      "published": "2026-10-19 16:47",
+      "summary": "가스·석유공사 통합, 사전 협의 부재 국감서 도마  경북일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "21cfabddde4d"
+    },
+    {
+      "title": "정부, 석유·가스공사 사전 논의 없이 '통합 일방 통보'…국감서 졸속 추진 비판",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hdW5uQ3p4UVo1ekwydG1QR3FLMzM0R3RnVW9kbVFMdjNmWFVwTXREX01OMmZydldaWDVvaGg5RjVrb3R0ckZuanBqX2NqWFpZYk13SWdpanFuVUVZRGJ0SXFSd2QxUzND?oc=5",
+      "source": "대경일보",
+      "published": "2026-10-19 16:35",
+      "summary": "정부, 석유·가스공사 사전 논의 없이 '통합 일방 통보'…국감서 졸속 추진 비판  대경일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "337f5b52ac86"
+    },
+    {
+      "title": "사장도 몰랐던 가스·석유公 통합",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE10dFFJV1h2Sks5YlhpbHNnTkV0ZEZXLTFFblg0U1EzMkhZXzcwUDY3TVVPNmZUTnhXS251eDRNQWhKZjdpSVBPUXlFQUhWc3Z0R0RpdUExTTJCRkNra094ZUVlQVdySHYzNUY4bGpR?oc=5",
+      "source": "중소기업신문",
+      "published": "2026-10-19 16:24",
+      "summary": "사장도 몰랐던 가스·석유公 통합  중소기업신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7e3fd98b21cb"
+    },
+    {
+      "title": "가스공사·석유공사 통합..'졸속 추진' 지적",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9MaW1DZ1ZyalJFN1BJVXBQT2Q4YjlFaG82enRxdFRtdTBBdEw3U3lXYUlMZEpzdnFEczZYXzhaTVZzdUE1aUhVYmFmc2ltdVB6SGU0?oc=5",
+      "source": "울산MBC",
+      "published": "2026-10-19 16:24",
+      "summary": "가스공사·석유공사 통합..'졸속 추진' 지적  울산MBC",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cbf525e1d73b"
+    },
+    {
+      "title": "[이슈국감] 가스공사·석유공사 통합 논란…“사전 협의·효과 검증 없었다”",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE12Mzg4XzM1THh1Z21zNG92NFVrdUFnN2ZRQXlBdlZBdElvRzMwTGd2T2p3eFV0R0VabDlEQk9TZFMyemtTQ0JRLXJYaW5FbDVRTk94TFFyX0c0RHNPeWp5QTQ3NVZSak9LZ0Jv0gFvQVVfeXFMUEYzRlNQUVJLSEc3MkwxT2NvdjViOG43TGhsQl82a2NzcEx3azZYRV9OVGJDdUN3N2VWQkFGazAxYWdkNVg1QUpTR1FsWUMyOGNqeFNoM3R6UWV0Ym1rRHQ1Qno4X2UtUzktaGpZRjg0?oc=5",
+      "source": "한스경제",
+      "published": "2026-10-19 16:20",
+      "summary": "[이슈국감] 가스공사·석유공사 통합 논란…“사전 협의·효과 검증 없었다”  한스경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ecc07a5c4215"
+    },
+    {
+      "title": "`사전 협의 없었다` 가스·석유公 날림 통합…국감서 `졸속 추진` 지적",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE81d0ZaSHJUZkd2X0ZGSVR4N1NxNjRBTldjMzhTMDBFWjNlWWpick9tTks2OGVTWndKSi1XWGFyQkRQazlxdFBUQWd6cWozRnB1UnRUYmwySG82b0lOQ0o2aHdR?oc=5",
+      "source": "매일신문",
+      "published": "2026-10-19 16:12",
+      "summary": "`사전 협의 없었다` 가스·석유公 날림 통합…국감서 `졸속 추진` 지적  매일신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cfa53918c649"
+    },
+    {
+      "title": "(2026 국감)석유·가스公 통합, 사전 협의·효과 검증 모두 미흡…국감서 질타",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yd082YXVJUmFjOE1BM2p4ZlMtcnEtUFhHLVM4ZURFY09OYll4dGUwbmdSNG5OcEYtcVhfQU9DOU9EU2Z0TlNIVGhMWng1dzYzcjBIeHRRQjFBU1JXUmJ4Qm52NlB4ZTJVUmlZRC1ISVHSAXBBVV95cUxNcndPNmF1SVJhYzhNQTNqeGZTLXJxLVBYRy1TOGVERWNPTmJZeHRlMG5nUjRuTnBGLXFYX0FPQzlPRFNmdE5TSFRoTFp4NXc2M3IwSHh0UUIxQVNSV1JieEJudjZQeGUyVVJpWUQtSElR?oc=5",
+      "source": "전기신문",
+      "published": "2026-10-19 16:08",
+      "summary": "(2026 국감)석유·가스公 통합, 사전 협의·효과 검증 모두 미흡…국감서 질타  전기신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f3f4cb9bd0a9"
+    },
+    {
+      "title": "가스·석유공사 사장 '통합 사전 통보 못 받아' : 기업·산업",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE54MGx3UEoyeGV0bWM1OVRWU1dvbTZJbjFkUW5jVk9ZeHdIT0V3cS1zdjc5b3RYbTNxbDNPWWdDbV9GaE9xbUNuWUtmZw?oc=5",
+      "source": "재경일보",
+      "published": "2026-10-19 16:00",
+      "summary": "가스·석유공사 사장 '통합 사전 통보 못 받아' : 기업·산업  재경일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "de89f0fbe2eb"
+    },
+    {
+      "title": "부채 65조 합친다는데… 가스·석유공사 통합계획은 ‘깜깜’",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1UaGdRVS1VOUgtZmYxVFRoMVFoaWxKaHM2SVUxQkx3aTBwWGE2Z1FqZTZDMmIwa2hKNWZrVXFWeml5ejU0clVqRXluRFlaM1l6ZWZRU2M4aldJTmgwbTA4UlJSWHNWQVdh?oc=5",
+      "source": "대구일보",
+      "published": "2026-10-19 15:56",
+      "summary": "부채 65조 합친다는데… 가스·석유공사 통합계획은 ‘깜깜’  대구일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "80c0ff744f1f"
+    },
+    {
+      "title": "산자위 국감서 '한국가스공사·석유공사 통합' 우려와 조언 잇따라",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XTjg3c2U0anF4cHJMQU9UQUNMeUV1V1Exb3ZGZHloY1JwSEllNE9sM1ktQjRGTnhoQUJ1eGhGNkdnbXVWSDJqYTY2UFNSZnJIZkE?oc=5",
+      "source": "노컷뉴스",
+      "published": "2026-10-19 15:54",
+      "summary": "산자위 국감서 '한국가스공사·석유공사 통합' 우려와 조언 잇따라  노컷뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0a99960f1658"
+    },
+    {
+      "title": "가스공사·석유공사 통합 논란…국감서 사전 협의 부재 지적",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9oSHhIWlFLVEZ2TW9NbktPNHIyRGNqckZWNHVnSVdKWHc2RWlMYllyc1ZwWjh6WDVBeEZ3b2dZWXd6VG5fcm1MSUstcnE0UlNqWmtOZHJqcnNSeF93cmNSRzdkaHF0cFpWRkhZOU1EaGlrZw?oc=5",
+      "source": "스페셜타임스",
+      "published": "2026-10-19 15:53",
+      "summary": "가스공사·석유공사 통합 논란…국감서 사전 협의 부재 지적  스페셜타임스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9146e1695001"
+    },
+    {
+      "title": "가스公·석유公 통합 도마 … “효과 검증없이 일방 추진”",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BczJpWEZDcE83WW5kV2M1RzRvMkpTZUJfOEt4SF9qREJoNWptTXZreWs1eEN0aTBvMHhaaUF4U2ppdUw4QnpTYm5ITmF0SVdMN0Z2SS16XzNzaTA0TnNjQU5hUHFZVFNOTTZ2bC1kX1A?oc=5",
+      "source": "에너지신문",
+      "published": "2026-10-19 15:53",
+      "summary": "가스公·석유公 통합 도마 … “효과 검증없이 일방 추진”  에너지신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6ebc5415c65c"
+    },
+    {
+      "title": "\"가스·석유공사 통합, 사전 협의도 없었다\"…국감서 졸속 논란(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RVG16RnZfajVWVmhLOXhydEZHanJXQnpTUDVQQVdUOVo1aURKRUtFUTgzbkZtWVhSSVRxU2FYOTh0UHJXN2VnMU52WFBYcmQ1RUJ5ZmVMSGc0MTM1elpDSNIBYEFVX3lxTE1RVG16RnZfajVWVmhLOXhydEZHanJXQnpTUDVQQVdUOVo1aURKRUtFUTgzbkZtWVhSSVRxU2FYOTh0UHJXN2VnMU52WFBYcmQ1RUJ5ZmVMSGc0MTM1elpDSA?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-19 15:49",
+      "summary": "\"가스·석유공사 통합, 사전 협의도 없었다\"…국감서 졸속 논란(종합)  연합뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2c5a263314c7"
+    },
+    {
+      "title": "[2026 국감] 홍의락 가스공사 사장 \"정부 통합 지침 무조건 따를 수 없어\"",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB3WE5WMDl1N1EzVEQzODVzQU5LMnJ3Qk5jQWZqRTJNVjZHU0hIeWlUaVAzdzdVelpFU01wWVNIaGIzRmpyak1YZGRfM09nNG9ndFNmY1RVRzdfbVdO?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-10-19 15:48",
+      "summary": "[2026 국감] 홍의락 가스공사 사장 \"정부 통합 지침 무조건 따를 수 없어\"  뉴스핌",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e50d1b4416e7"
+    },
+    {
+      "title": "“가스공사-석유공사 통합 출범 시 대외 신뢰도 오히려 하락”",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iY09hdjlwbEhOYTdOTm1XOUE3R2VuSHVna1Q0NGN5Z1ZpSkpSVklkTlFzeTU5SU9ZWkFkc1JuZVJNWFA4MjlHdG9YWDh4WUNicFQzQU1UaWxqVV9RdlE4T0tEM3VkOWthVGwxem9oNk7SAXBBVV95cUxPYmNPYXY5cGxITmE3Tk5tVzlBN0dlbkh1Z2tUNDRjeWdWaUpKUlZJZE5Rc3k1OUlPWVpBZHNSbmVSTVhQODI5R3RvWFg4eFlDYnBUM0FNVGlsalVfUXZROE9LRDN1ZDlrYVRsMXpvaDZO?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-10-19 15:26",
+      "summary": "“가스공사-석유공사 통합 출범 시 대외 신뢰도 오히려 하락”  에너지플랫폼뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d0b3ea97867d"
+    },
+    {
+      "title": "“가스·석유공사 통합, 일방 통보…사전 논의·효과 검증 없었다” 국감서 지적",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1TVF3bkZBd2hLUkh5LUxmdVMtMVlsRHpCajhDc3ZkQjl6aC1YVVNrOVlIMWI5bEtXM0dFRVhJR1d4dHFCVzBqeVo0SlZiTjZmbmJ5Y1NB?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-10-19 15:26",
+      "summary": "“가스·석유공사 통합, 일방 통보…사전 논의·효과 검증 없었다” 국감서 지적  헤럴드경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b6dce59525a4"
+    },
+    {
+      "title": "가스·석유공사 통합 여야 한목소리 우려…재무부실 지적",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE85SVg5X3ZDd0dadm9lam1lanVuaE1jT1R0YnI1SWNxS0x5R19qTTlRS04tLU9La3JhWEljMzdJTUpON2xOcWxHSjBNaU5hSlZJZUMxWWpJVDZLd0pwY0lCVVZIN3ZWM2xPQUpib3kwblgwUVF0ZkhHZtIBeEFVX3lxTE85SVg5X3ZDd0dadm9lam1lanVuaE1jT1R0YnI1SWNxS0x5R19qTTlRS04tLU9La3JhWEljMzdJTUpON2xOcWxHSjBNaU5hSlZJZUMxWWpJVDZLd0pwY0lCVVZIN3ZWM2xPQUpib3kwblgwUVF0ZkhHZg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 15:23",
+      "summary": "가스·석유공사 통합 여야 한목소리 우려…재무부실 지적  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "54afc5c1394a"
+    },
+    {
+      "title": "가스公 사장, \"통합 후 주주 이익 보호 방안 정부와 협의하겠다\"(종합) |",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5yV0tfX1M3S2tnRGtkTGRpS19WekFwd3FJc01wZnBXQW5zaTR5c3R3eFFxbTY3S3pfWkJPVGpLRGRkb016bHZvaVpyVzBnM0FIdjlmRlJidmROZUg1azVsZmxyRFVObzhaZW5iVFV4czJXT3Ay?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-10-19 15:22",
+      "summary": "가스公 사장, \"통합 후 주주 이익 보호 방안 정부와 협의하겠다\"(종합) |  연합인포맥스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스公 사장, \"통합 후 주주 이익 보호 방안 정부와 협의하겠다\"(종합)",
+          "source": "KB Think",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9CV3VHUlVFLVpxMkJTcU93N0ZkVzRDWmUzVjJKRlJ0REttaXBLLVZBcmdhU1RMUUZWbE9tOHNtUG1rMjJWY1FYVUJUT1NDam5VdEZsbFRuNGJwcENOcExkeVJieEMxZWVrRjB0aHhLcVlTQQ?oc=5"
+        },
+        {
+          "title": "가스公 사장, \"통합 후 주주 이익 보호 방안 정부와 협의하겠다\" |",
+          "source": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE12WjZIQVhQSjRWZm5ILV9CTE9kcFVlWHZ6QkRPU0ZZelMwazJHOGtvLWZzTk9xcVBndzJuNEJPaG9zQm1TTFkzdW93QzFVaHFsUEkwd2U0NE9vR3R3TGZlVHpMVGtpQmpHbVpjVEpzTWJmU1d4?oc=5"
+        }
+      ],
+      "query": "한국석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "abc9959cb1d5"
+    },
+    {
+      "title": "석유·가스공사 사장 \"통합 로드맵 못 들어…시너지 의문\"",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9QOUEwV0lmZUNlYTFpbjhzOGlKdmdXQUV6SXJKaUZ5aS15RnAzVFhiX2k4VFZ5RTA0cTF2VXdVWWhFRnNFYWRhRXJmdEdRUllWcGlDbjJNNHZQZGdfRFh6Yjl0MU1YTlBnV25Wa3M1Ym83djdqZkVkZNIBeEFVX3lxTE9QOUEwV0lmZUNlYTFpbjhzOGlKdmdXQUV6SXJKaUZ5aS15RnAzVFhiX2k4VFZ5RTA0cTF2VXdVWWhFRnNFYWRhRXJmdEdRUllWcGlDbjJNNHZQZGdfRFh6Yjl0MU1YTlBnV25Wa3M1Ym83djdqZkVkZA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 15:22",
+      "summary": "석유·가스공사 사장 \"통합 로드맵 못 들어…시너지 의문\"  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5290867dd8ae"
+    },
+    {
+      "title": "가스·석유公 통합부터 밀어붙였나 … 양 기관장 \"사전 협의 없었다\"",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbUNfckpKZ2hjYm81ZFBZZzBsaGlIbHFCVXdtZkRzM2thTXF3YkNiWVgxdFVfc1VnTnp4OVJzaVhDc2hvX2dVM1ZBRzRZbFZnN0lud3EtQjdqQzhoMUVza0RRR1ZoRUw4QXJRb0hsVWFwaFdhcW9NWDJfdU5abWJlN9IBgAFBVV95cUxNbUNfckpKZ2hjYm81ZFBZZzBsaGlIbHFCVXdtZkRzM2thTXF3YkNiWVgxdFVfc1VnTnp4OVJzaVhDc2hvX2dVM1ZBRzRZbFZnN0lud3EtQjdqQzhoMUVza0RRR1ZoRUw4QXJRb0hsVWFwaFdhcW9NWDJfdU5abWJlNw?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-10-19 15:07",
+      "summary": "가스·석유公 통합부터 밀어붙였나 … 양 기관장 \"사전 협의 없었다\"  뉴데일리",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스·석유公 통합부터 밀어붙였나 … 양 기관장 \"사전 협의 없었다\"",
+          "source": "뉴데일리",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1QNVl1ZkZPbzNjVUUxUmhnRC1JODZHT2NWd1ZzcmJsUWh1U2V6QkxUZ1lqdG53VGptaEJveENHN2haeEJaX0UxNWJtTTY0UnBoejJTODNkdHRhWU0wYlY2eWozd20zdmg3dURob1k2ekJaN3J6SXRYYU95MNIBgAFBVV95cUxNbUNfckpKZ2hjYm81ZFBZZzBsaGlIbHFCVXdtZkRzM2thTXF3YkNiWVgxdFVfc1VnTnp4OVJzaVhDc2hvX2dVM1ZBRzRZbFZnN0lud3EtQjdqQzhoMUVza0RRR1ZoRUw4QXJRb0hsVWFwaFdhcW9NWDJfdU5abWJlNw?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c6d096fb88ce"
+    },
+    {
+      "title": "가스公 사장 \"석유公 통합 지침 내려와도 그냥 따를 수는 없어\"",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9rS25QNjNGZmtyN1c0cDE2Mkx5MnR4aUU0UnNmUjFHTjhhWEFxdHp3c0lobVVRQWdoNkJuUEF0LThrQUFjZWxxWnJIQnJzckpkYUJyazRLX0c2SUpuV1RfR3ZaRUJjUXlzWHdVUHQ5aXRSVnE0S3MxVNIBeEFVX3lxTE9rS25QNjNGZmtyN1c0cDE2Mkx5MnR4aUU0UnNmUjFHTjhhWEFxdHp3c0lobVVRQWdoNkJuUEF0LThrQUFjZWxxWnJIQnJzckpkYUJyazRLX0c2SUpuV1RfR3ZaRUJjUXlzWHdVUHQ5aXRSVnE0S3MxVA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 14:59",
+      "summary": "가스公 사장 \"석유公 통합 지침 내려와도 그냥 따를 수는 없어\"  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "63b52b42c823"
+    },
+    {
+      "title": "석유·가스공사 사장 \"양 사 통합, 정부와 사전 협의 없었다\"…찬반 입장은 보류 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBnRFJURzBEYktKNzM3c1IxZUd1RnkwcTg5VmlUVFVvaHJ3OXF0YlRxcmNBNDc4TXBNLTNGSzlGdmkzZkhEa0tSVnpQdnBYazRZZHRwZnlxcVJRWEpvbGllM0ZqLTF5QVpZbG1ENXFxZWfSAXBBVV95cUxQZ0RSVEcwRGJLSjczN3NSMWVHdUZ5MHE4OVZpVFRVb2hydzlxdGJUcXJjQTQ3OE1wTS0zRks5RnZpM2ZIRGtLUlZ6UHZwWGs0WWR0cGZ5cXFSUVhKb2xpZTNGai0xeUFaWWxtRDVxcWVn?oc=5",
+      "source": "머니투데이",
+      "published": "2026-10-19 14:44",
+      "summary": "석유·가스공사 사장 \"양 사 통합, 정부와 사전 협의 없었다\"…찬반 입장은 보류 - 머니투데이  머니투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "45d982124c19"
+    },
+    {
+      "title": "野 \"가스公·석유公 통합 일방적\"…강원랜드 사장 당적 논란도 |",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBLNkRNQzJmWmVLc3RoVGxYcVl4aG5ud1pSQzNzeTVxS0J6emhRNVdDUEFTcjdUVVpUZm9WcGdYWEwwbXFBZF9IOU4zOEY2YVZZbG4yVGYzRjM4cF9UWHV2R0IzNTVuNFZIakxzOXM3M3prYjJ1?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-10-19 14:38",
+      "summary": "野 \"가스公·석유公 통합 일방적\"…강원랜드 사장 당적 논란도 |  연합인포맥스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "野 \"가스公·석유公 통합 일방적\"…강원랜드 사장 당적 논란도",
+          "source": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pOU9rdjB4bUZLdENubWJHU2twVnhaTzVRUmJTcEZxd3BJcG80UEhBZkNscm9kbUZxTjBZWU1QSHU4amlSUThCaXdsRzVWbFZpMEYwV1RuQ1lTUlAwQkJrMWk4TjFjd3MzV25PU2FHOGE?oc=5"
+        },
+        {
+          "title": "野 \"가스公·석유公 통합 일방적\"…강원랜드 사장 당적 논란도",
+          "source": "KB Think",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5mdHlkMnlhdm4yRDdxSFRRdU9KdExwZ0xMWWFuQnBnYjRpZVA0b2xBZjl3bmJEeW80TDBlODZfc3M3OVpMZHNpVDdJM2xqd1ZTTHJBbVdnbjU4SU1ZOVV5dFMxYzdsVGljRF9GcV9uVmhXQQ?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "535cb45ed600"
+    },
+    {
+      "title": "\"통합, 발표 당일 알았다\"…가스·석유공사 '깜깜이 통합' 논란",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE82bXdBWUtDbjlsbEtfTGJtMHVWUjc1bXZVeDZEWGQ1N3hWUW53MUhCQ2dKZFdmWnNVN2JkT1FjbExMU0RQU3Y3NU9qenUwWENjc3oxbUhoZnRibUJncVE?oc=5",
+      "source": "아시아타임즈",
+      "published": "2026-10-19 14:34",
+      "summary": "\"통합, 발표 당일 알았다\"…가스·석유공사 '깜깜이 통합' 논란  아시아타임즈",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4ea70d6c0629"
+    },
+    {
+      "title": "[2026 국정감사] 정부는 통합 발표했는데…가스·석유공사 사장 비전·시너지 설명 못 들어",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nMmFZZDB1b1lVUEdsRFlFbEZCQmt2Y0tuR28zRE9ZTWY4OGRDVlJhRHdHVzBjWlFWZlBPU2ZjTTREdkVacXNteXgtZmUxdkJscUVWT19URjFZZ9IBWEFVX3lxTE5QeEg3NjRPZWQ0aWlDZ05OZXRnU29OeV9JcnFHdkxySGRhUTlQcm5fek1ucFJYZmc5SXkyVTdqRFZoQThnRXA4WEF1b0JlaEZiQ2hUY3RabzA?oc=5",
+      "source": "아주경제",
+      "published": "2026-10-19 14:33",
+      "summary": "[2026 국정감사] 정부는 통합 발표했는데…가스·석유공사 사장 비전·시너지 설명 못 들어  아주경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[2026 국정감사] 정부는 통합 발표했는데…가스·석유공사 사장 비전·시너지 설명 못 들어",
+          "source": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QeEg3NjRPZWQ0aWlDZ05OZXRnU29OeV9JcnFHdkxySGRhUTlQcm5fek1ucFJYZmc5SXkyVTdqRFZoQThnRXA4WEF1b0JlaEZiQ2hUY3RabzDSAVhBVV95cUxOUHhINzY0T2VkNGlpQ2dOTmV0Z1NvTnlfSXJxR3ZMckhkYVE5UHJuX3pNbnBSWGZnOUl5MlU3akRWaEE4Z0VwOFhBdW9CZWhGYkNoVGN0Wm8w?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "876966cb9af7"
+    },
+    {
+      "title": "석유공사·가스공사 통합 논란 \"62조원 부채·주주 보호가 관건\"",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LMDUzVE5HZ1Z5UnljLW9WNkJzaFU0elRoX0gwczROcFVrdWtKYktLeFVLV3VZS3ZKTk1WbWtrdE04SlJLbEFMUDBwUXJDaVlpbXJPU09IckVtLUg3alNIeVBFQ1h0enFFdWFZSGdTN0J2QQ?oc=5",
+      "source": "디스커버리뉴스(DISCOVERYNEWS)",
+      "published": "2026-10-19 14:22",
+      "summary": "석유공사·가스공사 통합 논란 \"62조원 부채·주주 보호가 관건\"  디스커버리뉴스(DISCOVERYNEWS)",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3421dbc24842"
+    },
+    {
+      "title": "정부, 가스공사·석유공사 통합 추진…국감 “사전 협의 없었다” 지적",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAxVHFXMHdJZnZrZnJCMV83Ti0tX3hMRHR1Q1F5Zi1MOGY1bmFxcVY3dDdkekpQQTJLMzNQcmZqR3RxSkU2SUdpTFN5VUVJa0pQQmpOVmpQRGlJczhoTkVkNHhoNnVWRFNWejhN?oc=5",
+      "source": "BBS",
+      "published": "2026-10-19 14:15",
+      "summary": "정부, 가스공사·석유공사 통합 추진…국감 “사전 협의 없었다” 지적  BBS",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c04f2d6447bf"
+    },
+    {
+      "title": "가스·석유공사 통합, 사전협의·실익 도마…“부채·주주 보호 해법부터”",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBIeW9FbHJ6eTltYVpSZnZKVi00QVRjTUo2N181aHZaaW1fQjRIVXRwTkxGYzJWMWd5XzlCUjlHcGRkUEltbXI3dXB6V1RPV190Uy00dU8yNGhlemJCUE43UENndElQRzZZX2IweXc1X1htQQ?oc=5",
+      "source": "에너지데일리",
+      "published": "2026-10-19 14:13",
+      "summary": "가스·석유공사 통합, 사전협의·실익 도마…“부채·주주 보호 해법부터”  에너지데일리",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "60a1b7515758"
+    },
+    {
+      "title": "가스·석유공사 통합 추진에 두 사장 \"사전 협의 없었다…시너지 검토 필요\"",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOam05VmRwYU84TzVIaXAxWWI0d0RNQmxOOU1YM0wtODdNM0lURGZXRWRmOGdhMmY2ZFJBajhja2hzdk5hd0NDY0dnejNKaFdUYkdnUURfQlVwY2lBUFpTa2p1VktuS3laLXVFOFVVbGhzRUkwNUZLM2F6Rng4TjJnZA?oc=5",
+      "source": "이데일리",
+      "published": "2026-10-19 14:12",
+      "summary": "가스·석유공사 통합 추진에 두 사장 \"사전 협의 없었다…시너지 검토 필요\"  이데일리",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e2eee0de3d50"
+    },
+    {
+      "title": "가스·석유공사 통합 논란… ‘당일 통보’에 ‘부채·주주 피해’ 우려",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0Mzhoeml4TlVOd2NQZUw4MDVyQ2dBZjd5aTVaMnh1cnFERThscmlINmRwQkZZZk0weGF4ZUxVQmU0Y3R3anhFdjVBa2pKM1ZpSWIwWjEtQmktZw?oc=5",
+      "source": "브릿지경제",
+      "published": "2026-10-19 14:09",
+      "summary": "가스·석유공사 통합 논란… ‘당일 통보’에 ‘부채·주주 피해’ 우려  브릿지경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1a2eb364fe81"
+    },
+    {
+      "title": "부채 62조 안고 통합…김종민 “석유·가스공사, 타당성조사부터”",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ZOWx3RTRpTHQ3VjhZZ3N3cC1mSW5Ob3FOTmFDOEd1dnVnNDBnRWJ5a1FDb1J0Q210Q2lGTTBJamVIM3NyUFRhMnRZUFBYRGNrQWJ0VHZsN3g3R2wxRUJwdmlRODI?oc=5",
+      "source": "베타뉴스",
+      "published": "2026-10-19 14:01",
+      "summary": "부채 62조 안고 통합…김종민 “석유·가스공사, 타당성조사부터”  베타뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1a25f5dcb1d2"
+    },
+    {
+      "title": "석유‧가스공사 통합 타당성부터…김종민 의원, 구체적 전략 선행 강조",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwRmdTdHpoc1AzV1ZzbGlLYjItSlFVVml5cWdIbUx0VmtRcDlRdDN4RE9tVmk3eVREcVZST3lvbGx0MjNfcUVrLU1tQkh1NTdGYU8zTktXbnFxSFVRRVppNEU1SDFMV3ZqMzExZDFKQmxTdw?oc=5",
+      "source": "에너지신문",
+      "published": "2026-10-19 13:57",
+      "summary": "석유‧가스공사 통합 타당성부터…김종민 의원, 구체적 전략 선행 강조  에너지신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "af1d0d6b1c03"
+    },
+    {
+      "title": "[국감] 가스公·석유公 통합, 사전협의·부채 대책 없이 졸속 추진",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBLXhubUttZUswb3o0blJnZi16cmdxXzlFNlZYd3RfdWVuLXg5dnk5YVd4clhVbUIzZTZwMDlTeGNPR0NqTWl2S3FWeklxZl95dTBBRUlBbXJobDJlSlNUZHNsRkpjWFXSAWtBVV95cUxQZ25kRjZVSnlGZWRqYmVJVjhyTkExTU4ybmZQMWNBNkY0MWprek1BWTJsMWdlVmRrMVVITE1PZzJOcUNibXdJMFdnWFhqN0RvTzg3bTZJYXh0UG5LOWNyOW90SUdGcnJvRzkzUQ?oc=5",
+      "source": "인사이트에너지뉴스",
+      "published": "2026-10-19 13:49",
+      "summary": "[국감] 가스公·석유公 통합, 사전협의·부채 대책 없이 졸속 추진  인사이트에너지뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "정부 에너지 대책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "63311536934e"
+    },
+    {
+      "title": "국힘 박성민 의원, \"가스·석유공사 통합 정부 일방 통보\"",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBPNXVGeEloanJKcXNBd3d0aHVsMzE0Q2U2a2NKTWd2R1pHUXgyYllLYVhSQzFjWkctY3l6SzlPcFNLVDJZMEIxQktBNWJraHV3XzZzRUFvYXE?oc=5",
+      "source": "경북신문",
+      "published": "2026-10-19 13:47",
+      "summary": "국힘 박성민 의원, \"가스·석유공사 통합 정부 일방 통보\"  경북신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "((석유공사 OR 가스공사) (통합 OR 합병 OR 통폐합 OR 기능이관 OR 기능조정 OR 본사)) OR 에너지자원공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c59d5584a22c"
+    },
+    {
+      "title": "\"한국가스공사·석유공사 통합, 정부가 일방 통보\" 국감서 지적",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1iaFktZVUydjhGVlpIbkRvUzVYS0ZpdlZKMnh2ZzhtSzMwQ0prSWVJdlJad3l4SG5aam9jNm9ReWpqSjZ2bDdrUHlTclJacjJrZXc?oc=5",
+      "source": "매일경제 마켓",
+      "published": "2026-10-19 13:44",
+      "summary": "\"한국가스공사·석유공사 통합, 정부가 일방 통보\" 국감서 지적  매일경제 마켓",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a744da0f5f55"
+    },
+    {
+      "title": "재무 건전성 악화·주주 침해 우려… 국감서 ‘가스·석유公 통합’ 지적",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ubHE0Rm5oNDNFLXQ5VzRXTUtTQUJWNTVKN0swYWFETC1WeVRzYVRoX0FvYTJSNG1BV0p4T3JTRVJnSUdBSWtwX0gyTURlUXlEeXpVbWxrNA?oc=5",
+      "source": "서울신문",
+      "published": "2026-10-19 13:35",
+      "summary": "재무 건전성 악화·주주 침해 우려… 국감서 ‘가스·석유公 통합’ 지적  서울신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "재무 건전성 악화·주주 침해 우려… 국감서 ‘가스·석유公 통합’ 지적",
+          "source": "서울신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1saW55X2lZNG1zTHVvSTl3ZVNkSnZPRnU0WDRWNzdQZFZyYjc5SGhYekM4YjVkenF5N2NpMGJBLTY1WTUweU9qQVpZenllVWxXbklxbF8zQVZ3UXdVUmxYVUprVWtpTGllOG53LXdTVUw?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6b9008634145"
+    },
+    {
+      "title": "사전협의‧부채태책도 없이…박성민 의원, 석유公·가스公 졸속 통합",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DZnBFM0t6TmdneERWN1dUSDY0REZxMUhqRFR2SVlZazZUNy1MVEx0TlE5UmxZSXY4dTItM2YtM2dPY3oxYWthdnVVME9fNEc4NzQtYUU1N0tJWTUxYy1EaE9zbk9Hc2hWQWJ4cnhKcng?oc=5",
+      "source": "에너지신문",
+      "published": "2026-10-19 13:29",
+      "summary": "사전협의‧부채태책도 없이…박성민 의원, 석유公·가스公 졸속 통합  에너지신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b925e768f30d"
+    },
+    {
+      "title": "[국감]가스공사·석유공사 통합에 따른 문제점 도마 위...\"부실 재정 해결 없인 국민 피해만 늘 것\"",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KZDdXLXdsRUlta0lxc2ZtNTJSM2NUeE9XQVVDdDdVMW9KTFZXeTdoSVZOMlZ1RDhvZGhkWkhXZ0lPTUNaV1FDSWpwbm5yMXpkZVJHTFpYRkpnUi1uQThGT2Z1SEJUcWNCSWJv?oc=5",
+      "source": "대구신문",
+      "published": "2026-10-19 13:20",
+      "summary": "[국감]가스공사·석유공사 통합에 따른 문제점 도마 위...\"부실 재정 해결 없인 국민 피해만 늘 것\"  대구신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f37b6ad994fc"
+    },
+    {
+      "title": "박성민 의원 ＂석유·가스공사 통합, 사전 협의도 없었다＂",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTV2hDRVhhd0xjVnFual9ZTmFWVG90SmhWOTIxMlBZeFhIN08xdDBkV1UzN3VJWmxVd3ZIZXZ6bUNhSjRUb29oOGZPRzlXUGVoVzhYcTJXa0VLLVVnTzBSbFBmY2tCUGJyT18tUFpB?oc=5",
+      "source": "울산종합일보",
+      "published": "2026-10-19 13:12",
+      "summary": "박성민 의원 ＂석유·가스공사 통합, 사전 협의도 없었다＂  울산종합일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9d98a1f20756"
+    },
+    {
+      "title": "석유·가스公, 통합 사전 논의 있었나…“당일에 통보 받아”",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Sd1FpYjYzaGFGajhKd1A1cDVOdVdudlF2OGcxQU9hOF9zeWZuSFdPN2VfYndPQkRUbUtjOHVlVGpnaUdiYmluVkxncnNRRjVwallqTnM0VnFqVC1HcGF6ejcycGYtckJZM0ZNeUJJUEdHc1pzNWfSAWZBVV95cUxQX2dKWmdDRGtrb01US2NpTUlRdjIyaHBQdkdOY3NIdG5lMVZlUmtuWFJHdmRwWlFUOTNrVE04MDV6QXJjUU4wMGVHempQOURKU05ZYjhoN0xfWmhGbXB5NUdSRFF3S0E?oc=5",
+      "source": "동아일보",
+      "published": "2026-10-19 12:59",
+      "summary": "석유·가스公, 통합 사전 논의 있었나…“당일에 통보 받아”  동아일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유·가스公, 통합 사전 논의 있었나…“당일에 통보 받아”",
+          "source": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBfZ0paZ0NEa2tvTVRLY2lNSVF2MjJocFB2R05jc0h0bmUxVmVSa25YUkd2ZHBaUVQ5M2tUTTgwNXpBcmNRTjAwZUd6alA5REpTTlliOGg3TF9aaEZtcHk1R1JEUXdLQdIBZkFVX3lxTFBfZ0paZ0NEa2tvTVRLY2lNSVF2MjJocFB2R05jc0h0bmUxVmVSa25YUkd2ZHBaUVQ5M2tUTTgwNXpBcmNRTjAwZUd6alA5REpTTlliOGg3TF9aaEZtcHk1R1JEUXdLQQ?oc=5"
+        },
+        {
+          "title": "석유·가스公, 통합 사전 논의 있었나…\"당일에 통보 받아\"",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pUE44VDJIXzlmVTJMMWYtWHVOVHpDSFp4Q0FISlpkc3lBXzBlUEVBN0wyeHhBNmJ0WGE1cjZnaHhOT3BkT1JzT1BMdHViZklvbmNvMXFmazJzTU5LYnJDb3VXTUptRGVsMGZxaU11M3ZSMzAxRlg4VdIBeEFVX3lxTE5pUE44VDJIXzlmVTJMMWYtWHVOVHpDSFp4Q0FISlpkc3lBXzBlUEVBN0wyeHhBNmJ0WGE1cjZnaHhOT3BkT1JzT1BMdHViZklvbmNvMXFmazJzTU5LYnJDb3VXTUptRGVsMGZxaU11M3ZSMzAxRlg4VQ?oc=5"
+        },
+        {
+          "title": "석유·가스公, 통합 사전 논의 있었나…\"당일에 통보 받아\"",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85RmpPR1FLVVRFbHhGWlZpTk5rOV9HUzdnbEZZRkVVTlhiYndRN094NXQxeEVvRW5JUnBQU2RyN0J4SGpqSTItN0dtU2poQThxMnZ3RHR3dmFwSlRrN0FTb9IBeEFVX3lxTE5pUE44VDJIXzlmVTJMMWYtWHVOVHpDSFp4Q0FISlpkc3lBXzBlUEVBN0wyeHhBNmJ0WGE1cjZnaHhOT3BkT1JzT1BMdHViZklvbmNvMXFmazJzTU5LYnJDb3VXTUptRGVsMGZxaU11M3ZSMzAxRlg4VQ?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7ac605a28e3b"
+    },
+    {
+      "title": "가스·석유 공사 통합 도마…'부채 증가·주주 권익 침해' 우려",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5jUkVkRUktelpLcHRBWGVXZ1VyUXBNb1AxRWtVNHpodThzb2EzTW9aZXVUOU9SYldKaDFWaUw2Zy1TRGNoWkN2UUJwZllocGtIVUR5SHplQTA2VzMwSzdJ?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-19 12:47",
+      "summary": "가스·석유 공사 통합 도마…'부채 증가·주주 권익 침해' 우려  뉴스1",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e7294bc9e21e"
+    },
+    {
+      "title": "[2026국감]가스·석유公 사장, 통합 찬반 유보…\"시너지·비전 나온 게 없다\"",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9qOWNfenAxTjV5dE55VXI3MEl0d2IwSkUwWXhOQWxuNVFraWJ4WUJxTDRwaVRFUXZIa3lUN2tJVEVLNFoxV1dqbXR3RTYtNXYxZk90djd1YVVJblIwU2tBZGVsTmR0SUN2V2ZoQXpwQTNEWXhJRUx3?oc=5",
+      "source": "아시아경제",
+      "published": "2026-10-19 12:23",
+      "summary": "[2026국감]가스·석유公 사장, 통합 찬반 유보…\"시너지·비전 나온 게 없다\"  아시아경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c73501c7fd09"
+    },
+    {
+      "title": "박성민 의원 \"가스공사와 석유공사 통합, 부작용 신중히 검토해야\" 요구",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XMnhIUlA3T0M0N2hjVzZFTDhxN2hpTjF5T2ZPZExBLVRoVl83cWtJUE94U29TNTk0eG1mV1EwNVEzWXo2TVpRcWx5R2o3aGlfT1FaSEZ4eWFDLUZpOEFKU3gzdm5HdlVfaFE?oc=5",
+      "source": "가스신문",
+      "published": "2026-10-19 12:18",
+      "summary": "박성민 의원 \"가스공사와 석유공사 통합, 부작용 신중히 검토해야\" 요구  가스신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7a4d29c39b09"
+    },
+    {
+      "title": "가스·석유공사 통합 추진에 부채·주주 보호 논란…“구체적 로드맵 없어”",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CdVVvdnFjYW5wWjFUSFBmcnJ4ZG1WMzhaQjlKcjdhZnFFbUdwcFAxbGtuZE5meHhOT1lFRU96VDdXMlZoZDRtc2NrLUJ5MmpnLWh4dUk2TXVSQQ?oc=5",
+      "source": "경북매일",
+      "published": "2026-10-19 11:40",
+      "summary": "가스·석유공사 통합 추진에 부채·주주 보호 논란…“구체적 로드맵 없어”  경북매일",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "31933a918537"
+    },
+    {
+      "title": "가스公 사장 \"석유공사와 통합 우려 불식하도록 정부와 협의\"",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzOThyaGlWOWlEM0xrdTJJVU1OVWhZdnV2ek5Gdkwxa3RnLTY5QW5JaFFNZzdMZ1Nvdlc2OXBtVDF2bzVQMi1WZHJGVU9Wc0xYcHo3cVAxSUU0Z1JOOENmaFVITFQ5VEZVY1NkNnZhdWlOWWo1dmtZa9IBeEFVX3lxTFBzOThyaGlWOWlEM0xrdTJJVU1OVWhZdnV2ek5Gdkwxa3RnLTY5QW5JaFFNZzdMZ1Nvdlc2OXBtVDF2bzVQMi1WZHJGVU9Wc0xYcHo3cVAxSUU0Z1JOOENmaFVITFQ5VEZVY1NkNnZhdWlOWWo1dmtZaw?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 11:23",
+      "summary": "가스公 사장 \"석유공사와 통합 우려 불식하도록 정부와 협의\"  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "10d3da8204c0"
+    },
+    {
+      "title": "한국가스공사 본사에서 열린 국회 산자중기위원회의 국정감사",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84NFBVQ09kWEpNZEdjeVB4WF9GSThfUmVzUnZrbVE4TlZyV0pVYks3aktDeHpGLVptbGNPZ2pQRTZiRXhyb0ZnOTBBb204MEdoVF9NRkdGZ2dYbUNZZFF0MFUyUUNfaEZIM3lSVks0OUtvZmZyZUxtRtIBeEFVX3lxTE84NFBVQ09kWEpNZEdjeVB4WF9GSThfUmVzUnZrbVE4TlZyV0pVYks3aktDeHpGLVptbGNPZ2pQRTZiRXhyb0ZnOTBBb204MEdoVF9NRkdGZ2dYbUNZZFF0MFUyUUNfaEZIM3lSVks0OUtvZmZyZUxtRg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 11:00",
+      "summary": "한국가스공사 본사에서 열린 국회 산자중기위원회의 국정감사  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5994a8c74b54"
+    },
+    {
+      "title": "대구 가스공사 본사 국감장에 등장한 '통합 반대' 현수막",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBxOTZOVm92WUVuOEVWUWh1X2JpeGhfR0VEeVJ5T2RsRDg3bFJ3VGpMZU0xdTk0Yms1dmZnREJHUWNIWUNJakoyd25rLThZZ3M5MXEzTXRyMi0zUVN5b2FCeE5PcGRPMHZDYUJocnJ5bnBOVzVLRHgxONIBeEFVX3lxTFBxOTZOVm92WUVuOEVWUWh1X2JpeGhfR0VEeVJ5T2RsRDg3bFJ3VGpMZU0xdTk0Yms1dmZnREJHUWNIWUNJakoyd25rLThZZ3M5MXEzTXRyMi0zUVN5b2FCeE5PcGRPMHZDYUJocnJ5bnBOVzVLRHgxOA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 10:12",
+      "summary": "대구 가스공사 본사 국감장에 등장한 '통합 반대' 현수막  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "대구 가스공사 본사 국감장에 등장한 '통합 반대' 현수막",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1LLWZZREtRY1VGbTFObnJvVURkV2d6Z21LRUdHUW5CLVpOMDBKSUtLOFExRm1rb0FlRzVpczRnbUlaVUFzMW5DV1RjU1lCRU05cFRROXBPa2FnR2ZaZTdsdzVaUlRjb2pjZXZtbGVBTThfdDJLNGg0Q9IBeEFVX3lxTE1LLWZZREtRY1VGbTFObnJvVURkV2d6Z21LRUdHUW5CLVpOMDBKSUtLOFExRm1rb0FlRzVpczRnbUlaVUFzMW5DV1RjU1lCRU05cFRROXBPa2FnR2ZaZTdsdzVaUlRjb2pjZXZtbGVBTThfdDJLNGg0Qw?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "325445ee274b"
+    },
+    {
+      "title": "한국가스공사 국정감사 앞두고 \"통합 반대\" 피켓 시위",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE81dkJPY2dfcC1XY3ZfVkFHSWdZcFhzQlpobzE5MzB0ZDJ0eGxWem0ydmtuNlNqU053SFBfcjNTdGtIZVdnWklERW9XdXFjdGtiY3g5b0Z3bjJvVmx6aGwybVQtOVdJdHVqa01jdF96TnhOdVBLcFJ3V9IBeEFVX3lxTE81dkJPY2dfcC1XY3ZfVkFHSWdZcFhzQlpobzE5MzB0ZDJ0eGxWem0ydmtuNlNqU053SFBfcjNTdGtIZVdnWklERW9XdXFjdGtiY3g5b0Z3bjJvVmx6aGwybVQtOVdJdHVqa01jdF96TnhOdVBLcFJ3Vw?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 10:12",
+      "summary": "한국가스공사 국정감사 앞두고 \"통합 반대\" 피켓 시위  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국가스공사 국정감사 앞두고 \"통합 반대\" 피켓 시위",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BbmlvLXJZZldWSFBvdGJjTXJXOG5xbHl1THZFbFIzYmlVejBxV1RrdTlBLVlsR0Fic3E2VDhpZUdQZ0RiUWpma3Awc3NNWnJoSF9OMS1rcFJtSWFxMERtNUU5cHhOQQ?oc=5"
+        }
+      ],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6e7f2a2fd20f"
+    },
+    {
+      "title": "'가스·석유공사 통합 반대한다'",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2VzNVWF9JQWoySjVZQVg5Wm11WnNDcGZrSXFZOGRldTBOaWF2R2Q1SWtoQm5KeE1FcWJ6Y3N6QXc3aE5maFZBUjZ0U2VUb3B1T0Qwd2tEWmFROG_SAWBBVV95cUxNbmV2YkxkSkx0ZmxBd3RKOE5FZVRGSTl5UlU1ajFkWVFKWHBRM1V5MVFma21tM3k4R3c3cE1mT2pJdkp3UGRwbUljSjIyTGpYVUFlVzlqY1pfM2NqWFN2Y2s?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-19 10:04",
+      "summary": "'가스·석유공사 통합 반대한다'  연합뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4f15fb5599bb"
+    },
+    {
+      "title": "이란-미국 간 긴장 고조: 테헤란, 보복 경고… 호르무즈 해협에서 유조선 폭발 발생.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdzFoZUlXd1FZNlhRX0ZQazZ6LXA3V3RqRWpETWJUREFIUXNzbjNzT0U5RE1SdExVTXNGYmcxb2V0b0RDbjNYbTl2ZUJMZUI2QTZDM1BtMlE3NjZGUEt6dHAxYW1jS1lmVkhFWGtGU21fbHdqR3QzcUFYOVEyV3UzRWNNekt0V2tQMFRzSXNwcEQ0bEd1M3diZERMNmxqQQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 15:47",
+      "summary": "이란-미국 간 긴장 고조: 테헤란, 보복 경고… 호르무즈 해협에서 유조선 폭발 발생.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f663206594f3"
+    },
+    {
+      "title": "유조선이 호르무즈 해협에서 기뢰에 부딪혀 폭발했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcHJmS016a2hleXgzdS1wcExQN3gxVXVtS3dRNjlzaUp0eTVOTzRWT3V2QzBma0NMYUFNUnUwZzJmd3d1TUJtMUsycjg5X20xNzZWTm45NWhCY1RsbllYdHdtZ25pZ3d4SHQtWUdsQ0pVSG1fV3psYlRQQm9wc3NZZjJXMGY4LUd4WE9JWW5idVM?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 11:54",
+      "summary": "유조선이 호르무즈 해협에서 기뢰에 부딪혀 폭발했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "호르무즈 해협에서 또 다른 유조선이 기뢰에 부딪혀 폭발했습니다.",
+          "source": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdmxBWUVXdVJfWjdSYWx1c25LcU55dlN5ajE4amdVcWZKblpuTktYdjJZQmREV2NNRnhLWlBXbmREM1dNcm9ZOVRwajlyX0tWUWJHSXc1Zl9SZjhCWDhpS1ZHbHQ3eHRCRzd1SDE0ZVZWNmstLWxCbWxkc1F5eHR4a09IY09wTHJaNWdHQzJjdTMxTmc?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a8a163698299"
+    },
+    {
+      "title": "호르무즈 해협서 유조선 또 기뢰 폭발…사흘 새 유조선 3척 피격 주장",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1FczVCMXZoR3R2WllHT2dhampUNW9TWlpRMDlLT0dUQlRZTWdYb29QeVhzMm1PWkF5QWZlMXlkZ1UwTW5wVHlLN0FsQkdUUm91ZWJ3WW1iLW5hUjJ5bEtNRUJiTmcyMEd4Snlr?oc=5",
+      "source": "해사신문",
+      "published": "2026-10-19 10:51",
+      "summary": "호르무즈 해협서 유조선 또 기뢰 폭발…사흘 새 유조선 3척 피격 주장  해사신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "09ded9743db9"
+    },
+    {
+      "title": "[영상] 호르무즈서 유조선 잇단 화재…이란 \"기뢰 충돌\" 주장",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FVTZWQjJQa1VqalFmMEp1T3lodmk5UkNIX0tLS0R6bTloTXM2Vy0tSm9uS2RoYk5iN1ltTlJOWEpQS0phdGhfOTlfVXVnUUItcUFLcmRoM3JZZW55TWQzetIBYEFVX3lxTE9FVTZWQjJQa1VqalFmMEp1T3lodmk5UkNIX0tLS0R6bTloTXM2Vy0tSm9uS2RoYk5iN1ltTlJOWEpQS0phdGhfOTlfVXVnUUItcUFLcmRoM3JZZW55TWQzeg?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-19 10:43",
+      "summary": "[영상] 호르무즈서 유조선 잇단 화재…이란 \"기뢰 충돌\" 주장  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[영상] 호르무즈서 유조선 잇단 화재…이란 \"기뢰 충돌\" 주장",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HVUFVVkhPOUxKd2ViTmx6dkhXV1FxYVdPbkJ3elh5NUdzLUFFX0RuRWx5ZDZCMk5sbVdhYWlISHlXZGhSUDdmaU0xcGNkOEgxSlU2S1NzeU9yX0wyNzB1VtIBYEFVX3lxTE9HVUFVVkhPOUxKd2ViTmx6dkhXV1FxYVdPbkJ3elh5NUdzLUFFX0RuRWx5ZDZCMk5sbVdhYWlISHlXZGhSUDdmaU0xcGNkOEgxSlU2S1NzeU9yX0wyNzB1Vg?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "191d67ff5f64"
+    },
+    {
+      "title": "이란 \"호르무즈 해협서 유조선 기뢰 접촉…폭발·화재 발생\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1TampFOXRMYUsxdGNlY1lSRUlMYklfQXlub1lCYUk5MEFLZG9tOGlJV0JZWkhoQ2MzeDU4bU1NUTVCUkpBTmFDU0dQV1Y0QVpVS1d3WlAxM0hCTnRGNHdIQ0FR?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-19 10:38",
+      "summary": "이란 \"호르무즈 해협서 유조선 기뢰 접촉…폭발·화재 발생\"  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "이란 \"호르무즈 해협서 유조선 기뢰에 부딪혀 화재\"",
+          "source": "국제뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzcS12cUxkdG9RbDhKUmhFMmdnZDhkc0o3U1UxZnVrTlBMcUVqS1hJV2NmTW5RYnkzOUdLYU9sQ1FyNVBPOHNkalVlZUlFellwWkpHOElBWUladU9CN3diS2huR0NtMGZwam1oUW1R?oc=5"
+        }
+      ],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e4d515399032"
+    },
+    {
+      "title": "석유公 직원, 법카로 상품권·개인물품 구매…8400만원 횡령",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229043",
+      "source": "에너지신문",
+      "published": "2026-10-19 19:49",
+      "summary": "[에너지신문] 한국석유공사 직원이 법인카드로 의류·화장품 등 개인 물품과 올리브영 기프트카드, 배달의민족 상품권 등을 구매하고 영수증과 거래명세표까지 조작해 8400만원 상당을 횡령했다는 지적을 받았다. 관리자들이 부실한 증빙자료를 제대로 확인하지 않은 데다 최종 결재가 이뤄지지 않아도 지출 내역이 회계장부에 반영되는 시스템 허점까지 겹치면서 장기간동안 부정 사용을 막지 못했다는 것이다.국회 산업통상자원중소벤처기업위원회 소속 권향엽 의원은 한국석유공사로부터 제출받은 자료와 석유공사의 법인카드 부적정 집행 관련 제보를 바탕으로 업무상",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[이슈국감] 석유공사 직원, 법카로 상품권 구매…8400만원 횡령",
+          "source": "한스경제",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yOTdxLVNEVEItZF92LXBnWHpDLTN6cEh1cGxlcXdyQ3hDUlRNUlR5UnZ3V2pWbGlTaEEtZUpwYnpEVnFFTWpuc1NXbjl0c0hzUnhrSHRCQXpqR2szU2dpUXNyWG5DNlRVcnZGLdIBb0FVX3lxTFA2SHozbGs5Y3VYbGdGajJXWlE3WFdyVUhXTHE1Zmk0Ukh1Z1dNelhxMmptWTY5UW5FNkVla0RvZFJVUnlnM1RRWHdxcHdsXzRmd0VpMGlmc3RuQnF5QXEzQmloa19UenNjaHVjdzVGWQ?oc=5"
+        },
+        {
+          "title": "석유公 직원, 법카로 상품권·개인물품 구매…8400만원 횡령",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NX1U5UHhtWlVyeHllMENjcHlMTWhMSklYZXk3cm5BTHNXQ0FFSUNCN3JiTlRRSncwcGlOVDhKRll3V0JGTEJOWV8yZ0xHV0E3UVNCeGs3cnFQM0dHalJTWUF4QUhSMnpvWDh5WDVmWTg?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "6c40e2b6787e"
+    },
+    {
+      "title": "[취재후일담] 최고가격제 장기화 속 경유 소비 감소…수출제한 기준 손볼 때",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5rcW93ZHZrSTlxMVJDc3ZVay1MbVE1Q2VVMlVHTHdJSk1wbVZWZkxwLVZzbjJrdzExOG1qVmtGMUcyTXI2V1dmR2ZMbVZIeGRSbDdhWGF4UGkxTFlNbFJrQWN5ZXdXQktzU1Rya3Z3?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-19 18:13",
+      "summary": "[취재후일담] 최고가격제 장기화 속 경유 소비 감소…수출제한 기준 손볼 때  아시아투데이",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "27624fa40fa8"
+    },
+    {
+      "title": "14조 미수금·LNG 수급 불안까지…가스공사, 재무 개선 해법은?",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5uY1pNdWlNbktqR0hMZXVleWZjc1lRc1FfcE42NTd1bzE0dElVbnlOTU1SV0ZLRzgtTS1jQmxGdHJtaHoza0paekhVYjBsdmtmVFhxTDY3YlQ5UGtPVl9MLWljM1hKbnpLdFNJLUFwblVNMjA2dmtR0gF3QVVfeXFMTm5jWk11aU1uS2pHSExldWV5ZmNzWVFzUV9wTjY1N3VvMTR0SVVueU5NTVJXRktHOC1NLWNCbEZ0cm1oejNrSlp6SFViMGx2a2ZUWHFMNjdiVDlQa09WX0wtaWMzWEpuekt0U0ktQXBuVU0yMDZ2a1E?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-10-19 17:13",
+      "summary": "14조 미수금·LNG 수급 불안까지…가스공사, 재무 개선 해법은?  핀포인트뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3ffe97ea493b"
+    },
+    {
+      "title": "“쌀 때 수입·비쌀 땐 위험 전가”…정부, 민간 LNG 조사 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNV054ZzdZV09RVlB6OHBLSEJ4RW9MLUVPczdpQnJnUGxZNFNQZVVIenV2dllOQnE0SE1vbllqTWEtN1FMVkM4ZWswRUhfeXR0Vk10a25vS3dBUnRjaUpVczdxRTJVRVljS2VwWkJMOUJZZUNlUzktQ0RIWVctNWwtQXhZSjfSAZgBQVVfeXFMTWxiNG5KbTNyMzMzTHk5X1RwYkRtRURNcWFUaGZjQVVHdkpRenc2Q2JpdmJNUTM4bFJpZGllWE1uZXR2UWtwNjNIWXV0aVdZUzJPdHc0c0Vvd2JlZXg4c0VlLVhwdWExYlFmbVJYYkdybkNXSXFPVzJZLURlRjJMSjBUSjViWndkelZ0eWJOdGI5eFhHLUFnQWU?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-10-19 17:05",
+      "summary": "“쌀 때 수입·비쌀 땐 위험 전가”…정부, 민간 LNG 조사 - 조선비즈  Chosunbiz",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ede2ab281d75"
+    },
+    {
+      "title": "더불어민주당 송재봉 의원, 해상 석유 불법유통 실태 지적…근본 대책 촉구",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYdnhEa2VTZVJIMVlxY0FqX3lCZ3I2YXd3MENFNW1ZNm5kSXVrZ1hUYnVtZklMT0hzNFBzcEZFMzYta1gyWWhDVTJhWUFxYWxUSlc3dnlFR3AxZ2xyV1lid3BqbEdZTXZiSGMtVNIBbEFVX3lxTFBYdnhEa2VTZVJIMVlxY0FqX3lCZ3I2YXd3MENFNW1ZNm5kSXVrZ1hUYnVtZklMT0hzNFBzcEZFMzYta1gyWWhDVTJhWUFxYWxUSlc3dnlFR3AxZ2xyV1lid3BqbEdZTXZiSGMtVA?oc=5",
+      "source": "시사경제신문",
+      "published": "2026-10-19 17:02",
+      "summary": "더불어민주당 송재봉 의원, 해상 석유 불법유통 실태 지적…근본 대책 촉구  시사경제신문",
+      "sector": "government",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3b691f998ab4"
+    },
+    {
+      "title": "바다 위 '검은 거래' 활개, 해상 면세유·석유 불법유통 1754억원 육박 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBXLUFCZGxyT1YydGJEZ2EyUUZoWThIeXU2bFZGNkFlQ3VUNmVZUk9KajZEc0VCaF95R0YzX2JHZFBRNjZvdlFibW9GRFkyQ3F0b0VlQWc3VE5GQ2dpN044aXRkakNiTWlKM1J30gFwQVVfeXFMTVl4NkU5QlBGZEZMeEkyVFF5MGFnODJhbnV5OGRvS25CZWpqS2V3SWFVMm9TWjBXY2ZnTEVoTEdnZ2hBZzhsOUptdlJuNGVKQmpreWY2Yldzd3ZfbU9qamQxZEVBWHR0MDBOTjJjVUxJdA?oc=5",
+      "source": "머니투데이",
+      "published": "2026-10-19 16:37",
+      "summary": "바다 위 '검은 거래' 활개, 해상 면세유·석유 불법유통 1754억원 육박 - 머니투데이  머니투데이",
+      "sector": "government",
+      "risk": [
+        "불법유통",
+        "면세유"
+      ],
+      "duplicates": [
+        {
+          "title": "바다 위 '검은 거래' 활개, 해상 면세유·석유 불법유통 1754억원 육박 - 머니투데이",
+          "source": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZeDZFOUJQRmRGTHhJMlRReTBhZzgyYW51eThkb0tuQmVqaktld0lhVTJvU1owV2NmZ0xFaExHZ2doQWc4bDlKbXZSbjRlSkJqa3lmNmJXc3d2X21PampkMWRFQVh0dDAwTk4yY1VMSXTSAXBBVV95cUxNWXg2RTlCUEZkRkx4STJUUXkwYWc4MmFudXk4ZG9LbkJlampLZXdJYVUyb1NaMFdjZmdMRWhMR2dnaEFnOGw5Sm12Um40ZUpCamt5ZjZiV3N3dl9tT2pqZDFkRUFYdHQwME5OMmNVTEl0?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "648e44a99eef"
+    },
+    {
+      "title": "[2026 국감]송재봉 의원 \"해상 석유 불법유통 근절해야\" |",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JX2dwVmpwYlBLV2pYblZwVHVRUXd5ZWtVY3RKR3UxcTFmRzQya0xjUmJodWFJR0hlU2k4V0ExQ3B4UmtMWmRBNjBEVkQ4NDdiZFcxSzFBbE5jdm9ZTlB1ZUkwcGxvNWFidzNZ?oc=5",
+      "source": "현대경제신문",
+      "published": "2026-10-19 16:36",
+      "summary": "[2026 국감]송재봉 의원 \"해상 석유 불법유통 근절해야\" |  현대경제신문",
+      "sector": "government",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [
+        {
+          "title": "[2026 국감]송재봉 의원 \"해상 석유 불법유통 근절해야\"",
+          "source": "현대경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qU0psRjZ3Y3N6VGU3OG54UVZxLWJLZjA2b1dqSXBBVnNHUXhaeE9oUkNQME44R01hQW55RjBLNXZsbEFaNTJKem1DY29ZZEFJOFBZSjAyY2RURVFEekJNdXJBMC16Tzlh?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "780a1b389057"
+    },
+    {
+      "title": "한국에선 석유최고가격제·유류세 인하 계속되는데…IMF \"보편적 가격 통제·보조금보다 선별 지원해야\"",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcGhTVTU4MkluWVJxNlJKeTdmQ2NOejVoLVBXTzcyUVM5alBKcnFBY0NRSERXaXVqX1JNVTNoZGJNa2p5VWlNeXQtN3Q1eTNPUk9vVm5lWW1oYXg5emJYS2dUb0hFaUtfXzhWaWpidkRuYm12akJTM3BfdFZIeFFMOWY3b2dGUWtIZ3NYb1lB?oc=5",
+      "source": "조선일보",
+      "published": "2026-10-19 16:32",
+      "summary": "한국에선 석유최고가격제·유류세 인하 계속되는데…IMF \"보편적 가격 통제·보조금보다 선별 지원해야\"  조선일보",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3edf1c5b3e40"
+    },
+    {
+      "title": "해상 무자료 석유 불법유통 24건·9766만L 적발…피해액 782억원",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE56V1RpRFhJLUtWbGhvbVljdHRPSjRSVlI0bklNWF9GdkpaMTUxcGFmT1BsMzZRMG1hTHczNlczd3dtWDQyV3VxYld2M0xhWDFCa3RWVURYVEZiLXQtaE9lb1lnTUx5Zndsb2tySUo0MHlwQQ?oc=5",
+      "source": "에너지신문",
+      "published": "2026-10-19 14:44",
+      "summary": "해상 무자료 석유 불법유통 24건·9766만L 적발…피해액 782억원  에너지신문",
+      "sector": "government",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2b94d1181174"
+    },
+    {
+      "title": "권향엽 의원, \"한국석유공사 직원, 법인카드로 8398만원 횡령\"",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBudFZrdVNRQTlqQVlFMTEtaTRhUElxVVhVYnVOOWlaM2M5NWx1SldWdkZFazNBdHI5dElzQThjVnpKLXZPMGFWQloyX3ZhNjF3UVhvU25MbmlUS09jU213eWwxeHBaQ1pFd05BSU42Yy0?oc=5",
+      "source": "신아일보",
+      "published": "2026-10-19 14:43",
+      "summary": "권향엽 의원, \"한국석유공사 직원, 법인카드로 8398만원 횡령\"  신아일보",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e8c21b0489db"
+    },
+    {
+      "title": "'남는' 경유 …수출 늘리자는 업계, 신중한 정부",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tY0tMdWIxQktuNE54YVJhajRPWGZEa0tEek1Ic0lSTi12Nm9DdTdNc0p2SUZzekFKZ19iMGdjZG5yNlhFUktqRFVvcER6TE1faVlPZFJweTdjalBMSy1xeVVQNFJkbnItMWp2WjhTcw?oc=5",
+      "source": "진일보 | 전남일보",
+      "published": "2026-10-19 14:01",
+      "summary": "'남는' 경유 …수출 늘리자는 업계, 신중한 정부  진일보 | 전남일보",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "23a01d060b31"
+    },
+    {
+      "title": "윤준병 의원 “해상 면세유·석유 불법유통 1,754억원…올해 적발액만 782억원”",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LSUhvLXVtOHk2RXFjczhIQ1IyTWI1Y2RlWjdWU3BhYUJGTVo5UXJnb3A0bkFRMG84SUw2Y0h1dkI3c0p5X3MtQmN3MFNXWkpiTGlLVVZyMXk5NXBUTmstemU0eFFWa1Y4a0E?oc=5",
+      "source": "투데이안",
+      "published": "2026-10-19 14:00",
+      "summary": "윤준병 의원 “해상 면세유·석유 불법유통 1,754억원…올해 적발액만 782억원”  투데이안",
+      "sector": "government",
+      "risk": [
+        "불법유통",
+        "면세유"
+      ],
+      "duplicates": [],
+      "query": "(가짜석유 OR 면세유) (대규모 OR 전국 OR 구속) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d4deebc4784f"
+    },
+    {
+      "title": "한국석유공사 직원, 법카로 8400만원 횡령···영수증 조작까지",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5sd1FNb21jNndlX2dzUERVZlVaUFJYdFkzRDc4SUhDTThkZ1dnbWw3YXFObjZwbElkb1pId1dLbnh3YVd4V0NnakpoVnNrOUgzX2RMUWg0MXR1MWluQ085Q3FNcG9JMkZzR2t3?oc=5",
+      "source": "시사주간",
+      "published": "2026-10-19 12:30",
+      "summary": "한국석유공사 직원, 법카로 8400만원 횡령···영수증 조작까지  시사주간",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6b861c684efe"
+    },
+    {
+      "title": "[국감] 권향엽 의원 “석유공사 직원, 법카로 올리브영·배민 상품권 8400만원 몰래 구매”",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9NS1M1cGEtWG5KUEVQUUlubkpkdkdZSm12bndPblBFTlMwNmI1b1hsQVptVWFjeW9UZEE3bHZaQ3NWVm1RQ0ktZU92QjZNUVZ2UEtESENIUVZYX0lkUDZ2a2VkYTg?oc=5",
+      "source": "KNS뉴스통신",
+      "published": "2026-10-19 11:46",
+      "summary": "[국감] 권향엽 의원 “석유공사 직원, 법카로 올리브영·배민 상품권 8400만원 몰래 구매”  KNS뉴스통신",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e72897bb21f7"
+    },
+    {
+      "title": "해상 석유 불법유통 1754억 적발…올해 '무자료 석유' 782억 급증",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IYXloc0VxbnBHLXJyNnZPWXQ0Q3ZtN2hDeDVSRUM5VUR0cFA1c2hwNHRkQzBCRjdLb0taNG5EOTFQV3E3ekFnb0d5Y2xtQllBVTJnS0hrckUwSjk4SnNkQzNPak0zVkNiLVVKTU1kZw?oc=5",
+      "source": "조세일보",
+      "published": "2026-10-19 11:42",
+      "summary": "해상 석유 불법유통 1754억 적발…올해 '무자료 석유' 782억 급증  조세일보",
+      "sector": "government",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [],
+      "query": "(가짜석유 OR 면세유) (대규모 OR 전국 OR 구속) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "508392fc96b4"
+    },
+    {
+      "title": "[2026 국감] 석유공사 직원, 법인카드로 8400만원 횡령...영수증·거래명세표 조작",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZeXNMRE11aGhwV0Z1dl9FOWFCSXpneGppb2Z5TDlsQXdmWE5rSHAxTmxLZkRzbk1IZFAzdFhXejgxMGMwN3VxdUdhRnk5X3A2cnhaV3ZzVkV5QTh5NGlVWVJzU1pYeVlTT2lSLVREaEloQdIBckFVX3lxTFBZeXNMRE11aGhwV0Z1dl9FOWFCSXpneGppb2Z5TDlsQXdmWE5rSHAxTmxLZkRzbk1IZFAzdFhXejgxMGMwN3VxdUdhRnk5X3A2cnhaV3ZzVkV5QTh5NGlVWVJzU1pYeVlTT2lSLVREaEloQQ?oc=5",
+      "source": "팝콘뉴스",
+      "published": "2026-10-19 11:41",
+      "summary": "[2026 국감] 석유공사 직원, 법인카드로 8400만원 횡령...영수증·거래명세표 조작  팝콘뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8cc2b9875596"
+    },
+    {
+      "title": "경유 수출길 터달라는 정유업계… 정부 ‘시기상조’ 선 그어 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMUpDSHI2WG9pV1lCRG5QQmRUVUhSSUhnUmY2blEtM0k3UllFZjQzay1TOHYzMTByV2haR3pUc2JkdnBlTmc1cVJaYUFsOW9XS3RlUHF4dU1iWWlVOEpoMHR2VWppNGJQMl8yN01xN05UZzZ6c2haY2h6b0l1OF9hcjJfQWJHdnBtdURHRTlZNDR5Sy1YQkRKU9IBmAFBVV95cUxPMUpDSHI2WG9pV1lCRG5QQmRUVUhSSUhnUmY2blEtM0k3UllFZjQzay1TOHYzMTByV2haR3pUc2JkdnBlTmc1cVJaYUFsOW9XS3RlUHF4dU1iWWlVOEpoMHR2VWppNGJQMl8yN01xN05UZzZ6c2haY2h6b0l1OF9hcjJfQWJHdnBtdURHRTlZNDR5Sy1YQkRKUw?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-10-19 11:26",
+      "summary": "경유 수출길 터달라는 정유업계… 정부 ‘시기상조’ 선 그어 - 조선비즈  Chosunbiz",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "경유 수출길 터달라는 정유업계… 정부 ‘시기상조’ 선 그어 - 조선비즈",
+          "source": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcU81X0VkUU5HNTlyREdlYWdoaVBfQkNTZE9QOEVua1F2TnF3Smc3dGo3dFdId1hCdERNZkZQRkk3RVhuNDI3RVhCTjNuMk5PUDUwbXN6WWpfWXJETEpXNnFYdEdSTG53REthNTFDX1l6cUhxR1kwdnZmdUc5ZklLTnNOV0TSAZgBQVVfeXFMTzFKQ0hyNlhvaVdZQkRuUEJkVFVIUklIZ1JmNm5RLTNJN1JZRWY0M2stUzh2MzEwcldoWkd6VHNiZHZwZU5nNXFSWmFBbDlvV0t0ZVBxeHVNYllpVThKaDB0dlVqaTRiUDJfMjdNcTdOVGc2enNoWmNoem9JdThfYXIyX0FiR3ZwbXVER0U5WTQ0eUstWEJESlM?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "431f76ff8109"
+    },
+    {
+      "title": "석유공사 직원, 8400만 원 법카 횡령…내부통제 허술",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sX1NYbDcxMU1vUFVFTncxTlNBbEtDWFhBYklqN09KNmtHT0dUNkZBdXhGd3htTXFtbmx4b01aSTVmR0FNS2NoZHc1TzNGakFOUjVJVnlDc2VKNHRBYUYtLWVXdkZLUFnSAWtBVV95cUxPQ1h1R2hZdnNUZHFXVG1RaWJXR3doTkpDeGdNbjBXTGJ4bGd3cjE2eHNrdHd5b0lEa3BNaDdHZEVrMUhBX1dtY2hIeWZ1bWNEV3lSNHlRMnE4bmpXMlJpei1RTFN0QWREalVoOA?oc=5",
+      "source": "민주신문",
+      "published": "2026-10-19 10:25",
+      "summary": "석유공사 직원, 8400만 원 법카 횡령…내부통제 허술  민주신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "528dd3c57692"
+    },
+    {
+      "title": "원유 확보·경유 소비 감소에 수출 규제 완화 목소리...정유업계 \"탄력적 운영 필요\"",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5hQkxCVmI0Nmx0NW5lY3lTYW91bkUzRWI5MVJ3QjVpS0Qzb0IyejlQd0NLcG9WbUlXZE9qMXJ4NHdFVzN3QnBSRUhseXRHSGtjVGJ3VTFOTGQyRDZRdlY0WHEweUliclhlRGhxeVZiYzZWdw?oc=5",
+      "source": "중앙이코노미뉴스",
+      "published": "2026-10-19 10:20",
+      "summary": "원유 확보·경유 소비 감소에 수출 규제 완화 목소리...정유업계 \"탄력적 운영 필요\"  중앙이코노미뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c70101881298"
+    },
+    {
+      "title": "해상 기름 불법거래 1754억 적발…올해 무자료 석유 적발 급증",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5hSnpkRUZhMlp4N2IybzF6UDZsMFVjb0RCbjhpZ0d3d0pvOFRxM1I5cjlQOWhwM0hQMjdGc1hzS3V5T0lRYXFwNEN2NkFzQlppazNFblZtY2Zta1c3QlZxTFJCdUt1N0NVdGFsYlJYT2hZbTU0ejlGS9IBeEFVX3lxTE5hSnpkRUZhMlp4N2IybzF6UDZsMFVjb0RCbjhpZ0d3d0pvOFRxM1I5cjlQOWhwM0hQMjdGc1hzS3V5T0lRYXFwNEN2NkFzQlppazNFblZtY2Zta1c3QlZxTFJCdUt1N0NVdGFsYlJYT2hZbTU0ejlGSw?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 10:17",
+      "summary": "해상 기름 불법거래 1754억 적발…올해 무자료 석유 적발 급증  뉴시스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "해상 기름 불법거래 1754억 적발…올해 무자료 석유 적발 급증",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CbnBacnhlOUZkWkMzWHg5cjVUOXZ3NEZDTUpVRFA4TlNzSGNDVk56X3o2T1dEaEFlUXZlSVJ1U2N4eUFQcHBOV2czNk5zZXE0TkRlSDdLWnNsSkRWcDlsLdIBeEFVX3lxTE5hSnpkRUZhMlp4N2IybzF6UDZsMFVjb0RCbjhpZ0d3d0pvOFRxM1I5cjlQOWhwM0hQMjdGc1hzS3V5T0lRYXFwNEN2NkFzQlppazNFblZtY2Zta1c3QlZxTFJCdUt1N0NVdGFsYlJYT2hZbTU0ejlGSw?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e72eda3d17d7"
+    },
+    {
+      "title": "석유공사 직원, 법카로 8400만원 횡령…올영·배민 상품권사서 회계증빙 조작",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE53Q3RveS1mb1JNLUZORUNXWTdmRUNQemlabUEyTEVDek12aFp6U3RUajYtTlZkWHN0TDA3cjR6cl9IYVh6dVRESEFLNi1lN0xMRkJVRWJiSlRZclVjeWpLTzB2Vk5LeTFzNVZvMw?oc=5",
+      "source": "세정일보",
+      "published": "2026-10-19 09:44",
+      "summary": "석유공사 직원, 법카로 8400만원 횡령…올영·배민 상품권사서 회계증빙 조작  세정일보",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b75e1328e978"
+    },
+    {
+      "title": "석유公 직원, 법카로 8400만원 횡령…시스템 구멍 지적",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE43X2xjaU90TjZUOGhZRzBOb0N1QzNJM1VyYVloLTNiNmdQTE9qUVlqVDJCTlNadk9uYmlqbEx6NXc2amRmTUZoRzdaWXBQTEh5SjBRam5LWmFnbGVEZWtpU9IBeEFVX3lxTE9VVHI0Y3hQVTlYc2FZMzdLR0s4NmMwdHBwQzlTVXZpb0hyOHFmNUttaHlmZmpSSDdFYlM3YW9DZW14OGFIbEN4LU12OXZiMS1ROXVTNk1IYnR5Zk1POFc4amlkV3VYcDBNQ2pPMlpLSFZFY1ViMVJqYw?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 09:35",
+      "summary": "석유公 직원, 법카로 8400만원 횡령…시스템 구멍 지적  뉴시스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유公 직원, 법카로 8400만원 횡령…시스템 구멍 지적",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VVHI0Y3hQVTlYc2FZMzdLR0s4NmMwdHBwQzlTVXZpb0hyOHFmNUttaHlmZmpSSDdFYlM3YW9DZW14OGFIbEN4LU12OXZiMS1ROXVTNk1IYnR5Zk1POFc4amlkV3VYcDBNQ2pPMlpLSFZFY1ViMVJqY9IBeEFVX3lxTE9VVHI0Y3hQVTlYc2FZMzdLR0s4NmMwdHBwQzlTVXZpb0hyOHFmNUttaHlmZmpSSDdFYlM3YW9DZW14OGFIbEN4LU12OXZiMS1ROXVTNk1IYnR5Zk1POFc4amlkV3VYcDBNQ2pPMlpLSFZFY1ViMVJqYw?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1d1f9f0cce89"
+    },
+    {
+      "title": "바다 위 불법 석유거래 1,754억원…해상 면세유·기름 도둑질 판친다",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4yd1E3eTQ3eUNQY002MGNGOUJFT0dwbUdJZ2JVZEhmemI2ZjZULVRFWlhtblJMc2xLal9xd0F5UDNlSnRVSFpwMnpETWlxY2ZKS0tjYVRpU0dQalJtWHU5V0tDUkdPQQ?oc=5",
+      "source": "이로운넷",
+      "published": "2026-10-19 09:34",
+      "summary": "바다 위 불법 석유거래 1,754억원…해상 면세유·기름 도둑질 판친다  이로운넷",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(가짜석유 OR 면세유) (대규모 OR 전국 OR 구속) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c8219a065131"
+    },
+    {
+      "title": "밴스 美 부통령 “유가 상승은 이란의 상선 공격과 바이든 정부 에너지 정책 때문”",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hSDN4X0ZQVUtsaEJaSkVaZFBUanJPT0xFeDZ3R1IzUXdPeTBtc0tpb2lqd3g5aWx6NUZSam9jWWlPM1Iwb0dfUHJZVERTak5FZ3owa2U5WWRWcVRicU1WQ1dudGthQ01xVzNZYg?oc=5",
+      "source": "파이낸스투데이",
+      "published": "2026-10-19 09:32",
+      "summary": "밴스 美 부통령 “유가 상승은 이란의 상선 공격과 바이든 정부 에너지 정책 때문”  파이낸스투데이",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f182e24fe287"
+    },
+    {
+      "title": "일본 내각, 원유·LNG 수송 보험 및 공급 안보 법안 승인 - 뉴스 및 통계",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVXNJTklJZUxjZ0NJZHprWGVYTTQzeUxGeWxMTkZVaFBkaHNQVG9PUURrVjRmUEpKWkVXSFpQMV9OSUtwd19jWnFNcEYwcXFmbU4xMVNvLVVvZ1poZnZBV0x4OFRCc3U4MDN2ejMyRDlZdHhEV1VndGQ2TDk1QlFiNlFRUWEwWjduX0NQRGI3Y3FsMEdKMWNIb3VLSWJUM2lGd3k4U1FiRXdJWUZvMkVaeVVwcWlZTkRzaVE?oc=5",
+      "source": "IndexBox",
+      "published": "2026-10-19 09:21",
+      "summary": "일본 내각, 원유·LNG 수송 보험 및 공급 안보 법안 승인 - 뉴스 및 통계  IndexBox",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9c48daf04c9f"
+    },
+    {
+      "title": "바다 위 ' 검은 거래 ' 활개 , 해상 면세유 · 석유 불법유통 및 도유 1,754 억 원 육박 !",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5HTXZZd1JKSHdwU1pVY3RxOVpWS09JbTRYODlnZWF4Q09nNi1IQVVTcF9hcnQxRExvc2VteWlDdHVFamVPUktTLVdB?oc=5",
+      "source": "https://www.sisakoreanews.kr/",
+      "published": "2026-10-19 09:10",
+      "summary": "바다 위 ' 검은 거래 ' 활개 , 해상 면세유 · 석유 불법유통 및 도유 1,754 억 원 육박 !  https://www.sisakoreanews.kr/",
+      "sector": "government",
+      "risk": [
+        "불법유통",
+        "면세유"
+      ],
+      "duplicates": [],
+      "query": "(가짜석유 OR 면세유) (대규모 OR 전국 OR 구속) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "54a4dbc274d6"
+    },
+    {
+      "title": "[국정감사] 석유공사 법카 횡령 8400만원…영수증 위조에도 결재",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jTGIzdlU1eVg1SGxZcE9LQWtKT3FNV1FJVU9WRkFkd240Wm5oZnlYS0Q5bU1uYmZabFc4TjI0NUFWOXpWNE9zUHJOYTVISFlqYy1OZ2xjT0JSVDhWalBHc1pSMUFmNi1m?oc=5",
+      "source": "더쎈뉴스",
+      "published": "2026-10-19 08:51",
+      "summary": "[국정감사] 석유공사 법카 횡령 8400만원…영수증 위조에도 결재  더쎈뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e6514bea120e"
+    },
+    {
+      "title": "국회 산자위, 가스공사서 에너지 공기업 국감 시작…수급 안정·경영 현안 점검",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204167",
+      "source": "에너지데일리",
+      "published": "2026-10-19 20:29",
+      "summary": "[에너지데일리 조남준 기자] 국회 산업통상가 한국가스공사와 한국석유공사 등 에너지 공공기관을 대상으로 국정감사에 착수했다. 에너지의 안정적인 공급과 공기업 재무건전성, 에너지 전환 대응 등이 주요 점검 과제로 제시된 가운데, 강원랜드 사장 선임 과정의 평가 적정성을 둘러싼 자료 제출 요구도 나왔다.국회 산업통상자원중소벤치기업위원회(위원장 김성원 의원)는 19일 대구혁신도시 한국가스공사에서 가스공사·가스안전공사·석유공사·대한석탄공사·석유관리원·가스기술공사·강원랜드 등 관계기관에 대한 국정감사를 시작했다.이날 감사에서는 한국가스공사와",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국회 산자위, 가스공사서 에너지 공기업 국감 시작…수급 안정·경영 현안 점검",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9BOEpUQmQyaFhYVkxvUmk4Q1puNVFlay1tRFJuS1lhcFBoWFhsT3l2bzJBSG1yeW5JMmt4blVPeHJMSHFpNE9VQk9hekV2c1E5Q05XeVVBLWtsWDZldTU0b1g2M3FHM0c1dEpCR295SzBKdw?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "2b5b7aaddcda"
+    },
+    {
+      "title": "공공기관 2차 이전 대비 ‘혁신도시 상생협의회’ 본격 가동",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pWXJtXzNsY19lV0p6OURfb3ZrM1hLZ2h6Ym1jcGRUQmRyUmlQWkdsbEE4ekxydGh5dGJ3MDB5RlBNY0pLXzhlYktncjIyeWJMVHlXZjIyVzNZcEJkZTFVTnJRdVp1Zw?oc=5",
+      "source": "https://www.kgdm.kr/",
+      "published": "2026-10-19 19:49",
+      "summary": "공공기관 2차 이전 대비 ‘혁신도시 상생협의회’ 본격 가동  https://www.kgdm.kr/",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "서귀포시, 공공기관 2차 이전 대비 ‘혁신도시 상생협의회’ 본격 가동",
+          "source": "newslinejeju.com",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE43MC1tYy1DLW9McFc3MVgyWFg0My1zU1RJMHRyTGd5M0Y0SjB2MW1MNm5lY1V6cGcyNzlyMmdfQXdtRUNyLWh4TFdZN2VpOU9GMkxiSVZGcDR6NElFbTJ3bDE1cUpZUE5TOHlXNkZXUQ?oc=5"
+        },
+        {
+          "title": "서귀포시, 공공기관 2차 이전 대비 ‘혁신도시 상생협의회’ 본격 가동",
+          "source": "지금제주",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ib2wybmJJR3hKbnk4TWROeHdRc2dQYTdESENRSnpXUWt4bzlKeFZMVWJUa0VubS1TcGhOSDJjaVBCbGFMdmNGRTZTOGF5LU1Jc3FDOVIzdXZvOVRqTEhWdXhlVFBNYjdSb0pONHVR?oc=5"
+        },
+        {
+          "title": "공공기관 2차 이전 앞두고 혁신도시 상생협의회 가동",
+          "source": "서귀포신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jTHl1Qm5zOTZaMjlYSmZXWUxmVjdmVWRBQUJ4NVBQOGxzSGFWVEFGRWZrRjRkdWY4NnNsZHQtMzNBak9wMEVIVUEzR0lNOHc4bWxhSmluUy1sZXIxbVBoWG5vN05nY1R1ZnRUb3lR?oc=5"
+        },
+        {
+          "title": "서귀포시, 공공기관 2차 이전 혁신도시 상생협의회 가동",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xOGpHaE1UVG01bG10RmJGdFgyOWhjSG45SzVsVjM5Wm9jSFdLb1V5YkMza1EyeVEtekI2cUlkR3NFUFNQY1dtaXZwMUNRZTBSUl9oemUzbWRJSlQwemU4N9IBeEFVX3lxTFBmUnlzNXh0cmNkcVhTR05PSDFYOEZQdV90a2ZncEQtNVVsVUVMaFRNblpTd2pxLXhwbjdQMmZFeDNrcmpJbVdLdTZROTB6cmpQRFBmcERsWU10cmg2TUxmOHg2anMwYmkta1ZnVE9GQnBESGlUUUhoQg?oc=5"
+        },
+        {
+          "title": "서귀포시, 공공기관 2차 이전 혁신도시 상생협의회 가동",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmUnlzNXh0cmNkcVhTR05PSDFYOEZQdV90a2ZncEQtNVVsVUVMaFRNblpTd2pxLXhwbjdQMmZFeDNrcmpJbVdLdTZROTB6cmpQRFBmcERsWU10cmg2TUxmOHg2anMwYmkta1ZnVE9GQnBESGlUUUhoQtIBeEFVX3lxTFBmUnlzNXh0cmNkcVhTR05PSDFYOEZQdV90a2ZncEQtNVVsVUVMaFRNblpTd2pxLXhwbjdQMmZFeDNrcmpJbVdLdTZROTB6cmpQRFBmcERsWU10cmg2TUxmOHg2anMwYmkta1ZnVE9GQnBESGlUUUhoQg?oc=5"
+        }
+      ],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2b10a9a0a4b4"
+    },
+    {
+      "title": "용인도시공사, 지방공공기관 매거진에 보상 등 혁신 우수사례 소개",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9jVmRacEdfT3lUdkk4ZUl6dU5rQXBjQ1hTdTJmN0VpMjhVNFJxLTF1Z0pybzNOai12MXBLeXJPUXRKOHk0Mlp2TUEza200dVEtdTJYc3lqN0E0eExXdGcwMDlWR0Q?oc=5",
+      "source": "매일일보",
+      "published": "2026-10-19 19:18",
+      "summary": "용인도시공사, 지방공공기관 매거진에 보상 등 혁신 우수사례 소개  매일일보",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b254a5cf1e43"
+    },
+    {
+      "title": "공공기관 2차 이전 대비…서귀포시, 제주혁신도시 유치 준비 본격화",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8tRVZmajJ6bkoxZ3FTZmN6WVBUVE9zYlZFWmJLU3BGOTVQQmNKbmJUN1BFWFk1bnJYcktDQTBWamZuZHg2OWNnZ0xjWTZZbFRfZU5RSmZ1TjRZeEJ1c0FOWGU5eXdCR2ZxVy1rM2x3?oc=5",
+      "source": "국제뉴스",
+      "published": "2026-10-19 17:06",
+      "summary": "공공기관 2차 이전 대비…서귀포시, 제주혁신도시 유치 준비 본격화  국제뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ab88f8dda127"
+    },
+    {
+      "title": "김종민, 국감서 가스안전 사각지대 해소와 에너지 공기업 개편해야",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5QaFlFcmRkRldONDljTXBMTkt5NEp1d2Zabl9vT1Y5Q3pqc0NtWXMyZTBqMkdsbFZjRGJkNnBfeVYzSG5yejhEZFBZbTdabUFDZTZRWS1RUWtERUY2endGWDNrZXFBWGRhdVlv?oc=5",
+      "source": "충청뉴스",
+      "published": "2026-10-19 15:02",
+      "summary": "김종민, 국감서 가스안전 사각지대 해소와 에너지 공기업 개편해야  충청뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "김종민, 국감서 가스안전 사각지대 해소와 에너지 공기업 개편해야",
+          "source": "충청뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE94SUpqUTJLY3dQQVRkR0JlOVVCSmxRbmd2djdmNUhHaE90bGh6dk53Mld5Z2FCZ1NCb3lZUGw2c3JuTDdNZGd6OHhvUjZadG9zcGJORndZMUJCcmZxc1FOUEwtc3pDRFdwNkFYdw?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "abac3f5953ac"
+    },
+    {
+      "title": "원주의료기기산업진흥원 6년 연속 최우수…원주시 출연기관 경영평가",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OYk9WOGNQdWtGRWF5eWtMa1hFNGdjOTdKWi04X0MwdlNMdlM1U3pjbEw3eU51U1N6cEo5WVI5aWxFTHJzSkJDLWZlUTlDTWtRV2RfRFJEQTBHZw?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-10-19 15:00",
+      "summary": "원주의료기기산업진흥원 6년 연속 최우수…원주시 출연기관 경영평가  파이낸셜뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3a5b6861d98a"
+    },
+    {
+      "title": "공공기관 임대청사 찾기…나주혁신도시 공실정보 다본다",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9XZjFiUDRzZVR2d0x4RmppZTVOYnc0dXlsbHdZZ3BGTnQxUTJKSmVvb3V6RXY1QTRTRWtOemhSd25TMmRjdWlpV1MyRlVZb25PQ0NHNkVpVkd6NXlQa25aaDFrNVUwT1QwQ0Rmcw?oc=5",
+      "source": "나주투데이",
+      "published": "2026-10-19 09:34",
+      "summary": "공공기관 임대청사 찾기…나주혁신도시 공실정보 다본다  나주투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "81dd445c1d83"
+    },
+    {
+      "title": "Oil slips as Trump's sanction waiver may lead to more Russian fuel supplies",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMmVLc19hd0VSYXIydVNTWENKZ2J5WVNvVDRQUjRfTUJXWGhjOGxGZkFHVm9SNnZzeU9TWUhrYnJTRU1sVFRnX1BwZVd3NHB5a0NLdThkbDRldlg2eHdhTll2b3RnQTJ4U3dHVGczM25FdjJHRGQ5WGJDV2Qxd1hzLV9EcjNWaUQ4cXEzbWVHRzNuS1dGVVNBSmdXWGR6THN1dXhvSUdFS0dMMTJZTnBBZEFfZ2JoYVVFSWNMZw?oc=5",
+      "source": "Reuters",
+      "published": "2026-10-19 08:52",
+      "summary": "Oil slips as Trump's sanction waiver may lead to more Russian fuel supplies  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "30d1e6ab8701"
+    },
+    {
+      "title": "치솟는 운송비용이 아시아 석유 무역 지도를 바꾸고 있다.",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNRGY5TWl4Si1IYm5QVjBiLWZ4N00yOHBWcE5OSDZoeTZXMm91X3NoRGtXclh1NS15VkNDMG00OU4zWFMxSVlSY1JIWVpPcXJPc29XQ0wwRS1UR1VsRWQtRUo3SFhBeUo5NkY0UmlYSFJLT1JGUlk1Z3V3cnRtdmVXU0ZJbHoyVGthR05wUFFGMjU?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 21:51",
+      "summary": "치솟는 운송비용이 아시아 석유 무역 지도를 바꾸고 있다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9afbf78e6437"
+    },
+    {
+      "title": "10월 19일 휘발유 및 석유 가격 업데이트: 일제히 하락",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNd0d2LUhxcGZiT0xKS0JBSm9BRTFiUDNOZk9ZM1BWY0xSa01JTUFNbDlLNTVnYUhLOTN1TU4xMzlNNHFWTHVJQW5iR1RpNlpzVk1SQ1ZDQ2VUUC05ajQ3RDRTOHpqd0FfbGtpcTVKT1lvZV8yWTRPdEZLcUtDRmRjTERHeEU3YUU4cUZleVZ4QS12VnhzbGc?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-19 20:54",
+      "summary": "10월 19일 휘발유 및 석유 가격 업데이트: 일제히 하락  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e80dc75b42bc"
+    },
+    {
+      "title": "이언주 의원, 에너지 공급망 다변화 촉구…“사우디 원유 할인 조건 전략적으로 활용해야”",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zMl84b2lnbXBpMFNrN0ctQm5EcURuYTJFWkJ0OHBGWTVqVEJ4NUk0QzhKRWg3MDVaR2Y0bFRZMVo0cGY3WWJiUmxUR0lzR0JodEJVNnREbno5Zm5OM2ZIX0JXdjUwQ3RoZjhUd2tnUQ?oc=5",
+      "source": "월드장애인사랑뉴스",
+      "published": "2026-10-19 20:39",
+      "summary": "이언주 의원, 에너지 공급망 다변화 촉구…“사우디 원유 할인 조건 전략적으로 활용해야”  월드장애인사랑뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "009537dbba09"
+    },
+    {
+      "title": "또 묶인 기름값…정유사 손실 보전 ‘진통’",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9oRHU3Z21OQVhmeGZHQkhNdC1pU1EwbU9rSzh3MWtoYXdlUFU5THltUjJYQzVQT0FfV1dlRm94SGVmQlc2QVAyZUszMHpLcllKLWxlaHY0ckkyNXVINzBn0gFfQVVfeXFMT2hEdTdnbU5BWGZ4ZkdCSE10LWlTUTBtT2tLOHcxa2hhd2VQVTlMeW1SMlhDNVBPQV9XV2VGb3hIZWZCVzZBUDJlSzMwektyWUotbGVodjRySTI1dUg3MGc?oc=5",
+      "source": "경향신문",
+      "published": "2026-10-19 20:37",
+      "summary": "또 묶인 기름값…정유사 손실 보전 ‘진통’  경향신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c4ed75c1cc7b"
+    },
+    {
+      "title": "에너지 안보와 공급망 실효성 점검… 원유·LNG 실물 공급능력 검증해야 > 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE81LTE2emFGWk1xaXVqZXdtbEd2RWYzZFNwbk9kekZzYWtRNXlkSDRVbWF6bWF6c2tWWjRJODRVOWJKTFJuajRJTFNhWGhQb3FsWkFmRl80clg4cXhHVWVBc0x3MTg0LWdyaFVFcU5yT1Q?oc=5",
+      "source": "더코리아",
+      "published": "2026-10-19 20:10",
+      "summary": "에너지 안보와 공급망 실효성 점검… 원유·LNG 실물 공급능력 검증해야 > 뉴스  더코리아",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "221537ac5ad5"
+    },
+    {
+      "title": "아시아 유가가 5개월 만에 최고치에서 하락세로 돌아섰다.",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBnRHpCZkRkNjFmdFVMRVFzV2JIUzhWLWRic2YxSlNPX3cwOFNER1AxSThfMU11bktxelVYVVI0SzhGUlR5dHlKS0NrTF9nVG04Q0NmM21ZS2NqdXB5SVE1Q2IyZ0xNaTBhSko5a2FPV19OWko4UWs2UDV4WTdzZw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 19:57",
+      "summary": "아시아 유가가 5개월 만에 최고치에서 하락세로 돌아섰다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e6e4b84a54d2"
+    },
+    {
+      "title": "세계 원유 가격이 추세를 바꿔 하락하고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14d2RVc05GNG13MzVMZ3pLM2k3S25QTHZfVGhwR1c5ZDl4Wm9sSERWVDJEOTRvZmUzdEtnZ2xvRVg0MHktQ1Q3Tk9VN3RYSHNGUXg0Rk1LQmItVU5CNE9tREZpMTlsaVh4aVI2cw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 19:55",
+      "summary": "세계 원유 가격이 추세를 바꿔 하락하고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "656637bde5fa"
+    },
+    {
+      "title": "정유4사, 러시아 빈자리 노린다…경유 공급 불안에 수출 확대 모색",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE02RHh3dkwyUVBnMlVCdzEwQzBOcjJNUWRfY2QxVEczT0dWYWpjTXBYRWljZmVoNm12TTVtVHhoMkRvM0lZcmIyaVNaSWJyOGxaR3U4NkpEZnlxWjZpbWY1LU9raW9XZFk2b3dqYThoWVlpQdIBckFVX3lxTE02RHh3dkwyUVBnMlVCdzEwQzBOcjJNUWRfY2QxVEczT0dWYWpjTXBYRWljZmVoNm12TTVtVHhoMkRvM0lZcmIyaVNaSWJyOGxaR3U4NkpEZnlxWjZpbWY1LU9raW9XZFk2b3dqYThoWVlpQQ?oc=5",
+      "source": "팝콘뉴스",
+      "published": "2026-10-19 19:36",
+      "summary": "정유4사, 러시아 빈자리 노린다…경유 공급 불안에 수출 확대 모색  팝콘뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bd80a8fdcd23"
+    },
+    {
+      "title": "이언주 \"에너지 안보는 속도가 핵심\"…비축유 운용·수입선 다변화 전략 강조",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BbmFaMTNPelNudzA0SEp1aVlXVnBtUVI3akZYYVF5YTRQd1BXcWtlNnFwbmx1Wm5yckVsZ1NXTm1vS3lETXEzWGE0dVAtWW9KblFiOWc0YkxVcFIxblU0a1QxU0dTQ184a1ZkOEFKUVpTYnJ2MHpqSnVxemdNYWvSAX9BVV95cUxPQW5hWjEzT3pTbncwNEhKdWlZV1ZwbVFSN2pGWGFReWE0UHdQV3FrZTZxcG5sdVpucnJFbGdTV05tb0t5RE1xM1hhNHVQLVlvSm5RYjlnNGJMVXBSMW5VNGtUMVNHU0NfOGtWZDhBSlFaU2JydjB6akp1cXpnTWFr?oc=5",
+      "source": "데일리스포츠한국",
+      "published": "2026-10-19 19:32",
+      "summary": "이언주 \"에너지 안보는 속도가 핵심\"…비축유 운용·수입선 다변화 전략 강조  데일리스포츠한국",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "산업통상자원부 에너지 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a1def51b7475"
+    },
+    {
+      "title": "[2026 국감] 석유공사 횡령 키운 관리 부실...경영진 책임론",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uR0hVZFlHekFXeUtSalA2bmRBcWVKSTRBUjlYaENidkszSTRZcVcwVkE0WDA3T2ZHMXZ3d2pZZUtNeE9NMmVGeVllMmY1MHhXS2VDLVZ5eGl3R01yMEZQcWxaLTlsSXVrQWlqdU130gFuQVVfeXFMTW5HSFVkWUd6QVd5S1JqUDZuZEFxZUpJNEFSOVhoQ2J2SzNJNFlxVzBWQTRYMDdPZkcxdnd3alllS014T00yZUZ5WWUyZjUweFdLZUMtVnl4aXdHTXIwRlBxbFotOWxJdWtBaWp1TXc?oc=5",
+      "source": "공공뉴스",
+      "published": "2026-10-19 19:26",
+      "summary": "[2026 국감] 석유공사 횡령 키운 관리 부실...경영진 책임론  공공뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f45eb3b164ad"
+    },
+    {
+      "title": "[국감] 결함 LPG용기 3만6000개 아직 미회수…10년 묵은 안전위험 언제 걷어내나",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204159",
+      "source": "에너지데일리",
+      "published": "2026-10-19 19:19",
+      "summary": "[에너지데일리 조남준 기자] 가스누출 결함으로 정부의 회수명령까지 내려진 LPG용기 가운데 3만5916개가 여전히 회수되지 않은 것으로 나타났다. 더욱이 올해 6월까지 12.5%에 머물던 회수율이 언론 취재가 본격화된 이후 불과 3개월 만에 45.7%까지 높아지면서, 회수명령 이후 수년간 관리가 충분했는지와 남아 있는 용기의 소재·사용 여부를 어떻게 추적할지가 국정감사 핵심 쟁점으로 떠올랐다.국회 산업통상자원중소벤처기업위원회 권향엽 의원이 한국가스안전공사와 산업통상부로부터 제출받은 자료에 따르면 2015년 윈테크가 제조한 결함 LP",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[국감] 결함 LPG용기 3만6000개 아직 미회수…10년 묵은 안전위험 언제 걷어내나",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE05bUFBX2ZJaVFFY00tbUljc2ppUWNNZlVfQXFMSXZKeDhZVHRrdXE0LVRwbmF0SFlZLXBFcEZXY2V4aHNEZjh1RHdSa3YxZlBlM2VMMHNfQ3ItR19UR2VyWGJ6eDhJQVpNSTRtQzhhaGtIZw?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "9d31dee5bab8"
+    },
+    {
+      "title": "호르무즈 봉쇄에 곡물값 81% 폭등 우려…식량위기 경고등",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ncXJyWldVSFJ2UElQSGpWc3BwVWFSZi1tUTU5UmUzWUVOV1czM1JCWS03NjE4c0hVa2JRWXU2alBtS2lwX3JxWGZJVDY1REp6MFIxLXdkbmR3QnV1cTgwczZfTXU5U1NrNlRB0gFrQVVfeXFMTmdxcnJaV1VIUnZQSVBIalZzcHBVYVJmLW1RNTlSZTNZRU5XVzMzUkJZLTc2MThzSFVrYlFZdTZqUG1LaXBfcnFYZklUNjVESnowUjEtd2RuZHdCdXVxODBzNl9NdTlTU2s2VEE?oc=5",
+      "source": "경제투데이",
+      "published": "2026-10-19 19:11",
+      "summary": "호르무즈 봉쇄에 곡물값 81% 폭등 우려…식량위기 경고등  경제투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "86cd1c9e0c78"
+    },
+    {
+      "title": "“석유공사, 유휴부지 태양광 사업으로 지역 상생 나서야”",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204155",
+      "source": "에너지데일리",
+      "published": "2026-10-19 18:49",
+      "summary": "[에너지데일리 변국영 기자 ] 더불어민주당 허성무 의원(창원 성산구, 산업통상자원중소벤처기업위원회)은 19일 산업통상부 산하 자원 분야 공공기관 국정감사에서 한국석유가스공사에 거제 석유비축기지 유휴부지를 활용한 주민참여형 태양광 사업을 추진할 것을 촉구했다.허성무 의원은 거제 석유비축기지 역시 주민참여형 태양광 사업을 추진할 수 있는 후보지로 활용할 필요가 있다고 지적했다. 석유비축기지 건설 과정에서 어업권 제한 등으로 지역 주민과 갈등이 있었던 만큼 공공기관이 보유한 유휴부지를 활용해 지역사회에 실질적인 혜택을 돌려줘야 한다는 것",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국석유공사, 유휴부지 활용한 태양광 사업으로 지역 상생 나서야",
+          "source": "에너지타임뉴스",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMN21wZjJKRWNCZVh1X0FRXzhrcjdYbUQwMXFPYnhQV0NpM1F1WnM1UUtlQ05KMG44WWY5QVF2ang5TE5aWWhNXzd3czkyeW5ibW5VUFJaRHI0VW1pbEJQRHNfQzhLZE5HY2lrOHNJYUdjUFdzeWfSAXZBVV95cUxQTDdtcGYySkVjQmVYdV9BUV84a3I3WG1EMDFxT2J4UFdDaTNRdVpzNVFLZUNOSjBuOFlmOUFRdmp4OUxOWlloTV83d3M5MnluYm1uVVBSWkRyNFVtaWxCUERzX0M4S2ROR2NpazhzSWFHY1BXc3ln?oc=5"
+        },
+        {
+          "title": "“석유공사, 유휴부지 태양광 사업으로 지역 상생 나서야”",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE15eVJOWDBBUS13MFc0VWlMQ2NZX3B1dzNVX3E5ZjJJUnJKY3hNeldYcTVVZElxOUdvSmxYYkpWdGVsM1J6VlA2RGFrVlY0TXBERDg0bXMtWjktckZRRnAzQ09sSkwxYXh2VUJzS1ByWU1RUQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "3951a81a5bbb"
+    },
+    {
+      "title": "“석유공사 거제 비축기지 유휴부지, 주민참여형 태양광 활용” 촉구",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229038",
+      "source": "에너지신문",
+      "published": "2026-10-19 18:47",
+      "summary": "[에너지신문]석유공사 비축기지 유휴부지를 활용한 주민 참여형 태양광 사업을 추진해 주민 소득을 높이고 공사의 수익 동시에 모색하는 방안이 제안됐다. 더불어민주당 허성무 의원(창원 성산구)은 한국석유공사에 거제 석유비축기지 유휴부지를 활용한 주민참여형 태양광 사업 추진과 지역 상생 방안 마련을 요구하고 나섰다. 한국농어촌공사와 한국수자원공사, 한국도로공사, 국방부 등은 유휴부지를 발굴하거나 제공하는 방식으로 사업에 참여하고 있는 반면 산업통상부 산하 공기업의 부지 제공 계획이 아직 확인되지 않고 있기 때문이다. 허성무 의원은 19일",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "“석유공사 거제 비축기지 유휴부지, 주민참여형 태양광 활용” 촉구",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fVDVtcWNiTEdUVl9UWVYtVEcxZUFaYjFkZWFxMmVhTjY0dTJqZy1pM09WRmFUU1RLaHZONTlUOTY4dV9PclFZQS0tOHVqbHFBbFhfU0lvenBzOTF5TUZ4R2xmTU1fd1dMVE10R0llQXd5dw?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "953bd58cdca5"
+    },
+    {
+      "title": "페트로리멕스 시스템의 10월 19일 소매 휘발유 및 석유 가격",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMU9iZXpETWNRTkpjTmd0LVZjOEJqdVV4WlBaYlg4WFloa1cyaEM0aXJfcWxVTVlhc0ozMk8wVm1GSnVxcHFud3R2aGlMbk5aQU5CR3VPQjFMMmVjdlZQTW84bkJLMG9hUFl6dy16YVdhdzdkb0NOb1FTZlAxLW5jM0JUVS1UX3lNbDVVSnJTQ1hyeV81YWFxeVZ5Yw?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-19 18:45",
+      "summary": "페트로리멕스 시스템의 10월 19일 소매 휘발유 및 석유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5e359553b99f"
+    },
+    {
+      "title": "유럽이 불타는 진짜 이유, 주유소 가격표와 월세 고지서가 거리에 불을 붙였다",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdWwxMnF5SkRSemI3WWpNVW1aMHBleVA2OVNCeE9XUnExZGVYVWNaVUNkM01ILW94d3NNWndhODdUZWxpWkVGZl9qakVVOFZkZTh6ZExJSHZkYS1JYWpnLUN6Y2xEN0h1amZreVdOOUdmWlZrMXZKVWdzbmI3NkNKVUJ3aFdsZG9iejFVWQ?oc=5",
+      "source": "네이버 프리미엄콘텐츠",
+      "published": "2026-10-19 18:42",
+      "summary": "유럽이 불타는 진짜 이유, 주유소 가격표와 월세 고지서가 거리에 불을 붙였다  네이버 프리미엄콘텐츠",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b98128f14257"
+    },
+    {
+      "title": "가스·석유공사, 국감서 시설 보안·해외사업 관리 도마…직원 횡령까지",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iNUM1bU1ZMFY5Y3RGSm1CbjlWVjF4TmgwTThHeFl1YkdOU3F4azlPVHg3X25wZW9hZmkzZlhVbTkxWkY5LTZFaWoxZi1ORV94cUNCaGNSZGFjMHdrODFrU0I2MmhXc2VLRFpZa9IBbEFVX3lxTE5iNUM1bU1ZMFY5Y3RGSm1CbjlWVjF4TmgwTThHeFl1YkdOU3F4azlPVHg3X25wZW9hZmkzZlhVbTkxWkY5LTZFaWoxZi1ORV94cUNCaGNSZGFjMHdrODFrU0I2MmhXc2VLRFpZaw?oc=5",
+      "source": "소셜밸류",
+      "published": "2026-10-19 18:36",
+      "summary": "가스·석유공사, 국감서 시설 보안·해외사업 관리 도마…직원 횡령까지  소셜밸류",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스·석유공사, 국감서 시설 보안·해외사업 관리 도마…직원 횡령까지",
+          "source": "소셜밸류",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE05b0tfa2Q0Wl9EbUlzWkdmSHNzSEdxOEFJRmgyUkhwRmkwbVQxTHFIejJQd2dFN0pwLVFPbTRtLXdfb245QjZaRUF3UU0xQ19wUnlFYjZ5RUJwQlNIT1JiN3dyMNIBbEFVX3lxTE5iNUM1bU1ZMFY5Y3RGSm1CbjlWVjF4TmgwTThHeFl1YkdOU3F4azlPVHg3X25wZW9hZmkzZlhVbTkxWkY5LTZFaWoxZi1ORV94cUNCaGNSZGFjMHdrODFrU0I2MmhXc2VLRFpZaw?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5834c77b747b"
+    },
+    {
+      "title": "세계 금 가격 상승, 시장은 유가로부터 긍정적인 신호를 받다",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMmJrNUZWWU1Rdl9acHBYRFVjODVaUlpZeVRrb2RyOUxkYkVJcE1SZkh2UnN4U3ZSQXNuOE95YkhfcmpxUVVjcXJkVGxsaXVjbjZGRTlqZEs2RzljYll6THdrSUVBNFBHQ29CYVRpeEJjNjhydG51OUR2QjRTWTU2dGZiM3ZPb2Ixd2FwdndWR053Z1g0cWgwRTJOR2JvWEhvS192aC1makFKMGFwcjBQUnlmY0Q5QQ?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-19 18:34",
+      "summary": "세계 금 가격 상승, 시장은 유가로부터 긍정적인 신호를 받다  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bdf5b5f59ae6"
+    },
+    {
+      "title": "이언주 의원, 한국가스공사·석유공사 국감서 원유·LNG 공급망 점검…“비축유 3,300만 배럴 회수·국민 부담 관리해야”",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zQ0M0cExWM1hLVTlfamk2UzZsUU9DeDhzUmNycC1lc3d4a2JCOG9SSHh0UW5EWTNoejN6ZnhzOVp6TjlDREZCcVNDN0JCT0tVY0YxRFM2ZU44eGFkc3ZXcnl5YVdtS0RMMjN3WC1Tdw?oc=5",
+      "source": "월드장애인사랑뉴스",
+      "published": "2026-10-19 18:31",
+      "summary": "이언주 의원, 한국가스공사·석유공사 국감서 원유·LNG 공급망 점검…“비축유 3,300만 배럴 회수·국민 부담 관리해야”  월드장애인사랑뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "213587e0d6ed"
+    },
+    {
+      "title": "한국석유공사, 개방형 직위 확대 운영... 민간 전문 역량 기반 조직·인사 혁신 가속화",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1DeW5taW83dTlLY0VVdVJWVU15V0lmd2hadm9MTTk5OE5kRmVkRW5UZXZCNkdMeTUxeGVkcTFuelUtUk9uV1ExUHVZS0pjb0lacm1oVWZfdExrNTM5cFJQTm9sakRWVGNIVGZYTVBR?oc=5",
+      "source": "영남신문",
+      "published": "2026-10-19 18:30",
+      "summary": "한국석유공사, 개방형 직위 확대 운영... 민간 전문 역량 기반 조직·인사 혁신 가속화  영남신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "59fb7dec2636"
+    },
+    {
+      "title": "가스·석유공사 합친다더니… 사장들은 \"사전 협의 없었다\"",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUndobkpxRGd6TTdpb0o3SjR4X0llVnczLVNFYVNvSFBxYmtyUVRtanl1MzdDc2VFcTRPOE91cmZFUVdhTWdVT0hzVjhlbHZpbGVrMWJwZm1WUEIweXVNVkJOTnFyNHBBa0JaMHhDcFdpNzVnOG9ib3BtTHBMVjNVdC1JYTdRRTlBbmViVV9R?oc=5",
+      "source": "조선일보",
+      "published": "2026-10-19 18:29",
+      "summary": "가스·석유공사 합친다더니… 사장들은 \"사전 협의 없었다\"  조선일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "84e77a83acce"
+    },
+    {
+      "title": "[탐방] 강원에너지산업, 축제장 'LPG 토탈 시스템' 고도화",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=304329",
+      "source": "투데이에너지",
+      "published": "2026-10-19 18:25",
+      "summary": "'2026 춘천 막국수·닭갈비 축제' 현장에서 관람객들이 이동하고 있다./강원에너지산업 제공\n\n\n\n[투데이에너지 신영균 기자] 지난해 전국 최초로 축제 현장 푸드 코트에 가스시설 설계를 비롯한 시공과 공급, 안전관리 등을 원스톱으로 수행한 강원에너지산업이 'LPG 토탈 시스템'을 고도화하고 있다. 최근에는 가스시설 안전성과 사용자 편의성을 극대화한 'LPG 가스 안전 공급 장치'가 특허를 획득했다. 이는 강원에너지산업이 자체 개발한 가스 안전 시설이자 제품이다. 이를 축제 현장과 행사장 등에 설치해 '가스 사고 제로'라는 대기록을 ",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "language": "ko",
+      "event_key": "",
+      "id": "d8e355e86e05"
+    },
+    {
+      "title": "석유비축기지 유휴부지 태양광 활용 요구에…석유공사 \"살펴보겠다”",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOX2JJWXZpaUtzUjhnNEFGdVZrSF9OUFRhSzdneFctMnF4R0UzaGIxMDNNeVZxb1d6MXRUQkNlNzF4dE5DSWlzSVhBb1JaUHFIaUxPd1drcm1Pc1FvdEwxQ3NGUm5YYzh4SnN6OVo5ckNKalJjUlRtbnlSYjNTUDBWSw?oc=5",
+      "source": "이데일리",
+      "published": "2026-10-19 18:01",
+      "summary": "석유비축기지 유휴부지 태양광 활용 요구에…석유공사 \"살펴보겠다”  이데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a5da1ca40406"
+    },
+    {
+      "title": "방치된 폐주유소, 토양 오염·안전 관리 ‘선제 대응’ 시급",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mN2xaNTJNX25zMFZTcXY3NWhrSEdnWEpubG1GdklnUWZIZG1oRDl0OEdyX2gxZmdRUU9IREZ6OUNoNHJoc05MTmpPODJZS19tYkFJRk1LZ0E5QQ?oc=5",
+      "source": "경북매일",
+      "published": "2026-10-19 18:00",
+      "summary": "방치된 폐주유소, 토양 오염·안전 관리 ‘선제 대응’ 시급  경북매일",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "73b64c077357"
+    },
+    {
+      "title": "거제 석유비축기지 유휴부지에 태양광 발전소 들어서나",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lSThCYU5JS0tWWGNGdzJqTi1scURCamdUVGllRlYxZEFRSzNBOTRIdkMtQWgzUElxc2JiVExJVXQwY0dmZkN2LXVUbGlYVWYzamhoUEZQSG1PSjdaYjBPM095YV81SGVxaFFLc0tR?oc=5",
+      "source": "거제신문",
+      "published": "2026-10-19 17:27",
+      "summary": "거제 석유비축기지 유휴부지에 태양광 발전소 들어서나  거제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "edfdc314d8c9"
+    },
+    {
+      "title": "[최준영의 에너지 지오그라피] 아프리카의 떠오르는 강자 단고테 정유소",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBaSVpjZVhtSWpXbXpWTjRwN1VFNFhJMjNxalpLeWlBR21xVWM4WkY0aDRiWTBkeV95RWJ1Wjg4WDhrNFlDQTdwYmhBQQ?oc=5",
+      "source": "ASK Inno",
+      "published": "2026-10-19 17:24",
+      "summary": "[최준영의 에너지 지오그라피] 아프리카의 떠오르는 강자 단고테 정유소  ASK Inno",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a779302cad15"
+    },
+    {
+      "title": "베트남의 휘발유 가격은 다른 여러 나라보다 훨씬 저렴하며, 라오스보다 리터당 25,000 VND 더 저렴합니다.",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYWlZNDU4U0FESkZLX1EycUx3djg0QUV6bEtiRm00TUhOMlhmUjRxZUVOTlg4MXI0ZVhCOWhfUVhPUC1IRnJYMFlrb1psTXl1WGdRTk5BU1FYcFpRWGpKN2dPT2s3X0VpZno4VXozMUxyRFIxWVFnOWJRVWl1WGdrMF9qSHljOHczenMyR2IzeFN6b2Vl?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 17:24",
+      "summary": "베트남의 휘발유 가격은 다른 여러 나라보다 훨씬 저렴하며, 라오스보다 리터당 25,000 VND 더 저렴합니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3a65dafce4c7"
+    },
+    {
+      "title": "[2026 국감] 한국가스안전공사, 불량 LPG용기 3만6000개 미회수…안전관리 도마",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5scDhTMUJlN25IUXJ2Sl9TWU5lUERDWE1JZmNTaWpyd0RNMWYwY1hjNmFzZ29WalhSVm1JUHYyVzVMbmQtMHFtXzF1UVdtbmtJaXYzT3RpOGlMeUdLakpLREIyV0xxM0lvV3pvWFV30gFyQVVfeXFMTjlYUnN4MHd2S0dTX1Y4WHRhM0gwMTk0X3hsRHJTaEJmUGN4WFFSRjJXR3JkczVuOXdocGw3UHhLWUQ2anFlcjU1ZG5ETGdfWDJKdDAwREpEeUcycHRocFJmVnMzYktQSVpkMExoVnFRakxR?oc=5",
+      "source": "팝콘뉴스",
+      "published": "2026-10-19 17:15",
+      "summary": "[2026 국감] 한국가스안전공사, 불량 LPG용기 3만6000개 미회수…안전관리 도마  팝콘뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7c09e4596919"
+    },
+    {
+      "title": "[끈적한 물가] 유가 충격에 수요 압력까지…물가 안정 늦추는 변수들",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0xN3R6TkFKV1pCX0lLTVVMb0FucWhhZjJBMklQVEdnbV9tT1h5TXoybDUzRHJNcFdHdVluMEpZUS1sRERLZHFxaTZYdHhsQWJhZVpRVDVESEfSAVhBVV95cUxNMTd0ek5BSldaQl9JS01VTG9BbnFoYWYyQTJJUFRHZ21fbU9YeU16Mmw1M0RyTXBXR3VZbjBKWVEtbERES2RxcWk2WHR4bEFiYWVaUVQ1REhH?oc=5",
+      "source": "아주경제",
+      "published": "2026-10-19 17:13",
+      "summary": "[끈적한 물가] 유가 충격에 수요 압력까지…물가 안정 늦추는 변수들  아주경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f8be53077a52"
+    },
+    {
+      "title": "송재봉, \"석유 유통 질서 확립 위해 질량유량계 보급 서둘러야\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FNmJxbjFtZFREWTdKSFZ1ZmY5QS1IN25FTjd3YkhFMUZlU01sNUJ5Rm83YlNqamlKYmsyTHNVUTNLcU5FYm15NzY1V0ZPd2ZCdmpnNVVYVTN0YXItYW1EOUFR?oc=5",
+      "source": "충북일보",
+      "published": "2026-10-19 17:05",
+      "summary": "송재봉, \"석유 유통 질서 확립 위해 질량유량계 보급 서둘러야\"  충북일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "\"석유 유통질서 확립 위해 질량유량계 보급 서둘러야\" |",
+          "source": "뉴스클레임",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE50VFQ1TTJMYmFsaW94TTVDSkZ1VGJjRVRqYndiaGZUZ2RGVWVIVjBJcGxiUW1qMV8yZGtOMm5DYlVVUWo1WnktY0hnQ0paeU1NY2ViZmZmaXIzcE1RN0NDMmt5TExJalZ5Vnc5UVVFUmxaNWVh?oc=5"
+        },
+        {
+          "title": "석유 유통 질서 확립 위해 질량유량계 보급 서둘러야",
+          "source": "도민연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QZ1FoUFNyMDNzeDZjeTVJc2ZOVUhmZGV3Um5MWndhYnlPcGlVeFdQMXlwQ1A2TjB5Mm4xZHBCZkZCdW1JR2gtNFRuaXc5Q1YwSnZRLV9jRTgwM093N1AtbUtITl9KTmpyTkE?oc=5"
+        },
+        {
+          "title": "송재봉 의원, “석유 유통 질서 확립 위해 질량유량계 보급 서둘러야”",
+          "source": "에너지타임뉴스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBDYU5Id0ViR3pLRzNJY2FGaHAxZTducG9RRXFEdGhsVVdhU0JPX1k4V000QzNRaHExdWVlQ0ZDZ0pXRUJ0RTdyMzNrSXlNN0VGem40cWtzV0kweXBPMDd6ei00MTU5V3BtUkpHdHFLNFFfUdIBdkFVX3lxTE1vN25PUUM0NmxYVHFkVnY4REs5c0tkX0ZQc3k0TnBYSHplS0ZsNGtwbGhBYTEwcDFZMmhhOGZ1SVZzdjZqS3paZFVzVGZHa3d3V2hsR2hLQ0hfV3hUZDk1dllUOGpsWkt3OFNhbkZGRmNXSVBoaUE?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b7046d2b40db"
+    },
+    {
+      "title": "가스안전공사, 불량 LPG용기 3만6천개 미회수…\"회수계획 마련해야\"",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE43eGlUbElwcDZURWVIMEpzanRZRlI3dEs5UVZ0SEd5cGhkT2x0bHQxZWd6cmZrcWJoX3lyR2s5bllSUTVtMkR0bjNDV3Y3MjdjVW5yVXBxTHQydzYtVnFQWDQzVThudm8?oc=5",
+      "source": "연합뉴스TV",
+      "published": "2026-10-19 17:03",
+      "summary": "가스안전공사, 불량 LPG용기 3만6천개 미회수…\"회수계획 마련해야\"  연합뉴스TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e702d09795cf"
+    },
+    {
+      "title": "“로봇이 아니다”… 발리 주유소 직원, 주지사 앞 ‘24시간 영업 요구’에 눈물로 항의",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1xbVBBU1JZX1dFMFpHQ0dfVWVIVTJfXzdxTzQ4UlllNTg2SzNXbUhGZDZ2SWthMXI5VFNKcld4YnhrUmU5VXlMcTJ4VldQZw?oc=5",
+      "source": "Haninpost",
+      "published": "2026-10-19 17:00",
+      "summary": "“로봇이 아니다”… 발리 주유소 직원, 주지사 앞 ‘24시간 영업 요구’에 눈물로 항의  Haninpost",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "26b304025320"
+    },
+    {
+      "title": "둥꾸앗에 위치한 국가 정유, 석유화학, 조선 및 에너지 중심지는 특별 메커니즘의 적용을 받습니다.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSk0yOWpDdjVIUGViZWxRd0czbjN4Y1BPOFhDVVBudGdpdTZMLVpvd0EtVFJsZ0JxSnRQaHB6WnFFOF9HOUZkQmtoeEdlRDMtU1RJcGFXbTJ6djVWRVBXYmtmTEFUQlNjMGtYcXRSelB4blhvSkxRYThBaVdESURmVmVjMHV6NUZualhOaFd1SXg3U0JWc3VhUm5DRDB6cE4tcXZycy1aNFdGRlpIVGlrNkxXY2tQT3F5cndLdkt3?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 16:56",
+      "summary": "둥꾸앗에 위치한 국가 정유, 석유화학, 조선 및 에너지 중심지는 특별 메커니즘의 적용을 받습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aed3a2c7edf4"
+    },
+    {
+      "title": "환율 숨 고르기에도 유가 반등, 수입물가와 생활물가 변수 남아",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fWGVndHA4VWh4RWp0alpCTTdJMEtKWk84TGhIQnBJNGJTTXlpLXNSeWt5N08tTkFIRjVISVFhVkNYaVhRRy1ma1RzM1BXRlljZHRfQ3kySkJVRDNhSzFYQzZXX0JzemtGQXlGWg?oc=5",
+      "source": "센머니",
+      "published": "2026-10-19 16:51",
+      "summary": "환율 숨 고르기에도 유가 반등, 수입물가와 생활물가 변수 남아  센머니",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1357979b4a14"
+    },
+    {
+      "title": "[국감] 가스公·석유公, 원유·LNG 공급망 실효성 점검해야",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9QQmVwUjJMcS1lcnVoQ19qeWMyTG8wbkhjN0dCcjEyMVFnazF4cUQ2SUdlR2FhdXVfUXR2S2ktMUlmSmExOEpNU0FwV2hZRU42X3RhSEJKR3Y4LXVsMTJXWnhiYUNmYmIxR3NF0gFrQVVfeXFMT1BCZXBSMkxxLWVydWhDX2p5YzJMbzBuSGM3R0JyMTIxUWdrMXhxRDZJR2VHYWF1dV9RdHZLaS0xSWZKYTE4Sk1TQXBXaFlFTjZfdGFIQkpHdjgtdWwxMldaeGJhQ2ZiYjFHc0U?oc=5",
+      "source": "인사이트에너지뉴스",
+      "published": "2026-10-19 16:51",
+      "summary": "[국감] 가스公·석유公, 원유·LNG 공급망 실효성 점검해야  인사이트에너지뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2bc4087afe0d"
+    },
+    {
+      "title": "[국감] 소규모 LPG·도시가스 사업장 안전 확보…검사 예산지원 바람직",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9oUDNELWtZZ281TE45V3lTZWR6QkQzTkpkYzNNOF9uYU5xSjRod0xHVmNIWEVtd1JhbW1Kb05OT3FuMXBjRFdkNHJwT1ZrZWx2UzhKNlNjSEFwN1NZdlVXSTJpSDN3a1FZR3FB0gFrQVVfeXFMT2hQM0Qta1lnbzVMTjlXeVNlZHpCRDNOSmRjM004X25hTnFKNGh3TEdWY0hYRW13UmFtbUpvTk5PcW4xcGNEV2Q0cnBPVmtlbHZTOEo2U2NIQXA3U1l2VVdJMmlIM3drUVlHcUE?oc=5",
+      "source": "이투뉴스",
+      "published": "2026-10-19 16:44",
+      "summary": "[국감] 소규모 LPG·도시가스 사업장 안전 확보…검사 예산지원 바람직  이투뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e58fa73f7d65"
+    },
+    {
+      "title": "하나증권 \"국제유가 급등에 VLCC 운임 주목…에너지주 새 변수 부상\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GbXVKQm9vLXY4ek52V2FnMHlCVThncllGQzlGTGdsSUFvQnBiZDRnRUZIMTJfX0NBTEhPSHlxRWVaMVNGUGxBRG1JeDdYdk95Y240dU5WUjVjWFY0b1FETy1QNDU3UWNqNXZoR2FBT2lGMGs?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-10-19 16:42",
+      "summary": "하나증권 \"국제유가 급등에 VLCC 운임 주목…에너지주 새 변수 부상\"  핀포인트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9c9a513b258f"
+    },
+    {
+      "title": "결함 LPG용기 3만 6천 개 미회수",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KSENubjF3U3l3QVdXWXBNT1pmVW1TQnBFTkpydU5Db3FLYkdoS0Y3bWx5cEZ6UmJFVFpGN1U0TndELU9LdGI1TnR5X0YtMFBzSzFnZlh1bGk1NVhzcThmX1B1Y2p1SzRJRmN3?oc=5",
+      "source": "광양경제신문",
+      "published": "2026-10-19 16:28",
+      "summary": "결함 LPG용기 3만 6천 개 미회수  광양경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ea8158d20e4c"
+    },
+    {
+      "title": "가스 저렴할 때만 직수입...민간 LNG '체리피킹', 산업부 실태조사한다 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVbUJpTi0wNW5qNlc3cFJHSVFtc0dmVEpWM3EtZVFKWFFqWUczUUN6aV9qQWNJVEdvTHRncTN1Nk5EdFIxSnJ5NXJwZm9WQkRvTmNGNFJ6NE9kRy1BbWZBVXJ0Y1dMSkphbHJYdNIBckFVX3lxTE5xTGpnVTZWLTZhclp0SGl4c0diSlJzQV9BMDQydjd6MUhpTWthVmM3TzRTV1hjM3pHTGdKMk85NUw0M1M0czh4X3RKSGJ4LVgyd3ZMSFo1RW1TYTFnTDhhVVhoU0xfYWhCRVRGOUYtQVZCUQ?oc=5",
+      "source": "머니투데이",
+      "published": "2026-10-19 16:19",
+      "summary": "가스 저렴할 때만 직수입...민간 LNG '체리피킹', 산업부 실태조사한다 - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e38887d99098"
+    },
+    {
+      "title": "원유·LNG 계약과 실도착 달라…실물 공급능력 검증해야",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9GZVd3Nm5xTXpTU0RNdExsMHN1dm16ZVRKQUlDbVU2M214amZSN0hySEN3Z1VfWjZiUEtab0U4U05hcDIwbUtqZTlxSEwwbHp3ZXQ2QVpMQkdLVG9QQWdTSndwVVpmbFJ1MWRvOXhjNzA3QQ?oc=5",
+      "source": "www.ecojournal.co.kr",
+      "published": "2026-10-19 16:14",
+      "summary": "원유·LNG 계약과 실도착 달라…실물 공급능력 검증해야  www.ecojournal.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "025096308a70"
+    },
+    {
+      "title": "최고가격 또 동결에 더 꼬여버린 정유사 손실 ‘원가 계산’…“연말 돼야 정산 가능”",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wb3c3LXlBakZXWHRXYVNBRER1R2k2OF9rN3NxcFFSQzlQN3pTTXJ2Nnk1NTJfVjNMZlo0eHc1X05pVlhsZlRTSTc3elhTVmw5X2twMi1TRkxlZ9IBX0FVX3lxTFBOaDJiTloxVEZCUUpvVFdnakowdlN4bnNZVEVvYUs4dmRYWENnMWF3Y0JoVEFNYVNzWkVtQVVpQm1nalRycFVoRGVVamJqRHQ2cngtMFRzdUNaZTk2VDg0?oc=5",
+      "source": "경향신문",
+      "published": "2026-10-19 15:56",
+      "summary": "최고가격 또 동결에 더 꼬여버린 정유사 손실 ‘원가 계산’…“연말 돼야 정산 가능”  경향신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bcf8aeca0f6e"
+    },
+    {
+      "title": "[2026 국감] 중국산 CCTV 국산 둔갑 납품…가스공사·석유공사 국가중요시설서 504대 운용",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4MHI4SDg3eno4NFB1OUJ0bktWZk1IZzZ6endMcURZN3EzZDdjNjgtOW5PTjJWLTdGdkRlZFAxZUVpQW0tbmt2T0hPYVVPZFBOYmxyZTE4aDVoSWxTRnFTSE0tb1FCc0tpU0JDRVJnUk1JUk5Z?oc=5",
+      "source": "세계뉴스통신",
+      "published": "2026-10-19 15:54",
+      "summary": "[2026 국감] 중국산 CCTV 국산 둔갑 납품…가스공사·석유공사 국가중요시설서 504대 운용  세계뉴스통신",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8d5d340dc642"
+    },
+    {
+      "title": "국정원 경고에도 그대로…‘국산 둔갑’ 중국산 CCTV, 가스·석유시설에",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zUk9SMUphV0MtRVFSSVRqU1p0OHVfLXVxTVBraHFPOFJjTjNOM0gwcDVsalFaTExDQjg1R3AwWTI0bjJJNjJLejRTZUszOV91cXFPRg?oc=5",
+      "source": "JTBC",
+      "published": "2026-10-19 15:50",
+      "summary": "국정원 경고에도 그대로…‘국산 둔갑’ 중국산 CCTV, 가스·석유시설에  JTBC",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "140ea5c08e1e"
+    },
+    {
+      "title": "우재준 의원, '비축유 빌리려면 고가 원유 먼저 사야' 스와프 방식 한계 지적",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4yNVE1WVJwaG1ZYmd6dlRnemx3ZVlXR0NlV1U2ZWhLWE02bHJvbEZqMFFXLUN1STd4M1JIQjQ5WGRiakJTSDNWbENTS0wtQzFzOXFIX3lXY3pDQUtyUjdSNGZCU3cwTmRLNndwOVl2MnnSAXBBVV95cUxOMjVRNVlScGhtWWJnenZUZ3psd2VZV0dDZVdVNmVoS1hNNmxyb2xGajBRVy1DdUk3eDNSSEI0OVhkYmpCU0gzVmxDU0tMLUMxczlxSF95V2N6Q0FLclI3UjRmQlN3ME5kSzZ3cDlZdjJ5?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-10-19 15:26",
+      "summary": "우재준 의원, '비축유 빌리려면 고가 원유 먼저 사야' 스와프 방식 한계 지적  에너지플랫폼뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9f10b2c38501"
+    },
+    {
+      "title": "오늘(10월 19일) 연료 가격: 국제 유가는 하락세이며, 국내 유가는 다음 주를 기다려야 합니다.",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbE9QcXNKQWlTOGRaNzE2aFlQTXZCM1RNNTRPbDd0RnkyQkF1REY3ckxVUkxtRlJTcXdlOTNyajEzRWZtdDlCSjRwelFKNlRGOXZ2Mjk1bGw2bTE3eVI2QTNFTG54WFE4WXVzQ2sycV8wRWF5cV9ZR1BOQnhnTlQyUkNiaHpvYjNMZ2NnS1ozVWxjVzhkbFlrYkFVSlItTkdY?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 15:26",
+      "summary": "오늘(10월 19일) 연료 가격: 국제 유가는 하락세이며, 국내 유가는 다음 주를 기다려야 합니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b6cc5977c028"
+    },
+    {
+      "title": "기름값 묶고 수출은 제한…국제유가 급등에 정유업계 '비상'",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55RkF1cE1QLVVFZDdUVXVBNDFWTV9OMDdSc2NHUlpTMEY3b2lNd0NmbEI4QU9KZE9nNWNzU3owekV5MEJIcUxLdTNVRS04a0dXYjhnWNIBWEFVX3lxTFBDVVlzaG9TRnBaY3lSXzB5bkxPRXRZbUJyLWNNVFlEay1iMzRnS1pjY2NmQkhocno4SFctdUlRbUVkdXdwZV9HY285RVVqYjR4dnBTYlRsdm8?oc=5",
+      "source": "미디어펜",
+      "published": "2026-10-19 15:23",
+      "summary": "기름값 묶고 수출은 제한…국제유가 급등에 정유업계 '비상'  미디어펜",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "819422139fa4"
+    },
+    {
+      "title": "송재봉 “질량유량계 보급 확대해 석유 유통질서 확립해야”",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56UHMxUGdXQVBDUzZMZnBIcmZhajNzWTlSTjQxRkhYZk5qTjByTkpvUXpGUGV2NmJVYjlLbksxWjhORF9tN0dOZWdVcTZaa0FtV0JWUmtSLVBvR29wRnlld3VJNWk0S0FJeHplZk1DZw?oc=5",
+      "source": "위키리크스한국",
+      "published": "2026-10-19 15:09",
+      "summary": "송재봉 “질량유량계 보급 확대해 석유 유통질서 확립해야”  위키리크스한국",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f23aef82ef29"
+    },
+    {
+      "title": "[국감] '대왕고래 실적? 갸우뚱' 손주석 한국석유공사 사장",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBFT1NndlFoQTNTQkcwdWp4dUdKYi13anl4VV9TMTBSbDJzallldXNSc1VONXZMSkQ5VXloN2VTT2liaV9oVTNoeWJDMA?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-19 15:07",
+      "summary": "[국감] '대왕고래 실적? 갸우뚱' 손주석 한국석유공사 사장  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e08e8cf6aef4"
+    },
+    {
+      "title": "브렌트 원유(UKOIL) 종목이 10월19일에 2.08% 하락했습니다. 무엇을 주의해야 할까요?",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPeHpxUHQzb3BpYUt6QzRjVzd2SHgxZ2pndXdfVDNxaVh6dkZ4dDVRSllTVlgzQnlvdFVwTGR1dG82SmNza1YzLTZKX0VOQlVMSjJWR2E0M01fWmQ3RjZRMDNicXR3bFRoZnpOSDRPOVNJUWJ0Vnc0MFEwOHYwY2hZREU4cVNQLS0yYTJtSnVkelo?oc=5",
+      "source": "TradingKey",
+      "published": "2026-10-19 15:00",
+      "summary": "브렌트 원유(UKOIL) 종목이 10월19일에 2.08% 하락했습니다. 무엇을 주의해야 할까요?  TradingKey",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a1aba41fa9f4"
+    },
+    {
+      "title": "우크라, 트럼프 반대에도 푸틴 고향 공습…유가 또 자극",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBGb0RBOGUwbFRNVVo4eDdCMkJHeF9WNkFmY1JVajh2UFJDdmltRlN1emRuTzNvaTU3ZVZWM3VkTHB0SzY4Wk9FMlgzNTZxYUstbFZn0gFTQVVfeXFMUEZvREE4ZTBsVE1VWjh4N0IyQkd4X1Y2QWZjUlVqOHZQUkN2aW1GU3V6ZG5PM29pNTdlVlYzdWRMcHRLNjhaT0UyWDM1NnFhSy1sVmc?oc=5",
+      "source": "서울경제",
+      "published": "2026-10-19 14:58",
+      "summary": "우크라, 트럼프 반대에도 푸틴 고향 공습…유가 또 자극  서울경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ec0cc53b63f3"
+    },
+    {
+      "title": "호르무즈 해협 선박 공격 급증…유엔 “선원 6,000명 고립, 해상 안전 심각한 위기”",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1pTmVQdTFXakxmSURlZnFFczRxbWhuM3RfUXR0WTV4R0VwWWd1cjU2OGJONTZrNk9CSDBFSmp2TzdJWW0tQmFta1RMc0FDVWtPRFlVOGdaOFZ5Qk5BbzlOWnJWbFBKTEZzcDV5Ug?oc=5",
+      "source": "파이낸스투데이",
+      "published": "2026-10-19 14:10",
+      "summary": "호르무즈 해협 선박 공격 급증…유엔 “선원 6,000명 고립, 해상 안전 심각한 위기”  파이낸스투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3cef0178feed"
+    },
+    {
+      "title": "불량 LPG용기 3만 5916개 미회수…안전 사각지대",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xYzVtM2xRVmNlLWMxdFpOUEd0SE5ab1BYMmRXWkpBYjhOZFB6cE5vd0JrZGFTbnZXUFRHM1pSaXJHTF9aME9nYmM1d19OcE45QlZiTWx6TUtENndLSzFicUZIdEJmRFljVVAtV2otMDM?oc=5",
+      "source": "에너지신문",
+      "published": "2026-10-19 14:09",
+      "summary": "불량 LPG용기 3만 5916개 미회수…안전 사각지대  에너지신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "불량 LPG용기 3만 5916개 미회수…안전 사각지대",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HMkFiMTYtSG5NQmN2QmxOVC1iQ0EtSTZCald2alUydHJ5YjRGOXlHWlVHZE1mOVBJbUZzQ1FOZlZ4Wlh2NE9tajFKRm0tZjNlYVczZ0VHVWpNd1VXOEdINnBpanhEYy1WUFBpXzE3WGY3Zw?oc=5"
+        }
+      ],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3b977108486c"
+    },
+    {
+      "title": "與 “LNG 부담 국민 전가” 野 “공기업 졸속 통합”…산자중기위 전방위 공세 [국감]",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9FNGhkRzdieEhfTGNZY1BzN0RtNm1ZUmJFbkFzNW9qaEhDS3VkZDlyWng3WmdSd3VwRDNmR05xVWYtZlhOWTR4Tl9oQXU2RXphRUlvYUNOZTNIdy1KaFJfcWpmbEh4V3BaLXU3TVdR?oc=5",
+      "source": "이투데이",
+      "published": "2026-10-19 14:05",
+      "summary": "與 “LNG 부담 국민 전가” 野 “공기업 졸속 통합”…산자중기위 전방위 공세 [국감]  이투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "與 “LNG 부담 국민 전가” 野 “공기업 졸속 통합”…산자중기위 전방위 공세 [국감]",
+          "source": "이투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1eXh1bVRhZEdaci1sRzJ2cTNfS1hNNEZwcVVMWHNMZzdfOXRaN3BlaFdTLTgwOURScHVqU2tjOEFTUHhfeVBKZnNMX2I2Vy1PM01ESWNYUnFNYXZxNXF2TUUxOElkb1hLTHNvQUxB?oc=5"
+        }
+      ],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "35411ec73370"
+    },
+    {
+      "title": "2026년 10월 19일 현재 연료 가격: 이번 주 가격 조정에서 휘발유 가격이 급격히 하락할 수 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLW1jUkhRNUNvOXJmSXlEczI3VGQwLTllOW9JRTN5cFNRY1FZXzVLSXphdklvbngzQ1A5ZDRKTjM4YzZlY0ZvX1NSVC0tNkNhTnRjZlZ3Wm1NSEJqaDBkcVZ0cXFGT3BaNmNhZDYxZEY2bXlCOUdtTGZQZksyOGs1MjVvanFPb0Y0X3FoREtGUS0tcWJnX281ck9iR1ZpZUx0TWlYMHN4OF8?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 13:29",
+      "summary": "2026년 10월 19일 현재 연료 가격: 이번 주 가격 조정에서 휘발유 가격이 급격히 하락할 수 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5c5b6ddf4930"
+    },
+    {
+      "title": "불량 LPG 용기 3.6만개 10년 째 방치…가스안전공사 늑장 대응 논란",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5NWWNGX3FJQXdIM25LT25MeWpBeTF6dHp0UkRyc1h2d1NLazJKU3BTcnN6Ty1VMWhQdEhUa0tFb0ZpcTMyQlg3N2c2aDJibHJHZEQ3MEFKQzV3MVhnQjBROFhZRGZPNFJqUzRla3VWdw?oc=5",
+      "source": "진일보 | 전남일보",
+      "published": "2026-10-19 13:20",
+      "summary": "불량 LPG 용기 3.6만개 10년 째 방치…가스안전공사 늑장 대응 논란  진일보 | 전남일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0df557ae138e"
+    },
+    {
+      "title": "국고채 금리 소폭 상승…반도체주 일부 반등 속 유가 주시",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE81WXNqampBM0tnd0xPcGdVc2NrS18tREtqbWtvbVdFTkhnbjEzejBkMmNuOW1jbDJudjE2SlFyRWJEZm5VT0hZRXE2RHZaRm91OFNpRDdONW83MVltMjZaV1RoajlXY0I3N0J1YlNwZGk?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-10-19 13:04",
+      "summary": "국고채 금리 소폭 상승…반도체주 일부 반등 속 유가 주시  연합인포맥스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a243bb954669"
+    },
+    {
+      "title": "여수 석유화학, 수출물량 21% 줄어도 100억 달러 지켰다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE11ZVBZYXpmeERVd1JYX3lFb1VyUWJrZmpBYUhycUFsRHlYam5qb01oMVNzUmtZdVdOQVhTa0ZzX0tOVDZSdE96eUVIc3k4THY5MU1FNFAtZkhXY0l0eDd2T2NMeUpiX3RuNkpnY0hfZWPSAXBBVV95cUxNdWVQWWF6ZnhEVXdSWF95RW9VclFia2ZqQWFIcnFBbER5WGpuam9NaDFTc1JrWXVXTkFYU2tGc19LTlQ2UnRPenlFSHN5OEx2OTFNRTRQLWZIV2NJdHg3dk9jTHlKYl90bjZKZ2NIX2Vj?oc=5",
+      "source": "남도일보",
+      "published": "2026-10-19 13:02",
+      "summary": "여수 석유화학, 수출물량 21% 줄어도 100억 달러 지켰다  남도일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "여수 석유화학, 수출물량 21% 줄어도 100억 달러 지켰다",
+          "source": "남도일보",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ELS0xS3J4NDNOMm9sMkpvemhBOEZYVXAyNHFsYnJxeWFiVmk5V1pOcE43dHA2V0VKLUp3UEtKaEN1UGR3ZlJFVFFhR1FSRHhRclFfMEc3YnRqeFVjWGVseFZvWGt4TVlSVFFCRdIBcEFVX3lxTE11ZVBZYXpmeERVd1JYX3lFb1VyUWJrZmpBYUhycUFsRHlYam5qb01oMVNzUmtZdVdOQVhTa0ZzX0tOVDZSdE96eUVIc3k4THY5MU1FNFAtZkhXY0l0eDd2T2NMeUpiX3RuNkpnY0hfZWM?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "11fd3bea84f3"
+    },
+    {
+      "title": "한국석유공사, 민간 전문인력 7명 채용",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ucXpsOGw1d1VlM0QtY2lzcUpDc3Y5NDlOd3lMcDJCeEszRmNHVVA4TGRkb3VVa0Z0YnVTMWpWbGdkNWtNc2hzQXFONFR0T3NWRVFwMWM5akNuNUZaVXluYnI3Qy1CN1FCalY2eGtkQUFXNWw3?oc=5",
+      "source": "글로벌뉴스통신GNA",
+      "published": "2026-10-19 13:01",
+      "summary": "한국석유공사, 민간 전문인력 7명 채용  글로벌뉴스통신GNA",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ba99e2730498"
+    },
+    {
+      "title": "가스안전공사, 10년 묵은 불량 LPG용기 회수율 45.7%…언론 취재 뒤 ‘벼락치기’",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1JWlFDSGthY3ZwM1d6Y2NKZmxZc0NyaERfNTdHTlRZVVFRS044UFRocmFZWXZVS3E4QlJCUnhtQlJqcm02eDd2MTl5ejJvNDZMUUVUZzRrbGdkM2Y2dWo2czNNQzlGajJwcm4zOWZjQQ?oc=5",
+      "source": "STN SPORTS",
+      "published": "2026-10-19 12:53",
+      "summary": "가스안전공사, 10년 묵은 불량 LPG용기 회수율 45.7%…언론 취재 뒤 ‘벼락치기’  STN SPORTS",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d4f050fda06a"
+    },
+    {
+      "title": "민주 전은수 \"LNG직수입 체리피킹 우려…실태조사 필요\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAwd1lHeWtKVXRvREdSUXpOOUVLNFhBWER5Zlktb1NOcGw4TzhKUnRLN3hQa29hVFBYLVNYSTFsT2pVRHVfUUZYdDljZGlmcUtTdGhqbTBGOG1LM1lKLWlzdtIBeEFVX3lxTE1nNElKMkZLTzRmRk5wTmNNM2VfUC01Sk1OYWhvenVQXzNIQzRNZFh4dEFHUkhXR0J3VkdWaF9MN0UySmV6aC1sMko3VXVnZHQ5YUJzLWg4TTd5NmNQRXZWWGU3ZkxrRFE0QkJZVi1sYlc1ZVVKWnhETg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 12:35",
+      "summary": "민주 전은수 \"LNG직수입 체리피킹 우려…실태조사 필요\"  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fc7863b4c4d8"
+    },
+    {
+      "title": "오늘 10월 19일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbTlfRjQ4eVhGX0xxcXJaUTRobVpOZHNiOVhPck0xRzJpU1UzdlBsTUVhMWlYTFEzR1RMMjVKcTBUc25GZGIzckpqOFNleXFFRHNzY0lxdzJNdWtzdmJtZE9tZDFockoyWUhQRHhielBzcE1UT1BKb1dYd0h0eDhfS1VkMA?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-19 12:07",
+      "summary": "오늘 10월 19일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "오늘 10월 19일 휘발유 가격: 급격히 하락",
+          "source": "Laodong.vn",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOc25sV0JnRUlWc1gyWFhuZlJaS1pvQWRxaXdSVlhWbDhWbm45VktEdHNCd2hFMTBYbWdtNGRyRzNiQWM2RDhFRkhYeUpjTEtyWFR5a1FuZEYwaG5aRmZvSWpmOFBtREs4elF6Y2F6Uy1rSzlhNGJWb2t2cTVwQ0gzdEF4R1ZBbjg?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "814896a0659d"
+    },
+    {
+      "title": "불량 LPG 가스통 3만5916개 미회수...가스안전공사 관리 부실 도마",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE82Mnd6U2dPUTl4djNjOE5zaG1XSkhoTWg0OWtPeS1UUEJWWFdvdjBrVy1DNl9sTHpxcXFZcE51Z1U4bl8xV01ocnlvTmd5a19Ma0hVajkxZkNHeWJPVVRFTlJRcVdfRFhXNGtiX0dPWG10Wjg?oc=5",
+      "source": "충남일보",
+      "published": "2026-10-19 11:50",
+      "summary": "불량 LPG 가스통 3만5916개 미회수...가스안전공사 관리 부실 도마  충남일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cf9a391debb2"
+    },
+    {
+      "title": "[국제유가] WTI 100달러 돌파…중동·러시아 공급 불안 고조",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE05OEJ5cnJMZi10N25NMDBGMmhySnlYTFZSUWNxb2ZJb0JITHJTM1dMQ3FmUnpsb2xyb0NGRC1KQzlZSHROV1E3U1pJWGJycDhKYlozT0F2Zi01YjhabXd4Qjk5QW9KYUFjNnVnYg?oc=5",
+      "source": "굿모닝경제",
+      "published": "2026-10-19 11:47",
+      "summary": "[국제유가] WTI 100달러 돌파…중동·러시아 공급 불안 고조  굿모닝경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d33da22ef269"
+    },
+    {
+      "title": "업무보고하는 손주석 한국석유공사 사장",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PREYtT2pUcEFjaHIzQVFrc000WGM1TVAyZGhzOXJlRjRYcXVEOWRTbUpKQzhLRXhvaTQ5VFNhNUViQzd6S2h3ako4aXpxNVNtN0JHX1ZBLVpZYmg2NDFPa9IBYEFVX3lxTE5PREYtT2pUcEFjaHIzQVFrc000WGM1TVAyZGhzOXJlRjRYcXVEOWRTbUpKQzhLRXhvaTQ5VFNhNUViQzd6S2h3ako4aXpxNVNtN0JHX1ZBLVpZYmg2NDFPaw?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-19 11:40",
+      "summary": "업무보고하는 손주석 한국석유공사 사장  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[국감] 손주석 한국석유공사 사장 업무보고",
+          "source": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE52MnFmOHJ6NWlqdS1VWFkyZXZLbFVnN2l4WVd2WmdOaHJaZDlRbTE0b2VpMlVBYTdtcXJwbl9yT0tVWmg3SVhQUS12dw?oc=5"
+        },
+        {
+          "title": "[국감] 손주석 한국석유공사 사장 업무보고",
+          "source": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5FUHJQdEZBOHBSVXNHTThGRHV2ODdwWkFYTEgwTXNlMFkzTjJVTXR6SjdVcENvRUtXZHBjYlNXQlF5WHJod200SldVaw?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aa7241019fc0"
+    },
+    {
+      "title": "석유公 사장 \"중동전쟁 대응 원유 6100만배럴 공급…비축역량 늘릴 것\"",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ3pPSENaa0d0MTlxcVdMNHpvZV9sNnd1V19XZW5udWNwR1ZrMUt0TzVZN3huX1ZnVlYzSUtFSWFsV3hhaWFma0tCR0x1RzVhLXRhdzZ3dWJ3TE5HTHRHWmwyQU92RF9xS2NPZWhCTG5qeGxYclU1VTZ3MEJQZ1Z5Qw?oc=5",
+      "source": "m.edaily.co.kr",
+      "published": "2026-10-19 11:33",
+      "summary": "석유公 사장 \"중동전쟁 대응 원유 6100만배럴 공급…비축역량 늘릴 것\"  m.edaily.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "석유公 사장 \"중동전쟁 대응 원유 6100만배럴 공급…비축역량 늘릴 것\"",
+          "source": "마켓인",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fVlJIMDNLTHdIZVRWcjZfR01acXNnQzRIUGQ4VDlnTlRURUhPcXFBX0RObkVuT3l0a3VoaF9QbkdGc0ZILXlKNHZQYUhPOGFIYkgzcEhRZG5iRENoM1VvQnVTR1A2Z25XRkhhdFpFSmpSRVE?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "38846d188160"
+    },
+    {
+      "title": "오늘(10월 19일) 연료 가격: 세계 유가는 하락 추세입니다.",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdkVhQ09Gd3RtV2RPSFF6ZmRhUXp3cmU1ckl0b2o5S21Vb3hEeWNWNGRMaGVzb0NTTTN2VjZpWTBUZWQxMGpCWWEzVXBRUWdXRjcySGYtSV9jNXltTlRmZDNDZWduV3FhM1V6RkU1QXFWSzE2ejRCT2M5ZnlmTGJsZDBEY3NYbFJ0MVV0UERtZw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 11:28",
+      "summary": "오늘(10월 19일) 연료 가격: 세계 유가는 하락 추세입니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d48dc7f774fe"
+    },
+    {
+      "title": "산업부 “러·이란산 비축유 417만 배럴, 제재 풀리면 즉시 처리”",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB4WEdQbzFXLUhwSVZDVjdfaXJfWDlXME1GeVhZam9OOHZncDVpdzlzVk81UW5KMnp0dDM2WDZaQjUxaWkwX1Fra3ZPYXN5VmlKMU84S3M0SjJzOUVLa3NLVTNVeDlGbW5QNzd0ZQ?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-19 11:25",
+      "summary": "산업부 “러·이란산 비축유 417만 배럴, 제재 풀리면 즉시 처리”  아시아투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cc24457509c0"
+    },
+    {
+      "title": "수송용 시장 재편?…휘발유‧전기차 질주 속 경유·LPG차 뒷걸음질",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBSOHpLZUR6WlRXQlFkSktOTzlKUUVtZjdBRjJuVFNMeEZlaE92TUdFNTNjMGRHcTlSeGZoOGl4V0llc3RsYXhZZkc2OEpTWXMzWDZJWDZSaHlnUW92QkxhRUtwVWdSTUh6aF9iRVJsbUF2UnlZ0gF0QVVfeXFMUFI4ektlRHpaVFdCUWRKS05POUpRRW1mN0FGMm5UU0x4RmVoT3ZNR0U1M2MwZEdxOVJ4Zmg4aXhXSWVzdGxheFlmRzY4SlNZczNYNklYNlJoeWdRb3ZCTGFFS3BVZ1JNSHpoX2JFUmxtQXZSeVk?oc=5",
+      "source": "수소신문",
+      "published": "2026-10-19 11:24",
+      "summary": "수송용 시장 재편?…휘발유‧전기차 질주 속 경유·LPG차 뒷걸음질  수소신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1b92a6991dec"
+    },
+    {
+      "title": "미국이 러시아산 원유 공급을 허용하면서 원유 가격이 급락했다.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOS3Z1SF92OGsta0FzaUxFTkROalRBWG1RQ0dmSjVlT0pMLWg1UkJJaml2S3N0aGNnS2tPa2ZDbnMzX3ZBUFFjZGVNYVZDMTVpMXE3d1YxLU43MVI5QUFxUzh5Y1ZQUHFsaTJoVzI2UDBUZThvODdLRDNxMW5Ya1JITGJsSTFzQzc0cUk3dGRGd0UxWW8?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 11:24",
+      "summary": "미국이 러시아산 원유 공급을 허용하면서 원유 가격이 급락했다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "21ef1d781a7a"
+    },
+    {
+      "title": "[국감] 결함 LPG용기 회수율 45.7%···3만6천개 미회수",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TT2VCMFRGQ3ZjbVV2QUlwNEU0MTRIQWpQd2VnaGp2d2VqR3FhWGx0NGN4ai1aUjBYTkNtRDJ6RVRKSmhDaVlSNVpFVVI1S2NFb0hsRk5mRm9ZSlJ6LXhWcDVQVnhLd3RBdnc?oc=5",
+      "source": "가스신문",
+      "published": "2026-10-19 11:22",
+      "summary": "[국감] 결함 LPG용기 회수율 45.7%···3만6천개 미회수  가스신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "11759905dd21"
+    },
+    {
+      "title": "S&P 500 향방은?···기업 실적 호조에도 AI주 급락·국제유가 110달러 부담",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxORE13VF9ub1BqeDBENlFQTU5Ebkh0YVRPRm43eVpyZklleDJmcU16YUFCUXoyT1dHTVV6UHFraUJXM0ZqZ1htclEzVk5RbmJDMGhrZ0w3a2FVVXcySTJFektvRXBXQTBqMG9kMEFCUzdUeHNKUWF6SGg5TkhTUUZrTDNydEVEeE8zdERqQ25FQ3NzYjlPZF9IRGxxVVIzZGdhSGoxbjVaN2ZUQUxhZkI2bGwwc21kS1RRdWJNOTdlMXJUZjhLeXdxdnNsdEtMWWVTRmtISlZZMUUtRWVmenFLY0VKSmNIM29EdFZ5OFVkalNOS3ZBclByeU9iXzJoZHFjZXhCWVRyaUhFRXFMSGZxX2x4UnJNdFZiYTk1UUo5Y1BLUXp4Z0h5ZlFJX2dvMjJERGc?oc=5",
+      "source": "Benzinga",
+      "published": "2026-10-19 11:19",
+      "summary": "S&P 500 향방은?···기업 실적 호조에도 AI주 급락·국제유가 110달러 부담  Benzinga",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e8b7c1786d09"
+    },
+    {
+      "title": "국제 유가, 전쟁 불안에 다시 꿈틀...美 선거 이후 더 뛸 수도",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LRVIzMHNJOXhnR1lYTEYyUjVVWjQ4ZFVLaHVNSzZ3RnhXSXdMQWVDOGF4MjJHcFRtdWhUcjdpa0JWSTlIVmVLaHhPd0hsZFhob1RwOFdSLUhXdw?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-10-19 11:16",
+      "summary": "국제 유가, 전쟁 불안에 다시 꿈틀...美 선거 이후 더 뛸 수도  파이낸셜뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0f63aecb32bd"
+    },
+    {
+      "title": "기스안전공사, 불량 LPG용기 3만5916개 여전히 미회수",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5IUGhzdHVwaUk2VDNuYS1qNmt5MFZkbE96NEdFTzlVUm1JTnY1d2JiaVE0U0kyREtUR3pPZHEzdHVzWXdGNWNTZWw5MXpIYl9DM0VUUjljNU41SUtmal8zclNjUnZyb3d1SWtjWHNzakowUQ?oc=5",
+      "source": "디스커버리뉴스(DISCOVERYNEWS)",
+      "published": "2026-10-19 11:10",
+      "summary": "기스안전공사, 불량 LPG용기 3만5916개 여전히 미회수  디스커버리뉴스(DISCOVERYNEWS)",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "366e12f8cea3"
+    },
+    {
+      "title": "석유公 사장 \"안정적 석유 공급·국민 부담 완화에 최선\"",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1nZ0hGeUp4QW5ZZVMtSGJyNHZxcDdkWEJadE1jeEJfYmFXTFZkQkJZQk9HY2R4dXdFMDNON3JEM3Y2eHlhSlBEZEQwalN3ZXE2NWlKMWY2NUlKVHVSSTFldXdXLTJMZ19LWFM2QzA1U2lLRU5ZMkNyeNIBeEFVX3lxTE1nZ0hGeUp4QW5ZZVMtSGJyNHZxcDdkWEJadE1jeEJfYmFXTFZkQkJZQk9HY2R4dXdFMDNON3JEM3Y2eHlhSlBEZEQwalN3ZXE2NWlKMWY2NUlKVHVSSTFldXdXLTJMZ19LWFM2QzA1U2lLRU5ZMkNyeA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 11:07",
+      "summary": "석유公 사장 \"안정적 석유 공급·국민 부담 완화에 최선\"  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "248ddaac6aff"
+    },
+    {
+      "title": "석유 대신 태양광·배터리…전기화가 바꾸는 에너지 안보 지형",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NNlJrcDdwYjYxc2piZFpyUGlSb2MzZllqN3FROUVVVjRxWWxCelhyLWFKZlpKOUxUc01vVUp4NjRuRjVyNFJXeW0xR1pkc0s0Y01SU2Q2QzJ3YXJGdGNWdWxjZ3hPaHJ3dS16ZmR4cEpUWGs?oc=5",
+      "source": "디지털투데이",
+      "published": "2026-10-19 11:04",
+      "summary": "석유 대신 태양광·배터리…전기화가 바꾸는 에너지 안보 지형  디지털투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "에너지 정책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b76315446129"
+    },
+    {
+      "title": "[EE칼럼] 정유산업은 절대 포기할 수 없는 국가기간산업",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9CVHdkRllRQ3VnTUhtTC1iZ0s3X0hlQXVKMVRObE5ObXAybkc1VGF6TjNnMGtnZ1FjZVk2SGdRM21ZR3lxMUJ1M3pvWGx5TXZ0UWlWekFsMnM1S3hXbzdYR1F3?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-10-19 10:59",
+      "summary": "[EE칼럼] 정유산업은 절대 포기할 수 없는 국가기간산업  에너지경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[EE칼럼] 정유산업은 절대 포기할 수 없는 국가기간산업",
+          "source": "에너지경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mV0ZTNEYyZl9PM2hVakNIQUc3VEtBbVpDamppcWJBSVZnWUlBQlg1d1VKUHE3TXZWVHlwRVlIc3dlS0tnZlVLeXFqa1JsbUMzMmwxbnpjY1VzQ0U?oc=5"
+        }
+      ],
+      "query": "석유사업법 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ca414eb6103f"
+    },
+    {
+      "title": "탄안 섬 지역에 휘발유와 경유를 공급할 수 있는 방안을 찾아주세요.",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOX3lzYTdTc1BFellrbDgzM2hYOG1McDNyM1JhQzhSNVpqNkVmbFJZRklqRUY5QlpPN3AwdEpfazZldzFmOE8zUHYwenZzdUc1X2RmeHBmYy1RMGdYbzBxeWJzX3BWY2xpMUZmdVFkRWxMSnNCT0xqLW56bU5nMVhyNWFQRQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 10:51",
+      "summary": "탄안 섬 지역에 휘발유와 경유를 공급할 수 있는 방안을 찾아주세요.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "28ec391a3a10"
+    },
+    {
+      "title": "휘발유 1856원…당분간 안정세 전망",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3RlE3OEhtMFFUVWhyMThKVzY4QmN2VzNub2pKOUREc0x2TXl1UGFsNEZlbFVOY3E5SnpqYTVQbDFLUE1oRU5tdW8yVXZUenRTNnZWN0hSLTU3YTNwaGZpVg?oc=5",
+      "source": "아시아경제",
+      "published": "2026-10-19 10:41",
+      "summary": "휘발유 1856원…당분간 안정세 전망  아시아경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "휘발유 1856원…당분간 안정세 전망",
+          "source": "아시아경제",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9TeTh2UXY2d1NPVmZfT1F0Yy1KYVNUY0RBeHpfOS1KUHJnRFJLS2JyX2VMOWt4cnZndnBKaGNvdmJPcVUxUHo4Q1lFRWRYYlY2SlMwUjNyUU9TOTRFX0VVSFVFM0k?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "eeae71c91103"
+    },
+    {
+      "title": "윌리엄 블레어 \"국제유가, 대폭등 여지 있다\"",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92a3YwVUFaNk9hdHJ0Y1FwTHIxTXpVM2N1OGpwSi1fZU8xbUp1TlN5OWItMzI3TWxhbklwVWJ3RmE4WFNCQUExbklXbHJYVHFBSlpPbWlYVE1lSUYwTWVrNkQtRl9iMGM3bVh1MnFzeEg?oc=5",
+      "source": "연합인포맥스",
+      "published": "2026-10-19 10:24",
+      "summary": "윌리엄 블레어 \"국제유가, 대폭등 여지 있다\"  연합인포맥스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5d5105a62a17"
+    },
+    {
+      "title": "코메르츠방크 \"유가 하락에도 물가 둔화는 2027년 중반에나\"",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9wVWxUcGxXclZJcmFwd2MxTkU1ZFFRV3pSSHRxVUdTY0JELXhZaFRoRlV2NFR2dFpNYUplNGI4X3hIMnNaa3pDeTkxR3Vod18zRG5ObzZpYzdMN2tCcjdsWDFITlNyek9YUjdXczdWajFjdw?oc=5",
+      "source": "KB Think",
+      "published": "2026-10-19 10:18",
+      "summary": "코메르츠방크 \"유가 하락에도 물가 둔화는 2027년 중반에나\"  KB Think",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d5b9f2bb5b65"
+    },
+    {
+      "title": "한국석유공사, 개방형 직위 확대 운영",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tOE1FQUdSdzktYm91dnZCenF0RlZ2QUhzS29HNW5vTElzbUpMNUdSNTZaRDlXME5pNS1iRHBYQUpia1ViRHhybVVJaWUxT0dfYTRYbEtUekxEbUtoNkZsTDFaTTl4X3lBeEHSAW5BVV95cUxNNjltTElleGpscHZ5ZTlyYVhPZURWVUtidm9OOG5LdVAtRzg3X1h6M3M0Q0lSSmlDcUhiYVpEdVBSN2xjQkppc1FPbWQwcUd2UmZaTWZJSUZ0Mzh1RDI0b21zNVBKSVp1R2dyUkNNQQ?oc=5",
+      "source": "가스신문",
+      "published": "2026-10-19 10:18",
+      "summary": "한국석유공사, 개방형 직위 확대 운영  가스신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a4b2bcc76229"
+    },
+    {
+      "title": "美·中은 실리 챙기는데 … 글로벌 ‘경유 쟁탈전’ 속 발 묶인 韓 정유업계",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWXItSnJBMm5ib2g0Mzhab0J0RldzN1B0bHVpNlRJSThITlRJWlZCd1AycEVnaUNlVHEyYzNqVDRXaVRtamMwNjExVi1idVVDczVTczVIMnFDRHVfMzl3VDVjV3ZaSWtISHcyN0VoYmhuLVpnXzFNSDBJVFNabG5DUdIBgAFBVV95cUxPWXItSnJBMm5ib2g0Mzhab0J0RldzN1B0bHVpNlRJSThITlRJWlZCd1AycEVnaUNlVHEyYzNqVDRXaVRtamMwNjExVi1idVVDczVTczVIMnFDRHVfMzl3VDVjV3ZaSWtISHcyN0VoYmhuLVpnXzFNSDBJVFNabG5DUQ?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-10-19 10:07",
+      "summary": "美·中은 실리 챙기는데 … 글로벌 ‘경유 쟁탈전’ 속 발 묶인 韓 정유업계  뉴데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7d814390be42"
+    },
+    {
+      "title": "[단독] 산업부, 비축유 417만 배럴 '그림의 떡'…정작 위기 땐 못 쓴다",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE55eFViUld5TG14QjhqeFI2dlZkRXZ6SnRRTEpRN0w3aE54ZENpekY3eElZZHpGaC1xdkh1cW5qVEp1VW9aTjdnZ0xpTkhuc1FpQ2s3alZfVjJFU2VH?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-10-19 10:00",
+      "summary": "[단독] 산업부, 비축유 417만 배럴 '그림의 떡'…정작 위기 땐 못 쓴다  뉴스핌",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8d10c795a1d3"
+    },
+    {
+      "title": "여수 석유화학 수출액 100억 달러 유지…물량감소에도 단가상승",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aOGJOaVJvTDRMaEQ0ZFFLWDNGS1FpaG1rTFg5V2ExVWEzeFhPMDVQMGswcThIU1hxMVl1NHRYcm9iVHhqcFZ0aEdKd1JRZHdac0RRaXo4NnhUY2JaNUVNWtIBeEFVX3lxTFBUVEpiNnpYUFcwbE15Um9JWEc0SHV1MWJ3RnpPelBnY3IyMklBR3V3SHFkbTM0TmJMREVVV0loNjhZdFIyQ3Q5dkhZMEtHdzlYZjlOM19pa1lZcDI3eXYwQXpyb0t0bDM3QnJ6RjBjeHRtX3J0a25wdg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-19 09:59",
+      "summary": "여수 석유화학 수출액 100억 달러 유지…물량감소에도 단가상승  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "여수 석유화학 수출액 100억 달러 유지…물량감소에도 단가상승",
+          "source": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBUVEpiNnpYUFcwbE15Um9JWEc0SHV1MWJ3RnpPelBnY3IyMklBR3V3SHFkbTM0TmJMREVVV0loNjhZdFIyQ3Q5dkhZMEtHdzlYZjlOM19pa1lZcDI3eXYwQXpyb0t0bDM3QnJ6RjBjeHRtX3J0a25wdtIBeEFVX3lxTFBUVEpiNnpYUFcwbE15Um9JWEc0SHV1MWJ3RnpPelBnY3IyMklBR3V3SHFkbTM0TmJMREVVV0loNjhZdFIyQ3Q5dkhZMEtHdzlYZjlOM19pa1lZcDI3eXYwQXpyb0t0bDM3QnJ6RjBjeHRtX3J0a25wdg?oc=5"
+        }
+      ],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "66b774e17f94"
+    },
+    {
+      "title": "호르무즈 유가 급등 겹친 중국 CXMT 메모리 공세",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1XUHlOZElCbVRVMjZTUFNRa3F0Tl9oYkZuN3JlX0ZMcUtKSU55WmRmSkRTWmtMbWN0dmZLeFE2QjRZUkstNEp3dHlWUGQ4T3k1ekxqaU53T1pJRF9IM256RTRnRlY0TlhUZ0FR?oc=5",
+      "source": "www.kmjournal.net",
+      "published": "2026-10-19 09:48",
+      "summary": "호르무즈 유가 급등 겹친 중국 CXMT 메모리 공세  www.kmjournal.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a227babb1a62"
+    },
+    {
+      "title": "이란전 포화에 2027년 유가 102달러 고착…원료비 치솟는 석유화학 비상",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNa0g0NFJQWXp5RmJTdG8yS2xLcXF2MXJJZUp5RG0wWUt5U1MxcmZBV0NGbFNPWGFuV2otXzRBbDJuOHlJREpSZzhieFlia0RYWmh3dmlHZWwwRDl6OFVjeXY2NDNhTHJPbGhEU09SMTB6M3NEMktWSnZUU0VPMnBiMXpJOUdYNlhk?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-10-19 09:43",
+      "summary": "이란전 포화에 2027년 유가 102달러 고착…원료비 치솟는 석유화학 비상  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c14a88f34523"
+    },
+    {
+      "title": "2026년 10월 19일 오늘의 연료 가격: 세계 유가는 주 초에 소폭 하락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOU0xFMDg4RTYxTHA3VEdzT1U4VFdDeUtTeWRqU1lJcU1QTWw0Sy0tNnZVdnlFcTdQNzB6U1BQV0c2MjZFOVhTYU0weXBMUFAyMFpmckw2OVVoT3V1MENNTzJlVVFHYTdweGpBQS1rOFRlZ3doV1phN183aE1KX3dvRU5hTFdLdnpxdDV2aUdjQjQ0dw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 09:43",
+      "summary": "2026년 10월 19일 오늘의 연료 가격: 세계 유가는 주 초에 소폭 하락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "336d1a1a8a1c"
+    },
+    {
+      "title": "AI 투자 불안·유가 상승…달러·원 환율 1335원대로 반등",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB4RDc0amJiajZCbkFaR2lsQTZ5cTMzQy05cUJaOWpLbnJ6eG5Ka0dGdnlVNEhZVmhaU2JsTnVKT1pnTWwzQUx6azl0MjNTLTVlbXJIc3hkSjhaZG8?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-19 09:42",
+      "summary": "AI 투자 불안·유가 상승…달러·원 환율 1335원대로 반등  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9e4d75b06482"
+    },
+    {
+      "title": "이란 \"호르무즈 해협 7일 안에 열 수 있어\"...7일 신뢰 구축안 유효 언급",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ZQ014QTR0YlJBQ0xMYjJMa1p6Tll0RlZ2UlJLRmUtdlZ5TkZfa0gtUGxIY19TUk5waDFLaVZfdnpJTXVhb19Ed3IzYXBxQjhIaWdtOEd2VDRCYlFEOWVHWGNFUTNGNlBlTV82cEZqeFNtZw?oc=5",
+      "source": "중앙이코노미뉴스",
+      "published": "2026-10-19 09:34",
+      "summary": "이란 \"호르무즈 해협 7일 안에 열 수 있어\"...7일 신뢰 구축안 유효 언급  중앙이코노미뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9b6777790e2d"
+    },
+    {
+      "title": "루피아는 17,894 IDR로 강세를 보였고, 석유 가격과 미국 달러가 지원을 받았습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9tb1N6ckJPc2pNNGM5UFkxQXUtMTc0ZWVoalZ0OWtMd0VfaDBpTkVHbVFLbXNUaGc2aDVLcHZnOE9TbFJHV0RF0gFCQVVfeXFMT0JXUnFFamcxcEJuNDBFWHplTXhKXzVHd0ZvenpGNnhSMUpvWWttbXdWLW11WGVDd3FtQ29aUEpCV3BR?oc=5",
+      "source": "VOI.ID",
+      "published": "2026-10-19 09:33",
+      "summary": "루피아는 17,894 IDR로 강세를 보였고, 석유 가격과 미국 달러가 지원을 받았습니다.  VOI.ID",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "104d42cdb3fe"
+    },
+    {
+      "title": "권향엽 \"상품권 사재기·영수증 조작도 못 걸러낸 석유공사\"",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YOF9PUWcxeTZHQjJIN3NoWkplVzJyY3FRU1hLUU1LaTBxTHNBdW1iY3NOeVY2dF9mc2JtMzRYZjlDWTNVNEx2T0JBWGhWb2J2aTNUNW16VjgtblZKSUhXV1R2ZjZBTnZ1MVYxdm9R?oc=5",
+      "source": "국제뉴스",
+      "published": "2026-10-19 09:19",
+      "summary": "권향엽 \"상품권 사재기·영수증 조작도 못 걸러낸 석유공사\"  국제뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e1c5ffabbdc6"
+    },
+    {
+      "title": "[2026 국감] 산업부 \"기름 사 와야 빌려준다\"…비축유 3300만 배럴의 '민낯'",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ITnFfbXo2aXVQYlNmR0FSUk1idU5CWjNWTlh1cHAtREhpbGN4cVFtdXJHS3l2VDNycVdjWnNPVzkxOXJWdUxlUkFOUV9IdE1hRGlfSGhMdzFCTG1D?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-10-19 09:17",
+      "summary": "[2026 국감] 산업부 \"기름 사 와야 빌려준다\"…비축유 3300만 배럴의 '민낯'  뉴스핌",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "882ea1a0fbbd"
+    },
+    {
+      "title": "트럼프, 러시아 제재 면제…국제유가 하락",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56R0RQNXJlT3JyQkdjTXQwX0QwcUllQXJGaWdSZjhna2pub3JPckc4WlkwSnlKS0l4aWwyUTl0TDNMd3RHQlZ4NkNQaXZ2dE00VVVpVGctUzk0T21HZF9LZVkxNFFFSVBMd2NxWDI3dw?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-10-19 09:14",
+      "summary": "트럼프, 러시아 제재 면제…국제유가 하락  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "043edccc9195"
+    },
+    {
+      "title": "주간 경제 뉴스: 인플레이션에 흔들리는 연준 전망, 국제유가 급등 외",
+      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNRGZsbkxqWmZLN25EM0w3ZVRVOUpBbmpnVkNqQ25TVS0wb1BhOFlxSHdfUGt2anl0S3JOYXR5RTU2SktHWllqeGNGOEExUFJiX3U1LUhvWmg0SkFFQ2taYWdFejl6eTNPbDJEOWJqOXp6VXRNcTlRWllOQ204dm1sODZXOWppelVEOVRfdnJhTjd0MDhvZVdsdllxSnJ6WFJmQmJVOTQ0MWxWMGtmVXZnRFMzVzFTZ3RsUzVTa3o5eHEyOXYyeDNzbVUxMnNEZDU2UUxJUTlFcEFfdUhXU1Aybi1XcDExcVc4NC1iUjQ1emRoUVBva0dIdUpVR3dtb2ZFNXhfS1hwby1KWmhROC1DRDhJUFE1a1FOa0tGbWF6M29HUTlwamJwcUoxRkhRMTdvOS1uNFhCTjFsVlVxc1ZCWjZZYjlTZHpWS1ZwQ0Q1WjlINVA2dHl6bUVB?oc=5",
+      "source": "Benzinga",
+      "published": "2026-10-19 09:12",
+      "summary": "주간 경제 뉴스: 인플레이션에 흔들리는 연준 전망, 국제유가 급등 외  Benzinga",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ede3afb7eb68"
+    },
+    {
+      "title": "이란, 호르무즈 '7일 계획' 재압박···美와 핵문제 이견 여전",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1zbnpHMldVLTJZdVdQT1NvVGZZQm5uRk1EM2E3LXNfZUlhTUZYcEpYLUVRcEdZcGpCOXdKUldxSHRsU0djeHJWVUp5cDZUZy1iWGF5dnMwdGM2VnlrV3dPTmdENmlPUnZoa2JiaQ?oc=5",
+      "source": "스마트비즈",
+      "published": "2026-10-19 09:05",
+      "summary": "이란, 호르무즈 '7일 계획' 재압박···美와 핵문제 이견 여전  스마트비즈",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a30f9bb5dc62"
+    },
+    {
+      "title": "2026년 10월 19일 연료 가격: 세계 유가가 주 초반에 추세를 반전시켜 하락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRWU2WERmdEdsX3hPM2RsVFBLdklZY016MGtiSkJLSm1mYk1zTWwxUnpwdzA4a2tBcTFmbUJLN2xjc3BMdV9XNFItQXdJN0Fjam1MeDJFUmh2SFZ4dVhWR043N1dYdDhBZHB2QnRtNW5OSkhuOWwxR2h6YjZEX1BPb3psMDZrcHg4Rl92Zzl0MkhYelNXcEE?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-19 08:50",
+      "summary": "2026년 10월 19일 연료 가격: 세계 유가가 주 초반에 추세를 반전시켜 하락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bfe53cbbcedb"
+    },
+    {
+      "title": "국제유가, 5개월 만에 최고치서 하락…중동 원유 공급 유지에 상승세 주춤",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ybmtwMHpOeTlHTkU4RExYRUxjQ0JQS2l0Q19mbkIzZTlINjNtTnMyX29ab0wyS1ZvNHotY0JfaFg1OVRWWjBtQjBqdmlFSllV?oc=5",
+      "source": "블루밍비트",
+      "published": "2026-10-19 08:45",
+      "summary": "국제유가, 5개월 만에 최고치서 하락…중동 원유 공급 유지에 상승세 주춤  블루밍비트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6c95fb8f4ad7"
+    }
+  ]
+}
