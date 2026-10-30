@@ -1,0 +1,1748 @@
+{
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31 08:49",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1335.27,
+      "change_pct": -0.15105175392024034,
+      "unit": "원",
+      "as_of": "2026-10-30",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 102.0,
+      "change_pct": -0.7589013315438873,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-29",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 114.87999725341797,
+      "change_pct": -0.3815491177338237,
+      "unit": "달러/배럴",
+      "as_of": "2026-10-29",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 128,
+    "fresh": 128,
+    "classified": 128,
+    "representatives": 102,
+    "duplicates": 26
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.1-flash-lite",
+        "issues": [
+          {
+            "title": "호르무즈 해협 유조선 화재 발생 및 긴장 고조",
+            "summary": "호르무즈 해협에서 유조선들이 화재 후 운항을 중단하는 사고가 발생했습니다. 이란 혁명수비대는 유조선들이 기뢰와 접촉하여 화재가 발생했다고 주장했으며, 일각에서는 미승인 항로 운항 등을 원인으로 거론하고 있습니다. 이로 인해 해당 해협의 물류 차질 및 국제 유가 변동 가능성이 제기됩니다.",
+            "change": "전일 기뢰 폭발 사고 최초 보도 이후, 유조선 화재 및 운항 중단 사실이 구체화되었습니다.",
+            "impact": "호르무즈 해협의 긴장 고조는 국제 유가 상승 및 국내 석유 수급 불안정을 초래할 가능성이 큽니다. 비상시 석유 수급 안정화 및 가격 모니터링 업무에 영향이 있을 것으로 예상됩니다.",
+            "article_ids": [
+              "6dc3a2c32293",
+              "e2d865581406",
+              "6b9148daa986"
+            ]
+          },
+          {
+            "title": "인천 검단구 상가 LPG 폭발 사고 발생",
+            "summary": "인천 검단구 마전동의 한 상가 음식점에서 인테리어 작업 중 LPG 폭발 사고가 발생하여 부상자가 발생했습니다. 현재 작업자의 부주의가 원인으로 추정되고 있습니다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "가스 및 석유 등 에너지 취급 시설의 안전관리 강화 필요성이 강조됩니다. 관리원의 주요 업무인 석유 유통 및 품질 관리와 직접적 관련성은 낮으나, 유사한 가스·석유 관련 안전사고 예방을 위한 안전 점검 및 현장 계도 활동 강화 가능성이 있습니다.",
+            "article_ids": [
+              "1c7b6cc2a12d",
+              "e8cb830c77a4"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1559,
+          "candidatesTokenCount": 500,
+          "totalTokenCount": 2178,
+          "thoughtsTokenCount": 119
+        },
+        "attempts": 3,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "version": 1,
+        "model": "groq/qwen/qwen3.8-27b",
+        "issues": [
+          {
+            "title": "호르무즈 해협 유조선 화재 사건, 선박 수 집계 차이 및 이란 측 주장 분석",
+            "summary": "호르무즈 해협에서 유조선 화재·운항 중단 사건이 발생했음. 이란 혁명수비대(IRGC)는 유조선 2척이 '미승인 항로'에서 화재가 발생했다고 주장했으나, 관련 보도에서는 선박 수가 2척으로 보도되기도 하고 3척의 기뢰 접촉으로 확산되기도 하는 등 집계와 구체적 원인(기뢰 여부)에 대한 정보 불일치가 존재함.",
+            "change": "전일에는 유조선 3척의 기뢰 폭발로 보도되었으나, 이번 자료에서는 2척 화재 및 미승인 항로 운항 혐의가 중점적으로 다뤄지며 선박 수와 인과관계에 대한 보도가 엇갈림.",
+            "impact": "중동발 공급 차질 가능성으로 국내 자동차 및 항공유 수입 물량의 수급 변동성이 커질 수 있으며, 시세 급등 시 석유시장 안정화 조치 및 품질·정량 점검 강화가 필요. (가능성: 고)",
+            "article_ids": [
+              "6dc3a2c32293",
+              "e2d865581406",
+              "6b9148daa986"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "prompt_tokens": 1445,
+          "completion_tokens": 326,
+          "total_tokens": 1771
+        },
+        "attempts": 1,
+        "provider": "groq",
+        "status": "ok"
+      }
+    ],
+    "issues": [
+      {
+        "title": "호르무즈 해협 유조선 화재 발생 및 긴장 고조",
+        "summary": "호르무즈 해협에서 유조선들이 화재 후 운항을 중단하는 사고가 발생했습니다. 이란 혁명수비대는 유조선들이 기뢰와 접촉하여 화재가 발생했다고 주장했으며, 일각에서는 미승인 항로 운항 등을 원인으로 거론하고 있습니다. 이로 인해 해당 해협의 물류 차질 및 국제 유가 변동 가능성이 제기됩니다.",
+        "change": "전일 기뢰 폭발 사고 최초 보도 이후, 유조선 화재 및 운항 중단 사실이 구체화되었습니다.",
+        "impact": "호르무즈 해협의 긴장 고조는 국제 유가 상승 및 국내 석유 수급 불안정을 초래할 가능성이 큽니다. 비상시 석유 수급 안정화 및 가격 모니터링 업무에 영향이 있을 것으로 예상됩니다.",
+        "article_ids": [
+          "6dc3a2c32293",
+          "e2d865581406",
+          "6b9148daa986"
+        ]
+      },
+      {
+        "title": "인천 검단구 상가 LPG 폭발 사고 발생",
+        "summary": "인천 검단구 마전동의 한 상가 음식점에서 인테리어 작업 중 LPG 폭발 사고가 발생하여 부상자가 발생했습니다. 현재 작업자의 부주의가 원인으로 추정되고 있습니다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "가스 및 석유 등 에너지 취급 시설의 안전관리 강화 필요성이 강조됩니다. 관리원의 주요 업무인 석유 유통 및 품질 관리와 직접적 관련성은 낮으나, 유사한 가스·석유 관련 안전사고 예방을 위한 안전 점검 및 현장 계도 활동 강화 가능성이 있습니다.",
+        "article_ids": [
+          "1c7b6cc2a12d",
+          "e8cb830c77a4"
+        ]
+      },
+      {
+        "title": "호르무즈 해협 유조선 화재 사건, 선박 수 집계 차이 및 이란 측 주장 분석",
+        "summary": "호르무즈 해협에서 유조선 화재·운항 중단 사건이 발생했음. 이란 혁명수비대(IRGC)는 유조선 2척이 '미승인 항로'에서 화재가 발생했다고 주장했으나, 관련 보도에서는 선박 수가 2척으로 보도되기도 하고 3척의 기뢰 접촉으로 확산되기도 하는 등 집계와 구체적 원인(기뢰 여부)에 대한 정보 불일치가 존재함.",
+        "change": "전일에는 유조선 3척의 기뢰 폭발로 보도되었으나, 이번 자료에서는 2척 화재 및 미승인 항로 운항 혐의가 중점적으로 다뤄지며 선박 수와 인과관계에 대한 보도가 엇갈림.",
+        "impact": "중동발 공급 차질 가능성으로 국내 자동차 및 항공유 수입 물량의 수급 변동성이 커질 수 있으며, 시세 급등 시 석유시장 안정화 조치 및 품질·정량 점검 강화가 필요. (가능성: 고)",
+        "article_ids": [
+          "6dc3a2c32293",
+          "e2d865581406",
+          "6b9148daa986"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-10-30T22:31:02.614147+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "호르무즈 해협서 유조선 2척 화재…이란 \"미승인 항로 운항\"",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zRHZWNnRRR282ZTh6RnNTVUYyUTlhTXRxY1RlSVJuWXQ3Mm5VVzVvTGRyRGxSREw2WUI4em5kTmJsb1ZvVDFadllGWmppOWwyOEI3YW1TYnBOaWd2cjJ0aldIdnZGTmlEZWJKdDUtVQ?oc=5",
+      "source": "대전일보",
+      "published": "2026-10-30 21:34",
+      "summary": "호르무즈 해협서 유조선 2척 화재…이란 \"미승인 항로 운항\"  대전일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6dc3a2c32293"
+    },
+    {
+      "title": "이란 혁명수비대 “호르무즈 해협서 유조선 2척에 화재”",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oU29VWUluQ042VXB6eExCMEh4UGxWcVRwcTl0WGkxM1EtMGJEdjRUbW9WOXdrU3pyX2FvVWc2X0UwUkpac2VIX2JRWnZlWE9XLVY4Rk1JZ1Awd9IBX0FVX3lxTE5IRWozd1YwN2RObW5oTmdJNW14OWNSXzI2Q2tVVnd1NzZuNmxCNGtlTkxPVGhJdjlrOWJQUWZtNFVvZG1EWklnWVpoX2l5NGtKcDlPMmpJODkyRHpmcGtJ?oc=5",
+      "source": "경향신문",
+      "published": "2026-10-30 21:32",
+      "summary": "이란 혁명수비대 “호르무즈 해협서 유조선 2척에 화재”  경향신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e2d865581406"
+    },
+    {
+      "title": "이란, 호르무즈서 유조선 공격한 듯…\"2척 화재 후 운항 중단\"",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QWUpYaV95RlpKd3BualpZbVFOaV9XLURwMm9VcFhTSDFTeDA1bVA0UnJBcTNaMFdfN2p3M2VBX3p1XzBpV0hnN2lIRW9EQUFHWW9hMUJGUDNacknSAWBBVV95cUxOTTVEb2s0cGFibVpBaGZSbXN1aDVlMFllUkpkWFV2VU05WWdMSHVvNXJ4YXNxQjViY0c1XzdvWENkMVNMMjhJMUFaZE5ibXh6TG9LdkFocjB6eldFR3BjSDY?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-30 21:06",
+      "summary": "이란, 호르무즈서 유조선 공격한 듯…\"2척 화재 후 운항 중단\"  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6b9148daa986"
+    },
+    {
+      "title": "류충석 서장, 관내 한국석유공사 금호타이어 화재안전 점검",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5EUmF6RUdWMnoxQVZQNVNUbGI3cW94cVFFVDFYTlFEUmFzY21sc0tjYTRaQUJIWDlrLWl5Vi14MGNVYWRnSFpoVWVFcmtoT2ZZTHFsYnNmMTJ0T3lVZEdpUjJuQ2l5dFA0VklBaC130gFuQVVfeXFMTkRSYXpFR1YyejFBVlA1U1RsYjdxb3hxUUVUMVhOUURSYXNjbWxzS2NhNFpBQkhYOWstaXlWLXgwY1VhZGdIWmhVZUVya2hPZllMcWxic2YxMnRPeVVkR2lSMm5DaXl0UDRWSUFoLXc?oc=5",
+      "source": "세이프투데이",
+      "published": "2026-10-30 18:12",
+      "summary": "류충석 서장, 관내 한국석유공사 금호타이어 화재안전 점검  세이프투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c35e42f7f743"
+    },
+    {
+      "title": "인테리어 작업자 부주의로 LPG 폭발",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127429",
+      "source": "가스신문",
+      "published": "2026-10-30 17:33",
+      "summary": "인테리어 과정에서 LPG가 폭발한 것으로 추정된다.\n\n\n\n[가스신문 = 김재형 기자] 인천 검단구 마전동의 한 상가건물에서 LPG시설에 대한 안전조치가 제대로 이뤄지지 않은 상태로 인테리어 작업이 진행되면서 가스가 폭발해 작업자 등 4명이 다치는 사고가 발생했다.\n\n사고는 지난 27일 오전 음식점 폐업에 따른 리모델링 공사 과정에서 발생했다. 당시 인테리어 작업자가 기존 LPG시설의 안전 여부를 제대로 확인하지 않고 안전조치 없이 임의로 작업을 진행하면서 가스가 누출됐으며, 이후 바닥 드릴 작업 중 발생한 불꽃이 누출된 가스에 착화",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "1c7b6cc2a12d"
+    },
+    {
+      "title": "인천 검단구 LPG 폭발... 작업자 얼굴 화상 등 4명 부상",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=304874",
+      "source": "투데이에너지",
+      "published": "2026-10-30 14:31",
+      "summary": "인천 검단구 마전동에서 발생한 LPG 폭발 사고로 상가 음식점에 잔해들이 널려있다./출처 검단구청\n\n\n\n[투데이에너지 신영균 기자] 인천 검단구 마전동에서 LPG 폭발 사고가 발생했다. 이로 인해 4명이 부상했다. 사고 원인은 리모델링 업체 관계자가 취급부주의로 가스를 누출했고 이후 작업 과정에서 폭발이 발생한 것으로 드러났다.\n\n이번 사고는 지난 27일 오전 발생했다. 검단구청에 따르면 당시 상가 내 음식점을 리모델링 중이던 업체 관계자는 취급부주의로 가스를 누출했음에도 이를 인지하지 못하고 바닥 드릴 작업을 강행했다. 이 과정에",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:투데이에너지",
+      "language": "ko",
+      "event_key": "",
+      "id": "e8cb830c77a4"
+    },
+    {
+      "title": "유조선 세 척이 호르무즈 해협에서 기뢰에 부딪혀 화재가 발생했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdjJoR2tYbk56ZU9SQ2J0ZkZyNk96RUppTE80Y2xkbGk2ajREbUpfRHdwZTl3cUpqd2I4eEItYk9NSUZKNmM0YTZqMi1FRmZoUVNGbXE4S1F3UkRCUTVWU3d4S2F4SVdKQzJUZG1BTUJsc1BaR0RSYUpWc3dXSUN6V2Jzbk9UdWZ0d0J5NkZn?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 13:22",
+      "summary": "유조선 세 척이 호르무즈 해협에서 기뢰에 부딪혀 화재가 발생했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "adbeb2acdb56"
+    },
+    {
+      "title": "美는 다 제거했다는데…이란 \"호르무즈 유조선 4척 기뢰로 화재\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ncFVzNWNkTDZWLUIyYkp5a05qVk5kTDdLNF9kTmhHVVFhVGxhTVUydGhOT3BjVURDaGh3cVhUQTdiUUVXeUlaSHdZeGw5NzZoM3RTdTgtS19teU52OU5aUThR?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-30 11:01",
+      "summary": "美는 다 제거했다는데…이란 \"호르무즈 유조선 4척 기뢰로 화재\"  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cf71c8012b22"
+    },
+    {
+      "title": "호르무즈 해협 선박서 화재 발생...이란 \"유조선 기뢰충돌 화재\"",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1lTmJnczYyVW1PLVB2WlZkMl9pNDdPWXBzNnBia0JPNFcwSUJ1NUItZUY2dUFHd1ZGQ3Q3RmlzYWRtM0g2S0Nja2pzblVJcnV2Yzg0YmtoNi1lN09lclE?oc=5",
+      "source": "YTN",
+      "published": "2026-10-30 09:43",
+      "summary": "호르무즈 해협 선박서 화재 발생...이란 \"유조선 기뢰충돌 화재\"  YTN",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e078c9a2b589"
+    },
+    {
+      "title": "정유사 최고가격제 손실보전 5.7조 vs 1.8조…11월 확정에도 연내 지급 '안갯속'",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE40UnN4WVBVY3plYlNhMTBJUHd0aHAyZzZxeUFmYnBXOG1WZ3BYdFVXMm9QVDFOQWsyZXJCd3Y5X0hBaV9QbWhyMzk5TklId2psMjdmaFFhVDYyMTVFVTFaRDM4Zmg1SEYwelJoUVE4S2V6UlBXMEMyZEtEVnc?oc=5",
+      "source": "빅데이터뉴스",
+      "published": "2026-10-30 16:13",
+      "summary": "정유사 최고가격제 손실보전 5.7조 vs 1.8조…11월 확정에도 연내 지급 '안갯속'  빅데이터뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e93dd2c7b05c"
+    },
+    {
+      "title": "정부 '경유 수출 제한' 조건부 완화... 11월 시행",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=304875",
+      "source": "투데이에너지",
+      "published": "2026-10-30 15:39",
+      "summary": "원유 운송선이 운항하고 있다./HD현대중공업 제공\n\n\n\n[투데이에너지 신영균 기자] 중동 전쟁으로 인한 공급 물량 급감으로 국제 경유 가격이 급등세를 나타내자 국내 정유업계는 \"수출 제한 조치를 완화해 달라\"고 정부에 요청했다. 정부가 이를 받아들였다. 지난해 기준으로 SK에너지, GS칼텍스, S-OIL, HD현대오일뱅크 등 국내 정유4사가 수출한 하루 평균 경유량은 56만 1000배럴이다. 이에 해외에서 구매 문의가 지속되는 상황이 배경이다. \n\n산업통상부는 국내 수급에 차질이 없는 범위 내에서 '경유 수출 제한'을 조건부로 완화",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "경유 수출제한 조건부 완화…11월 수출 물량부터 적용",
+          "source": "한국관세신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE54VTl2MnJQbTRGTEU4Q2xjNm5pVU1JLWNsUEtvNTAwbVA2VXVrUzEwWURyYi1RemxWMXYtcDI4TUQzVklGNGtHUHBaTGJQSmo2RmNUNkY2Yi1meFgyS2dqaGpqQWlzVTR4aEt30gFrQVVfeXFMTnhVOXYyclBtNEZMRThDbGM2bmlVTUktY2xQS281MDBtUDZVdWtTMTBZRHJiLVF6bFYxdi1wMjhNRDNWSUY0a0dQcFpMYlBKajZGY1Q2RjZiLWZ4WDJLZ2poampBaXNVNHhoS3c?oc=5"
+        },
+        {
+          "title": "경유 수출제한 조건부 완화…11월 수출 물량부터 적용",
+          "source": "한국관세신문",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5hNTBQTDdwMEcxaTNmbVozemRMd3pxQVEzeEZXbXROd1BtU0UwbDVpRE1UYUszVjZQTHpwcWNqT2IzVFlMSF92dVdqNjRtV20yejZnNk93UlJFNWZrMjhTbG00aU1wUdIBa0FVX3lxTE54VTl2MnJQbTRGTEU4Q2xjNm5pVU1JLWNsUEtvNTAwbVA2VXVrUzEwWURyYi1RemxWMXYtcDI4TUQzVklGNGtHUHBaTGJQSmo2RmNUNkY2Yi1meFgyS2dqaGpqQWlzVTR4aEt3?oc=5"
+        }
+      ],
+      "query": "rss:투데이에너지",
+      "language": "ko",
+      "event_key": "",
+      "id": "8dab27ed3edc"
+    },
+    {
+      "title": "정유업계, 경유 수출 10% 확대 '기대'…최고가격제 손실 보전 결과 주목",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE55bGtaRTRXN3h0eEh4Y0E2R3dEVFVUVk9YLTVZMlR3UWtmaGNrVU9uTWI5ekoxTE8zNGFhakFBWFJKSGdKSTh2VldBRDFTRldXalVmYnc2UktDd9IBVEFVX3lxTE5WYl9Bbm9XTkdyWS12R0dNbDUxc2czdlhmcVBjNHFOclhydTBERnMwVTloRjd6WkZ6Z2FKSVoyTERTQWEtd2tRdjJ2RkNhbW1VWFhqMw?oc=5",
+      "source": "더팩트",
+      "published": "2026-10-30 14:56",
+      "summary": "정유업계, 경유 수출 10% 확대 '기대'…최고가격제 손실 보전 결과 주목  더팩트",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "정유업계, 경유 수출 10% 확대 '기대'…최고가격제 손실 보전 결과 주목",
+          "source": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WYl9Bbm9XTkdyWS12R0dNbDUxc2czdlhmcVBjNHFOclhydTBERnMwVTloRjd6WkZ6Z2FKSVoyTERTQWEtd2tRdjJ2RkNhbW1VWFhqM9IBVEFVX3lxTE5WYl9Bbm9XTkdyWS12R0dNbDUxc2czdlhmcVBjNHFOclhydTBERnMwVTloRjd6WkZ6Z2FKSVoyTERTQWEtd2tRdjJ2RkNhbW1VWFhqMw?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "04d2e92037f3"
+    },
+    {
+      "title": "日 정부, 12월부터 휘발유 보조금 단계적 축소…매월 5엔씩 인상",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aLW5hM1pNeFBLMUYzVE9GYkpUdF9PNDFOT0FKaWpKd1ViY0k0TWRQY1g2M0N5aldQakh6dkNWa0FHM1c5Z2dyRXZoRFJRYXppV0JweVM5aG9tLVQ3RERGeGZlb1ZsR0drVkFUeg?oc=5",
+      "source": "재팬코리아데일리",
+      "published": "2026-10-30 14:43",
+      "summary": "日 정부, 12월부터 휘발유 보조금 단계적 축소…매월 5엔씩 인상  재팬코리아데일리",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c06ca1b029ec"
+    },
+    {
+      "title": "정부, 경유 수출제한 조건부 완화…전년 동월 대비 110%까지 허용",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95Um41U3A0dklVSXE0clc1MHBfSGsyVXZ3Vk8yYk9JRVI5Wks4MDJFYUdVbXdQcDVpeVg2N0Q4OXdpdFhub0NLeVpaX0p1djhmak1EQm1jTk9LNEtaM242Y3ZsbG5seDF5SG9kTGZn?oc=5",
+      "source": "포커스경제",
+      "published": "2026-10-30 12:24",
+      "summary": "정부, 경유 수출제한 조건부 완화…전년 동월 대비 110%까지 허용  포커스경제",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7e01077e1402"
+    },
+    {
+      "title": "경유 수출 한도 높인 정부…정유사 최고가격제 부담 얼마나 덜까?",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LQ0h6MklRMHFMZEhCSWYwV3RFVjgwY3hmcDdaeHNfTEE0YzFFbGVpYkFzcXltSHQtZzF1U1JjRWpVb1Q0SDA3Ti1iUUZLajF6ZUFPNVVNSmwyWmZyejRyVjkwYlV1UnQ3Q1E?oc=5",
+      "source": "nbn 시사경제",
+      "published": "2026-10-30 10:50",
+      "summary": "경유 수출 한도 높인 정부…정유사 최고가격제 부담 얼마나 덜까?  nbn 시사경제",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2bf28dd2f88c"
+    },
+    {
+      "title": "[2026 공공기관 포럼] 공공기관 AI 혁신, 효율 넘어 국민 삶으로…“자율경영 뒷받침해야”(종합)",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBtbFg0Zkt6ei1KeTBsVGZlMGNXekYtTHVoOHJXQjgweHo2dldWeWktX1ByZVFHaFU2b3F1aFkyR2ItUXh0ek53ZjB4RWcyRjVERy1sUkJEWU9OVm9vdjI2YUtoTlBhdGZOOXNHQg?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-30 17:06",
+      "summary": "[2026 공공기관 포럼] 공공기관 AI 혁신, 효율 넘어 국민 삶으로…“자율경영 뒷받침해야”(종합)  아시아투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[2026 공공기관 포럼] 공공기관 AI 혁신, 효율 넘어 국민 삶으로…“자율경영 뒷받침해야”(종합)",
+          "source": "아시아투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1nNjE4MHVZMzNsN0NsY21mU3JMN3pRcGFQazI2NDJBOEJBZlAzSi1vMVhOZTMwRE9xUnJKUG9iYnlIZkt6TllkdXdITEE2eXc1T1BMTXBOczhKRzN3SmtmSlozWi1FZDBCX1ZmdnF3?oc=5"
+        }
+      ],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "32ba2e9c3290"
+    },
+    {
+      "title": "2차 공공기관 이전 '꼭 혁신도시로 해야 하나요?'",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBJc3dreXlwRmlqRGRyXy1HNG8tTWJJTXJhejBmUW9LWXBKMDQzYXZ2UThmd2MyOU1pT05nX3gxVXBIY2ZaNUhlU2g0Wlp0cjFlT3RSa0VYeGtUVUtyUm84TXE3TjJLUC1UVWQ3Wko4NNIBc0FVX3lxTE1JN0RkR044Rks1cFpTNWFON1pZOFFzRFY0YWFfWlk3UGhKUDhVZjlGejdzTjMtUWpvcjFHZWRnTFY5bUR2ZG51Z2I0SUlmeW5hTHR2bDdYMEFTZXR3RGpfVUhtanBEdGdNdk1HV2pwQnJ5emc?oc=5",
+      "source": "데일리한국",
+      "published": "2026-10-30 17:03",
+      "summary": "2차 공공기관 이전 '꼭 혁신도시로 해야 하나요?'  데일리한국",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d8db3787e46d"
+    },
+    {
+      "title": "\"2차 공공기관 이전은 기존 혁신도시로\"…나주시 범시민위원회 출범",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hRHVOdl90VTBDR0lPRmVzMG5mbWgxelY1eXRKN2thSFJmdlRsNmwybkF3NHB1eEg4eXVodnlKbFJuS2xHWkVldUgtVE8xRmRNNmNNcC1oUnc1UDBPNlkw?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-30 16:22",
+      "summary": "\"2차 공공기관 이전은 기존 혁신도시로\"…나주시 범시민위원회 출범  뉴스1",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "767ae087faad"
+    },
+    {
+      "title": "창원시의회 “2차 공공기관 이전, 혁신도시에만 집중해선 안 돼”",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uQnp4U3NIU1hrdHhCTkFqcjFNb0lzWmhPbGMxR2Y3Rkd5NEQ5cU1raHB4ZFB5MzVEYjFZTGNNR3VzcWxSVUE1dkZPa1VxbDh1MEk2NU1nMldWVVZ2enNlWERKQWI1UdIBaEFVX3lxTE9rNVBSRUFDU2Y2MmNyekRUeG50ZzF0SXNGaF8tb0ZqYVFnOURVdzNKRl9sV1liT3l4UFBKYTZZRERYX0FEUnZSM0xnUWozRGlITWZ5TkpRSlZlOHhsbXljc250RmJ2UEZS?oc=5",
+      "source": "경남경제",
+      "published": "2026-10-30 16:10",
+      "summary": "창원시의회 “2차 공공기관 이전, 혁신도시에만 집중해선 안 돼”  경남경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c1a45e456303"
+    },
+    {
+      "title": "\"2차 공공기관 나주혁신도시 집적화가 정답\"…유치전 본격화",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5JUzFhRjUtT3dXM1BPREVpUWRJNTRkUzI1TXZyRFg2YjNpblVLYXJkdFFOdFRTWXdHNGpfQmp2dEJmMkIyMDQzQzNGTGRTcnN1eUtaOXo0R0xHS2swZHZQdNIBeEFVX3lxTE5oWEprTmVod3VVcHZKc1M1OGFTSjA1RWhIQU1RbFdwc0hTRWx6SS1mSWFXT19jT0UzYnpfLWlJMHVVaFhvOGl0WkxycGNkUjRVQTliMVlsTGlBX1Y1UzdYanFHUEtONi1CTDE5eVg2TVp4M2h6Y3YtQg?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-30 15:55",
+      "summary": "\"2차 공공기관 나주혁신도시 집적화가 정답\"…유치전 본격화  뉴시스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "091ad88f5de1"
+    },
+    {
+      "title": "“공공기관 취업 박차 결실”…동신대, 최근 1년 혁신도시 공공기관 10명 합격",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5lRERMV0dFQl9nbEExamZISDFUOWFVRUVMTWE4Z3dwZlBJUEJtT0RZTTVQVHNtU2dWNV9UQjJvRUVpQ3k4bElfR19hVWNZUQ?oc=5",
+      "source": "전자신문",
+      "published": "2026-10-30 14:30",
+      "summary": "“공공기관 취업 박차 결실”…동신대, 최근 1년 혁신도시 공공기관 10명 합격  전자신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "41d128966760"
+    },
+    {
+      "title": "[2026 공공기관 포럼] 도로공사, 2030년까지 업무 60% AI 전환…안전관리 혁신",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5KSmlYcVdjQk81WHdIc20wV3lIUV9UV1VUQjZpbV91NXUxbUNaZUQxbTFzczRCTUhNSHdnaExqbmNTZVBZVXYyeXRjaDhTR0RfblFHdHlnTlBtbXZzY05WVnI4UGg4Y2JwRmxvZGlB?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-30 14:15",
+      "summary": "[2026 공공기관 포럼] 도로공사, 2030년까지 업무 60% AI 전환…안전관리 혁신  아시아투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1a97159b7549"
+    },
+    {
+      "title": "[2026 공공기관 포럼] “평가의 역설 극복해야”…AI 혁신, 자율성 확대 촉구",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SWF9FbDlrakNmWTBXVlJSNEMwYXA1S2dXVDBSZy04emY4bVBiUi1pVUQ2d2hNWGZMZ2tfZDAzMy1SSFFNQnhmeWlOMG9NX2lKLTQ3R3o5X0FOd21MNERTdjN2QnFVN2VIWHhZTlFB?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-30 13:58",
+      "summary": "[2026 공공기관 포럼] “평가의 역설 극복해야”…AI 혁신, 자율성 확대 촉구  아시아투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f3efc3980a15"
+    },
+    {
+      "title": "[2026 공공기관 포럼] 원숙연 이대 교수, 공공기관 혁신에 “임기 갈등·평가의 역설 해소” 주문",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EZjVxOHFMd0liV2o5MXV2TUJTV1BzNnlOelJMVFBHQ1plRGU4WnY4ajN0NERCR2YzOW5keDFXNmw5TG1laTlVQnpDQlJ4SURzSjZTVGltalZrdDVfMVlNcnJ4bFVxMWJNbkJPc2NB?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-30 12:08",
+      "summary": "[2026 공공기관 포럼] 원숙연 이대 교수, 공공기관 혁신에 “임기 갈등·평가의 역설 해소” 주문  아시아투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a1b17b2c0e1b"
+    },
+    {
+      "title": "“국민과 함께 공공기관 AI 혁신 성과 확산” 인천공항공사, AI 청년 서포터즈 활동 성료 !!!",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9OUUdhZGlCWFIybVRKdWRCaE9uSGFkbUhscm5DYVVjV3pQTlptV05DOENRWUZLU1R4X3lQMlp6b3N2eDJ5UHdZMWsySmY5SWNPRnYySE5WaDFfT3RqU2U5X2luYmY1dFZsd19CVnNB?oc=5",
+      "source": "세정포커스",
+      "published": "2026-10-30 11:35",
+      "summary": "“국민과 함께 공공기관 AI 혁신 성과 확산” 인천공항공사, AI 청년 서포터즈 활동 성료 !!!  세정포커스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "“국민과 함께 공공기관 AI 혁신 성과 확산” 인천공항공사, AI 청년 서포터즈 활동 성료 !!!",
+          "source": "한국미디어뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5Q1NYaGtpd3V0dC1zWnZkVGtCdmlFN1FCVXdSSko5TFVUazY2NXdrbTlnWGJoVUdZQnlJZXpPZnZpV1o1UkJWWjF0eldrdno0YTlxRzh3czVTczJPVFd1S3ZleUhsQQ?oc=5"
+        },
+        {
+          "title": "“국민과 함께 공공기관 AI 혁신 성과 확산” 인천공항공사, AI 청년 서포터즈 활동 성료 !!!",
+          "source": "https://www.climatepol.com/",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE94aTVXcXFibndaZTZvY3Vkd0tmdFRKamdOTFpMUnQzNnRnTmhNWENCUUp1MHZIVG5NUGNTZGlWVDZYQm9IU0NkSzFibnpZeTFYdGliOGVjTmtlVHdRRFhtSmF4aHdhakJoMGMzTA?oc=5"
+        }
+      ],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "33061bbe362e"
+    },
+    {
+      "title": "[2026 공공기관 포럼] 김주영 의원 “AI 혁신, 사회적 가치로 이어져야”",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfX2hLTW0zcVhPQ1NZSWlfNEdkcU1tTnI1YmM5bHNPd0VQeHM1cG5SR0FxVDRNNXRnaUt4M3ZJOHlVM0x6elB6UktiQlVzS3hhclVvWjFiZkUySWNvVjkwRElxOFhzeEVwTVRlYkFn?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-10-30 09:44",
+      "summary": "[2026 공공기관 포럼] 김주영 의원 “AI 혁신, 사회적 가치로 이어져야”  아시아투데이",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 경영평가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0f8feeb752e7"
+    },
+    {
+      "title": "Russia plans to export 2.15 million tons of diesel in November, media say",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOUJQUW8zZFQ3NndXdTh5MGM5RnRsV3RKbjZ4b1dOR3F4Nkw1bXNuWFZmWGFtQVU3VHhmdVVpNG1ncHpjZXVhbVpkQmI0M0FBX1hpaXA5ajlfNktLR3didm45czYwWWszNUhKa0paMDNtcFBaSzJBWVFBSGd4TkQwbk11QkNoeWp2SG45TnZHM1hLZDZCdW9KcjRKRy1kN3J0eEdacVNQeUVrVW5Lams1RGFDbzI?oc=5",
+      "source": "Reuters",
+      "published": "2026-10-30 22:01",
+      "summary": "Russia plans to export 2.15 million tons of diesel in November, media say  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "6fb5f99dbca0"
+    },
+    {
+      "title": "Cameroon's Sonara signs fuel supply deal with Nigeria's Dangote",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd2JCNXN6RlJpRHAyM3N0aDhic0QyUERwMk1jNGloaWUyYm4tTVhYVlJDTjlyd0hVdDhMT0RHNFpoMnNjaE1RMTM0N2dYMG1XOTNZV0gzWkZtbGRnYmtEaklEcy1ocGhIWF9KSUozVnpKWDdlR2tvRzlJMTdTMFJUWFRnbkZqX3htOHVSSXJZeVRONl9pMkZBN3BvQUhFdGw2UlctTTVYUFVKc2o4RmZjeFZuOA?oc=5",
+      "source": "Reuters",
+      "published": "2026-10-30 19:27",
+      "summary": "Cameroon's Sonara signs fuel supply deal with Nigeria's Dangote  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "23d34fe25e3e"
+    },
+    {
+      "title": "China set to lose LNG import crown to Japan on weak demand",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMXhVX2U5aVA2TlgxMEFvNHcteFptcUp4clBaTm43SUpZZ1hwRHZWeHItcmRfdXJ0SzRoSGJXWnYtNnFtSEJYNjJWWkFnc0RfSjFSRE95bE9ZbnhPNVczQW5LalNHZFZrTHNfT0l0TXJKWWNHMlcyOWVtMlFEQ2lwbkdzZVNScE1OM21tazFXTjZpbDktUDh1SUEtSmlSc1JrUEZJ?oc=5",
+      "source": "Reuters",
+      "published": "2026-10-30 17:29",
+      "summary": "China set to lose LNG import crown to Japan on weak demand  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "43abb7bd83ba"
+    },
+    {
+      "title": "Oil set for fourth monthly gain as Hormuz tanker attack highlights supply risks from war",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWE5IUkRJTVJvTFE5SUdOdFFCM2tVN1lKcDI3ci01cjlleVVuXzB1SjI0MDhuWkhwakZFSzl3SGNUZk9uUUYwdHNfMGJOUXExaW1RdmRRVy1Cd0tHb3RqblJCQWczeXdORDVKbVMxMGFrbnVMM3FCY2h5Xzl6T0ZoeTBtbGdnbW9jdWF6VEtqNi14ZnlFaVVpb0xZcHlGTDhtM0ZmY2RYZ2Q?oc=5",
+      "source": "Reuters",
+      "published": "2026-10-30 11:27",
+      "summary": "Oil set for fourth monthly gain as Hormuz tanker attack highlights supply risks from war  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "a132b232f3d2"
+    },
+    {
+      "title": "[분석] 경유 수출 빗장 일부 푼다…‘내수 우선’ 지키며 글로벌 공급부족 활용",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204567",
+      "source": "에너지데일리",
+      "published": "2026-10-30 22:23",
+      "summary": "[에너지데일리 변국영 기자 ] 정부가 지난 3월부터 묶어뒀던 경유 수출의 빗장을 일부 푼다. 국내 공급을 우선한다는 원칙은 유지하되 정유사가 내수 공급 의무와 적정 재고를 확보하면 전년 동월 대비 최대 110%까지 수출할 수 있도록 하는 방식이다. 중동 정세 불안에 대응해 가동했던 ‘비상 수급관리’ 체제를 국내 재고와 원유 도입 상황에 따라 탄력적으로 운용하는 단계로 전환하는 셈이다.이번 조치는 국내 경유 소비 감소로 쌓인 여유 물량을 글로벌 공급 부족 시장으로 돌려 정유업계의 수출 기회를 확대한다는 의미도 갖는다. 특히 해외 정부",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[분석] 경유 수출 빗장 일부 푼다…‘내수 우선’ 지키며 글로벌 공급부족 활용",
+          "source": "에너지데일리",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBCS3BwN3ZkVGJIUHhrSVJ3QkJrZDBYMzFnSHAtaTF1WHg1VTZ0Q29HSlg5WU1td1dEZUNtU3BCTGo5Q2ZQTlBLUTFpSTNKMklkeldPY3FZSGtDRXBNQXFOSGhlN0k1MHVVcndCdC10RXlsdw?oc=5"
+        }
+      ],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "c43b4ae91dce"
+    },
+    {
+      "title": "오만 해군 \"호르무즈 인근 피격 선박서 승무원 25명 구조\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE54Q19JclVsWEUwM0Z5QjJRaUpCUlhYc3AzWmp4ZmJIbkdGWE5iNkptcEdaRW1pVlF6anhqUmR1SmNQcDdXcXkzc0pKdGVVX0tkMzgtMnNiaWYzbS1fRGRrSGt3?oc=5",
+      "source": "뉴스1",
+      "published": "2026-10-30 22:10",
+      "summary": "오만 해군 \"호르무즈 인근 피격 선박서 승무원 25명 구조\"  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ef5be86c40d0"
+    },
+    {
+      "title": "가스공사-가스기술공사, LNG·수소사업 협력 강화 맞손",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9QdjV3WVp0Q0VncTc2c1NxQ1RSdXhER0xOVEdaODlUTEVqRUYyZlRaY1BiMUU5QU9EaXl3SGE1VjBFNjVTUE42UmlpUmE2bF9rNF9leWRMNWxBdXl5S3V3cjlYelVQUFUwODR4LW1POUo3QQ?oc=5",
+      "source": "충남일보",
+      "published": "2026-10-30 22:10",
+      "summary": "가스공사-가스기술공사, LNG·수소사업 협력 강화 맞손  충남일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e69a70c3e1c1"
+    },
+    {
+      "title": "유가가 4개월 연속 상승세를 이어갈 전망입니다.",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBjZk9WUnNuUEVzVGk4Z0dlT3Y1Ymg2MHoycmJUQ2NrZV9vOGdvQVJ0YUVIVVhZSVRUNVdBalBiWXMtQWhqVHJiMjlOMUdBWTd2OUdaUWVWRV9lbDBkck9sczk4WUVhMlhYS1dXOXZEM1dlNWVOcHRKSm5vYw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 20:39",
+      "summary": "유가가 4개월 연속 상승세를 이어갈 전망입니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "de0030ede2f3"
+    },
+    {
+      "title": "11월 국내 LPG가격 kg당 60~75원 인상",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127425",
+      "source": "가스신문",
+      "published": "2026-10-30 20:30",
+      "summary": "11월 국내 LPG가격이 인상됐다.\n\n\n\n[가스신문 = 김재형 기자] 국내 LPG가격이 11월에 kg당 75원 올라 10월에 80원 인상된 데 이어 두 달 연속 크게 인상됐다.\n\nSK가스는 11월 1일부터 국내 LPG가격을 kg당 75원 인상하기로 했다. 이에 따라 가정·상업용 프로판 공급가격은 kg당 1640.73원으로 산업용은 1647.33으로 조정되며, 수송용 부탄은 kg당 1876.54원(1095.89원/ℓ)으로 바뀐다.  다만 E1은 11월 1일부터 국내 LPG가격을 kg당 60원 인상키로 했다. 이에 따라 가정·상업용 프",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "11월 국내 LPG가격 kg당 60~75원 인상",
+          "source": "가스신문",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1zSFF6cWlLdjhlSHJNQlJGOUVDcjJYNF9Nd0NfbW5hdmxQM2t4a2VzVVJLNG5ITUVlNXFjWG5wTWNXM1BPNjhuNEFCY2l2QTV0ZWI2RVFSTWFjZGliejBNZW5Ra1ZJX2pWUkHSAW5BVV95cUxNSUNsWVdhYWUzdmV4dTBUaWY2VV9FYUg5bW9MUmFDVmNmb2dOREZrZm5NdHRXUEJmMjloT2tCaDZvVWU2WHNzbVJTSFVobko3Vm93QThLU3J2aU9BM3FBSkpZekhRalUxNU9TX1g3dw?oc=5"
+        }
+      ],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "3bd7fabae5f0"
+    },
+    {
+      "title": "GS칼텍스, 11월 LPG가격 77원 인상",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229391",
+      "source": "에너지신문",
+      "published": "2026-10-30 20:21",
+      "summary": "[에너지신문] SK가스가 11월 국내LPG가격을 75원 인상한 가운데 GS칼텍스는 77원을 올리기로 결정했다. GS칼텍스(부회장 허세홍)는 30일 11월1일 0시부터 공급되는 LPG가격을 77원 인상하기로 결정하고 산업체, 충전소 등 주요 거래처에 통보했다.이같은 결정에 GS칼텍스와 거래하는 주요 업체들은 가정상업용 프로판을 kg당 1561.17원에서 1638.17원으로, 벌크로리를 통한 산업체용 프로판은 1567.77원에서 1644.77원으로 77원 올린 가격에 LPG를 공급하게 됐다. 택시를 비롯해 1톤 LPG화물차를 대상으로",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "GS칼텍스, 11월 LPG가격 77원 인상",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vTjJ3TC1MMTF2by0xdGxlZXFpd2JYNDY0aHJmcURCLVpMRjYwR1ZSTGdXWXB4ek5DOGIxX0I4bUJUTDV5Q0dCV19tOWJSWWdHWHdkVkJ2ZTlYTjJZR2RFNnluM3QyYVU2dEpOekpwdmc?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "f7d532c609ff"
+    },
+    {
+      "title": "11월 LPG수입가격 평균 45달러/톤 인상",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127426",
+      "source": "가스신문",
+      "published": "2026-10-30 20:06",
+      "summary": "11월 LPG수입가격이 국제유가와 계절적인 영향으로 재차 올랐다.\n\n\n\n[가스신문 = 김재형 기자] 11월 국제 LPG가격(CP)이 전월보다 평균 45달러/톤 오르면서 국내 LPG수입사들의 원가 부담도 이어지게 됐다. 국제유가 상승과 겨울철을 앞둔 계절적 수요 등이 가격 인상에 영향을 미친 것으로 풀이된다.\n\n사우디아라비아 국영 석유회사인 아람코사는 국내 LPG수입사인 E1과 SK가스에 11월 국제 LPG가격을 프로판 톤당 720달러, 부탄 780달러로 통보했다. 지난달과 비교하면 프로판은 40달러, 부탄은 50달러 각각 인상됐다.",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "fc536d0ce965"
+    },
+    {
+      "title": "석유화학 사업재편 이끈 이영준 사장, 은탑산업훈장 영예",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229384",
+      "source": "에너지신문",
+      "published": "2026-10-30 20:00",
+      "summary": "[에너지신문] 이영준 롯데케미칼 사장이 제18회 화학산업의 날 기념식에서 은탑산업훈장을 수상했다.석유화학 사업재편을 주도하고 국내 최초로 PP 공정기술을 자립화해 역수출 기반을 마련하는 등 국내 화학산업의 경쟁력 강화에 기여한 공로를 인정받았다.산업통상부는 30일 서울 양재 엘타워에서 양기욱 산업자원안보실장과 엄찬왕 한국화학산업협회 부회장 등 석유화학 분야 관계자 250여명이 참석한 가운데 ‘제18회 화학산업의 날’ 기념행사를 개최했다.화학산업의 날은 국내 화학산업의 기틀을 마련한 울산 석유화학단지 준공일인 1972년 10월 31일",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "53da3a3da4a1"
+    },
+    {
+      "title": "산업통상부는 휘발유에 대한 특별소비세를 0%로 인하하는 방안을 제안했다.",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYWlLTTVZcnh0TC1mWU81d3Q5WlVNTFFxaWw2WXRLejJsbW5hQmhwNWhYLVlsa1FYVFhOR0hXeU1yQ3hvWkE3eG8yXzNFdXRSSGxPeFpKWU1jX3lTTmZYQ04teXpBN1gwdVBRSFlFNHhJTmdWRHlrRklqSmVqZFBleVptRU9nM25zdnpLRVoyZHNhRkdM?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 19:55",
+      "summary": "산업통상부는 휘발유에 대한 특별소비세를 0%로 인하하는 방안을 제안했다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d5069c16bc80"
+    },
+    {
+      "title": "10월 30일 휘발유 및 석유 가격 업데이트: 세계 유가 반전 상승",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcVl5bW9IMTNHMHd6c0tfOE5wY3JHM0RMd2twU3UtLTJNUkEzX3RsSjlxc3dORmptSngyeG05WjRIYUNXMHRUNkoyekpJeU5TQk1MQXd0SDdneG9ZUm1GTjZidjQ2RERRUmpFTnJPX3BqVVNNalg5dUQ4UkQ5el9TTmZESTdtbmMzVzBKeGtwMHJTX3NMalBsdTVzSDlMUE9LZGw1ZG5UNm1SeDZZ?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-30 19:53",
+      "summary": "10월 30일 휘발유 및 석유 가격 업데이트: 세계 유가 반전 상승  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fcbe7229775f"
+    },
+    {
+      "title": "울산-인천, 수소·LNG 산업 협력 강화…생산부터 활용까지 손잡아",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127423",
+      "source": "가스신문",
+      "published": "2026-10-30 19:50",
+      "summary": "김상욱(오른쪽) 울산시장과 박찬대 인천시장이 30일 인천시청에서 '수소액화천연가스 산업 상생협력 업무협약'을 체결한 후 기념촬영을 하고 있다.\n\n\n\n[가스신문 = 한상원 기자]울산시와 인천시가 수소 활용 기반을 확대하고 액화천연가스(LNG) 분야의 새로운 성장 기회를 찾기 위해 손을 잡는다.\n\n울산시와 인천시는 30일 인천시청 2층 접견실에서 김상욱 울산시장과 박찬대 인천시장이 참석한 가운데 ‘수소·액화천연가스(LNG) 산업 상생협력 업무협약’을 체결했다.\n\n이번 협약은 인천의 액화수소 생산·공급 기반과 항만·공항 물류 기반(인프라",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:가스신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "b24478f1860f"
+    },
+    {
+      "title": "국내LPG가격 11월 75원 인상…12월 인상 어려울 듯",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229387",
+      "source": "에너지신문",
+      "published": "2026-10-30 19:38",
+      "summary": "[에너지신문] 겨울철을 앞두고 난방용 수요 증가 기대감에 국제LPG가격이 오르면서 국내LPG가격이 10월에 이어 11에도 kg당 75원 수준에서 인상폭이 결정됐다. 매월 저녁 늦게 이뤄지던 LPG가격 조정은 GS칼텍스가 지난 9월 선제적으로 결정에 나선 이후 LPG수입사가 조기에 발표하는 모습을 나타내고 있다. 그동안 동결과 인상폭을 억제해 왔던 LPG수입사는 물론 정유사도 난방용 수요 증가시기에 국제LPG가격 인상으로 발생된 요인 반영을 더 미룰 수 없다는 분위기도 일부 영향을 미친 것으로 보인다. SK가스는 11월1일 00시부터",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국내LPG가격 11월 75원 인상…12월 인상 어려울 듯",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9sa29mMmFTYTktZmJOeGtiNXBuQk1YbkdQQUdIalg3VUY3ZTVXMW8zcEp3T3Z5dzU1NGw0YjBvcTdvMGdXdzBGQzJVVkpkejRVVnlnNi0tbWx0dGx1U0QzRThyUlVzMkFEdVJrZHZoSnJVQQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "aca18b81d22d"
+    },
+    {
+      "title": "국제LPG가격 ‘들썩’…11월도 45달러 인상, 8월부터 4개월째",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229370",
+      "source": "에너지신문",
+      "published": "2026-10-30 19:13",
+      "summary": "[에너지신문] 동절기를 맞아 난방용 수요 증가 기대감에 국제LPG가격이 또 다시 들썩이고 있다. 시장에서 당초 70달러 안팎 수준에서 거래되던 국제LPG가격은 90달러 이상의 상승 추세를 나타내기도 했지만 평균 45달러 인상 수준에 머물러 부담스럽기는 하지만 그나마 12월 국내LPG가격에 미치는 여파를 줄일 수 있게 됐다. 물론 11월 국내 LPG가격에 영향을 미치는 국제LPG가격이 프로판은 55달러 오른 680달러, 부탄 70달러 인상된 730달러로 각각 결정되면서 평균 62.5달러 올라 kg당 80원 이상의 인상요인이 발생된 상",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "국제LPG가격 ‘들썩’…11월도 45달러 인상, 8월부터 4개월째",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9KRS1vcEotQ3loNHVkYkRObEZvaEVRWlBGanZRZEZpZ25TaVdYXzVUM0JOU1dScGlvSDlFcnVsYzA4UE9NWU9mMU5UbnpVc25QUEpMcUlaekJxS0d4UnZjYnFoTlR3ak9LaTFJckRkT2dZQQ?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "10cbf1272764"
+    },
+    {
+      "title": "[영상·AI뉴스] EU 회원국, 전략 비축유 4천260만 배럴 방출 약속...절반가량은 경유",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9va0tvTXU0bzZpa2FnSXc0UnU5ZXYzQTItQWZjamNONTRhSUExeVNDX3ZiVUZIUTBLaGp0RFNOcW01VGVxNW5oaTJBZXBQck9ackc0RVlYRVNZaXltdWtDUUJKQmVWUUdlaDJwSmY5SlJ3LUU?oc=5",
+      "source": "동방일보",
+      "published": "2026-10-30 19:08",
+      "summary": "[영상·AI뉴스] EU 회원국, 전략 비축유 4천260만 배럴 방출 약속...절반가량은 경유  동방일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7d53b84753ac"
+    },
+    {
+      "title": "미·이란 협상 재개 기대에 국제유가 하락",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=335613",
+      "source": "이투뉴스",
+      "published": "2026-10-30 19:02",
+      "summary": "[이투뉴스] 미국과 이란의 협상 재개 움직임에 브렌트유와 서부텍사스유(WTI) 가격이 하락했다. 중동의 지정학적 리스크는 유가 하락폭을 제한했다.30일 한국석유공사에 따르면 전날 브렌트유 선물가격은 전 거래일보다 배럴당 0.44달러(0.38%) 내린 114.88달러, WTI 선물가격은 0.78달러(0.76%) 하락한 102.00달러로 마감했다. 두바이유 현물가격은 전 거래일과 같은 114.20달러를 기록했다.에 따르면 28일 JD 밴스 미국 부통령이 모흐센 레자이 이란 최고국가안보회의 사무총장에게 협상 재개를 위한",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "미·이란 협상 재개 기대에 국제유가 하락",
+          "source": "이투뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5xeGRnZ18tU2hkUjdrSlBjNnNENUs1UWVvVF9ORWVVSnoyZEp4Qmc2WTEtcFo5VENybmVuWEJFM3VGdjBzbDg0MVpDTGZmWWozSGtGUmdUOTR1RmgzblRLM2dwTW5yQzZ6a29n0gFrQVVfeXFMTnF4ZGdnXy1TaGRSN2tKUGM2c0Q1SzVRZW9UX05FZVVKejJkSnhCZzZZMS1wWjlUQ3JuZW5YQkUzdUZ2MHNsODQxWkNMZmZZajNIa0ZSZ1Q5NHVGaDNuVEszZ3BNbnJDNnprb2c?oc=5"
+        }
+      ],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "305fb88d802d"
+    },
+    {
+      "title": "[韓경제 아킬레스건](37) 석유화학 산업의 대경색 : 중국의 자급률 상승과 공급 과잉",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZMzVEamxtY3VoQ0M2UXFpX1pscmRXVWYyb2ZqSGhiLTZNenBUMXhrajZnRHZoQTJzTVpaNFMxR0ZzRU9WSTZsTjdmVzYyWmltUFJ2QkVNc1paRWNNRW5MODN3NEJKQjdHRXc?oc=5",
+      "source": "금융소비자뉴스",
+      "published": "2026-10-30 19:01",
+      "summary": "[韓경제 아킬레스건](37) 석유화학 산업의 대경색 : 중국의 자급률 상승과 공급 과잉  금융소비자뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "77102266463e"
+    },
+    {
+      "title": "SK가스 송경열 신임사장 선임…LNG밸류체인 등 기업가치 제고 선도",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=335620",
+      "source": "이투뉴스",
+      "published": "2026-10-30 18:46",
+      "summary": "[이투뉴스] SK가스는 송경열 전략본부장을 신임 사장으로 선임했다. 송경열 신임 사장은 맥킨지 앤 컴퍼니를 거쳐 2019년 SK그룹에 합류했으며, 그룹 차원의 에너지·전력 분야 사업 전략 및 신사업 개발, 포트폴리오 전략을 담당해왔다. 2025년에는 SK경영경제연구소장을 역임했으며, 현재 SK가스 전략본부장과 SK디스커버리 사업개발본부장·미래전략센터장을 맡고 있다.SK가스는 LPG·LNG 사업의 경쟁력을 바탕으로 LNG 밸류체인 확대와 새로운 성장기회 발굴을 추진하고 있다. 송 사장은 주력 사업의 경쟁력 강화와 중장기 성장전략 실행",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "b24b552af908"
+    },
+    {
+      "title": "호르무즈 해협에서 유조선에 흡착 폭탄 공격, 엔진 일시 정지",
+      "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxQR2RUSzQ0RUhGODItOTZrYUtKMXpzVkp6aFVsUDFhQ09NblZQOTJ1czMtVTlMeVp2Zzk1OW9MZ1FXM240LXVDMkRxYkpKTWx4UnhsQlQ3eC1RY2dkQW9fSldMR044Rjk2Y3Zqd3RybHdKbzNOVll0VFpFUXAwV1FGWHNoMkdPWmZVX3ZGMTBhcDMyLURDOFpRNkVCZnU3Y2FLSk5ENnpQaEVCcUVHQkpDblBmNS1rSE5YUF96bDBEU0NqcDIzeVlMTmE1dUhDWmgwbV9PV2lXWlkyV2RiYTJ1Mnl5N19GSTRwNk4tY2ZyNTVhYlEweXhtaTc5M0xHMnZlNTRtVm1icXFWRmdKYWE3LVdSazRGOVNDeS1OWTJDUVpvOTlCZXpuQ2ZZSzhrSXh6YTZlc052LVA5QXpFbHU3LXVnamJ1U1FUY01peEtjY1dRbUxvaDQ1LVZnZVc2VU83dDZYa25IMFJmcnhTVHp1M2hXc0VZRUdDVW5hT1d1aHY5UQ?oc=5",
+      "source": "IDNFinancials",
+      "published": "2026-10-30 18:40",
+      "summary": "호르무즈 해협에서 유조선에 흡착 폭탄 공격, 엔진 일시 정지  IDNFinancials",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "73ea6368835d"
+    },
+    {
+      "title": "한국석유공사 여수지사, 삼일동 취약계층 난방비 지원금 300만 원 전달",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QR3M4bkJBanRneVozUW03VG9DQnpTbXNlQkp5ZTBUR3Fycnp5WkhUYnR4OUJmckRMMTZ6WHlTaGg5NFQ1dGZseWNFMTY2S0h6dk1wVkpxQ1FDM3p1RjBzVzZRY3M2aHZIM1l0LdIBbEFVX3lxTE5QR3M4bkJBanRneVozUW03VG9DQnpTbXNlQkp5ZTBUR3Fycnp5WkhUYnR4OUJmckRMMTZ6WHlTaGg5NFQ1dGZseWNFMTY2S0h6dk1wVkpxQ1FDM3p1RjBzVzZRY3M2aHZIM1l0LQ?oc=5",
+      "source": "여수시청",
+      "published": "2026-10-30 18:40",
+      "summary": "한국석유공사 여수지사, 삼일동 취약계층 난방비 지원금 300만 원 전달  여수시청",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국석유공사 여수지사, 삼일동 취약계층 난방비 300만원 지원",
+          "source": "한국장애인신문",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9VeEgyZUFfMkJ3SndVV2VsLS0zQmhzXzMwU0RWYVlsaHhJRDdxUV9XdE94MFViUFVNSWl1VUREck9JUDlFOEpFQ3ZMdEZZUkduT2l2ZlZ3c0c1OUFMMURkRHQ0dHhncS1XWUowa2JHYzN4M1BuZ2fSAXhBVV95cUxOVm91OWwweWdIRDEwTjhfQWVRTUpPNzhEOF9zOXFvY3M2c2dUSU1QcHkyczVjdFg2X2pHdnRzR0M1U0trLXllZl9CUnZFaTRFTHhDUlIwTHhJMHRrOU9RMU9LRmtvZUZaOEJJa3g5anIyQXNLRHZxc2g?oc=5"
+        },
+        {
+          "title": "한국석유공사 여수지사, 삼일동 취약계층 난방비 지원금 300만원 전달",
+          "source": "뉴스파이어",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5hS0IwMWFCLWltejY1ajdQN1BGYjJxZmYtMGNFeEV6WHZKaDhRVDcyZXB5ZFVvaUtkMEFid25mVUc3TDdyYnAwNG9qRjREQ29IMGdUeVRsWF9VUUpycEJmOW9pVmRkN045UXVFcmx3bw?oc=5"
+        },
+        {
+          "title": "한국석유공사 여수지사, 삼일동 에너지 취약계층에 난방비 300만원 전달",
+          "source": "피디언뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5sYVEyY2JWXzZieHRqdEJ6bThDZXN4ZDBTdUNHQjV6YTl6Tm51YmxEOVcxWWp5UjNNRHcwaGRUaVM4TVVfdnlYUEduLUwwcUc0emFjWmU5QzVMV0w1?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "342025ddaf27"
+    },
+    {
+      "title": "LNG부터 수소까지···가스공사 모자회사 협력 확대",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229378",
+      "source": "에너지신문",
+      "published": "2026-10-30 18:35",
+      "summary": "[에너지신문] 한국가스공사와 한국가스기술공사가 해외 LNG터미널 운영·정비와 천연가스 주배관 탐측기술, 수도권 수소인프라 운영 등 주요 사업 분야의 협력 방안을 논의했다.양 기관은 지난 28일 대구 한국가스공사 본사에서 ‘2026년 모자회사 정책협의회’를 개최하고 공동발전을 위한 협력과제와 자회사의 미래 역할 등을 검토했다고 30일 밝혔다. 이날 협의회에는 고윤석 한국가스공사 전략본부장과 강응식 한국가스기술공사 경영전략본부장, 이정실 기술안전사업본부장 등 양 기관 경영진 16명이 참석했다.이번 협의회는 KOGAS그룹의 소통과 협력을",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "LNG부터 수소까지···가스공사 모자회사 협력 확대",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ZSy1zWkMyQ2k0MF91SHltb0ViQ0s2WGdfNXlreW5mdXRIanVKWEpTZ0FqYWxhQ196cV9SbVJUZFhGUTNZMzQzODZYVjlRbUp3MGdULXdMbV8yTk5fcHh2UXZMM29lOFp3T0Q0aTJ2c1A?oc=5"
+        }
+      ],
+      "query": "rss:에너지신문",
+      "language": "ko",
+      "event_key": "",
+      "id": "4b0cf6d8f18f"
+    },
+    {
+      "title": "E1, 11월 LPG 공급가격 kg당 60원 인상…국제가격·누적 미반영분 반영",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE81REVIajZmSjRObmZLdEQ4ckhiVWU5N19LMVdGSlEyaUM4ZzdDN0JKVXVjY1pzRTJzQ24yYjdLRGswdDB0LUJjaTVRUDBzX0hqZjBEZ2NoN01PUGZvc3dXRVBwSV84WFlhUzlfSmRndnJlZw?oc=5",
+      "source": "에너지데일리",
+      "published": "2026-10-30 18:26",
+      "summary": "E1, 11월 LPG 공급가격 kg당 60원 인상…국제가격·누적 미반영분 반영  에너지데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f8e04bd8536c"
+    },
+    {
+      "title": "베트남에서 놀라운 성능을 자랑하는 125cc 혼다 스쿠터가 3200만 VND라는 가격에 판매되며, 50km 주행에 단 1리터의 휘발유만 소모한다는 점에서 화제를 모으고 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYTNsbXNDWnE4YmFxN2o3VFlIMWxFclFKbWlRMUNjVl8wSlZDY2FzaldOUGRPeFNUSFZLa2paU041RmMxVU5GUzF4RkZGWjNZQmdCU0Y4S0RqMElKN3ZpVEVZaXN0STRjU1JJVkF4eUppcTBndG01SEE0a3JFMXFJZ19jWFZXLWlPeHRiaV8zSTlfOHJmN242M0dqOE53S2dVcS03Sm1PN2VRQ3dSdFBGZWRqdFF3dm56SS1HZDVCZDJJdw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 17:59",
+      "summary": "베트남에서 놀라운 성능을 자랑하는 125cc 혼다 스쿠터가 3200만 VND라는 가격에 판매되며, 50km 주행에 단 1리터의 휘발유만 소모한다는 점에서 화제를 모으고 있다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "15acac69005a"
+    },
+    {
+      "title": "11월 LPG가격 인상폭 축소 불가피...70에서 60원대로",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB0R2w0WGVLaDhKQnJjQm1FVGlPLVhzU2hIdGo3WmVHX0VPUlVHaU5QcVFxU0pOZjE4czRDVFYyLWVhY0FzMERZR3JjWmNsclByVmk2eXQ1NFl4M3IycUxqUTFNeVYycC00NWlQeE1ndDZNUQ?oc=5",
+      "source": "에너지신문",
+      "published": "2026-10-30 17:48",
+      "summary": "11월 LPG가격 인상폭 축소 불가피...70에서 60원대로  에너지신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7aff173ec965"
+    },
+    {
+      "title": "호르무즈 유조선 4척 기뢰 피격 주장…미군, 트럼프에 이란 군사안 보고",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kMDlKMWJBMk40VzI2NHZHZWZMT2N6d3BYa0xzc2oyaEtCQUpXQnZ4NEdsLW8wQXpPenpNN1VWYW1zb0ZBcUFpX2tiOXJydnE0QUtMdHNrQjTSAV5BVV95cUxPWG1vWmVZUWpuUXVCb0FZRDhudFU1T0R6dlhlaXhaZ1Q5czFBdUg4SDFQVzRaZ045Z2lLVWpVb0t2TUJkRTRmbnNCUUZtUU4wa1R4a2dNaDgtM3ZPSWNR?oc=5",
+      "source": "토큰포스트",
+      "published": "2026-10-30 17:11",
+      "summary": "호르무즈 유조선 4척 기뢰 피격 주장…미군, 트럼프에 이란 군사안 보고  토큰포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2ce27abbd2bb"
+    },
+    {
+      "title": "페트로리멕스 시스템의 10월 30일 소매 휘발유 및 석유 가격",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNM1F1eGJGeHhVVkRHMUtGQWs4eTdpOUQtelFxcE1NLUlLZWlqM2I1OFZSU3JCdUYzM0RmM0ZULVBkYzlyektwZWNXUTY3cUw1ZlozanB5UnMyejJkTU1fR3JKN29iZDNPMnF5WHNHS2lnUWduOGk0VFRyanVhMXFyRUpDRFh6eGd0TE5CMXEwVHZRYXFKNkdBQ0R2aw?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-30 17:07",
+      "summary": "페트로리멕스 시스템의 10월 30일 소매 휘발유 및 석유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "96935e5fe226"
+    },
+    {
+      "title": "굿네이버스 전북서부지부·한신주유소, 좋은이웃가게 현판 전달식 가져",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5FcmdlbEV5MS14YjA3UzNiTUNoT3V5c2RfcWxmZkxVZ1prdjVwelNCU2tPMGUyWEdnb0lqUkFtWkZuczZPSmZZUzQ2bmZfZkQ0WGVPaXpUVGRWeV9IdzhYemc2dmVBcmJybEE0?oc=5",
+      "source": "익산시민뉴스",
+      "published": "2026-10-30 17:07",
+      "summary": "굿네이버스 전북서부지부·한신주유소, 좋은이웃가게 현판 전달식 가져  익산시민뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "굿네이버스전북서부지부,한신주유소 좋은이웃가게",
+          "source": "익산열린신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9oYnVrYzg5QVBtN21HSEpvN3RYXzRGT01uRVBjbEFyV1VNR1JDUnlaWGtYYnplRFpoN2lKSVItXzdNLWVkU2pMUFhHaWtVWkVMR0hGNE5vRXlnemVHaldmaU1ncE82bl9yZDR4RnhIY0ZUZw?oc=5"
+        }
+      ],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "47b10b777369"
+    },
+    {
+      "title": "포티투닷, '글레오 AI' 첫 OTA 배포…\"유종별 주유소 가격 안내\"",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vWnBfaFNLSFpqejgzTnFQZXFqdUlOejhTTWJKRmQ5MVhFSVY0aGw2bHlDM0xkUlM1dHU4OWRnQjctNTFXanRibko2bjBDS1E3dVZtNTZuSllWZHY2QndMLVNqVFlDSTBrcXc?oc=5",
+      "source": "지피코리아",
+      "published": "2026-10-30 16:58",
+      "summary": "포티투닷, '글레오 AI' 첫 OTA 배포…\"유종별 주유소 가격 안내\"  지피코리아",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "76661e5e634c"
+    },
+    {
+      "title": "국회의원들의 의견부터 산업통상부의 노력까지 - 1부: 휘발유와 경유 공급은 안정적이고, 가격은 세계 시장가보다 낮으며, 하락세는 지속되는 이유는 무엇일까요?",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOVXJwX1lsTXgzeFFzQVVfSVltOEJhS3VDcEEyZE5XSU1xVzhTRnFuWWl3c3lNQnNubnp6Z3dHR3JYLUFEdW91WUtQRXNGXzBhQWlvd2w0b0JnNHI2WTZCUURUNHZoLUZ3Nl9ZaTZ4VjNKRTczTW5hZFdWemczdmEwX0Q0a3RheFc1RTN3Rk5aYXRXczhCVE1zMGswcmlITExRaVVoVGN5NFNyd0gyUndRZEY3alFmbWZVcEZPSE9SejZvbnVxbS1UMWlmcEdaVW5PZ3IzcDdUUUZCdi1RZnNVOE5ZRi1ZbHZsYVhDdlRrNTlySE8wYlE?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 16:39",
+      "summary": "국회의원들의 의견부터 산업통상부의 노력까지 - 1부: 휘발유와 경유 공급은 안정적이고, 가격은 세계 시장가보다 낮으며, 하락세는 지속되는 이유는 무엇일까요?  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ec470304fc49"
+    },
+    {
+      "title": "경유 수출 한도 전년 동월 110%로 상향…11월분부터 적용",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qandaOFM1N1MwV1o1WnkzVDgxdTNVSFV0YXNmMEMycUkwMnUtQlU5dDNZOFU5Sm5IZ2tTemhvQXI1Wjg0aVprUkdtdmVTNW9OWmdiamxxV3JOOVVPRWNVS1d5U3BOV1hwS01jSjln?oc=5",
+      "source": "www.famtimes.co.kr",
+      "published": "2026-10-30 16:05",
+      "summary": "경유 수출 한도 전년 동월 110%로 상향…11월분부터 적용  www.famtimes.co.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "667aab02ee4e"
+    },
+    {
+      "title": "국제 LPG가격 4개월 연속 상승…12월 국내 공급가 ㎏당 60원 인상요인",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ycmJjZ2RxRFowRDl2Q0hrZkx0Z0dtdkI4V1UwMWpoSmhHNDJyNDcwQXhpTERiUm9vTVBfU29la2E2RTNYRWxLQnQ3ZU5QYzZoc2VhdjhBdDVVaU04UzVNNE42aFNjcWI2eGVwWWNkUjLSAXBBVV95cUxNcnJiY2dkcURaMEQ5dkNIa2ZMdGdHbXZCOFdVMDFqaEpoRzQycjQ3MEF4aUxEYlJvb01QX1NvZWthNkUzWEVsS0J0N2VOUGM2aHNlYXY4QXQ1VWlNOFM1TTRONmhTY3FiNnhlcFljZFIy?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-10-30 15:42",
+      "summary": "국제 LPG가격 4개월 연속 상승…12월 국내 공급가 ㎏당 60원 인상요인  에너지플랫폼뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "895640876f53"
+    },
+    {
+      "title": "전북환경청, 토양안심주유소 운영·관리 실태 집중 점검",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBORlQ1NWxzcGxCcVQ1WVZHOFYtUHlfYjU0NHN3bG94Qm9BOUhQTHZlMzdkVGp0NklSOUdNdlZBMThZb3pLNDNxSjRjYzVuR2ZESEtTQVowRGhUTUk3cmFGVmp0M0ZLN1l1WUE?oc=5",
+      "source": "전북제일신문",
+      "published": "2026-10-30 15:27",
+      "summary": "전북환경청, 토양안심주유소 운영·관리 실태 집중 점검  전북제일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1b6d7ad268e9"
+    },
+    {
+      "title": "이란은 호르무즈 해협에 기뢰가 없다는 보도를 부인했으며, 미국 부통령의 질의에 아직 답변하지 않았다.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOXJOU2ZVcWZrdnlkLWoySW94ZnlMWnA0MXBpLUlOcS0yLVJjWDF5WEtpTzBVQ2xQNm5mallFUjhNeDgtV01JM0tZTzRRRXh1NExqaHFrVkdLZkFIVkdyWE5wVjdteDh6NkFjM1FMWXdaV0lNQUZfTGt0ZHAyTXFlS3dNTHYtOVh3VE5zTG9RQlRXX2I4ZEl0djlJbzBoSi0wYUxybQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 15:16",
+      "summary": "이란은 호르무즈 해협에 기뢰가 없다는 보도를 부인했으며, 미국 부통령의 질의에 아직 답변하지 않았다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a7c04e3585a0"
+    },
+    {
+      "title": "카타르, 호르무즈 봉쇄 대비 美가스 700만t 구매…세계 최대 LNG 수출국?",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPRUd4aTJqV0g4Nk84WGdwQ0ZldUlMNU0tTUxyaXdRYmlPRUstMWlpa3VjekdGOTBoQVkybDFKNTBLcnJJVThBV1hsa0swMm1QQll6c1JrN2NfR1hPUjBQTWtnR2NBWV9pVXI3SGZoYllDRS0yamc1UEJZZWJrM21mYXRXdXJ1STctY3RhUU1SclpOYlJoT1JYdGpJZjZDeUE1M2ZCMnp5Q0R5NVFITXF2bkhsaEVBNjBVal9LRFVMYjRlZFh0dEROcXNWa2dkMWVNNksyRnBUd0FPdmFZZ0g5SFhLMkZCd0dzSFF0STJrY0NwNk4yQzBvQ3dvRlNKQ3MyMk5v?oc=5",
+      "source": "데일리안",
+      "published": "2026-10-30 15:14",
+      "summary": "카타르, 호르무즈 봉쇄 대비 美가스 700만t 구매…세계 최대 LNG 수출국?  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "082082fd3f01"
+    },
+    {
+      "title": "대구시, 동절기 가스사고 예방 나선다…LPG 충전소 21곳 점검",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nb0ZBZk5IeUt5eFhlNzFJNUtUbVZnTHhyS1BlbW9uclRfS0Fqc2Z4cHIyMVJfQ3I4X1lWWE5seWlPYkZ5QjctZHdtT2hDcFpyLW1DYXlCci1XN0xpR3FFSUZB?oc=5",
+      "source": "매일신문",
+      "published": "2026-10-30 15:13",
+      "summary": "대구시, 동절기 가스사고 예방 나선다…LPG 충전소 21곳 점검  매일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3c05e60157ea"
+    },
+    {
+      "title": "SK가스, 에너지 전략통 송경열 발탁…LNG 사업 확대 이끈다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pdUNROHhES1ZjSW9QTGJYVTc3TEd6VUFrSjJPeTN2VnRqZFdBWUZrUmxycmJnaGZaakJFLVQ1cTY3TGhMaXBUdGJ0MVhsVFRqVTVWcE1PWFZQZ0RmX1JSc1FRZ2s2blNuMjdkaGtUVlE?oc=5",
+      "source": "비즈트리뷴",
+      "published": "2026-10-30 15:11",
+      "summary": "SK가스, 에너지 전략통 송경열 발탁…LNG 사업 확대 이끈다  비즈트리뷴",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e253090a24a2"
+    },
+    {
+      "title": "휘발유 가격 상승으로 인해 E5는 여전히 E10 RON 95-III보다 리터당 300 VND 더 비쌉니다.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ0hoX0NPSzFGWnBwajh6R2pxWWlFNGpNZ0RSeUp4bUNFckJwNzlwajJnc1l2dU5SbFJRU1NRbFpOajhic1dpb1VNVDdSQ3NRaXNlU1Y5VkxyNlJjRGZ2Q1dhR2V5YVB6NU1WMTJjZmF5Q0RETmpxeXZkVUdkU1VsMTl4UFZlM3NJS3c?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 15:04",
+      "summary": "휘발유 가격 상승으로 인해 E5는 여전히 E10 RON 95-III보다 리터당 300 VND 더 비쌉니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b2c62e1b3cd3"
+    },
+    {
+      "title": "‘주유소 기름값도 척척’…포티투닷, ‘글레오 AI’ 첫 무선 업데이트 단행…“車 AI 이용 경험 고도화”",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9aSm9aUFhTRFhUWEFpdkZCMHVOMXBCQzN0Ykh6dlQ3TGpFQk1yZGhFZE9iVjlzVTVHNVNrTzZodmVEMTZnUVZFcWE3enJRQmQ4cWNVd3h3?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-10-30 14:58",
+      "summary": "‘주유소 기름값도 척척’…포티투닷, ‘글레오 AI’ 첫 무선 업데이트 단행…“車 AI 이용 경험 고도화”  헤럴드경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4891da700a71"
+    },
+    {
+      "title": "유럽연합(EU)은 겨울철을 앞두고 비축유에서 4260만 배럴의 석유를 방출할 예정이다.",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUFB3V3NRVWYxRk9qTnB6dmI3MVBkd1RVUGFTNnB3bGR0VmNidE9lZmtfbGVuYmxDZTJkQTJETFRBSkJ3UngxbjVwcTJaUGJfcEJUallCVkJ4TWtIOEFuaUM4QVp6WE40bjM0WFNlSTVGbkduZUxDWVJDWXJhUFBmM19R?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 14:57",
+      "summary": "유럽연합(EU)은 겨울철을 앞두고 비축유에서 4260만 배럴의 석유를 방출할 예정이다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ce8a8613f0ed"
+    },
+    {
+      "title": "LPG가격 11월 60원/㎏↑…12월 가격조정도 고심 불가피",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tNU1yYXk3SFNYbTEyVlZoeVdPRVVpUldJSWpBZV9pdVY5cHhWeUIxREtuekM5NE1kRnFlNjhKRUxzRkRCSVlzS1JmVVEzVU5KOXRULXhPOTY1T3hGM0hmLTE5dlVhQlhG0gFrQVVfeXFMUFptTDNSVnpMUUw5OWhUSDlSQkZwaTBVQU0tWXQ2NjVxUTFlMm9Qb3BVYTAzWHV5UHRsSU5iX1hXaVNhSzRsaWZvcGM2WU5BT1FLUDZSNWd1X2UxS1V5RUhReXZBdkFpVGJ5Rmc?oc=5",
+      "source": "이투뉴스",
+      "published": "2026-10-30 14:54",
+      "summary": "LPG가격 11월 60원/㎏↑…12월 가격조정도 고심 불가피  이투뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3f50793e0e87"
+    },
+    {
+      "title": "원유 수출 회복에도 국제유가 116달러...기름값 안 떨어지는 5가지 이유",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0wLTdGTHRzM0hCbVVlZGxWU0dKSWE2UUxWTWVVamRrakxsYXlXbDNOXzFNa1FxQmFIZkRmVEhpdGF3blRLMVNYUTZRRUExX3NhMG9XUXFWZ0pYWnU1dzdLX0Y3emMySW5lU1E?oc=5",
+      "source": "뉴스웨이",
+      "published": "2026-10-30 14:41",
+      "summary": "원유 수출 회복에도 국제유가 116달러...기름값 안 떨어지는 5가지 이유  뉴스웨이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "원유 수출 회복에도 국제유가 116달러...기름값 안 떨어지는 5가지 이유",
+          "source": "뉴스웨이",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VdEZWZzhzYlRtd3ozVGg4Y1BJNko4ekJnSzNCei00V1p3ekRieWc2d0txNV9RbnhlOFNoTERMbXBEQzlqeElMVWZHOHRYQU5CZDlDN3BPSHhHTkNiSmlsX3FnVlpFT2Fv?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "738e04b1757f"
+    },
+    {
+      "title": "산업통상부는 11월 5일부터 휘발유에 대한 특별 소비세를 0%로 인하할 것을 제안했습니다",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUTJaOHd2QzN4dUpZSllnS0NnRmljR1VwLUZ3MkdaX0xlLWlUQzBaVGszN05HM25FSGl0bl9oWHhhdVFsTFRZcTByNjJpaHBPWkVWcmhUMTdFOFBOT3YxUXlpSTBDbVRCLVhIdEt3bU5HQkNzVEl5U1ZsZmhwUjV3azlnejFGeHBNMzlpQXdaSUZoYl92dnFKTXZKTDdhWWZvX2FVX2RWV1hJTERrTEZoWXl5dmcxM2xkNU4wRTln?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-30 14:30",
+      "summary": "산업통상부는 11월 5일부터 휘발유에 대한 특별 소비세를 0%로 인하할 것을 제안했습니다  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3b5dbb822b3c"
+    },
+    {
+      "title": "인천시·울산시, 수소·LNG 산업 경쟁력 강화 '맞손'",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxT250emJLR3pwWXM2ZWZUX1RxUnU1LXdfNzdmanBPVDh1QndlLWtxVTNYMFB0YTZzZEt0Vjlwc1c3RnpzYUNsTklHb0l4VFEyQlBYTEFfTjVuaUXSAWBBVV95cUxNTU5RSUxoc0c1cVI1bnhkWUVCTVJneVRKc2tzVXZ5dkNlMUI3UDJtUnNnTVZFNmhZZE1DUXpBTmFuY2hrVTJjLTdvV2pBS2JielBpcHVjOW9PbXdqeVJrRHU?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-30 14:30",
+      "summary": "인천시·울산시, 수소·LNG 산업 경쟁력 강화 '맞손'  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d59c46eaff72"
+    },
+    {
+      "title": "전방산업 수요 정체에 석유화학주 털썩…LG화학 오름세 속 수급 양극화 선명",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9yX054SGstRzlrSVdoQUd4UVJGZDRKajdIVHdENHR4dVlaeWFGdHl4Tm9xWUlVMzJjWWFpUjhzYzN2Q2VISFlhLW1MUWN4dl9GQXFmbTVLa1lnMzdCTGhsNXFyZnFNbWJ4cXM0dUdkbmkyQktmYk5Z0gF3QVVfeXFMT3JfTnhIay1HOWtJV2hBR3hRUkZkNEpqN0hUd0Q0dHh1WVp5YUZ0eXhOb3FZSVUzMmNZYWlSOHNjM3ZDZUhIWWEtbUxRY3h2X0ZBcWZtNUtrWWczN0JMaGw1cXJmcU1tYnhxczR1R2RuaTJCS2ZiTlk?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-10-30 13:27",
+      "summary": "전방산업 수요 정체에 석유화학주 털썩…LG화학 오름세 속 수급 양극화 선명  핀포인트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전방산업 수요 정체에 석유화학주 털썩…LG화학 오름세 속 수급 양극화 선명",
+          "source": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsVGw3ODdNRTBkaEtESkJTVUVtcXl5WTVUeVNmaGZhSlNwbWY5b25KSGtwWnJXQTVCUnl3Y043UDZRR1BxRlBXMGwtem4xNThSNmN2UjBvTHg2U1h2amJTS0JneUh1WG5SWWdIcGdjMWdGWE3SAXdBVV95cUxPcl9OeEhrLUc5a0lXaEFHeFFSRmQ0Smo3SFR3RDR0eHVZWnlhRnR5eE5vcVlJVTMyY1lhaVI4c2MzdkNlSEhZYS1tTFFjeHZfRkFxZm01S2tZZzM3QkxobDVxcmZxTW1ieHFzNHVHZG5pMkJLZmJOWQ?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3455852c27f8"
+    },
+    {
+      "title": "확정! 휘발유 디젤유 가격 인상!--국내뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1QcHlSZlAzMzN3RHBLRlhHVGRlVTVNdDhxMklzR2tNRnduRVNVcGZrSm04RXJMZmVtQUdLbnVkZmFEQlJOX3AwMWFPeEpuUTFTT01NajhpeW9kVVlQeXczbDNaMVIwM1UtM3B1ZW1B?oc=5",
+      "source": "인민넷",
+      "published": "2026-10-30 13:01",
+      "summary": "확정! 휘발유 디젤유 가격 인상!--국내뉴스  인민넷",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ecd3b6223e08"
+    },
+    {
+      "title": "[산업통상부] 경유 수출제한 조건부 완화… 11월 물량부터 전년 동월 110% 이내 허용",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5KYk1aQldTUmpGSGh2NlczNFpkRm02ZGx6Rng2TmlvNlpyY0xlT2J3ZnZjZFFNX0hheVpRQW94RkdVY0hobFpfYTVXNDB4d1NRa3ozY0liNzZnWGc0d0E?oc=5",
+      "source": "커넥트이천",
+      "published": "2026-10-30 12:49",
+      "summary": "[산업통상부] 경유 수출제한 조건부 완화… 11월 물량부터 전년 동월 110% 이내 허용  커넥트이천",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "16ee864b21bc"
+    },
+    {
+      "title": "‘휘발유 대란’ 겪는 인도네시아…韓, 정유사에 ‘공급확대’ 요청",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDbFROTGFFbC1rSFZhbkViMlNhUm4taEthYnBCNno5d21EMDRWNHJiQUFxQjZJMmNTU0xSWF9jSUJ4eUxRS0RqbFlGaFV2R1I0UGVpVGVlUk1VVWZ1emRkQXZfQmNsS2NwWk50RmdxTdIBb0FVX3lxTFBDbFROTGFFbC1rSFZhbkViMlNhUm4taEthYnBCNno5d21EMDRWNHJiQUFxQjZJMmNTU0xSWF9jSUJ4eUxRS0RqbFlGaFV2R1I0UGVpVGVlUk1VVWZ1emRkQXZfQmNsS2NwWk50RmdxTQ?oc=5",
+      "source": "더퍼블릭",
+      "published": "2026-10-30 12:44",
+      "summary": "‘휘발유 대란’ 겪는 인도네시아…韓, 정유사에 ‘공급확대’ 요청  더퍼블릭",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "‘휘발유 대란’ 겪는 인도네시아…韓, 정유사에 ‘공급확대’ 요청",
+          "source": "더퍼블릭",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCNlgwUkFBSF9uYThNTzZOWXFYWjI3dERSUDd0OHpLT2tjWWpuNHBtcm45UW5VdmpnZzY4b0VQb1NUczBFTGZ4VndhTjRkaXBIdEZDZlJ3YzlrYnc0YWNHR05OaUd0ZHRMeUhB0gFvQVVfeXFMUENsVE5MYUVsLWtIVmFuRWIyU2FSbi1oS2FicEI2ejl3bUQwNFY0cmJBQXFCNkkyY1NTTFJYX2NJQnh5TFFLRGpsWUZoVXZHUjRQZWlUZWVSTVVVZnV6ZGRBdl9CY2xLY3BaTnRGZ3FN?oc=5"
+        }
+      ],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "11e79cbbd64e"
+    },
+    {
+      "title": "오늘(10월 29일) 오후 3시부터 국내 휘발유와 경유 가격이 인상됩니다.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMzEybkhoXzVnQ0MzNWU2RTZ4bXNTQ3BBV3lRLUxIVjRyTmRsQ1FjUVBxY0RUQjJ0VG1VQ2FsNlJwYXVQVnhuWUxISzZRc0FjNlktVGtqczVOT050VlFjeU1SZE1NV2RBZnNnOC1DUnlRa2NtRmZvZDBSbG9CTjR0Q01lc2FDM1Vld0xJR3NOVlFGNHM?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 12:30",
+      "summary": "오늘(10월 29일) 오후 3시부터 국내 휘발유와 경유 가격이 인상됩니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e146f41aeba8"
+    },
+    {
+      "title": "\"가까운 주유소 찾아줘\"…현대차 그랜저 AI, 운전자 의도까지 읽는다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tZGVsTmNVZ1lDcW5rOS1UZHFtb2JGVXZKNWtFU2x4OUNQU2c2a2IxblNRNHN6SmxwQ2hwOW5zVHMtYUtnU0lSNjJObHZ6NS00LV8wOG1yNTgzUQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-10-30 12:24",
+      "summary": "\"가까운 주유소 찾아줘\"…현대차 그랜저 AI, 운전자 의도까지 읽는다  파이낸셜뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0ca69665776f"
+    },
+    {
+      "title": "E5 및 E10 휘발유 가격은 특별소비세가 0%로 인하될 경우 리터당 거의 1,800 VND까지 하락할 수 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWGpDLXVLSHVJZEhEM1M1djB6NnEtczN0eEFlSmdOb0pLNzVVbmhBS0QtYlFqSVI4anJMUGdHczF6bjRjaUEzS3VIdURQQktxdXpLSDVtY0hSRDhULUNrYWt5TnFYajFvbVNLSlNEZDBWMTBWNlgyWFM2SFVUdG9qLUIyQXY1bHAySm1BSld1SVRmSmN4emZqMGxDQzR6UFhWSGc?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 12:15",
+      "summary": "E5 및 E10 휘발유 가격은 특별소비세가 0%로 인하될 경우 리터당 거의 1,800 VND까지 하락할 수 있다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5ab938c652d7"
+    },
+    {
+      "title": "오늘 10월 30일 휘발유 가격: 반전",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONnN0eXk4WFZRNlBndGhxQnp2VmlFZTJqZDlnSTMyOVppaU1jN1ZlRFNzQmRFb3labzA0ZldWMTVrNjBIUzdzY2hKTEY1MnJnc3hjTkVkNGhUc085bF8zcmhISDEzb3BxXzluR0d2WUI5QU04bXdvNm1qa1VGNHg3YUtjVFdTWmc?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-10-30 11:58",
+      "summary": "오늘 10월 30일 휘발유 가격: 반전  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "오늘 10월 30일 소매 휘발유 가격",
+          "source": "Laodong.vn",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZ1FHUE9NVWw2NjRLbHp5VGc5YllLYmpxbXFYWFBqUVJLQlJRQWJxVEQ5bm1oWkhhUDFmRmMyRGVyNmY4Q0VaWGxiZEY1c3U3NlRPd2IxUFJvZUVFMG1paXgwc1oyaXZzdk9IaHdDQndCT3R3ZERibE5OWVFZNW8zc19pUQ?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "832e4354113c"
+    },
+    {
+      "title": "SK, 에너지ㆍ화학 계열 사장단 대거 재편…정유ㆍ석화 수장 동시 교체",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFbTJ3THV3MmNTVGV2NFU3S3Y0WFhJOFRLM0h0eUkxb3k5UWt6VGZ3UDlXWXN2NFplbDlpTUZFWFRBaFhLVlRzMmoxNm9HZmdXelVLS1FXTXVEQjFXUUVPZmhKQXU3OTVlMFdkb3M2NkhFU2V3?oc=5",
+      "source": "대한경제",
+      "published": "2026-10-30 11:48",
+      "summary": "SK, 에너지ㆍ화학 계열 사장단 대거 재편…정유ㆍ석화 수장 동시 교체  대한경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "산업통상자원부 에너지 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "099c18a9ba66"
+    },
+    {
+      "title": "김기봉 초대 한국석유공사 노조위원장, 전국노총 제2대 위원장 당선",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9GcXhhQ3JyUFBUeUx4ckZON1pxeHFURmV4Y2xQaHFDRWdEWndSdnFNWXN0NHUwQ09qSlVuQWlVbXhaaVFIdHFxSFdjNXlCV3FJV3NUTWsyYU1zalc2YmVlNWx6OXNpdlhCZld1MjRhbndDZw?oc=5",
+      "source": "인더스트리뉴스",
+      "published": "2026-10-30 11:42",
+      "summary": "김기봉 초대 한국석유공사 노조위원장, 전국노총 제2대 위원장 당선  인더스트리뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "61e5681632e2"
+    },
+    {
+      "title": "이란 \"호르무즈서 유조선 4척 기뢰 충돌…제한구역 운항\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BTVcycWIwcjlpUEQ1YmNjUEdvWGJYR3V6enRLc2ZVYk4ySUZBVHcwakY0eEdMMjQ1elZ4MVp5bWo2V2FSeFcySFUzREZnbzZIV3o3eUhwOC1zZ2FPQ0k0etIBYEFVX3lxTE5BTVcycWIwcjlpUEQ1YmNjUEdvWGJYR3V6enRLc2ZVYk4ySUZBVHcwakY0eEdMMjQ1elZ4MVp5bWo2V2FSeFcySFUzREZnbzZIV3o3eUhwOC1zZ2FPQ0k0eg?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-10-30 11:33",
+      "summary": "이란 \"호르무즈서 유조선 4척 기뢰 충돌…제한구역 운항\"  연합뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "이란 \"호르무즈서 유조선 4척 기뢰 충돌‥제한구역 운항\"",
+          "source": "MBC 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAxbEN2WTNVSE5GSkxnVWJTc1Mtem5rM0cwc3A2VzI2LURxUUF5Y2FaUmRvT2RmWGJ3WGtFeWV2QnlGUEVkVDhja2VaXzhicVN2RTg3SUtkdXhIaGNPWGQtUHI0MmZvVEtVT3pfOVJhZ0thbnVa0gF0QVVfeXFMT0tjMzk5YVZQTUZmcE5ka0IzV25YMUtKUlFCdFI4YjFtdVlVdDY1bXFtRk9DQlZSRU5WSnVVNTJnTmFVSkJRNU1TVXY0R1BqdkVWZ29paHpTLWJWY2k5Vk45djVLMDlNMHpmcXVITTEzeDFwekU?oc=5"
+        },
+        {
+          "title": "이란 \"호르무즈서 유조선 4척 기뢰 충돌…제한구역 운항\"",
+          "source": "SBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QejZ2d1BHb1NGbnpIdENFdTF0MExYYnZpTmgtS0x0UGpmTHZDNXktblJ1Rjdqd1R1YnBRU3ZmUWRJZWpXa0I2alRvMVU1UEFubVZwTnZ0MnEyRDFPNmZVcEV1cUdjSjVUR3c?oc=5"
+        },
+        {
+          "title": "이란 \"호르무즈서 유조선 4척 기뢰 충돌\"",
+          "source": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IbS1PNVJlUVpKVUIwZU5DczNXZXRVX1dnbG1hMU5LcFh5NXk0MWd5WUJVMXVaYUF4ZzVkOUc0OHNKRHVpQVZDd3k0WFVXTWg2R2tucnFCWlY1clpJVnNsc3hUY2JTSlU?oc=5"
+        },
+        {
+          "title": "이란 \"호르무즈서 유조선 4척 기뢰 충돌…제한구역 운항\"",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iQVRYUlJqZFZDNmVMdXhpWUZhR1FUU1VHSXpET0ZveG8xTFg5bnk1UTE5ZDVld293LUJVSU1aUDZKLTJOZ3EyaXNDUWdoc1B2TEx3MlNUTlg1RmvSAWBBVV95cUxOQU1XMnFiMHI5aVBENWJjY1BHb1hiWEd1enp0S3NmVWJOMklGQVR3MGpGNHhHTDI0NXpWeDFaeW1qNldhUnhXMkhVM0RGZ282SFd6N3lIcDgtc2dhT0NJNHo?oc=5"
+        }
+      ],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d9b4e791aa65"
+    },
+    {
+      "title": "유럽 12개국 \"내년 초까지 비축유 4천260만배럴 공동 방출\"",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nM3k4NHh4V3VnRXJ3Tm52NjhUOXIxRjI0VnNrV3RjMG5rcF9hNS1PWVBNbVVWa1ZlUzRaRFVvamtVcDlGaDd3MngtbTAtRC1PWl9iOGJ0bjdBZk1sZ0Uwd2tTNnpETEZ1OUhxcl9QRloxR2400gF0QVVfeXFMTWw0MW9Cc1gxOWl2a1BYRzRIMmRkWHBhNjRRYzZJY3BZcGJNWS1KR0VMeGN0YUZYZ0gtc3g5MnZBSEZlQTFvODFaN3JZeTMxMnZKSFBBdGJleVlJRlVsM3E1QUVZLTV5dkZ4NDlkSlBPa2ZkUmY?oc=5",
+      "source": "MBC 뉴스",
+      "published": "2026-10-30 11:12",
+      "summary": "유럽 12개국 \"내년 초까지 비축유 4천260만배럴 공동 방출\"  MBC 뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bf5508fa2e06"
+    },
+    {
+      "title": "호르무즈 봉쇄에 카타르, 미국산 LNG 확보 확대",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBBU1pOeVc2d3FONEJmc3hqVVVBaGNFQmQxeWp6LV9CZ0VwWndpY2tLSEdwV1hPUExPZHdFVm5TcEZBY2N4S1Bnd3ZKUE9uMWtjVlpvXzlrdmpNVEdHbjFua3ZVMUJPdkNuVmFXb0F0QXPSAXRBVV95cUxQRGdSN0ExQldUYUVfTVFnd2RQT2t1Y21oNl8xNlo1cU80QkRid0FldEdSbWVfSFhGN1F4WE5wLWdHQTZ1cDZjWW5QYXI3Z3FXWndWQmczSnNOb0JsdFNZNDI5UVZlTTIyOHU5aTVmU3hwYWhzRA?oc=5",
+      "source": "팩트인뉴스",
+      "published": "2026-10-30 10:49",
+      "summary": "호르무즈 봉쇄에 카타르, 미국산 LNG 확보 확대  팩트인뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d5d632964a74"
+    },
+    {
+      "title": "포티투닷, '글레오 AI' 첫 OTA…음성으로 주유소 검색·경로 설정",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWTV2eERtYzJpMm1QOEx3RFh0bmF1S0Rac25JWmlFUzdURXE1UmJQaFhuUGVuSjlsUE1RZ19fOGljOU5DU1YydnlMVzkwNFlWamhjdUNHSTJEeGotSFFqb3ktcVJ0MzhUUTBLWkJQaUVXOEUyTTJFcXpMTVZmRUUyR29BQnoxQQ?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-10-30 10:48",
+      "summary": "포티투닷, '글레오 AI' 첫 OTA…음성으로 주유소 검색·경로 설정  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "993e6fe17de9"
+    },
+    {
+      "title": "오늘(10월 30일) 유가 동향: 국제 유가는 하락했지만, 국내 유가는 리터당 26,000 VND를 넘어섰습니다.",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd2E2TmgxbEY3S0xxTEpXTnJuYm1hSEVPRGFPSEpZLWdPOXdocndYWVgtNmRuM01acW9kcm1pd0trZlRXUXc1VkJNSzRSaEFIWHIwbXljOHJ1YURWNkRQaGdjdmdvT1hMS21BOG9EQzhqTmNmX0Z3RW9NODRTUEJDcFdQakpMNHczU1ktdk81ME9IMS1MczFYM3Z6N09VZjg1cE9SNG5R?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 10:44",
+      "summary": "오늘(10월 30일) 유가 동향: 국제 유가는 하락했지만, 국내 유가는 리터당 26,000 VND를 넘어섰습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "080d5753cbfc"
+    },
+    {
+      "title": "중동 원유 수출 늘었는데…유가는 왜 이란戰 정점 육박하나",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTUpMZFhVNnJETjR1UExNUTJyYmx0TDBiNlB1MmRjZG9qc0lwanBfOUV3VUFUMjFGMnVvcXlhdUYyNmJoaTRTZkoxalc5V1hoUXp0enJTcUJTVFpZbXV0VElKdDNFVl95SllqdDBna2N5aTNXLWdUMk5meU1ZS2VjZg?oc=5",
+      "source": "이데일리",
+      "published": "2026-10-30 10:44",
+      "summary": "중동 원유 수출 늘었는데…유가는 왜 이란戰 정점 육박하나  이데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "92397c156d20"
+    },
+    {
+      "title": "오늘(10월 30일) 연료 가격: 세계 유가가 추세를 바꿔 하락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUjFKb095ZVRtalJnVU9Qc0N0OFlLT1UwSUx1dUVTYVlWaDJtak9yLXNQR2E5SVJvN3NPcWlxdm5MbERZdHpldm5zd3VubzUySWNkVUUtY0ZPSUZGSU5kSmFsYzdVUWlpTHZROEVmYkloSUFHLTRCX0FZLTdwTGlSY1B1UzRDZFVBd2tN?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 10:44",
+      "summary": "오늘(10월 30일) 연료 가격: 세계 유가가 추세를 바꿔 하락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0b8d86a3170d"
+    },
+    {
+      "title": "SK가스, 신임 사장에 송경열 전략본부장 선임…LNG 사업 확대 속도",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1MQlB4dkExVnBDenE4YnE4YnIwaF9fRWN2NUdjQW0yTVJFQ05EQWtoMkhzX29mRnR0ODdWcTRobHpkbkNDdjFERGxiY2s3V3o1WmJxVnlHYWg2SjFh?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-10-30 10:37",
+      "summary": "SK가스, 신임 사장에 송경열 전략본부장 선임…LNG 사업 확대 속도  뉴스핌",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "24f15067a12a"
+    },
+    {
+      "title": "국제유가, 미-이란 협상 재개 기대감에 하락…WTI 102달러",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBSZEdGTWFITnlwTFFfaTAzRFBwbFhMZkZ4Ump5QjFYSXg4MUxvX2k5MXFxeXdLMm9TWjUxZDJidFRwUHVEdGZRbGtHTGl3UlVLM202SWxHY1gtRXd3LU00Uks5UW95VWpOTm5XMnlB?oc=5",
+      "source": "OBS경인TV",
+      "published": "2026-10-30 10:35",
+      "summary": "국제유가, 미-이란 협상 재개 기대감에 하락…WTI 102달러  OBS경인TV",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[국제유가] 미·이란 대화 재개 기대에 하락…WTI 102달러 마감",
+          "source": "굿모닝경제",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhNXoxRFlRczFvdUNac194RDNRUVNNbkFRRVlYMkJXT01BU1ZwZ1otcFF3ak10ejR0NEl1dHlNQ21TdF9JMWdIdXhoVERVT1otVUROcWQ3MkhfQ0lFTzN3dW93LWczdFFGNjRPVA?oc=5"
+        }
+      ],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "11600fa41930"
+    },
+    {
+      "title": "“가는 길 주유소 찾아줘”…포티투닷, ‘글레오 AI’ 첫 업데이트 진행",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPcV9ZLW9IOEJKWTcxWkU1VVdSbHlNeFZrdnhQcTJUemN2eWY0THM0RW1DU2RlUmFxSmNPMHJmaHdFYUE3M3NocDJXd3p1eC1EQlRqQ2xBazdYbEE0SU1ocy1ORlJtNDdFZzRQTHZwRW1xQjlOalZwWDVSUi1wZXZTVXp5dDYyc3NZV0pxSG5ETWRWTVlSamt4SXVJQ2JVSGx1S0lydEp4bktHbDJoMlZQMTN5ZVpWWlUtcm11Y295TFMzRU4xTVBLYjJab01mcE1uaTFJbE16cEdNOWNYVVM3dl9JaUpsTHBNMFpQbTB0Qmo3ZDM5MmhNZ09KVW5IbU5RVGpGMTZad1lCVGRob1cxa1RBSnV4c0hHZi1hVDU4UXBsN3M?oc=5",
+      "source": "데일리안",
+      "published": "2026-10-30 10:33",
+      "summary": "“가는 길 주유소 찾아줘”…포티투닷, ‘글레오 AI’ 첫 업데이트 진행  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b3cec0855cd0"
+    },
+    {
+      "title": "“올겨울 에너지 위기, 러·우전쟁 2022년보다 심각”…유럽 12개국, 비축유 4260만배럴 푼다",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5mODI5OTFIbTBYZ3hfa1lNVTB4bUxrTkxnNy1XbEhVbnU5b1Ria3lERV9BRTBFeGhPaWUwbnpnZEktcWNOdHdXMnNXd1Q5MXMxUlJxdERqSQ?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-10-30 10:22",
+      "summary": "“올겨울 에너지 위기, 러·우전쟁 2022년보다 심각”…유럽 12개국, 비축유 4260만배럴 푼다  헤럴드경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "44ea610ae360"
+    },
+    {
+      "title": "유럽 12개국 \"내년 1월말까지 비축유 4260만 배럴 조기 방출\"",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBMWmkzWHkxRlRNbnU2SjcxOUJDMzNwNE9LTVNmWlF5dGRRNktMX0FoeVlPQVlGUk5kdkIxSllpMWxNcnhUZVFQaERXZ0RRamtiVm5WdjVDYV9RN1lDSkEwYnRqVE1GNEE1cnNKTmJ0QzBhdGJrUHJ4NNIBeEFVX3lxTFBMWmkzWHkxRlRNbnU2SjcxOUJDMzNwNE9LTVNmWlF5dGRRNktMX0FoeVlPQVlGUk5kdkIxSllpMWxNcnhUZVFQaERXZ0RRamtiVm5WdjVDYV9RN1lDSkEwYnRqVE1GNEE1cnNKTmJ0QzBhdGJrUHJ4NA?oc=5",
+      "source": "뉴시스",
+      "published": "2026-10-30 10:12",
+      "summary": "유럽 12개국 \"내년 1월말까지 비축유 4260만 배럴 조기 방출\"  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f7a469b395e8"
+    },
+    {
+      "title": "오늘(10월 30일) 연료 가격: 페트롤리멕스가 가격을 인상했고, 세계 유가는 여전히 높은 수준을 유지하고 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUkg3RnB2UFF1dEpmT1FxMFVYYV9ZcXRKTmFManlLWXF6Nklib0UtZFZqMF84NTZqRVdrdnRfYVNnVVpibW84TmhzZjN6WXMydVhoRl8tVW1hS1ctRnZUbm1sTkVqOC1mNmxESE9TMS11VmpZa0N2dklCTVI0eTBUNnoydVN3ak1VaDg5dEdDQlRRaklTN2lmN2ZHQnRZLUNo?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-10-30 09:59",
+      "summary": "오늘(10월 30일) 연료 가격: 페트롤리멕스가 가격을 인상했고, 세계 유가는 여전히 높은 수준을 유지하고 있습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9e29e47442d3"
+    },
+    {
+      "title": "미국 셰일가스 생산 증가로 LPG공급도 급증…LPG경제성 향상",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=335602",
+      "source": "이투뉴스",
+      "published": "2026-10-30 09:56",
+      "summary": "[이투뉴스] 미국의 셰일가스 생산 증가로 향후 3년간 LPG 5000만톤이 시장에 추가 공급될 전망이다. 이에 따라 글로벌 연료 시장에서 휘발유·경유 대비 LPG의 가격경쟁력이 한층 높아지고, 글로벌 에너지 전환 과정에서 LPG의 역할도 더욱 공고해질 것을 기대된다WLGA(World Liquid Gas Association)가 주최한 제38회 세계 LPG포럼에서 튀르키예 LPG 유통기업 Aygaz의 포이라즈 CEO가 밝힌 바에 따르면 미국 내 수요만으로는 늘어나는 LPG 공급량을 모두 흡수하기 어려워 초과 물량이 해외로 수출될 것으",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "99c6a663090a"
+    },
+    {
+      "title": "미국 천연가스 생산 증가로 부산물 프로판도 수출량 사상 최대",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=335598",
+      "source": "이투뉴스",
+      "published": "2026-10-30 09:51",
+      "summary": "[이투뉴스] 올해 상반기 미국의 프로판 수출량은 하루 평균 200만 배럴(b/d)로, 전년도 같은 기간보다 11% 증가했다. 미국의 프로판 생산 증가와 무역 흐름 변화, 특히 인도와 남아시아 국가들로의 수출 확대에 힘입어 올해 4월 수출량은 하루 210만 배럴로 사상 최고치를 기록했다. 이후에도 인도행 수출을 포함한 전체 프로판 수출량은 최근 5년 평균을 크게 웃도는 수준을 유지하고 있다.미국의 기록적인 프로판 생산이 수출 증가를 뒷받침했다. 천연가스 처리와 원유 정제 과정에서 부산물로 생산되는 프로판은 지난 10년간 미국의 천연가",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:이투뉴스",
+      "language": "ko",
+      "event_key": "",
+      "id": "91bffb7be202"
+    },
+    {
+      "title": "포티투닷, '글레오 AI' 첫 OTA…주행 경로 기준 장소 제안·주유소 유종별 가격 안내",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hb2pNSUtGUHNWZWxwdU1NZ253T2Ztb0lEeWhTcEFkdkZfQzJGcERKaE1hNE81R05NX1E4amxLSHBpS01wOTVuNkpIRENKVVAtbWtMMjJld3hwZw?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-10-30 09:25",
+      "summary": "포티투닷, '글레오 AI' 첫 OTA…주행 경로 기준 장소 제안·주유소 유종별 가격 안내  파이낸셜뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9f505db19ac3"
+    },
+    {
+      "title": "\"근처 주유소 찾아줘\"…포티투닷, 글레오 AI 검색 기능 강화",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VSVR2bVhmZGlZM3BzWEFCbmYyaG1Jb3pVWDVkTTJYbWNnY1QycjNDUVVrTjJTMzZBS2FCa3h0NkVxSUZjbjZuNWF1N2Zyb1M5SXRzV1AwR3A2MjND?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-10-30 09:13",
+      "summary": "\"근처 주유소 찾아줘\"…포티투닷, 글레오 AI 검색 기능 강화  뉴스핌",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "16c2f8663ab1"
+    },
+    {
+      "title": "경유 수출, 전년 동월 대비 100%→110% 내로 조건부 완화",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9PQVdOSUM5OVRfLU9uS05XdkpocmN4NzRyUzJEOTAtMzdHaVBwcWRFV2pzMDN6RTd5enJGa0Q3VEdYNkNDZVp5cnlqeWxNeTUzRDRmLWJ0eVVOUFlqRDRuMEsxclhRWXJCejFkbk1qSEY2WDDSAXZBVV95cUxOZlJyMnp6UGFtOEZoWDZKS19WMFpzV1V5WUhyLWJscVJZTVZfS1lPQW9BYzdiT1NLcmVGUTB4a3ladk9WcWpiX1RKSUxoc1phWEkwdXV1bmdZVVB1bmVxRDgxRnFmbGFFSk05aVNMS1BkSW51SnJn?oc=5",
+      "source": "에너지타임뉴스",
+      "published": "2026-10-30 09:01",
+      "summary": "경유 수출, 전년 동월 대비 100%→110% 내로 조건부 완화  에너지타임뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6bbb30415cde"
+    },
+    {
+      "title": "국제유가, 美·이란 협상 재개 기대에 하락…브렌트유 114달러·WTI 102달러",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE81Ry1nUmdkbDR1RldfaHpKbHE0dlRfQXVjSEFjQkprN280a2h2RkxURF82YXZOVHBRUTIzclU0bmFhb3VuTTRHOTNtcEJIVjc2aGRmN3VRQzFQV1pIdmpoeWJwcVB1QmUza1hSX0tJUWtVZw?oc=5",
+      "source": "중앙이코노미뉴스",
+      "published": "2026-10-30 08:57",
+      "summary": "국제유가, 美·이란 협상 재개 기대에 하락…브렌트유 114달러·WTI 102달러  중앙이코노미뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e4d14624c34c"
+    },
+    {
+      "title": "석유공사 자원개발 산학연 플랫폼 20곳으로 확대",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EQ0ZNR0FTLTEwNlpSVHV3UWw0QWEzWkhlTTAyZ3p4ckZuckZMUVZVMGVVYlNBMDRDTnhHaE5SckRqWWlpSzVtUEctbjZjc2tOdHlvQzhxSndtcTR2RlJock1TdlBjR0lHOTBzTQ?oc=5",
+      "source": "에너지타임즈",
+      "published": "2026-10-30 08:53",
+      "summary": "석유공사 자원개발 산학연 플랫폼 20곳으로 확대  에너지타임즈",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a41ea25c7b5c"
+    }
+  ]
+}
