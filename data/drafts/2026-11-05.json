@@ -1,0 +1,768 @@
+{
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05 09:54",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1338.58,
+      "change_pct": -0.4469764017284073,
+      "unit": "원",
+      "as_of": "2026-11-04",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 96.08999633789062,
+      "change_pct": -0.38358153648540855,
+      "unit": "달러/배럴",
+      "as_of": "2026-11-03",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 103.5999984741211,
+      "change_pct": -1.1167301769907445,
+      "unit": "달러/배럴",
+      "as_of": "2026-11-03",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 45,
+    "fresh": 45,
+    "classified": 45,
+    "representatives": 38,
+    "duplicates": 7
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.1-flash-lite",
+        "issues": [
+          {
+            "title": "한국석유관리원-한국교통안전공단, 석유 운송정보 활용 및 불법유통 근절 협력 강화",
+            "summary": "한국석유관리원이 한국교통안전공단(TS)과 위험물질 운송차량 안전관리 및 석유제품 불법유통 근절을 위한 업무협약을 체결함. 양 기관은 석유 운송 정보를 공유하고 통합관제 시스템을 고도화하여, 유통 과정에서의 이상 징후를 조기에 포착하고 불법 거래를 사전에 차단하는 협력 체계를 구축할 계획임.",
+            "change": "전일 대비 새로운 사안임. 석유관리원이 유관기관과의 데이터 공유 및 협력을 통해 실시간 모니터링 시스템을 강화하는 구체적 행보를 보임.",
+            "impact": "운송 데이터 통합 및 공유로 불법 석유 유통의 사각지대가 해소되고, 단속의 효율성과 적발률이 높아질 것으로 예상됨. 실시간 관제 체계 강화로 유통 질서 확립에 기여 가능.",
+            "article_ids": [
+              "b853e1148ad2",
+              "5557caeb7fae",
+              "3837fedd5138"
+            ]
+          },
+          {
+            "title": "이란, 호르무즈 해협 유조선 공격 위협 확대",
+            "summary": "이란이 호르무즈 해협을 통과하는 유조선을 대상으로 폭발물 부착 및 수중드론을 투입하는 등 게릴라식 공격을 확대하고 있음. 이는 해상 물류의 핵심 경로인 호르무즈 해협의 긴장감을 높이고 에너지 수급 불안정 요인으로 작용하고 있음.",
+            "change": "전일 비교 근거 부족(새로운 국제 정세 리스크).",
+            "impact": "호르무즈 해협을 경유하는 국내 원유 도입 물량의 운송 비용 상승 및 공급 차질 가능성이 있음. 국내 석유 수급 불안 시 석유관리원의 비축유 관리 및 유통 모니터링 역할이 중요해질 가능성 있음.",
+            "article_ids": [
+              "328350c23563"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1677,
+          "candidatesTokenCount": 543,
+          "totalTokenCount": 2350,
+          "thoughtsTokenCount": 130
+        },
+        "attempts": 3,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "version": 1,
+        "model": "groq/qwen/qwen3.8-27b",
+        "issues": [
+          {
+            "title": "석유관리원-교통안전공단, 운송차량 안전관리 및 불법유통 단속 업무협약 체결",
+            "summary": "한국석유관리원은 4일 한국교통안전공단과 업무협약을 체결하고, 위험물질 운송차량의 안전관리 강화와 석유제품 불법유통 근절을 위해 협력하기로 했다. 양 기관은 운송 구간 정보 공유와 합동 단속을 통해 안전 사각지대를 해소하고 유통 체계의 투명성을 확보할 방침이다. 이는 단순한 안전 지출을 넘어 유통 구간 추적 능력을 높여 부정 유통을 사전에 방지하기 위한 조치로 해석된다.",
+            "change": "전일 부산·울산·경남 해상연료유 단속이 현장 행정 중심이었다면, 이번 협정은 교통안전공단이라는 제3자 기관과의 제도적 협력으로 확대된 점이 새 사실이다.",
+            "impact": "운송 데이터의 공조로 위장 운행·무자료 거래 포착 가능성이 커져, 관리원의 밀수·위조 유류 단속 효율이 상승할 가능성이 있다. 위반 사례 감소로 품질 관리 부담이 경감될 수 있다.",
+            "article_ids": [
+              "3837fedd5138",
+              "aaeb44eb408d",
+              "5557caeb7fae"
+            ]
+          },
+          {
+            "title": "이란, 호르무즈 해협서 유조선 대상 공세 강화…석유 수급 불안정 요인",
+            "summary": "이란이 호르무즈 해협에서 유조선에 대한 '게릴라식 공격'을 확대하고 있는 것으로 보도됐다. 유조선에 폭발물을 부착하거나 수중 드론을 투입하는 등 물리적 위협이 보고되며, 중동발 원유 수송 경로에 대한 불안감이 고조되고 있다. 해당 해협은 전 세계 원유 공급량의 상당한 비중이 통과하는 핵심 길목이다.",
+            "change": "전일 자료에는 해외 수급 관련 이슈가 없었으나, 이날 이란의 군사적 움직임이 구체적으로 보도된 점이 새 사실이다.",
+            "impact": "국제 유가 변동성 확대와 특정 지역 정제유 공급 차질 가능성이 있어, 관리원 차원의 수급 동향 모니터링 및 대외 수입 원유 품질 검수 강화가 필요할 가능성이 있다.",
+            "article_ids": [
+              "328350c23563"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "prompt_tokens": 1571,
+          "completion_tokens": 568,
+          "total_tokens": 2139
+        },
+        "attempts": 1,
+        "provider": "groq",
+        "status": "ok"
+      }
+    ],
+    "issues": [
+      {
+        "title": "한국석유관리원-한국교통안전공단, 석유 운송정보 활용 및 불법유통 근절 협력 강화",
+        "summary": "한국석유관리원이 한국교통안전공단(TS)과 위험물질 운송차량 안전관리 및 석유제품 불법유통 근절을 위한 업무협약을 체결함. 양 기관은 석유 운송 정보를 공유하고 통합관제 시스템을 고도화하여, 유통 과정에서의 이상 징후를 조기에 포착하고 불법 거래를 사전에 차단하는 협력 체계를 구축할 계획임.",
+        "change": "전일 대비 새로운 사안임. 석유관리원이 유관기관과의 데이터 공유 및 협력을 통해 실시간 모니터링 시스템을 강화하는 구체적 행보를 보임.",
+        "impact": "운송 데이터 통합 및 공유로 불법 석유 유통의 사각지대가 해소되고, 단속의 효율성과 적발률이 높아질 것으로 예상됨. 실시간 관제 체계 강화로 유통 질서 확립에 기여 가능.",
+        "article_ids": [
+          "b853e1148ad2",
+          "5557caeb7fae",
+          "3837fedd5138"
+        ]
+      },
+      {
+        "title": "이란, 호르무즈 해협 유조선 공격 위협 확대",
+        "summary": "이란이 호르무즈 해협을 통과하는 유조선을 대상으로 폭발물 부착 및 수중드론을 투입하는 등 게릴라식 공격을 확대하고 있음. 이는 해상 물류의 핵심 경로인 호르무즈 해협의 긴장감을 높이고 에너지 수급 불안정 요인으로 작용하고 있음.",
+        "change": "전일 비교 근거 부족(새로운 국제 정세 리스크).",
+        "impact": "호르무즈 해협을 경유하는 국내 원유 도입 물량의 운송 비용 상승 및 공급 차질 가능성이 있음. 국내 석유 수급 불안 시 석유관리원의 비축유 관리 및 유통 모니터링 역할이 중요해질 가능성 있음.",
+        "article_ids": [
+          "328350c23563"
+        ]
+      },
+      {
+        "title": "석유관리원-교통안전공단, 운송차량 안전관리 및 불법유통 단속 업무협약 체결",
+        "summary": "한국석유관리원은 4일 한국교통안전공단과 업무협약을 체결하고, 위험물질 운송차량의 안전관리 강화와 석유제품 불법유통 근절을 위해 협력하기로 했다. 양 기관은 운송 구간 정보 공유와 합동 단속을 통해 안전 사각지대를 해소하고 유통 체계의 투명성을 확보할 방침이다. 이는 단순한 안전 지출을 넘어 유통 구간 추적 능력을 높여 부정 유통을 사전에 방지하기 위한 조치로 해석된다.",
+        "change": "전일 부산·울산·경남 해상연료유 단속이 현장 행정 중심이었다면, 이번 협정은 교통안전공단이라는 제3자 기관과의 제도적 협력으로 확대된 점이 새 사실이다.",
+        "impact": "운송 데이터의 공조로 위장 운행·무자료 거래 포착 가능성이 커져, 관리원의 밀수·위조 유류 단속 효율이 상승할 가능성이 있다. 위반 사례 감소로 품질 관리 부담이 경감될 수 있다.",
+        "article_ids": [
+          "3837fedd5138",
+          "aaeb44eb408d",
+          "5557caeb7fae"
+        ]
+      },
+      {
+        "title": "이란, 호르무즈 해협서 유조선 대상 공세 강화…석유 수급 불안정 요인",
+        "summary": "이란이 호르무즈 해협에서 유조선에 대한 '게릴라식 공격'을 확대하고 있는 것으로 보도됐다. 유조선에 폭발물을 부착하거나 수중 드론을 투입하는 등 물리적 위협이 보고되며, 중동발 원유 수송 경로에 대한 불안감이 고조되고 있다. 해당 해협은 전 세계 원유 공급량의 상당한 비중이 통과하는 핵심 길목이다.",
+        "change": "전일 자료에는 해외 수급 관련 이슈가 없었으나, 이날 이란의 군사적 움직임이 구체적으로 보도된 점이 새 사실이다.",
+        "impact": "국제 유가 변동성 확대와 특정 지역 정제유 공급 차질 가능성이 있어, 관리원 차원의 수급 동향 모니터링 및 대외 수입 원유 품질 검수 강화가 필요할 가능성이 있다.",
+        "article_ids": [
+          "328350c23563"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-11-04T16:35:15.166396+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "석유관리원, 운송정보 활용해 유통 이상징후 조기 포착",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iYjlzaG80RnU3V3hWTGNfX3FDTnAyZ21jRjV4Z2dtQkw0Zmk0V0syTXdXd3l2VGlhbXowNENvZ25oRzBZeGh1ajdNUHFhS3NlRzlUdDBrbGVfaE11aFFiS2ZKTF80SldtU3FFVQ?oc=5",
+      "source": "위클리서울",
+      "published": "2026-11-04 16:09",
+      "summary": "석유관리원, 운송정보 활용해 유통 이상징후 조기 포착  위클리서울",
+      "sector": "kpetro",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [
+        {
+          "title": "TS, 석유관리원과 위험물 운송정보 공유해 안전관리 강화",
+          "source": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8xME1MQlM0SWFGd0JXMnZ2bVlvc0hhRC1tUUtNOGtqUm9uQ2h6emVidHJvVGhvaENWcHR2V3JzNGNOV2gtd0dpb2xVc2RzQlhfLWpJMl9WaXlEMGY4T2JVblZsZkZ2ZnFNNHJwZU5uQ2RSRm_SAXdBVV95cUxNMGtObGxVNEdhbGVOWENIYk8xb3dxUnNzT1pkTGc5VEZhS3RCdzZfeHNKVGhsdk15U19WRFY4Y1FiejFocTRBUFhwMzFuSFVRYmVxbFduSjFVb3RTOWR0aE5jZlRlekhkZE5GaF8yeldlbDBSaUVQcw?oc=5"
+        },
+        {
+          "title": "TS·한국석유관리원, 석유제품 운송안전·불법유통 관리 협력",
+          "source": "BBS불교방송",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8zTnBlNWp6QURzX09pajdrQWJUbXFyeE9RbWVmb0dYRlY4cmppX2c5SlVEUWpDRTlkSXhtMzRlZXdOOFJHVnNrVHJQZDEtbE5NenYxS2FpM3lROTg5bW1CYWRsWkNKUVdKNndN?oc=5"
+        },
+        {
+          "title": "교통안전공단·석유관리원, 위험물 운송정보 공유…불법유통 대응 강화",
+          "source": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS2JsZ3UybC01WWtrcHFKbVhENDBUNWRYNmpTMkIxYjdQZVF0YXRoVjVtbWJTVXZlbXMydk5zWWd2aVBfM2JsUHJ4WDh2UndiQWxHN3pGVXNNQzc2bWxUYnRjQU1fRjcxaHpJVVNuNTZka3RCeTZaVGxrblp4TTQxcXFPRGNSa2FyWWc?oc=5"
+        },
+        {
+          "title": "석유관리원-교통안전공단, 석유제품 운송안전·불법유통 관리 협력",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQTWZiNkptS2xRaFNXN3hYUjFrdWxUN1lpY1RzeE1aS25xVlEyRDVJYlVSaVhOcG9WeHNDSXA0V2hmNzkzUi1MbXRYWlNwOEtiUWtBVkVJa1lXdzBUTlMtMHhjb2xMYzlGQnRnNTQ4Q1JUbDhFMXNVZzNCS3Fsbzd6dW5pdDhndXFrRGYzZFJQYmgtREFZN2ZTU3dlSUpzRnZ1cmlfbnNjcUxDUWNvRHJhQVFFX2MydkttYzlESHBfTTVFejJQRXV1TEM4UGYyWllPYmdTX3BYUFdhcGJpdXprWnJzNE41YUFNalpkSGItMHZrS0UwQjZYMEFmSTdLdmFBcE5vMW42UHF3aWVqT1VoWEhMNjlqSWQ4eEc2ZGpBakFtUjktUWNHdnNzUmtmZw?oc=5"
+        },
+        {
+          "title": "석유관리원-교통안전공단, 석유제품 운송안전·불법유통 관리 협력",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xY3FBUjF1cWdFQ1lZeU1iOENaVHU3a0dIckMwWkctVUF2SWZRTW11RUo4eVdtSEV4YlpQRk03OXBHNXZoWGZZODFBRHdIcU05VlNqbw?oc=5"
+        },
+        {
+          "title": "석유 운송사고·불법유통 대응 맞손 … TS·석유관리원 정보 공유",
+          "source": "뉴데일리",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5meWIzVUhZaUJ0WWo0QVpQMnpDVlN0dlcxUm9EZGpaXzRKLTJjMjZ2czd1a0NWOG94YjBFdjVoQ3l4UUFxNXdTLVYzenZFdElZX2VPT3lpYkxFdHBBVGxnT28tS3BZSVBYZmdGeGlEdkoyOXNCME5fVnB4c9IBgAFBVV95cUxNekZSd0k4RmRMa2JIOUdzbWF6UEZ0LTZtRmZhUTRPR3RTODdfaElUS2R1OTcyRHhXTlZHclpicUZDc2Eyajk0Ri13Yk1PUGM5ZVpzNm5wNFo5cFp1RnlrUlg3MVpKYUZ3Qnc4Wi1pbXV4NXhqbzc2SVhqRjFVMkR3cA?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "관리원-교통안전공단 운송정보 공유 협약",
+      "id": "b853e1148ad2"
+    },
+    {
+      "title": "석유관리원, 한국국제협력단과 감사업무 협력",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YczYzRVoyNTZPZFJ2N0pKYzR5UTQ3ZjBIT1hNV1hMdGY4UjM3cFlONmx3MXgybVBiemVudmFaMkZrUW9KWGFpWDZnS1p1ak1GU2pZYm9YdkhoWW9Od0N3X29oLUpObXpm?oc=5",
+      "source": "온라인가스저널",
+      "published": "2026-11-04 11:41",
+      "summary": "석유관리원, 한국국제협력단과 감사업무 협력  온라인가스저널",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "fd24375b2fb5"
+    },
+    {
+      "title": "석유 운송정보로 불법유통 잡는다…석유관리원 통합관제 강화",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CR3dtVXlNT0FoRzZOYm9TNF9hUW5vUFRsc3lUYmx5YWtLLWRkX3pLLTFaZlpKazdjS05sOTh6Zy04UEw0NEktczZUTjFIUkIyLUlTVDZTUDJINEVTREY5U0pubDVXZ1pSRW1ZdQ?oc=5",
+      "source": "에너지타임즈",
+      "published": "2026-11-04 11:31",
+      "summary": "석유 운송정보로 불법유통 잡는다…석유관리원 통합관제 강화  에너지타임즈",
+      "sector": "kpetro",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5557caeb7fae"
+    },
+    {
+      "title": "TS·석유관리원, 석유 운송차량 안전·불법유통 단속 맞손",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NcWFENXVsa0VVU2NyX1BmTUNLeGoydWdETk1tWExKQmRKTHRia2tJMFdhTVhWMk1JQzlUZXFiN0hEUnhwTTY0UXVVNlRVbXozNWtrZTQtbTZHUQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-11-04 10:37",
+      "summary": "TS·석유관리원, 석유 운송차량 안전·불법유통 단속 맞손  파이낸셜뉴스",
+      "sector": "kpetro",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3837fedd5138"
+    },
+    {
+      "title": "석유관리원, 한국교통안전공단과 석유제품 운송안전 및 불법유통 관리 협력",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1HTlM1VUlGbGV5ZUczdFRoclNFMjdwaHZFVjhXVXEzamdCZ1AxbUhKbVFHWGt5eWZEMnplTW5sSXdNVXE0cG5ieUNWQ1RwVGdfVVRzYjR3V2tsUl9PYU9YRjktMHNaQlRvX2h3?oc=5",
+      "source": "한국건설신문",
+      "published": "2026-11-04 10:26",
+      "summary": "석유관리원, 한국교통안전공단과 석유제품 운송안전 및 불법유통 관리 협력  한국건설신문",
+      "sector": "kpetro",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "aaeb44eb408d"
+    },
+    {
+      "title": "한국교통안전공단-한국석유관리원, '위험물질 운송차량 안전관리·석유제품 불법유통 근절 강화' 업무협약 체결",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBlcFNGZlhWWFB0cmxJRUhoVXI5aEpZckRHc0E3bzRnSTA3Ukdpb1VpcmJRb1FzWXdrN214cWlQZjN1dk5OLUVoOEdRajE?oc=5",
+      "source": "이코노믹포스트",
+      "published": "2026-11-04 10:02",
+      "summary": "한국교통안전공단-한국석유관리원, '위험물질 운송차량 안전관리·석유제품 불법유통 근절 강화' 업무협약 체결  이코노믹포스트",
+      "sector": "kpetro",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7a3f25f8a1f6"
+    },
+    {
+      "title": "이란, 호르무즈 해협 '게릴라식 공격' 확대…유조선에 폭발물 부착·수중드론 투입",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9DZ21iOWIwM1pPbVB5UHFQaHZSeTF1azlVQVBLeTJxajl0SnFrX09GTk11bktlNFI1ZjJ4Q2NzWnhqNjZTd1N2aTEyUGN4Vlh4LVZ6emZWeWpFaGkzNko2RzNfak5wdG5ZeVc0?oc=5",
+      "source": "해사신문",
+      "published": "2026-11-04 15:20",
+      "summary": "이란, 호르무즈 해협 '게릴라식 공격' 확대…유조선에 폭발물 부착·수중드론 투입  해사신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "328350c23563"
+    },
+    {
+      "title": "고유가에도 2%대 물가…최고가격제 완충 효과, 비용 분담은 과제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRQXpYNm9oYmZMc1hIMmZCTDdQR2Jza0xJY2tZWjZGTDc0RUJQR1c2N0VnYXNfMTd6bWt6eGI1V1AzekJjR2xlWXRkNXlyNk83VjU3Z05NV19OZmtJNGEyM9IBeEFVX3lxTFBRc3p5ckhaMU5SVHVhS2llb29uaWdlOVl1MkZacFMwWHFHazFlb24xeTlPS3VPc1lEZ291X0xnVlh2SExId1pXMlpqUmJUY3A1VzVOQUZMQm8tcXp4SE9nc3YzOHdDY1dXSHZXUUZqMy1FSTYzWEt5WQ?oc=5",
+      "source": "뉴시스",
+      "published": "2026-11-04 15:30",
+      "summary": "고유가에도 2%대 물가…최고가격제 완충 효과, 비용 분담은 과제  뉴시스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8ba657fec11e"
+    },
+    {
+      "title": "세금 회피하려 '무자료 석유' 불법 유통한 일당 무더기 검거",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE04azkwOHRDenJFRjlDR2JRNWhTOWllU3BlNHBXeERsMHZIbURTRFRYa2xCRndsWUJKQmJlZ1RCYjNqeEE5bTIxX3dnQld4QndhN25ob2lzaFhid0l1TkZUVzBjS3VFZEVQTGRlNXV3?oc=5",
+      "source": "세무사신문",
+      "published": "2026-11-04 11:54",
+      "summary": "세금 회피하려 '무자료 석유' 불법 유통한 일당 무더기 검거  세무사신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유사업법 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "58eb89edf2e9"
+    },
+    {
+      "title": "5년간 ‘물가 잡기’ 비용만 24조원… 유류세 인하에 세수 18조 구멍",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mc0FjTzhtY2J0S1czMUZuLXo4R1ZheFNHRTk5RWVwc3g5LXFlY3MwSmFqa0RaWk9mWklWLWc4TnJWZVVwQ05DQTZ6NWtKM19RYVVjcEdR?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-11-04 11:23",
+      "summary": "5년간 ‘물가 잡기’ 비용만 24조원… 유류세 인하에 세수 18조 구멍  헤럴드경제",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c3c039390fca"
+    },
+    {
+      "title": "TS·K-Petro, 석유제품 운송안전 및 불법유통 관리 협력키로",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBFblNFZTYtNkhoRVR2b1R5cVRjMHppZUVqVHo2c3hPRGZfc05zWnFtQW9TaU1PbmhvWjdqa3VWR3Z2WE5UQW9iWjl5VjE5Zzg5?oc=5",
+      "source": "문화일보",
+      "published": "2026-11-04 11:19",
+      "summary": "TS·K-Petro, 석유제품 운송안전 및 불법유통 관리 협력키로  문화일보",
+      "sector": "government",
+      "risk": [
+        "불법유통"
+      ],
+      "duplicates": [
+        {
+          "title": "TS·K-Petro, 석유제품 운송안전·불법유통 관리 협력",
+          "source": "로이슈",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9CSFMxUFdkWmlWS3JPcXRoMndDNjZJaElGMnZ5Smp6M3hPcUE3OFNCVTZGVnB0azRoZnVHcHZuSTJ1cmFLblgtZU1xWW0zRk91cDRHU3BhRUtXMjljQWl4ZE1MekpZUGtzT3NnWGlhZm9lc2pheFFvV3lB?oc=5"
+        }
+      ],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "401b7db7c432"
+    },
+    {
+      "title": "10월 소비자물가 2.8% 상승… \"석유 최고가격제로 안정 흐름\" - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40YzhjWXV6b1pHdkY3MkpwSmFTZlNZSDJoWi1iTi14d3ptRndpRHhoUENPdTNic1ZRNHEyZjFlbC0ybEk4dVpnV1RxbDhjR2dOYlZGbFB5akZFVnQ2anZ0ZmozUDJYVkI3NHhramE5eXnSAXBBVV95cUxONGM4Y1l1em9aR3ZGNzJKcEphU2ZTWUgyaFotYk4teHd6bUZ3aUR4aFBDT3UzYnNWUTRxMmYxZWwtMmxJOHVaZ1dUcWw4Y0dnTmJWRmxQeWpGRVZ0Nmp2dGZqM1AyWFZCNzR4a2phOXl5?oc=5",
+      "source": "머니투데이",
+      "published": "2026-11-04 10:47",
+      "summary": "10월 소비자물가 2.8% 상승… \"석유 최고가격제로 안정 흐름\" - 머니투데이  머니투데이",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0fb91d7fff00"
+    },
+    {
+      "title": "석유 최고가격제 손실보전 1조4490억 편성 … 산출 근거는 '깜깜이', 최대 소요액 반영",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMXM4TWJTeU1YSHRFenlFRVNDYkJkcVBFaWEtNXBTODFFNlhjVnRIdXo1NUoxbnJHSDNVa3RpbEV4UTlvYjJfaGdiSTlxQnZ4UVpOTnRMODZGREZRV3c5TVdPeGVXbVpJNDA1dDdDWE8xdW0yV0dVWmpWN25MZ2tvZtIBgAFBVV95cUxOMXM4TWJTeU1YSHRFenlFRVNDYkJkcVBFaWEtNXBTODFFNlhjVnRIdXo1NUoxbnJHSDNVa3RpbEV4UTlvYjJfaGdiSTlxQnZ4UVpOTnRMODZGREZRV3c5TVdPeGVXbVpJNDA1dDdDWE8xdW0yV0dVWmpWN25MZ2tvZg?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-11-04 10:36",
+      "summary": "석유 최고가격제 손실보전 1조4490억 편성 … 산출 근거는 '깜깜이', 최대 소요액 반영  뉴데일리",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7ef78f6fe2f6"
+    },
+    {
+      "title": "전기료와 휘발유 가격 모두 하락: 연말 인플레이션 억제 여지 확대.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOelZ5STVRcFBpbGRibHFid2tjWkNCa2xHTUZsUTlTbU1VR1JoUExYRDFjaUV4Qm5kNjE1U3NOWkM5enNINFBjVlJhZHV3d0VYb19QQnVuOE95X0lMdVJfb2k0SGZQN1h3N2g5TFU5R1JodHJwUVNyWXdwS0xNSGZPRFJPWHh2Q0JPNHE3VTlxaU9xenM?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 16:28",
+      "summary": "전기료와 휘발유 가격 모두 하락: 연말 인플레이션 억제 여지 확대.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bb5253ec656c"
+    },
+    {
+      "title": "산업통상부 차관: E10 휘발유에 대한 불만이 거의 사라졌습니다.",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaGlicmVXWTNxN3RtbWMwRDJsX3FVYUl6TF9fLUJhM3p6ckJ3aFJnenRTV2h4OGlfalpxbnphSDU3S3pldGctYVNVSkhDbnNZeDhtY3h4eXZERUZOaFVDOG5IanBGaXV0Z0VIdEwwc2NSVk9scXI5a252WS00RzRncXJFSkd4TmhNa1B1dTRRQnkwaVJf?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 16:28",
+      "summary": "산업통상부 차관: E10 휘발유에 대한 불만이 거의 사라졌습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "dc536daa2056"
+    },
+    {
+      "title": "한국석유공사, 17곳 8년치 461만건 학습해 유전 생산예측 AI모델 개발",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE40NUFQMnZDN0FtenNBakdRaEoxWWx4c2xsd3hvSndoeTZnVGszaWJDTG94Si0wX1FKZ1RvQURZRUtFN3VnaDg2RE1zdGkxWDVCOERQTHlYT3hhVF9KR2Vr?oc=5",
+      "source": "매일경제",
+      "published": "2026-11-04 16:02",
+      "summary": "한국석유공사, 17곳 8년치 461만건 학습해 유전 생산예측 AI모델 개발  매일경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1c67ee1b2779"
+    },
+    {
+      "title": "이란, 호르무즈서 ‘저비용 게릴라식 해상 압박’…유조선 공격에 에너지 물류 다시 긴장",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ydFhZdzl1cm5La0hZMnJLbVZRandsbXNWMm5lallsY0xTX3c5eGl5d3BkRE9IREJhVENhczcyNl9Ec01DUFp0WjBJR081M2lUTWczWXU0ajV3Sy1yNHZ0SWZ6azVCTW0zR2c?oc=5",
+      "source": "www.sisaworld.kr",
+      "published": "2026-11-04 15:57",
+      "summary": "이란, 호르무즈서 ‘저비용 게릴라식 해상 압박’…유조선 공격에 에너지 물류 다시 긴장  www.sisaworld.kr",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "29bbcb236ba6"
+    },
+    {
+      "title": "LG화학 3.37% 상승…신약 기술계약과 석유화학 회복 기대 교차",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9VN0VKS1NjZG5faUNqYlZtV0ZfMkxDd1YyVmIyTTU5QXozNjZKel9BdkNCWHNBZ25IMG5SMXFrMVR4RFRDbjB6Q1MwRkVqWVdPQkRiTWdNak1wMC1Yc2FSV3haLWc5RDRzTEU2ZmVB0gFyQVVfeXFMUFduYmNIbWo5OGZuSXJKTW9wS3B5RzFHcFRFM2NtQ1kyRU9rOHhHYVZxdDllS1F0UUR4MDNmSkVZaVVhSDY5YUJJVlFtZ3NaN3VEcmlUOXlWRS1XNjJZc1c4VzFOdFZOa1pSU0VvaVJFVlp3?oc=5",
+      "source": "잡포스트",
+      "published": "2026-11-04 15:26",
+      "summary": "LG화학 3.37% 상승…신약 기술계약과 석유화학 회복 기대 교차  잡포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "64eebb25443e"
+    },
+    {
+      "title": "인천 선녀바위해변서 실전형 합동 방제훈련…유류 유출 사고 대비",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBNWDdMODZ0NlNGVEZOdnVubFBBaUlYc1FlWFVTbmRMQWk3Mnk1N0RXd3NnZzlWd3ZVQ0Nla0NzUlpaLUpNaVdTV2I4ZG1QdDJDTzROWEotYW5QNkZ4RGg3eHM1RkU?oc=5",
+      "source": "경기신문",
+      "published": "2026-11-04 15:16",
+      "summary": "인천 선녀바위해변서 실전형 합동 방제훈련…유류 유출 사고 대비  경기신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ec8e3dbf1a01"
+    },
+    {
+      "title": "3분기 역대급 실적에도…정유업계 ‘전쟁 특수’ 내리막길?",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PSnFURmhFSnp0cXdRS1B0ZlktVlRHQXJMY2NxWWNVNWhVUzNrcGZjNWItVjdfLXdUckJmUkF3djlnd1NPb3JOS0hyQkNjcFd0eGwwR2Q4VFNySXM?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-11-04 15:12",
+      "summary": "3분기 역대급 실적에도…정유업계 ‘전쟁 특수’ 내리막길?  에너지경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3651988b37d8"
+    },
+    {
+      "title": "휘발유 수출량 제자리인데 수출액 67%↑…고단가가 만든 호실적",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAyWjN1Q0FDa0NQU1dWeU5iTXZacE5qUFlZc0VlVFkyZHlVVjdIcVdQVmE5NVMtX2RMeGMxellFWmZucnVhRWt3b051QQ?oc=5",
+      "source": "아이뉴스24",
+      "published": "2026-11-04 14:10",
+      "summary": "휘발유 수출량 제자리인데 수출액 67%↑…고단가가 만든 호실적  아이뉴스24",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c0acc7f5c600"
+    },
+    {
+      "title": "이란 \"최대억제 계획 준비 완료\"…호르무즈 유조선 또 피격",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9BZEthdEZveGRVN2VwX0VremctZXpUZ0tNS3pmaTdFbWNBTF9KNkNzVmc2WlpmWmZZcVF3N0trTEFDVkNSbjRmemYyVzg3OEswWnpEODg4SnB4SDdpdUtyVjl3?oc=5",
+      "source": "매일신문",
+      "published": "2026-11-04 13:32",
+      "summary": "이란 \"최대억제 계획 준비 완료\"…호르무즈 유조선 또 피격  매일신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "53bd9692c050"
+    },
+    {
+      "title": "\"전남광주시, 석유·화학·철강·조선·드론산업도 지원 필요\"",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBBcG54d0dVLTVneVpyTEZQYW1HLWRrX1RudVFKYm1YLVFOYUVUQzhIYWVSMDh6X0hhWDJ4UDQ0LW04TFphTnE1czVvekVOWWluVzgyZzRZUU5yS0l3cnM0dXlYeHpPZFhFRkl5akozeVp3TFp3TFIwatIBeEFVX3lxTFBBcG54d0dVLTVneVpyTEZQYW1HLWRrX1RudVFKYm1YLVFOYUVUQzhIYWVSMDh6X0hhWDJ4UDQ0LW04TFphTnE1czVvekVOWWluVzgyZzRZUU5yS0l3cnM0dXlYeHpPZFhFRkl5akozeVp3TFp3TFIwag?oc=5",
+      "source": "뉴시스",
+      "published": "2026-11-04 13:29",
+      "summary": "\"전남광주시, 석유·화학·철강·조선·드론산업도 지원 필요\"  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정부 에너지 대책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "167d0c157c2b"
+    },
+    {
+      "title": "국제유가 7% 급락…美국채도 '뚝' 10년물 금리 4.8% - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5oZ2FWZmhqajVWRkx1c2lSWi12UndGUEpyWEFhb2g1QndqMlBjMXRiR0NLOW5YZkl2UGVXdUlTc1JSVkdjVXhtc3BLSGh1WHZaV3JHUDlLWWNEbXJEaXlkSklWN0dUR3ZSdHpFOEp1WW5LV3IzZ1HSAXtBVV95cUxPeG01ZUhCWTRfYU5qRkR1LVJhMDBYdFdMTS1FLVpmRkxkdE5OalJJMzYyeHFTMjdHNHBMU2Y2ek1CZGpEOW5tOWFQTmlaTUwzU25aY3Y3c1VFUkRycUR1M2s0ODlGMUdSUmg4eUJ1U0I1SVp0RXFxcnpMSEk?oc=5",
+      "source": "머니투데이",
+      "published": "2026-11-04 13:08",
+      "summary": "국제유가 7% 급락…美국채도 '뚝' 10년물 금리 4.8% - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ab2f50465cd9"
+    },
+    {
+      "title": "한국가스연맹, LNG 공급국 말레이시아와 산업교류 협력망 확대",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204683",
+      "source": "에너지데일리",
+      "published": "2026-11-04 13:00",
+      "summary": "[에너지데일리 조남준 기자 ]한국가스연맹이 국내 주요 LNG 공급국인 말레이시아의 가스산업계와 협력 기반을 넓혔다. 국제 에너지시장의 불확실성 속에서 산업계 간 소통 창구를 확대하는 것으로, 양국 기업의 상호 이해와 사업 교류를 뒷받침할 것으로 기대된다.한국가스연맹(회장 홍의락)은 지난 10월 28일 홍콩에서 말레이시아가스협회(MGA)와 교류·협력 강화를 위한 양해각서(MoU)를 교환했다고 밝혔다.MGA는 말레이시아 가스산업을 대표하는 단체로, 한국가스연맹과 함께 국제가스연맹(IGU) 정회원으로 활동하고 있다. 이번 협약은 다자 협",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "rss:에너지데일리",
+      "language": "ko",
+      "event_key": "",
+      "id": "effeba398ab5"
+    },
+    {
+      "title": "2026년 11월 4일 오늘 연료 가격: 원유 가격 하락, E10 휘발유 리터당 23,000 VND로 복귀.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdnpCUE5zRTRsZHNQSnJZV2FRNld4Mi1JNGl5QlU0X3pSY01GYjltZDc1aHl5QzBwY1RIbzMwMHlmTXdaRjdBTWFwWmRKQmpHV2t6cXY3NUt0X0pWTDloYVpLSHM0S3RSNDh2WjNRbUNsTUVsaVpFRExPZDlVMldIZ00tNi1YZXVwaGFaWGY3WmlhRFhqcDdMSnlKNkhSRi1vYjFJ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 12:37",
+      "summary": "2026년 11월 4일 오늘 연료 가격: 원유 가격 하락, E10 휘발유 리터당 23,000 VND로 복귀.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "83535620071a"
+    },
+    {
+      "title": "2026년 11월 3일 연료 가격 조정 기간: 휘발유 가격이 급격히 하락합니다.",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQalliYUIydlVwQ3J3UzR4Y1VuRXM4eWF5UjhWWk1TMWZmbnNaaXBrWWZYay1ZXzJqT2kxd1RIWGxUNk52QjBTcDBSdXZTb3Z6dE9YakRKdHVoVHFGYWZjNHNjRExVLWxyZFN1RzBpNi0yNUJteGRxUGd4d1ZRU2QwUjBaMTdWUURCakNOWjkwQUp3dFhMNE5iV3dacw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 12:27",
+      "summary": "2026년 11월 3일 연료 가격 조정 기간: 휘발유 가격이 급격히 하락합니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "298adac876b9"
+    },
+    {
+      "title": "오늘 11월 4일 소매 휘발유 가격",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSC1VdDBpTDE5THZuczBPcG1oYTFrdk5SUlFQNWVqb1ZsVnhPMXJQamFrR0xuWHlYZmdwUGhkcmtQYlM1YlNRRVQ3cUpIdFQwcEwwWG14Qm0xQnJpc01jMUdTYmthaXhNaHN1LXlDSU9CUFdncmZGWlBrQjF0SUFPd0w4bGZJbW8?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-11-04 12:24",
+      "summary": "오늘 11월 4일 소매 휘발유 가격  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8d51faf33ad2"
+    },
+    {
+      "title": "‘빈자의 연료’ LPG 가격 급등…파키스탄 릭샤 기사 끼니 줄였다",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ySGZIZ1lFM3lSZmpWWjlvQ2NQYnpLUkd0TnJYZ2loZDV6MVlSWTY0VXE5Mm9fTklvU3JiUFJxSGtBVDdmVkJZV1FqSEh2OFQzWVk2UGpiT3oyOF9WQTV0RmFIUEZ1RC1mUTdGZEdR?oc=5",
+      "source": "아시아투데이",
+      "published": "2026-11-04 12:20",
+      "summary": "‘빈자의 연료’ LPG 가격 급등…파키스탄 릭샤 기사 끼니 줄였다  아시아투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d1c3b9e25c82"
+    },
+    {
+      "title": "이란·미국 종전 협상 '난항'…미군, 호르무즈 공습",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rR2ZYaHMteU5TTTJMSTdvNkxmTzA2LVdsZEhxaFJFcEhwbF9WSVJscXZqMFlicjhESTBkUGlvOFl3MkdGSnVuTzNGUEdJblBoQlBYeVhkNTFkMW5WVnF0R2lNNjhIR1hHZ2lySDV3?oc=5",
+      "source": "디펜스투데이",
+      "published": "2026-11-04 12:07",
+      "summary": "이란·미국 종전 협상 '난항'…미군, 호르무즈 공습  디펜스투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "19e47f442ff5"
+    },
+    {
+      "title": "휘발유 가격이 갑자기 리터당 23,000 VND 조금 넘는 수준으로 떨어진 이유는 무엇일까요?",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWjlUN2JkZGdMYS1mczY0Y3lDWEZtdkk1clRWb252bGRhTVBJLUZZX0hzTEtWNW9BVzNGbVI0VDFVRm9STW9hMzZCTWcyeXR2Z3NCdVk4T1JXbzMzUFdaSHpnNDRhaVhFTDFHdnlZanI4N1JLZzFYN1NONF9aYnVvNGJXRm0?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 11:37",
+      "summary": "휘발유 가격이 갑자기 리터당 23,000 VND 조금 넘는 수준으로 떨어진 이유는 무엇일까요?  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d1edc941f4c6"
+    },
+    {
+      "title": "호르무즈 해협 에너지 안보 충격, 1970년대의 두 배였는데 세계 경제가 버틴 이유와 바닥나는 완충재",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1LYmVMVXEtR3U3N2RxWUxwSjhHRE8wOWVMbi0zOGR2X3JCNHZZbzB5bjlSOHBaeHBRU0ItUTZXZmNVWEJPenZIOWJwUFBtZHFSZG13Sw?oc=5",
+      "source": "AI 매터스",
+      "published": "2026-11-04 11:36",
+      "summary": "호르무즈 해협 에너지 안보 충격, 1970년대의 두 배였는데 세계 경제가 버틴 이유와 바닥나는 완충재  AI 매터스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a1f080ffee59"
+    },
+    {
+      "title": "오늘(11월 4일) 연료 가격: 세계 원유 가격이 약 4주 만에 최저 수준으로 떨어졌습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSkhjU3NRZjR3ZVhyNkVMS0FvSTFKVEQ4aXJpSEowRXFDakE1eEs3UXVJemtQWUpNbGpBVVdhUXI5YWJmdnBOTFg2RDZvcjRNeThfbkJoSnMwekV2QjVkTEdORG9fZGJMdnczX1FpdkRLM2doRkxVTnM3QmJGNWZneENTOElFRDVCeURhOVRnRzlacko3Y3lYZ0VNZ2JuU29lVWtjTGR6Z0I?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 11:31",
+      "summary": "오늘(11월 4일) 연료 가격: 세계 원유 가격이 약 4주 만에 최저 수준으로 떨어졌습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d62692a619c9"
+    },
+    {
+      "title": "美·이란 이어 러·우크라도 종전기대…국제유가 하락세",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBtZzZsWkV4ZUYtRHpLcXo3MGJuZW9oa0R4T2ZqWk9QckxabFBjQ185QWF1Y1hHSTczZC1UZXJTUEprSVdrWTNtVmh1RTBQTGFENVpoa2duUVdUWGwzUVZZZw?oc=5",
+      "source": "아시아경제",
+      "published": "2026-11-04 11:24",
+      "summary": "美·이란 이어 러·우크라도 종전기대…국제유가 하락세  아시아경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "80636a75a91c"
+    },
+    {
+      "title": "전기 요금 인하, 휘발유 가격 인하: 획기적인 성장을 위한 지렛대.",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRlpKcnhOdFh3Z2lYYU1lSmNBZDZVZjV6eEN6NjQ4RkFhcHZWT3d5SFpMQU9ia0FoNElUZWp5WVVydFVjbXZlZHZRamRLaGxvZF9pUV8wbF9Lb3hEVEFtejBQWXFNNVNFMWxaUnFaUzdlS2JqdDVrWlNYcnV5Q2s5TU5vVWN4dw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 11:06",
+      "summary": "전기 요금 인하, 휘발유 가격 인하: 획기적인 성장을 위한 지렛대.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b6d8266b7c7a"
+    },
+    {
+      "title": "오늘(11월 4일) 유가: 국내 휘발유 가격이 리터당 23,000 VND를 약간 웃도는 수준으로 급락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTnNudlhRRlQ0UFlMZkdOVmFfY3hUNXJuUkxqaG1tbGlVZGlCWWhtcDVYX0hCV1MyWmRfYlhxNGNsLW5BQktLNFRHV1hiN1ktWVpiQmNnTE5GUV9jR1Z0VWdTV3liNmFycklCYWlCT2JNZWZnNnozSFNWdEZtcXhLME9MQVBhT0JJaHlteVYxLUZVa2lkZ2VBQ3hkRlphQWdK?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 10:40",
+      "summary": "오늘(11월 4일) 유가: 국내 휘발유 가격이 리터당 23,000 VND를 약간 웃도는 수준으로 급락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f9a500ee4cde"
+    },
+    {
+      "title": "“국제유가 폭락은 좋은데”…트럼프, 중간선거 끝나자 돌변할까 [이슈+]",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1XVjNldmR0OFNrOXR5cnpsLVgzZTNpanJELTh3emx1dGRnRXc4U3FuOXAzMDJkOTJ4RjF0Uzd3VERPRHduOUlWcm5JSHRJN3FJUTFyMDZveWE2V1U?oc=5",
+      "source": "에너지경제신문",
+      "published": "2026-11-04 10:36",
+      "summary": "“국제유가 폭락은 좋은데”…트럼프, 중간선거 끝나자 돌변할까 [이슈+]  에너지경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6521287327a5"
+    },
+    {
+      "title": "이란은 유조선 3척이 호르무즈 해협에서 기뢰에 부딪혔다고 주장했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSm9mOEdGenlRNWNYUVY0TVhqbUJoVWptX21vbnU2aWtsdjkyb2NLbVFzMFVBSF93Uk5raXpkRnAxdUtjeEtqNDNEQXNFNXZpODlhaDVzcWoxSk5sUDFpZ0dwR2toZ0JmTmlGNkduc3JrdDQ5cW9KQVRCeHkwQ3JmQjJva3l6bk50VC1kVFVhcFk?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-04 10:23",
+      "summary": "이란은 유조선 3척이 호르무즈 해협에서 기뢰에 부딪혔다고 주장했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d61be95623ee"
+    }
+  ]
+}
