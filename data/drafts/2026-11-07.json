@@ -1,0 +1,1229 @@
+{
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07 09:07",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1358.73,
+      "change_pct": 1.0441068201592905,
+      "unit": "원",
+      "as_of": "2026-11-06",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 90.5199966430664,
+      "change_pct": 2.723551772219464,
+      "unit": "달러/배럴",
+      "as_of": "2026-11-05",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 98.29000091552734,
+      "change_pct": 3.878670537322389,
+      "unit": "달러/배럴",
+      "as_of": "2026-11-05",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 90,
+    "fresh": 90,
+    "classified": 90,
+    "representatives": 70,
+    "duplicates": 18
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.7-flash",
+        "issues": [
+          {
+            "title": "유가 하락기 가격 미반영 주유소 규제 강화 및 매출 6% 과징금 추진",
+            "summary": "국제유가 하락에도 국내 휘발유 가격이 하락하지 않는 현상에 대응하여, 향후 관련 위반 사항에 대해 매출액의 6% 수준 과징금을 부과하는 제재 방안이 보도되었다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "유가 및 석유제품 유통 모니터링 과정에서 가격 비대칭성 및 담합·불공정 거래 점검 업무와 연계될 가능성이 있으며, 시장 감시 관련 합동 점검 요구가 확대될 가능성이 있다.",
+            "article_ids": [
+              "4c38e89ed60e"
+            ]
+          },
+          {
+            "title": "한국석유관리원·한국교통안전공단, 위험물질 운송차량 안전관리 업무협약 체결",
+            "summary": "한국교통안전공단(TS)과 한국석유관리원이 위험물질 운송차량의 안전관리를 강화하기 위한 업무협약을 체결했다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "이동탱크저장소(탱크로리) 등 석유·위험물질 운송 차량의 유통 및 품질 관리 과정에서 교통안전공단과의 공조 체계가 강화될 가능성이 있다.",
+            "article_ids": [
+              "e2cfe3deecdd"
+            ]
+          },
+          {
+            "title": "중동 유조선 피격 및 공급 차질 우려로 국제유가 상승 전환",
+            "summary": "중동 해역 내 유조선 피격 등 공급 차질에 대한 우려가 확산되면서 국제유가가 상승세로 전환되었다.",
+            "change": "전일 호르무즈 해협 유조선 화재 보도 이후, 피격 여파로 인한 공급 차질 우려가 반영되며 국제유가가 상승 전환했다는 사실이 추가되었다.",
+            "impact": "국제유가 반등에 따라 국내 석유 수급 불안정성 및 석유제품 가격 변동폭이 확대될 수 있어, 국내 수급 및 유통 시장 모니터링 강화 필요성이 커질 가능성이 있다.",
+            "article_ids": [
+              "55962c601d2c"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1565,
+          "candidatesTokenCount": 508,
+          "totalTokenCount": 2073
+        },
+        "attempts": 2,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "provider": "groq",
+        "status": "failed",
+        "issues": [],
+        "input_count": 7
+      }
+    ],
+    "issues": [
+      {
+        "title": "유가 하락기 가격 미반영 주유소 규제 강화 및 매출 6% 과징금 추진",
+        "summary": "국제유가 하락에도 국내 휘발유 가격이 하락하지 않는 현상에 대응하여, 향후 관련 위반 사항에 대해 매출액의 6% 수준 과징금을 부과하는 제재 방안이 보도되었다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "유가 및 석유제품 유통 모니터링 과정에서 가격 비대칭성 및 담합·불공정 거래 점검 업무와 연계될 가능성이 있으며, 시장 감시 관련 합동 점검 요구가 확대될 가능성이 있다.",
+        "article_ids": [
+          "4c38e89ed60e"
+        ]
+      },
+      {
+        "title": "한국석유관리원·한국교통안전공단, 위험물질 운송차량 안전관리 업무협약 체결",
+        "summary": "한국교통안전공단(TS)과 한국석유관리원이 위험물질 운송차량의 안전관리를 강화하기 위한 업무협약을 체결했다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "이동탱크저장소(탱크로리) 등 석유·위험물질 운송 차량의 유통 및 품질 관리 과정에서 교통안전공단과의 공조 체계가 강화될 가능성이 있다.",
+        "article_ids": [
+          "e2cfe3deecdd"
+        ]
+      },
+      {
+        "title": "중동 유조선 피격 및 공급 차질 우려로 국제유가 상승 전환",
+        "summary": "중동 해역 내 유조선 피격 등 공급 차질에 대한 우려가 확산되면서 국제유가가 상승세로 전환되었다.",
+        "change": "전일 호르무즈 해협 유조선 화재 보도 이후, 피격 여파로 인한 공급 차질 우려가 반영되며 국제유가가 상승 전환했다는 사실이 추가되었다.",
+        "impact": "국제유가 반등에 따라 국내 석유 수급 불안정성 및 석유제품 가격 변동폭이 확대될 수 있어, 국내 수급 및 유통 시장 모니터링 강화 필요성이 커질 가능성이 있다.",
+        "article_ids": [
+          "55962c601d2c"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-11-06T17:29:44.053498+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "인텔리빅스, 한국석유관리원 사업 수주...교통·공공안전 AI 기술 에너지 인프라 확장",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1nd3IzSXBaWFJSeUxvR0tqU0k2YzYxYm5fQ0VfcGVOSWZYWUQxTEdLNnBCa245aGduWHFhRmxjTmJCd2VLb3Y2VFplbkhVUGV3eEF2LWtzS05PclZUZWRV?oc=5",
+      "source": "헬로티",
+      "published": "2026-11-06 11:37",
+      "summary": "인텔리빅스, 한국석유관리원 사업 수주...교통·공공안전 AI 기술 에너지 인프라 확장  헬로티",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7c2008d76d1f"
+    },
+    {
+      "title": "TS·한국석유관리원, 위험물질 운송차량 안전관리 협약",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xb3A1NEt5NUttUkFzZmE1RHhKSzAwZmFZNjlNWGxJUkNrU29rd3ZXSXRlNjd5NUFQalpvQ29TaHptQUdWaFZXWldTRGNrcWg5bHhGT042SnJXaFpPSlhtalVHMnJla3M?oc=5",
+      "source": "상용차매거진",
+      "published": "2026-11-06 10:20",
+      "summary": "TS·한국석유관리원, 위험물질 운송차량 안전관리 협약  상용차매거진",
+      "sector": "kpetro",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "한국석유관리원-TS 위험물질 운송 협약",
+      "id": "e2cfe3deecdd"
+    },
+    {
+      "title": "유가 떨어져도 꼼짝않는 휘발유… 앞으로는 매출 6% 과징금",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45QXppTkFZVUMtZFlyWkM5c3dQNTBxcm9jbC1GRG9vMmFxM0hFTlNQby03M2MtVGJRamxBN0czYXg3cE0tc01jQkk3bUdjRWgxYjFr0gFTQVVfeXFMTjlBemlOQVlVQy1kWXJaQzlzd1A1MHFyb2NsLUZEb28yYXEzSEVOU1BvLTczYy1UYlFqbEE3RzNheDdwTS1zTWNCSTdtR2NFaDFiMWs?oc=5",
+      "source": "서울경제",
+      "published": "2026-11-06 16:15",
+      "summary": "유가 떨어져도 꼼짝않는 휘발유… 앞으로는 매출 6% 과징금  서울경제",
+      "sector": "energy",
+      "risk": [
+        "과징금"
+      ],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4c38e89ed60e"
+    },
+    {
+      "title": "대전당진고속도로서 화물차 화재…LPG 용기 실려 긴장",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1iRVJiYkZCVTBrOUtwSHBWdWhtUU1rWHBCVVh0T05GT1JTMVY4c1JNSXd3WUVIbkxTeWU4UFZYWUFQWG9xWDZSdG9oVndleXlHWk95eDN3MV9sX284ajZHWTF1OWZyZXNTU2R6cUQwQ0UwM0nSAXdBVV95cUxNVUMtYW1ucHBPdFJwT3ZzUFZIWEN4Nk4zeTVWVF9pN1VXamlhMDRRWUUxVWdwcHFXdkNWOE5zeWtXOEZwaUpIcklEQk5hUGJXTGxzTWtIa2dGRVZycm1wSThnWkdEdzNsN3V0di14RkZZRXZITVlqTQ?oc=5",
+      "source": "뉴스프리존",
+      "published": "2026-11-06 11:17",
+      "summary": "대전당진고속도로서 화물차 화재…LPG 용기 실려 긴장  뉴스프리존",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "공주 대전당진고속도로서 LPG 용기 실은 화물차 화재 : 사회",
+          "source": "재경일보",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMRnRoMEEzVGs4WmJhYUEyVmo5VXJsakFCVWJ0dDlMM2NpUGtmX1dEcjlaNUhLRzVrOHFodFRzcFljUWtpaGZyS1FCWQ?oc=5"
+        },
+        {
+          "title": "공주 대전당진고속도로서 LPG 용기 실은 화물차 화재",
+          "source": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xazdkOHM3S3dfRHdVc1ZuN1FFV0ZWanFWQ2diNm0yVmdHNEpMVVRkbGF2ZHoyRlJPZFpVdERmMmJSS3dfMDdwSWZZMERTbmVEd0lKdlFGandUSGfSAWBBVV95cUxOQU40MklEVHM4b2xiSGxSa3QxVG5Ha19NNVg0dUE0SzB6QzRpRWJ5NHg4cm05Q0s4XzBPSkxHVmVzSjBQQV9nUHJwY290SFlfUUNmSTlyOU95RHpwQ3NOd0M?oc=5"
+        }
+      ],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cb43c8f8adde"
+    },
+    {
+      "title": "공주 당진대전고속도서 LPG 적재 화물차 화재…인명 피해 없어",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBORUMyNkg0Um8wRUxqdE9BZnJGcXVudmktVXJaSVpjWGJqbWdLUUVEdWhPMnZ6LW05b0xOTUwzMm9RTmVjUWFvZjBPazdfZVc1Z2FfVWhfdzRJMFRVRkc3Rg?oc=5",
+      "source": "뉴스1",
+      "published": "2026-11-06 09:53",
+      "summary": "공주 당진대전고속도서 LPG 적재 화물차 화재…인명 피해 없어  뉴스1",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "LPG 차량 화재 사고",
+      "id": "2f8b1ec9a40f"
+    },
+    {
+      "title": "중동 유조선 피격 등 공급 차질 우려에 유가 상승 전환",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZc2RkcTd1aVh5QmZBYS1uT3dzTjBPOGkwQUtrRXNPeHJqY1RUOU1pcEd3Z01tNzVMR0NiVVB5emoxWDdGUGxmTm9jMU04UzRpTEsta21GOGtUeUVOTUZGRWJoVDlOcDB6Z0JDRtIBcEFVX3lxTE11bVpnUGd5MHVsaEo3dDRMWU1xT0FYaWNsQ3ZXakJJcms2bEQwZWJDUjRTTDBNY3dfYnJOVlNOVU90VGVJRUprRzJjcUZPSFNhNnhQWTZ4ZmFnSGNRQjBuM2EzRzlJYVRYekpWV2xfaEc?oc=5",
+      "source": "에너지플랫폼뉴스",
+      "published": "2026-11-06 09:15",
+      "summary": "중동 유조선 피격 등 공급 차질 우려에 유가 상승 전환  에너지플랫폼뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "호르무즈 해협 유조선 화재",
+      "id": "55962c601d2c"
+    },
+    {
+      "title": "전주시정연구원 \"2차 공공기관 이전에 혁신도시 인근 '만성지구' 활용\" 제안",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aRkVUM3d3eC10TnVZUXhIQVlIRkpmdEE2VVp0S3g0aHhYM3pGc2dHSy15dkpybUNPQnhNTjBHRjJBWFFmSGlFWFlSU1F0UWFia3p3cloyZml6dFY5VXliR3NuckZsbVNaLUhR?oc=5",
+      "source": "프레시안",
+      "published": "2026-11-06 16:32",
+      "summary": "전주시정연구원 \"2차 공공기관 이전에 혁신도시 인근 '만성지구' 활용\" 제안  프레시안",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ec5f2212dace"
+    },
+    {
+      "title": "예산군, 제2차 공공기관 지방이전 앞두고 충남혁신도시 우선배치 요구",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9KbVlaNmJBWmFGY1pmdm10UmVVUUdNM2FYZ3BPdWFZa3h1NUVVVUJyZmpxd0NHZ0ZJa3lrRm5nVmllNGZB?oc=5",
+      "source": "뉴스파고",
+      "published": "2026-11-06 16:05",
+      "summary": "예산군, 제2차 공공기관 지방이전 앞두고 충남혁신도시 우선배치 요구  뉴스파고",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "56df12f68b24"
+    },
+    {
+      "title": "서부발전, 국산 가스터빈에 AI·로봇 접목… 공공기관 AI 혁신 ‘대상’",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBnQjFoY0JIYmZHMHVpUV8zUzdvdUtsWnk0WW5SRmZ6TXpsanpITDBVRWQwOEZrNXQ0dTFUd0t5VHZ0Y3lTYzNxMjRRY0t4OG5tTWpaUUNndWZoSFNBd0pnQ1FlcTFEaDkySkJyMFFn?oc=5",
+      "source": "태안신문",
+      "published": "2026-11-06 16:00",
+      "summary": "서부발전, 국산 가스터빈에 AI·로봇 접목… 공공기관 AI 혁신 ‘대상’  태안신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c86011a7330c"
+    },
+    {
+      "title": "2차 공공기관 이전, 전북혁신도시 중심 집적 필요",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zZTNFZko5M05FLV9MWndnVVZQSS1iUHpSVks2OXgxRGFBTGFvd2lodzd1MWNGSy05YVdxQkRYUlJsVFFpMjlsTEZCbW1GNFBndG1lVFAwdU93bGxxYmFjNlJ6eGxtNnFmR1E?oc=5",
+      "source": "전북제일신문",
+      "published": "2026-11-06 15:30",
+      "summary": "2차 공공기관 이전, 전북혁신도시 중심 집적 필요  전북제일신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "전주시, 2차 공공기관 이전…전북혁신도시 중심 집적 강조",
+          "source": "웹이코노미",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xZlpIcGJuNU9qSTJOZUVGMnJFUUZWT2NHaW9OMXZTdlBqWGoyNWJ3LXd2TkRVWl9PYXdqODJCUm1QV01lR3F5dk1hV2JHdVA2Xy15YjdpMVJ6SlhfZXBrWTRrVjRqOGZKMXFoOFV1cVhUQQ?oc=5"
+        },
+        {
+          "title": "전주시정연구원 \"2차 공공기관 이전, 전북혁신도시 중심 집적해야\"",
+          "source": "더페어",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jRlpQZG1Lam05bm9SY2lnYUVwd0w0ZFFLbGJEYVdLX1RFQ0oxVjVBd2gtSnZ4cHFWUjJjc1kxR2xUcWRMc3J2a3JZX2JldE9rOEpDVjlvejVlbGR1R3ZzM3JVc2J2eU1jWWFXZXNScGc?oc=5"
+        },
+        {
+          "title": "2차 공공기관 이전, 전북혁신도시 중심의 전략적 집적 필요",
+          "source": "전북투데이",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pamxXUTRrVktuckx6MUlTclEzLTUzczZQX1FnSUNNOWE3SkJXOUlfUG5VLTVlWDRreTdJTC03dWtjaWRWQjVwVW16bXBhSV9XdXl3cVp3TlZubEVzM08ycWwySFU3QQ?oc=5"
+        }
+      ],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a123e45985ff"
+    },
+    {
+      "title": "예산군민 “공공기관 충남혁신도시 우선 이전”",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxeks3UDFsMTJpNUZqQW5FdVNiTXBMYzZMbjFaRlhyQWduaV9KaWZna0ZqTlRfRDg5ZUc0dUxfVTBZUTRablozNmZWTGFndFFwa3U3R243bjM4bkFYZ1ZvV2lneHR1WUlvN1E3RHEyZ1NqM0HSAXdBVV95cUxNWFF1M3dBYjJQb2N0Z0JfOXAxR05taGpJWW1TQ3A1aWtMOU9FVzV0YmdFUTI4OW5yeGxRSVljWTU5Q3N0QU40dXpyVU9tYXJKclltYW1feEktZ01FVnB2emIzT1lncnZobjhubkRhUi1MbzhLSUNEYw?oc=5",
+      "source": "뉴스프리존",
+      "published": "2026-11-06 15:01",
+      "summary": "예산군민 “공공기관 충남혁신도시 우선 이전”  뉴스프리존",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9281d65fc39a"
+    },
+    {
+      "title": "예산군, “6년째 공공기관 없는 충남혁신도시··· 이제는 이전으로 답해야!”",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aQk1Jdm9tdGRVeDV4NHZMYXZlYnBNSUgtb283ME4wMUg1czVEb0xUcVRHRGZXa05Ga0p2eGpvT1VvVzZIbnRhdnlmN1dIOG9jRTlJYWpxMkljQTVEY2RFOWpoY0h5RmZQM0lHVNIBbEFVX3lxTE1aQk1Jdm9tdGRVeDV4NHZMYXZlYnBNSUgtb283ME4wMUg1czVEb0xUcVRHRGZXa05Ga0p2eGpvT1VvVzZIbnRhdnlmN1dIOG9jRTlJYWpxMkljQTVEY2RFOWpoY0h5RmZQM0lHVA?oc=5",
+      "source": "충남문화신문",
+      "published": "2026-11-06 13:08",
+      "summary": "예산군, “6년째 공공기관 없는 충남혁신도시··· 이제는 이전으로 답해야!”  충남문화신문",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6ca1ba0b4e7f"
+    },
+    {
+      "title": "전주시정연구원 \"2차 공공기관 이전, 혁신도시 집적해야\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BQXBzb0Z2QW5rQ1A5c0o0eDNuWDEybmpEZE0yZm54VFRlVVVYck1pd1JpNlBrVVVKb01jU2N5bGRLcVNhbnV3TGJ0ZDlLcFVvRlE?oc=5",
+      "source": "노컷뉴스",
+      "published": "2026-11-06 11:21",
+      "summary": "전주시정연구원 \"2차 공공기관 이전, 혁신도시 집적해야\"  노컷뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "90308dc25af6"
+    },
+    {
+      "title": "2차 공공기관 이전, 전북혁신도시에 집중해야…전주시정연구원 전략 제안",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9rU0pGNzdIMG02N204YUQ3ZWhNbnJtWFFFbzhkZ0V3UkNPWHZlcnNlUk10R3pfcWxFMG5BM3F2aTVtMmc4VTJjbmx0YWdwbVR2Q3EyTXFLbEhadzVqQldramVZcw?oc=5",
+      "source": "더펜뉴스",
+      "published": "2026-11-06 11:03",
+      "summary": "2차 공공기관 이전, 전북혁신도시에 집중해야…전주시정연구원 전략 제안  더펜뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "24f360bd5db7"
+    },
+    {
+      "title": "분산보다 집적…전주시정硏 \"2차 공공기관, 기존 혁신도시로\"",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jNDg0VWJvbW01SDlKM0hqMmFqQmNQLUtfWlk4aVRXUkpYSVlQTWoydVptc2NOREhWSXhNZllRVnhhTWZIYTh1ekVJQmlaclI1anZEODl4TDMtZTDSAWBBVV95cUxPWEowZkFKZUxGSXp6V3pzT2Y5VWNSRzYybi1DU25UVWJwUUp2LWJ6U21lZ3B2WHFvZ3VON2pJRGtMVGQyLTdQQlhKQVVIU01fSTZKelYwNk9uOUlPM19YR0c?oc=5",
+      "source": "연합뉴스",
+      "published": "2026-11-06 10:45",
+      "summary": "분산보다 집적…전주시정硏 \"2차 공공기관, 기존 혁신도시로\"  연합뉴스",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2bdbaa940436"
+    },
+    {
+      "title": "ADNOC signs 10-year LNG supply agreement with India's Gujarat Energy",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYmVHTnM2czN3MDBGVkg1X01kRC01WUVLOXZYU2lGWW1vWENPOElfRW5mUnBVUTZfQm81WnY2SEdRNGxqWm1SdjRwS0xMV3lEZkJhUkRJaVlsRDBLc1Vzbm1zWmExRUJKYlNqVkRZNkVqZVlXY3F2MDVnbjd2azFJdWFraEN1RkRJMzBOYjE5bF8zTVprOUZaTmhJZ2h0SWdLMVFhZ0ptWlptZnU1YXVkNHVwOTh0WGh6b3JV?oc=5",
+      "source": "Reuters",
+      "published": "2026-11-06 15:01",
+      "summary": "ADNOC signs 10-year LNG supply agreement with India's Gujarat Energy  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "e02ad85a9918"
+    },
+    {
+      "title": "Oil set for sharp weekly drop but Middle East supply concerns provide floor",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOR0loTjAtWUlkbnpIR2huZE8zWWkxZHZIZlprNlQ5Z3BSaGUxcnE1ZDdqbXFuOHFpQVdrbzEyNnRUSGR4ZDh3SEpqQkpqX2NZa0JlZjEyZlp3RElJMFlhVDRLLTZ3MzRuV2NuTXR3SjhQejExMVR4eE10YThVcmJYaTdNYmt1SjJfeG10NlJRRFB1SFNQUlRSanFrYzBFUjlZNjBGMjhxSi1MZG1sd19kWGU0Ykt5bmR4by1B?oc=5",
+      "source": "Reuters",
+      "published": "2026-11-06 11:49",
+      "summary": "Oil set for sharp weekly drop but Middle East supply concerns provide floor  Reuters",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(oil OR LNG) (supply OR sanctions OR disruption) site:reuters.com when:26h",
+      "language": "en",
+      "event_key": "",
+      "id": "fad6547739da"
+    },
+    {
+      "title": "GS, 3분기 영업익 46%↑…전분기보다 정유 둔화·발전 개선",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qb19XV3lXdlZjVkpxb3dpVEZMczBOSHhQT3djVzJNMV9XanN3NFQ3MDhvSGV2RmN2U19JN1BacjBPaElvRk84RXNHdkJYMGZQd1NIeVV0U1lIT05OMnBoZFFhd3JudWpaYlRGd3g1bw?oc=5",
+      "source": "이코리아",
+      "published": "2026-11-06 16:12",
+      "summary": "GS, 3분기 영업익 46%↑…전분기보다 정유 둔화·발전 개선  이코리아",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b485748bd5c9"
+    },
+    {
+      "title": "석유 비축부터 오일샌드 생산성까지… 한국석유공사, 자원안보 기술 성과 공개",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hSUtYVTNHUWw5RlV5MFY3UDFzLWQ2RGtIeVRZRnFBbkprczZhd2RTNWVMdWVkY2VmbkEzbUtsU2huY0NPNVV4LWl0ZHJ3U183bnlUX0l6aDM5cWZPd2NUbA?oc=5",
+      "source": "아시아경제",
+      "published": "2026-11-06 15:36",
+      "summary": "석유 비축부터 오일샌드 생산성까지… 한국석유공사, 자원안보 기술 성과 공개  아시아경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "12dd3cddad52"
+    },
+    {
+      "title": "기름값 오르면 할인도 오른다…주유소에서 붙은 카드사 삼국지 [카드톡톡]",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9rVXNtUlpNdkVJY3ZwNWNYQms5VnF0V3pkWU5aNzZQV1pDU1dva3V0eWxzeHhGYTRoZmxoNS1ZNW82amlVVVJ6YmhNNjZGM3hpN1Y3REp3ZVdKaHFOcERwQ3dFdmc?oc=5",
+      "source": "매일일보",
+      "published": "2026-11-06 15:25",
+      "summary": "기름값 오르면 할인도 오른다…주유소에서 붙은 카드사 삼국지 [카드톡톡]  매일일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c3095a06a203"
+    },
+    {
+      "title": "가스공사, 협력사와 LNG 핵심부품 국산화 '맞손'⋯상생협력 가속",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1FVXpQQnlpMkNUbENEbktsTDBWQk5keFA3T1JNRm9HMDdkMlJWZzcwRWdmMlVYM2l2OVp3Q0dNdU5zOVNqT1BHSU45aUI0cFdZakVBTDFSNlBNVjRLTzhnNmptNER0NmczQUoyTlJCYXJZRHFH?oc=5",
+      "source": "이투데이",
+      "published": "2026-11-06 15:21",
+      "summary": "가스공사, 협력사와 LNG 핵심부품 국산화 '맞손'⋯상생협력 가속  이투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[상생경영] 한국가스공사·협력사, LNG 핵심부품 '국산화' 맞손",
+          "source": "파이낸셜포스트",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAxZ2RhR2R0QlpNN3E1azY3clVkNHlUM3NKakdBcWkwZ3FlVkN2aF9CLVBmdXoxWEtQSDlZM2M2bkk5NHRtc3ZTNDB5c0xCNTZ4OEVuWHBVWnNBTlVLY01WQVVrQTJPc0I3NWhaT19aWTluNXct?oc=5"
+        },
+        {
+          "title": "가스공사, 협력사와 LNG 핵심부품 국산화 기술 논의",
+          "source": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9PMzlIZUREZ2trWlJlVmxmcXIxTndqMm5vSFBhczRBTW55OVpqR0Jvel9sT2ttc0VQQkg3SDJTcks3M2g2enlSQVNyclUzdW5iWV8xc04wczVZWGZwRDdLcXdpcXpzQXd3Y0JPWkl1LWZTT0nSAXdBVV95cUxQNkw4SGJ2cDhQSUduU3NNWW15blJ6NHNfU2JtMl9xdlR0UG5UNnloOHdXNHpxcS1PNmtWZl9IZ0kxZ2ZPbUViUXVkOVNSVGpUNjZhdnY3c2ZEbnFPNWM3aG1zcURPSnlVR2pUNXk3VjQwTzdUZFZwVQ?oc=5"
+        },
+        {
+          "title": "가스공사, 협력사와 LNG 핵심부품 국산화 속도 낸다",
+          "source": "전기신문",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02UndXdkhfV21oeXRFWjVCY0Z0Z1NNVXZzYzhwZnc0d3V6UVVrTjdaMzNpZklsWTU1dzFUT2trVXB0ZHd2R0RWRkEtVEp2a0p3bE9kVFA2cGdxZEdFbkpGaFdvRm1vby05eG1XNtIBcEFVX3lxTE5UZlRxRlJFY2ZicDNvU2ltcVB0Yk9qbmcyM1NhRUd5RGl2VS1ueGo3VkMxbG1pMkFWc185OGtwdENQZmZZZFpGMlVsa1lORW9kZWhXeE1ZSG9ncGRtUng1WDNxM1pmV09JWEI2SFFPSXQ?oc=5"
+        }
+      ],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c5894427b093"
+    },
+    {
+      "title": "한국석유공사, ‘2026 추계자원연합학술대회’ 참가…개발 연구성과 공유·산학연 교류 확대",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBNdzN3V3hjdXFCMW9ObmoycTNVbHN6SGI4azM2d3JRbUtVMS1fSTZQYk5pVjV0M0IyZ25zSTRBSHpwdTVGUS1LQkM4TWI3dTFDYWtrU0hwTUZjVDUxTVM0RHhVd2FjTnBGTkJR?oc=5",
+      "source": "서울뉴스통신",
+      "published": "2026-11-06 15:12",
+      "summary": "한국석유공사, ‘2026 추계자원연합학술대회’ 참가…개발 연구성과 공유·산학연 교류 확대  서울뉴스통신",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0b5960c96f89"
+    },
+    {
+      "title": "[리포트 브리핑]SK가스, '일석이조 기회가 될 수 있는 LPG 하락 LNG 강세' 목표가 330,000원 - iM증권",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wQ0hXcUx2TDV3X2ZpUWUzMXpDYTlscm1xbW1scXZxVWZGb2draG1ERkFlTnJLNzI0ZG96YXBTU2o5U0JrN3F2d3pLLTR5VFdiaC1va3hLLWkzcndm?oc=5",
+      "source": "뉴스핌",
+      "published": "2026-11-06 15:01",
+      "summary": "[리포트 브리핑]SK가스, '일석이조 기회가 될 수 있는 LPG 하락 LNG 강세' 목표가 330,000원 - iM증권  뉴스핌",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "LPG 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2877fa85c886"
+    },
+    {
+      "title": "KB국민카드, 유가 연동 할인 더한 ‘KB NEED Oil 카드’ 출시…최대 17% 주유 할인",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKYXNKUjhFVTljdXJzeEM1bzRteThoR3dzRGhXX3h6WGl1UVExN3F5MEVFSDFHYVNZb1VHWWEwNUlLbUZVSWVWTkhJSjNtZVBhbVBIRFVkSkIwTVBWUUl0d3JKQnFjbWpMNVE?oc=5",
+      "source": "뉴스티앤티",
+      "published": "2026-11-06 14:58",
+      "summary": "KB국민카드, 유가 연동 할인 더한 ‘KB NEED Oil 카드’ 출시…최대 17% 주유 할인  뉴스티앤티",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "f130e6376989"
+    },
+    {
+      "title": "가스公, LNG 핵심부품 국산화 속도…협력사와 기술협력 강화",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNNml0R0tKZDRvcGtfMzNJYUpkVEFHcHpuOHJ0TUZfSmZ3UVJfajNJTGZGRFpBTVlPZkJhaFVNa2JZLTNNZ3EycUdVbVVRaTNUNEdreHZQRjI1QQ?oc=5",
+      "source": "경북매일",
+      "published": "2026-11-06 14:53",
+      "summary": "가스公, LNG 핵심부품 국산화 속도…협력사와 기술협력 강화  경북매일",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "가스公, LNG 핵심부품 국산화 속도",
+          "source": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nbUc3TVlPdTdnVWhobXhVbkRtbGgzb0JIb0hvSnBpYjVSX2x1S0xVZlotT1Z3SFRkcUIyN0I4R1JRc085YnJ3T0JXRlYtQQ?oc=5"
+        },
+        {
+          "title": "가스公, 협력사와 손잡고 LNG 핵심부품 국산화 협력 강화",
+          "source": "국토매일",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1WV0lndE1aWUdwV1J3T205a1pfSEFxVGFqYUNWNzFzZXJfNzI4bk9CWm5vbmlxSHhNZDFGbkdLdmNRNkJ0?oc=5"
+        },
+        {
+          "title": "가스公, 협력사와 손잡고 LNG 핵심부품 국산화 협력 강화",
+          "source": "아시아뉴스통신",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USGdBdTJCaWdaMjNOYmcyV1o2WUFGU3lfZi04MU5Ec3l2cS10bkw1OENDWUNOdUpDVXp5MWVuVTJKajRZd2tLdzdnTGs0MkxMOFY2UXcyQTB6TU1a?oc=5"
+        },
+        {
+          "title": "가스공사, LNG 핵심부품 국산화 속도···협력사와 기술협력 강화",
+          "source": "서울파이낸스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1JR2VETXpfMWxlR2lwZVNtN0IyMmhKT0EwZ2Q4S0l3eFVNTXdfOHpQOW9uY2JPcHZERE1CSGdJUUNWb3RBQ0x5RkJyX0N2aVhmWFZ3YVBKWExXSEFMTHZ3QTdiNGFfTFVJbkE?oc=5"
+        },
+        {
+          "title": "가스공사, LNG 핵심부품 국산화 속도…협력사와 기술개발 강화",
+          "source": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRTNBOEFkTm5icHJhWDhPRW5LazRDR3lTWkpYZktBWVNWTVIxYTF1QnRLM2E4Z1FoaklmdG9QcHh1Ulg3MV8yU3llNjdWLVJMT2p1ZVJDZzBQSkx4VzJMa2ZwTDROTUJaNGRjaG54VGtLU3Q0WG0xQkk1U0hNenlldWNndm1vMG0tYlE?oc=5"
+        }
+      ],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "585942729059"
+    },
+    {
+      "title": "호르무즈서 유조선 3척 피격...유가 100달러 초읽기",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTGJsNU44YkRaT1hNamhfV0tfVDMwWWtQMzNsdDNtU0puQlQtY1hCa3Q0R01OaHRjMWxiOEJ5dlhXTzBIUmJEWjhzbU80WTFBNjVXYmMtRmh0OEtlekxtT2xoWmJaZWpIbnRZY3VZYy1HYmFIYzV1YWJkNTFIbTBoVkE4eV82djlX?oc=5",
+      "source": "글로벌이코노믹",
+      "published": "2026-11-06 14:50",
+      "summary": "호르무즈서 유조선 3척 피격...유가 100달러 초읽기  글로벌이코노믹",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "350ff28cb42b"
+    },
+    {
+      "title": "KB국민카드, 유가 상승 땐 추가 할인… 주유 특화카드 'NEED Oil' 출시",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4zVDhKVkJwem9rTjd0Y01BUUxWblZFa0Y2cC1vc0VfcXQ4QU5xcTN6UW9qSnNzVDdQb1NycFpraUE0bU9qUGd3LXI2MEI4UlF4eUJqQnB0eWFhaFk1RHNSUWY0WHZFT2VET3VlbnNUWUc?oc=5",
+      "source": "비즈트리뷴",
+      "published": "2026-11-06 14:38",
+      "summary": "KB국민카드, 유가 상승 땐 추가 할인… 주유 특화카드 'NEED Oil' 출시  비즈트리뷴",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2f81a231b555"
+    },
+    {
+      "title": "“석유공사, 자원안보 기술 혁신 방향 제시했다”",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBLQ2F0VmNqc0ZPX0hkamJUYjEyZjRsM3ZyNVk2UGdodW1rNnpWWGZHU3FBMlF5Z0w1dG9ZNjVac0QyZlZSektBU3BuQmJ1YzNwVWZOc0NUMktaRWtQOVpnZHJzU25ZNXIxMmJpTUxtV2lNZw?oc=5",
+      "source": "에너지데일리",
+      "published": "2026-11-06 14:30",
+      "summary": "“석유공사, 자원안보 기술 혁신 방향 제시했다”  에너지데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "b745728f13ac"
+    },
+    {
+      "title": "불안한 글로벌 에너지 공급망… 한국석유공사, 지하암반 비축·디지털 개발 기술 공개",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mWFBCX3hCQjhjTUtuVEVHRHI5R19QdDE5LUlQblFEUVMxd0kxUXdMdmhRRVdwRFRod3p4LVR5TmFPRC1FaDlUSVFJOWRydm1mMWhxbC1VbWRSZXE0cFRDTw?oc=5",
+      "source": "아시아경제",
+      "published": "2026-11-06 14:24",
+      "summary": "불안한 글로벌 에너지 공급망… 한국석유공사, 지하암반 비축·디지털 개발 기술 공개  아시아경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "52a3df86c782"
+    },
+    {
+      "title": "가스공사, LNG 핵심부품 국산화 과제 발굴",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9xX0Z1NDhCUTNUQTdJR1hvZFNTWjdrMld5Q0I4N0JGVHpEWkdqT0h1VDRBTG9Zb1NVVTBoTlNkM0I3WlRDYWxXMGFuX2RaVHdMbEt2SGNrYnhrZ0ZuQkNNeTNCdVVNNm1BU19ncHJseTlUWFNm?oc=5",
+      "source": "대한경제",
+      "published": "2026-11-06 14:18",
+      "summary": "가스공사, LNG 핵심부품 국산화 과제 발굴  대한경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "744139c71321"
+    },
+    {
+      "title": "단 5일 만에 휘발유 가격이 리터당 5,000 VND 이상 하락한 이유.",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQak5Tc3p6dHRReU5fOG5vd3B1OHBlcVh6VjcwRWJqS29RQ0kyR05LNS1fc0Uwc2JfU25DRjZ5WThFazVxdjJoWEZ0VTZBVFZaM2IxWjZrWFRiNEZrRkNrUG5kZFM1MTdBR2FUX0tjdWVLWWxiY2IwUXZ5V3pNTTdBMUZCRQ?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-06 13:57",
+      "summary": "단 5일 만에 휘발유 가격이 리터당 5,000 VND 이상 하락한 이유.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1c1a0abb8b1a"
+    },
+    {
+      "title": "KB국민카드, 유가 오르면 할인 더하는 주유카드 출시…최대 17%",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ER2lnZUEzbWt5Nlo2TExIUFJJSG1USEMzTGZGRjQzX2xtamR5RVY2RVVYUWtwc0FUT2Q0U2ctNHhIY25JR0NsTUF3QjFZTVk1STAtMjBHX3JtX0wyZEtkLVhXQjdSRTB3VVIzOA?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-11-06 13:38",
+      "summary": "KB국민카드, 유가 오르면 할인 더하는 주유카드 출시…최대 17%  스페셜경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "52cfe4267d8e"
+    },
+    {
+      "title": "[이슈] 정유 4사 3분기 영업익 4.6조…호실적 뒤엔 손실보전 과제",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDZ0hGTjZhYUY2ejlDT3dwaVNWRkxCU0tISWdwWV9fNWNzUlN1NDdMdW9zZjN3d1R4Ykk2S09VNy1uYmpsYWk4S3B5M3YwejB2Q2RPNm12VHItc0hsM0Y1RWp3N3BaRFlNbTRlQzRn?oc=5",
+      "source": "시사포커스",
+      "published": "2026-11-06 13:25",
+      "summary": "[이슈] 정유 4사 3분기 영업익 4.6조…호실적 뒤엔 손실보전 과제  시사포커스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "07d733cc3b8f"
+    },
+    {
+      "title": "국제유가 8% 급락…美 중간선거 공화당 참패 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ndElOTW1GUG9TVTVQX3dOU1JabV90WE1UWmdJZmpSaUt2VUk3N3VWR3ZvZzBYVm1jbHd5SlVQZFFSMnBKM1dfX0sxbUFZcGhUN0JHZWFNSEpObElaeUpTb1VTcG1CWkFZVTZyYjNNejJVZ0RlMWfSAXtBVV95cUxQVlpSSWVyaXVjY2F6eng4QjJDU0k1Q1BnZ2xfdnIwWnVxZWQya2pnTDhCZ0VJbURLX0FCemxWRkhlcTVjanRXazlVbmppM0UyN3U2YVQwTzdiQjZhU1JacU9xWUVSZ3NFYXdwa0toV25RZnhnbHcyWGJvWms?oc=5",
+      "source": "머니투데이",
+      "published": "2026-11-06 13:23",
+      "summary": "국제유가 8% 급락…美 중간선거 공화당 참패 - 머니투데이  머니투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "caabbeaaa12b"
+    },
+    {
+      "title": "가스공사, LNG 핵심부품 국산화 과제 발굴…협력사 기술협력 확대",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02TWdXd3NPemRlbE5yamlPdV81ZEl5LWZFaVE5NUtOWjNrSVhfVFd4cFZCOVVpV09Xb3Z6aWNaOUl1cV9uTkpROXdZV01Tc2NrellsLXpCOXhWMW1iZ05MYnRlZ2dPSkQ0Qmc?oc=5",
+      "source": "한국면세뉴스",
+      "published": "2026-11-06 13:16",
+      "summary": "가스공사, LNG 핵심부품 국산화 과제 발굴…협력사 기술협력 확대  한국면세뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "한국가스공사, LNG 핵심부품 국산화 협력 확대",
+          "source": "Traders Union",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOTVFUDZ0S0dlSDFCNHU4cGpjdURDZnN5OUV0bEdKY3ozOUpCZmZpbUk5SkVQQUhUT21Vb1dSSmxhYlZFeF9SdEhOc01nQ0ZIaFVtMkNkUjRkSk5RQVFkblJDZ3lJTG96dWpqX3NlNEoxNmVGd1ZtS1Noa3BfVXhtVkwwT1NFbTZpU084S3dFYlNmZDFNQnFLVnJocDI?oc=5"
+        },
+        {
+          "title": "가스공사, LNG 핵심부품 국산화 확대…협력사와 신규 과제 발굴",
+          "source": "포인트데일리",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5QazFVOUNsdnlsaU1zU20xQ2VmcEZkaTg1emlBMms2dzdQV01Qajd0aHRUdzBWNURBSm9pQXhkUHBVd2hfZ0pOQW9xcnhDRUh6dnYxQ0RLVkhCMlg4ZzhIeFZXU29SMU45ejRPZkhLM27SAXRBVV95cUxQZUNXRmIwZk9mWGRPaElDbERXdl9fLW4ybG9PNnlKT3VpdnoxUWtwTVkxMVRLUlZpVHI4NmJ0NXlOc2NxRmhHc3dkTUM3ekQ5OVM2WHpnUTlZbEtMS0V6aW5USWtOMGpxMXpRNFJQcjkzMVpSbw?oc=5"
+        },
+        {
+          "title": "가스공사, LNG 핵심부품 국산화 확대···협력사 기술협력 강화",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rcnBQa29wVVloeU45cElCZ1J4UUFmVkJHOEE0Vi1VTExZa05PcjV4LTAtTVV3bHhzM3Bka2pMZldhQW1rVk80S2ZqU09wQXpRdHRxMUtNd3J2eENSdkVlaVZ2TGZXTEN6djB1cmhpNlI?oc=5"
+        },
+        {
+          "title": "가스공사, LNG 핵심부품 국산화 확대···협력사 기술협력 강화",
+          "source": "에너지신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VV1hhUXRlMnd5Q0lrUnNnck1YY3pJWktzRTZ1WnkxZXE4clpZby1kNkZpbXdnWlhDcFVwT0tmZ3RuU1dqQWhLeldoTVhwQXFObFkwNnF6TVg5dm9FRUQzeTdsVEtiQVN0WDZ6R2RKU0U3QQ?oc=5"
+        }
+      ],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "65113a9e11c7"
+    },
+    {
+      "title": "가스公-협력사 'LNG 핵심부품 국산화' 드라이브 건다",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VeTNGZUlRRDIwY1lfTF9OQmRnZWRodnhaMnJJbDdVZjl2c1JqWkVsY01Dc05sbDU3bjVqZEhrY1Vod05tN09aQ3YzYlhjOXVaZDNnd3dZYmR6UzN1Uk54QS1SM253cXfSAWtBVV95cUxNMFFUelZBOXVkSHNSWmc5V3dPbmctWGpkTG5FZXFDcVU4M1FjbzdRWkJKYld0VXVPTWpOZXoyV0k4RmNvVXBxSWdxV2pIUHJpOFBwVnc2SHFCX1AyVkxpLUpyWjdLbElPS0lZOA?oc=5",
+      "source": "이투뉴스",
+      "published": "2026-11-06 13:14",
+      "summary": "가스公-협력사 'LNG 핵심부품 국산화' 드라이브 건다  이투뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "daa3e77548d9"
+    },
+    {
+      "title": "오늘 11월 6일 휘발유 가격: 큰 변동",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSUFHcjYycnU2QmxPTFVkRWVsZWt6SHlLMmdvc2sya013aUQ5MzRpcWVjbEtkYklBczQzM3VaN2NHck9Xemc2dlZDQi1lem5tdTUxcTRBRUROZVFOTmZtRjZCQ3cwQmM2b2pzZ2VtLUFSVENJNVhWUjFaeVFBWmtvNWRrVTJ4eHJDZ0lDWQ?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-11-06 13:05",
+      "summary": "오늘 11월 6일 휘발유 가격: 큰 변동  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "오늘 11월 6일 소매 휘발유 가격",
+          "source": "Laodong.vn",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSDl0RVdFRF8xRk4wcWpyOUtHZjhIX0s0ckwyTWFmN1k3Vm5jdjlYakJxUVFvLXl3M24xWGR4eGdQZzhmS0FPOEdIWHdvb0l6LWRlWW5STXprWWpmTFhVT0c5anZpMXBwRTR1dkxJbVdrZ0Utclp2ZGsyVmRkYjFhZ3FB?oc=5"
+        }
+      ],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "38990faaaa44"
+    },
+    {
+      "title": "이란, 美에 핵협상안 전달…\"7개 조건 수용 전엔 호르무즈 봉쇄 못 풀어\"",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPc1ROSENuSjg2UlUxNC1hMUF0MzgyQXZvVHhualh5UV9TV293RnVDdElqMWRfYnhQSmMxU1loTHN3NTR6Z004RFMwS19GMWNqaDU5b3hidS1qaENFYUEwa3JDb3o1b2xRa0pjRFlWWjdqWDA1M3lVLUNTQ09fWWh1UGJmYUN0YTNYMG9NRWdseGNCWmhaOVNURWpxZ3c0bHVjUW9CQ2p2X0dCTVJhbF9zVjMwMGpWVVVMZ3pnM0pGVm1Ta0NubkxKUGFNVnZOVWRJMjQ5MC1sclpnZGpyZ0FaNmF2VmQ4SldRS2UyRVQwMVpJNjZNRmtnNjlHT0Z4TURCc0ZzSzV2R0NtcWFtT0E?oc=5",
+      "source": "데일리안",
+      "published": "2026-11-06 13:00",
+      "summary": "이란, 美에 핵협상안 전달…\"7개 조건 수용 전엔 호르무즈 봉쇄 못 풀어\"  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a206baaecfb8"
+    },
+    {
+      "title": "오늘의 미국 원유 가격 | USOIL 가격 차트",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5mZEJGSXRteHpwSzE4NlRMYnV0aG5oUlBJV1JEeEUydkVualBhNGdBMTltcS05SHI1RENXa0dDQmtsaWhnY3k2QkxFeFUyR2JEUEJFWk9mYU1UMmM5bER0TEowbExuZ3VwWE0wdzhB?oc=5",
+      "source": "Mitrade",
+      "published": "2026-11-06 12:29",
+      "summary": "오늘의 미국 원유 가격 | USOIL 가격 차트  Mitrade",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1ed2f83fa70c"
+    },
+    {
+      "title": "석유공사, 추계자원연합학술대회서 자원안보 기술혁신 연구성과 공개",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yS2lWekxWYUczQVBMUHNFbkhrUUdwZ0RfN3ZYbWVuRDhkQ0s2LWFQMHk4Rm1wRWRqTFJUVzBPNEhlNFhNWXdScW9aQ01JcGZaTHhEZTZxeGFOejFHWmNYZjdUODhHNHRuYWJnRTZ3?oc=5",
+      "source": "산업인뉴스",
+      "published": "2026-11-06 12:21",
+      "summary": "석유공사, 추계자원연합학술대회서 자원안보 기술혁신 연구성과 공개  산업인뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c780f52a9261"
+    },
+    {
+      "title": "호르무즈 유조선 피격에 국제유가 반등… 브렌트유 98.29달러",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vUHhzZWtUTzcxM1pEZzdVQ2oyS1RBMFBzYmpRRjYtRkxvbF9GYktGMDRQM2pTZXBIaHdacGcwZVJXZ3I0WFhrLU1URnY2eXVFaXlGa0FrbGpnUUZqVkEtQ2xXZFc5OUp1LXFHVlIwZTZBZnM4?oc=5",
+      "source": "파이낸셜포스트",
+      "published": "2026-11-06 12:14",
+      "summary": "호르무즈 유조선 피격에 국제유가 반등… 브렌트유 98.29달러  파이낸셜포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a9b65480a12b"
+    },
+    {
+      "title": "[공기업 센터] 부산항만공사·한국석유공사·부산진해경자청",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1pUmZtRFN2bUVDMzZFMy1vcGpMQ19PaGhHd2lUTlIyR2VnUmE1ZUs5eFVQUkpsVWZUQkJMMHhnQTBtMnowNFNwZVhLTzFHLU9ha05wempxaGFWcDg1eUJWcDkxZ3ltQmPSAWtBVV95cUxPa0xjTUxxTzVkTUl1MGRBTFpSd2hObzZyUTltMlFTNHh3dzdOV2Z2OVUwVl9VMHdEWVdXNWFiUGVBS3kwNkpnby1JTkc1UEdKaHNQOHJZZXBBN1Z5RHoxckNSeUNiTVp3UGQzZw?oc=5",
+      "source": "민주신문",
+      "published": "2026-11-06 12:12",
+      "summary": "[공기업 센터] 부산항만공사·한국석유공사·부산진해경자청  민주신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "623f38046bc0"
+    },
+    {
+      "title": "오늘(11월 6일) 유가 동향: 국제 유가 상승으로 국내 휘발유 가격이 리터당 21,000 VND로 돌아섰습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYzVvM3VTYTVValpzVTA0MS01Ump0QzUtQlZJMGNvZ1lnUDh5TDFyNkp2UFNHaHlPVUF3eWFsaUxNUkU5ZWxlQ3FsNVlPYlpwemFCUEZxTDR0ODlNQ3RBeXFRc1JSbnNwOEhjY2p4eldSUHQ3SzNncVNzUVNMeGlBRng4X3l5YmtmVzlabW1iYUtxMENMT2NWN2JOaUR4UmFQWUE?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-06 12:12",
+      "summary": "오늘(11월 6일) 유가 동향: 국제 유가 상승으로 국내 휘발유 가격이 리터당 21,000 VND로 돌아섰습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a9689c454303"
+    },
+    {
+      "title": "가스공사, LNG 부품 국산화 확대… 실증 지원 강화",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44Z1BJMXVBM29sN0puVnZGdC1BQWpPLWpqU2pJRE80cnN5amZfNFloSW5NYUp1TzB3bXJnQ0pNX1NVZ09vRXpReC04dk1sSExuX0RWcXB6Ymdnb2RhUDhEWjdCaDZpdS1iLWFZalJsY0c?oc=5",
+      "source": "비즈트리뷴",
+      "published": "2026-11-06 12:07",
+      "summary": "가스공사, LNG 부품 국산화 확대… 실증 지원 강화  비즈트리뷴",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d394f20d21b3"
+    },
+    {
+      "title": "2026년 11월 6일 오늘 연료 가격: E10 휘발유 가격이 예상치 못하게 리터당 21,000 VND로 급락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMzNndkR3S0U3MGR6em1rWFhnM1hSbEdScUpJWGZLWVN3aTlVanBZVk9wUnBSOG96NF9jNmJWOHY0OUg4RmEtYUZDRVM1ME9zTC0zd2d5SnVWaU5xeXY1ekpvZ0F3ZEx2eUd4TmlTcHJiNDdSZXJjWWhOT0NvUWxxUkpZS2RQcE1RUmRxekR6RzlnU3EzX1FybHI0a2d0bzZlZGRIcy1kUkw?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-06 12:04",
+      "summary": "2026년 11월 6일 오늘 연료 가격: E10 휘발유 가격이 예상치 못하게 리터당 21,000 VND로 급락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "689ef47eb5d7"
+    },
+    {
+      "title": "정유4社 윤활사업 영업익 1년새 5배↑… 중동 주요시설 가동 차질 ‘반사이익’",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE80YXRicEExdHFnUUxybm5jbWdlbExkUWRKbkVXUVV0RjZfQ3FFdzNjZ3R0c1FnWktpUDZkc2kyR0ZtLTNlQnJBY2NvOWVhTmJi?oc=5",
+      "source": "문화일보",
+      "published": "2026-11-06 12:01",
+      "summary": "정유4社 윤활사업 영업익 1년새 5배↑… 중동 주요시설 가동 차질 ‘반사이익’  문화일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e771772403f5"
+    },
+    {
+      "title": "유가 뛰자 치솟은 'GS 이름값'…내년엔 칼텍스 몫 15% 낮춰",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAxM2xPemJwVEx5Nzd1WHBrMlZuQUlMMkdmQXhkc2tMLWhJTlV0akViTlBIRWhXQ0NJU0ZqLUdfaC1JZEpVMHZha3dPNA?oc=5",
+      "source": "아이뉴스24",
+      "published": "2026-11-06 12:00",
+      "summary": "유가 뛰자 치솟은 'GS 이름값'…내년엔 칼텍스 몫 15% 낮춰  아이뉴스24",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "af9882a4cbeb"
+    },
+    {
+      "title": "KB국민카드, 유가 상승 때 할인 더하는 ‘KB 니드 오일’ 카드 출시",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RREtHVElBVzFBZ1RXclVoVXU2TnAwRHNTYnBzMUJMbEhmRk1KLWRkMFVQMWZoUnVFemxjc1VrTVhScENrX0RPQXA3VW1UVWZoUGN2UURQay1GOXlOUEc5ZzJxelZlQTlCYUJ3NQ?oc=5",
+      "source": "센머니",
+      "published": "2026-11-06 12:00",
+      "summary": "KB국민카드, 유가 상승 때 할인 더하는 ‘KB 니드 오일’ 카드 출시  센머니",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "c8a136e33161"
+    },
+    {
+      "title": "전기와 휘발유 가격이 하락하면 원자재 가격도 하락할까요?",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CNTlYQUVWU3R1LWtvS3pSM193WjBsWmJfNkhaYTdWVVdZZUFIN21jLXpNeW9IUGI5dFR2dXd1LWdFMFZORnk4ZnFrcXhlQkx6OVdmdXpCUDJ0dG5oQmlGQ085M3B3UGttMXJQZFFkN1NIME0?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-06 11:48",
+      "summary": "전기와 휘발유 가격이 하락하면 원자재 가격도 하락할까요?  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "085478972281"
+    },
+    {
+      "title": "석유공사, '2026 추계자원연합학술대회'서 최우수논문상·공로상 동시 석권…자원안보 기술력 빛났다",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xYnFlY0lBR25aOHhwVllMVUdqYkZFR21SUVlyV3VvWThoVVdpNFFfXzJMWlJrekIxSFZqQ3ppNGZleFJIN3ZlZmxVMmhmVmw5SUVDbG9zUE9fd3o4SHJJdEMwTXk?oc=5",
+      "source": "베타뉴스",
+      "published": "2026-11-06 11:46",
+      "summary": "석유공사, '2026 추계자원연합학술대회'서 최우수논문상·공로상 동시 석권…자원안보 기술력 빛났다  베타뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e91bbd1cc1c6"
+    },
+    {
+      "title": "석유공사, 자원연합학술대회서 연구성과 3건 발표",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xcGRqYl9iV2RxMkp0VUVfcGNZWExDYjVqazUzcVkzeUVKLUFSM3QxZEgyb1h5M0JwR2JHR3l0ZGttVDF5UEN1SWc0VTAzR3ktdFJyTzN2N3d5QWkyNmFnRkFSc0NKaUtadUlESGcxTzZVYnM3MDdV0gF3QVVfeXFMTjFwZGpiX2JXZHEySnRVRV9wY1lYTENiNWprNTNxWTN5RUotQVIzdDFkSDJvWHkzQnBHYkdHeXRka21UMXlQQ3VJZzRVMDNHeS10UnJPM3Y3d3lBaTI2YWdGQVJzQ0ppS1p1SURIZzFPNlViczcwN1U?oc=5",
+      "source": "핀포인트뉴스",
+      "published": "2026-11-06 11:39",
+      "summary": "석유공사, 자원연합학술대회서 연구성과 3건 발표  핀포인트뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3377886ba6b8"
+    },
+    {
+      "title": "석유공사, 석유개발·AI·지하저장 기술 공유…산학연 협력",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BQnFLZkRsVlpfTWxEdVNFQXFvaFFYZnQtVnhnNGVmbGdRZE9HekZVeG1hQjE0RHU4UzB4RjkzUWdaeHBrb0QwVlc4QzhFd2JhazJLQ21KcHkwTnhEVnNvWlFQVTZqcmdRSE0wS0pwVkg?oc=5",
+      "source": "에너지신문",
+      "published": "2026-11-06 11:37",
+      "summary": "석유공사, 석유개발·AI·지하저장 기술 공유…산학연 협력  에너지신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "eea777752f70"
+    },
+    {
+      "title": "초저온 베어링부터 펌프까지…가스공사, LNG 부품 국산화 협력 강화",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAyaHltaEhMellRVGQzbmU1S3BkTVJUUG5lUGRTNXFTMENuM0ZndWhsWWgwOUFPSUVTVHNTeEFnRjFMdno5azZsSjRqRjI0TmxDVUYyTWRRY1gzR05Eb1NvLTZITFJ0enZhWnNr?oc=5",
+      "source": "시사오늘",
+      "published": "2026-11-06 11:35",
+      "summary": "초저온 베어링부터 펌프까지…가스공사, LNG 부품 국산화 협력 강화  시사오늘",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "eec48a28115c"
+    },
+    {
+      "title": "국제유가, 전날 8％대 폭락 후 반등…WTI 2.7％·브렌트 3.9％↑",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZGxEZEx0RDNOZFNWMWJ2U0I4V3JRaExMdnFuM3RmSXB1dVFvV19ET1RXX0d2SXNQVUtMbkFGdlFrQm5vLXZmdXhxSjduTFlNNnlBME9jSHBoMUlVX1VNeHpEZHp4NU5pZ3dsWWVoUlQyNzNKMXRtMFU0R3pSV1piaVpSeWZPNGVo?oc=5",
+      "source": "TBS 서울",
+      "published": "2026-11-06 11:15",
+      "summary": "국제유가, 전날 8％대 폭락 후 반등…WTI 2.7％·브렌트 3.9％↑  TBS 서울",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "985ea2a853e9"
+    },
+    {
+      "title": "GS칼텍스 ‘웃고’ 석유화학 ‘울고’…엇갈린 산단 '희비'",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UTXlUNEdpZHh2TWZ2WWFiN0U4d2pTXzl6blRHbV9SR2ZkOS04eUdGQ1A4Y3prbDQ4NzAyd0VuWnVUZEtOZnpST1pkakhXUmhNNmc5VlJsc0JjN1dubldrdXhrYko5R0pRVkE?oc=5",
+      "source": "여수신문",
+      "published": "2026-11-06 11:14",
+      "summary": "GS칼텍스 ‘웃고’ 석유화학 ‘울고’…엇갈린 산단 '희비'  여수신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "95b0ffebdafb"
+    },
+    {
+      "title": "국제유가 하락·환율 안정에 항공 유류할증료 부담 완화",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MLTlmMmlSSXkxVk1jZk8tenJ2cUVDekF5Q1k2OFZDd3diSnJnemJpa1d3X3dtcjB3SU44TUJfQXNKUnBVN0FZTE9Oc3VKSHFNeVhyYjNwVTNQdjNJckszOEVyREVMUXJpWFk0YQ?oc=5",
+      "source": "스페셜경제",
+      "published": "2026-11-06 11:13",
+      "summary": "국제유가 하락·환율 안정에 항공 유류할증료 부담 완화  스페셜경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0c077a791436"
+    },
+    {
+      "title": "호르무즈 유조선 잇단 피격에 국제유가 급등…브렌트유 98달러 돌파",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1remx6aHhLeHg0a3hPakpxcGR2UnhOaTc2ellyTEJhTDVqRXVEenY5WXZ6ektlLXlaQ0NLeDRHemRLZzlncG45d0txdnEtRTlFeHJzRTBLQUIxTmFicVV1amNPSzJiNDdkalNLREdDOU13VHZY0gF0QVVfeXFMTWt6bHpoeEt4eDRreE9qSnFwZHZSeE5pNzZ6WXJMQmFMNWpFdUR6djlZdnp6S2UteVpDQ0t4NEd6ZEtnOWdwbjl3S3F2cS1FOUV4cnNFMEtBQjFOYWJxVXVqY09LMmI0N2RqU0tER0M5TXdUdlg?oc=5",
+      "source": "뉴스워커",
+      "published": "2026-11-06 11:06",
+      "summary": "호르무즈 유조선 잇단 피격에 국제유가 급등…브렌트유 98달러 돌파  뉴스워커",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "48740142638f"
+    },
+    {
+      "title": "KB국민카드, 유가 변동 연계한 주유 할인카드 출시",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SNTVyYW9IaFVCZ2hQOW9HcDJxMkVBUmFVaEVycDhMbWtNQ0dvRHE0MTMyZENMMU1YQnlkY3paU3VUMjRBN3UzQl9uTERXdnRqOE44dVhuaVBWa2JNWjktTjJvV19ZcEEtRVhfMXB3?oc=5",
+      "source": "뉴스인사이드",
+      "published": "2026-11-06 11:03",
+      "summary": "KB국민카드, 유가 변동 연계한 주유 할인카드 출시  뉴스인사이드",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "a1e4e50ad3a4"
+    },
+    {
+      "title": "전국 주유소 휘발유 1855원·경유 1841원...서울은 동반 상승",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90RWRIYUFPV3FEMklqTXU5TzhuUlZYaGQxUjV3Q0tCYVZ2bDE2YU9xQm94bVFubG5fR1ZqQ3dZemx2S1prMFI2WGtoZjVfcDF0T2c1bHg4dmtNZHJzM0Y3VDN6V0lTNE4ycXlrcdIBcEFVX3lxTFBBaEIzT0NsSkRxSkFScE1BVUZJUG9WVzU4VTh6LU8yTUlWMjdMY1c0aUtXUHRWeDh6b0RmRzM3Z3dyUDBKQ0JNSGdvTVI3V0ZROGhqMXEwMzM3LVhGXzNjSTJYLURMMmdQU0J3RDN3OUU?oc=5",
+      "source": "글로벌경제신문",
+      "published": "2026-11-06 10:50",
+      "summary": "전국 주유소 휘발유 1855원·경유 1841원...서울은 동반 상승  글로벌경제신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "휘발유 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "87ef36939f9c"
+    },
+    {
+      "title": "대전당진고속도로서 LPG 적재 트럭 불…인명 피해 없어",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2V20xUG1xSHBQN1ZjTnlWWEZFY0dodDQ1NzhHUGxGanZrNEs4aUdGcGVGTWxDRGhOektrbVRkQUNKbjFOME5iSXljdlhtWV81aDZQX2M2V3I5R3NyRHVOZFVoZWs2eUNnQmxRMTU3YnZHSXluSWNZR9IBeEFVX3lxTFA2V20xUG1xSHBQN1ZjTnlWWEZFY0dodDQ1NzhHUGxGanZrNEs4aUdGcGVGTWxDRGhOektrbVRkQUNKbjFOME5iSXljdlhtWV81aDZQX2M2V3I5R3NyRHVOZFVoZWs2eUNnQmxRMTU3YnZHSXluSWNZRw?oc=5",
+      "source": "뉴시스",
+      "published": "2026-11-06 10:38",
+      "summary": "대전당진고속도로서 LPG 적재 트럭 불…인명 피해 없어  뉴시스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "30a468efa58d"
+    },
+    {
+      "title": "가스공사, 협력사와 손잡고 LNG 핵심부품 국산화 협력 강화",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOY2NWVUFTUW1WVDc2Zy1ES2VOSzI2RnBQUEhodl9PcldqOF9pc0IzQkFPUnBueTQwVVpmXzYxczByTjd2MEtIWHk3Z1JLQ3RydVhudVRsa2t0bFBUc21ZVDlSOTJ6cEtGcTlZWTMxR25jemJfcmFaUGp5ajA1SlFxVmxOaE9iUF8wdmtsaDJNWUFPYm1kZ3hkem1MVHZlMnhMS0FzT1dvZl9rdm5yUlVGd1NwY3VFcFpTa2tHdG1vc2M3RThxVV9DNWZGM1o2dEVaVDBYaDI2cjhyN0hPckg4SDlhVGI3VWU0LUoyVllhdmlZM1FGSTBRLW56cW5KbHdfbmNB?oc=5",
+      "source": "데일리안",
+      "published": "2026-11-06 10:37",
+      "summary": "가스공사, 협력사와 손잡고 LNG 핵심부품 국산화 협력 강화  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "abdc2d2d77db"
+    },
+    {
+      "title": "공주 당진대전고속도로서 LPG 실은 화물차 불… 차량 정체",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5sZGhmY09pajdvaktzd2lTYks1RDRVcDRmU241QU83ZGY4dVY4SVFZWEdVeU1Rb1kxRDUwOE5CRmF1VzhhYlY4SFd4UVJyUXlTQlpfR3J1WTNsMDFGbHZNRkJfeTQyRVJpVUxGbG9qVdIBc0FVX3lxTE1LY1lueTZJU2lOcUxhYmgzdTlmNHNTdGo1YW4zYTZsdDB3clp6cmNyR0JoQ0pOdkdpWFpjdkNQMjk0Q0ZUT2VQa3R6Zzl2cDZkb1Zjckp4Sm85Zjc2VDRrUzZxQWkzbG1kYkF2TEFTVHJkcWs?oc=5",
+      "source": "대전일보",
+      "published": "2026-11-06 10:21",
+      "summary": "공주 당진대전고속도로서 LPG 실은 화물차 불… 차량 정체  대전일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(주유소 OR LPG OR 가스충전소) (화재 OR 폭발 OR 누출) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8d09a0433e12"
+    },
+    {
+      "title": "KB국민카드, 유가 연동 주유 할인카드 선보여",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1KVEU2RmxfM1M2eTlpbUJOSE1vZnlUc3lqVDJ4UVJHS05MdF9Da0t6aHU1cGltSVB3STBmcEprV2IybllzMWY5OGl3OE8yR0JFTGlTMmtXc3l5OFJvcXlhalZ3bG05Tjd3T1l3OGl5UDR1V3PSAXdBVV95cUxPd1kwQUcxZEdPRUJYblB6clhnaUNqd0ZuSUtLUVBCaTVaNEFDNkozTkJmOTJPUW4yVGpkT29ZdkpxdVU2R2tRdUxJRFJhVE9xMjlMZjUzYXN3SVRVTG9fZWwzQmg5bmpWZG5hbE5FaENvdjR3MWNtSQ?oc=5",
+      "source": "뉴스프리존",
+      "published": "2026-11-06 10:14",
+      "summary": "KB국민카드, 유가 연동 주유 할인카드 선보여  뉴스프리존",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1303ad2fdc22"
+    },
+    {
+      "title": "가스공사, LNG 부품 국산화 '협력사 상생협의회' 개최",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ubnJIcXM1dzFETzRUWWc4dWpFRVpTYktWdEtzMlp4ZXFlaks1dUE0RF9IMVV5d0VmaWNqb1lqNEFjSDE0RlB4R1pheWtXU2dyclY3TjRhZ1d3RTJQaHQ4WlRZclFtdTZHRGRaQUctalk?oc=5",
+      "source": "1코노미뉴스",
+      "published": "2026-11-06 10:13",
+      "summary": "가스공사, LNG 부품 국산화 '협력사 상생협의회' 개최  1코노미뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국가스공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "62067a50ab94"
+    },
+    {
+      "title": "국제유가, 중동 리스크에 급락 후 반등 반복",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5xenU3MDRMWHVHQ1hEZXpORzZoMkdWYlZNQmxQQkg5NnV5LVBGdjFieVVSdjhCbVNaSEVXbnNTVG84SldfRXRheC1JNk0ybWpyQVItNHFWVDlpc0RraHFfWW4xcDA0RVlzRVQ4?oc=5",
+      "source": "www.kmjournal.net",
+      "published": "2026-11-06 10:09",
+      "summary": "국제유가, 중동 리스크에 급락 후 반등 반복  www.kmjournal.net",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "2b7b733ce5ba"
+    },
+    {
+      "title": "[뉴욕유가] 걸프 해역 유조선 피격에 WTI 90달러 회복…브렌트유 3.88%↑",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vY19hNGJnVE5YUzloeDdTQVhhS3VMQVRsZnVkZ2lBa0lWeVBrMk02SnRYSzBzZlZIOEVBX0xzSDR3MUdsemNQV3hyQ1RoUGNaeS1xZG5YcTFpSFdOTWxCQ3M4NTBMTDNJWHpzaA?oc=5",
+      "source": "굿모닝경제",
+      "published": "2026-11-06 09:57",
+      "summary": "[뉴욕유가] 걸프 해역 유조선 피격에 WTI 90달러 회복…브렌트유 3.88%↑  굿모닝경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ce761cd3a688"
+    },
+    {
+      "title": "원달러 환율 1342.1원 마감…국제유가 하루 만에 반등, 국제 금 0.99%↑",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9nT013QzFORF9fR2pJRDk5cjhmXzRaR1VtMDdiTnlLaWV0NnB2Q3Nqa2tFNm5sZUdVR0QtQTMwNlp1WTMxclJlUjdhXzZ6QlVzZ1I5c1lEMDdab0ZTUFRfSVZXbURPNGtadEE?oc=5",
+      "source": "중기이코노미",
+      "published": "2026-11-06 09:55",
+      "summary": "원달러 환율 1342.1원 마감…국제유가 하루 만에 반등, 국제 금 0.99%↑  중기이코노미",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "966e9491883a"
+    },
+    {
+      "title": "유조선 추가 피격에 국제유가 상승…주간 기준으로는 큰 폭 하락 전망",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5Y2RUelFmWkVqN0hHdGxiZ2RhTC1WYzdjYS1FSnd1WXdUQURtSW9UVTBIZHZmeTUtTzZwU3JyRUtHTnhCTU1KdUoySU9SV2h0X18zUTNTMWxqT2pCZVhmSVRMVHJnaDZRMTNJdXg0bw?oc=5",
+      "source": "Investing.com 한국어",
+      "published": "2026-11-06 09:55",
+      "summary": "유조선 추가 피격에 국제유가 상승…주간 기준으로는 큰 폭 하락 전망  Investing.com 한국어",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(정유공장 OR 저유소 OR 송유관 OR 유조선) (화재 OR 폭발 OR 유출 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e2295a7ee0a9"
+    },
+    {
+      "title": "오늘 오후 3시부터 휘발유 가격이 리터당 2,000 VND 이상 급락했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLWtISnB1ME1OZ3NPZG5VeElveUxPZ2NWaTlUTGNkSC1QZGhPVlYyaFRWR042YTRZYzV6dFRzcm1QS25vbE1EUGJIV2o3VGJHMk12Zmhndzc1YTNlaUVIRUN2TmlYTTBSd3hfc2g3Sjl3OU9lLUxpcmktUXZCamJYSjRaeE4xc3hGZ2c?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-06 09:51",
+      "summary": "오늘 오후 3시부터 휘발유 가격이 리터당 2,000 VND 이상 급락했습니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4d989b0a4c30"
+    },
+    {
+      "title": "8% 폭락했던 국제유가 하루 만에 90달러선 반등",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Ca05PMGRZN2hRcVhQcVVOTXRmVGJ6MXplU0FGSHcxOHY2WTcwS3FrSldUb2tWZFdHcFhmVEhONEFfS0dIenZlR2Zxbm5RVkRIQWVNYlBERGx0OGowNklmX2RyMjg0NF94UjBpTQ?oc=5",
+      "source": "파이낸스투데이",
+      "published": "2026-11-06 09:09",
+      "summary": "8% 폭락했던 국제유가 하루 만에 90달러선 반등  파이낸스투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1c743d9a074a"
+    }
+  ]
+}
