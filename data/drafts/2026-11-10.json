@@ -1,0 +1,734 @@
+{
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10 11:45",
+  "market": [
+    {
+      "label": "원/달러",
+      "value": 1346.79,
+      "change_pct": -0.8787617849020817,
+      "unit": "원",
+      "as_of": "2026-11-09",
+      "basis": "기준환율",
+      "source": "Frankfurter"
+    },
+    {
+      "label": "WTI",
+      "value": 90.83000183105469,
+      "change_pct": 0.3424714974423575,
+      "unit": "달러/배럴",
+      "as_of": "2026-11-06",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    },
+    {
+      "label": "브렌트",
+      "value": 98.31999969482422,
+      "change_pct": 0.03052068269147401,
+      "unit": "달러/배럴",
+      "as_of": "2026-11-06",
+      "basis": "선물 일봉 종가",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "kpetro",
+      "title": "석유관리원 뉴스",
+      "limit": 6
+    },
+    {
+      "id": "public",
+      "title": "공공기관 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "government",
+      "title": "정부·정책 뉴스",
+      "limit": 4
+    },
+    {
+      "id": "energy",
+      "title": "에너지 뉴스",
+      "limit": 6
+    }
+  ],
+  "collection_stats": {
+    "raw": 46,
+    "fresh": 46,
+    "classified": 46,
+    "representatives": 40,
+    "duplicates": 6
+  },
+  "analysis": {
+    "version": 1,
+    "mode": "dual",
+    "input_count": 7,
+    "reports": [
+      {
+        "version": 1,
+        "model": "gemini-3.1-flash-lite",
+        "issues": [
+          {
+            "title": "석유 최고가격제 정유사 손실보전액 이달 말 첫 산정…산정 기준 두고 정부-업계 이견",
+            "summary": "산업통상자원부가 시행 중인 '석유 최고가격제'와 관련해 정유사의 손실보전액에 대한 첫 정산 결과가 이달 말 나올 예정이다. 정부는 민생 안정을 위한 '방파제' 역할로서 제도의 중요성을 강조하며 조기 중단 가능성을 일축했으나, 실제 보전 규모와 산정 기준을 두고 정유업계와 정부 간 입장 차이가 존재하여 진통이 예상된다.",
+            "change": "전일 대비 새로운 사실은 없으나, 손실보전액 산정 시점이 이달 말로 구체화되었고, 정부가 제도의 유지 의지를 강력히 표명함에 따라 업계와의 갈등 국면이 명확해짐.",
+            "impact": "정부가 석유 최고가격제를 유지함에 따라, 향후 정유사 대상 손실 보전 과정에서 발생할 수 있는 유통 구조 변화나 가격 왜곡 문제를 관리원이 상시 모니터링해야 할 가능성이 있음.",
+            "article_ids": [
+              "8ad6f4371661",
+              "5b5030d7f0ae",
+              "9b019a0ff031"
+            ]
+          },
+          {
+            "title": "LPG 충전소 품질 위반 감소세…유류세 인하 및 판매부과금 면제 영향 분석",
+            "summary": "최근 LPG 충전소의 품질 위반 사례가 크게 감소한 것으로 나타났다. 업계와 유관 기관은 이러한 현상의 원인으로 유류세 인하 정책 및 판매부과금 면제 조치 등이 시장 환경에 긍정적인 영향을 미쳤을 가능성을 제기하고 있다.",
+            "change": "전일 비교 근거 부족",
+            "impact": "LPG 품질 위반 사례 감소는 관리원의 품질 검사 및 관리 업무 효율화와 연관될 수 있음. 정책적 요인이 실제 품질 관리 실적 개선으로 이어졌는지 분석하여 향후 품질 점검 전략 수립에 활용 가능.",
+            "article_ids": [
+              "4becc3529e7d"
+            ]
+          }
+        ],
+        "input_count": 7,
+        "usage": {
+          "promptTokenCount": 1642,
+          "candidatesTokenCount": 541,
+          "totalTokenCount": 2293,
+          "thoughtsTokenCount": 110
+        },
+        "attempts": 3,
+        "provider": "gemini",
+        "status": "ok"
+      },
+      {
+        "provider": "groq",
+        "status": "failed",
+        "issues": [],
+        "input_count": 7
+      }
+    ],
+    "issues": [
+      {
+        "title": "석유 최고가격제 정유사 손실보전액 이달 말 첫 산정…산정 기준 두고 정부-업계 이견",
+        "summary": "산업통상자원부가 시행 중인 '석유 최고가격제'와 관련해 정유사의 손실보전액에 대한 첫 정산 결과가 이달 말 나올 예정이다. 정부는 민생 안정을 위한 '방파제' 역할로서 제도의 중요성을 강조하며 조기 중단 가능성을 일축했으나, 실제 보전 규모와 산정 기준을 두고 정유업계와 정부 간 입장 차이가 존재하여 진통이 예상된다.",
+        "change": "전일 대비 새로운 사실은 없으나, 손실보전액 산정 시점이 이달 말로 구체화되었고, 정부가 제도의 유지 의지를 강력히 표명함에 따라 업계와의 갈등 국면이 명확해짐.",
+        "impact": "정부가 석유 최고가격제를 유지함에 따라, 향후 정유사 대상 손실 보전 과정에서 발생할 수 있는 유통 구조 변화나 가격 왜곡 문제를 관리원이 상시 모니터링해야 할 가능성이 있음.",
+        "article_ids": [
+          "8ad6f4371661",
+          "5b5030d7f0ae",
+          "9b019a0ff031"
+        ]
+      },
+      {
+        "title": "LPG 충전소 품질 위반 감소세…유류세 인하 및 판매부과금 면제 영향 분석",
+        "summary": "최근 LPG 충전소의 품질 위반 사례가 크게 감소한 것으로 나타났다. 업계와 유관 기관은 이러한 현상의 원인으로 유류세 인하 정책 및 판매부과금 면제 조치 등이 시장 환경에 긍정적인 영향을 미쳤을 가능성을 제기하고 있다.",
+        "change": "전일 비교 근거 부족",
+        "impact": "LPG 품질 위반 사례 감소는 관리원의 품질 검사 및 관리 업무 효율화와 연관될 수 있음. 정책적 요인이 실제 품질 관리 실적 개선으로 이어졌는지 분석하여 향후 품질 점검 전략 수립에 활용 가능.",
+        "article_ids": [
+          "4becc3529e7d"
+        ]
+      }
+    ],
+    "pool_started_at": "2026-09-21T23:25:41.749524+09:00",
+    "pool_updated_at": "2026-11-09T16:16:00.075337+09:00"
+  },
+  "fallback_notice": "",
+  "articles": [
+    {
+      "title": "산업장관 \"석유 최고가격제, 민생 방파제로 큰 역할… 쉽게 중단 못해\"",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWkRseWZDcm1SM3ozODJGNF9sTFNxN2lOaEZCaDYyUnV3cTB3czI5NWw1WnJBXzFOZVQ5eHZMMFlhSTlpOHdlVGdZUG02eVFTc1NRdzE4VzN1U3htTDBMWjIzcHhYVm8wQ3BwdF9iby0wbGVCdmY5T2h5VkJhNWtrT2RoOWFFaFlIbkZXRVpVaw?oc=5",
+      "source": "조선일보",
+      "published": "2026-11-09 16:06",
+      "summary": "산업장관 \"석유 최고가격제, 민생 방파제로 큰 역할… 쉽게 중단 못해\"  조선일보",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "석유 최고가격제 유지 입장",
+      "id": "8ad6f4371661"
+    },
+    {
+      "title": "석유 최고가격제 손실보전 첫 정산액, 이달 말 나온다…산정 기준 이견 변수",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VdkhWZjhjSlAyQVNjNTRvZmVwaHZMU2RCUnNwd0dLRE56S1NFQmRqRXczNm1TMUhIX01MXzI3Vm1ueEdVYXFfTW9ORHg1RllKOTFqelBxX20xZ2ZNUFcwYXlUZw?oc=5",
+      "source": "쿠키뉴스",
+      "published": "2026-11-09 15:48",
+      "summary": "석유 최고가격제 손실보전 첫 정산액, 이달 말 나온다…산정 기준 이견 변수  쿠키뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "‘석유 최고가격제’ 첫 정산액 이달 말 나온다…산정기준 놓고 정부·업계 이견",
+          "source": "부산일보",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PSm1hQ3VFNk11MFU4MTUwdkVoeEVYZEVkT0RLR2R2NGxjWDZKVUY3TUdlc0I2blZJZGJ5TkVXNXoyenlpM1g2dG1qV2oxUGlLSDVCTVhKWjh0N01UTW9fZGY4R0J1d1BzRGVkeG81U1h0NENQ?oc=5"
+        }
+      ],
+      "query": "석유제품 가격 when:26h",
+      "language": "ko",
+      "event_key": "석유 최고가격제 손실보전 정산",
+      "id": "5b5030d7f0ae"
+    },
+    {
+      "title": "충전소 LPG품질위반 확 줄었다…유류세↓, 판매부과금 면제 영향?",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtalZzWDNuT3p5ampiSDlheGVNWnEwRTkyRk9zdmZlQXh5bm83RDF2LWR1d0ZlNktSV3Q3bEx4YU1Va3Fpd3JtRTk2SDE3dkVydFh3ak0yenNWSDhabHpVMnBlMTZSYkFmT0tlc0hHa20?oc=5",
+      "source": "에너지신문",
+      "published": "2026-11-09 15:42",
+      "summary": "충전소 LPG품질위반 확 줄었다…유류세↓, 판매부과금 면제 영향?  에너지신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유관리원 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "4becc3529e7d"
+    },
+    {
+      "title": "‘5조 손실’ 석유 최고가격제 보상액 이달 말 윤곽",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5XYk9nZlpNdEpWcjJfRnlHT19nN3RaNzdGMVppcGMwU0Z4eG9ZcjgxUzM3SktwUmhPWEFDSkFFellER2ZUcnlxS1A1TXJKRVg4TVNMOW5EMUtNWjdKZWJPS3BwTmZZM1VEZnc?oc=5",
+      "source": "천지일보",
+      "published": "2026-11-09 15:39",
+      "summary": "‘5조 손실’ 석유 최고가격제 보상액 이달 말 윤곽  천지일보",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9fd38156ff89"
+    },
+    {
+      "title": "산업부, '석유 최고가격제' 정유사 손실보전액 이달 첫 산정...업계와 입장 차이 변수",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82Nl81WFEyTzFEYndRRXV6VHU4Nms0YTVJczBJVlJweEVaUjdkcVhVZ3IwNXZtN0VXUW5wRGZ0ZnN0TnVQWEE5RFRsOUNTTUdZNzFNRXBKbGdWcDlycS04bjVlMWlxNTlqaUN3?oc=5",
+      "source": "BBS불교방송",
+      "published": "2026-11-09 15:10",
+      "summary": "산업부, '석유 최고가격제' 정유사 손실보전액 이달 첫 산정...업계와 입장 차이 변수  BBS불교방송",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9b019a0ff031"
+    },
+    {
+      "title": "석유 최고가격제 첫 정산 이달 말 윤곽…정유업계 \"정부 결과 기다리는 중\"",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hd1lKbXZwVGVtcnJhT0N3cnVhNDNqU2c1OHJoZGJNSGZWdFlPQ2Z3LXpwMFY2YnFzZXRaYXg1Q1dfR09DTDcwVTNZNzFIcHE3ZlcxeFdxc3VKR2Q5RlVJMG8yeWxNSlRj?oc=5",
+      "source": "녹색경제신문",
+      "published": "2026-11-09 14:56",
+      "summary": "석유 최고가격제 첫 정산 이달 말 윤곽…정유업계 \"정부 결과 기다리는 중\"  녹색경제신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "13a58f10a675"
+    },
+    {
+      "title": "석유 최고가격제 손실보전액 이달 첫 산정…정부·정유업계 이견 ‘진통’",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fQS1lQmp6dElDdW5rcFJBTThPcnRNcFFpTEtTMFhVMUJpaUxlbnk2Qml5WmpncGlORFBmenM2cU9acnZKenM5Sm0xbFg1bVhIZE5EWHk1SlpjOVdrelE?oc=5",
+      "source": "아시아타임즈",
+      "published": "2026-11-09 14:41",
+      "summary": "석유 최고가격제 손실보전액 이달 첫 산정…정부·정유업계 이견 ‘진통’  아시아타임즈",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "정부, 석유 최고가격제 손실보전액 이달 첫 산정...정유업계와 진통 예상",
+          "source": "M이코노미뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5IRENfaEZZNlFqb2pMczF1YndtLXpBb3k1YVVOOEloN2RYTU41NURNZm5HWjB4a3hVb1lPeTdER2RQQUY4MGhYblg5b3JTa1MtTm9ZdXlmQjl5cVhRemlvaG81MGVCelU?oc=5"
+        }
+      ],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ff9687049c07"
+    },
+    {
+      "title": "정부-정유사 정산 첫 협상, 5조 손실 보전 가능할까?",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1PUkFHSlZRYkNnQjl2UDE2cVNqajBJeDRQYTktdmhzZzlrdXhaNlkzMVVIaEIzQnZLdndlV1o2eDRyTnl2Q1phSWo3Nnl6c1Y1SkM5cWtSYkhLUm43V09KMnZVeWNWeDNx?oc=5",
+      "source": "공감신문",
+      "published": "2026-11-09 13:57",
+      "summary": "정부-정유사 정산 첫 협상, 5조 손실 보전 가능할까?  공감신문",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "cc4b2e567ab2"
+    },
+    {
+      "title": "정유사 손실보전액 이달 첫 산정...정부·업계 기준 놓고 이견",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8yNmlQOWVUTEVEVUU3em9YTkNhWGZfY3hqaW0yczlpNzY3OWo3bnAzZzlYZDFMbjJQVDVGRGRlSEVfV3EwZWdOR3BRaUlzNWFGajhQbzBJZldFQ3BMX3VtTkx0dkI2R2ZSYjFjVlRsVXhzdw?oc=5",
+      "source": "중앙이코노미뉴스",
+      "published": "2026-11-09 13:43",
+      "summary": "정유사 손실보전액 이달 첫 산정...정부·업계 기준 놓고 이견  중앙이코노미뉴스",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3ea32b2ad3a1"
+    },
+    {
+      "title": "정부, 석유 최고가격제 정산액 이르면 이번달 산정",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zWjl2bWZnS2ltY0k4a3hnXzdqNERiNTRvNlBuX0I1WHNUOHZSUGN3dm9Ub3JXaWZfNGNNSWJraEJYc0ZKejFPeUxFYmVjVVgxX3p1OUVETkhSV3hCTFpaUF9mdzFfUzQ?oc=5",
+      "source": "연합뉴스TV",
+      "published": "2026-11-09 12:44",
+      "summary": "정부, 석유 최고가격제 정산액 이르면 이번달 산정  연합뉴스TV",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "(비축유 OR 유류세 OR 최고가격제) (방출 OR 긴급 OR 시행 OR 확정) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0651e5fb7ff7"
+    },
+    {
+      "title": "국제유가 급락에 최고가격제 출구전략 부상…정유사 부담·물가 딜레마",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UMXNhamVDOFp4cmtHTHFLT0FXT29QVGdySTFQWUtobURoVE50V18zNkltVjU3T0NOa3dqUy01SU1VMTdHcjEwX01aQXhobWIx?oc=5",
+      "source": "문화일보",
+      "published": "2026-11-09 12:04",
+      "summary": "국제유가 급락에 최고가격제 출구전략 부상…정유사 부담·물가 딜레마  문화일보",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6e8317869e43"
+    },
+    {
+      "title": "조기 종전 기대감에 국제유가 하락…석유 최고가격제 출구전략은? - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBINDdhMkJZU3lIWVJSOGx6QjhiNnRTNEtvY0FLZDNMNkpXVExPNjN6WG1BVUZjdlEwM2JGMFg5WldzQk5VcGxxck45WnlJQm1PZHlqYzh6TnZMZkpib3Jpd3FiMWFmT0w4OUN30gFwQVVfeXFMTS1tNEgxRGs0UC1RTjhpMjZXT3c2RXoyc0ZmZk5zU1ZfUHZSQURIb1F1MjZEYjRhQkpUdExHNnR4VnBpNHNxUjdkWk9pd1NYMnFnME9RVm1ZdFZaZHBuLXdVa2tTcjVrUGhuSDdGa1RBUg?oc=5",
+      "source": "머니투데이",
+      "published": "2026-11-09 11:58",
+      "summary": "조기 종전 기대감에 국제유가 하락…석유 최고가격제 출구전략은? - 머니투데이  머니투데이",
+      "sector": "government",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "국제유가 하락 속 최고가격제 출구전략 논점",
+      "id": "438f0fc5afc4"
+    },
+    {
+      "title": "공공기관 임금피크제 실효성 있나…청년 고용 줄고 절반 무보직",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkSTB1NUdjY2xDNGJHdlQ5N3BXTW1MbGRtMzZ0MXlsaGR3UWV5Ujk4TnBQaHMwSjFQSGFBLXhzblBHZ1dXRC1SQUx2bHVnODllVmFfd3ctcGFHQ2lvNWRXOA?oc=5",
+      "source": "아시아경제",
+      "published": "2026-11-09 15:39",
+      "summary": "공공기관 임금피크제 실효성 있나…청년 고용 줄고 절반 무보직  아시아경제",
+      "sector": "public",
+      "risk": [],
+      "duplicates": [],
+      "query": "공공기관 혁신 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "9be6cce24d6f"
+    },
+    {
+      "title": "울산항 KET, 석유·LNG 저장 넘어 친환경 연료 허브로 변신",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1td0J5VGFSYmxLNnZpWWdtLVZSVmpYUTFvbWJmNmVJdE9oOG9SY19TQ0k5MlJVWDZ1cmtzdGowMWhyZ1FTTzc4SzAxVzhrUlpNOHk2ZEVZNmFIOEZQb0xoRUxPTzBOaHc?oc=5",
+      "source": "서울STV뉴스",
+      "published": "2026-11-09 16:07",
+      "summary": "울산항 KET, 석유·LNG 저장 넘어 친환경 연료 허브로 변신  서울STV뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ad67d8eb7448"
+    },
+    {
+      "title": "iM증권, 유가 하락에 일본 수요까지… LCC 이익 추정치 상향 여지",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9aNGRRRVBCTi16VVdwbnNLUFczX0ZWR2RVYkhTaWRTQnFNc0JiOHVtR1Z5V2JLUXYybG5mUVYtVnBBMWljSEc2cmdwWkVvQkhSUjZzX2UzeXE2QkUyS0E?oc=5",
+      "source": "아시아타임즈",
+      "published": "2026-11-09 15:48",
+      "summary": "iM증권, 유가 하락에 일본 수요까지… LCC 이익 추정치 상향 여지  아시아타임즈",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "306f802ff7f0"
+    },
+    {
+      "title": "석유 최고가 보전 초읽기..SK·GS칼텍스 등 정유4사 '5조 피해' 충돌",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NMG1DMEh6NUFJSkRqQnFFaUdtaW9mLVZDVXMxRTVkZUVWeDhhWWFMMUU0NHZZT21SblhhNVhQR0tWTGNSWUlXal9WU2dTT0hyTGc?oc=5",
+      "source": "한국정경신문",
+      "published": "2026-11-09 15:40",
+      "summary": "석유 최고가 보전 초읽기..SK·GS칼텍스 등 정유4사 '5조 피해' 충돌  한국정경신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7fb2cce40d28"
+    },
+    {
+      "title": "'1조2000억 투입' 울산 KET, 석유·LNG 복합 허브 안착...벙커링·AI 신사업 속도",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5mLTZJanBYR0U1aTh6UUpWRzlMLXdyem5Vcngyb3ZqSVpJQWVQOGkyRFJMcmRfXzdJeEhTeC16bFlEaUFSTTVoak9aakkwX05sY0VEcHVDMGZMMjFiNnhNNGVVZXNNcjZhcmhJWG1iRWt5ck1fZUNCMjNjQ3M?oc=5",
+      "source": "비욘드포스트",
+      "published": "2026-11-09 15:20",
+      "summary": "'1조2000억 투입' 울산 KET, 석유·LNG 복합 허브 안착...벙커링·AI 신사업 속도  비욘드포스트",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "0e67ccd5000f"
+    },
+    {
+      "title": "산업부, 정유 4사 손실보전액 첫 통보…석유대리점은 정산 밖",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wS3JvR2NIbmRvdGpFazFIR1JrcmRSMHVFUXRqT3hWdDlTczVKNXpBbHJxeV9DTGNpUENoMVBnSGZIay1UUkVWbFZmR1dhbW5KU1oyYVUtVlFzc2oxS24ydDdRdTdtMXAxMG5yeA?oc=5",
+      "source": "중소기업신문",
+      "published": "2026-11-09 14:58",
+      "summary": "산업부, 정유 4사 손실보전액 첫 통보…석유대리점은 정산 밖  중소기업신문",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "정유업계 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3a6a76dff5a6"
+    },
+    {
+      "title": "[현장+] 석유에 LNG 더한 울산 북항…국내 첫 복합터미널 KET 가보니",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDYkdyQTN6ZTVPdjdNTGg2SmZ3Um55c0EwTWI3Z1pvX3RWY0hsd2VleW9NV1M4Vm1kRldndTRRRnRfWThkY2YzR09aTVRqaV9DYnIzTkk4cTJZbTJYekpwRWhNeDhwcFI5MnA1NjcwZVI?oc=5",
+      "source": "1코노미뉴스",
+      "published": "2026-11-09 14:49",
+      "summary": "[현장+] 석유에 LNG 더한 울산 북항…국내 첫 복합터미널 KET 가보니  1코노미뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "09bb9255e4fa"
+    },
+    {
+      "title": "후티, 사우디 정유시설에 미사일·드론 대공세",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPUnowSUdBdFlCTG14RFpCc0dsaW1SNHFsMHhDQzZQQmJtcDdzbU9OZEJ6M0FRUXlCSl9idWJZWXpnVXNTRzcyVVJNUG1MUktFSG40Njk0bzJVSG1pSkdFdjFEbFNlWkdnTEZJeTVKV1lSZ2w5Z2hPVXpUWm5BTHpKSUZrbmhmMTFsak5Fa09nUFVEOGpUMWdVWWxQbV9Rd0dkTUM1d3pnaEp2Q0YwUGp0bU45T0xLZ3M1dTNGMkY1LW41RnR0SjZULUZkN1dCdktoLUUtWU5sa3YwZk9Fb0tnZXV0OVRxQkduaTU1bzFzQkg4UFRVVzBjMno3cFlmd3ZNUFp5UmRZdnQtckpvWXktSm81eDZORXdQSFp2aHBrT3dZRWs?oc=5",
+      "source": "데일리안",
+      "published": "2026-11-09 14:31",
+      "summary": "후티, 사우디 정유시설에 미사일·드론 대공세  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "후티, 사우디 정유시설에 미사일·드론 대공세…중동 확전 위기",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9vUzQwbWQ1R2hmWXNvMGJsS0JpaS1ubnQzS1QtR3psNVJEcGhFY0RkY1laMUtTSXhxc2ZHV1B0UWJjNnhOMXVCNF90bjJ3QnBCSER5THJkRQ?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "21fe15bb1c07"
+    },
+    {
+      "title": "[르포] 석유·LNG 한곳에 품은 KET, 동북아 에너지 허브 첨병으로",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBQLVlzYlB0ejJGZU1HWUJKZGdSRHBWdnpvckFkSE9Ndmg4YlA0QWUyR1o0T0R4ZTM4ZFlqUUtnek5QWGJjMmJ6NjNEUzhsWURsbDFYQ1AtTm45MlZvZDZHVEw2dVpCTmFVWG00YXpXNNIBb0FVX3lxTFBQLVlzYlB0ejJGZU1HWUJKZGdSRHBWdnpvckFkSE9Ndmg4YlA0QWUyR1o0T0R4ZTM4ZFlqUUtnek5QWGJjMmJ6NjNEUzhsWURsbDFYQ1AtTm45MlZvZDZHVEw2dVpCTmFVWG00YXpXNA?oc=5",
+      "source": "뉴스로드",
+      "published": "2026-11-09 14:30",
+      "summary": "[르포] 석유·LNG 한곳에 품은 KET, 동북아 에너지 허브 첨병으로  뉴스로드",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "ccb1dac9279d"
+    },
+    {
+      "title": "석화업계, '유가 한파' 뚫고 고부가 전면에",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xV2hPSElGVDdNNFVQV2kzSWNtaXJGZWlkakNrbXRiWWpjWE5zR1pXS0NFQzVrTGl1c0t6ZTVKMFE5d3Z2b3JQd2QxVWVkalNGN3BtbGVxd3pJNlI3U1VDS2dUbUE?oc=5",
+      "source": "매일일보",
+      "published": "2026-11-09 14:21",
+      "summary": "석화업계, '유가 한파' 뚫고 고부가 전면에  매일일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bdc6857afe61"
+    },
+    {
+      "title": "[르포] LNG·석유 저장 넘어 벙커링까지…KET, 동북아 에너지 허브 도약 속도",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBkanY2SmswVkxlUXcyR0RZcTNjcEpNYVFpSExaa2J1djlxQnhZelhvZE1Dd1FaWllGQnNxUVRWRi02MGZCN2FpNHNNUjFybGI5b2MzVG5sMGHSAVhBVV95cUxQZGp2NkprMFZMZVF3MkdEWXEzY3BKTWFRaUhMWmtidXY5cUJ4WXpYb2RNQ3dRWlpZRkJzcVFUVkYtNjBmQjdhaTRzTVIxcmxiOW9jM1RubDBh?oc=5",
+      "source": "아주경제",
+      "published": "2026-11-09 14:17",
+      "summary": "[르포] LNG·석유 저장 넘어 벙커링까지…KET, 동북아 에너지 허브 도약 속도  아주경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6dcb569551f6"
+    },
+    {
+      "title": "[르포①] 국내 첫 석유·LNG 복합터미널 KET… 장충체육관 3배 LNG 탱크 ‘우뚝’",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QN0h6M2NDRmVwM1dWYkNHSTdtd1pxU2hpMTFQT2ZNQ3k1Z2pOR25ZRzhNMTlVSkc4ZDZYdjUtNnAxVHY3eHoxSUFUNUdBa1RFR3AyR3R2UjMtZw?oc=5",
+      "source": "브릿지경제",
+      "published": "2026-11-09 14:04",
+      "summary": "[르포①] 국내 첫 석유·LNG 복합터미널 KET… 장충체육관 3배 LNG 탱크 ‘우뚝’  브릿지경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "1af632696fda"
+    },
+    {
+      "title": "국제 유가 폭등했는데 한국만 안오른 이유는 '외상'",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGckpWVnFDclI0dWhxX3BsMmNIbW54QnZwN1RDV1k1UGtNZGNoYTVmSG10VHU1YjJOQnk4MVNzM3pXVk1rRnJ4YUM4MF81djQwWW1kWWFmdW9GRjNseUdpRDhHN09RRVk?oc=5",
+      "source": "자본시장뉴스",
+      "published": "2026-11-09 14:00",
+      "summary": "국제 유가 폭등했는데 한국만 안오른 이유는 '외상'  자본시장뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "88109b1c3146"
+    },
+    {
+      "title": "장충체육관보다 큰 LNG 탱크 3기 우뚝…KET, 친환경 에너지 물류 항만 허브 도약",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBRRnpZNTgxZnRYaGNfTGxKRHMwRlV4WGVKWDhvVkVLbW9FSEsyU2xsdDFJRzlzcjU3aFhkZTNhd0hSekRrX1ZicUt1NkVid0wtNTJobnB5TQ?oc=5",
+      "source": "헤럴드경제",
+      "published": "2026-11-09 14:00",
+      "summary": "장충체육관보다 큰 LNG 탱크 3기 우뚝…KET, 친환경 에너지 물류 항만 허브 도약  헤럴드경제",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "bc4f0ae697b7"
+    },
+    {
+      "title": "LNG 터미널부터 암모니아 벙커링까지..울산항, 에너지허브 위용",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56ZURJanQ3U2N0QmktWmJmbzAtV09IeG1JYkZXaHdaOEw0ejNlY2tqREpod3Y1dnUtMXBvM2RheGluMngxVXpWVG9fTlU4bndrdXVyaDBrYXJIdw?oc=5",
+      "source": "파이낸셜뉴스",
+      "published": "2026-11-09 14:00",
+      "summary": "LNG 터미널부터 암모니아 벙커링까지..울산항, 에너지허브 위용  파이낸셜뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3a15a1f67073"
+    },
+    {
+      "title": "[르포]LNG로 AI 식히고 북극 여는 울산항…'에너지 허브' 정조준",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBucy1ZNVMySG00SEZZb1Nka2UwSWR6UExiMXdVVGlhbUZoLXFxeUM4cmRXb0RuU1N2OWFTckduT21RRm9CZlo3OTdJMGhEcTA2MF9xZjVZQkhtSHVPdDYzODU2S1E?oc=5",
+      "source": "매일일보",
+      "published": "2026-11-09 14:00",
+      "summary": "[르포]LNG로 AI 식히고 북극 여는 울산항…'에너지 허브' 정조준  매일일보",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "32434bd0d064"
+    },
+    {
+      "title": "[르포] \"20년간 빈 탱크 걱정 없다\"…LNG 319만톤 송출한 울산 KET",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5MRTlLUEFKU2tDMXdSNDQyZW8taWVDU0RZOXZiWEdwTjZiNUl2ZVdnNkRHaFU1cVYtWi11dldGcWRKbWhBT3JCQ01yUmZsVkJfcHBTbmZsT1hVWEdOanFEYlF2eVI?oc=5",
+      "source": "디지털데일리",
+      "published": "2026-11-09 14:00",
+      "summary": "[르포] \"20년간 빈 탱크 걱정 없다\"…LNG 319만톤 송출한 울산 KET  디지털데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "104e3a583f7b"
+    },
+    {
+      "title": "[르포] LNG 저장 넘어 '바다 위 주유소'로 … 북극항로 준비하는 KET | 프린트 | BIZ 뉴데일리",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1KanBEdFJjbm1nSEhuS3ZZNkFjNWkyTlJ0eU80U0w0OGJqclUtUzNzaWhiT0wzbFNLeXZod1FWdVM5MUxuZmNWNTdtQW1JemZSNW9WaXFWVTUweUF3MVNGS3BGQ1ZYc00xaHZJd0paQ19mbHpE?oc=5",
+      "source": "뉴데일리",
+      "published": "2026-11-09 14:00",
+      "summary": "[르포] LNG 저장 넘어 '바다 위 주유소'로 … 북극항로 준비하는 KET | 프린트 | BIZ 뉴데일리  뉴데일리",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "[르포] LNG 저장 넘어 '바다 위 주유소'로 … 북극항로 준비하는 KET",
+          "source": "뉴데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMG1KbjI2d2pNeUhCQTd4T3BCX1E3aHVwUTdlcVFEUmltU0FTZUpkemhHaC1VbzFOX21sYUVmU0lPN0U5NjNCczhPVG80RjJwcEZYdEp0Q2dSbzNKZW01ektwVHZTN1RIbmI4UDNTR1NsQ2hWdjJYS2o2ZW5aWU9Rb9IBgAFBVV95cUxNMG1KbjI2d2pNeUhCQTd4T3BCX1E3aHVwUTdlcVFEUmltU0FTZUpkemhHaC1VbzFOX21sYUVmU0lPN0U5NjNCczhPVG80RjJwcEZYdEp0Q2dSbzNKZW01ektwVHZTN1RIbmI4UDNTR1NsQ2hWdjJYS2o2ZW5aWU9Rbw?oc=5"
+        }
+      ],
+      "query": "한국석유공사 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3ce6a930beed"
+    },
+    {
+      "title": "“경쟁은 부산 아닌 글로벌 항만과”…세계 선박의 ‘주유소’ 노리는 울산항",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BWXFsR1ZtUjVFU3BRUXVGSFluR3FrNHFSSGZTV0ZVQjZrVWhObGVpZjloTUhOeFpsTEFaVXJkYmdCRGx2cmZwbFRxM0U0V3FCTWJv?oc=5",
+      "source": "데일리안",
+      "published": "2026-11-09 14:00",
+      "summary": "“경쟁은 부산 아닌 글로벌 항만과”…세계 선박의 ‘주유소’ 노리는 울산항  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "7816c57e3026"
+    },
+    {
+      "title": "[르포] 석유화학 항만에서 친환경 연료 허브로…울산항의 진화",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9aRXlSVEtNUXBWUXJybTRSWnl1N3BQQzVFVDFaRkVwVGVtSkRpTXNZNlY5NDNQQkZJNFRHaU41WllPa0tQVGwyckl3dllOWllBeEZrRmdlMWxUSlBRUDNVTlh4UXpUMF92b2Jz0gFvQVVfeXFMTXpTNFFwU3VEbzNiRXVzN1hUX3JRZDFURnlZa2VrV19iLVpJTTQ4RjA5aEQ1OC1aZ2tRdW1sUTdwUldCVElMeWV3bUZXbUdIUGVPMWI1NTY2MGhLU2ZkOVgwRHpvRWNjaVhWTDMwc19V?oc=5",
+      "source": "뉴스로드",
+      "published": "2026-11-09 14:00",
+      "summary": "[르포] 석유화학 항만에서 친환경 연료 허브로…울산항의 진화  뉴스로드",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "76613da97146"
+    },
+    {
+      "title": "2026년 11월 9일 오늘 휘발유 및 디젤 가격: 소폭 하락.",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ocmFGWVZUY3pCTnU1V0dUSEt0eGxadm9QZ3A2aEFDNE8tWFkxdlhwdndXU0g5WGdHdGZJNTMwLTAwd2NxbGdwYkFiaVgzdkZyWGZDc0VtZkNNUFh0aUtwa3dMRGMxVF9XN1U0cHJIc0xOVms?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-09 13:48",
+      "summary": "2026년 11월 9일 오늘 휘발유 및 디젤 가격: 소폭 하락.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "5c2e6ce8d1d1"
+    },
+    {
+      "title": "[이란 미국 전쟁] 트럼프, 카타르 총리와 종전 담판 추진…'이틀 협상안'에 호르무즈 해협 운명 달렸다",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9uZ1NHLUkyQjBTU2VjWTB1ckZ6enFIaXdoc1gxV3ZuNU9PYXluZVBoLVZPZ25hR1pmVWp1VU90TmhmWWNIbGxzaDNGNGpWRF9WcXBhUnZEWEIyWDZ4NEtqdm1qQzg2aVdSUmplRVNjSGkxZw?oc=5",
+      "source": "톱스타뉴스",
+      "published": "2026-11-09 13:46",
+      "summary": "[이란 미국 전쟁] 트럼프, 카타르 총리와 종전 담판 추진…'이틀 협상안'에 호르무즈 해협 운명 달렸다  톱스타뉴스",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "8c8154c1ddcf"
+    },
+    {
+      "title": "3Q 실적 '빨간불' 석유화학 3사…원가 절감 안간힘",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RWVh4VnRVR1pXR0tDTUFBYWh4ZnJxWndMZ3Vidm9YeUFQcG12N1Z1eXZqZUFWTHRfRHRZU3hZNExBaFhjYThCRVBwTUhpNDdYc29mV0JaYjBSd3hSLWFN?oc=5",
+      "source": "스마트투데이",
+      "published": "2026-11-09 13:31",
+      "summary": "3Q 실적 '빨간불' 석유화학 3사…원가 절감 안간힘  스마트투데이",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "석유 수급 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "6a8279d6a9d3"
+    },
+    {
+      "title": "오늘 11월 9일 휘발유 가격: 일제히 하락",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT1pBclJkMDY2cm4yY3BFWjQzcGVRaWxrRWItR25YZFFaZDk3eEQwQ2tvWHdpN3FwOTBwcmJBR3BFd0FhcWc3M3BXSUk4TTlqcXA3RHIwV2c5eTJjNTVwbm5LRzBlenI5Q3VFSTk1S1FfTURWQ085MHlCN1JEOEJ4LUxjY3pjUzFYMHRRRg?oc=5",
+      "source": "Laodong.vn",
+      "published": "2026-11-09 12:26",
+      "summary": "오늘 11월 9일 휘발유 가격: 일제히 하락  Laodong.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "오늘 11월 9일 소매 휘발유 가격",
+          "source": "Laodong.vn",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRHFtdzdCaGw2ZGUzQlRvenNTUUFBMVVHR3p5a25jYTFYTVR6WVlhWWp3UWpSeVRWZzVxa3FVWFhadDhyS3YwWXBudlI2UzdUaWhtVVB2NlNMU1NsMkg4aWlCSUU2VmYzd1lRMTk3eXZXZXlBbGFHM19Mc2NyMEtXMGZn?oc=5"
+        }
+      ],
+      "query": "(석유 OR 원유 OR LNG) (공급중단 OR 공급차질 OR 수출중단 OR 가동중단) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3238c4c4f179"
+    },
+    {
+      "title": "국제 유가, 2020년 이후 최대 하락세 지속",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPUnYwbXBjbW5hd3E5N2tEOEpQaVZmMUxNZzRSZE9qeFdkbTlObXNsbXlVNHZsMUcxWl91a1R2LV9aQXd0MHdXZUJoY05Eejd5XzRtWmZaSExlem5fVFhlSzdNZzQyYUk1eVUybDNfUjEtQXdzVmZhNC1lNFJXOWdMdHVSTEJFMVJDWnQ5MVlldGRVRFVicERMX0NVLU1kbjc1V0w1OE94Y2M2dENOSURZdXJqeFhrWTNpZnZFMWhRU3p1alFObXpxOUdISTNtSW9GVEFtdnF0MVhobHplN1NJeW5yYmJfbHJJVVZCYnFYY0lTc3hpNTB1Wm92QkREQ2h0eEhYekhJQkQ5NEU5?oc=5",
+      "source": "IDNFinancials",
+      "published": "2026-11-09 12:20",
+      "summary": "국제 유가, 2020년 이후 최대 하락세 지속  IDNFinancials",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "국제유가 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "d8177643b698"
+    },
+    {
+      "title": "트럼프 에너지 독주 제동…정유·석화·배터리 어디로",
+      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQcFIwYi0wR3RVTlpncnRHaEprdktIN3ExN1JzcDBWeExHTmN1WWxIYlIyU29LVmdpU2xtSUptWENVWVA3dmFXLXhLbW9FbXpnRU1TMkhaR2dNMUNtQlFSc29TMkhPTi13M1g2cUlEdk11Y3YwSFpvenNEa1o1bGc2ZTlYTW5Hb0dPZE9wTnVsNDJDcmsyMzVhd3NsM29oYU8xM1NHN3d5NnZINWU5dFM0ZVJpMUZCRWQ2TUxjTGZ2UjdkV2ZjQVlUbGRHbmZjc0JhUDlFeXAweEp6cENTcV9sQTdUdWJRazlXNG9ILXJ6akFxSTRuMllDQTU3a0o0ZEVZaDd5aXpSZEZSc0VfWk1PcG9CNHZMUTZ2LWRKaEExUTg3TEtDbzhfZEJRbVpzZw?oc=5",
+      "source": "데일리안",
+      "published": "2026-11-09 12:16",
+      "summary": "트럼프 에너지 독주 제동…정유·석화·배터리 어디로  데일리안",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [
+        {
+          "title": "트럼프 에너지 독주 제동…정유·석화·배터리 어디로",
+          "source": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1VTm9NMXN5RHh3c0wtOGpCaUNiUWN2THR3NTItNHZEUHZfd1ZkX1pUYmdGNzVkUHhuU0xfWlU4aG5oTzdPbHQyaE42SmFhLVJ6QVpkaQ?oc=5"
+        }
+      ],
+      "query": "에너지 정책 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "77d0fcc83e93"
+    },
+    {
+      "title": "푸꾸옥 주민들은 주유소에서 줄을 서서 기다리고 있는데, 차량 한 대당 5만 VND어치의 기름만 넣을 수 있기 때문입니다.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTVBzMUFqNFNxeEtzb3cydllxZWtGTUI1Qnl3b2dpWVpHTk9ieU5RV2hFMEltMXYzeVVLMEtNUFhxRGl6NW9YWXFLTy00S2w4b1FZZm5fU2laZ2daLUZ5SHkwbkk1aXdaR1VYMGg4LTVrd09ONFpTcS1qVVRURl9ybm81dl95bGoxazJ1M285NmxjYXJiUms4SmE5TDg?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-09 12:11",
+      "summary": "푸꾸옥 주민들은 주유소에서 줄을 서서 기다리고 있는데, 차량 한 대당 5만 VND어치의 기름만 넣을 수 있기 때문입니다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "주유소 when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "e9fe2f897f30"
+    },
+    {
+      "title": "이라크와 미국이 호르무즈 해협을 통한 석유 수출에 합의하면서 유가가 하락했다.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMk54SDZ4TjBMYVpnMWV6N2JteERpak5KcmZaUlFzdXFrR2YyV2dreTdmTmpCRzgyWC1wZi0wR3NkQlVuVDQxcnpZdU1XWlVNbGQxRjdUNjFJTWpMbktTT19xbFZRaFhYS3Q2M2V1bjZtUkFHQjY0OEp3TzRPcVRDQ181RmNaTm5PVkw2bExR?oc=5",
+      "source": "Vietnam.vn",
+      "published": "2026-11-09 12:04",
+      "summary": "이라크와 미국이 호르무즈 해협을 통한 석유 수출에 합의하면서 유가가 하락했다.  Vietnam.vn",
+      "sector": "energy",
+      "risk": [],
+      "duplicates": [],
+      "query": "(호르무즈 OR 유조선) (봉쇄 OR 피격) when:26h",
+      "language": "ko",
+      "event_key": "",
+      "id": "3e8f75c66f27"
+    }
+  ]
+}
